@@ -34,12 +34,13 @@ func main() {
 
 	for mode, ruleSet := range rules {
 		var buf bytes.Buffer
-		err = tpl.Execute(&buf, ruleSet)
+		err := tpl.Execute(&buf, ruleSet)
 		if err != nil {
 			panic(err)
 		}
 
-		src, err := format.Source(buf.Bytes())
+		src := buf.Bytes()
+		src, err = format.Source(src)
 		if err != nil {
 			panic(err)
 		}
@@ -51,7 +52,7 @@ func main() {
 }
 
 type Rule struct {
-	Pattens [4]string `json:"patterns"`
+	Patterns [4]string `json:"patterns"`
 }
 
 type SecondFinalRule struct {
@@ -118,19 +119,127 @@ func fixRules(rules map[string]RuleSet) {
 }
 
 const rulesTemplate = `
+// GENERATED CODE. DO NOT EDIT!
 package bmpm
 
-type {{.Mode}}Lang int
+type {{ .Mode }}Lang int
 
 
 const (
-	{{.Mode}}{{ (index .Languages 0) }} {{.Mode}}Lang = 1 << iota
-	{{- range $i, $lang := .Languages}}
+	{{.Mode}}{{ (index .Languages 0) }} {{ .Mode }}Lang = 1 << iota
+	{{- range $i, $lang := .Languages }}
 		{{- if ne $i 0 }}
-			{{$.Mode}}{{ $lang }}
-		{{- end}}
-	{{- end}}
-) 
+			{{ $.Mode }}{{ $lang }}
+		{{- end }}
+	{{- end }}
+)
+
+func (l {{ .Mode }}Lang) String() string {
+	switch l {
+		{{- range $i, $lang := .Languages }}
+	case {{ $.Mode }}{{ $lang }}:
+		return {{ printf "%q" $lang }}
+		{{- end }}
+	}
+	return ""
+}
 
 
+var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
+	{{- range $lang, $rules := .Rules }}
+		{{ $.Mode }}{{ $lang}}: []rule{
+			{{- range $rule := $rules }}
+				{
+					patterns: []string{
+					{{- range $pattern := $rule.Patterns }}
+						{{ printf "%q" $pattern }},
+					{{- end }}
+					},
+				},
+			{{- end }}
+		},
+	{{- end }}
+}
+
+var {{ .Mode }}LangRules = []langRule{
+	{{- range $rule := .LangRules }}
+		{
+			pattern: {{ printf "%q" $rule.Pattern }},
+			langs: {{ $rule.Langs }},
+			accept: {{ $rule.Accept }},
+		},
+	{{- end }}
+}
+
+var {{ .Mode }}FinalRules = finalRules{
+	approx: finalRule{
+		first: []rule{
+			{{- range $rule := .FinalRules.Approx.First }}
+				{
+					patterns: []string{
+					{{- range $pattern := $rule.Patterns }}
+						{{ printf "%q" $pattern }},
+					{{- end }}
+					},
+				},
+			{{- end }}
+		},
+		second: []secondFinalRule{
+			{{- range $secRule := .FinalRules.Approx.Second }}
+				{
+					langs: {{ $secRule.Langs }},
+					rules: []rule{
+						{{- range $rule := $secRule.Rules }}
+							{
+								patterns: []string{
+								{{- range $pattern := $rule.Patterns }}
+									{{ printf "%q" $pattern }},
+								{{- end }}
+								},
+							},
+						{{- end }}
+					},
+				},
+			{{- end }}
+		},
+	},
+	exact: finalRule{
+		first: []rule{
+			{{- range $rule := .FinalRules.Approx.First }}
+				{
+					patterns: []string{
+					{{- range $pattern := $rule.Patterns }}
+						{{ printf "%q" $pattern }},
+					{{- end }}
+					},
+				},
+			{{- end }}
+		},
+		second: []secondFinalRule{
+			{{- range $secRule := .FinalRules.Approx.Second }}
+				{
+					langs: {{ $secRule.Langs }},
+					rules: []rule{
+						{{- range $rule := $secRule.Rules }}
+							{
+								patterns: []string{
+								{{- range $pattern := $rule.Patterns }}
+									{{ printf "%q" $pattern }},
+								{{- end }}
+								},
+							},
+						{{- end }}
+					},
+				},
+			{{- end }}
+		},
+	},
+}
+
+
+var {{ .Mode }}Discards = []string{
+	{{- range $item := .Discards }}
+	{{ printf "%q" $item }},
+	{{- end }}
+}
 `
