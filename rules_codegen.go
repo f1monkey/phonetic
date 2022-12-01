@@ -4,10 +4,14 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
+	"go/format"
 	"io/ioutil"
 	"os"
+	"strings"
+	"text/template"
 )
 
 var ruleSources = map[string]string{
@@ -21,7 +25,29 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(rules)
+	fixRules(rules)
+
+	tpl, err := template.New("rules").Parse(rulesTemplate)
+	if err != nil {
+		panic(err)
+	}
+
+	for mode, ruleSet := range rules {
+		var buf bytes.Buffer
+		err = tpl.Execute(&buf, ruleSet)
+		if err != nil {
+			panic(err)
+		}
+
+		src, err := format.Source(buf.Bytes())
+		if err != nil {
+			panic(err)
+		}
+
+		if err := os.WriteFile("rules_"+mode+".go", src, 0644); err != nil {
+			panic(err)
+		}
+	}
 }
 
 type Rule struct {
@@ -50,10 +76,12 @@ type LangRule struct {
 }
 
 type RuleSet struct {
+	Mode       string            `json:"-"`
 	Languages  []string          `json:"languages"`
 	Rules      map[string][]Rule `json:"rules"`
 	FinalRules FinalRules        `json:"finalRules"`
 	LangRules  []LangRule        `json:"langRules"`
+	Discards   []string          `json:"discards"`
 }
 
 func loadRules() (map[string]RuleSet, error) {
@@ -76,3 +104,33 @@ func loadRules() (map[string]RuleSet, error) {
 
 	return result, nil
 }
+
+func fixRules(rules map[string]RuleSet) {
+	// remove "/" in lang rules' patterns
+	for mode, ruleSet := range rules {
+		for i := range ruleSet.LangRules {
+			ruleSet.LangRules[i].Pattern = strings.Trim(ruleSet.LangRules[i].Pattern, "/")
+		}
+
+		ruleSet.Mode = mode
+		rules[mode] = ruleSet
+	}
+}
+
+const rulesTemplate = `
+package bmpm
+
+type {{.Mode}}Lang int
+
+
+const (
+	{{.Mode}}{{ (index .Languages 0) }} {{.Mode}}Lang = 1 << iota
+	{{- range $i, $lang := .Languages}}
+		{{- if ne $i 0 }}
+			{{$.Mode}}{{ $lang }}
+		{{- end}}
+	{{- end}}
+) 
+
+
+`
