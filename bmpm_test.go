@@ -7,6 +7,15 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+func Benchmark_detectLang(b *testing.B) {
+	detectLang("orange", genLangRules, uint64(genAll))
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		detectLang("orange", genLangRules, uint64(genAll))
+	}
+}
+
 func Test_detectLang(t *testing.T) {
 	cases := []struct {
 		word      string

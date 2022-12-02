@@ -2,6 +2,7 @@ package bmpm
 
 import (
 	"regexp"
+	"sync"
 )
 
 type Mode string
@@ -40,19 +41,18 @@ type Result struct {
 // 	return word
 // }
 
-func detectLang(word string, langRules []langRule, allLangs uint64) uint64 {
-	remaining := allLangs
+func detectLang(word string, langRules []langRule, availLangs uint64) uint64 {
+	remaining := availLangs
 
 	for _, rule := range langRules {
-		r := regexp.MustCompile(rule.pattern) // @todo regex cache
-		if !r.MatchString(word) {
+		if !regCache.get(rule.pattern).MatchString(word) {
 			continue
 		}
 
 		if rule.accept {
 			remaining &= rule.langs
 		} else {
-			remaining &= (allLangs ^ rule.langs) % (remaining + 1)
+			remaining &= (availLangs ^ rule.langs) % (remaining + 1)
 		}
 
 		if remaining == 0 {
@@ -61,4 +61,29 @@ func detectLang(word string, langRules []langRule, allLangs uint64) uint64 {
 	}
 
 	return remaining
+}
+
+var regCache = regexpCache{
+	data: make(map[string]*regexp.Regexp),
+}
+
+type regexpCache struct {
+	data map[string]*regexp.Regexp
+	mtx  sync.RWMutex
+}
+
+func (c *regexpCache) get(pattern string) *regexp.Regexp {
+	c.mtx.RLock()
+	r, ok := c.data[pattern]
+	c.mtx.RUnlock()
+	if ok {
+		return r
+	}
+
+	c.mtx.Lock()
+	defer c.mtx.Unlock()
+	r = regexp.MustCompile(pattern)
+	c.data[pattern] = r
+
+	return r
 }
