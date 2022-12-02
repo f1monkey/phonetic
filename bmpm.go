@@ -1,29 +1,64 @@
 package bmpm
 
-type Type string
-
-const (
-	Generic   Type = "generic"   // for general usage
-	Ashkenazi Type = "ashkenazi" // for ashkenazi names
-	Sephardic Type = "sephardic" // for sephardic names
+import (
+	"regexp"
 )
 
-// Encode encodes word using generic rules
-func Encode(word string) string {
-	return encode(Generic, word)
+type Mode string
+
+const (
+	Generic   Mode = "generic"   // for general usage
+	Ashkenazi Mode = "ashkenazi" // for ashkenazi names
+	Sephardic Mode = "sephardic" // for sephardic names
+)
+
+type Result struct {
+	Tokens []string
 }
 
-// EncodeAshkenazi encodes word using ashkenazi rules
-func EncodeAshkenazi(word string) string {
-	return encode(Ashkenazi, word)
-}
+// // Encode encodes a word using generic rules
+// func Encode(word string, lang Lang) Result {
+// 	return encode(Generic, word, lang)
+// }
 
-// EncodeSephardic encodes word using sephardic rules
-func EncodeSephardic(word string) string {
-	return encode(Sephardic, word)
-}
+// // EncodeAshkenazi encodes a word using ashkenazi rules
+// func EncodeAshkenazi(word string, lang Lang) Result {
+// 	return encode(Ashkenazi, word, lang)
+// }
 
-func encode(t Type, word string) string {
-	// todo
-	return word
+// // EncodeSephardic encodes a word using sephardic rules
+// func EncodeSephardic(word string, lang Lang) Result {
+// 	return encode(Sephardic, word, lang)
+// }
+
+// func encode(mode Mode, word string, lang Lang) Result {
+// 	if lang == None {
+// 		lang = detectLang(word, mode)
+// 	}
+
+// 	// todo
+// 	return word
+// }
+
+func detectLang(word string, langRules []langRule, allLangs uint64) uint64 {
+	remaining := allLangs
+
+	for _, rule := range langRules {
+		r := regexp.MustCompile(rule.pattern) // @todo regex cache
+		if !r.MatchString(word) {
+			continue
+		}
+
+		if rule.accept {
+			remaining &= rule.langs
+		} else {
+			remaining &= (allLangs ^ rule.langs) % (remaining + 1)
+		}
+
+		if remaining == 0 {
+			return remaining
+		}
+	}
+
+	return remaining
 }

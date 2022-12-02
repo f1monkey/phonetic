@@ -1,7 +1,7 @@
 // GENERATED CODE. DO NOT EDIT!
 package bmpm
 
-type ashLang int
+type ashLang uint64
 
 const (
 	ashany ashLang = 1 << iota
@@ -45,10 +45,22 @@ func (l ashLang) String() string {
 	return ""
 }
 
+const ashAll = ashany +
+	ashcyrillic +
+	ashenglish +
+	ashfrench +
+	ashgerman +
+	ashhebrew +
+	ashhungarian +
+	ashpolish +
+	ashromanian +
+	ashrussian +
+	ashspanish
+
 var ashRules = map[ashLang][]rule{
 	ashany: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yna",
 				"",
 				"$",
@@ -56,7 +68,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ina",
 				"",
 				"$",
@@ -64,7 +76,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"liova",
 				"",
 				"$",
@@ -72,7 +84,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lova",
 				"",
 				"$",
@@ -80,7 +92,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ova",
 				"",
 				"$",
@@ -88,7 +100,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eva",
 				"",
 				"$",
@@ -96,7 +108,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aia",
 				"",
 				"$",
@@ -104,7 +116,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aja",
 				"",
 				"$",
@@ -112,7 +124,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aya",
 				"",
 				"$",
@@ -120,7 +132,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowa",
 				"",
 				"$",
@@ -128,7 +140,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowa",
 				"",
 				"$",
@@ -136,7 +148,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owa",
 				"",
 				"$",
@@ -144,7 +156,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowna",
 				"",
 				"$",
@@ -152,7 +164,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowna",
 				"",
 				"$",
@@ -160,7 +172,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owna",
 				"",
 				"$",
@@ -168,7 +180,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lówna",
 				"",
 				"$",
@@ -176,7 +188,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kówna",
 				"",
 				"$",
@@ -184,7 +196,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ówna",
 				"",
 				"$",
@@ -192,7 +204,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"$",
@@ -200,7 +212,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rh",
 				"^",
 				"",
@@ -208,7 +220,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssch",
 				"",
 				"",
@@ -216,7 +228,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chsch",
 				"",
 				"",
@@ -224,7 +236,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsch",
 				"",
 				"",
@@ -232,7 +244,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"[ei]",
@@ -240,7 +252,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -248,7 +260,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssh",
 				"",
 				"",
@@ -256,7 +268,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"[äöü]",
@@ -264,7 +276,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"[aeiou]",
@@ -272,7 +284,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -280,7 +292,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -288,7 +300,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chs",
 				"",
 				"",
@@ -296,7 +308,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -304,7 +316,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -312,7 +324,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -320,7 +332,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"czy",
 				"",
 				"",
@@ -328,7 +340,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cze",
 				"",
 				"[bcdgkpstwzż]",
@@ -336,7 +348,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciewicz",
 				"",
 				"",
@@ -344,7 +356,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siewicz",
 				"",
 				"",
@@ -352,7 +364,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziewicz",
 				"",
 				"",
@@ -360,7 +372,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"riewicz",
 				"",
 				"",
@@ -368,7 +380,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"diewicz",
 				"",
 				"",
@@ -376,7 +388,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tiewicz",
 				"",
 				"",
@@ -384,7 +396,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iewicz",
 				"",
 				"",
@@ -392,7 +404,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewicz",
 				"",
 				"",
@@ -400,7 +412,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owicz",
 				"",
 				"",
@@ -408,7 +420,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"icz",
 				"",
 				"",
@@ -416,7 +428,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cz",
 				"",
 				"",
@@ -424,7 +436,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"[bcdgkpstwzż]",
@@ -432,7 +444,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"",
@@ -440,7 +452,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"[bp]",
@@ -448,7 +460,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"",
@@ -456,7 +468,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"[bp]",
@@ -464,7 +476,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"",
@@ -472,7 +484,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"[bcdgkpstwzż]",
@@ -480,7 +492,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"",
@@ -488,7 +500,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cio",
 				"",
 				"",
@@ -496,7 +508,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciu",
 				"",
 				"",
@@ -504,7 +516,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"$",
@@ -512,7 +524,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"",
@@ -520,7 +532,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ce",
 				"",
 				"[bcdgkpstwzż]",
@@ -528,7 +540,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ce",
 				"",
 				"",
@@ -536,7 +548,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cy",
 				"",
 				"",
@@ -544,7 +556,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssz",
 				"",
 				"",
@@ -552,7 +564,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"",
@@ -560,7 +572,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssp",
 				"",
 				"",
@@ -568,7 +580,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sp",
 				"",
 				"",
@@ -576,7 +588,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sst",
 				"",
 				"",
@@ -584,7 +596,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"st",
 				"",
 				"",
@@ -592,7 +604,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -600,7 +612,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"[bcdgkpstwzż]",
@@ -608,7 +620,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"",
@@ -616,7 +628,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"[bp]",
@@ -624,7 +636,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"",
@@ -632,7 +644,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"[bp]",
@@ -640,7 +652,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"",
@@ -648,7 +660,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"[bcdgkpstwzż]",
@@ -656,7 +668,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"",
@@ -664,7 +676,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sio",
 				"",
 				"",
@@ -672,7 +684,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siu",
 				"",
 				"",
@@ -680,7 +692,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"si",
 				"",
 				"",
@@ -688,7 +700,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[aeiouäöë]",
@@ -696,7 +708,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gue",
 				"",
 				"",
@@ -704,7 +716,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gui",
 				"",
 				"",
@@ -712,7 +724,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"guy",
 				"",
 				"",
@@ -720,7 +732,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"[ei]",
@@ -728,7 +740,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gauz",
 				"",
 				"$",
@@ -736,7 +748,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gaus",
 				"",
 				"$",
@@ -744,7 +756,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gol'ts",
 				"",
 				"$",
@@ -752,7 +764,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"golts",
 				"",
 				"$",
@@ -760,7 +772,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gol'tz",
 				"",
 				"$",
@@ -768,7 +780,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"goltz",
 				"",
 				"",
@@ -776,7 +788,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gol'ts",
 				"^",
 				"",
@@ -784,7 +796,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"golts",
 				"^",
 				"",
@@ -792,7 +804,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gol'tz",
 				"^",
 				"",
@@ -800,7 +812,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"goltz",
 				"^",
 				"",
@@ -808,7 +820,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gendler",
 				"",
 				"$",
@@ -816,7 +828,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gejmer",
 				"",
 				"$",
@@ -824,7 +836,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gejm",
 				"",
 				"$",
@@ -832,7 +844,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geymer",
 				"",
 				"$",
@@ -840,7 +852,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geym",
 				"",
 				"$",
@@ -848,7 +860,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geimer",
 				"",
 				"$",
@@ -856,7 +868,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geim",
 				"",
 				"$",
@@ -864,7 +876,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gof",
 				"",
 				"$",
@@ -872,7 +884,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ger",
 				"",
 				"$",
@@ -880,7 +892,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gen",
 				"",
 				"$",
@@ -888,7 +900,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gin",
 				"",
 				"$",
@@ -896,7 +908,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gie",
 				"",
 				"$",
@@ -904,7 +916,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gie",
 				"",
 				"",
@@ -912,7 +924,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ge",
 				"[yaeiou]",
 				"",
@@ -920,7 +932,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"[yaeiou]",
 				"",
@@ -928,7 +940,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ge",
 				"",
 				"",
@@ -936,7 +948,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"",
@@ -944,7 +956,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"[aeouáéóúüöőű]",
@@ -952,7 +964,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"",
@@ -960,7 +972,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"[jyaeiou]",
 				"[aouyei]",
@@ -968,7 +980,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[aouei]",
@@ -976,7 +988,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ej",
 				"",
 				"",
@@ -984,7 +996,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ej",
 				"",
 				"",
@@ -992,7 +1004,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ly",
 				"",
 				"[au]",
@@ -1000,7 +1012,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"li",
 				"",
 				"[au]",
@@ -1008,7 +1020,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lj",
 				"",
 				"[au]",
@@ -1016,7 +1028,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lio",
 				"",
 				"",
@@ -1024,7 +1036,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lyo",
 				"",
 				"",
@@ -1032,7 +1044,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ll",
 				"",
 				"",
@@ -1040,7 +1052,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"[aoeiuy]",
@@ -1048,7 +1060,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -1056,7 +1068,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pf",
 				"",
 				"",
@@ -1064,7 +1076,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -1072,7 +1084,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -1080,7 +1092,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rze",
 				"t",
 				"",
@@ -1088,7 +1100,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rze",
 				"",
 				"",
@@ -1096,7 +1108,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rzy",
 				"t",
 				"",
@@ -1104,7 +1116,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rzy",
 				"",
 				"",
@@ -1112,7 +1124,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"t",
 				"",
@@ -1120,7 +1132,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"",
 				"",
@@ -1128,7 +1140,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"$",
@@ -1136,7 +1148,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"^",
 				"",
@@ -1144,7 +1156,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -1152,7 +1164,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zh",
 				"",
 				"",
@@ -1160,7 +1172,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"[bcdgkpstwzż]",
@@ -1168,7 +1180,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"",
@@ -1176,7 +1188,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"[bp]",
@@ -1184,7 +1196,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"",
@@ -1192,7 +1204,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"[bp]",
@@ -1200,7 +1212,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"",
@@ -1208,7 +1220,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"[bcdgkpstwzż]",
@@ -1216,7 +1228,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"",
@@ -1224,7 +1236,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -1232,7 +1244,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziu",
 				"",
 				"",
@@ -1240,7 +1252,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zi",
 				"",
 				"",
@@ -1248,7 +1260,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"thal",
 				"",
 				"$",
@@ -1256,7 +1268,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"^",
 				"",
@@ -1264,7 +1276,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"[aeiou]",
@@ -1272,7 +1284,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -1280,7 +1292,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"vogel",
 				"",
 				"",
@@ -1288,7 +1300,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"^",
 				"",
@@ -1296,7 +1308,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[aeiouyäöü]",
 				"",
@@ -1304,7 +1316,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -1312,7 +1324,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"^",
 				"",
@@ -1320,7 +1332,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				" ",
 				"",
@@ -1328,7 +1340,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				" ",
@@ -1336,7 +1348,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				" ",
@@ -1344,7 +1356,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				" ",
@@ -1352,7 +1364,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"in",
 				"$",
@@ -1360,7 +1372,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"$",
@@ -1368,7 +1380,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"$",
@@ -1376,7 +1388,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -1384,7 +1396,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oue",
 				"",
 				"",
@@ -1392,7 +1404,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"",
@@ -1400,7 +1412,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -1408,7 +1420,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ue",
 				"",
 				"",
@@ -1416,7 +1428,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ae",
 				"",
 				"",
@@ -1424,7 +1436,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oe",
 				"",
 				"",
@@ -1432,7 +1444,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -1440,7 +1452,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -1448,7 +1460,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -1456,7 +1468,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -1464,7 +1476,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -1472,7 +1484,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aou]",
 				"",
@@ -1480,7 +1492,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"[bcdgkpstwzż]",
@@ -1488,7 +1500,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -1496,7 +1508,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ye",
 				"",
 				"",
@@ -1504,7 +1516,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[au]",
@@ -1512,7 +1524,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[au]",
@@ -1520,7 +1532,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"io",
 				"",
 				"",
@@ -1528,7 +1540,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yo",
 				"",
 				"",
@@ -1536,7 +1548,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ea",
 				"",
 				"",
@@ -1544,7 +1556,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"^",
 				"",
@@ -1552,7 +1564,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -1560,7 +1572,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uu",
 				"",
 				"",
@@ -1568,7 +1580,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ć",
 				"",
 				"",
@@ -1576,7 +1588,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ł",
 				"",
 				"",
@@ -1584,7 +1596,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ń",
 				"",
 				"",
@@ -1592,7 +1604,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -1600,7 +1612,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ś",
 				"",
 				"",
@@ -1608,7 +1620,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ş",
 				"",
 				"",
@@ -1616,7 +1628,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ţ",
 				"",
 				"",
@@ -1624,7 +1636,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ż",
 				"",
 				"",
@@ -1632,7 +1644,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ź",
 				"",
 				"",
@@ -1640,7 +1652,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"où",
 				"",
 				"",
@@ -1648,7 +1660,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"[bp]",
@@ -1656,7 +1668,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"",
@@ -1664,7 +1676,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ä",
 				"",
 				"",
@@ -1672,7 +1684,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -1680,7 +1692,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ă",
 				"",
 				"",
@@ -1688,7 +1700,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -1696,7 +1708,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -1704,7 +1716,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -1712,7 +1724,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -1720,7 +1732,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -1728,7 +1740,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"[bp]",
@@ -1736,7 +1748,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"",
@@ -1744,7 +1756,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -1752,7 +1764,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"î",
 				"",
 				"",
@@ -1760,7 +1772,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -1768,7 +1780,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ő",
 				"",
 				"",
@@ -1776,7 +1788,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -1784,7 +1796,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -1792,7 +1804,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -1800,7 +1812,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -1808,7 +1820,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -1816,7 +1828,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ß",
 				"",
 				"",
@@ -1824,7 +1836,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"'",
 				"",
 				"",
@@ -1832,7 +1844,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"\"",
 				"",
 				"",
@@ -1840,7 +1852,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"[bcdgkpstwzż]",
@@ -1848,7 +1860,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"[bcdgkpstwzż]",
@@ -1856,7 +1868,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"[bcćdgklłmnńrsśtwzźż]",
@@ -1864,7 +1876,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -1872,7 +1884,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -1880,7 +1892,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -1888,7 +1900,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -1896,7 +1908,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -1904,7 +1916,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -1912,7 +1924,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -1920,7 +1932,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -1928,7 +1940,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -1936,7 +1948,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -1944,7 +1956,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -1952,7 +1964,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -1960,7 +1972,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -1968,7 +1980,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -1976,7 +1988,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -1984,7 +1996,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -1992,7 +2004,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -2000,7 +2012,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -2008,7 +2020,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -2016,7 +2028,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -2024,7 +2036,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -2032,7 +2044,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -2040,7 +2052,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -2048,7 +2060,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -2056,7 +2068,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -2064,7 +2076,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -2074,7 +2086,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashcyrillic: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ця",
 				"",
 				"",
@@ -2082,7 +2094,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"цю",
 				"",
 				"",
@@ -2090,7 +2102,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"циа",
 				"",
 				"",
@@ -2098,7 +2110,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"цие",
 				"",
 				"",
@@ -2106,7 +2118,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"цио",
 				"",
 				"",
@@ -2114,7 +2126,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"циу",
 				"",
 				"",
@@ -2122,7 +2134,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"сие",
 				"",
 				"",
@@ -2130,7 +2142,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"сио",
 				"",
 				"",
@@ -2138,7 +2150,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"зие",
 				"",
 				"",
@@ -2146,7 +2158,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"зио",
 				"",
 				"",
@@ -2154,7 +2166,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гауз",
 				"",
 				"$",
@@ -2162,7 +2174,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гаус",
 				"",
 				"$",
@@ -2170,7 +2182,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гольц",
 				"",
 				"$",
@@ -2178,7 +2190,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"геймер",
 				"",
 				"$",
@@ -2186,7 +2198,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гейм",
 				"",
 				"$",
@@ -2194,7 +2206,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гоф",
 				"",
 				"$",
@@ -2202,7 +2214,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гер",
 				"",
 				"$",
@@ -2210,7 +2222,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ген",
 				"",
 				"$",
@@ -2218,7 +2230,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гин",
 				"",
 				"$",
@@ -2226,7 +2238,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"г",
 				"(й|ё|я|ю|ы|а|е|о|и|у)",
 				"(а|е|о|и|у)",
@@ -2234,7 +2246,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"г",
 				"",
 				"(а|е|о|и|у)",
@@ -2242,7 +2254,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ля",
 				"",
 				"",
@@ -2250,7 +2262,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"лю",
 				"",
 				"",
@@ -2258,7 +2270,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"лё",
 				"",
 				"",
@@ -2266,7 +2278,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"лио",
 				"",
 				"",
@@ -2274,7 +2286,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ле",
 				"",
 				"",
@@ -2282,7 +2294,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ийе",
 				"",
 				"",
@@ -2290,7 +2302,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ие",
 				"",
 				"",
@@ -2298,7 +2310,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ыйе",
 				"",
 				"",
@@ -2306,7 +2318,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ые",
 				"",
 				"",
@@ -2314,7 +2326,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ий",
 				"",
 				"(а|о|у)",
@@ -2322,7 +2334,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ый",
 				"",
 				"(а|о|у)",
@@ -2330,7 +2342,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ий",
 				"",
 				"$",
@@ -2338,7 +2350,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ый",
 				"",
 				"$",
@@ -2346,7 +2358,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ё",
 				"",
 				"",
@@ -2354,7 +2366,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ей",
 				"^",
 				"",
@@ -2362,7 +2374,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"е",
 				"(а|е|о|у)",
 				"",
@@ -2370,7 +2382,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"е",
 				"^",
 				"",
@@ -2378,7 +2390,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"эй",
 				"",
 				"",
@@ -2386,7 +2398,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ей",
 				"",
 				"",
@@ -2394,7 +2406,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ауе",
 				"",
 				"",
@@ -2402,7 +2414,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ауэ",
 				"",
 				"",
@@ -2410,7 +2422,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"а",
 				"",
 				"",
@@ -2418,7 +2430,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"б",
 				"",
 				"",
@@ -2426,7 +2438,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"в",
 				"",
 				"",
@@ -2434,7 +2446,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"г",
 				"",
 				"",
@@ -2442,7 +2454,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"д",
 				"",
 				"",
@@ -2450,7 +2462,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"е",
 				"",
 				"",
@@ -2458,7 +2470,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ж",
 				"",
 				"",
@@ -2466,7 +2478,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"з",
 				"",
 				"",
@@ -2474,7 +2486,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"и",
 				"",
 				"",
@@ -2482,7 +2494,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"й",
 				"",
 				"",
@@ -2490,7 +2502,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"к",
 				"",
 				"",
@@ -2498,7 +2510,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"л",
 				"",
 				"",
@@ -2506,7 +2518,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"м",
 				"",
 				"",
@@ -2514,7 +2526,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"н",
 				"",
 				"",
@@ -2522,7 +2534,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"о",
 				"",
 				"",
@@ -2530,7 +2542,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"п",
 				"",
 				"",
@@ -2538,7 +2550,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"р",
 				"",
 				"",
@@ -2546,7 +2558,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"с",
 				"",
 				"с",
@@ -2554,7 +2566,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"с",
 				"",
 				"",
@@ -2562,7 +2574,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"т",
 				"",
 				"",
@@ -2570,7 +2582,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"у",
 				"",
 				"",
@@ -2578,7 +2590,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ф",
 				"",
 				"",
@@ -2586,7 +2598,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"х",
 				"",
 				"",
@@ -2594,7 +2606,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ц",
 				"",
 				"",
@@ -2602,7 +2614,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ч",
 				"",
 				"",
@@ -2610,7 +2622,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ш",
 				"",
 				"",
@@ -2618,7 +2630,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"щ",
 				"",
 				"",
@@ -2626,7 +2638,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ъ",
 				"",
 				"",
@@ -2634,7 +2646,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ы",
 				"",
 				"",
@@ -2642,7 +2654,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ь",
 				"",
 				"",
@@ -2650,7 +2662,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"э",
 				"",
 				"",
@@ -2658,7 +2670,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ю",
 				"",
 				"",
@@ -2666,7 +2678,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"я",
 				"",
 				"",
@@ -2676,7 +2688,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashenglish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tch",
 				"",
 				"",
@@ -2684,7 +2696,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -2692,7 +2704,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -2700,7 +2712,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cc",
 				"",
 				"[iey]",
@@ -2708,7 +2720,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"c",
@@ -2716,7 +2728,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[iey]",
@@ -2724,7 +2736,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -2732,7 +2744,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"^",
 				"",
@@ -2740,7 +2752,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"",
@@ -2748,7 +2760,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"",
@@ -2756,7 +2768,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[iey]",
@@ -2764,7 +2776,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -2772,7 +2784,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -2780,7 +2792,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -2788,7 +2800,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -2796,7 +2808,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -2804,7 +2816,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"who",
 				"^",
 				"",
@@ -2812,7 +2824,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"wh",
 				"^",
 				"",
@@ -2820,7 +2832,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -2828,7 +2840,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"[^aeiou]",
@@ -2836,7 +2848,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"^",
 				"",
@@ -2844,7 +2856,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -2852,7 +2864,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -2860,7 +2872,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kn",
 				"^",
 				"",
@@ -2868,7 +2880,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mb",
 				"",
 				"$",
@@ -2876,7 +2888,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ng",
 				"",
 				"$",
@@ -2884,7 +2896,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pn",
 				"^",
 				"",
@@ -2892,7 +2904,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ps",
 				"^",
 				"",
@@ -2900,7 +2912,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -2908,7 +2920,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -2916,7 +2928,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tia",
 				"",
 				"",
@@ -2924,7 +2936,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tio",
 				"",
 				"",
@@ -2932,7 +2944,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"wr",
 				"^",
 				"",
@@ -2940,7 +2952,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -2948,7 +2960,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"^",
 				"",
@@ -2956,7 +2968,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -2964,7 +2976,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				" ",
 				"",
@@ -2972,7 +2984,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"^",
 				"[aeiouy]",
@@ -2980,7 +2992,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -2988,7 +3000,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oue",
 				"",
 				"",
@@ -2996,7 +3008,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -3004,7 +3016,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -3012,7 +3024,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"[^aeiou]e",
@@ -3020,7 +3032,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -3028,7 +3040,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -3036,7 +3048,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -3044,7 +3056,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ear",
 				"",
 				"",
@@ -3052,7 +3064,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ea",
 				"",
 				"",
@@ -3060,7 +3072,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -3068,7 +3080,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"[^aeiou]e",
@@ -3076,7 +3088,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -3084,7 +3096,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -3092,7 +3104,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -3100,7 +3112,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[^aeiou]e",
@@ -3108,7 +3120,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -3116,7 +3128,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oa",
 				"",
 				"",
@@ -3124,7 +3136,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oi",
 				"",
 				"",
@@ -3132,7 +3144,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -3140,7 +3152,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -3148,7 +3160,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oy",
 				"",
 				"",
@@ -3156,7 +3168,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"[^aeiou]e",
@@ -3164,7 +3176,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -3172,7 +3184,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[^aeiou]e",
@@ -3180,7 +3192,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"r",
@@ -3188,7 +3200,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -3196,7 +3208,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -3204,7 +3216,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -3212,7 +3224,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -3220,7 +3232,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -3228,7 +3240,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -3236,7 +3248,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -3244,7 +3256,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -3252,7 +3264,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -3260,7 +3272,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -3268,7 +3280,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -3276,7 +3288,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -3284,7 +3296,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -3292,7 +3304,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -3300,7 +3312,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -3308,7 +3320,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -3318,7 +3330,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashfrench: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -3326,7 +3338,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -3334,7 +3346,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -3342,7 +3354,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -3350,7 +3362,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -3358,7 +3370,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiyéèê]",
@@ -3366,7 +3378,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -3374,7 +3386,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"",
@@ -3382,7 +3394,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[eiy]",
@@ -3390,7 +3402,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gue",
 				"",
 				"$",
@@ -3398,7 +3410,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[eiy]",
@@ -3406,7 +3418,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"que",
 				"",
 				"$",
@@ -3414,7 +3426,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -3422,7 +3434,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -3430,7 +3442,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiouyéèê]",
 				"[aeiouyéèê]",
@@ -3438,7 +3450,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -3446,7 +3458,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -3454,7 +3466,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -3462,7 +3474,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -3470,7 +3482,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ouh",
 				"",
 				"[aioe]",
@@ -3478,7 +3490,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"[aeio]",
@@ -3486,7 +3498,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -3494,7 +3506,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aeio]",
@@ -3502,7 +3514,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -3510,7 +3522,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eau",
 				"",
 				"",
@@ -3518,7 +3530,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -3526,7 +3538,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -3534,7 +3546,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -3542,7 +3554,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -3550,7 +3562,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -3558,7 +3570,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -3566,7 +3578,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -3574,7 +3586,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"où",
 				"",
 				"",
@@ -3582,7 +3594,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -3590,7 +3602,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oi",
 				"",
 				"",
@@ -3598,7 +3610,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -3606,7 +3618,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -3614,7 +3626,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[ou]",
 				"",
@@ -3622,7 +3634,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -3630,7 +3642,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -3638,7 +3650,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aoeu]",
@@ -3646,7 +3658,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"",
@@ -3654,7 +3666,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"",
@@ -3662,7 +3674,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"",
@@ -3670,7 +3682,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -3678,7 +3690,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -3686,7 +3698,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -3694,7 +3706,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -3702,7 +3714,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -3710,7 +3722,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -3718,7 +3730,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -3726,7 +3738,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -3734,7 +3746,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -3742,7 +3754,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -3750,7 +3762,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -3758,7 +3770,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -3766,7 +3778,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -3774,7 +3786,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -3782,7 +3794,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -3790,7 +3802,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -3798,7 +3810,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -3806,7 +3818,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -3814,7 +3826,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -3822,7 +3834,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -3830,7 +3842,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -3840,7 +3852,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashgerman: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziu",
 				"",
 				"",
@@ -3848,7 +3860,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"",
@@ -3856,7 +3868,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -3864,7 +3876,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssch",
 				"",
 				"",
@@ -3872,7 +3884,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chsch",
 				"",
 				"",
@@ -3880,7 +3892,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewitsch",
 				"",
 				"$",
@@ -3888,7 +3900,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owitsch",
 				"",
 				"$",
@@ -3896,7 +3908,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"evitsch",
 				"",
 				"$",
@@ -3904,7 +3916,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ovitsch",
 				"",
 				"$",
@@ -3912,7 +3924,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"witsch",
 				"",
 				"$",
@@ -3920,7 +3932,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"vitsch",
 				"",
 				"$",
@@ -3928,7 +3940,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -3936,7 +3948,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chs",
 				"",
 				"",
@@ -3944,7 +3956,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -3952,7 +3964,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -3960,7 +3972,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiy]",
@@ -3968,7 +3980,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sp",
 				"^",
 				"",
@@ -3976,7 +3988,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"st",
 				"^",
 				"",
@@ -3984,7 +3996,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssp",
 				"",
 				"",
@@ -3992,7 +4004,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sp",
 				"",
 				"",
@@ -4000,7 +4012,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sst",
 				"",
 				"",
@@ -4008,7 +4020,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"st",
 				"",
 				"",
@@ -4016,7 +4028,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pf",
 				"",
 				"",
@@ -4024,7 +4036,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -4032,7 +4044,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -4040,7 +4052,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewitz",
 				"",
 				"$",
@@ -4048,7 +4060,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewiz",
 				"",
 				"$",
@@ -4056,7 +4068,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"evitz",
 				"",
 				"$",
@@ -4064,7 +4076,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eviz",
 				"",
 				"$",
@@ -4072,7 +4084,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owitz",
 				"",
 				"$",
@@ -4080,7 +4092,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owiz",
 				"",
 				"$",
@@ -4088,7 +4100,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ovitz",
 				"",
 				"$",
@@ -4096,7 +4108,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oviz",
 				"",
 				"$",
@@ -4104,7 +4116,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"witz",
 				"",
 				"$",
@@ -4112,7 +4124,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"wiz",
 				"",
 				"$",
@@ -4120,7 +4132,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"vitz",
 				"",
 				"$",
@@ -4128,7 +4140,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"viz",
 				"",
 				"$",
@@ -4136,7 +4148,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -4144,7 +4156,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"thal",
 				"",
 				"$",
@@ -4152,7 +4164,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"^",
 				"",
@@ -4160,7 +4172,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"[äöüaeiou]",
@@ -4168,7 +4180,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -4176,7 +4188,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rh",
 				"^",
 				"",
@@ -4184,7 +4196,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[aeiouyäöü]",
 				"",
@@ -4192,7 +4204,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"^",
 				"",
@@ -4200,7 +4212,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -4208,7 +4220,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[äöüaeiouy]",
@@ -4216,7 +4228,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiouyäöüj]",
 				"[aeiouyäöü]",
@@ -4224,7 +4236,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ß",
 				"",
 				"",
@@ -4232,7 +4244,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"$",
@@ -4240,7 +4252,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -4248,7 +4260,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ue",
 				"",
 				"",
@@ -4256,7 +4268,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ae",
 				"",
 				"",
@@ -4264,7 +4276,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oe",
 				"",
 				"",
@@ -4272,7 +4284,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -4280,7 +4292,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ä",
 				"",
 				"",
@@ -4288,7 +4300,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -4296,7 +4308,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -4304,7 +4316,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -4312,7 +4324,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -4320,7 +4332,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -4328,7 +4340,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aou]",
 				"",
@@ -4336,7 +4348,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -4344,7 +4356,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -4352,7 +4364,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aoeu]",
@@ -4360,7 +4372,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -4368,7 +4380,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ã",
 				"",
 				"",
@@ -4376,7 +4388,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ő",
 				"",
 				"",
@@ -4384,7 +4396,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -4392,7 +4404,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -4400,7 +4412,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -4408,7 +4420,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -4416,7 +4428,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -4424,7 +4436,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -4432,7 +4444,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -4440,7 +4452,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -4448,7 +4460,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -4456,7 +4468,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -4464,7 +4476,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -4472,7 +4484,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -4480,7 +4492,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -4488,7 +4500,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -4496,7 +4508,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -4504,7 +4516,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -4512,7 +4524,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -4520,7 +4532,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -4528,7 +4540,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -4536,7 +4548,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -4544,7 +4556,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -4552,7 +4564,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -4560,7 +4572,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -4568,7 +4580,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -4576,7 +4588,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -4584,7 +4596,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -4592,7 +4604,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -4600,7 +4612,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -4610,7 +4622,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashhebrew: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"אי",
 				"",
 				"",
@@ -4618,7 +4630,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"עי",
 				"",
 				"",
@@ -4626,7 +4638,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"עו",
 				"",
 				"",
@@ -4634,7 +4646,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"או",
 				"",
 				"",
@@ -4642,7 +4654,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ג׳",
 				"",
 				"",
@@ -4650,7 +4662,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ד׳",
 				"",
 				"",
@@ -4658,7 +4670,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"א",
 				"",
 				"",
@@ -4666,7 +4678,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ב",
 				"",
 				"",
@@ -4674,7 +4686,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ג",
 				"",
 				"",
@@ -4682,7 +4694,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ד",
 				"",
 				"",
@@ -4690,7 +4702,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"^",
 				"",
@@ -4698,7 +4710,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"",
 				"$",
@@ -4706,7 +4718,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"",
 				"",
@@ -4714,7 +4726,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"וו",
 				"",
 				"",
@@ -4722,7 +4734,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"וי",
 				"",
 				"",
@@ -4730,7 +4742,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ו",
 				"",
 				"",
@@ -4738,7 +4750,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ז",
 				"",
 				"",
@@ -4746,7 +4758,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ח",
 				"",
 				"",
@@ -4754,7 +4766,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ט",
 				"",
 				"",
@@ -4762,7 +4774,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"יי",
 				"",
 				"",
@@ -4770,7 +4782,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"י",
 				"",
 				"",
@@ -4778,7 +4790,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ך",
 				"",
 				"",
@@ -4786,7 +4798,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"כ",
 				"^",
 				"",
@@ -4794,7 +4806,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"כ",
 				"",
 				"",
@@ -4802,7 +4814,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ל",
 				"",
 				"",
@@ -4810,7 +4822,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ם",
 				"",
 				"",
@@ -4818,7 +4830,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"מ",
 				"",
 				"",
@@ -4826,7 +4838,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ן",
 				"",
 				"",
@@ -4834,7 +4846,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"נ",
 				"",
 				"",
@@ -4842,7 +4854,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ס",
 				"",
 				"",
@@ -4850,7 +4862,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ע",
 				"",
 				"",
@@ -4858,7 +4870,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ף",
 				"",
 				"",
@@ -4866,7 +4878,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"פ",
 				"",
 				"",
@@ -4874,7 +4886,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ץ",
 				"",
 				"",
@@ -4882,7 +4894,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"צ",
 				"",
 				"",
@@ -4890,7 +4902,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ק",
 				"",
 				"",
@@ -4898,7 +4910,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ר",
 				"",
 				"",
@@ -4906,7 +4918,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ש",
 				"",
 				"",
@@ -4914,7 +4926,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ת",
 				"",
 				"",
@@ -4924,7 +4936,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashhungarian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"",
@@ -4932,7 +4944,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zs",
 				"",
 				"",
@@ -4940,7 +4952,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cs",
 				"",
 				"",
@@ -4948,7 +4960,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -4956,7 +4968,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -4964,7 +4976,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aj",
 				"",
 				"",
@@ -4972,7 +4984,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -4980,7 +4992,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -4988,7 +5000,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[áo]",
 				"",
@@ -4996,7 +5008,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[áo]",
 				"",
@@ -5004,7 +5016,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -5012,7 +5024,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ely",
 				"",
 				"",
@@ -5020,7 +5032,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ly",
 				"",
 				"",
@@ -5028,7 +5040,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"[aeouáéóúüöőű]",
@@ -5036,7 +5048,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"",
@@ -5044,7 +5056,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"[aeouáéóúüöőű]",
@@ -5052,7 +5064,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"",
@@ -5060,7 +5072,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ty",
 				"",
 				"[aeouáéóúüöőű]",
@@ -5068,7 +5080,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ty",
 				"",
 				"",
@@ -5076,7 +5088,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -5084,7 +5096,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -5092,7 +5104,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -5100,7 +5112,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -5108,7 +5120,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -5116,7 +5128,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -5124,7 +5136,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -5132,7 +5144,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ő",
 				"",
 				"",
@@ -5140,7 +5152,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -5148,7 +5160,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -5156,7 +5168,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -5164,7 +5176,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -5172,7 +5184,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -5180,7 +5192,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -5188,7 +5200,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -5196,7 +5208,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -5204,7 +5216,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -5212,7 +5224,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -5220,7 +5232,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -5228,7 +5240,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -5236,7 +5248,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -5244,7 +5256,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -5252,7 +5264,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -5260,7 +5272,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -5268,7 +5280,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -5276,7 +5288,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -5284,7 +5296,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -5292,7 +5304,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -5300,7 +5312,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -5308,7 +5320,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -5316,7 +5328,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -5324,7 +5336,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -5332,7 +5344,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -5340,7 +5352,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -5348,7 +5360,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -5356,7 +5368,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -5364,7 +5376,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -5374,7 +5386,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashpolish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ska",
 				"",
 				"$",
@@ -5382,7 +5394,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cka",
 				"",
 				"$",
@@ -5390,7 +5402,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowa",
 				"",
 				"$",
@@ -5398,7 +5410,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowa",
 				"",
 				"$",
@@ -5406,7 +5418,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owa",
 				"",
 				"$",
@@ -5414,7 +5426,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowna",
 				"",
 				"$",
@@ -5422,7 +5434,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowna",
 				"",
 				"$",
@@ -5430,7 +5442,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owna",
 				"",
 				"$",
@@ -5438,7 +5450,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lówna",
 				"",
 				"$",
@@ -5446,7 +5458,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kówna",
 				"",
 				"$",
@@ -5454,7 +5466,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ówna",
 				"",
 				"$",
@@ -5462,7 +5474,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"$",
@@ -5470,7 +5482,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"czy",
 				"",
 				"",
@@ -5478,7 +5490,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cze",
 				"",
 				"[bcdgkpstwzż]",
@@ -5486,7 +5498,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciewicz",
 				"",
 				"",
@@ -5494,7 +5506,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siewicz",
 				"",
 				"",
@@ -5502,7 +5514,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziewicz",
 				"",
 				"",
@@ -5510,7 +5522,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"riewicz",
 				"",
 				"",
@@ -5518,7 +5530,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"diewicz",
 				"",
 				"",
@@ -5526,7 +5538,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tiewicz",
 				"",
 				"",
@@ -5534,7 +5546,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iewicz",
 				"",
 				"",
@@ -5542,7 +5554,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewicz",
 				"",
 				"",
@@ -5550,7 +5562,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owicz",
 				"",
 				"",
@@ -5558,7 +5570,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"icz",
 				"",
 				"",
@@ -5566,7 +5578,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cz",
 				"",
 				"",
@@ -5574,7 +5586,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -5582,7 +5594,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"[bcdgkpstwzż]",
@@ -5590,7 +5602,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"",
@@ -5598,7 +5610,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"[bp]",
@@ -5606,7 +5618,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"",
@@ -5614,7 +5626,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"[bp]",
@@ -5622,7 +5634,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"",
@@ -5630,7 +5642,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"[bcdgkpstwzż]",
@@ -5638,7 +5650,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"",
@@ -5646,7 +5658,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cio",
 				"",
 				"",
@@ -5654,7 +5666,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciu",
 				"",
 				"",
@@ -5662,7 +5674,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"",
@@ -5670,7 +5682,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ć",
 				"",
 				"",
@@ -5678,7 +5690,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssz",
 				"",
 				"",
@@ -5686,7 +5698,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"",
@@ -5694,7 +5706,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"[bcdgkpstwzż]",
@@ -5702,7 +5714,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"",
@@ -5710,7 +5722,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"[bp]",
@@ -5718,7 +5730,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"",
@@ -5726,7 +5738,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"[bp]",
@@ -5734,7 +5746,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"",
@@ -5742,7 +5754,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"[bcdgkpstwzż]",
@@ -5750,7 +5762,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"",
@@ -5758,7 +5770,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sio",
 				"",
 				"",
@@ -5766,7 +5778,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siu",
 				"",
 				"",
@@ -5774,7 +5786,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"si",
 				"",
 				"",
@@ -5782,7 +5794,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ś",
 				"",
 				"",
@@ -5790,7 +5802,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"[bcdgkpstwzż]",
@@ -5798,7 +5810,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"",
@@ -5806,7 +5818,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"[bp]",
@@ -5814,7 +5826,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"",
@@ -5822,7 +5834,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"[bp]",
@@ -5830,7 +5842,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"",
@@ -5838,7 +5850,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"[bcdgkpstwzż]",
@@ -5846,7 +5858,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"",
@@ -5854,7 +5866,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -5862,7 +5874,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziu",
 				"",
 				"",
@@ -5870,7 +5882,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zi",
 				"",
 				"",
@@ -5878,7 +5890,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"że",
 				"",
 				"[bcdgkpstwzż]",
@@ -5886,7 +5898,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"że",
 				"",
 				"[bcdgkpstwzż]",
@@ -5894,7 +5906,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"że",
 				"",
 				"",
@@ -5902,7 +5914,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"źe",
 				"",
 				"",
@@ -5910,7 +5922,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ży",
 				"",
 				"",
@@ -5918,7 +5930,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"źi",
 				"",
 				"",
@@ -5926,7 +5938,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ż",
 				"",
 				"",
@@ -5934,7 +5946,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ź",
 				"",
 				"",
@@ -5942,7 +5954,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rze",
 				"t",
 				"",
@@ -5950,7 +5962,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rze",
 				"",
 				"",
@@ -5958,7 +5970,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rzy",
 				"t",
 				"",
@@ -5966,7 +5978,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rzy",
 				"",
 				"",
@@ -5974,7 +5986,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"t",
 				"",
@@ -5982,7 +5994,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"",
 				"",
@@ -5990,7 +6002,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lio",
 				"",
 				"",
@@ -5998,7 +6010,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ł",
 				"",
 				"",
@@ -6006,7 +6018,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ń",
 				"",
 				"",
@@ -6014,7 +6026,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -6022,7 +6034,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"s",
@@ -6030,7 +6042,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -6038,7 +6050,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"[bp]",
@@ -6046,7 +6058,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"[bp]",
@@ -6054,7 +6066,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"",
@@ -6062,7 +6074,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"",
@@ -6070,7 +6082,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ije",
 				"",
 				"",
@@ -6078,7 +6090,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yje",
 				"",
 				"",
@@ -6086,7 +6098,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iie",
 				"",
 				"",
@@ -6094,7 +6106,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yie",
 				"",
 				"",
@@ -6102,7 +6114,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iye",
 				"",
 				"",
@@ -6110,7 +6122,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yye",
 				"",
 				"",
@@ -6118,7 +6130,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"[aou]",
@@ -6126,7 +6138,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"[aou]",
@@ -6134,7 +6146,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"[aou]",
@@ -6142,7 +6154,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"[aou]",
@@ -6150,7 +6162,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				"[aou]",
@@ -6158,7 +6170,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"[aou]",
@@ -6166,7 +6178,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rie",
 				"",
 				"",
@@ -6174,7 +6186,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"die",
 				"",
 				"",
@@ -6182,7 +6194,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tie",
 				"",
 				"",
@@ -6190,7 +6202,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"[bcdgkpstwzż]",
@@ -6198,7 +6210,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -6206,7 +6218,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -6214,7 +6226,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"",
@@ -6222,7 +6234,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -6230,7 +6242,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -6238,7 +6250,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ej",
 				"",
 				"",
@@ -6246,7 +6258,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -6254,7 +6266,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -6262,7 +6274,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aj",
 				"",
 				"",
@@ -6270,7 +6282,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[ou]",
 				"",
@@ -6278,7 +6290,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[ou]",
 				"",
@@ -6286,7 +6298,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -6294,7 +6306,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeou]",
@@ -6302,7 +6314,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"[bcdgkpstwzż]",
@@ -6310,7 +6322,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"[bcdgkpstwzż]",
@@ -6318,7 +6330,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"[bcćdgklłmnńrsśtwzźż]",
@@ -6326,7 +6338,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -6334,7 +6346,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -6342,7 +6354,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -6350,7 +6362,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -6358,7 +6370,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -6366,7 +6378,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -6374,7 +6386,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -6382,7 +6394,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -6390,7 +6402,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -6398,7 +6410,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -6406,7 +6418,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -6414,7 +6426,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -6422,7 +6434,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -6430,7 +6442,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -6438,7 +6450,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -6446,7 +6458,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -6454,7 +6466,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -6462,7 +6474,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -6470,7 +6482,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -6478,7 +6490,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -6486,7 +6498,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -6494,7 +6506,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -6502,7 +6514,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -6510,7 +6522,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -6518,7 +6530,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -6526,7 +6538,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -6536,7 +6548,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashromanian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -6544,7 +6556,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ce",
 				"",
 				"",
@@ -6552,7 +6564,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"",
@@ -6560,7 +6572,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -6568,7 +6580,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -6576,7 +6588,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -6584,7 +6596,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"",
@@ -6592,7 +6604,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -6600,7 +6612,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"",
@@ -6608,7 +6620,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -6616,7 +6628,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -6624,7 +6636,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -6632,7 +6644,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ţ",
 				"",
 				"",
@@ -6640,7 +6652,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ş",
 				"",
 				"",
@@ -6648,7 +6660,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -6656,7 +6668,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -6664,7 +6676,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -6672,7 +6684,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -6680,7 +6692,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -6688,7 +6700,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -6696,7 +6708,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"î",
 				"",
 				"",
@@ -6704,7 +6716,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ea",
 				"",
 				"",
@@ -6712,7 +6724,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ă",
 				"",
 				"",
@@ -6720,7 +6732,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -6728,7 +6740,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -6736,7 +6748,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -6744,7 +6756,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -6752,7 +6764,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -6760,7 +6772,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -6768,7 +6780,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -6776,7 +6788,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -6784,7 +6796,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -6792,7 +6804,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -6800,7 +6812,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -6808,7 +6820,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -6816,7 +6828,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -6824,7 +6836,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -6832,7 +6844,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -6840,7 +6852,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -6848,7 +6860,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -6856,7 +6868,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -6864,7 +6876,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -6872,7 +6884,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -6882,7 +6894,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashrussian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yna",
 				"",
 				"$",
@@ -6890,7 +6902,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ina",
 				"",
 				"$",
@@ -6898,7 +6910,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"liova",
 				"",
 				"$",
@@ -6906,7 +6918,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lova",
 				"",
 				"$",
@@ -6914,7 +6926,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ova",
 				"",
 				"$",
@@ -6922,7 +6934,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eva",
 				"",
 				"$",
@@ -6930,7 +6942,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aia",
 				"",
 				"$",
@@ -6938,7 +6950,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aja",
 				"",
 				"$",
@@ -6946,7 +6958,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aya",
 				"",
 				"$",
@@ -6954,7 +6966,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsya",
 				"",
 				"",
@@ -6962,7 +6974,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsyu",
 				"",
 				"",
@@ -6970,7 +6982,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsia",
 				"",
 				"",
@@ -6978,7 +6990,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsie",
 				"",
 				"",
@@ -6986,7 +6998,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsio",
 				"",
 				"",
@@ -6994,7 +7006,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsye",
 				"",
 				"",
@@ -7002,7 +7014,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsyo",
 				"",
 				"",
@@ -7010,7 +7022,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsiu",
 				"",
 				"",
@@ -7018,7 +7030,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"",
@@ -7026,7 +7038,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sio",
 				"",
 				"",
@@ -7034,7 +7046,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"",
@@ -7042,7 +7054,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -7050,7 +7062,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sye",
 				"",
 				"",
@@ -7058,7 +7070,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"syo",
 				"",
 				"",
@@ -7066,7 +7078,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zye",
 				"",
 				"",
@@ -7074,7 +7086,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zyo",
 				"",
 				"",
@@ -7082,7 +7094,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gauz",
 				"",
 				"$",
@@ -7090,7 +7102,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gaus",
 				"",
 				"$",
@@ -7098,7 +7110,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gol'ts",
 				"",
 				"$",
@@ -7106,7 +7118,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"golts",
 				"",
 				"$",
@@ -7114,7 +7126,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gol'tz",
 				"",
 				"$",
@@ -7122,7 +7134,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"goltz",
 				"",
 				"$",
@@ -7130,7 +7142,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gejmer",
 				"",
 				"$",
@@ -7138,7 +7150,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gejm",
 				"",
 				"$",
@@ -7146,7 +7158,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geimer",
 				"",
 				"$",
@@ -7154,7 +7166,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geim",
 				"",
 				"$",
@@ -7162,7 +7174,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geymer",
 				"",
 				"$",
@@ -7170,7 +7182,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"geym",
 				"",
 				"$",
@@ -7178,7 +7190,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gendler",
 				"",
 				"$",
@@ -7186,7 +7198,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gof",
 				"",
 				"$",
@@ -7194,7 +7206,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gojf",
 				"",
 				"$",
@@ -7202,7 +7214,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"goyf",
 				"",
 				"$",
@@ -7210,7 +7222,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"goif",
 				"",
 				"$",
@@ -7218,7 +7230,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ger",
 				"",
 				"$",
@@ -7226,7 +7238,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gen",
 				"",
 				"$",
@@ -7234,7 +7246,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gin",
 				"",
 				"$",
@@ -7242,7 +7254,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"",
 				"",
@@ -7250,7 +7262,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kog",
 				"^",
 				"[aeoiu]",
@@ -7258,7 +7270,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kag",
 				"^",
 				"[aeoiu]",
@@ -7266,7 +7278,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"[jaeoiuy]",
 				"[aeoiu]",
@@ -7274,7 +7286,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[aeoiu]",
@@ -7282,7 +7294,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -7290,7 +7302,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -7298,7 +7310,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -7306,7 +7318,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssh",
 				"",
 				"",
@@ -7314,7 +7326,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -7322,7 +7334,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zh",
 				"",
 				"",
@@ -7330,7 +7342,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"$",
@@ -7338,7 +7350,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -7346,7 +7358,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[iey]",
@@ -7354,7 +7366,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -7362,7 +7374,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -7370,7 +7382,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -7378,7 +7390,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"s",
@@ -7386,7 +7398,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -7394,7 +7406,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -7402,7 +7414,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lya",
 				"",
 				"",
@@ -7410,7 +7422,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lyu",
 				"",
 				"",
@@ -7418,7 +7430,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lia",
 				"",
 				"",
@@ -7426,7 +7438,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"liu",
 				"",
 				"",
@@ -7434,7 +7446,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lja",
 				"",
 				"",
@@ -7442,7 +7454,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lju",
 				"",
 				"",
@@ -7450,7 +7462,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"le",
 				"",
 				"",
@@ -7458,7 +7470,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lyo",
 				"",
 				"",
@@ -7466,7 +7478,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lio",
 				"",
 				"",
@@ -7474,7 +7486,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ije",
 				"",
 				"",
@@ -7482,7 +7494,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -7490,7 +7502,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iye",
 				"",
 				"",
@@ -7498,7 +7510,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iie",
 				"",
 				"",
@@ -7506,7 +7518,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yje",
 				"",
 				"",
@@ -7514,7 +7526,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ye",
 				"",
 				"",
@@ -7522,7 +7534,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yye",
 				"",
 				"",
@@ -7530,7 +7542,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yie",
 				"",
 				"",
@@ -7538,7 +7550,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"[aou]",
@@ -7546,7 +7558,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				"[aou]",
@@ -7554,7 +7566,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"[aou]",
@@ -7562,7 +7574,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"[aou]",
@@ -7570,7 +7582,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"[aou]",
@@ -7578,7 +7590,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"[aou]",
@@ -7586,7 +7598,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"io",
 				"",
 				"",
@@ -7594,7 +7606,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[au]",
@@ -7602,7 +7614,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -7610,7 +7622,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -7618,7 +7630,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -7626,7 +7638,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ej",
 				"",
 				"",
@@ -7634,7 +7646,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yo",
 				"",
 				"",
@@ -7642,7 +7654,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[au]",
@@ -7650,7 +7662,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aiou]",
 				"",
@@ -7658,7 +7670,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				" ",
@@ -7666,7 +7678,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				" ",
@@ -7674,7 +7686,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				" ",
@@ -7682,7 +7694,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				" ",
@@ -7690,7 +7702,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"$",
@@ -7698,7 +7710,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"$",
@@ -7706,7 +7718,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"^",
 				"",
@@ -7714,7 +7726,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -7722,7 +7734,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"[aou]",
 				"",
@@ -7730,7 +7742,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -7738,7 +7750,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -7746,7 +7758,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"'",
 				"",
 				"",
@@ -7754,7 +7766,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"\"",
 				"",
 				"",
@@ -7762,7 +7774,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -7770,7 +7782,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -7778,7 +7790,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -7786,7 +7798,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -7794,7 +7806,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -7802,7 +7814,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -7810,7 +7822,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -7818,7 +7830,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -7826,7 +7838,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -7834,7 +7846,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -7842,7 +7854,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -7850,7 +7862,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -7858,7 +7870,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -7866,7 +7878,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -7874,7 +7886,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -7882,7 +7894,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -7890,7 +7902,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -7898,7 +7910,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -7906,7 +7918,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -7914,7 +7926,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -7922,7 +7934,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -7930,7 +7942,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -7940,7 +7952,7 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashspanish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -7948,7 +7960,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -7956,7 +7968,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -7964,7 +7976,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -7972,7 +7984,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -7980,7 +7992,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -7988,7 +8000,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ll",
 				"",
 				"",
@@ -7996,7 +8008,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -8004,7 +8016,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -8012,7 +8024,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -8020,7 +8032,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bpvf]",
@@ -8028,7 +8040,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -8036,7 +8048,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -8044,7 +8056,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -8052,7 +8064,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ei]",
@@ -8060,7 +8072,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -8068,7 +8080,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -8076,7 +8088,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -8084,7 +8096,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -8092,7 +8104,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -8100,7 +8112,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -8108,7 +8120,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -8116,7 +8128,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -8124,7 +8136,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -8132,7 +8144,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -8140,7 +8152,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -8148,7 +8160,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -8156,7 +8168,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -8164,7 +8176,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -8172,7 +8184,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -8180,7 +8192,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -8188,7 +8200,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -8196,7 +8208,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -8204,7 +8216,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -8212,7 +8224,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -8220,7 +8232,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -8228,7 +8240,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -8236,7 +8248,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -8244,7 +8256,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -8252,7 +8264,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -8260,7 +8272,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -8268,7 +8280,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -8276,7 +8288,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -8284,7 +8296,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -9161,7 +9173,7 @@ var ashFinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"$",
@@ -9169,7 +9181,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"[fktSs]",
@@ -9177,7 +9189,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"p",
@@ -9185,7 +9197,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"$",
@@ -9193,7 +9205,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"[gdZz]",
@@ -9201,7 +9213,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"b",
@@ -9209,7 +9221,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"[pktSs]",
@@ -9217,7 +9229,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"f",
@@ -9225,7 +9237,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"$",
@@ -9233,7 +9245,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"[bgdZz]",
@@ -9241,7 +9253,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"v",
@@ -9249,7 +9261,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"[pftSs]",
@@ -9257,7 +9269,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"k",
@@ -9265,7 +9277,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"$",
@@ -9273,7 +9285,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"[bdZz]",
@@ -9281,7 +9293,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"g",
@@ -9289,7 +9301,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"[pfkSs]",
@@ -9297,7 +9309,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"t",
@@ -9305,7 +9317,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"$",
@@ -9313,7 +9325,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"[bgZz]",
@@ -9321,7 +9333,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"d",
@@ -9329,7 +9341,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"dZ",
@@ -9337,7 +9349,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"tS",
@@ -9345,7 +9357,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[pfkSt]",
@@ -9353,7 +9365,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[sSzZ]",
@@ -9361,7 +9373,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[sSzZ]",
@@ -9369,7 +9381,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"[sSzZ]",
@@ -9377,7 +9389,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[sSzZ]",
@@ -9385,7 +9397,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jnm",
 					"",
 					"",
@@ -9393,7 +9405,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"^",
 					"",
@@ -9401,7 +9413,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jI",
 					"^",
 					"",
@@ -9409,7 +9421,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"[aAB]",
@@ -9417,7 +9429,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"[AB]",
 					"",
@@ -9425,7 +9437,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"A",
 					"",
 					"A",
@@ -9433,7 +9445,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"B",
@@ -9441,7 +9453,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"b",
@@ -9449,7 +9461,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"d",
@@ -9457,7 +9469,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"f",
@@ -9465,7 +9477,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"g",
@@ -9473,7 +9485,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"k",
@@ -9481,7 +9493,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"l",
 					"",
 					"l",
@@ -9489,7 +9501,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"m",
 					"",
 					"m",
@@ -9497,7 +9509,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"n",
@@ -9505,7 +9517,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"p",
@@ -9513,7 +9525,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"r",
 					"",
 					"r",
@@ -9521,7 +9533,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"t",
@@ -9529,7 +9541,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"v",
@@ -9537,7 +9549,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"z",
@@ -9545,7 +9557,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"[bp]",
@@ -9553,7 +9565,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kAg",
 					"^",
 					"[AEOIUaeoiu]",
@@ -9561,7 +9573,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kOg",
 					"^",
 					"[AEOIUaeoiu]",
@@ -9569,7 +9581,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kog",
 					"^",
 					"[AEOIUaeoiu]",
@@ -9577,7 +9589,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kag",
 					"^",
 					"[AEOIUaeoiu]",
@@ -9585,7 +9597,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"",
@@ -9593,7 +9605,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"H",
 					"",
 					"",
@@ -9601,7 +9613,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"",
 					"[bdgkpstvzZ]h",
@@ -9609,7 +9621,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"",
 					"[bdgkpstvzZ]x",
@@ -9617,7 +9629,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"[bdgkpstvzZ]h",
@@ -9625,7 +9637,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"[bdgkpstvzZ]x",
@@ -9633,7 +9645,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9641,7 +9653,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9649,7 +9661,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9657,7 +9669,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9665,7 +9677,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9673,7 +9685,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9681,7 +9693,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -9689,7 +9701,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9697,7 +9709,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9705,7 +9717,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9713,7 +9725,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9721,7 +9733,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9729,7 +9741,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9737,7 +9749,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -9745,7 +9757,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEs",
 					"",
 					"",
@@ -9753,7 +9765,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lE",
 					"[bdfgkmnprStvzZ]",
 					"",
@@ -9761,7 +9773,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aue",
 					"",
 					"",
@@ -9769,7 +9781,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oue",
 					"",
 					"",
@@ -9777,7 +9789,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AvE",
 					"",
 					"",
@@ -9785,7 +9797,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ave",
 					"",
 					"",
@@ -9793,7 +9805,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"avE",
 					"",
 					"",
@@ -9801,7 +9813,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ave",
 					"",
 					"",
@@ -9809,7 +9821,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OvE",
 					"",
 					"",
@@ -9817,7 +9829,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ove",
 					"",
 					"",
@@ -9825,7 +9837,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ovE",
 					"",
 					"",
@@ -9833,7 +9845,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ove",
 					"",
 					"",
@@ -9841,7 +9853,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ea",
 					"",
 					"",
@@ -9849,7 +9861,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EA",
 					"",
 					"",
@@ -9857,7 +9869,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ea",
 					"",
 					"",
@@ -9865,7 +9877,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eA",
 					"",
 					"",
@@ -9873,7 +9885,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aji",
 					"",
 					"",
@@ -9881,7 +9893,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajI",
 					"",
 					"",
@@ -9889,7 +9901,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aje",
 					"",
 					"",
@@ -9897,7 +9909,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajE",
 					"",
 					"",
@@ -9905,7 +9917,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aji",
 					"",
 					"",
@@ -9913,7 +9925,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjI",
 					"",
 					"",
@@ -9921,7 +9933,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aje",
 					"",
 					"",
@@ -9929,7 +9941,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjE",
 					"",
 					"",
@@ -9937,7 +9949,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oji",
 					"",
 					"",
@@ -9945,7 +9957,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojI",
 					"",
 					"",
@@ -9953,7 +9965,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oje",
 					"",
 					"",
@@ -9961,7 +9973,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojE",
 					"",
 					"",
@@ -9969,7 +9981,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oji",
 					"",
 					"",
@@ -9977,7 +9989,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjI",
 					"",
 					"",
@@ -9985,7 +9997,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oje",
 					"",
 					"",
@@ -9993,7 +10005,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjE",
 					"",
 					"",
@@ -10001,7 +10013,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eji",
 					"",
 					"",
@@ -10009,7 +10021,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejI",
 					"",
 					"",
@@ -10017,7 +10029,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eje",
 					"",
 					"",
@@ -10025,7 +10037,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejE",
 					"",
 					"",
@@ -10033,7 +10045,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eji",
 					"",
 					"",
@@ -10041,7 +10053,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjI",
 					"",
 					"",
@@ -10049,7 +10061,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eje",
 					"",
 					"",
@@ -10057,7 +10069,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjE",
 					"",
 					"",
@@ -10065,7 +10077,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uji",
 					"",
 					"",
@@ -10073,7 +10085,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujI",
 					"",
 					"",
@@ -10081,7 +10093,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uje",
 					"",
 					"",
@@ -10089,7 +10101,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujE",
 					"",
 					"",
@@ -10097,7 +10109,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uji",
 					"",
 					"",
@@ -10105,7 +10117,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjI",
 					"",
 					"",
@@ -10113,7 +10125,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uje",
 					"",
 					"",
@@ -10121,7 +10133,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjE",
 					"",
 					"",
@@ -10129,7 +10141,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"iji",
 					"",
 					"",
@@ -10137,7 +10149,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijI",
 					"",
 					"",
@@ -10145,7 +10157,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ije",
 					"",
 					"",
@@ -10153,7 +10165,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijE",
 					"",
 					"",
@@ -10161,7 +10173,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Iji",
 					"",
 					"",
@@ -10169,7 +10181,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjI",
 					"",
 					"",
@@ -10177,7 +10189,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ije",
 					"",
 					"",
@@ -10185,7 +10197,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjE",
 					"",
 					"",
@@ -10193,7 +10205,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aja",
 					"",
 					"",
@@ -10201,7 +10213,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajA",
 					"",
 					"",
@@ -10209,7 +10221,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajo",
 					"",
 					"",
@@ -10217,7 +10229,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajO",
 					"",
 					"",
@@ -10225,7 +10237,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aju",
 					"",
 					"",
@@ -10233,7 +10245,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajU",
 					"",
 					"",
@@ -10241,7 +10253,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aja",
 					"",
 					"",
@@ -10249,7 +10261,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjA",
 					"",
 					"",
@@ -10257,7 +10269,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ajo",
 					"",
 					"",
@@ -10265,7 +10277,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjO",
 					"",
 					"",
@@ -10273,7 +10285,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10281,7 +10293,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10289,7 +10301,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oja",
 					"",
 					"",
@@ -10297,7 +10309,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojA",
 					"",
 					"",
@@ -10305,7 +10317,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojo",
 					"",
 					"",
@@ -10313,7 +10325,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojO",
 					"",
 					"",
@@ -10321,7 +10333,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10329,7 +10341,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10337,7 +10349,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oja",
 					"",
 					"",
@@ -10345,7 +10357,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjA",
 					"",
 					"",
@@ -10353,7 +10365,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ojo",
 					"",
 					"",
@@ -10361,7 +10373,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjO",
 					"",
 					"",
@@ -10369,7 +10381,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10377,7 +10389,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10385,7 +10397,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eja",
 					"",
 					"",
@@ -10393,7 +10405,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejA",
 					"",
 					"",
@@ -10401,7 +10413,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejo",
 					"",
 					"",
@@ -10409,7 +10421,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejO",
 					"",
 					"",
@@ -10417,7 +10429,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10425,7 +10437,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10433,7 +10445,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eja",
 					"",
 					"",
@@ -10441,7 +10453,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjA",
 					"",
 					"",
@@ -10449,7 +10461,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ejo",
 					"",
 					"",
@@ -10457,7 +10469,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjO",
 					"",
 					"",
@@ -10465,7 +10477,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10473,7 +10485,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10481,7 +10493,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uja",
 					"",
 					"",
@@ -10489,7 +10501,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujA",
 					"",
 					"",
@@ -10497,7 +10509,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujo",
 					"",
 					"",
@@ -10505,7 +10517,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujO",
 					"",
 					"",
@@ -10513,7 +10525,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10521,7 +10533,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10529,7 +10541,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uja",
 					"",
 					"",
@@ -10537,7 +10549,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjA",
 					"",
 					"",
@@ -10545,7 +10557,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ujo",
 					"",
 					"",
@@ -10553,7 +10565,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjO",
 					"",
 					"",
@@ -10561,7 +10573,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10569,7 +10581,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10577,7 +10589,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ija",
 					"",
 					"",
@@ -10585,7 +10597,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijA",
 					"",
 					"",
@@ -10593,7 +10605,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijo",
 					"",
 					"",
@@ -10601,7 +10613,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijO",
 					"",
 					"",
@@ -10609,7 +10621,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10617,7 +10629,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10625,7 +10637,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ija",
 					"",
 					"",
@@ -10633,7 +10645,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjA",
 					"",
 					"",
@@ -10641,7 +10653,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ijo",
 					"",
 					"",
@@ -10649,7 +10661,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjO",
 					"",
 					"",
@@ -10657,7 +10669,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -10665,7 +10677,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -10673,7 +10685,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"",
@@ -10681,7 +10693,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lYndEr",
 					"",
 					"$",
@@ -10689,7 +10701,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lander",
 					"",
 					"$",
@@ -10697,7 +10709,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAndEr",
 					"",
 					"$",
@@ -10705,7 +10717,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAnder",
 					"",
 					"$",
@@ -10713,7 +10725,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"landEr",
 					"",
 					"$",
@@ -10721,7 +10733,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lender",
 					"",
 					"$",
@@ -10729,7 +10741,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEndEr",
 					"",
 					"$",
@@ -10737,7 +10749,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lendEr",
 					"",
 					"$",
@@ -10745,7 +10757,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEnder",
 					"",
 					"$",
@@ -10753,7 +10765,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrk",
 					"",
 					"$",
@@ -10761,7 +10773,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burk",
 					"",
 					"$",
@@ -10769,7 +10781,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrg",
 					"",
 					"$",
@@ -10777,7 +10789,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burg",
 					"",
 					"$",
@@ -10785,7 +10797,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[rmnl]",
@@ -10793,7 +10805,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[rmnl]",
@@ -10801,7 +10813,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"[rmnl]",
 					"",
@@ -10809,7 +10821,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"[rmnl]",
 					"",
@@ -10817,7 +10829,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dS",
 					"",
 					"$",
@@ -10825,7 +10837,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"$",
@@ -10833,7 +10845,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"$",
@@ -10841,7 +10853,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"$",
@@ -10849,7 +10861,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"$",
@@ -10857,7 +10869,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"",
@@ -10865,7 +10877,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"",
@@ -10873,7 +10885,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"",
@@ -10886,7 +10898,7 @@ var ashFinalRules = finalRules{
 				langs: 0,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"b",
 							"",
 							"",
@@ -10894,7 +10906,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"J",
 							"",
 							"",
@@ -10902,7 +10914,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -10910,7 +10922,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiB",
 							"",
 							"[bp]",
@@ -10918,7 +10930,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -10926,7 +10938,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiB",
 							"",
 							"[bp]",
@@ -10934,7 +10946,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -10942,7 +10954,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiB",
 							"",
 							"[bp]",
@@ -10950,7 +10962,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -10958,7 +10970,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -10966,7 +10978,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -10974,7 +10986,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -10982,7 +10994,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -10990,7 +11002,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiB",
 							"",
 							"[dgkstvz]",
@@ -10998,7 +11010,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -11006,7 +11018,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiB",
 							"",
 							"[dgkstvz]",
@@ -11014,7 +11026,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -11022,7 +11034,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiB",
 							"",
 							"[dgkstvz]",
@@ -11030,7 +11042,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -11038,7 +11050,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -11046,7 +11058,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -11054,7 +11066,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -11062,7 +11074,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -11070,7 +11082,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -11078,7 +11090,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -11086,7 +11098,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -11094,7 +11106,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiF",
 							"",
 							"[bp]",
@@ -11102,7 +11114,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -11110,7 +11122,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiF",
 							"",
 							"[bp]",
@@ -11118,7 +11130,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -11126,7 +11138,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiF",
 							"",
 							"[bp]",
@@ -11134,7 +11146,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -11142,7 +11154,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -11150,7 +11162,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -11158,7 +11170,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -11166,7 +11178,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -11174,7 +11186,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiF",
 							"",
 							"[dgkstvz]",
@@ -11182,7 +11194,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -11190,7 +11202,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiF",
 							"",
 							"[dgkstvz]",
@@ -11198,7 +11210,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -11206,7 +11218,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiF",
 							"",
 							"[dgkstvz]",
@@ -11214,7 +11226,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -11222,7 +11234,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -11230,7 +11242,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -11238,7 +11250,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -11246,7 +11258,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -11254,7 +11266,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -11262,7 +11274,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -11270,7 +11282,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -11278,7 +11290,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiouAEIBFOUQY]",
 							"",
@@ -11286,7 +11298,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -11294,7 +11306,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -11302,7 +11314,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -11310,7 +11322,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -11318,7 +11330,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -11326,7 +11338,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -11334,7 +11346,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -11342,7 +11354,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -11350,7 +11362,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"$",
@@ -11358,7 +11370,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -11366,7 +11378,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -11374,7 +11386,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -11382,7 +11394,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -11390,7 +11402,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -11398,7 +11410,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -11406,7 +11418,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -11414,7 +11426,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -11422,7 +11434,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -11430,7 +11442,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ei",
 							"",
 							"",
@@ -11438,7 +11450,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ei",
 							"",
 							"",
@@ -11446,7 +11458,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"$",
@@ -11454,7 +11466,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"",
@@ -11462,7 +11474,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -11470,7 +11482,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"i[^aeiouAEIOU]",
 							"",
@@ -11478,7 +11490,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"a[^aeiouAEIOU]",
 							"",
@@ -11486,7 +11498,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[fklmnprstv]$",
@@ -11494,7 +11506,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"ts$",
@@ -11502,7 +11514,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"$",
@@ -11510,7 +11522,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"[DaoiuAOIUQY]",
 							"",
@@ -11518,7 +11530,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[aoAOQY]",
@@ -11526,7 +11538,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -11534,7 +11546,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -11542,7 +11554,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -11550,7 +11562,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -11558,7 +11570,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuAOIUQY]",
 							"",
@@ -11566,7 +11578,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -11574,7 +11586,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -11582,7 +11594,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -11590,7 +11602,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprstv]$",
@@ -11598,7 +11610,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -11606,7 +11618,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -11614,7 +11626,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[oeiuQY]",
 							"",
@@ -11622,7 +11634,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -11630,7 +11642,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -11638,7 +11650,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -11646,7 +11658,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -11654,7 +11666,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[oeiuQY]",
 							"",
@@ -11662,7 +11674,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -11670,7 +11682,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -11678,7 +11690,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DoiuQY]",
 							"",
@@ -11686,7 +11698,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -11694,7 +11706,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -11702,7 +11714,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -11710,7 +11722,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -11718,7 +11730,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -11726,7 +11738,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -11739,7 +11751,7 @@ var ashFinalRules = finalRules{
 				langs: 9,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -11747,7 +11759,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -11755,7 +11767,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -11763,7 +11775,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -11771,7 +11783,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -11779,7 +11791,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -11787,7 +11799,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -11795,7 +11807,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -11803,7 +11815,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -11811,7 +11823,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -11819,7 +11831,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -11827,7 +11839,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -11835,7 +11847,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -11843,7 +11855,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -11851,7 +11863,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -11859,7 +11871,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -11867,7 +11879,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -11875,7 +11887,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -11883,7 +11895,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -11891,7 +11903,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -11899,7 +11911,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -11907,7 +11919,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -11915,7 +11927,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -11923,7 +11935,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -11931,7 +11943,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -11939,7 +11951,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -11952,7 +11964,7 @@ var ashFinalRules = finalRules{
 				langs: 1,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -11960,7 +11972,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -11968,7 +11980,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -11976,7 +11988,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -11984,7 +11996,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -11992,7 +12004,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -12000,7 +12012,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -12008,7 +12020,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -12016,7 +12028,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -12024,7 +12036,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -12032,7 +12044,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -12040,7 +12052,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -12048,7 +12060,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -12056,7 +12068,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -12064,7 +12076,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -12072,7 +12084,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -12080,7 +12092,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -12088,7 +12100,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -12096,7 +12108,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -12104,7 +12116,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -12112,7 +12124,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -12120,7 +12132,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -12128,7 +12140,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -12136,7 +12148,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -12144,7 +12156,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -12152,7 +12164,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -12165,7 +12177,7 @@ var ashFinalRules = finalRules{
 				langs: 2,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aEIeiou]e",
@@ -12173,7 +12185,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -12181,7 +12193,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -12189,7 +12201,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -12197,7 +12209,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -12205,7 +12217,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -12213,7 +12225,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -12221,7 +12233,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -12229,7 +12241,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -12237,7 +12249,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -12245,7 +12257,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -12253,7 +12265,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -12261,7 +12273,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -12269,7 +12281,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -12277,7 +12289,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -12285,7 +12297,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"D[^aeiEIou]",
 							"",
@@ -12293,7 +12305,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"D[^aeiEIou]",
 							"",
@@ -12301,7 +12313,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -12309,7 +12321,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -12317,7 +12329,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -12325,7 +12337,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiEuQY]",
 							"",
@@ -12333,7 +12345,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQY]",
@@ -12341,7 +12353,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -12349,7 +12361,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -12362,7 +12374,7 @@ var ashFinalRules = finalRules{
 				langs: 3,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -12370,7 +12382,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -12378,7 +12390,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -12386,7 +12398,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -12394,7 +12406,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -12402,7 +12414,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -12410,7 +12422,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -12418,7 +12430,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -12426,7 +12438,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -12434,7 +12446,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -12442,7 +12454,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -12450,7 +12462,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -12458,7 +12470,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -12466,7 +12478,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -12474,7 +12486,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -12482,7 +12494,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -12490,7 +12502,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -12498,7 +12510,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[aoiuQ]",
 							"",
@@ -12506,7 +12518,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -12514,7 +12526,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -12527,7 +12539,7 @@ var ashFinalRules = finalRules{
 				langs: 4,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -12535,7 +12547,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEIOUouQY]",
 							"",
@@ -12543,7 +12555,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -12551,7 +12563,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -12559,7 +12571,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -12567,7 +12579,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -12575,7 +12587,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -12583,7 +12595,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -12591,7 +12603,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AU",
 							"",
 							"",
@@ -12599,7 +12611,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aU",
 							"",
 							"",
@@ -12607,7 +12619,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Au",
 							"",
 							"",
@@ -12615,7 +12627,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -12623,7 +12635,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -12631,7 +12643,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OU",
 							"",
 							"",
@@ -12639,7 +12651,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oU",
 							"",
 							"",
@@ -12647,7 +12659,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ou",
 							"",
 							"",
@@ -12655,7 +12667,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -12663,7 +12675,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -12671,7 +12683,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -12679,7 +12691,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -12687,7 +12699,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -12695,7 +12707,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -12703,7 +12715,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -12711,7 +12723,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -12719,7 +12731,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -12727,7 +12739,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -12735,7 +12747,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoAOUiuQY]",
 							"",
@@ -12743,7 +12755,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -12751,7 +12763,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -12759,7 +12771,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -12767,7 +12779,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprst]$",
@@ -12775,7 +12787,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -12783,7 +12795,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[aoAOUeiuQY]",
 							"",
@@ -12791,7 +12803,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -12799,7 +12811,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -12807,7 +12819,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -12815,7 +12827,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -12823,7 +12835,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -12831,7 +12843,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[aoeOUiuQY]",
 							"",
@@ -12839,7 +12851,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -12847,7 +12859,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -12855,7 +12867,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DaoiuUQY]",
 							"",
@@ -12863,7 +12875,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -12871,7 +12883,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -12879,7 +12891,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -12887,7 +12899,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -12895,7 +12907,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -12903,7 +12915,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -12920,7 +12932,7 @@ var ashFinalRules = finalRules{
 				langs: 6,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -12928,7 +12940,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -12936,7 +12948,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -12944,7 +12956,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -12952,7 +12964,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -12960,7 +12972,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -12968,7 +12980,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -12976,7 +12988,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -12984,7 +12996,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -12992,7 +13004,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -13000,7 +13012,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -13008,7 +13020,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -13016,7 +13028,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -13024,7 +13036,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -13032,7 +13044,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -13040,7 +13052,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -13048,7 +13060,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -13056,7 +13068,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[aoiuQ]",
 							"",
@@ -13064,7 +13076,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -13072,7 +13084,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -13085,7 +13097,7 @@ var ashFinalRules = finalRules{
 				langs: 7,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -13093,7 +13105,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -13101,7 +13113,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -13109,7 +13121,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -13117,7 +13129,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -13125,7 +13137,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -13133,7 +13145,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -13141,7 +13153,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -13149,7 +13161,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -13157,7 +13169,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -13165,7 +13177,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -13173,7 +13185,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -13181,7 +13193,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -13189,7 +13201,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -13197,7 +13209,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -13205,7 +13217,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -13213,7 +13225,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -13221,7 +13233,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -13229,7 +13241,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -13237,7 +13249,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -13245,7 +13257,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -13253,7 +13265,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -13261,7 +13273,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -13269,7 +13281,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -13277,7 +13289,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -13285,7 +13297,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -13293,7 +13305,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -13301,7 +13313,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -13309,7 +13321,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -13317,7 +13329,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -13325,7 +13337,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -13333,7 +13345,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -13341,7 +13353,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -13349,7 +13361,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -13357,7 +13369,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -13365,7 +13377,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -13373,7 +13385,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -13381,7 +13393,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -13389,7 +13401,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -13397,7 +13409,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -13405,7 +13417,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -13413,7 +13425,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -13421,7 +13433,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -13429,7 +13441,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -13437,7 +13449,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -13445,7 +13457,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -13453,7 +13465,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -13461,7 +13473,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -13469,7 +13481,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -13477,7 +13489,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -13485,7 +13497,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -13493,7 +13505,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -13501,7 +13513,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -13509,7 +13521,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -13517,7 +13529,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -13525,7 +13537,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -13538,7 +13550,7 @@ var ashFinalRules = finalRules{
 				langs: 8,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -13546,7 +13558,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -13554,7 +13566,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -13562,7 +13574,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -13570,7 +13582,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -13578,7 +13590,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -13586,7 +13598,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -13594,7 +13606,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -13602,7 +13614,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -13610,7 +13622,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -13618,7 +13630,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -13626,7 +13638,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -13634,7 +13646,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -13642,7 +13654,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -13650,7 +13662,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -13658,7 +13670,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -13666,7 +13678,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -13674,7 +13686,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -13682,7 +13694,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -13690,7 +13702,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -13698,7 +13710,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -13706,7 +13718,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -13714,7 +13726,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -13722,7 +13734,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -13730,7 +13742,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -13738,7 +13750,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -13746,7 +13758,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -13754,7 +13766,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -13762,7 +13774,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -13770,7 +13782,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -13778,7 +13790,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -13786,7 +13798,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -13794,7 +13806,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -13802,7 +13814,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -13810,7 +13822,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -13818,7 +13830,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -13826,7 +13838,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -13834,7 +13846,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -13842,7 +13854,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -13850,7 +13862,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -13858,7 +13870,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -13866,7 +13878,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -13874,7 +13886,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -13882,7 +13894,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -13890,7 +13902,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -13898,7 +13910,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -13906,7 +13918,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -13914,7 +13926,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -13922,7 +13934,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -13930,7 +13942,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -13938,7 +13950,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -13946,7 +13958,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -13954,7 +13966,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -13962,7 +13974,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -13970,7 +13982,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -13978,7 +13990,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -13991,7 +14003,7 @@ var ashFinalRules = finalRules{
 				langs: 10,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -13999,7 +14011,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -14007,7 +14019,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -14015,7 +14027,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -14023,7 +14035,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -14031,7 +14043,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -14039,7 +14051,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -14047,7 +14059,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -14055,7 +14067,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -14063,7 +14075,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -14071,7 +14083,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -14079,7 +14091,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -14087,7 +14099,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -14095,7 +14107,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -14103,7 +14115,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -14111,7 +14123,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -14119,7 +14131,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -14127,7 +14139,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[aoiuQ]",
 							"",
@@ -14135,7 +14147,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -14143,7 +14155,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -14157,7 +14169,7 @@ var ashFinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"$",
@@ -14165,7 +14177,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"[fktSs]",
@@ -14173,7 +14185,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"p",
@@ -14181,7 +14193,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"$",
@@ -14189,7 +14201,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"[gdZz]",
@@ -14197,7 +14209,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"b",
@@ -14205,7 +14217,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"[pktSs]",
@@ -14213,7 +14225,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"f",
@@ -14221,7 +14233,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"$",
@@ -14229,7 +14241,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"[bgdZz]",
@@ -14237,7 +14249,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"v",
@@ -14245,7 +14257,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"[pftSs]",
@@ -14253,7 +14265,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"k",
@@ -14261,7 +14273,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"$",
@@ -14269,7 +14281,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"[bdZz]",
@@ -14277,7 +14289,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"g",
@@ -14285,7 +14297,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"[pfkSs]",
@@ -14293,7 +14305,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"t",
@@ -14301,7 +14313,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"$",
@@ -14309,7 +14321,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"[bgZz]",
@@ -14317,7 +14329,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"d",
@@ -14325,7 +14337,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"dZ",
@@ -14333,7 +14345,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"tS",
@@ -14341,7 +14353,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[pfkSt]",
@@ -14349,7 +14361,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[sSzZ]",
@@ -14357,7 +14369,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[sSzZ]",
@@ -14365,7 +14377,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"[sSzZ]",
@@ -14373,7 +14385,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[sSzZ]",
@@ -14381,7 +14393,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jnm",
 					"",
 					"",
@@ -14389,7 +14401,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"^",
 					"",
@@ -14397,7 +14409,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jI",
 					"^",
 					"",
@@ -14405,7 +14417,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"[aAB]",
@@ -14413,7 +14425,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"[AB]",
 					"",
@@ -14421,7 +14433,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"A",
 					"",
 					"A",
@@ -14429,7 +14441,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"B",
@@ -14437,7 +14449,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"b",
@@ -14445,7 +14457,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"d",
@@ -14453,7 +14465,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"f",
@@ -14461,7 +14473,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"g",
@@ -14469,7 +14481,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"k",
@@ -14477,7 +14489,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"l",
 					"",
 					"l",
@@ -14485,7 +14497,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"m",
 					"",
 					"m",
@@ -14493,7 +14505,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"n",
@@ -14501,7 +14513,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"p",
@@ -14509,7 +14521,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"r",
 					"",
 					"r",
@@ -14517,7 +14529,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"t",
@@ -14525,7 +14537,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"v",
@@ -14533,7 +14545,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"z",
@@ -14541,7 +14553,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"[bp]",
@@ -14549,7 +14561,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kAg",
 					"^",
 					"[AEOIUaeoiu]",
@@ -14557,7 +14569,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kOg",
 					"^",
 					"[AEOIUaeoiu]",
@@ -14565,7 +14577,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kog",
 					"^",
 					"[AEOIUaeoiu]",
@@ -14573,7 +14585,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"kag",
 					"^",
 					"[AEOIUaeoiu]",
@@ -14581,7 +14593,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"",
@@ -14589,7 +14601,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"H",
 					"",
 					"",
@@ -14597,7 +14609,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"",
 					"[bdgkpstvzZ]h",
@@ -14605,7 +14617,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"",
 					"[bdgkpstvzZ]x",
@@ -14613,7 +14625,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"[bdgkpstvzZ]h",
@@ -14621,7 +14633,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"[bdgkpstvzZ]x",
@@ -14629,7 +14641,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14637,7 +14649,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14645,7 +14657,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14653,7 +14665,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14661,7 +14673,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14669,7 +14681,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14677,7 +14689,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[bdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14685,7 +14697,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14693,7 +14705,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14701,7 +14713,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14709,7 +14721,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14717,7 +14729,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"F",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14725,7 +14737,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14733,7 +14745,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14741,7 +14753,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEs",
 					"",
 					"",
@@ -14749,7 +14761,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lE",
 					"[bdfgkmnprStvzZ]",
 					"",
@@ -14757,7 +14769,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aue",
 					"",
 					"",
@@ -14765,7 +14777,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oue",
 					"",
 					"",
@@ -14773,7 +14785,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AvE",
 					"",
 					"",
@@ -14781,7 +14793,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ave",
 					"",
 					"",
@@ -14789,7 +14801,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"avE",
 					"",
 					"",
@@ -14797,7 +14809,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ave",
 					"",
 					"",
@@ -14805,7 +14817,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OvE",
 					"",
 					"",
@@ -14813,7 +14825,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ove",
 					"",
 					"",
@@ -14821,7 +14833,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ovE",
 					"",
 					"",
@@ -14829,7 +14841,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ove",
 					"",
 					"",
@@ -14837,7 +14849,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ea",
 					"",
 					"",
@@ -14845,7 +14857,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EA",
 					"",
 					"",
@@ -14853,7 +14865,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ea",
 					"",
 					"",
@@ -14861,7 +14873,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eA",
 					"",
 					"",
@@ -14869,7 +14881,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aji",
 					"",
 					"",
@@ -14877,7 +14889,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajI",
 					"",
 					"",
@@ -14885,7 +14897,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aje",
 					"",
 					"",
@@ -14893,7 +14905,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajE",
 					"",
 					"",
@@ -14901,7 +14913,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aji",
 					"",
 					"",
@@ -14909,7 +14921,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjI",
 					"",
 					"",
@@ -14917,7 +14929,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aje",
 					"",
 					"",
@@ -14925,7 +14937,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjE",
 					"",
 					"",
@@ -14933,7 +14945,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oji",
 					"",
 					"",
@@ -14941,7 +14953,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojI",
 					"",
 					"",
@@ -14949,7 +14961,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oje",
 					"",
 					"",
@@ -14957,7 +14969,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojE",
 					"",
 					"",
@@ -14965,7 +14977,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oji",
 					"",
 					"",
@@ -14973,7 +14985,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjI",
 					"",
 					"",
@@ -14981,7 +14993,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oje",
 					"",
 					"",
@@ -14989,7 +15001,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjE",
 					"",
 					"",
@@ -14997,7 +15009,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eji",
 					"",
 					"",
@@ -15005,7 +15017,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejI",
 					"",
 					"",
@@ -15013,7 +15025,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eje",
 					"",
 					"",
@@ -15021,7 +15033,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejE",
 					"",
 					"",
@@ -15029,7 +15041,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eji",
 					"",
 					"",
@@ -15037,7 +15049,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjI",
 					"",
 					"",
@@ -15045,7 +15057,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eje",
 					"",
 					"",
@@ -15053,7 +15065,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjE",
 					"",
 					"",
@@ -15061,7 +15073,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uji",
 					"",
 					"",
@@ -15069,7 +15081,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujI",
 					"",
 					"",
@@ -15077,7 +15089,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uje",
 					"",
 					"",
@@ -15085,7 +15097,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujE",
 					"",
 					"",
@@ -15093,7 +15105,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uji",
 					"",
 					"",
@@ -15101,7 +15113,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjI",
 					"",
 					"",
@@ -15109,7 +15121,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uje",
 					"",
 					"",
@@ -15117,7 +15129,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjE",
 					"",
 					"",
@@ -15125,7 +15137,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"iji",
 					"",
 					"",
@@ -15133,7 +15145,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijI",
 					"",
 					"",
@@ -15141,7 +15153,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ije",
 					"",
 					"",
@@ -15149,7 +15161,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijE",
 					"",
 					"",
@@ -15157,7 +15169,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Iji",
 					"",
 					"",
@@ -15165,7 +15177,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjI",
 					"",
 					"",
@@ -15173,7 +15185,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ije",
 					"",
 					"",
@@ -15181,7 +15193,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjE",
 					"",
 					"",
@@ -15189,7 +15201,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aja",
 					"",
 					"",
@@ -15197,7 +15209,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajA",
 					"",
 					"",
@@ -15205,7 +15217,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajo",
 					"",
 					"",
@@ -15213,7 +15225,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajO",
 					"",
 					"",
@@ -15221,7 +15233,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aju",
 					"",
 					"",
@@ -15229,7 +15241,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajU",
 					"",
 					"",
@@ -15237,7 +15249,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aja",
 					"",
 					"",
@@ -15245,7 +15257,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjA",
 					"",
 					"",
@@ -15253,7 +15265,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ajo",
 					"",
 					"",
@@ -15261,7 +15273,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjO",
 					"",
 					"",
@@ -15269,7 +15281,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15277,7 +15289,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15285,7 +15297,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oja",
 					"",
 					"",
@@ -15293,7 +15305,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojA",
 					"",
 					"",
@@ -15301,7 +15313,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojo",
 					"",
 					"",
@@ -15309,7 +15321,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojO",
 					"",
 					"",
@@ -15317,7 +15329,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15325,7 +15337,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15333,7 +15345,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oja",
 					"",
 					"",
@@ -15341,7 +15353,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjA",
 					"",
 					"",
@@ -15349,7 +15361,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ojo",
 					"",
 					"",
@@ -15357,7 +15369,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjO",
 					"",
 					"",
@@ -15365,7 +15377,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15373,7 +15385,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15381,7 +15393,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eja",
 					"",
 					"",
@@ -15389,7 +15401,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejA",
 					"",
 					"",
@@ -15397,7 +15409,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejo",
 					"",
 					"",
@@ -15405,7 +15417,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejO",
 					"",
 					"",
@@ -15413,7 +15425,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15421,7 +15433,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15429,7 +15441,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eja",
 					"",
 					"",
@@ -15437,7 +15449,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjA",
 					"",
 					"",
@@ -15445,7 +15457,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ejo",
 					"",
 					"",
@@ -15453,7 +15465,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjO",
 					"",
 					"",
@@ -15461,7 +15473,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15469,7 +15481,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15477,7 +15489,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uja",
 					"",
 					"",
@@ -15485,7 +15497,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujA",
 					"",
 					"",
@@ -15493,7 +15505,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujo",
 					"",
 					"",
@@ -15501,7 +15513,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujO",
 					"",
 					"",
@@ -15509,7 +15521,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15517,7 +15529,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15525,7 +15537,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uja",
 					"",
 					"",
@@ -15533,7 +15545,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjA",
 					"",
 					"",
@@ -15541,7 +15553,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ujo",
 					"",
 					"",
@@ -15549,7 +15561,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjO",
 					"",
 					"",
@@ -15557,7 +15569,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15565,7 +15577,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15573,7 +15585,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ija",
 					"",
 					"",
@@ -15581,7 +15593,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijA",
 					"",
 					"",
@@ -15589,7 +15601,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijo",
 					"",
 					"",
@@ -15597,7 +15609,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijO",
 					"",
 					"",
@@ -15605,7 +15617,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15613,7 +15625,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15621,7 +15633,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ija",
 					"",
 					"",
@@ -15629,7 +15641,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjA",
 					"",
 					"",
@@ -15637,7 +15649,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ijo",
 					"",
 					"",
@@ -15645,7 +15657,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjO",
 					"",
 					"",
@@ -15653,7 +15665,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15661,7 +15673,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15669,7 +15681,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"",
@@ -15677,7 +15689,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lYndEr",
 					"",
 					"$",
@@ -15685,7 +15697,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lander",
 					"",
 					"$",
@@ -15693,7 +15705,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAndEr",
 					"",
 					"$",
@@ -15701,7 +15713,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAnder",
 					"",
 					"$",
@@ -15709,7 +15721,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"landEr",
 					"",
 					"$",
@@ -15717,7 +15729,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lender",
 					"",
 					"$",
@@ -15725,7 +15737,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEndEr",
 					"",
 					"$",
@@ -15733,7 +15745,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lendEr",
 					"",
 					"$",
@@ -15741,7 +15753,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEnder",
 					"",
 					"$",
@@ -15749,7 +15761,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrk",
 					"",
 					"$",
@@ -15757,7 +15769,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burk",
 					"",
 					"$",
@@ -15765,7 +15777,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrg",
 					"",
 					"$",
@@ -15773,7 +15785,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burg",
 					"",
 					"$",
@@ -15781,7 +15793,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[rmnl]",
@@ -15789,7 +15801,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[rmnl]",
@@ -15797,7 +15809,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"[rmnl]",
 					"",
@@ -15805,7 +15817,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"[rmnl]",
 					"",
@@ -15813,7 +15825,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dS",
 					"",
 					"$",
@@ -15821,7 +15833,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"$",
@@ -15829,7 +15841,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"$",
@@ -15837,7 +15849,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"$",
@@ -15845,7 +15857,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"$",
@@ -15853,7 +15865,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"",
@@ -15861,7 +15873,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"",
@@ -15869,7 +15881,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"",
@@ -15882,7 +15894,7 @@ var ashFinalRules = finalRules{
 				langs: 0,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"b",
 							"",
 							"",
@@ -15890,7 +15902,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"J",
 							"",
 							"",
@@ -15898,7 +15910,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -15906,7 +15918,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiB",
 							"",
 							"[bp]",
@@ -15914,7 +15926,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -15922,7 +15934,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiB",
 							"",
 							"[bp]",
@@ -15930,7 +15942,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -15938,7 +15950,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiB",
 							"",
 							"[bp]",
@@ -15946,7 +15958,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -15954,7 +15966,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -15962,7 +15974,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -15970,7 +15982,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -15978,7 +15990,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -15986,7 +15998,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiB",
 							"",
 							"[dgkstvz]",
@@ -15994,7 +16006,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -16002,7 +16014,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiB",
 							"",
 							"[dgkstvz]",
@@ -16010,7 +16022,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -16018,7 +16030,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiB",
 							"",
 							"[dgkstvz]",
@@ -16026,7 +16038,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -16034,7 +16046,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -16042,7 +16054,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -16050,7 +16062,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -16058,7 +16070,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -16066,7 +16078,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -16074,7 +16086,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -16082,7 +16094,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -16090,7 +16102,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiF",
 							"",
 							"[bp]",
@@ -16098,7 +16110,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -16106,7 +16118,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiF",
 							"",
 							"[bp]",
@@ -16114,7 +16126,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -16122,7 +16134,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiF",
 							"",
 							"[bp]",
@@ -16130,7 +16142,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -16138,7 +16150,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -16146,7 +16158,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -16154,7 +16166,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -16162,7 +16174,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -16170,7 +16182,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AiF",
 							"",
 							"[dgkstvz]",
@@ -16178,7 +16190,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -16186,7 +16198,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OiF",
 							"",
 							"[dgkstvz]",
@@ -16194,7 +16206,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -16202,7 +16214,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"UiF",
 							"",
 							"[dgkstvz]",
@@ -16210,7 +16222,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -16218,7 +16230,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -16226,7 +16238,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -16234,7 +16246,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -16242,7 +16254,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -16250,7 +16262,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -16258,7 +16270,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -16266,7 +16278,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -16274,7 +16286,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiouAEIBFOUQY]",
 							"",
@@ -16282,7 +16294,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -16290,7 +16302,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -16298,7 +16310,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -16306,7 +16318,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -16314,7 +16326,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -16322,7 +16334,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -16330,7 +16342,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -16338,7 +16350,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -16346,7 +16358,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"$",
@@ -16354,7 +16366,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -16362,7 +16374,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -16370,7 +16382,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -16378,7 +16390,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -16386,7 +16398,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -16394,7 +16406,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -16402,7 +16414,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -16410,7 +16422,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -16418,7 +16430,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -16426,7 +16438,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ei",
 							"",
 							"",
@@ -16434,7 +16446,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ei",
 							"",
 							"",
@@ -16442,7 +16454,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"$",
@@ -16450,7 +16462,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"",
@@ -16458,7 +16470,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -16466,7 +16478,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"i[^aeiouAEIOU]",
 							"",
@@ -16474,7 +16486,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"a[^aeiouAEIOU]",
 							"",
@@ -16482,7 +16494,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[fklmnprstv]$",
@@ -16490,7 +16502,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"ts$",
@@ -16498,7 +16510,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"$",
@@ -16506,7 +16518,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"[DaoiuAOIUQY]",
 							"",
@@ -16514,7 +16526,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[aoAOQY]",
@@ -16522,7 +16534,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -16530,7 +16542,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -16538,7 +16550,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -16546,7 +16558,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -16554,7 +16566,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuAOIUQY]",
 							"",
@@ -16562,7 +16574,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -16570,7 +16582,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -16578,7 +16590,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -16586,7 +16598,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprstv]$",
@@ -16594,7 +16606,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -16602,7 +16614,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -16610,7 +16622,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[oeiuQY]",
 							"",
@@ -16618,7 +16630,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -16626,7 +16638,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -16634,7 +16646,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -16642,7 +16654,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -16650,7 +16662,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[oeiuQY]",
 							"",
@@ -16658,7 +16670,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -16666,7 +16678,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -16674,7 +16686,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DoiuQY]",
 							"",
@@ -16682,7 +16694,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -16690,7 +16702,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -16698,7 +16710,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -16706,7 +16718,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -16714,7 +16726,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -16722,7 +16734,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -16735,7 +16747,7 @@ var ashFinalRules = finalRules{
 				langs: 9,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -16743,7 +16755,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -16751,7 +16763,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -16759,7 +16771,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -16767,7 +16779,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -16775,7 +16787,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -16783,7 +16795,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -16791,7 +16803,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -16799,7 +16811,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -16807,7 +16819,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -16815,7 +16827,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -16823,7 +16835,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -16831,7 +16843,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -16839,7 +16851,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -16847,7 +16859,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -16855,7 +16867,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -16863,7 +16875,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -16871,7 +16883,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -16879,7 +16891,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -16887,7 +16899,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -16895,7 +16907,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -16903,7 +16915,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -16911,7 +16923,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -16919,7 +16931,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -16927,7 +16939,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -16935,7 +16947,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -16948,7 +16960,7 @@ var ashFinalRules = finalRules{
 				langs: 1,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -16956,7 +16968,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -16964,7 +16976,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -16972,7 +16984,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -16980,7 +16992,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -16988,7 +17000,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -16996,7 +17008,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -17004,7 +17016,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17012,7 +17024,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17020,7 +17032,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17028,7 +17040,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17036,7 +17048,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17044,7 +17056,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17052,7 +17064,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -17060,7 +17072,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -17068,7 +17080,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -17076,7 +17088,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -17084,7 +17096,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -17092,7 +17104,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -17100,7 +17112,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17108,7 +17120,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17116,7 +17128,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -17124,7 +17136,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17132,7 +17144,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -17140,7 +17152,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -17148,7 +17160,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17161,7 +17173,7 @@ var ashFinalRules = finalRules{
 				langs: 2,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aEIeiou]e",
@@ -17169,7 +17181,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -17177,7 +17189,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -17185,7 +17197,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -17193,7 +17205,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -17201,7 +17213,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -17209,7 +17221,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -17217,7 +17229,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -17225,7 +17237,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17233,7 +17245,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -17241,7 +17253,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17249,7 +17261,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17257,7 +17269,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17265,7 +17277,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17273,7 +17285,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17281,7 +17293,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"D[^aeiEIou]",
 							"",
@@ -17289,7 +17301,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"D[^aeiEIou]",
 							"",
@@ -17297,7 +17309,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17305,7 +17317,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -17313,7 +17325,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17321,7 +17333,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiEuQY]",
 							"",
@@ -17329,7 +17341,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQY]",
@@ -17337,7 +17349,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17345,7 +17357,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17358,7 +17370,7 @@ var ashFinalRules = finalRules{
 				langs: 3,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -17366,7 +17378,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -17374,7 +17386,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -17382,7 +17394,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -17390,7 +17402,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -17398,7 +17410,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -17406,7 +17418,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -17414,7 +17426,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17422,7 +17434,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17430,7 +17442,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17438,7 +17450,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17446,7 +17458,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17454,7 +17466,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17462,7 +17474,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17470,7 +17482,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17478,7 +17490,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -17486,7 +17498,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17494,7 +17506,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[aoiuQ]",
 							"",
@@ -17502,7 +17514,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -17510,7 +17522,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17523,7 +17535,7 @@ var ashFinalRules = finalRules{
 				langs: 4,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -17531,7 +17543,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEIOUouQY]",
 							"",
@@ -17539,7 +17551,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -17547,7 +17559,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -17555,7 +17567,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -17563,7 +17575,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -17571,7 +17583,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -17579,7 +17591,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17587,7 +17599,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AU",
 							"",
 							"",
@@ -17595,7 +17607,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aU",
 							"",
 							"",
@@ -17603,7 +17615,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Au",
 							"",
 							"",
@@ -17611,7 +17623,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17619,7 +17631,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17627,7 +17639,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OU",
 							"",
 							"",
@@ -17635,7 +17647,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oU",
 							"",
 							"",
@@ -17643,7 +17655,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ou",
 							"",
 							"",
@@ -17651,7 +17663,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17659,7 +17671,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -17667,7 +17679,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17675,7 +17687,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -17683,7 +17695,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17691,7 +17703,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -17699,7 +17711,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17707,7 +17719,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -17715,7 +17727,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17723,7 +17735,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -17731,7 +17743,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoAOUiuQY]",
 							"",
@@ -17739,7 +17751,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -17747,7 +17759,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17755,7 +17767,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -17763,7 +17775,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprst]$",
@@ -17771,7 +17783,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -17779,7 +17791,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[aoAOUeiuQY]",
 							"",
@@ -17787,7 +17799,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -17795,7 +17807,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17803,7 +17815,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -17811,7 +17823,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -17819,7 +17831,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -17827,7 +17839,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[aoeOUiuQY]",
 							"",
@@ -17835,7 +17847,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -17843,7 +17855,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -17851,7 +17863,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DaoiuUQY]",
 							"",
@@ -17859,7 +17871,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -17867,7 +17879,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -17875,7 +17887,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -17883,7 +17895,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -17891,7 +17903,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -17899,7 +17911,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -17916,7 +17928,7 @@ var ashFinalRules = finalRules{
 				langs: 6,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -17924,7 +17936,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -17932,7 +17944,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -17940,7 +17952,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -17948,7 +17960,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -17956,7 +17968,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -17964,7 +17976,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -17972,7 +17984,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17980,7 +17992,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17988,7 +18000,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17996,7 +18008,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18004,7 +18016,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18012,7 +18024,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18020,7 +18032,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18028,7 +18040,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18036,7 +18048,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -18044,7 +18056,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -18052,7 +18064,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[aoiuQ]",
 							"",
@@ -18060,7 +18072,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -18068,7 +18080,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -18081,7 +18093,7 @@ var ashFinalRules = finalRules{
 				langs: 7,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -18089,7 +18101,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -18097,7 +18109,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -18105,7 +18117,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -18113,7 +18125,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -18121,7 +18133,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -18129,7 +18141,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -18137,7 +18149,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -18145,7 +18157,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -18153,7 +18165,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -18161,7 +18173,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -18169,7 +18181,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -18177,7 +18189,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -18185,7 +18197,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -18193,7 +18205,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -18201,7 +18213,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -18209,7 +18221,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -18217,7 +18229,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -18225,7 +18237,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -18233,7 +18245,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -18241,7 +18253,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -18249,7 +18261,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -18257,7 +18269,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -18265,7 +18277,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -18273,7 +18285,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -18281,7 +18293,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -18289,7 +18301,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -18297,7 +18309,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -18305,7 +18317,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -18313,7 +18325,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -18321,7 +18333,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -18329,7 +18341,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -18337,7 +18349,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -18345,7 +18357,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -18353,7 +18365,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -18361,7 +18373,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -18369,7 +18381,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -18377,7 +18389,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -18385,7 +18397,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -18393,7 +18405,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -18401,7 +18413,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -18409,7 +18421,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -18417,7 +18429,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -18425,7 +18437,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18433,7 +18445,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18441,7 +18453,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18449,7 +18461,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18457,7 +18469,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18465,7 +18477,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18473,7 +18485,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18481,7 +18493,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -18489,7 +18501,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -18497,7 +18509,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -18505,7 +18517,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -18513,7 +18525,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -18521,7 +18533,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -18534,7 +18546,7 @@ var ashFinalRules = finalRules{
 				langs: 8,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -18542,7 +18554,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -18550,7 +18562,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -18558,7 +18570,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -18566,7 +18578,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -18574,7 +18586,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -18582,7 +18594,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -18590,7 +18602,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -18598,7 +18610,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -18606,7 +18618,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -18614,7 +18626,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -18622,7 +18634,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -18630,7 +18642,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -18638,7 +18650,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -18646,7 +18658,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -18654,7 +18666,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -18662,7 +18674,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -18670,7 +18682,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -18678,7 +18690,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -18686,7 +18698,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -18694,7 +18706,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -18702,7 +18714,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -18710,7 +18722,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -18718,7 +18730,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -18726,7 +18738,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -18734,7 +18746,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -18742,7 +18754,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -18750,7 +18762,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -18758,7 +18770,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -18766,7 +18778,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -18774,7 +18786,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -18782,7 +18794,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -18790,7 +18802,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -18798,7 +18810,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -18806,7 +18818,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -18814,7 +18826,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -18822,7 +18834,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -18830,7 +18842,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -18838,7 +18850,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -18846,7 +18858,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -18854,7 +18866,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -18862,7 +18874,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -18870,7 +18882,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -18878,7 +18890,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18886,7 +18898,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18894,7 +18906,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18902,7 +18914,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18910,7 +18922,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18918,7 +18930,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18926,7 +18938,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18934,7 +18946,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -18942,7 +18954,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -18950,7 +18962,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -18958,7 +18970,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -18966,7 +18978,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -18974,7 +18986,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -18987,7 +18999,7 @@ var ashFinalRules = finalRules{
 				langs: 10,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -18995,7 +19007,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -19003,7 +19015,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -19011,7 +19023,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -19019,7 +19031,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -19027,7 +19039,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -19035,7 +19047,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -19043,7 +19055,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -19051,7 +19063,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -19059,7 +19071,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -19067,7 +19079,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -19075,7 +19087,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -19083,7 +19095,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -19091,7 +19103,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -19099,7 +19111,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -19107,7 +19119,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -19115,7 +19127,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -19123,7 +19135,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[aoiuQ]",
 							"",
@@ -19131,7 +19143,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -19139,7 +19151,7 @@ var ashFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",

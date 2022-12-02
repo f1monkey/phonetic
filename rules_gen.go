@@ -1,7 +1,7 @@
 // GENERATED CODE. DO NOT EDIT!
 package bmpm
 
-type genLang int
+type genLang uint64
 
 const (
 	genany genLang = 1 << iota
@@ -72,10 +72,31 @@ func (l genLang) String() string {
 	return ""
 }
 
+const genAll = genany +
+	genarabic +
+	gencyrillic +
+	genczech +
+	gendutch +
+	genenglish +
+	genfrench +
+	gengerman +
+	gengreek +
+	gengreeklatin +
+	genhebrew +
+	genhungarian +
+	genitalian +
+	genlatvian +
+	genpolish +
+	genportuguese +
+	genromanian +
+	genrussian +
+	genspanish +
+	genturkish
+
 var genRules = map[genLang][]rule{
 	genany: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yna",
 				"",
 				"$",
@@ -83,7 +104,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ina",
 				"",
 				"$",
@@ -91,7 +112,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"liova",
 				"",
 				"$",
@@ -99,7 +120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lova",
 				"",
 				"$",
@@ -107,7 +128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kova",
 				"",
 				"$",
@@ -115,7 +136,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ova",
 				"",
 				"$",
@@ -123,7 +144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ová",
 				"",
 				"$",
@@ -131,7 +152,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eva",
 				"",
 				"$",
@@ -139,7 +160,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aia",
 				"",
 				"$",
@@ -147,7 +168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aja",
 				"",
 				"$",
@@ -155,7 +176,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aya",
 				"",
 				"$",
@@ -163,7 +184,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowa",
 				"",
 				"$",
@@ -171,7 +192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowa",
 				"",
 				"$",
@@ -179,7 +200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owa",
 				"",
 				"$",
@@ -187,7 +208,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowna",
 				"",
 				"$",
@@ -195,7 +216,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowna",
 				"",
 				"$",
@@ -203,7 +224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owna",
 				"",
 				"$",
@@ -211,7 +232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lówna",
 				"",
 				"$",
@@ -219,7 +240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kówna",
 				"",
 				"$",
@@ -227,7 +248,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ówna",
 				"",
 				"$",
@@ -235,7 +256,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"$",
@@ -243,7 +264,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"$",
@@ -251,7 +272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pf",
 				"",
 				"",
@@ -259,7 +280,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"que",
 				"",
 				"$",
@@ -267,7 +288,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -275,7 +296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bfpv]",
@@ -283,7 +304,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"[aeiouy]",
 				"[aeiouy]",
@@ -291,7 +312,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"[aeiouy]",
 				"",
@@ -299,7 +320,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ly",
 				"",
 				"[au]",
@@ -307,7 +328,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"li",
 				"",
 				"[au]",
@@ -315,7 +336,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lio",
 				"",
 				"",
@@ -323,7 +344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lyo",
 				"",
 				"",
@@ -331,7 +352,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lt",
 				"u",
 				"$",
@@ -339,7 +360,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"^",
 				"",
@@ -347,7 +368,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[aáuiíoóeéêy]",
@@ -355,7 +376,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[cs]",
@@ -363,7 +384,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"u",
 				"$",
@@ -371,7 +392,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -379,7 +400,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cz",
 				"",
 				"",
@@ -387,7 +408,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rh",
 				"^",
 				"",
@@ -395,7 +416,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"dh",
 				"^",
 				"",
@@ -403,7 +424,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"bh",
 				"^",
 				"",
@@ -411,7 +432,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -419,7 +440,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -427,7 +448,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lh",
 				"",
 				"",
@@ -435,7 +456,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nh",
 				"",
 				"",
@@ -443,7 +464,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssch",
 				"",
 				"",
@@ -451,7 +472,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chsch",
 				"",
 				"",
@@ -459,7 +480,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsch",
 				"",
 				"",
@@ -467,7 +488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"[aeiouy]",
 				"[ei]",
@@ -475,7 +496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"[aeiouy]",
 				"",
@@ -483,7 +504,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"[ei]",
@@ -491,7 +512,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -499,7 +520,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssh",
 				"",
 				"",
@@ -507,7 +528,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"[äöü]",
@@ -515,7 +536,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"[aeiou]",
@@ -523,7 +544,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -531,7 +552,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zh",
 				"",
 				"",
@@ -539,7 +560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chs",
 				"",
 				"",
@@ -547,7 +568,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -555,7 +576,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -563,7 +584,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"^",
 				"",
@@ -571,7 +592,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"[äöüaeiou]",
@@ -579,7 +600,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -587,7 +608,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"[ei]",
@@ -595,7 +616,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ouh",
 				"",
 				"[aioe]",
@@ -603,7 +624,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uh",
 				"",
 				"[aioe]",
@@ -611,7 +632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -619,7 +640,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[aeiouyäöü]",
 				"",
@@ -627,7 +648,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"^",
 				"",
@@ -635,7 +656,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"",
@@ -643,7 +664,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"[bp]",
@@ -651,7 +672,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"",
@@ -659,7 +680,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"[bp]",
@@ -667,7 +688,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"",
@@ -675,7 +696,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"",
@@ -683,7 +704,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cio",
 				"",
 				"",
@@ -691,7 +712,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciu",
 				"",
 				"",
@@ -699,7 +720,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sci",
 				"",
 				"$",
@@ -707,7 +728,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sc",
 				"",
 				"[ei]",
@@ -715,7 +736,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"$",
@@ -723,7 +744,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cy",
 				"",
 				"",
@@ -731,7 +752,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -739,7 +760,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sç",
 				"",
 				"[aeiou]",
@@ -747,7 +768,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssz",
 				"",
 				"",
@@ -755,7 +776,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"^",
 				"",
@@ -763,7 +784,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"$",
@@ -771,7 +792,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"",
@@ -779,7 +800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssp",
 				"",
 				"",
@@ -787,7 +808,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sp",
 				"",
 				"",
@@ -795,7 +816,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sst",
 				"",
 				"",
@@ -803,7 +824,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"st",
 				"",
 				"",
@@ -811,7 +832,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -819,7 +840,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sj",
 				"^",
 				"",
@@ -827,7 +848,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sj",
 				"",
 				"$",
@@ -835,7 +856,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sj",
 				"",
 				"",
@@ -843,7 +864,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"",
@@ -851,7 +872,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"[bp]",
@@ -859,7 +880,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"",
@@ -867,7 +888,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"[bp]",
@@ -875,7 +896,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"",
@@ -883,7 +904,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"",
@@ -891,7 +912,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sio",
 				"",
 				"",
@@ -899,7 +920,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siu",
 				"",
 				"",
@@ -907,7 +928,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"si",
 				"[äöëaáuiíoóeéêy]",
 				"",
@@ -915,7 +936,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"si",
 				"",
 				"",
@@ -923,7 +944,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aáuiíoóeéêy]",
 				"[aáuíoóeéêy]",
@@ -931,7 +952,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[aeouäöë]",
@@ -939,7 +960,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiouy]",
 				"[dglmnrv]",
@@ -947,7 +968,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[dglmnrv]",
@@ -955,7 +976,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gue",
 				"",
 				"$",
@@ -963,7 +984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ei]",
@@ -971,7 +992,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ao]",
@@ -979,7 +1000,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"guy",
 				"",
 				"",
@@ -987,7 +1008,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gli",
 				"",
 				"",
@@ -995,7 +1016,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gni",
 				"",
 				"",
@@ -1003,7 +1024,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"[aeou]",
@@ -1011,7 +1032,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggie",
 				"",
 				"",
@@ -1019,7 +1040,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"",
 				"[aou]",
@@ -1027,7 +1048,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"[yaeiou]",
 				"[aou]",
@@ -1035,7 +1056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gge",
 				"[yaeiou]",
 				"",
@@ -1043,7 +1064,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"[yaeiou]",
 				"",
@@ -1051,7 +1072,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"",
 				"[aou]",
@@ -1059,7 +1080,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gie",
 				"",
 				"$",
@@ -1067,7 +1088,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gie",
 				"",
 				"",
@@ -1075,7 +1096,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"[aou]",
@@ -1083,7 +1104,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ge",
 				"[yaeiou]",
 				"",
@@ -1091,7 +1112,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"[yaeiou]",
 				"",
@@ -1099,7 +1120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ge",
 				"",
 				"",
@@ -1107,7 +1128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"",
@@ -1115,7 +1136,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"[aeouáéóúüöőű]",
@@ -1123,7 +1144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"",
@@ -1131,7 +1152,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"[yaeiou]",
 				"[aouyei]",
@@ -1139,7 +1160,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[aouei]",
@@ -1147,7 +1168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"",
@@ -1155,7 +1176,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"[aoeiuy]",
@@ -1163,7 +1184,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"t",
 				"",
@@ -1171,7 +1192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"",
 				"",
@@ -1179,7 +1200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"$",
@@ -1187,7 +1208,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"^",
 				"",
@@ -1195,7 +1216,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -1203,7 +1224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"[bcdgkpstwzż]",
@@ -1211,7 +1232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"",
@@ -1219,7 +1240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"[bp]",
@@ -1227,7 +1248,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"",
@@ -1235,7 +1256,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"[bp]",
@@ -1243,7 +1264,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"",
@@ -1251,7 +1272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"[bcdgkpstwzż]",
@@ -1259,7 +1280,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"",
@@ -1267,7 +1288,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -1275,7 +1296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziu",
 				"",
 				"",
@@ -1283,7 +1304,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zi",
 				"",
 				"",
@@ -1291,7 +1312,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"$",
@@ -1299,7 +1320,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[bdgv]",
@@ -1307,7 +1328,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[ptckf]",
@@ -1315,7 +1336,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -1323,7 +1344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oue",
 				"",
 				"",
@@ -1331,7 +1352,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eau",
 				"",
 				"",
@@ -1339,7 +1360,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ae",
 				"",
 				"",
@@ -1347,7 +1368,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -1355,7 +1376,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"",
@@ -1363,7 +1384,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -1371,7 +1392,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ão",
 				"",
 				"",
@@ -1379,7 +1400,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãe",
 				"",
 				"",
@@ -1387,7 +1408,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãi",
 				"",
 				"",
@@ -1395,7 +1416,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ea",
 				"",
 				"",
@@ -1403,7 +1424,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -1411,7 +1432,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -1419,7 +1440,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -1427,7 +1448,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -1435,7 +1456,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ia",
 				"",
 				"",
@@ -1443,7 +1464,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -1451,7 +1472,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"$",
@@ -1459,7 +1480,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"io",
 				"",
 				"",
@@ -1467,7 +1488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iu",
 				"",
 				"",
@@ -1475,7 +1496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				"$",
@@ -1483,7 +1504,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oe",
 				"",
 				"",
@@ -1491,7 +1512,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oi",
 				"",
 				"",
@@ -1499,7 +1520,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -1507,7 +1528,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -1515,7 +1536,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"où",
 				"",
 				"",
@@ -1523,7 +1544,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oy",
 				"",
 				"",
@@ -1531,7 +1552,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õe",
 				"",
 				"",
@@ -1539,7 +1560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ua",
 				"",
 				"",
@@ -1547,7 +1568,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ue",
 				"",
 				"",
@@ -1555,7 +1576,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ui",
 				"",
 				"",
@@ -1563,7 +1584,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uu",
 				"",
 				"",
@@ -1571,7 +1592,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -1579,7 +1600,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uy",
 				"",
 				"",
@@ -1587,7 +1608,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ya",
 				"",
 				"",
@@ -1595,7 +1616,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ye",
 				"",
 				"",
@@ -1603,7 +1624,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"^",
 				"",
@@ -1611,7 +1632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"$",
@@ -1619,7 +1640,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yo",
 				"",
 				"",
@@ -1627,7 +1648,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yu",
 				"",
 				"",
@@ -1635,7 +1656,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"$",
@@ -1643,7 +1664,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[áóéê]",
 				"",
@@ -1651,7 +1672,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[áóéê]",
 				"",
@@ -1659,7 +1680,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"^",
 				"",
@@ -1667,7 +1688,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -1675,7 +1696,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"[bp]",
@@ -1683,7 +1704,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"",
@@ -1691,7 +1712,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ä",
 				"",
 				"",
@@ -1699,7 +1720,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -1707,7 +1728,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -1715,7 +1736,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -1723,7 +1744,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ã",
 				"",
 				"",
@@ -1731,7 +1752,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ă",
 				"",
 				"",
@@ -1739,7 +1760,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ā",
 				"",
 				"",
@@ -1747,7 +1768,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"č",
 				"",
 				"",
@@ -1755,7 +1776,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ć",
 				"",
 				"",
@@ -1763,7 +1784,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -1771,7 +1792,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ď",
 				"",
 				"",
@@ -1779,7 +1800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"[bp]",
@@ -1787,7 +1808,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"",
@@ -1795,7 +1816,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -1803,7 +1824,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -1811,7 +1832,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -1819,7 +1840,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ě",
 				"",
 				"",
@@ -1827,7 +1848,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ē",
 				"",
 				"",
@@ -1835,7 +1856,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ģ",
 				"",
 				"",
@@ -1843,7 +1864,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ğ",
 				"",
 				"",
@@ -1851,7 +1872,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -1859,7 +1880,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"î",
 				"",
 				"",
@@ -1867,7 +1888,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ī",
 				"",
 				"",
@@ -1875,7 +1896,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ı",
 				"",
 				"",
@@ -1883,7 +1904,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ķ",
 				"",
 				"",
@@ -1891,7 +1912,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ļ",
 				"",
 				"",
@@ -1899,7 +1920,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ł",
 				"",
 				"",
@@ -1907,7 +1928,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ń",
 				"",
 				"",
@@ -1915,7 +1936,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -1923,7 +1944,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ņ",
 				"",
 				"",
@@ -1931,7 +1952,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -1939,7 +1960,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ô",
 				"",
 				"",
@@ -1947,7 +1968,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õ",
 				"",
 				"",
@@ -1955,7 +1976,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ò",
 				"",
 				"",
@@ -1963,7 +1984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -1971,7 +1992,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ř",
 				"",
 				"",
@@ -1979,7 +2000,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ś",
 				"",
 				"",
@@ -1987,7 +2008,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ş",
 				"",
 				"",
@@ -1995,7 +2016,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"š",
 				"",
 				"",
@@ -2003,7 +2024,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ţ",
 				"",
 				"",
@@ -2011,7 +2032,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ť",
 				"",
 				"",
@@ -2019,7 +2040,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -2027,7 +2048,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -2035,7 +2056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ū",
 				"",
 				"",
@@ -2043,7 +2064,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -2051,7 +2072,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ů",
 				"",
 				"",
@@ -2059,7 +2080,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ù",
 				"",
 				"",
@@ -2067,7 +2088,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ý",
 				"",
 				"",
@@ -2075,7 +2096,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ż",
 				"",
 				"",
@@ -2083,7 +2104,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ź",
 				"",
 				"",
@@ -2091,7 +2112,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ž",
 				"",
 				"",
@@ -2099,7 +2120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ß",
 				"",
 				"",
@@ -2107,7 +2128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"'",
 				"",
 				"",
@@ -2115,7 +2136,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"\"",
 				"",
 				"",
@@ -2123,7 +2144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"[bcćdgklłmnńrsśtwzźż]",
@@ -2131,7 +2152,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -2139,7 +2160,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -2147,7 +2168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -2155,7 +2176,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -2163,7 +2184,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -2171,7 +2192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -2179,7 +2200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -2187,7 +2208,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -2195,7 +2216,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -2203,7 +2224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -2211,7 +2232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -2219,7 +2240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -2227,7 +2248,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -2235,7 +2256,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -2243,7 +2264,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -2251,7 +2272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -2259,7 +2280,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -2267,7 +2288,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -2275,7 +2296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -2283,7 +2304,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -2291,7 +2312,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -2299,7 +2320,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -2307,7 +2328,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -2315,7 +2336,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -2323,7 +2344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -2331,7 +2352,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -2341,7 +2362,7 @@ var genRules = map[genLang][]rule{
 	},
 	genarabic: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ا",
 				"",
 				"",
@@ -2349,7 +2370,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ب",
 				"",
 				"$",
@@ -2357,7 +2378,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ب",
 				"",
 				"",
@@ -2365,7 +2386,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ت",
 				"",
 				"$",
@@ -2373,7 +2394,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ت",
 				"",
 				"",
@@ -2381,7 +2402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ث",
 				"",
 				"$",
@@ -2389,7 +2410,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ث",
 				"",
 				"",
@@ -2397,7 +2418,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ج",
 				"",
 				"$",
@@ -2405,7 +2426,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ج",
 				"",
 				"",
@@ -2413,7 +2434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ح",
 				"^",
 				"",
@@ -2421,7 +2442,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ح",
 				"",
 				"$",
@@ -2429,7 +2450,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ح",
 				"",
 				"",
@@ -2437,7 +2458,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"خ",
 				"",
 				"$",
@@ -2445,7 +2466,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"خ",
 				"",
 				"",
@@ -2453,7 +2474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"د",
 				"",
 				"$",
@@ -2461,7 +2482,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"د",
 				"",
 				"",
@@ -2469,7 +2490,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ذ",
 				"",
 				"$",
@@ -2477,7 +2498,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ذ",
 				"",
 				"",
@@ -2485,7 +2506,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ر",
 				"",
 				"$",
@@ -2493,7 +2514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ر",
 				"",
 				"",
@@ -2501,7 +2522,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ز",
 				"",
 				"$",
@@ -2509,7 +2530,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ز",
 				"",
 				"",
@@ -2517,7 +2538,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"س",
 				"",
 				"$",
@@ -2525,7 +2546,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"س",
 				"",
 				"",
@@ -2533,7 +2554,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ش",
 				"",
 				"$",
@@ -2541,7 +2562,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ش",
 				"",
 				"",
@@ -2549,7 +2570,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ص",
 				"",
 				"$",
@@ -2557,7 +2578,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ص",
 				"",
 				"",
@@ -2565,7 +2586,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ض",
 				"",
 				"$",
@@ -2573,7 +2594,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ض",
 				"",
 				"",
@@ -2581,7 +2602,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ط",
 				"",
 				"$",
@@ -2589,7 +2610,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ط",
 				"",
 				"",
@@ -2597,7 +2618,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ظ",
 				"",
 				"$",
@@ -2605,7 +2626,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ظ",
 				"",
 				"",
@@ -2613,7 +2634,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ع",
 				"^",
 				"",
@@ -2621,7 +2642,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ع",
 				"",
 				"$",
@@ -2629,7 +2650,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ع",
 				"",
 				"",
@@ -2637,7 +2658,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"غ",
 				"",
 				"$",
@@ -2645,7 +2666,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"غ",
 				"",
 				"",
@@ -2653,7 +2674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ف",
 				"",
 				"$",
@@ -2661,7 +2682,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ف",
 				"",
 				"",
@@ -2669,7 +2690,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ق",
 				"",
 				"$",
@@ -2677,7 +2698,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ق",
 				"",
 				"",
@@ -2685,7 +2706,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ك",
 				"",
 				"$",
@@ -2693,7 +2714,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ك",
 				"",
 				"",
@@ -2701,7 +2722,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ل",
 				"",
 				"$",
@@ -2709,7 +2730,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ل",
 				"",
 				"",
@@ -2717,7 +2738,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"م",
 				"",
 				"$",
@@ -2725,7 +2746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"م",
 				"",
 				"",
@@ -2733,7 +2754,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ن",
 				"",
 				"$",
@@ -2741,7 +2762,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ن",
 				"",
 				"",
@@ -2749,7 +2770,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ه",
 				"^",
 				"",
@@ -2757,7 +2778,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ه",
 				"",
 				"$",
@@ -2765,7 +2786,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ه",
 				"",
 				"",
@@ -2773,7 +2794,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"و",
 				"",
 				"$",
@@ -2781,7 +2802,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"و",
 				"",
 				"",
@@ -2789,7 +2810,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ي\u200e",
 				"",
 				"$",
@@ -2797,7 +2818,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ي\u200e",
 				"",
 				"",
@@ -2807,7 +2828,7 @@ var genRules = map[genLang][]rule{
 	},
 	gencyrillic: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ця",
 				"",
 				"",
@@ -2815,7 +2836,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"цю",
 				"",
 				"",
@@ -2823,7 +2844,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"циа",
 				"",
 				"",
@@ -2831,7 +2852,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"цие",
 				"",
 				"",
@@ -2839,7 +2860,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"цио",
 				"",
 				"",
@@ -2847,7 +2868,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"циу",
 				"",
 				"",
@@ -2855,7 +2876,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"сие",
 				"",
 				"",
@@ -2863,7 +2884,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"сио",
 				"",
 				"",
@@ -2871,7 +2892,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"зие",
 				"",
 				"",
@@ -2879,7 +2900,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"зио",
 				"",
 				"",
@@ -2887,7 +2908,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"с",
 				"",
 				"с",
@@ -2895,7 +2916,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гауз",
 				"",
 				"$",
@@ -2903,7 +2924,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гаус",
 				"",
 				"$",
@@ -2911,7 +2932,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гольц",
 				"",
 				"$",
@@ -2919,7 +2940,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"геймер",
 				"",
 				"$",
@@ -2927,7 +2948,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гейм",
 				"",
 				"$",
@@ -2935,7 +2956,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гоф",
 				"",
 				"$",
@@ -2943,7 +2964,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гер",
 				"",
 				"$",
@@ -2951,7 +2972,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ген",
 				"",
 				"$",
@@ -2959,7 +2980,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"гин",
 				"",
 				"$",
@@ -2967,7 +2988,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"г",
 				"(й|ё|я|ю|ы|а|е|о|и|у)",
 				"(а|е|о|и|у)",
@@ -2975,7 +2996,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"г",
 				"",
 				"(а|е|о|и|у)",
@@ -2983,7 +3004,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ля",
 				"",
 				"",
@@ -2991,7 +3012,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"лю",
 				"",
 				"",
@@ -2999,7 +3020,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"лё",
 				"",
 				"",
@@ -3007,7 +3028,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"лио",
 				"",
 				"",
@@ -3015,7 +3036,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ле",
 				"",
 				"",
@@ -3023,7 +3044,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ийе",
 				"",
 				"",
@@ -3031,7 +3052,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ие",
 				"",
 				"",
@@ -3039,7 +3060,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ыйе",
 				"",
 				"",
@@ -3047,7 +3068,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ые",
 				"",
 				"",
@@ -3055,7 +3076,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ий",
 				"",
 				"(а|о|у)",
@@ -3063,7 +3084,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ый",
 				"",
 				"(а|о|у)",
@@ -3071,7 +3092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ий",
 				"",
 				"$",
@@ -3079,7 +3100,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ый",
 				"",
 				"$",
@@ -3087,7 +3108,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ей",
 				"^",
 				"",
@@ -3095,7 +3116,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"е",
 				"(а|е|о|у)",
 				"",
@@ -3103,7 +3124,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"е",
 				"^",
 				"",
@@ -3111,7 +3132,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"эй",
 				"",
 				"",
@@ -3119,7 +3140,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ей",
 				"",
 				"",
@@ -3127,7 +3148,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ауе",
 				"",
 				"",
@@ -3135,7 +3156,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ауэ",
 				"",
 				"",
@@ -3143,7 +3164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"а",
 				"",
 				"",
@@ -3151,7 +3172,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"б",
 				"",
 				"",
@@ -3159,7 +3180,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"в",
 				"",
 				"",
@@ -3167,7 +3188,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"г",
 				"",
 				"",
@@ -3175,7 +3196,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"д",
 				"",
 				"",
@@ -3183,7 +3204,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"е",
 				"",
 				"",
@@ -3191,7 +3212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ё",
 				"",
 				"",
@@ -3199,7 +3220,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ж",
 				"",
 				"",
@@ -3207,7 +3228,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"з",
 				"",
 				"",
@@ -3215,7 +3236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"и",
 				"",
 				"",
@@ -3223,7 +3244,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"й",
 				"",
 				"",
@@ -3231,7 +3252,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"к",
 				"",
 				"",
@@ -3239,7 +3260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"л",
 				"",
 				"",
@@ -3247,7 +3268,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"м",
 				"",
 				"",
@@ -3255,7 +3276,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"н",
 				"",
 				"",
@@ -3263,7 +3284,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"о",
 				"",
 				"",
@@ -3271,7 +3292,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"п",
 				"",
 				"",
@@ -3279,7 +3300,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"р",
 				"",
 				"",
@@ -3287,7 +3308,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"с",
 				"",
 				"",
@@ -3295,7 +3316,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"т",
 				"",
 				"",
@@ -3303,7 +3324,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"у",
 				"",
 				"",
@@ -3311,7 +3332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ф",
 				"",
 				"",
@@ -3319,7 +3340,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"х",
 				"",
 				"",
@@ -3327,7 +3348,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ц",
 				"",
 				"",
@@ -3335,7 +3356,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ч",
 				"",
 				"",
@@ -3343,7 +3364,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ш",
 				"",
 				"",
@@ -3351,7 +3372,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"щ",
 				"",
 				"",
@@ -3359,7 +3380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ъ",
 				"",
 				"",
@@ -3367,7 +3388,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ы",
 				"",
 				"",
@@ -3375,7 +3396,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ь",
 				"",
 				"",
@@ -3383,7 +3404,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"э",
 				"",
 				"",
@@ -3391,7 +3412,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ю",
 				"",
 				"",
@@ -3399,7 +3420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"я",
 				"",
 				"",
@@ -3409,7 +3430,7 @@ var genRules = map[genLang][]rule{
 	},
 	genczech: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -3417,7 +3438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -3425,7 +3446,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -3433,7 +3454,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -3441,7 +3462,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -3449,7 +3470,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -3457,7 +3478,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"č",
 				"",
 				"",
@@ -3465,7 +3486,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"š",
 				"",
 				"",
@@ -3473,7 +3494,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ž",
 				"",
 				"",
@@ -3481,7 +3502,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ň",
 				"",
 				"",
@@ -3489,7 +3510,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ť",
 				"",
 				"",
@@ -3497,7 +3518,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ď",
 				"",
 				"",
@@ -3505,7 +3526,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ř",
 				"",
 				"",
@@ -3513,7 +3534,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -3521,7 +3542,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -3529,7 +3550,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -3537,7 +3558,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -3545,7 +3566,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -3553,7 +3574,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ý",
 				"",
 				"",
@@ -3561,7 +3582,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ě",
 				"",
 				"",
@@ -3569,7 +3590,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ů",
 				"",
 				"",
@@ -3577,7 +3598,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -3585,7 +3606,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -3593,7 +3614,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -3601,7 +3622,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -3609,7 +3630,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -3617,7 +3638,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -3625,7 +3646,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -3633,7 +3654,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -3641,7 +3662,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -3649,7 +3670,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -3657,7 +3678,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -3665,7 +3686,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -3673,7 +3694,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -3681,7 +3702,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -3689,7 +3710,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -3697,7 +3718,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -3705,7 +3726,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -3713,7 +3734,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -3721,7 +3742,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -3729,7 +3750,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -3737,7 +3758,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -3745,7 +3766,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -3753,7 +3774,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -3761,7 +3782,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -3769,7 +3790,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -3777,7 +3798,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -3787,7 +3808,7 @@ var genRules = map[genLang][]rule{
 	},
 	gendutch: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssj",
 				"",
 				"",
@@ -3795,7 +3816,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sj",
 				"",
 				"",
@@ -3803,7 +3824,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -3811,7 +3832,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiy]",
@@ -3819,7 +3840,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -3827,7 +3848,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pf",
 				"",
 				"",
@@ -3835,7 +3856,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -3843,7 +3864,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -3851,7 +3872,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"^",
 				"",
@@ -3859,7 +3880,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"[äöüaeiou]",
@@ -3867,7 +3888,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -3875,7 +3896,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -3883,7 +3904,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[aeiouy]",
 				"",
@@ -3891,7 +3912,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -3899,7 +3920,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -3907,7 +3928,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -3915,7 +3936,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uu",
 				"",
 				"",
@@ -3923,7 +3944,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -3931,7 +3952,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -3939,7 +3960,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aa",
 				"",
 				"",
@@ -3947,7 +3968,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -3955,7 +3976,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oe",
 				"",
 				"",
@@ -3963,7 +3984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"",
@@ -3971,7 +3992,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ui",
 				"",
 				"",
@@ -3979,7 +4000,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -3987,7 +4008,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -3995,7 +4016,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeou]",
@@ -4003,7 +4024,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -4011,7 +4032,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aeou]",
 				"",
@@ -4019,7 +4040,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -4027,7 +4048,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -4035,7 +4056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -4043,7 +4064,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -4051,7 +4072,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -4059,7 +4080,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -4067,7 +4088,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -4075,7 +4096,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -4083,7 +4104,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -4091,7 +4112,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -4099,7 +4120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -4107,7 +4128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -4115,7 +4136,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -4123,7 +4144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -4131,7 +4152,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -4139,7 +4160,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -4147,7 +4168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -4155,7 +4176,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -4163,7 +4184,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -4171,7 +4192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -4179,7 +4200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -4187,7 +4208,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -4195,7 +4216,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -4203,7 +4224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -4211,7 +4232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -4219,7 +4240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -4229,7 +4250,7 @@ var genRules = map[genLang][]rule{
 	},
 	genenglish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -4237,7 +4258,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"'",
 				"",
 				"",
@@ -4245,7 +4266,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mc",
 				"^",
 				"",
@@ -4253,7 +4274,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -4261,7 +4282,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tch",
 				"",
 				"",
@@ -4269,7 +4290,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -4277,7 +4298,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -4285,7 +4306,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cc",
 				"",
 				"[iey]",
@@ -4293,7 +4314,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"c",
@@ -4301,7 +4322,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[iey]",
@@ -4309,7 +4330,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"^",
 				"",
@@ -4317,7 +4338,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"",
@@ -4325,7 +4346,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"",
@@ -4333,7 +4354,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[iey]",
@@ -4341,7 +4362,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -4349,7 +4370,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -4357,7 +4378,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -4365,7 +4386,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -4373,7 +4394,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -4381,7 +4402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"who",
 				"^",
 				"",
@@ -4389,7 +4410,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"wh",
 				"^",
 				"",
@@ -4397,7 +4418,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -4405,7 +4426,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"[^aeiou]",
@@ -4413,7 +4434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"^",
 				"",
@@ -4421,7 +4442,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kn",
 				"^",
 				"",
@@ -4429,7 +4450,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mb",
 				"",
 				"$",
@@ -4437,7 +4458,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ng",
 				"",
 				"$",
@@ -4445,7 +4466,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pn",
 				"^",
 				"",
@@ -4453,7 +4474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ps",
 				"^",
 				"",
@@ -4461,7 +4482,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -4469,7 +4490,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tia",
 				"",
 				"",
@@ -4477,7 +4498,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tio",
 				"",
 				"",
@@ -4485,7 +4506,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"wr",
 				"^",
 				"",
@@ -4493,7 +4514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"^",
 				"",
@@ -4501,7 +4522,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"^",
 				"",
@@ -4509,7 +4530,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"^",
 				"[aeiouy]",
@@ -4517,7 +4538,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"^",
 				"",
@@ -4525,7 +4546,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -4533,7 +4554,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oue",
 				"",
 				"",
@@ -4541,7 +4562,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -4549,7 +4570,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -4557,7 +4578,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"[^aeiou]e",
@@ -4565,7 +4586,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -4573,7 +4594,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -4581,7 +4602,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ear",
 				"",
 				"",
@@ -4589,7 +4610,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ea",
 				"",
 				"",
@@ -4597,7 +4618,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -4605,7 +4626,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"[^aeiou]e",
@@ -4613,7 +4634,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -4621,7 +4642,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -4629,7 +4650,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[^aeiou]e",
@@ -4637,7 +4658,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oa",
 				"",
 				"",
@@ -4645,7 +4666,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oi",
 				"",
 				"",
@@ -4653,7 +4674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -4661,7 +4682,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -4669,7 +4690,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oy",
 				"",
 				"",
@@ -4677,7 +4698,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"[^aeiou]e",
@@ -4685,7 +4706,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[^aeiou]e",
@@ -4693,7 +4714,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"r",
@@ -4701,7 +4722,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -4709,7 +4730,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -4717,7 +4738,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -4725,7 +4746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -4733,7 +4754,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -4741,7 +4762,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -4749,7 +4770,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -4757,7 +4778,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -4765,7 +4786,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -4773,7 +4794,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -4781,7 +4802,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -4789,7 +4810,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -4797,7 +4818,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -4805,7 +4826,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -4813,7 +4834,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -4821,7 +4842,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -4829,7 +4850,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -4837,7 +4858,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -4845,7 +4866,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -4853,7 +4874,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -4861,7 +4882,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -4869,7 +4890,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -4877,7 +4898,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -4885,7 +4906,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -4893,7 +4914,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -4901,7 +4922,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -4911,7 +4932,7 @@ var genRules = map[genLang][]rule{
 	},
 	genfrench: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lt",
 				"u",
 				"$",
@@ -4919,7 +4940,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"n",
 				"$",
@@ -4927,7 +4948,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"$",
@@ -4935,7 +4956,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"n",
 				"$",
@@ -4943,7 +4964,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"$",
@@ -4951,7 +4972,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"e",
 				"$",
@@ -4959,7 +4980,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"$",
@@ -4967,7 +4988,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"$",
@@ -4975,7 +4996,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ds",
 				"",
 				"$",
@@ -4983,7 +5004,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ps",
 				"",
 				"$",
@@ -4991,7 +5012,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rs",
 				"e",
 				"$",
@@ -4999,7 +5020,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ts",
 				"",
 				"$",
@@ -5007,7 +5028,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"$",
@@ -5015,7 +5036,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"u",
 				"$",
@@ -5023,7 +5044,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeéèêiou]",
 				"[^aeéèêiou]",
@@ -5031,7 +5052,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"[aeéèêiou]",
 				"[^aeéèêiou]",
@@ -5039,7 +5060,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -5047,7 +5068,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -5055,7 +5076,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -5063,7 +5084,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -5071,7 +5092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -5079,7 +5100,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiyéèê]",
@@ -5087,7 +5108,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"",
@@ -5095,7 +5116,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[eiy]",
@@ -5103,7 +5124,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gue",
 				"",
 				"$",
@@ -5111,7 +5132,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[eiy]",
@@ -5119,7 +5140,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aill",
 				"",
 				"e",
@@ -5127,7 +5148,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ll",
 				"",
 				"e",
@@ -5135,7 +5156,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"que",
 				"",
 				"$",
@@ -5143,7 +5164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -5151,7 +5172,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiouyéèê]",
 				"[aeiouyéèê]",
@@ -5159,7 +5180,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -5167,7 +5188,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"[aeiouy]",
 				"[aeiouy]",
@@ -5175,7 +5196,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"[aeiouy]",
 				"",
@@ -5183,7 +5204,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"[aeio]",
@@ -5191,7 +5212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aeio]",
@@ -5199,7 +5220,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -5207,7 +5228,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eau",
 				"",
 				"",
@@ -5215,7 +5236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"",
@@ -5223,7 +5244,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -5231,7 +5252,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -5239,7 +5260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -5247,7 +5268,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -5255,7 +5276,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -5263,7 +5284,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -5271,7 +5292,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -5279,7 +5300,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"où",
 				"",
 				"",
@@ -5287,7 +5308,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -5295,7 +5316,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oi",
 				"",
 				"",
@@ -5303,7 +5324,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -5311,7 +5332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -5319,7 +5340,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -5327,7 +5348,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[ou]",
 				"",
@@ -5335,7 +5356,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -5343,7 +5364,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -5351,7 +5372,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aoeu]",
@@ -5359,7 +5380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -5367,7 +5388,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -5375,7 +5396,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -5383,7 +5404,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -5391,7 +5412,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -5399,7 +5420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -5407,7 +5428,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -5415,7 +5436,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -5423,7 +5444,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -5431,7 +5452,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -5439,7 +5460,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -5447,7 +5468,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -5455,7 +5476,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -5463,7 +5484,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -5471,7 +5492,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -5479,7 +5500,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -5487,7 +5508,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -5495,7 +5516,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -5503,7 +5524,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -5511,7 +5532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -5519,7 +5540,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -5527,7 +5548,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -5535,7 +5556,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -5543,7 +5564,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -5551,7 +5572,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -5561,7 +5582,7 @@ var genRules = map[genLang][]rule{
 	},
 	gengerman: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewitsch",
 				"",
 				"$",
@@ -5569,7 +5590,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owitsch",
 				"",
 				"$",
@@ -5577,7 +5598,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"evitsch",
 				"",
 				"$",
@@ -5585,7 +5606,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ovitsch",
 				"",
 				"$",
@@ -5593,7 +5614,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"witsch",
 				"",
 				"$",
@@ -5601,7 +5622,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"vitsch",
 				"",
 				"$",
@@ -5609,7 +5630,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssch",
 				"",
 				"",
@@ -5617,7 +5638,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chsch",
 				"",
 				"",
@@ -5625,7 +5646,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -5633,7 +5654,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziu",
 				"",
 				"",
@@ -5641,7 +5662,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"",
@@ -5649,7 +5670,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -5657,7 +5678,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"chs",
 				"",
 				"",
@@ -5665,7 +5686,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -5673,7 +5694,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ck",
 				"",
 				"",
@@ -5681,7 +5702,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiy]",
@@ -5689,7 +5710,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sp",
 				"^",
 				"",
@@ -5697,7 +5718,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"st",
 				"^",
 				"",
@@ -5705,7 +5726,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssp",
 				"",
 				"",
@@ -5713,7 +5734,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sp",
 				"",
 				"",
@@ -5721,7 +5742,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sst",
 				"",
 				"",
@@ -5729,7 +5750,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"st",
 				"",
 				"",
@@ -5737,7 +5758,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"pf",
 				"",
 				"",
@@ -5745,7 +5766,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -5753,7 +5774,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -5761,7 +5782,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewitz",
 				"",
 				"$",
@@ -5769,7 +5790,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewiz",
 				"",
 				"$",
@@ -5777,7 +5798,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"evitz",
 				"",
 				"$",
@@ -5785,7 +5806,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eviz",
 				"",
 				"$",
@@ -5793,7 +5814,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owitz",
 				"",
 				"$",
@@ -5801,7 +5822,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owiz",
 				"",
 				"$",
@@ -5809,7 +5830,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ovitz",
 				"",
 				"$",
@@ -5817,7 +5838,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oviz",
 				"",
 				"$",
@@ -5825,7 +5846,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"witz",
 				"",
 				"$",
@@ -5833,7 +5854,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"wiz",
 				"",
 				"$",
@@ -5841,7 +5862,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"vitz",
 				"",
 				"$",
@@ -5849,7 +5870,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"viz",
 				"",
 				"$",
@@ -5857,7 +5878,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -5865,7 +5886,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"thal",
 				"",
 				"$",
@@ -5873,7 +5894,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"^",
 				"",
@@ -5881,7 +5902,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"[äöüaeiou]",
@@ -5889,7 +5910,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -5897,7 +5918,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rh",
 				"^",
 				"",
@@ -5905,7 +5926,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[aeiouyäöü]",
 				"",
@@ -5913,7 +5934,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"^",
 				"",
@@ -5921,7 +5942,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -5929,7 +5950,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[äöüaeiouy]",
@@ -5937,7 +5958,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiouyäöüj]",
 				"[aeiouyäöü]",
@@ -5945,7 +5966,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ß",
 				"",
 				"",
@@ -5953,7 +5974,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"$",
@@ -5961,7 +5982,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -5969,7 +5990,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ue",
 				"",
 				"",
@@ -5977,7 +5998,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ae",
 				"",
 				"",
@@ -5985,7 +6006,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oe",
 				"",
 				"",
@@ -5993,7 +6014,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -6001,7 +6022,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ä",
 				"",
 				"",
@@ -6009,7 +6030,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -6017,7 +6038,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -6025,7 +6046,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -6033,7 +6054,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -6041,7 +6062,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aou]",
 				"",
@@ -6049,7 +6070,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aou]",
 				"",
@@ -6057,7 +6078,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -6065,7 +6086,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -6073,7 +6094,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aoeu]",
@@ -6081,7 +6102,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -6089,7 +6110,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ã",
 				"",
 				"",
@@ -6097,7 +6118,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ő",
 				"",
 				"",
@@ -6105,7 +6126,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -6113,7 +6134,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -6121,7 +6142,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -6129,7 +6150,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -6137,7 +6158,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -6145,7 +6166,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -6153,7 +6174,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -6161,7 +6182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -6169,7 +6190,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -6177,7 +6198,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -6185,7 +6206,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -6193,7 +6214,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -6201,7 +6222,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -6209,7 +6230,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -6217,7 +6238,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -6225,7 +6246,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -6233,7 +6254,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -6241,7 +6262,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -6249,7 +6270,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -6257,7 +6278,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -6265,7 +6286,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -6273,7 +6294,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -6281,7 +6302,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -6289,7 +6310,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -6297,7 +6318,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -6305,7 +6326,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -6313,7 +6334,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -6321,7 +6342,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -6331,7 +6352,7 @@ var genRules = map[genLang][]rule{
 	},
 	gengreek: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"αυ",
 				"",
 				"$",
@@ -6339,7 +6360,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"αυ",
 				"",
 				"(κ|π|σ|τ|φ|θ|χ|ψ)",
@@ -6347,7 +6368,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"αυ",
 				"",
 				"",
@@ -6355,7 +6376,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ευ",
 				"",
 				"$",
@@ -6363,7 +6384,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ευ",
 				"",
 				"(κ|π|σ|τ|φ|θ|χ|ψ)",
@@ -6371,7 +6392,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ευ",
 				"",
 				"",
@@ -6379,7 +6400,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ηυ",
 				"",
 				"$",
@@ -6387,7 +6408,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ηυ",
 				"",
 				"(κ|π|σ|τ|φ|θ|χ|ψ)",
@@ -6395,7 +6416,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ηυ",
 				"",
 				"",
@@ -6403,7 +6424,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ου",
 				"",
 				"",
@@ -6411,7 +6432,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"αι",
 				"",
 				"",
@@ -6419,7 +6440,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ει",
 				"",
 				"",
@@ -6427,7 +6448,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"οι",
 				"",
 				"",
@@ -6435,7 +6456,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ωι",
 				"",
 				"",
@@ -6443,7 +6464,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ηι",
 				"",
 				"",
@@ -6451,7 +6472,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"υι",
 				"",
 				"",
@@ -6459,7 +6480,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γγ",
 				"(ε|ι|η|α|ο|ω|υ)",
 				"(ε|ι|η)",
@@ -6467,7 +6488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γγ",
 				"",
 				"(ε|ι|η)",
@@ -6475,7 +6496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γγ",
 				"(ε|ι|η|α|ο|ω|υ)",
 				"",
@@ -6483,7 +6504,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γγ",
 				"",
 				"",
@@ -6491,7 +6512,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γκ",
 				"^",
 				"",
@@ -6499,7 +6520,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γκ",
 				"(ε|ι|η|α|ο|ω|υ)",
 				"(ε|ι|η)",
@@ -6507,7 +6528,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γκ",
 				"",
 				"(ε|ι|η)",
@@ -6515,7 +6536,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γκ",
 				"(ε|ι|η|α|ο|ω|υ)",
 				"",
@@ -6523,7 +6544,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γκ",
 				"",
 				"",
@@ -6531,7 +6552,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γι",
 				"",
 				"(α|ο|ω|υ)",
@@ -6539,7 +6560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γι",
 				"",
 				"",
@@ -6547,7 +6568,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γε",
 				"",
 				"(α|ο|ω|υ)",
@@ -6555,7 +6576,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γε",
 				"",
 				"",
@@ -6563,7 +6584,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"κζ",
 				"",
 				"",
@@ -6571,7 +6592,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"τζ",
 				"",
 				"",
@@ -6579,7 +6600,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"σ",
 				"",
 				"(β|γ|δ|μ|ν|ρ)",
@@ -6587,7 +6608,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"μβ",
 				"",
 				"",
@@ -6595,7 +6616,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"μπ",
 				"^",
 				"",
@@ -6603,7 +6624,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"μπ",
 				"(ε|ι|η|α|ο|ω|υ)",
 				"",
@@ -6611,7 +6632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"μπ",
 				"",
 				"",
@@ -6619,7 +6640,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ντ",
 				"^",
 				"",
@@ -6627,7 +6648,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ντ",
 				"(ε|ι|η|α|ο|ω|υ)",
 				"",
@@ -6635,7 +6656,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ντ",
 				"",
 				"",
@@ -6643,7 +6664,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ά",
 				"",
 				"",
@@ -6651,7 +6672,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"έ",
 				"",
 				"",
@@ -6659,7 +6680,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ή",
 				"",
 				"",
@@ -6667,7 +6688,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ί",
 				"",
 				"",
@@ -6675,7 +6696,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ό",
 				"",
 				"",
@@ -6683,7 +6704,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ύ",
 				"",
 				"",
@@ -6691,7 +6712,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ώ",
 				"",
 				"",
@@ -6699,7 +6720,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ΰ",
 				"",
 				"",
@@ -6707,7 +6728,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ϋ",
 				"",
 				"",
@@ -6715,7 +6736,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ϊ",
 				"",
 				"",
@@ -6723,7 +6744,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"α",
 				"",
 				"",
@@ -6731,7 +6752,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"β",
 				"",
 				"",
@@ -6739,7 +6760,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"γ",
 				"",
 				"",
@@ -6747,7 +6768,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"δ",
 				"",
 				"",
@@ -6755,7 +6776,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ε",
 				"",
 				"",
@@ -6763,7 +6784,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ζ",
 				"",
 				"",
@@ -6771,7 +6792,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"η",
 				"",
 				"",
@@ -6779,7 +6800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ι",
 				"",
 				"",
@@ -6787,7 +6808,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"κ",
 				"",
 				"",
@@ -6795,7 +6816,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"λ",
 				"",
 				"",
@@ -6803,7 +6824,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"μ",
 				"",
 				"",
@@ -6811,7 +6832,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ν",
 				"",
 				"",
@@ -6819,7 +6840,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ξ",
 				"",
 				"",
@@ -6827,7 +6848,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ο",
 				"",
 				"",
@@ -6835,7 +6856,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"π",
 				"",
 				"",
@@ -6843,7 +6864,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ρ",
 				"",
 				"",
@@ -6851,7 +6872,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"σ",
 				"",
 				"",
@@ -6859,7 +6880,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ς",
 				"",
 				"",
@@ -6867,7 +6888,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"τ",
 				"",
 				"",
@@ -6875,7 +6896,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"υ",
 				"",
 				"",
@@ -6883,7 +6904,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"φ",
 				"",
 				"",
@@ -6891,7 +6912,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"θ",
 				"",
 				"",
@@ -6899,7 +6920,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"χ",
 				"",
 				"",
@@ -6907,7 +6928,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ψ",
 				"",
 				"",
@@ -6915,7 +6936,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ω",
 				"",
 				"",
@@ -6925,7 +6946,7 @@ var genRules = map[genLang][]rule{
 	},
 	gengreeklatin: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"$",
@@ -6933,7 +6954,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"[kpstfh]",
@@ -6941,7 +6962,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"",
@@ -6949,7 +6970,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"$",
@@ -6957,7 +6978,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"[kpstfh]",
@@ -6965,7 +6986,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eu",
 				"",
 				"",
@@ -6973,7 +6994,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -6981,7 +7002,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gge",
 				"[aeiouy]",
 				"",
@@ -6989,7 +7010,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"[aeiouy]",
 				"[aou]",
@@ -6997,7 +7018,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"[aeiouy]",
 				"",
@@ -7005,7 +7026,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gge",
 				"",
 				"",
@@ -7013,7 +7034,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ggi",
 				"",
 				"",
@@ -7021,7 +7042,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"[aeiouy]",
 				"",
@@ -7029,7 +7050,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"",
 				"",
@@ -7037,7 +7058,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gk",
 				"^",
 				"",
@@ -7045,7 +7066,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gke",
 				"[aeiouy]",
 				"",
@@ -7053,7 +7074,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gki",
 				"[aeiouy]",
 				"",
@@ -7061,7 +7082,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gke",
 				"",
 				"",
@@ -7069,7 +7090,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gki",
 				"",
 				"",
@@ -7077,7 +7098,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gk",
 				"[aeiouy]",
 				"",
@@ -7085,7 +7106,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gk",
 				"",
 				"",
@@ -7093,7 +7114,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nghi",
 				"",
 				"[aouy]",
@@ -7101,7 +7122,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nghi",
 				"",
 				"",
@@ -7109,7 +7130,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nghe",
 				"",
 				"[aouy]",
@@ -7117,7 +7138,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nghe",
 				"",
 				"",
@@ -7125,7 +7146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ghi",
 				"",
 				"[aouy]",
@@ -7133,7 +7154,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ghi",
 				"",
 				"",
@@ -7141,7 +7162,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ghe",
 				"",
 				"[aouy]",
@@ -7149,7 +7170,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ghe",
 				"",
 				"",
@@ -7157,7 +7178,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ngh",
 				"",
 				"",
@@ -7165,7 +7186,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"",
@@ -7173,7 +7194,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ngi",
 				"",
 				"[aouy]",
@@ -7181,7 +7202,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ngi",
 				"",
 				"",
@@ -7189,7 +7210,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nge",
 				"",
 				"[aouy]",
@@ -7197,7 +7218,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nge",
 				"",
 				"",
@@ -7205,7 +7226,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"[aouy]",
@@ -7213,7 +7234,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"",
@@ -7221,7 +7242,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ge",
 				"",
 				"[aouy]",
@@ -7229,7 +7250,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ge",
 				"",
 				"",
@@ -7237,7 +7258,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ng",
 				"",
 				"",
@@ -7245,7 +7266,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -7253,7 +7274,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aeou]",
 				"",
@@ -7261,7 +7282,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeou]",
@@ -7269,7 +7290,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aeou]",
 				"",
@@ -7277,7 +7298,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"[aeou]",
@@ -7285,7 +7306,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"",
@@ -7293,7 +7314,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -7301,7 +7322,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -7309,7 +7330,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"dh",
 				"",
 				"",
@@ -7317,7 +7338,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"dj",
 				"",
 				"",
@@ -7325,7 +7346,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -7333,7 +7354,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -7341,7 +7362,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kz",
 				"",
 				"",
@@ -7349,7 +7370,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -7357,7 +7378,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[bgdmnr]",
@@ -7365,7 +7386,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mb",
 				"",
 				"",
@@ -7373,7 +7394,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mp",
 				"^",
 				"",
@@ -7381,7 +7402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mp",
 				"[aeiouy]",
 				"",
@@ -7389,7 +7410,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"mp",
 				"",
 				"",
@@ -7397,7 +7418,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nt",
 				"^",
 				"",
@@ -7405,7 +7426,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nt",
 				"[aeiouy]",
 				"",
@@ -7413,7 +7434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nt",
 				"",
 				"",
@@ -7421,7 +7442,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -7429,7 +7450,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -7437,7 +7458,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -7445,7 +7466,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -7453,7 +7474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"óu",
 				"",
 				"",
@@ -7461,7 +7482,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -7469,7 +7490,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ý",
 				"",
 				"",
@@ -7477,7 +7498,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -7485,7 +7506,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -7493,7 +7514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -7501,7 +7522,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -7509,7 +7530,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -7517,7 +7538,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -7525,7 +7546,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -7533,7 +7554,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -7541,7 +7562,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -7549,7 +7570,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -7557,7 +7578,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -7565,7 +7586,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -7573,7 +7594,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -7581,7 +7602,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -7589,7 +7610,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ο",
 				"",
 				"",
@@ -7597,7 +7618,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -7605,7 +7626,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -7613,7 +7634,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -7621,7 +7642,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -7629,7 +7650,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -7637,7 +7658,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -7645,7 +7666,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -7653,7 +7674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -7661,7 +7682,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -7669,7 +7690,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -7677,7 +7698,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -7687,7 +7708,7 @@ var genRules = map[genLang][]rule{
 	},
 	genhebrew: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"אי",
 				"",
 				"",
@@ -7695,7 +7716,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"עי",
 				"",
 				"",
@@ -7703,7 +7724,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"עו",
 				"",
 				"",
@@ -7711,7 +7732,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"או",
 				"",
 				"",
@@ -7719,7 +7740,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ג׳",
 				"",
 				"",
@@ -7727,7 +7748,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ד׳",
 				"",
 				"",
@@ -7735,7 +7756,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"א",
 				"",
 				"",
@@ -7743,7 +7764,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ב",
 				"",
 				"",
@@ -7751,7 +7772,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ג",
 				"",
 				"",
@@ -7759,7 +7780,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ד",
 				"",
 				"",
@@ -7767,7 +7788,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"^",
 				"",
@@ -7775,7 +7796,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"",
 				"$",
@@ -7783,7 +7804,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"",
 				"",
@@ -7791,7 +7812,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"וו",
 				"",
 				"",
@@ -7799,7 +7820,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"וי",
 				"",
 				"",
@@ -7807,7 +7828,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ו",
 				"",
 				"",
@@ -7815,7 +7836,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ז",
 				"",
 				"",
@@ -7823,7 +7844,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ח",
 				"",
 				"",
@@ -7831,7 +7852,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ט",
 				"",
 				"",
@@ -7839,7 +7860,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"יי",
 				"",
 				"",
@@ -7847,7 +7868,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"י",
 				"",
 				"",
@@ -7855,7 +7876,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ך",
 				"",
 				"",
@@ -7863,7 +7884,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"כ",
 				"^",
 				"",
@@ -7871,7 +7892,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"כ",
 				"",
 				"",
@@ -7879,7 +7900,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ל",
 				"",
 				"",
@@ -7887,7 +7908,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ם",
 				"",
 				"",
@@ -7895,7 +7916,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"מ",
 				"",
 				"",
@@ -7903,7 +7924,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ן",
 				"",
 				"",
@@ -7911,7 +7932,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"נ",
 				"",
 				"",
@@ -7919,7 +7940,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ס",
 				"",
 				"",
@@ -7927,7 +7948,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ע",
 				"",
 				"",
@@ -7935,7 +7956,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ף",
 				"",
 				"",
@@ -7943,7 +7964,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"פ",
 				"",
 				"",
@@ -7951,7 +7972,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ץ",
 				"",
 				"",
@@ -7959,7 +7980,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"צ",
 				"",
 				"",
@@ -7967,7 +7988,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ק",
 				"",
 				"",
@@ -7975,7 +7996,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ר",
 				"",
 				"",
@@ -7983,7 +8004,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ש",
 				"",
 				"",
@@ -7991,7 +8012,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ת",
 				"",
 				"",
@@ -8001,7 +8022,7 @@ var genRules = map[genLang][]rule{
 	},
 	genhungarian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"",
@@ -8009,7 +8030,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zs",
 				"",
 				"",
@@ -8017,7 +8038,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cs",
 				"",
 				"",
@@ -8025,7 +8046,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -8033,7 +8054,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -8041,7 +8062,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aj",
 				"",
 				"",
@@ -8049,7 +8070,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -8057,7 +8078,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -8065,7 +8086,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[áo]",
 				"",
@@ -8073,7 +8094,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[áo]",
 				"",
@@ -8081,7 +8102,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -8089,7 +8110,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ely",
 				"",
 				"",
@@ -8097,7 +8118,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ly",
 				"",
 				"",
@@ -8105,7 +8126,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"[aeouáéóúüöőű]",
@@ -8113,7 +8134,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gy",
 				"",
 				"",
@@ -8121,7 +8142,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"[aeouáéóúüöőű]",
@@ -8129,7 +8150,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"",
@@ -8137,7 +8158,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ty",
 				"",
 				"[aeouáéóúüöőű]",
@@ -8145,7 +8166,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ty",
 				"",
 				"",
@@ -8153,7 +8174,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -8161,7 +8182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -8169,7 +8190,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -8177,7 +8198,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -8185,7 +8206,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -8193,7 +8214,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -8201,7 +8222,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -8209,7 +8230,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -8217,7 +8238,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ő",
 				"",
 				"",
@@ -8225,7 +8246,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -8233,7 +8254,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ű",
 				"",
 				"",
@@ -8241,7 +8262,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -8249,7 +8270,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -8257,7 +8278,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -8265,7 +8286,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -8273,7 +8294,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -8281,7 +8302,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -8289,7 +8310,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -8297,7 +8318,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -8305,7 +8326,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -8313,7 +8334,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -8321,7 +8342,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -8329,7 +8350,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -8337,7 +8358,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -8345,7 +8366,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -8353,7 +8374,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -8361,7 +8382,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -8369,7 +8390,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -8377,7 +8398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -8385,7 +8406,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -8393,7 +8414,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -8401,7 +8422,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -8409,7 +8430,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -8417,7 +8438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -8425,7 +8446,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -8433,7 +8454,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -8441,7 +8462,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -8451,7 +8472,7 @@ var genRules = map[genLang][]rule{
 	},
 	genitalian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -8459,7 +8480,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gli",
 				"",
 				"",
@@ -8467,7 +8488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"[aeou]",
@@ -8475,7 +8496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gni",
 				"",
 				"",
@@ -8483,7 +8504,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"[aeou]",
@@ -8491,7 +8512,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"",
 				"[ei]",
@@ -8499,7 +8520,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -8507,7 +8528,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -8515,7 +8536,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -8523,7 +8544,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"[aeou]",
@@ -8531,7 +8552,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -8539,7 +8560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sc",
 				"",
 				"[ei]",
@@ -8547,7 +8568,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cc",
 				"",
 				"[ei]",
@@ -8555,7 +8576,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -8563,7 +8584,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiou]",
 				"[aeiou]",
@@ -8571,7 +8592,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aeou]",
 				"",
@@ -8579,7 +8600,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -8587,7 +8608,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aeou]",
 				"",
@@ -8595,7 +8616,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeou]",
@@ -8603,7 +8624,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -8611,7 +8632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -8619,7 +8640,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -8627,7 +8648,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -8635,7 +8656,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -8643,7 +8664,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -8651,7 +8672,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -8659,7 +8680,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -8667,7 +8688,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -8675,7 +8696,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -8683,7 +8704,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -8691,7 +8712,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -8699,7 +8720,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -8707,7 +8728,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -8715,7 +8736,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -8723,7 +8744,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -8731,7 +8752,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -8739,7 +8760,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -8747,7 +8768,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -8755,7 +8776,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -8763,7 +8784,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -8771,7 +8792,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -8779,7 +8800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -8787,7 +8808,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -8795,7 +8816,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -8803,7 +8824,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -8811,7 +8832,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -8819,7 +8840,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -8827,7 +8848,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -8835,7 +8856,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -8843,7 +8864,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -8851,7 +8872,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -8859,7 +8880,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -8869,7 +8890,7 @@ var genRules = map[genLang][]rule{
 	},
 	genlatvian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"č",
 				"",
 				"",
@@ -8877,7 +8898,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ģ",
 				"",
 				"",
@@ -8885,7 +8906,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ķ",
 				"",
 				"",
@@ -8893,7 +8914,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ļ",
 				"",
 				"",
@@ -8901,7 +8922,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"š",
 				"",
 				"",
@@ -8909,7 +8930,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ņ",
 				"",
 				"",
@@ -8917,7 +8938,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ž",
 				"",
 				"",
@@ -8925,7 +8946,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ā",
 				"",
 				"",
@@ -8933,7 +8954,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ē",
 				"",
 				"",
@@ -8941,7 +8962,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ī",
 				"",
 				"",
@@ -8949,7 +8970,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ū",
 				"",
 				"",
@@ -8957,7 +8978,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -8965,7 +8986,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -8973,7 +8994,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"io",
 				"",
 				"",
@@ -8981,7 +9002,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iu",
 				"",
 				"",
@@ -8989,7 +9010,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -8997,7 +9018,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -9005,7 +9026,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ui",
 				"",
 				"",
@@ -9013,7 +9034,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -9021,7 +9042,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -9029,7 +9050,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -9037,7 +9058,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -9045,7 +9066,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -9053,7 +9074,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -9061,7 +9082,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -9069,7 +9090,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -9077,7 +9098,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -9085,7 +9106,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -9093,7 +9114,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -9101,7 +9122,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -9109,7 +9130,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -9117,7 +9138,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -9125,7 +9146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -9133,7 +9154,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -9141,7 +9162,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -9149,7 +9170,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -9157,7 +9178,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -9165,7 +9186,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -9173,7 +9194,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -9183,7 +9204,7 @@ var genRules = map[genLang][]rule{
 	},
 	genpolish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ska",
 				"",
 				"$",
@@ -9191,7 +9212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cka",
 				"",
 				"$",
@@ -9199,7 +9220,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowa",
 				"",
 				"$",
@@ -9207,7 +9228,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowa",
 				"",
 				"$",
@@ -9215,7 +9236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owa",
 				"",
 				"$",
@@ -9223,7 +9244,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lowna",
 				"",
 				"$",
@@ -9231,7 +9252,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kowna",
 				"",
 				"$",
@@ -9239,7 +9260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owna",
 				"",
 				"$",
@@ -9247,7 +9268,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lówna",
 				"",
 				"$",
@@ -9255,7 +9276,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kówna",
 				"",
 				"$",
@@ -9263,7 +9284,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ówna",
 				"",
 				"$",
@@ -9271,7 +9292,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"$",
@@ -9279,7 +9300,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"czy",
 				"",
 				"",
@@ -9287,7 +9308,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cze",
 				"",
 				"[bcdgkpstwzż]",
@@ -9295,7 +9316,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciewicz",
 				"",
 				"",
@@ -9303,7 +9324,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siewicz",
 				"",
 				"",
@@ -9311,7 +9332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziewicz",
 				"",
 				"",
@@ -9319,7 +9340,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"riewicz",
 				"",
 				"",
@@ -9327,7 +9348,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"diewicz",
 				"",
 				"",
@@ -9335,7 +9356,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tiewicz",
 				"",
 				"",
@@ -9343,7 +9364,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iewicz",
 				"",
 				"",
@@ -9351,7 +9372,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ewicz",
 				"",
 				"",
@@ -9359,7 +9380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"owicz",
 				"",
 				"",
@@ -9367,7 +9388,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"icz",
 				"",
 				"",
@@ -9375,7 +9396,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cz",
 				"",
 				"",
@@ -9383,7 +9404,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -9391,7 +9412,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"[bcdgkpstwzż]",
@@ -9399,7 +9420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cia",
 				"",
 				"",
@@ -9407,7 +9428,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"[bp]",
@@ -9415,7 +9436,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cią",
 				"",
 				"",
@@ -9423,7 +9444,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"[bp]",
@@ -9431,7 +9452,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cię",
 				"",
 				"",
@@ -9439,7 +9460,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"[bcdgkpstwzż]",
@@ -9447,7 +9468,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cie",
 				"",
 				"",
@@ -9455,7 +9476,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cio",
 				"",
 				"",
@@ -9463,7 +9484,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ciu",
 				"",
 				"",
@@ -9471,7 +9492,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"",
@@ -9479,7 +9500,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ć",
 				"",
 				"",
@@ -9487,7 +9508,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssz",
 				"",
 				"",
@@ -9495,7 +9516,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sz",
 				"",
 				"",
@@ -9503,7 +9524,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"[bcdgkpstwzż]",
@@ -9511,7 +9532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sia",
 				"",
 				"",
@@ -9519,7 +9540,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"[bp]",
@@ -9527,7 +9548,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sią",
 				"",
 				"",
@@ -9535,7 +9556,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"[bp]",
@@ -9543,7 +9564,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"się",
 				"",
 				"",
@@ -9551,7 +9572,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"[bcdgkpstwzż]",
@@ -9559,7 +9580,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"",
@@ -9567,7 +9588,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sio",
 				"",
 				"",
@@ -9575,7 +9596,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"siu",
 				"",
 				"",
@@ -9583,7 +9604,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"si",
 				"",
 				"",
@@ -9591,7 +9612,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ś",
 				"",
 				"",
@@ -9599,7 +9620,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"[bcdgkpstwzż]",
@@ -9607,7 +9628,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zia",
 				"",
 				"",
@@ -9615,7 +9636,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"[bp]",
@@ -9623,7 +9644,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zią",
 				"",
 				"",
@@ -9631,7 +9652,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"[bp]",
@@ -9639,7 +9660,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zię",
 				"",
 				"",
@@ -9647,7 +9668,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"[bcdgkpstwzż]",
@@ -9655,7 +9676,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"",
@@ -9663,7 +9684,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -9671,7 +9692,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ziu",
 				"",
 				"",
@@ -9679,7 +9700,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zi",
 				"",
 				"",
@@ -9687,7 +9708,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"że",
 				"",
 				"[bcdgkpstwzż]",
@@ -9695,7 +9716,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"że",
 				"",
 				"[bcdgkpstwzż]",
@@ -9703,7 +9724,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"że",
 				"",
 				"",
@@ -9711,7 +9732,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"źe",
 				"",
 				"",
@@ -9719,7 +9740,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ży",
 				"",
 				"",
@@ -9727,7 +9748,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"źi",
 				"",
 				"",
@@ -9735,7 +9756,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ż",
 				"",
 				"",
@@ -9743,7 +9764,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ź",
 				"",
 				"",
@@ -9751,7 +9772,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rze",
 				"t",
 				"",
@@ -9759,7 +9780,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rze",
 				"",
 				"",
@@ -9767,7 +9788,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rzy",
 				"t",
 				"",
@@ -9775,7 +9796,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rzy",
 				"",
 				"",
@@ -9783,7 +9804,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"t",
 				"",
@@ -9791,7 +9812,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rz",
 				"",
 				"",
@@ -9799,7 +9820,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lio",
 				"",
 				"",
@@ -9807,7 +9828,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ł",
 				"",
 				"",
@@ -9815,7 +9836,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ń",
 				"",
 				"",
@@ -9823,7 +9844,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -9831,7 +9852,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"s",
@@ -9839,7 +9860,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -9847,7 +9868,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"[bp]",
@@ -9855,7 +9876,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"[bp]",
@@ -9863,7 +9884,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ą",
 				"",
 				"",
@@ -9871,7 +9892,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ę",
 				"",
 				"",
@@ -9879,7 +9900,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ije",
 				"",
 				"",
@@ -9887,7 +9908,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yje",
 				"",
 				"",
@@ -9895,7 +9916,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iie",
 				"",
 				"",
@@ -9903,7 +9924,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yie",
 				"",
 				"",
@@ -9911,7 +9932,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iye",
 				"",
 				"",
@@ -9919,7 +9940,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yye",
 				"",
 				"",
@@ -9927,7 +9948,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"[aou]",
@@ -9935,7 +9956,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"[aou]",
@@ -9943,7 +9964,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"[aou]",
@@ -9951,7 +9972,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"[aou]",
@@ -9959,7 +9980,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				"[aou]",
@@ -9967,7 +9988,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"[aou]",
@@ -9975,7 +9996,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"rie",
 				"",
 				"",
@@ -9983,7 +10004,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"die",
 				"",
 				"",
@@ -9991,7 +10012,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tie",
 				"",
 				"",
@@ -9999,7 +10020,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"[bcdgkpstwzż]",
@@ -10007,7 +10028,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -10015,7 +10036,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -10023,7 +10044,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"au",
 				"",
 				"",
@@ -10031,7 +10052,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -10039,7 +10060,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -10047,7 +10068,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ej",
 				"",
 				"",
@@ -10055,7 +10076,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -10063,7 +10084,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -10071,7 +10092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aj",
 				"",
 				"",
@@ -10079,7 +10100,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aeou]",
 				"",
@@ -10087,7 +10108,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aeou]",
 				"",
@@ -10095,7 +10116,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -10103,7 +10124,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeou]",
@@ -10111,7 +10132,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"[bcdgkpstwzż]",
@@ -10119,7 +10140,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"[bcdgkpstwzż]",
@@ -10127,7 +10148,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"[bcćdgklłmnńrsśtwzźż]",
@@ -10135,7 +10156,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -10143,7 +10164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -10151,7 +10172,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -10159,7 +10180,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -10167,7 +10188,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -10175,7 +10196,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -10183,7 +10204,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -10191,7 +10212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -10199,7 +10220,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -10207,7 +10228,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -10215,7 +10236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -10223,7 +10244,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -10231,7 +10252,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -10239,7 +10260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -10247,7 +10268,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -10255,7 +10276,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -10263,7 +10284,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -10271,7 +10292,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -10279,7 +10300,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -10287,7 +10308,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -10295,7 +10316,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -10303,7 +10324,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -10311,7 +10332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -10319,7 +10340,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -10327,7 +10348,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -10335,7 +10356,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -10345,7 +10366,7 @@ var genRules = map[genLang][]rule{
 	},
 	genportuguese: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -10353,7 +10374,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -10361,7 +10382,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -10369,7 +10390,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sc",
 				"",
 				"[ei]",
@@ -10377,7 +10398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sç",
 				"",
 				"[aou]",
@@ -10385,7 +10406,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -10393,7 +10414,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -10401,7 +10422,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"^",
 				"",
@@ -10409,7 +10430,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aáuiíoóeéêy]",
 				"[aáuiíoóeéêy]",
@@ -10417,7 +10438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[dglmnrv]",
@@ -10425,7 +10446,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"$",
@@ -10433,7 +10454,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[bdgv]",
@@ -10441,7 +10462,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[ptckf]",
@@ -10449,7 +10470,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[eiu]",
@@ -10457,7 +10478,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ao]",
@@ -10465,7 +10486,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -10473,7 +10494,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"[eiu]",
@@ -10481,7 +10502,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"[ao]",
@@ -10489,7 +10510,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -10497,7 +10518,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -10505,7 +10526,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lh",
 				"",
 				"",
@@ -10513,7 +10534,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nh",
 				"",
 				"",
@@ -10521,7 +10542,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -10529,7 +10550,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -10537,7 +10558,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[aáuiíoóeéêy]",
@@ -10545,7 +10566,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[cs]",
@@ -10553,7 +10574,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aáuiíoóeéê]",
 				"",
@@ -10561,7 +10582,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeiíou]",
@@ -10569,7 +10590,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bcdfglnprstv]",
@@ -10577,7 +10598,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"$",
@@ -10585,7 +10606,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ão",
 				"",
 				"",
@@ -10593,7 +10614,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãe",
 				"",
 				"",
@@ -10601,7 +10622,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãi",
 				"",
 				"",
@@ -10609,7 +10630,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õe",
 				"",
 				"",
@@ -10617,7 +10638,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aáuoóeéê]",
 				"",
@@ -10625,7 +10646,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -10633,7 +10654,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -10641,7 +10662,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -10649,7 +10670,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -10657,7 +10678,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ã",
 				"",
 				"",
@@ -10665,7 +10686,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -10673,7 +10694,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -10681,7 +10702,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -10689,7 +10710,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ô",
 				"",
 				"",
@@ -10697,7 +10718,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -10705,7 +10726,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õ",
 				"",
 				"",
@@ -10713,7 +10734,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -10721,7 +10742,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -10729,7 +10750,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -10737,7 +10758,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -10745,7 +10766,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -10753,7 +10774,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -10761,7 +10782,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -10769,7 +10790,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -10777,7 +10798,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -10785,7 +10806,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -10793,7 +10814,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -10801,7 +10822,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -10809,7 +10830,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -10817,7 +10838,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -10825,7 +10846,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -10833,7 +10854,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -10841,7 +10862,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -10849,7 +10870,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -10857,7 +10878,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -10865,7 +10886,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -10873,7 +10894,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -10881,7 +10902,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -10889,7 +10910,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -10897,7 +10918,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -10905,7 +10926,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -10913,7 +10934,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -10921,7 +10942,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -10929,7 +10950,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -10937,7 +10958,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -10947,7 +10968,7 @@ var genRules = map[genLang][]rule{
 	},
 	genromanian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ce",
 				"",
 				"",
@@ -10955,7 +10976,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"",
@@ -10963,7 +10984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -10971,7 +10992,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -10979,7 +11000,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"",
@@ -10987,7 +11008,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -10995,7 +11016,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"",
@@ -11003,7 +11024,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aeou]",
 				"",
@@ -11011,7 +11032,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -11019,7 +11040,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ţ",
 				"",
 				"",
@@ -11027,7 +11048,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ş",
 				"",
 				"",
@@ -11035,7 +11056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -11043,7 +11064,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"î",
 				"",
 				"",
@@ -11051,7 +11072,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ea",
 				"",
 				"",
@@ -11059,7 +11080,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ă",
 				"",
 				"",
@@ -11067,7 +11088,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -11075,7 +11096,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -11083,7 +11104,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -11091,7 +11112,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -11099,7 +11120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -11107,7 +11128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -11115,7 +11136,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -11123,7 +11144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -11131,7 +11152,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -11139,7 +11160,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -11147,7 +11168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -11155,7 +11176,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -11163,7 +11184,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -11171,7 +11192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -11179,7 +11200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -11187,7 +11208,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -11195,7 +11216,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -11203,7 +11224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -11211,7 +11232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -11219,7 +11240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -11227,7 +11248,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -11235,7 +11256,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -11243,7 +11264,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -11251,7 +11272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -11259,7 +11280,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -11267,7 +11288,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -11275,7 +11296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -11285,7 +11306,7 @@ var genRules = map[genLang][]rule{
 	},
 	genrussian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yna",
 				"",
 				"$",
@@ -11293,7 +11314,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ina",
 				"",
 				"$",
@@ -11301,7 +11322,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"liova",
 				"",
 				"$",
@@ -11309,7 +11330,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lova",
 				"",
 				"$",
@@ -11317,7 +11338,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ova",
 				"",
 				"$",
@@ -11325,7 +11346,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eva",
 				"",
 				"$",
@@ -11333,7 +11354,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aia",
 				"",
 				"$",
@@ -11341,7 +11362,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aja",
 				"",
 				"$",
@@ -11349,7 +11370,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aya",
 				"",
 				"$",
@@ -11357,7 +11378,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsya",
 				"",
 				"",
@@ -11365,7 +11386,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsyu",
 				"",
 				"",
@@ -11373,7 +11394,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsia",
 				"",
 				"",
@@ -11381,7 +11402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsie",
 				"",
 				"",
@@ -11389,7 +11410,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsio",
 				"",
 				"",
@@ -11397,7 +11418,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsye",
 				"",
 				"",
@@ -11405,7 +11426,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsyo",
 				"",
 				"",
@@ -11413,7 +11434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tsiu",
 				"",
 				"",
@@ -11421,7 +11442,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sie",
 				"",
 				"",
@@ -11429,7 +11450,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sio",
 				"",
 				"",
@@ -11437,7 +11458,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zie",
 				"",
 				"",
@@ -11445,7 +11466,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zio",
 				"",
 				"",
@@ -11453,7 +11474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sye",
 				"",
 				"",
@@ -11461,7 +11482,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"syo",
 				"",
 				"",
@@ -11469,7 +11490,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zye",
 				"",
 				"",
@@ -11477,7 +11498,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zyo",
 				"",
 				"",
@@ -11485,7 +11506,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ger",
 				"",
 				"$",
@@ -11493,7 +11514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gen",
 				"",
 				"$",
@@ -11501,7 +11522,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gin",
 				"",
 				"$",
@@ -11509,7 +11530,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"",
 				"",
@@ -11517,7 +11538,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"[jaeoiuy]",
 				"[aeoiu]",
@@ -11525,7 +11546,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[aeoiu]",
@@ -11533,7 +11554,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -11541,7 +11562,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -11549,7 +11570,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sch",
 				"",
 				"",
@@ -11557,7 +11578,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ssh",
 				"",
 				"",
@@ -11565,7 +11586,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -11573,7 +11594,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"zh",
 				"",
 				"",
@@ -11581,7 +11602,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"$",
@@ -11589,7 +11610,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tz",
 				"",
 				"",
@@ -11597,7 +11618,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[iey]",
@@ -11605,7 +11626,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -11613,7 +11634,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"s",
@@ -11621,7 +11642,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lya",
 				"",
 				"",
@@ -11629,7 +11650,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lyu",
 				"",
 				"",
@@ -11637,7 +11658,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lia",
 				"",
 				"",
@@ -11645,7 +11666,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"liu",
 				"",
 				"",
@@ -11653,7 +11674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lja",
 				"",
 				"",
@@ -11661,7 +11682,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lju",
 				"",
 				"",
@@ -11669,7 +11690,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"le",
 				"",
 				"",
@@ -11677,7 +11698,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lyo",
 				"",
 				"",
@@ -11685,7 +11706,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lio",
 				"",
 				"",
@@ -11693,7 +11714,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ije",
 				"",
 				"",
@@ -11701,7 +11722,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ie",
 				"",
 				"",
@@ -11709,7 +11730,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iye",
 				"",
 				"",
@@ -11717,7 +11738,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iie",
 				"",
 				"",
@@ -11725,7 +11746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yje",
 				"",
 				"",
@@ -11733,7 +11754,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ye",
 				"",
 				"",
@@ -11741,7 +11762,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yye",
 				"",
 				"",
@@ -11749,7 +11770,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yie",
 				"",
 				"",
@@ -11757,7 +11778,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"[aou]",
@@ -11765,7 +11786,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				"[aou]",
@@ -11773,7 +11794,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"[aou]",
@@ -11781,7 +11802,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"[aou]",
@@ -11789,7 +11810,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"[aou]",
@@ -11797,7 +11818,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"[aou]",
@@ -11805,7 +11826,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"io",
 				"",
 				"",
@@ -11813,7 +11834,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[au]",
@@ -11821,7 +11842,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aeou]",
 				"",
@@ -11829,7 +11850,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yo",
 				"",
 				"",
@@ -11837,7 +11858,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[au]",
@@ -11845,7 +11866,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aeiou]",
 				"",
@@ -11853,7 +11874,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ii",
 				"",
 				"$",
@@ -11861,7 +11882,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"iy",
 				"",
 				"$",
@@ -11869,7 +11890,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yy",
 				"",
 				"$",
@@ -11877,7 +11898,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yi",
 				"",
 				"$",
@@ -11885,7 +11906,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"yj",
 				"",
 				"$",
@@ -11893,7 +11914,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ij",
 				"",
 				"$",
@@ -11901,7 +11922,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"^",
 				"",
@@ -11909,7 +11930,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ee",
 				"",
 				"",
@@ -11917,7 +11938,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"[aou]",
 				"",
@@ -11925,7 +11946,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oo",
 				"",
 				"",
@@ -11933,7 +11954,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"'",
 				"",
 				"",
@@ -11941,7 +11962,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"\"",
 				"",
 				"",
@@ -11949,7 +11970,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -11957,7 +11978,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -11965,7 +11986,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -11973,7 +11994,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -11981,7 +12002,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -11989,7 +12010,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -11997,7 +12018,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -12005,7 +12026,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -12013,7 +12034,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -12021,7 +12042,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -12029,7 +12050,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -12037,7 +12058,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -12045,7 +12066,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -12053,7 +12074,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -12061,7 +12082,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -12069,7 +12090,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -12077,7 +12098,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -12085,7 +12106,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -12093,7 +12114,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -12101,7 +12122,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -12109,7 +12130,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -12117,7 +12138,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -12125,7 +12146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -12133,7 +12154,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -12141,7 +12162,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -12149,7 +12170,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -12157,7 +12178,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -12167,7 +12188,7 @@ var genRules = map[genLang][]rule{
 	},
 	genspanish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -12175,7 +12196,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"",
@@ -12183,7 +12204,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -12191,7 +12212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ig",
 				"[aeiou]",
 				"",
@@ -12199,7 +12220,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ix",
 				"[aeiou]",
 				"",
@@ -12207,7 +12228,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tx",
 				"",
 				"",
@@ -12215,7 +12236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tj",
 				"",
 				"$",
@@ -12223,7 +12244,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tj",
 				"",
 				"",
@@ -12231,7 +12252,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tg",
 				"",
 				"",
@@ -12239,7 +12260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -12247,7 +12268,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"bh",
 				"",
 				"",
@@ -12255,7 +12276,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[dgt]",
 				"",
@@ -12263,7 +12284,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -12271,7 +12292,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bpvf]",
@@ -12279,7 +12300,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -12287,7 +12308,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ei]",
@@ -12295,7 +12316,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -12303,7 +12324,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -12311,7 +12332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -12319,7 +12340,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -12327,7 +12348,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -12335,7 +12356,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -12343,7 +12364,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -12351,7 +12372,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -12359,7 +12380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -12367,7 +12388,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -12375,7 +12396,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -12383,7 +12404,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -12391,7 +12412,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ò",
 				"",
 				"",
@@ -12399,7 +12420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -12407,7 +12428,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -12415,7 +12436,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -12423,7 +12444,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -12431,7 +12452,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -12439,7 +12460,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -12447,7 +12468,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -12455,7 +12476,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -12463,7 +12484,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -12471,7 +12492,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -12479,7 +12500,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -12487,7 +12508,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -12495,7 +12516,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -12503,7 +12524,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -12511,7 +12532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -12519,7 +12540,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -12527,7 +12548,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -12535,7 +12556,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -12543,7 +12564,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -12551,7 +12572,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -12559,7 +12580,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -12567,7 +12588,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -12575,7 +12596,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -12583,7 +12604,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -12591,7 +12612,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -12599,7 +12620,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -12609,7 +12630,7 @@ var genRules = map[genLang][]rule{
 	},
 	genturkish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -12617,7 +12638,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ğ",
 				"",
 				"",
@@ -12625,7 +12646,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ş",
 				"",
 				"",
@@ -12633,7 +12654,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -12641,7 +12662,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ö",
 				"",
 				"",
@@ -12649,7 +12670,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ı",
 				"",
 				"",
@@ -12657,7 +12678,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -12665,7 +12686,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -12673,7 +12694,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -12681,7 +12702,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -12689,7 +12710,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -12697,7 +12718,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -12705,7 +12726,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -12713,7 +12734,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -12721,7 +12742,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -12729,7 +12750,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -12737,7 +12758,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -12745,7 +12766,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -12753,7 +12774,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -12761,7 +12782,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -12769,7 +12790,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -12777,7 +12798,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -12785,7 +12806,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -12793,7 +12814,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -12801,7 +12822,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -12809,7 +12830,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -12817,7 +12838,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -12825,7 +12846,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -12833,7 +12854,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -12841,7 +12862,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -12849,7 +12870,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -12857,7 +12878,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -14164,7 +14185,7 @@ var genFinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"$",
@@ -14172,7 +14193,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"[fktSs]",
@@ -14180,7 +14201,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"p",
@@ -14188,7 +14209,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"$",
@@ -14196,7 +14217,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"[vgdZz]",
@@ -14204,7 +14225,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"b",
@@ -14212,7 +14233,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"[pktSs]",
@@ -14220,7 +14241,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"f",
@@ -14228,7 +14249,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"$",
@@ -14236,7 +14257,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"[vbgdZz]",
@@ -14244,7 +14265,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"v",
@@ -14252,7 +14273,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"[pftSs]",
@@ -14260,7 +14281,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"k",
@@ -14268,7 +14289,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"$",
@@ -14276,7 +14297,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"[vbdZz]",
@@ -14284,7 +14305,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"g",
@@ -14292,7 +14313,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"[pfkSs]",
@@ -14300,7 +14321,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"t",
@@ -14308,7 +14329,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"$",
@@ -14316,7 +14337,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"[vbgZz]",
@@ -14324,7 +14345,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"d",
@@ -14332,7 +14353,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"dZ",
@@ -14340,7 +14361,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"tS",
@@ -14348,7 +14369,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[pfkSt]",
@@ -14356,7 +14377,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[sSzZ]",
@@ -14364,7 +14385,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[sSzZ]",
@@ -14372,7 +14393,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"[sSzZ]",
@@ -14380,7 +14401,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[sSzZ]",
@@ -14388,7 +14409,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jnm",
 					"",
 					"",
@@ -14396,7 +14417,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"^",
 					"",
@@ -14404,7 +14425,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jI",
 					"^",
 					"",
@@ -14412,7 +14433,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"[aA]",
@@ -14420,7 +14441,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"A",
 					"",
@@ -14428,7 +14449,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"A",
 					"",
 					"A",
@@ -14436,7 +14457,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"b",
@@ -14444,7 +14465,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"d",
@@ -14452,7 +14473,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"f",
@@ -14460,7 +14481,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"g",
@@ -14468,7 +14489,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"j",
@@ -14476,7 +14497,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"k",
@@ -14484,7 +14505,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"l",
 					"",
 					"l",
@@ -14492,7 +14513,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"m",
 					"",
 					"m",
@@ -14500,7 +14521,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"n",
@@ -14508,7 +14529,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"p",
@@ -14516,7 +14537,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"r",
 					"",
 					"r",
@@ -14524,7 +14545,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"t",
@@ -14532,7 +14553,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"v",
@@ -14540,7 +14561,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"z",
@@ -14548,7 +14569,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"vanden",
 					"^",
 					"",
@@ -14556,7 +14577,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"vander",
 					"^",
 					"",
@@ -14564,7 +14585,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"van",
 					"^",
 					"[bp]",
@@ -14572,7 +14593,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"van",
 					"^",
 					"",
@@ -14580,7 +14601,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"[bp]",
@@ -14588,7 +14609,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"",
@@ -14596,7 +14617,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"H",
 					"",
 					"",
@@ -14604,7 +14625,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sen",
 					"[rmnl]",
 					"$",
@@ -14612,7 +14633,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sen",
 					"",
 					"$",
@@ -14620,7 +14641,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sEn",
 					"[rmnl]",
 					"$",
@@ -14628,7 +14649,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sEn",
 					"",
 					"$",
@@ -14636,7 +14657,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14644,7 +14665,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14652,7 +14673,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14660,7 +14681,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14668,7 +14689,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14676,7 +14697,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -14684,7 +14705,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14692,7 +14713,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14700,7 +14721,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14708,7 +14729,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14716,7 +14737,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14724,7 +14745,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -14732,7 +14753,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEs",
 					"",
 					"",
@@ -14740,7 +14761,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lE",
 					"[bdfgkmnprStvzZ]",
 					"",
@@ -14748,7 +14769,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aue",
 					"",
 					"",
@@ -14756,7 +14777,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oue",
 					"",
 					"",
@@ -14764,7 +14785,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AvE",
 					"",
 					"",
@@ -14772,7 +14793,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ave",
 					"",
 					"",
@@ -14780,7 +14801,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"avE",
 					"",
 					"",
@@ -14788,7 +14809,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ave",
 					"",
 					"",
@@ -14796,7 +14817,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OvE",
 					"",
 					"",
@@ -14804,7 +14825,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ove",
 					"",
 					"",
@@ -14812,7 +14833,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ovE",
 					"",
 					"",
@@ -14820,7 +14841,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ove",
 					"",
 					"",
@@ -14828,7 +14849,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ea",
 					"",
 					"",
@@ -14836,7 +14857,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EA",
 					"",
 					"",
@@ -14844,7 +14865,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ea",
 					"",
 					"",
@@ -14852,7 +14873,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eA",
 					"",
 					"",
@@ -14860,7 +14881,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aji",
 					"",
 					"",
@@ -14868,7 +14889,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajI",
 					"",
 					"",
@@ -14876,7 +14897,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aje",
 					"",
 					"",
@@ -14884,7 +14905,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajE",
 					"",
 					"",
@@ -14892,7 +14913,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aji",
 					"",
 					"",
@@ -14900,7 +14921,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjI",
 					"",
 					"",
@@ -14908,7 +14929,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aje",
 					"",
 					"",
@@ -14916,7 +14937,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjE",
 					"",
 					"",
@@ -14924,7 +14945,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oji",
 					"",
 					"",
@@ -14932,7 +14953,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojI",
 					"",
 					"",
@@ -14940,7 +14961,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oje",
 					"",
 					"",
@@ -14948,7 +14969,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojE",
 					"",
 					"",
@@ -14956,7 +14977,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oji",
 					"",
 					"",
@@ -14964,7 +14985,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjI",
 					"",
 					"",
@@ -14972,7 +14993,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oje",
 					"",
 					"",
@@ -14980,7 +15001,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjE",
 					"",
 					"",
@@ -14988,7 +15009,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eji",
 					"",
 					"",
@@ -14996,7 +15017,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejI",
 					"",
 					"",
@@ -15004,7 +15025,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eje",
 					"",
 					"",
@@ -15012,7 +15033,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejE",
 					"",
 					"",
@@ -15020,7 +15041,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eji",
 					"",
 					"",
@@ -15028,7 +15049,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjI",
 					"",
 					"",
@@ -15036,7 +15057,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eje",
 					"",
 					"",
@@ -15044,7 +15065,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjE",
 					"",
 					"",
@@ -15052,7 +15073,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uji",
 					"",
 					"",
@@ -15060,7 +15081,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujI",
 					"",
 					"",
@@ -15068,7 +15089,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uje",
 					"",
 					"",
@@ -15076,7 +15097,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujE",
 					"",
 					"",
@@ -15084,7 +15105,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uji",
 					"",
 					"",
@@ -15092,7 +15113,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjI",
 					"",
 					"",
@@ -15100,7 +15121,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uje",
 					"",
 					"",
@@ -15108,7 +15129,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjE",
 					"",
 					"",
@@ -15116,7 +15137,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"iji",
 					"",
 					"",
@@ -15124,7 +15145,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijI",
 					"",
 					"",
@@ -15132,7 +15153,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ije",
 					"",
 					"",
@@ -15140,7 +15161,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijE",
 					"",
 					"",
@@ -15148,7 +15169,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Iji",
 					"",
 					"",
@@ -15156,7 +15177,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjI",
 					"",
 					"",
@@ -15164,7 +15185,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ije",
 					"",
 					"",
@@ -15172,7 +15193,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjE",
 					"",
 					"",
@@ -15180,7 +15201,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aja",
 					"",
 					"",
@@ -15188,7 +15209,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajA",
 					"",
 					"",
@@ -15196,7 +15217,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajo",
 					"",
 					"",
@@ -15204,7 +15225,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajO",
 					"",
 					"",
@@ -15212,7 +15233,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aju",
 					"",
 					"",
@@ -15220,7 +15241,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajU",
 					"",
 					"",
@@ -15228,7 +15249,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aja",
 					"",
 					"",
@@ -15236,7 +15257,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjA",
 					"",
 					"",
@@ -15244,7 +15265,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ajo",
 					"",
 					"",
@@ -15252,7 +15273,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjO",
 					"",
 					"",
@@ -15260,7 +15281,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15268,7 +15289,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15276,7 +15297,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oja",
 					"",
 					"",
@@ -15284,7 +15305,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojA",
 					"",
 					"",
@@ -15292,7 +15313,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojo",
 					"",
 					"",
@@ -15300,7 +15321,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojO",
 					"",
 					"",
@@ -15308,7 +15329,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15316,7 +15337,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15324,7 +15345,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oja",
 					"",
 					"",
@@ -15332,7 +15353,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjA",
 					"",
 					"",
@@ -15340,7 +15361,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ojo",
 					"",
 					"",
@@ -15348,7 +15369,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjO",
 					"",
 					"",
@@ -15356,7 +15377,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15364,7 +15385,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15372,7 +15393,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eja",
 					"",
 					"",
@@ -15380,7 +15401,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejA",
 					"",
 					"",
@@ -15388,7 +15409,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejo",
 					"",
 					"",
@@ -15396,7 +15417,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejO",
 					"",
 					"",
@@ -15404,7 +15425,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15412,7 +15433,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15420,7 +15441,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eja",
 					"",
 					"",
@@ -15428,7 +15449,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjA",
 					"",
 					"",
@@ -15436,7 +15457,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ejo",
 					"",
 					"",
@@ -15444,7 +15465,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjO",
 					"",
 					"",
@@ -15452,7 +15473,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15460,7 +15481,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15468,7 +15489,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uja",
 					"",
 					"",
@@ -15476,7 +15497,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujA",
 					"",
 					"",
@@ -15484,7 +15505,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujo",
 					"",
 					"",
@@ -15492,7 +15513,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujO",
 					"",
 					"",
@@ -15500,7 +15521,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15508,7 +15529,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15516,7 +15537,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uja",
 					"",
 					"",
@@ -15524,7 +15545,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjA",
 					"",
 					"",
@@ -15532,7 +15553,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ujo",
 					"",
 					"",
@@ -15540,7 +15561,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjO",
 					"",
 					"",
@@ -15548,7 +15569,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15556,7 +15577,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15564,7 +15585,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ija",
 					"",
 					"",
@@ -15572,7 +15593,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijA",
 					"",
 					"",
@@ -15580,7 +15601,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijo",
 					"",
 					"",
@@ -15588,7 +15609,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijO",
 					"",
 					"",
@@ -15596,7 +15617,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15604,7 +15625,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15612,7 +15633,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ija",
 					"",
 					"",
@@ -15620,7 +15641,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjA",
 					"",
 					"",
@@ -15628,7 +15649,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ijo",
 					"",
 					"",
@@ -15636,7 +15657,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjO",
 					"",
 					"",
@@ -15644,7 +15665,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -15652,7 +15673,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -15660,7 +15681,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"",
@@ -15668,7 +15689,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lYndEr",
 					"",
 					"$",
@@ -15676,7 +15697,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lander",
 					"",
 					"$",
@@ -15684,7 +15705,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAndEr",
 					"",
 					"$",
@@ -15692,7 +15713,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAnder",
 					"",
 					"$",
@@ -15700,7 +15721,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"landEr",
 					"",
 					"$",
@@ -15708,7 +15729,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lender",
 					"",
 					"$",
@@ -15716,7 +15737,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEndEr",
 					"",
 					"$",
@@ -15724,7 +15745,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lendEr",
 					"",
 					"$",
@@ -15732,7 +15753,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEnder",
 					"",
 					"$",
@@ -15740,7 +15761,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burk",
 					"",
 					"$",
@@ -15748,7 +15769,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrk",
 					"",
 					"$",
@@ -15756,7 +15777,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burg",
 					"",
 					"$",
@@ -15764,7 +15785,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrg",
 					"",
 					"$",
@@ -15772,7 +15793,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Burk",
 					"",
 					"$",
@@ -15780,7 +15801,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"BUrk",
 					"",
 					"$",
@@ -15788,7 +15809,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Burg",
 					"",
 					"$",
@@ -15796,7 +15817,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"BUrg",
 					"",
 					"$",
@@ -15804,7 +15825,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[rmnl]",
@@ -15812,7 +15833,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[rmnl]",
@@ -15820,7 +15841,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"[rmnl]",
 					"",
@@ -15828,7 +15849,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"[rmnl]",
 					"",
@@ -15836,7 +15857,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dS",
 					"",
 					"$",
@@ -15844,7 +15865,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"$",
@@ -15852,7 +15873,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"$",
@@ -15860,7 +15881,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"$",
@@ -15868,7 +15889,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"$",
@@ -15876,7 +15897,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"",
@@ -15884,7 +15905,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"",
@@ -15892,7 +15913,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"",
@@ -15905,7 +15926,7 @@ var genFinalRules = finalRules{
 				langs: 0,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"mb",
 							"",
 							"",
@@ -15913,7 +15934,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"mp",
 							"",
 							"",
@@ -15921,7 +15942,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ng",
 							"",
 							"",
@@ -15929,7 +15950,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[fktSs]",
@@ -15937,7 +15958,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"p",
@@ -15945,7 +15966,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"$",
@@ -15953,7 +15974,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"[pktSs]",
@@ -15961,7 +15982,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"f",
@@ -15969,7 +15990,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"$",
@@ -15977,7 +15998,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -15985,7 +16006,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"",
@@ -15993,7 +16014,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"t",
 							"",
 							"$",
@@ -16001,7 +16022,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"g",
 							"n",
 							"$",
@@ -16009,7 +16030,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"k",
 							"n",
 							"$",
@@ -16017,7 +16038,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"p",
 							"",
 							"$",
@@ -16025,7 +16046,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"r",
 							"[Ee]",
 							"$",
@@ -16033,7 +16054,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"s",
 							"",
 							"$",
@@ -16041,7 +16062,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"t",
 							"[aeiouAEIOU]",
 							"[^aeiouAEIOU]",
@@ -16049,7 +16070,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"s",
 							"[aeiouAEIOU]",
 							"[^aeiouAEIOU]",
@@ -16057,7 +16078,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiouAEIBFOUQY]",
 							"",
@@ -16065,7 +16086,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -16073,7 +16094,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -16081,7 +16102,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -16089,7 +16110,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -16097,7 +16118,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -16105,7 +16126,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -16113,7 +16134,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -16121,7 +16142,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -16129,7 +16150,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lEE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -16137,7 +16158,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"rEE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -16145,7 +16166,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -16153,7 +16174,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"rE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -16161,7 +16182,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EE",
 							"",
 							"",
@@ -16169,7 +16190,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ea",
 							"",
 							"",
@@ -16177,7 +16198,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -16185,7 +16206,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -16193,7 +16214,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eu",
 							"",
 							"",
@@ -16201,7 +16222,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -16209,7 +16230,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -16217,7 +16238,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -16225,7 +16246,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -16233,7 +16254,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -16241,7 +16262,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -16249,7 +16270,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ei",
 							"",
 							"",
@@ -16257,7 +16278,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ei",
 							"",
 							"",
@@ -16265,7 +16286,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"$",
@@ -16273,7 +16294,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"",
@@ -16281,7 +16302,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -16289,7 +16310,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"i[^aeiouAEIOU]",
 							"",
@@ -16297,7 +16318,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"a[^aeiouAEIOU]",
 							"",
@@ -16305,7 +16326,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -16313,7 +16334,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -16321,7 +16342,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -16329,7 +16350,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuAOIUQY]",
 							"",
@@ -16337,7 +16358,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -16345,7 +16366,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -16353,7 +16374,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -16361,7 +16382,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprstv]$",
@@ -16369,7 +16390,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -16377,7 +16398,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -16385,7 +16406,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[oeiuQY]",
 							"",
@@ -16393,7 +16414,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -16401,7 +16422,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -16409,7 +16430,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -16417,7 +16438,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -16425,7 +16446,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -16433,7 +16454,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[oeiuQY]",
 							"",
@@ -16441,7 +16462,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -16449,7 +16470,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -16457,7 +16478,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -16465,7 +16486,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DoiuQY]",
 							"",
@@ -16473,7 +16494,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -16481,7 +16502,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -16489,7 +16510,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -16497,7 +16518,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -16505,7 +16526,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -16513,7 +16534,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -16521,7 +16542,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -16529,7 +16550,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[fklmnprstv]$",
@@ -16537,7 +16558,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"ts$",
@@ -16545,7 +16566,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"$",
@@ -16553,7 +16574,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"[DaoiuAOIUQY]",
 							"",
@@ -16561,7 +16582,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[aoAOQY]",
@@ -16569,7 +16590,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -16577,7 +16598,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -16590,7 +16611,7 @@ var genFinalRules = finalRules{
 				langs: 1,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1a",
 							"",
 							"",
@@ -16598,7 +16619,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1i",
 							"",
 							"",
@@ -16606,7 +16627,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1u",
 							"",
 							"",
@@ -16614,7 +16635,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"j1",
 							"",
 							"",
@@ -16622,7 +16643,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1",
 							"",
 							"",
@@ -16630,7 +16651,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"u",
 							"",
 							"",
@@ -16638,7 +16659,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"i",
 							"",
 							"",
@@ -16646,7 +16667,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"p",
 							"",
 							"$",
@@ -16654,7 +16675,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"p",
 							"",
 							"",
@@ -16667,7 +16688,7 @@ var genFinalRules = finalRules{
 				langs: 17,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -16675,7 +16696,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -16683,7 +16704,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -16691,7 +16712,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -16699,7 +16720,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -16707,7 +16728,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -16715,7 +16736,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -16723,7 +16744,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -16731,7 +16752,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -16739,7 +16760,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -16747,7 +16768,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -16755,7 +16776,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -16763,7 +16784,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -16771,7 +16792,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -16779,7 +16800,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -16787,7 +16808,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -16795,7 +16816,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -16803,7 +16824,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -16811,7 +16832,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -16819,7 +16840,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -16827,7 +16848,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -16835,7 +16856,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -16843,7 +16864,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -16851,7 +16872,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -16859,7 +16880,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -16867,7 +16888,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -16880,7 +16901,7 @@ var genFinalRules = finalRules{
 				langs: 2,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -16888,7 +16909,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -16896,7 +16917,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -16904,7 +16925,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -16912,7 +16933,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -16920,7 +16941,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -16928,7 +16949,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -16936,7 +16957,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -16944,7 +16965,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -16952,7 +16973,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -16960,7 +16981,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -16968,7 +16989,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -16976,7 +16997,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -16984,7 +17005,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -16992,7 +17013,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -17000,7 +17021,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -17008,7 +17029,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -17016,7 +17037,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -17024,7 +17045,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -17032,7 +17053,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17040,7 +17061,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17048,7 +17069,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -17056,7 +17077,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17064,7 +17085,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -17072,7 +17093,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -17080,7 +17101,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17093,7 +17114,7 @@ var genFinalRules = finalRules{
 				langs: 6,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17101,7 +17122,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17109,7 +17130,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17117,7 +17138,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17125,7 +17146,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17133,7 +17154,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17141,7 +17162,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17154,7 +17175,7 @@ var genFinalRules = finalRules{
 				langs: 3,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17162,7 +17183,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17170,7 +17191,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17178,7 +17199,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17186,7 +17207,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17194,7 +17215,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17202,7 +17223,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17215,7 +17236,7 @@ var genFinalRules = finalRules{
 				langs: 4,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17223,7 +17244,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17231,7 +17252,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17239,7 +17260,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17247,7 +17268,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17255,7 +17276,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17263,7 +17284,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17276,7 +17297,7 @@ var genFinalRules = finalRules{
 				langs: 5,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aEIeiou]e",
@@ -17284,7 +17305,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -17292,7 +17313,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -17300,7 +17321,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -17308,7 +17329,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -17316,7 +17337,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -17324,7 +17345,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -17332,7 +17353,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -17340,7 +17361,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17348,7 +17369,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -17356,7 +17377,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17364,7 +17385,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17372,7 +17393,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17380,7 +17401,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17388,7 +17409,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17396,7 +17417,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"D[^aeiEIou]",
 							"",
@@ -17404,7 +17425,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"D[^aeiEIou]",
 							"",
@@ -17412,7 +17433,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17420,7 +17441,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -17428,7 +17449,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17436,7 +17457,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiEuQY]",
 							"",
@@ -17444,7 +17465,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQY]",
@@ -17452,7 +17473,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17460,7 +17481,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17473,7 +17494,7 @@ var genFinalRules = finalRules{
 				langs: 7,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -17481,7 +17502,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEIOUouQY]",
 							"",
@@ -17489,7 +17510,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -17497,7 +17518,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -17505,7 +17526,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -17513,7 +17534,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -17521,7 +17542,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -17529,7 +17550,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -17537,7 +17558,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AU",
 							"",
 							"",
@@ -17545,7 +17566,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aU",
 							"",
 							"",
@@ -17553,7 +17574,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Au",
 							"",
 							"",
@@ -17561,7 +17582,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17569,7 +17590,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17577,7 +17598,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OU",
 							"",
 							"",
@@ -17585,7 +17606,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oU",
 							"",
 							"",
@@ -17593,7 +17614,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ou",
 							"",
 							"",
@@ -17601,7 +17622,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17609,7 +17630,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -17617,7 +17638,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17625,7 +17646,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -17633,7 +17654,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17641,7 +17662,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -17649,7 +17670,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17657,7 +17678,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -17665,7 +17686,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -17673,7 +17694,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -17681,7 +17702,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoAOUiuQY]",
 							"",
@@ -17689,7 +17710,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -17697,7 +17718,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -17705,7 +17726,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -17713,7 +17734,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprst]$",
@@ -17721,7 +17742,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -17729,7 +17750,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[aoAOUeiuQY]",
 							"",
@@ -17737,7 +17758,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -17745,7 +17766,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17753,7 +17774,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -17761,7 +17782,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -17769,7 +17790,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -17777,7 +17798,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[aoeOUiuQY]",
 							"",
@@ -17785,7 +17806,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -17793,7 +17814,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -17801,7 +17822,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DaoiuUQY]",
 							"",
@@ -17809,7 +17830,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -17817,7 +17838,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -17825,7 +17846,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -17833,7 +17854,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -17841,7 +17862,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -17849,7 +17870,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -17862,7 +17883,7 @@ var genFinalRules = finalRules{
 				langs: 8,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17870,7 +17891,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17878,7 +17899,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17886,7 +17907,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17894,7 +17915,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17902,7 +17923,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17910,7 +17931,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17923,7 +17944,7 @@ var genFinalRules = finalRules{
 				langs: 9,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -17931,7 +17952,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -17939,7 +17960,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -17947,7 +17968,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -17955,7 +17976,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -17963,7 +17984,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -17971,7 +17992,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -17979,7 +18000,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"N",
 							"",
 							"",
@@ -17996,7 +18017,7 @@ var genFinalRules = finalRules{
 				langs: 11,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18004,7 +18025,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18012,7 +18033,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18020,7 +18041,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18028,7 +18049,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18036,7 +18057,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18044,7 +18065,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18057,7 +18078,7 @@ var genFinalRules = finalRules{
 				langs: 12,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18065,7 +18086,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18073,7 +18094,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18081,7 +18102,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18089,7 +18110,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18097,7 +18118,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18105,7 +18126,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18118,7 +18139,7 @@ var genFinalRules = finalRules{
 				langs: 13,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18126,7 +18147,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18134,7 +18155,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18142,7 +18163,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18150,7 +18171,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18158,7 +18179,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18166,7 +18187,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18179,7 +18200,7 @@ var genFinalRules = finalRules{
 				langs: 14,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -18187,7 +18208,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -18195,7 +18216,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -18203,7 +18224,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -18211,7 +18232,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -18219,7 +18240,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -18227,7 +18248,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -18235,7 +18256,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -18243,7 +18264,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -18251,7 +18272,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -18259,7 +18280,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -18267,7 +18288,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -18275,7 +18296,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -18283,7 +18304,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -18291,7 +18312,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -18299,7 +18320,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -18307,7 +18328,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -18315,7 +18336,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -18323,7 +18344,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -18331,7 +18352,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -18339,7 +18360,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -18347,7 +18368,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -18355,7 +18376,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -18363,7 +18384,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -18371,7 +18392,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -18379,7 +18400,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -18387,7 +18408,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -18395,7 +18416,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -18403,7 +18424,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -18411,7 +18432,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -18419,7 +18440,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -18427,7 +18448,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -18435,7 +18456,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -18443,7 +18464,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -18451,7 +18472,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -18459,7 +18480,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -18467,7 +18488,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -18475,7 +18496,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -18483,7 +18504,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -18491,7 +18512,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -18499,7 +18520,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -18507,7 +18528,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -18515,7 +18536,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -18523,7 +18544,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18531,7 +18552,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18539,7 +18560,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18547,7 +18568,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18555,7 +18576,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18563,7 +18584,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18571,7 +18592,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18579,7 +18600,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -18587,7 +18608,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -18595,7 +18616,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -18603,7 +18624,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -18611,7 +18632,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -18619,7 +18640,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -18632,7 +18653,7 @@ var genFinalRules = finalRules{
 				langs: 15,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -18640,7 +18661,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -18648,7 +18669,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -18656,7 +18677,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -18664,7 +18685,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -18672,7 +18693,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -18680,7 +18701,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -18693,7 +18714,7 @@ var genFinalRules = finalRules{
 				langs: 16,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -18701,7 +18722,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -18709,7 +18730,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -18717,7 +18738,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -18725,7 +18746,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -18733,7 +18754,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -18741,7 +18762,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -18749,7 +18770,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -18757,7 +18778,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -18765,7 +18786,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -18773,7 +18794,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -18781,7 +18802,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -18789,7 +18810,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -18797,7 +18818,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -18805,7 +18826,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -18813,7 +18834,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -18821,7 +18842,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -18829,7 +18850,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -18837,7 +18858,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -18845,7 +18866,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -18853,7 +18874,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -18861,7 +18882,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -18869,7 +18890,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -18877,7 +18898,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -18885,7 +18906,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -18893,7 +18914,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -18901,7 +18922,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -18909,7 +18930,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -18917,7 +18938,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -18925,7 +18946,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -18933,7 +18954,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -18941,7 +18962,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -18949,7 +18970,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -18957,7 +18978,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -18965,7 +18986,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -18973,7 +18994,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -18981,7 +19002,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -18989,7 +19010,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -18997,7 +19018,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -19005,7 +19026,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -19013,7 +19034,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -19021,7 +19042,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -19029,7 +19050,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -19037,7 +19058,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -19045,7 +19066,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -19053,7 +19074,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -19061,7 +19082,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -19069,7 +19090,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -19077,7 +19098,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -19085,7 +19106,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -19093,7 +19114,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -19101,7 +19122,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -19109,7 +19130,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -19117,7 +19138,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -19125,7 +19146,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -19133,7 +19154,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -19146,7 +19167,7 @@ var genFinalRules = finalRules{
 				langs: 18,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -19154,7 +19175,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -19162,7 +19183,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -19170,7 +19191,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -19178,7 +19199,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -19186,7 +19207,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -19194,7 +19215,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -19202,7 +19223,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"",
@@ -19215,7 +19236,7 @@ var genFinalRules = finalRules{
 				langs: 19,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -19223,7 +19244,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -19231,7 +19252,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -19239,7 +19260,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -19247,7 +19268,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -19255,7 +19276,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -19269,7 +19290,7 @@ var genFinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"$",
@@ -19277,7 +19298,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"[fktSs]",
@@ -19285,7 +19306,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"p",
@@ -19293,7 +19314,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"$",
@@ -19301,7 +19322,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"[vgdZz]",
@@ -19309,7 +19330,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"b",
@@ -19317,7 +19338,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"[pktSs]",
@@ -19325,7 +19346,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"f",
@@ -19333,7 +19354,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"$",
@@ -19341,7 +19362,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"[vbgdZz]",
@@ -19349,7 +19370,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"v",
@@ -19357,7 +19378,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"[pftSs]",
@@ -19365,7 +19386,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"k",
@@ -19373,7 +19394,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"$",
@@ -19381,7 +19402,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"[vbdZz]",
@@ -19389,7 +19410,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"g",
@@ -19397,7 +19418,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"[pfkSs]",
@@ -19405,7 +19426,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"t",
@@ -19413,7 +19434,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"$",
@@ -19421,7 +19442,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"[vbgZz]",
@@ -19429,7 +19450,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"d",
@@ -19437,7 +19458,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"dZ",
@@ -19445,7 +19466,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"tS",
@@ -19453,7 +19474,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[pfkSt]",
@@ -19461,7 +19482,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[sSzZ]",
@@ -19469,7 +19490,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[sSzZ]",
@@ -19477,7 +19498,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"[sSzZ]",
@@ -19485,7 +19506,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[sSzZ]",
@@ -19493,7 +19514,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jnm",
 					"",
 					"",
@@ -19501,7 +19522,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"^",
 					"",
@@ -19509,7 +19530,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jI",
 					"^",
 					"",
@@ -19517,7 +19538,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"[aA]",
@@ -19525,7 +19546,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"A",
 					"",
@@ -19533,7 +19554,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"A",
 					"",
 					"A",
@@ -19541,7 +19562,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"b",
@@ -19549,7 +19570,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"d",
@@ -19557,7 +19578,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"f",
@@ -19565,7 +19586,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"g",
@@ -19573,7 +19594,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"j",
@@ -19581,7 +19602,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"k",
@@ -19589,7 +19610,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"l",
 					"",
 					"l",
@@ -19597,7 +19618,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"m",
 					"",
 					"m",
@@ -19605,7 +19626,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"n",
@@ -19613,7 +19634,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"p",
@@ -19621,7 +19642,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"r",
 					"",
 					"r",
@@ -19629,7 +19650,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"t",
@@ -19637,7 +19658,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"v",
@@ -19645,7 +19666,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"z",
@@ -19653,7 +19674,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"vanden",
 					"^",
 					"",
@@ -19661,7 +19682,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"vander",
 					"^",
 					"",
@@ -19669,7 +19690,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"van",
 					"^",
 					"[bp]",
@@ -19677,7 +19698,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"van",
 					"^",
 					"",
@@ -19685,7 +19706,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"[bp]",
@@ -19693,7 +19714,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"",
@@ -19701,7 +19722,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"H",
 					"",
 					"",
@@ -19709,7 +19730,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sen",
 					"[rmnl]",
 					"$",
@@ -19717,7 +19738,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sen",
 					"",
 					"$",
@@ -19725,7 +19746,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sEn",
 					"[rmnl]",
 					"$",
@@ -19733,7 +19754,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"sEn",
 					"",
 					"$",
@@ -19741,7 +19762,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -19749,7 +19770,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -19757,7 +19778,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -19765,7 +19786,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -19773,7 +19794,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -19781,7 +19802,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[BbdfgklmnprsStvzZ]",
 					"[ln]$",
@@ -19789,7 +19810,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -19797,7 +19818,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -19805,7 +19826,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"E",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -19813,7 +19834,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"I",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -19821,7 +19842,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Q",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -19829,7 +19850,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Y",
 					"[bdfgklmnprsStvzZ]",
 					"[ln][bdfgklmnprsStvzZ]",
@@ -19837,7 +19858,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEs",
 					"",
 					"",
@@ -19845,7 +19866,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lE",
 					"[bdfgkmnprStvzZ]",
 					"",
@@ -19853,7 +19874,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aue",
 					"",
 					"",
@@ -19861,7 +19882,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oue",
 					"",
 					"",
@@ -19869,7 +19890,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AvE",
 					"",
 					"",
@@ -19877,7 +19898,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ave",
 					"",
 					"",
@@ -19885,7 +19906,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"avE",
 					"",
 					"",
@@ -19893,7 +19914,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ave",
 					"",
 					"",
@@ -19901,7 +19922,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OvE",
 					"",
 					"",
@@ -19909,7 +19930,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ove",
 					"",
 					"",
@@ -19917,7 +19938,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ovE",
 					"",
 					"",
@@ -19925,7 +19946,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ove",
 					"",
 					"",
@@ -19933,7 +19954,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ea",
 					"",
 					"",
@@ -19941,7 +19962,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EA",
 					"",
 					"",
@@ -19949,7 +19970,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ea",
 					"",
 					"",
@@ -19957,7 +19978,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eA",
 					"",
 					"",
@@ -19965,7 +19986,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aji",
 					"",
 					"",
@@ -19973,7 +19994,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajI",
 					"",
 					"",
@@ -19981,7 +20002,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aje",
 					"",
 					"",
@@ -19989,7 +20010,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajE",
 					"",
 					"",
@@ -19997,7 +20018,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aji",
 					"",
 					"",
@@ -20005,7 +20026,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjI",
 					"",
 					"",
@@ -20013,7 +20034,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aje",
 					"",
 					"",
@@ -20021,7 +20042,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjE",
 					"",
 					"",
@@ -20029,7 +20050,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oji",
 					"",
 					"",
@@ -20037,7 +20058,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojI",
 					"",
 					"",
@@ -20045,7 +20066,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oje",
 					"",
 					"",
@@ -20053,7 +20074,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojE",
 					"",
 					"",
@@ -20061,7 +20082,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oji",
 					"",
 					"",
@@ -20069,7 +20090,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjI",
 					"",
 					"",
@@ -20077,7 +20098,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oje",
 					"",
 					"",
@@ -20085,7 +20106,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjE",
 					"",
 					"",
@@ -20093,7 +20114,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eji",
 					"",
 					"",
@@ -20101,7 +20122,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejI",
 					"",
 					"",
@@ -20109,7 +20130,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eje",
 					"",
 					"",
@@ -20117,7 +20138,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejE",
 					"",
 					"",
@@ -20125,7 +20146,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eji",
 					"",
 					"",
@@ -20133,7 +20154,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjI",
 					"",
 					"",
@@ -20141,7 +20162,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eje",
 					"",
 					"",
@@ -20149,7 +20170,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjE",
 					"",
 					"",
@@ -20157,7 +20178,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uji",
 					"",
 					"",
@@ -20165,7 +20186,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujI",
 					"",
 					"",
@@ -20173,7 +20194,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uje",
 					"",
 					"",
@@ -20181,7 +20202,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujE",
 					"",
 					"",
@@ -20189,7 +20210,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uji",
 					"",
 					"",
@@ -20197,7 +20218,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjI",
 					"",
 					"",
@@ -20205,7 +20226,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uje",
 					"",
 					"",
@@ -20213,7 +20234,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjE",
 					"",
 					"",
@@ -20221,7 +20242,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"iji",
 					"",
 					"",
@@ -20229,7 +20250,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijI",
 					"",
 					"",
@@ -20237,7 +20258,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ije",
 					"",
 					"",
@@ -20245,7 +20266,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijE",
 					"",
 					"",
@@ -20253,7 +20274,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Iji",
 					"",
 					"",
@@ -20261,7 +20282,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjI",
 					"",
 					"",
@@ -20269,7 +20290,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ije",
 					"",
 					"",
@@ -20277,7 +20298,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjE",
 					"",
 					"",
@@ -20285,7 +20306,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aja",
 					"",
 					"",
@@ -20293,7 +20314,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajA",
 					"",
 					"",
@@ -20301,7 +20322,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajo",
 					"",
 					"",
@@ -20309,7 +20330,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajO",
 					"",
 					"",
@@ -20317,7 +20338,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aju",
 					"",
 					"",
@@ -20325,7 +20346,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajU",
 					"",
 					"",
@@ -20333,7 +20354,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aja",
 					"",
 					"",
@@ -20341,7 +20362,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjA",
 					"",
 					"",
@@ -20349,7 +20370,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ajo",
 					"",
 					"",
@@ -20357,7 +20378,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjO",
 					"",
 					"",
@@ -20365,7 +20386,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20373,7 +20394,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20381,7 +20402,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oja",
 					"",
 					"",
@@ -20389,7 +20410,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojA",
 					"",
 					"",
@@ -20397,7 +20418,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojo",
 					"",
 					"",
@@ -20405,7 +20426,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ojO",
 					"",
 					"",
@@ -20413,7 +20434,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20421,7 +20442,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20429,7 +20450,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Oja",
 					"",
 					"",
@@ -20437,7 +20458,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjA",
 					"",
 					"",
@@ -20445,7 +20466,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ojo",
 					"",
 					"",
@@ -20453,7 +20474,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"OjO",
 					"",
 					"",
@@ -20461,7 +20482,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20469,7 +20490,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20477,7 +20498,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eja",
 					"",
 					"",
@@ -20485,7 +20506,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejA",
 					"",
 					"",
@@ -20493,7 +20514,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejo",
 					"",
 					"",
@@ -20501,7 +20522,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ejO",
 					"",
 					"",
@@ -20509,7 +20530,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20517,7 +20538,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20525,7 +20546,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Eja",
 					"",
 					"",
@@ -20533,7 +20554,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjA",
 					"",
 					"",
@@ -20541,7 +20562,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ejo",
 					"",
 					"",
@@ -20549,7 +20570,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"EjO",
 					"",
 					"",
@@ -20557,7 +20578,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20565,7 +20586,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20573,7 +20594,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uja",
 					"",
 					"",
@@ -20581,7 +20602,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujA",
 					"",
 					"",
@@ -20589,7 +20610,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujo",
 					"",
 					"",
@@ -20597,7 +20618,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ujO",
 					"",
 					"",
@@ -20605,7 +20626,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20613,7 +20634,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20621,7 +20642,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Uja",
 					"",
 					"",
@@ -20629,7 +20650,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjA",
 					"",
 					"",
@@ -20637,7 +20658,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ujo",
 					"",
 					"",
@@ -20645,7 +20666,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"UjO",
 					"",
 					"",
@@ -20653,7 +20674,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20661,7 +20682,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20669,7 +20690,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ija",
 					"",
 					"",
@@ -20677,7 +20698,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijA",
 					"",
 					"",
@@ -20685,7 +20706,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijo",
 					"",
 					"",
@@ -20693,7 +20714,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ijO",
 					"",
 					"",
@@ -20701,7 +20722,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20709,7 +20730,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20717,7 +20738,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ija",
 					"",
 					"",
@@ -20725,7 +20746,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjA",
 					"",
 					"",
@@ -20733,7 +20754,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Ijo",
 					"",
 					"",
@@ -20741,7 +20762,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"IjO",
 					"",
 					"",
@@ -20749,7 +20770,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Aju",
 					"",
 					"",
@@ -20757,7 +20778,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"AjU",
 					"",
 					"",
@@ -20765,7 +20786,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"",
@@ -20773,7 +20794,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lYndEr",
 					"",
 					"$",
@@ -20781,7 +20802,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lander",
 					"",
 					"$",
@@ -20789,7 +20810,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAndEr",
 					"",
 					"$",
@@ -20797,7 +20818,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lAnder",
 					"",
 					"$",
@@ -20805,7 +20826,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"landEr",
 					"",
 					"$",
@@ -20813,7 +20834,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lender",
 					"",
 					"$",
@@ -20821,7 +20842,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEndEr",
 					"",
 					"$",
@@ -20829,7 +20850,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lendEr",
 					"",
 					"$",
@@ -20837,7 +20858,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"lEnder",
 					"",
 					"$",
@@ -20845,7 +20866,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burk",
 					"",
 					"$",
@@ -20853,7 +20874,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrk",
 					"",
 					"$",
@@ -20861,7 +20882,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"burg",
 					"",
 					"$",
@@ -20869,7 +20890,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bUrg",
 					"",
 					"$",
@@ -20877,7 +20898,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Burk",
 					"",
 					"$",
@@ -20885,7 +20906,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"BUrk",
 					"",
 					"$",
@@ -20893,7 +20914,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Burg",
 					"",
 					"$",
@@ -20901,7 +20922,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"BUrg",
 					"",
 					"$",
@@ -20909,7 +20930,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[rmnl]",
@@ -20917,7 +20938,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[rmnl]",
@@ -20925,7 +20946,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"[rmnl]",
 					"",
@@ -20933,7 +20954,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"[rmnl]",
 					"",
@@ -20941,7 +20962,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dS",
 					"",
 					"$",
@@ -20949,7 +20970,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"$",
@@ -20957,7 +20978,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"$",
@@ -20965,7 +20986,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"$",
@@ -20973,7 +20994,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"$",
@@ -20981,7 +21002,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"",
@@ -20989,7 +21010,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"",
@@ -20997,7 +21018,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"",
@@ -21010,7 +21031,7 @@ var genFinalRules = finalRules{
 				langs: 0,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"mb",
 							"",
 							"",
@@ -21018,7 +21039,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"mp",
 							"",
 							"",
@@ -21026,7 +21047,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ng",
 							"",
 							"",
@@ -21034,7 +21055,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[fktSs]",
@@ -21042,7 +21063,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"p",
@@ -21050,7 +21071,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"$",
@@ -21058,7 +21079,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"[pktSs]",
@@ -21066,7 +21087,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"f",
@@ -21074,7 +21095,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"$",
@@ -21082,7 +21103,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -21090,7 +21111,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"",
@@ -21098,7 +21119,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"t",
 							"",
 							"$",
@@ -21106,7 +21127,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"g",
 							"n",
 							"$",
@@ -21114,7 +21135,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"k",
 							"n",
 							"$",
@@ -21122,7 +21143,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"p",
 							"",
 							"$",
@@ -21130,7 +21151,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"r",
 							"[Ee]",
 							"$",
@@ -21138,7 +21159,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"s",
 							"",
 							"$",
@@ -21146,7 +21167,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"t",
 							"[aeiouAEIOU]",
 							"[^aeiouAEIOU]",
@@ -21154,7 +21175,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"s",
 							"[aeiouAEIOU]",
 							"[^aeiouAEIOU]",
@@ -21162,7 +21183,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiouAEIBFOUQY]",
 							"",
@@ -21170,7 +21191,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -21178,7 +21199,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -21186,7 +21207,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -21194,7 +21215,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -21202,7 +21223,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -21210,7 +21231,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -21218,7 +21239,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -21226,7 +21247,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -21234,7 +21255,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lEE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -21242,7 +21263,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"rEE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -21250,7 +21271,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -21258,7 +21279,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"rE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -21266,7 +21287,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EE",
 							"",
 							"",
@@ -21274,7 +21295,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ea",
 							"",
 							"",
@@ -21282,7 +21303,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -21290,7 +21311,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -21298,7 +21319,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eu",
 							"",
 							"",
@@ -21306,7 +21327,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -21314,7 +21335,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -21322,7 +21343,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -21330,7 +21351,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -21338,7 +21359,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -21346,7 +21367,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -21354,7 +21375,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ei",
 							"",
 							"",
@@ -21362,7 +21383,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ei",
 							"",
 							"",
@@ -21370,7 +21391,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"$",
@@ -21378,7 +21399,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iA",
 							"",
 							"",
@@ -21386,7 +21407,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[^aeiouAEBFIOU]e",
@@ -21394,7 +21415,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"i[^aeiouAEIOU]",
 							"",
@@ -21402,7 +21423,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"a[^aeiouAEIOU]",
 							"",
@@ -21410,7 +21431,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -21418,7 +21439,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -21426,7 +21447,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -21434,7 +21455,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuAOIUQY]",
 							"",
@@ -21442,7 +21463,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -21450,7 +21471,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -21458,7 +21479,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -21466,7 +21487,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprstv]$",
@@ -21474,7 +21495,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -21482,7 +21503,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -21490,7 +21511,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[oeiuQY]",
 							"",
@@ -21498,7 +21519,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -21506,7 +21527,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -21514,7 +21535,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -21522,7 +21543,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -21530,7 +21551,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -21538,7 +21559,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[oeiuQY]",
 							"",
@@ -21546,7 +21567,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -21554,7 +21575,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -21562,7 +21583,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -21570,7 +21591,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DoiuQY]",
 							"",
@@ -21578,7 +21599,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -21586,7 +21607,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -21594,7 +21615,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -21602,7 +21623,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -21610,7 +21631,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -21618,7 +21639,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -21626,7 +21647,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -21634,7 +21655,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[fklmnprstv]$",
@@ -21642,7 +21663,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"ts$",
@@ -21650,7 +21671,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"$",
@@ -21658,7 +21679,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"[DaoiuAOIUQY]",
 							"",
@@ -21666,7 +21687,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"[aoAOQY]",
@@ -21674,7 +21695,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -21682,7 +21703,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -21695,7 +21716,7 @@ var genFinalRules = finalRules{
 				langs: 1,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1a",
 							"",
 							"",
@@ -21703,7 +21724,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1i",
 							"",
 							"",
@@ -21711,7 +21732,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1u",
 							"",
 							"",
@@ -21719,7 +21740,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"j1",
 							"",
 							"",
@@ -21727,7 +21748,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"1",
 							"",
 							"",
@@ -21735,7 +21756,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"u",
 							"",
 							"",
@@ -21743,7 +21764,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"i",
 							"",
 							"",
@@ -21751,7 +21772,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"p",
 							"",
 							"$",
@@ -21759,7 +21780,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"p",
 							"",
 							"",
@@ -21772,7 +21793,7 @@ var genFinalRules = finalRules{
 				langs: 17,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -21780,7 +21801,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -21788,7 +21809,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -21796,7 +21817,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -21804,7 +21825,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -21812,7 +21833,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -21820,7 +21841,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -21828,7 +21849,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -21836,7 +21857,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -21844,7 +21865,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -21852,7 +21873,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -21860,7 +21881,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -21868,7 +21889,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -21876,7 +21897,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -21884,7 +21905,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -21892,7 +21913,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -21900,7 +21921,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -21908,7 +21929,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -21916,7 +21937,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -21924,7 +21945,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -21932,7 +21953,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -21940,7 +21961,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -21948,7 +21969,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -21956,7 +21977,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -21964,7 +21985,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -21972,7 +21993,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -21985,7 +22006,7 @@ var genFinalRules = finalRules{
 				langs: 2,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -21993,7 +22014,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -22001,7 +22022,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -22009,7 +22030,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -22017,7 +22038,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -22025,7 +22046,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -22033,7 +22054,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiEIou]",
 							"",
@@ -22041,7 +22062,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -22049,7 +22070,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22057,7 +22078,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22065,7 +22086,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22073,7 +22094,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22081,7 +22102,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -22089,7 +22110,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"om",
 							"",
 							"[bp]",
@@ -22097,7 +22118,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"on",
 							"",
 							"[dgkstvz]",
@@ -22105,7 +22126,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"em",
 							"",
 							"[bp]",
@@ -22113,7 +22134,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"en",
 							"",
 							"[dgkstvz]",
@@ -22121,7 +22142,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Em",
 							"",
 							"[bp]",
@@ -22129,7 +22150,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"En",
 							"",
 							"[dgkstvz]",
@@ -22137,7 +22158,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -22145,7 +22166,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -22153,7 +22174,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -22161,7 +22182,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -22169,7 +22190,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -22177,7 +22198,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -22185,7 +22206,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -22198,7 +22219,7 @@ var genFinalRules = finalRules{
 				langs: 6,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22206,7 +22227,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22214,7 +22235,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22222,7 +22243,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22230,7 +22251,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -22238,7 +22259,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -22246,7 +22267,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -22259,7 +22280,7 @@ var genFinalRules = finalRules{
 				langs: 3,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22267,7 +22288,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22275,7 +22296,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22283,7 +22304,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22291,7 +22312,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -22299,7 +22320,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -22307,7 +22328,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -22320,7 +22341,7 @@ var genFinalRules = finalRules{
 				langs: 4,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22328,7 +22349,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22336,7 +22357,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22344,7 +22365,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22352,7 +22373,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -22360,7 +22381,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -22368,7 +22389,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -22381,7 +22402,7 @@ var genFinalRules = finalRules{
 				langs: 5,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^aEIeiou]e",
@@ -22389,7 +22410,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -22397,7 +22418,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aEIeiou]",
 							"",
@@ -22405,7 +22426,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -22413,7 +22434,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -22421,7 +22442,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -22429,7 +22450,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -22437,7 +22458,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -22445,7 +22466,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -22453,7 +22474,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"lE",
 							"[bdfgkmnprsStvzZ]",
 							"",
@@ -22461,7 +22482,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22469,7 +22490,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22477,7 +22498,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22485,7 +22506,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22493,7 +22514,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -22501,7 +22522,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"D[^aeiEIou]",
 							"",
@@ -22509,7 +22530,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"D[^aeiEIou]",
 							"",
@@ -22517,7 +22538,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -22525,7 +22546,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprsStv]$",
@@ -22533,7 +22554,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -22541,7 +22562,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiEuQY]",
 							"",
@@ -22549,7 +22570,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQY]",
@@ -22557,7 +22578,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -22565,7 +22586,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -22578,7 +22599,7 @@ var genFinalRules = finalRules{
 				langs: 7,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -22586,7 +22607,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEIOUouQY]",
 							"",
@@ -22594,7 +22615,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -22602,7 +22623,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -22610,7 +22631,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -22618,7 +22639,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -22626,7 +22647,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -22634,7 +22655,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -22642,7 +22663,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"AU",
 							"",
 							"",
@@ -22650,7 +22671,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aU",
 							"",
 							"",
@@ -22658,7 +22679,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Au",
 							"",
 							"",
@@ -22666,7 +22687,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22674,7 +22695,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22682,7 +22703,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"OU",
 							"",
 							"",
@@ -22690,7 +22711,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oU",
 							"",
 							"",
@@ -22698,7 +22719,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ou",
 							"",
 							"",
@@ -22706,7 +22727,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22714,7 +22735,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ai",
 							"",
 							"",
@@ -22722,7 +22743,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22730,7 +22751,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Oi",
 							"",
 							"",
@@ -22738,7 +22759,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -22746,7 +22767,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ui",
 							"",
 							"",
@@ -22754,7 +22775,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -22762,7 +22783,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -22770,7 +22791,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -22778,7 +22799,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -22786,7 +22807,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoAOUiuQY]",
 							"",
@@ -22794,7 +22815,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoAOQY]",
@@ -22802,7 +22823,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -22810,7 +22831,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"$",
@@ -22818,7 +22839,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"[fklmnprst]$",
@@ -22826,7 +22847,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"ts$",
@@ -22834,7 +22855,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"[aoAOUeiuQY]",
 							"",
@@ -22842,7 +22863,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"O",
 							"",
 							"",
@@ -22850,7 +22871,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -22858,7 +22879,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"$",
@@ -22866,7 +22887,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"[fklmnprst]$",
@@ -22874,7 +22895,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"ts$",
@@ -22882,7 +22903,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"[aoeOUiuQY]",
 							"",
@@ -22890,7 +22911,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"A",
 							"",
 							"",
@@ -22898,7 +22919,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"$",
@@ -22906,7 +22927,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"[DaoiuUQY]",
 							"",
@@ -22914,7 +22935,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"[^k]$",
@@ -22922,7 +22943,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"[lr]",
 							"$",
@@ -22930,7 +22951,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uk",
 							"",
 							"$",
@@ -22938,7 +22959,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sUts",
 							"",
 							"$",
@@ -22946,7 +22967,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Uts",
 							"",
 							"$",
@@ -22954,7 +22975,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"U",
 							"",
 							"",
@@ -22967,7 +22988,7 @@ var genFinalRules = finalRules{
 				langs: 8,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -22975,7 +22996,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -22983,7 +23004,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -22991,7 +23012,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -22999,7 +23020,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23007,7 +23028,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23015,7 +23036,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23028,7 +23049,7 @@ var genFinalRules = finalRules{
 				langs: 9,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -23036,7 +23057,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -23044,7 +23065,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -23052,7 +23073,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -23060,7 +23081,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23068,7 +23089,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23076,7 +23097,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23084,7 +23105,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"N",
 							"",
 							"",
@@ -23101,7 +23122,7 @@ var genFinalRules = finalRules{
 				langs: 11,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -23109,7 +23130,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -23117,7 +23138,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -23125,7 +23146,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -23133,7 +23154,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23141,7 +23162,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23149,7 +23170,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23162,7 +23183,7 @@ var genFinalRules = finalRules{
 				langs: 12,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -23170,7 +23191,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -23178,7 +23199,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -23186,7 +23207,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -23194,7 +23215,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23202,7 +23223,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23210,7 +23231,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23223,7 +23244,7 @@ var genFinalRules = finalRules{
 				langs: 13,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -23231,7 +23252,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -23239,7 +23260,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -23247,7 +23268,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -23255,7 +23276,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23263,7 +23284,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23271,7 +23292,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23284,7 +23305,7 @@ var genFinalRules = finalRules{
 				langs: 14,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -23292,7 +23313,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -23300,7 +23321,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -23308,7 +23329,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -23316,7 +23337,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -23324,7 +23345,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -23332,7 +23353,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -23340,7 +23361,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -23348,7 +23369,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -23356,7 +23377,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -23364,7 +23385,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -23372,7 +23393,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -23380,7 +23401,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -23388,7 +23409,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -23396,7 +23417,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -23404,7 +23425,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -23412,7 +23433,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -23420,7 +23441,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -23428,7 +23449,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -23436,7 +23457,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -23444,7 +23465,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -23452,7 +23473,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -23460,7 +23481,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -23468,7 +23489,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -23476,7 +23497,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -23484,7 +23505,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -23492,7 +23513,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -23500,7 +23521,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -23508,7 +23529,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -23516,7 +23537,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -23524,7 +23545,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -23532,7 +23553,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -23540,7 +23561,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -23548,7 +23569,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -23556,7 +23577,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -23564,7 +23585,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -23572,7 +23593,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -23580,7 +23601,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -23588,7 +23609,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -23596,7 +23617,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -23604,7 +23625,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -23612,7 +23633,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -23620,7 +23641,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -23628,7 +23649,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -23636,7 +23657,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -23644,7 +23665,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -23652,7 +23673,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -23660,7 +23681,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23668,7 +23689,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23676,7 +23697,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23684,7 +23705,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -23692,7 +23713,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -23700,7 +23721,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -23708,7 +23729,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -23716,7 +23737,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -23724,7 +23745,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -23737,7 +23758,7 @@ var genFinalRules = finalRules{
 				langs: 15,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -23745,7 +23766,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -23753,7 +23774,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -23761,7 +23782,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -23769,7 +23790,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -23777,7 +23798,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -23785,7 +23806,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -23798,7 +23819,7 @@ var genFinalRules = finalRules{
 				langs: 16,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[bp]",
@@ -23806,7 +23827,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[bp]",
@@ -23814,7 +23835,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[bp]",
@@ -23822,7 +23843,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[bp]",
@@ -23830,7 +23851,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[bp]",
@@ -23838,7 +23859,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[bp]",
@@ -23846,7 +23867,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[bp]",
@@ -23854,7 +23875,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiB",
 							"",
 							"[dgkstvz]",
@@ -23862,7 +23883,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiB",
 							"",
 							"[dgkstvz]",
@@ -23870,7 +23891,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiB",
 							"",
 							"[dgkstvz]",
@@ -23878,7 +23899,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiB",
 							"",
 							"[dgkstvz]",
@@ -23886,7 +23907,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiB",
 							"",
 							"[dgkstvz]",
@@ -23894,7 +23915,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiB",
 							"",
 							"[dgkstvz]",
@@ -23902,7 +23923,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiB",
 							"",
 							"[dgkstvz]",
@@ -23910,7 +23931,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[bp]",
@@ -23918,7 +23939,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"[dgkstvz]",
@@ -23926,7 +23947,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -23934,7 +23955,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[bp]",
@@ -23942,7 +23963,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[bp]",
@@ -23950,7 +23971,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[bp]",
@@ -23958,7 +23979,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[bp]",
@@ -23966,7 +23987,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[bp]",
@@ -23974,7 +23995,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[bp]",
@@ -23982,7 +24003,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[bp]",
@@ -23990,7 +24011,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"aiF",
 							"",
 							"[dgkstvz]",
@@ -23998,7 +24019,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oiF",
 							"",
 							"[dgkstvz]",
@@ -24006,7 +24027,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"uiF",
 							"",
 							"[dgkstvz]",
@@ -24014,7 +24035,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"eiF",
 							"",
 							"[dgkstvz]",
@@ -24022,7 +24043,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"EiF",
 							"",
 							"[dgkstvz]",
@@ -24030,7 +24051,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"iiF",
 							"",
 							"[dgkstvz]",
@@ -24038,7 +24059,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"IiF",
 							"",
 							"[dgkstvz]",
@@ -24046,7 +24067,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[bp]",
@@ -24054,7 +24075,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"[dgkstvz]",
@@ -24062,7 +24083,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"F",
 							"",
 							"",
@@ -24070,7 +24091,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"P",
 							"",
 							"",
@@ -24078,7 +24099,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"$",
@@ -24086,7 +24107,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"[^k]$",
@@ -24094,7 +24115,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"[lr]",
 							"$",
@@ -24102,7 +24123,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Ik",
 							"",
 							"$",
@@ -24110,7 +24131,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"sIts",
 							"",
 							"$",
@@ -24118,7 +24139,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"Its",
 							"",
 							"$",
@@ -24126,7 +24147,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"[aeiAEBFIou]",
 							"",
@@ -24134,7 +24155,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"I",
 							"",
 							"",
@@ -24142,7 +24163,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -24150,7 +24171,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -24158,7 +24179,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -24166,7 +24187,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -24174,7 +24195,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -24182,7 +24203,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -24190,7 +24211,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"e",
 							"",
 							"",
@@ -24198,7 +24219,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[fklmnprst]$",
@@ -24206,7 +24227,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"ts$",
@@ -24214,7 +24235,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"$",
@@ -24222,7 +24243,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"[DaoiuQ]",
 							"",
@@ -24230,7 +24251,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"[aoQ]",
@@ -24238,7 +24259,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"E",
 							"",
 							"",
@@ -24251,7 +24272,7 @@ var genFinalRules = finalRules{
 				langs: 18,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -24259,7 +24280,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -24267,7 +24288,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -24275,7 +24296,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -24283,7 +24304,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -24291,7 +24312,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",
@@ -24299,7 +24320,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"B",
 							"",
 							"",
@@ -24307,7 +24328,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"V",
 							"",
 							"",
@@ -24320,7 +24341,7 @@ var genFinalRules = finalRules{
 				langs: 19,
 				rules: []rule{
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"au",
 							"",
 							"",
@@ -24328,7 +24349,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ou",
 							"",
 							"",
@@ -24336,7 +24357,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ai",
 							"",
 							"",
@@ -24344,7 +24365,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"oi",
 							"",
 							"",
@@ -24352,7 +24373,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"ui",
 							"",
 							"",
@@ -24360,7 +24381,7 @@ var genFinalRules = finalRules{
 						},
 					},
 					{
-						patterns: []string{
+						patterns: [4]string{
 							"a",
 							"",
 							"",

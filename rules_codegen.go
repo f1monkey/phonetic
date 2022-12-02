@@ -56,7 +56,7 @@ type Rule struct {
 }
 
 type SecondFinalRule struct {
-	Langs int    `json:"langs"`
+	Langs uint64 `json:"langs"`
 	Rules []Rule `json:"rules"`
 }
 
@@ -72,7 +72,7 @@ type FinalRules struct {
 
 type LangRule struct {
 	Pattern string `json:"pattern"`
-	Langs   int    `json:"langs"`
+	Langs   uint64 `json:"langs"`
 	Accept  bool   `json:"accept"`
 }
 
@@ -122,7 +122,7 @@ const rulesTemplate = `
 // GENERATED CODE. DO NOT EDIT!
 package bmpm
 
-type {{ .Mode }}Lang int
+type {{ .Mode }}Lang uint64
 
 
 const (
@@ -144,13 +144,17 @@ func (l {{ .Mode }}Lang) String() string {
 	return ""
 }
 
+const {{ .Mode }}All = {{- range $i, $lang := .Languages }}
+	{{- if ne $i 0 }}+{{- end }}
+	{{ $.Mode }}{{ $lang }}
+{{- end}}
 
 var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 	{{- range $lang, $rules := .Rules }}
 		{{ $.Mode }}{{ $lang}}: []rule{
 			{{- range $rule := $rules }}
 				{
-					patterns: []string{
+					patterns: [4]string{
 					{{- range $pattern := $rule.Patterns }}
 						{{ printf "%q" $pattern }},
 					{{- end }}
@@ -176,7 +180,7 @@ var {{ .Mode }}FinalRules = finalRules{
 		first: []rule{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{
-					patterns: []string{
+					patterns: [4]string{
 					{{- range $pattern := $rule.Patterns }}
 						{{ printf "%q" $pattern }},
 					{{- end }}
@@ -191,7 +195,7 @@ var {{ .Mode }}FinalRules = finalRules{
 					rules: []rule{
 						{{- range $rule := $secRule.Rules }}
 							{
-								patterns: []string{
+								patterns: [4]string{
 								{{- range $pattern := $rule.Patterns }}
 									{{ printf "%q" $pattern }},
 								{{- end }}
@@ -207,7 +211,7 @@ var {{ .Mode }}FinalRules = finalRules{
 		first: []rule{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{
-					patterns: []string{
+					patterns: [4]string{
 					{{- range $pattern := $rule.Patterns }}
 						{{ printf "%q" $pattern }},
 					{{- end }}
@@ -222,7 +226,7 @@ var {{ .Mode }}FinalRules = finalRules{
 					rules: []rule{
 						{{- range $rule := $secRule.Rules }}
 							{
-								patterns: []string{
+								patterns: [4]string{
 								{{- range $pattern := $rule.Patterns }}
 									{{ printf "%q" $pattern }},
 								{{- end }}

@@ -1,7 +1,7 @@
 // GENERATED CODE. DO NOT EDIT!
 package bmpm
 
-type sepLang int
+type sepLang uint64
 
 const (
 	sepany sepLang = 1 << iota
@@ -30,10 +30,17 @@ func (l sepLang) String() string {
 	return ""
 }
 
+const sepAll = sepany +
+	sepfrench +
+	sephebrew +
+	sepitalian +
+	sepportuguese +
+	sepspanish
+
 var sepRules = map[sepLang][]rule{
 	sepany: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -41,7 +48,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sh",
 				"",
 				"",
@@ -49,7 +56,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -57,7 +64,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gli",
 				"",
 				"",
@@ -65,7 +72,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gni",
 				"",
 				"",
@@ -73,7 +80,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"[aeou]",
@@ -81,7 +88,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gh",
 				"",
 				"",
@@ -89,7 +96,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"dh",
 				"",
 				"",
@@ -97,7 +104,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"bh",
 				"",
 				"",
@@ -105,7 +112,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"th",
 				"",
 				"",
@@ -113,7 +120,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lh",
 				"",
 				"",
@@ -121,7 +128,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nh",
 				"",
 				"",
@@ -129,7 +136,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ig",
 				"[aeiou]",
 				"",
@@ -137,7 +144,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ix",
 				"[aeiou]",
 				"",
@@ -145,7 +152,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tx",
 				"",
 				"",
@@ -153,7 +160,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tj",
 				"",
 				"$",
@@ -161,7 +168,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tj",
 				"",
 				"",
@@ -169,7 +176,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tg",
 				"",
 				"",
@@ -177,7 +184,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"[aeou]",
@@ -185,7 +192,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"y",
@@ -193,7 +200,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"",
 				"[ei]",
@@ -201,7 +208,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -209,7 +216,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"guy",
 				"",
 				"",
@@ -217,7 +224,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gue",
 				"",
 				"$",
@@ -225,7 +232,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ei]",
@@ -233,7 +240,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ao]",
@@ -241,7 +248,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -249,7 +256,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"",
@@ -257,7 +264,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sc",
 				"",
 				"[ei]",
@@ -265,7 +272,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sç",
 				"",
 				"[aeiou]",
@@ -273,7 +280,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -281,7 +288,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -289,7 +296,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -297,7 +304,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -305,7 +312,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"[aeou]",
@@ -313,7 +320,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cc",
 				"",
 				"[eiyéèê]",
@@ -321,7 +328,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiyéèê]",
@@ -329,7 +336,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"^",
 				"",
@@ -337,7 +344,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aáuiíoóeéêy]",
 				"[aáuiíoóeéêy]",
@@ -345,7 +352,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[dglmnrv]",
@@ -353,7 +360,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"$",
@@ -361,7 +368,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[bdgv]",
@@ -369,7 +376,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[ptckf]",
@@ -377,7 +384,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -385,7 +392,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"que",
 				"",
 				"$",
@@ -393,7 +400,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"[eiu]",
@@ -401,7 +408,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"[ao]",
@@ -409,7 +416,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[aáuiíoóeéêy]",
@@ -417,7 +424,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[cs]",
@@ -425,7 +432,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[cdglnrst]",
@@ -433,7 +440,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bfpv]",
@@ -441,7 +448,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"$",
@@ -449,7 +456,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"^",
 				"",
@@ -457,7 +464,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"^",
 				"",
@@ -465,7 +472,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eau",
 				"",
 				"",
@@ -473,7 +480,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ouh",
 				"",
 				"[aioe]",
@@ -481,7 +488,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uh",
 				"",
 				"[aioe]",
@@ -489,7 +496,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"[aioe]",
@@ -497,7 +504,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -505,7 +512,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aie]",
@@ -513,7 +520,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aáuoóeéê]",
 				"",
@@ -521,7 +528,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -529,7 +536,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aáuiíoóeéê]",
 				"",
@@ -537,7 +544,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeiíou]",
@@ -545,7 +552,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -553,7 +560,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ão",
 				"",
 				"",
@@ -561,7 +568,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãe",
 				"",
 				"",
@@ -569,7 +576,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãi",
 				"",
 				"",
@@ -577,7 +584,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õe",
 				"",
 				"",
@@ -585,7 +592,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"où",
 				"",
 				"",
@@ -593,7 +600,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -601,7 +608,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -609,7 +616,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -617,7 +624,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -625,7 +632,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ã",
 				"",
 				"",
@@ -633,7 +640,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -641,7 +648,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -649,7 +656,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -657,7 +664,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -665,7 +672,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"î",
 				"",
 				"",
@@ -673,7 +680,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ô",
 				"",
 				"",
@@ -681,7 +688,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -689,7 +696,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õ",
 				"",
 				"",
@@ -697,7 +704,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ò",
 				"",
 				"",
@@ -705,7 +712,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -713,7 +720,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -721,7 +728,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -729,7 +736,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -737,7 +744,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -745,7 +752,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -753,7 +760,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -761,7 +768,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -769,7 +776,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -777,7 +784,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -785,7 +792,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -793,7 +800,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -801,7 +808,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -809,7 +816,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -817,7 +824,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -825,7 +832,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -833,7 +840,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -841,7 +848,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -849,7 +856,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -857,7 +864,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -865,7 +872,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -873,7 +880,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -881,7 +888,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -889,7 +896,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -897,7 +904,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -905,7 +912,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -913,7 +920,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -921,7 +928,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -931,7 +938,7 @@ var sepRules = map[sepLang][]rule{
 	},
 	sepfrench: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -939,7 +946,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ph",
 				"",
 				"",
@@ -947,7 +954,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -955,7 +962,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -963,7 +970,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -971,7 +978,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[eiyéèê]",
@@ -979,7 +986,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -987,7 +994,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"",
@@ -995,7 +1002,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[eiy]",
@@ -1003,7 +1010,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gue",
 				"",
 				"$",
@@ -1011,7 +1018,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[eiy]",
@@ -1019,7 +1026,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"que",
 				"",
 				"$",
@@ -1027,7 +1034,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -1035,7 +1042,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -1043,7 +1050,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiouyéèê]",
 				"[aeiouyéèê]",
@@ -1051,7 +1058,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -1059,7 +1066,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -1067,7 +1074,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"$",
@@ -1075,7 +1082,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -1083,7 +1090,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -1091,7 +1098,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ouh",
 				"",
 				"[aioe]",
@@ -1099,7 +1106,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"[aeio]",
@@ -1107,7 +1114,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -1115,7 +1122,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aeio]",
@@ -1123,7 +1130,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -1131,7 +1138,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"eau",
 				"",
 				"",
@@ -1139,7 +1146,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ai",
 				"",
 				"",
@@ -1147,7 +1154,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ay",
 				"",
 				"",
@@ -1155,7 +1162,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -1163,7 +1170,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -1171,7 +1178,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -1179,7 +1186,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -1187,7 +1194,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -1195,7 +1202,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"où",
 				"",
 				"",
@@ -1203,7 +1210,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ou",
 				"",
 				"",
@@ -1211,7 +1218,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"oi",
 				"",
 				"",
@@ -1219,7 +1226,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ei",
 				"",
 				"",
@@ -1227,7 +1234,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ey",
 				"",
 				"",
@@ -1235,7 +1242,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[ou]",
 				"",
@@ -1243,7 +1250,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"$",
@@ -1251,7 +1258,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aou]",
@@ -1259,7 +1266,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aoeu]",
@@ -1267,7 +1274,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -1275,7 +1282,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -1283,7 +1290,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -1291,7 +1298,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -1299,7 +1306,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -1307,7 +1314,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -1315,7 +1322,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -1323,7 +1330,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -1331,7 +1338,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -1339,7 +1346,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -1347,7 +1354,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -1355,7 +1362,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -1363,7 +1370,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -1371,7 +1378,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -1379,7 +1386,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -1387,7 +1394,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -1395,7 +1402,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -1403,7 +1410,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -1411,7 +1418,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -1419,7 +1426,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -1427,7 +1434,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -1437,7 +1444,7 @@ var sepRules = map[sepLang][]rule{
 	},
 	sephebrew: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"אי",
 				"",
 				"",
@@ -1445,7 +1452,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"עי",
 				"",
 				"",
@@ -1453,7 +1460,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"עו",
 				"",
 				"",
@@ -1461,7 +1468,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"או",
 				"",
 				"",
@@ -1469,7 +1476,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ג׳",
 				"",
 				"",
@@ -1477,7 +1484,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ד׳",
 				"",
 				"",
@@ -1485,7 +1492,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"א",
 				"",
 				"",
@@ -1493,7 +1500,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ב",
 				"",
 				"",
@@ -1501,7 +1508,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ג",
 				"",
 				"",
@@ -1509,7 +1516,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ד",
 				"",
 				"",
@@ -1517,7 +1524,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"^",
 				"",
@@ -1525,7 +1532,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"",
 				"$",
@@ -1533,7 +1540,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ה",
 				"",
 				"",
@@ -1541,7 +1548,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"וו",
 				"",
 				"",
@@ -1549,7 +1556,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"וי",
 				"",
 				"",
@@ -1557,7 +1564,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ו",
 				"",
 				"",
@@ -1565,7 +1572,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ז",
 				"",
 				"",
@@ -1573,7 +1580,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ח",
 				"",
 				"",
@@ -1581,7 +1588,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ט",
 				"",
 				"",
@@ -1589,7 +1596,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"יי",
 				"",
 				"",
@@ -1597,7 +1604,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"י",
 				"",
 				"",
@@ -1605,7 +1612,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ך",
 				"",
 				"",
@@ -1613,7 +1620,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"כ",
 				"^",
 				"",
@@ -1621,7 +1628,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"כ",
 				"",
 				"",
@@ -1629,7 +1636,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ל",
 				"",
 				"",
@@ -1637,7 +1644,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ם",
 				"",
 				"",
@@ -1645,7 +1652,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"מ",
 				"",
 				"",
@@ -1653,7 +1660,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ן",
 				"",
 				"",
@@ -1661,7 +1668,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"נ",
 				"",
 				"",
@@ -1669,7 +1676,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ס",
 				"",
 				"",
@@ -1677,7 +1684,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ע",
 				"",
 				"",
@@ -1685,7 +1692,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ף",
 				"",
 				"",
@@ -1693,7 +1700,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"פ",
 				"",
 				"",
@@ -1701,7 +1708,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ץ",
 				"",
 				"",
@@ -1709,7 +1716,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"צ",
 				"",
 				"",
@@ -1717,7 +1724,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ק",
 				"",
 				"",
@@ -1725,7 +1732,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ר",
 				"",
 				"",
@@ -1733,7 +1740,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ש",
 				"",
 				"",
@@ -1741,7 +1748,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ת",
 				"",
 				"",
@@ -1751,7 +1758,7 @@ var sepRules = map[sepLang][]rule{
 	},
 	sepitalian: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -1759,7 +1766,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gli",
 				"",
 				"",
@@ -1767,7 +1774,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gn",
 				"",
 				"[aeou]",
@@ -1775,7 +1782,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gni",
 				"",
 				"",
@@ -1783,7 +1790,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gi",
 				"",
 				"[aeou]",
@@ -1791,7 +1798,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gg",
 				"",
 				"[ei]",
@@ -1799,7 +1806,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -1807,7 +1814,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -1815,7 +1822,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ci",
 				"",
 				"[aeou]",
@@ -1823,7 +1830,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"[ei]",
@@ -1831,7 +1838,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sc",
 				"",
 				"[ei]",
@@ -1839,7 +1846,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"cc",
 				"",
 				"[ei]",
@@ -1847,7 +1854,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -1855,7 +1862,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aeiou]",
 				"[aeiou]",
@@ -1863,7 +1870,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aeou]",
 				"",
@@ -1871,7 +1878,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -1879,7 +1886,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aeou]",
 				"",
@@ -1887,7 +1894,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeou]",
@@ -1895,7 +1902,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -1903,7 +1910,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -1911,7 +1918,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -1919,7 +1926,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -1927,7 +1934,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -1935,7 +1942,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -1943,7 +1950,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"�",
 				"",
 				"",
@@ -1951,7 +1958,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -1959,7 +1966,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -1967,7 +1974,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -1975,7 +1982,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -1983,7 +1990,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -1991,7 +1998,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -1999,7 +2006,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -2007,7 +2014,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -2015,7 +2022,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -2023,7 +2030,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -2031,7 +2038,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -2039,7 +2046,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -2047,7 +2054,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -2055,7 +2062,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -2063,7 +2070,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -2071,7 +2078,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -2079,7 +2086,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -2087,7 +2094,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -2095,7 +2102,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -2103,7 +2110,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -2111,7 +2118,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -2119,7 +2126,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -2127,7 +2134,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -2135,7 +2142,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -2143,7 +2150,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -2151,7 +2158,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -2161,7 +2168,7 @@ var sepRules = map[sepLang][]rule{
 	},
 	sepportuguese: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"kh",
 				"",
 				"",
@@ -2169,7 +2176,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -2177,7 +2184,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ss",
 				"",
 				"",
@@ -2185,7 +2192,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sc",
 				"",
 				"[ei]",
@@ -2193,7 +2200,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"sç",
 				"",
 				"[aou]",
@@ -2201,7 +2208,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -2209,7 +2216,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -2217,7 +2224,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"^",
 				"",
@@ -2225,7 +2232,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"[aáuiíoóeéêy]",
 				"[aáuiíoóeéêy]",
@@ -2233,7 +2240,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"[dglmnrv]",
@@ -2241,7 +2248,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"$",
@@ -2249,7 +2256,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[bdgv]",
@@ -2257,7 +2264,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"[ptckf]",
@@ -2265,7 +2272,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[eiu]",
@@ -2273,7 +2280,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ao]",
@@ -2281,7 +2288,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -2289,7 +2296,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"[eiu]",
@@ -2297,7 +2304,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"[ao]",
@@ -2305,7 +2312,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -2313,7 +2320,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -2321,7 +2328,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"lh",
 				"",
 				"",
@@ -2329,7 +2336,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"nh",
 				"",
 				"",
@@ -2337,7 +2344,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[bdgt]",
 				"",
@@ -2345,7 +2352,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[aáuiíoóeéêy]",
@@ -2353,7 +2360,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ex",
 				"",
 				"[cs]",
@@ -2361,7 +2368,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"[aáuiíoóeéê]",
 				"",
@@ -2369,7 +2376,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"[aeiíou]",
@@ -2377,7 +2384,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bcdfglnprstv]",
@@ -2385,7 +2392,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"$",
@@ -2393,7 +2400,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ão",
 				"",
 				"",
@@ -2401,7 +2408,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãe",
 				"",
 				"",
@@ -2409,7 +2416,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ãi",
 				"",
 				"",
@@ -2417,7 +2424,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õe",
 				"",
 				"",
@@ -2425,7 +2432,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"[aáuoóeéê]",
 				"",
@@ -2433,7 +2440,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"[aeou]",
@@ -2441,7 +2448,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"â",
 				"",
 				"",
@@ -2449,7 +2456,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -2457,7 +2464,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -2465,7 +2472,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ã",
 				"",
 				"",
@@ -2473,7 +2480,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -2481,7 +2488,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ê",
 				"",
 				"",
@@ -2489,7 +2496,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -2497,7 +2504,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ô",
 				"",
 				"",
@@ -2505,7 +2512,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -2513,7 +2520,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"õ",
 				"",
 				"",
@@ -2521,7 +2528,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -2529,7 +2536,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -2537,7 +2544,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"aue",
 				"",
 				"",
@@ -2545,7 +2552,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -2553,7 +2560,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -2561,7 +2568,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -2569,7 +2576,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -2577,7 +2584,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -2585,7 +2592,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -2593,7 +2600,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -2601,7 +2608,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -2609,7 +2616,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -2617,7 +2624,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -2625,7 +2632,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -2633,7 +2640,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -2641,7 +2648,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -2649,7 +2656,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -2657,7 +2664,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -2665,7 +2672,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -2673,7 +2680,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -2681,7 +2688,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -2689,7 +2696,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -2697,7 +2704,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -2705,7 +2712,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -2713,7 +2720,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -2721,7 +2728,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -2729,7 +2736,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -2737,7 +2744,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -2745,7 +2752,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -2755,7 +2762,7 @@ var sepRules = map[sepLang][]rule{
 	},
 	sepspanish: []rule{
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ñ",
 				"",
 				"",
@@ -2763,7 +2770,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ny",
 				"",
 				"",
@@ -2771,7 +2778,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ç",
 				"",
 				"",
@@ -2779,7 +2786,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ig",
 				"[aeiou]",
 				"",
@@ -2787,7 +2794,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ix",
 				"[aeiou]",
 				"",
@@ -2795,7 +2802,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tx",
 				"",
 				"",
@@ -2803,7 +2810,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tj",
 				"",
 				"$",
@@ -2811,7 +2818,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tj",
 				"",
 				"",
@@ -2819,7 +2826,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"tg",
 				"",
 				"",
@@ -2827,7 +2834,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ch",
 				"",
 				"",
@@ -2835,7 +2842,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"bh",
 				"",
 				"",
@@ -2843,7 +2850,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"[dgt]",
 				"",
@@ -2851,7 +2858,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"j",
 				"",
 				"",
@@ -2859,7 +2866,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"x",
 				"",
 				"",
@@ -2867,7 +2874,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"w",
 				"",
 				"",
@@ -2875,7 +2882,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"^",
 				"",
@@ -2883,7 +2890,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"^",
 				"",
@@ -2891,7 +2898,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"v",
 				"",
 				"",
@@ -2899,7 +2906,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"b",
 				"",
 				"",
@@ -2907,7 +2914,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"[bpvf]",
@@ -2915,7 +2922,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"[ei]",
@@ -2923,7 +2930,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"c",
 				"",
 				"",
@@ -2931,7 +2938,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"z",
 				"",
 				"",
@@ -2939,7 +2946,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"gu",
 				"",
 				"[ei]",
@@ -2947,7 +2954,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"[ei]",
@@ -2955,7 +2962,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"qu",
 				"",
 				"",
@@ -2963,7 +2970,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"q",
 				"",
 				"",
@@ -2971,7 +2978,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"uo",
 				"",
 				"",
@@ -2979,7 +2986,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"[aei]",
@@ -2987,7 +2994,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"y",
 				"",
 				"",
@@ -2995,7 +3002,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ü",
 				"",
 				"",
@@ -3003,7 +3010,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"á",
 				"",
 				"",
@@ -3011,7 +3018,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"é",
 				"",
 				"",
@@ -3019,7 +3026,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"í",
 				"",
 				"",
@@ -3027,7 +3034,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ó",
 				"",
 				"",
@@ -3035,7 +3042,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ú",
 				"",
 				"",
@@ -3043,7 +3050,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"à",
 				"",
 				"",
@@ -3051,7 +3058,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"è",
 				"",
 				"",
@@ -3059,7 +3066,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"ò",
 				"",
 				"",
@@ -3067,7 +3074,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"a",
 				"",
 				"",
@@ -3075,7 +3082,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"d",
 				"",
 				"",
@@ -3083,7 +3090,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"e",
 				"",
 				"",
@@ -3091,7 +3098,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"f",
 				"",
 				"",
@@ -3099,7 +3106,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"g",
 				"",
 				"",
@@ -3107,7 +3114,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"h",
 				"",
 				"",
@@ -3115,7 +3122,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"i",
 				"",
 				"",
@@ -3123,7 +3130,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"k",
 				"",
 				"",
@@ -3131,7 +3138,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"l",
 				"",
 				"",
@@ -3139,7 +3146,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"m",
 				"",
 				"",
@@ -3147,7 +3154,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"n",
 				"",
 				"",
@@ -3155,7 +3162,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"o",
 				"",
 				"",
@@ -3163,7 +3170,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"p",
 				"",
 				"",
@@ -3171,7 +3178,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"r",
 				"",
 				"",
@@ -3179,7 +3186,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"s",
 				"",
 				"",
@@ -3187,7 +3194,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"t",
 				"",
 				"",
@@ -3195,7 +3202,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			patterns: []string{
+			patterns: [4]string{
 				"u",
 				"",
 				"",
@@ -3572,7 +3579,7 @@ var sepFinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"$",
@@ -3580,7 +3587,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"[fktSs]",
@@ -3588,7 +3595,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"p",
@@ -3596,7 +3603,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"$",
@@ -3604,7 +3611,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"[vgdZz]",
@@ -3612,7 +3619,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"b",
@@ -3620,7 +3627,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"[pktSs]",
@@ -3628,7 +3635,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"f",
@@ -3636,7 +3643,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"$",
@@ -3644,7 +3651,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"[vbgdZz]",
@@ -3652,7 +3659,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"v",
@@ -3660,7 +3667,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"[pftSs]",
@@ -3668,7 +3675,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"k",
@@ -3676,7 +3683,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"$",
@@ -3684,7 +3691,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"[vbdZz]",
@@ -3692,7 +3699,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"g",
@@ -3700,7 +3707,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"[pfkSs]",
@@ -3708,7 +3715,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"t",
@@ -3716,7 +3723,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"$",
@@ -3724,7 +3731,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"[vbgZz]",
@@ -3732,7 +3739,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"d",
@@ -3740,7 +3747,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"dZ",
@@ -3748,7 +3755,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"tS",
@@ -3756,7 +3763,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[pfkSt]",
@@ -3764,7 +3771,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[sSzZ]",
@@ -3772,7 +3779,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[sSzZ]",
@@ -3780,7 +3787,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"[sSzZ]",
@@ -3788,7 +3795,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[sSzZ]",
@@ -3796,7 +3803,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"nm",
 					"",
 					"",
@@ -3804,7 +3811,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"^",
 					"",
@@ -3812,7 +3819,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"a",
@@ -3820,7 +3827,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"b",
@@ -3828,7 +3835,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"d",
@@ -3836,7 +3843,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"",
 					"e",
@@ -3844,7 +3851,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"f",
@@ -3852,7 +3859,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"g",
@@ -3860,7 +3867,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"",
 					"i",
@@ -3868,7 +3875,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"k",
@@ -3876,7 +3883,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"l",
 					"",
 					"l",
@@ -3884,7 +3891,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"m",
 					"",
 					"m",
@@ -3892,7 +3899,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"n",
@@ -3900,7 +3907,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"o",
 					"",
 					"o",
@@ -3908,7 +3915,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"p",
@@ -3916,7 +3923,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"r",
 					"",
 					"r",
@@ -3924,7 +3931,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"t",
@@ -3932,7 +3939,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"u",
 					"",
 					"u",
@@ -3940,7 +3947,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"v",
@@ -3948,7 +3955,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"z",
@@ -3956,7 +3963,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"mbr",
 					"",
 					"",
@@ -3964,7 +3971,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"mpr",
 					"",
 					"",
@@ -3972,7 +3979,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bens",
 					"^",
 					"",
@@ -3980,7 +3987,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"benS",
 					"^",
 					"",
@@ -3988,7 +3995,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ben",
 					"^",
 					"",
@@ -3996,7 +4003,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bar",
 					"^",
 					"",
@@ -4004,7 +4011,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abens",
 					"^",
 					"",
@@ -4012,7 +4019,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abenS",
 					"^",
 					"",
@@ -4020,7 +4027,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aben",
 					"^",
 					"",
@@ -4028,7 +4035,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abe",
 					"^",
 					"",
@@ -4036,7 +4043,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abi",
 					"^",
 					"",
@@ -4044,7 +4051,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abou",
 					"^",
 					"",
@@ -4052,7 +4059,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abu",
 					"^",
 					"",
@@ -4060,7 +4067,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bou",
 					"^",
 					"",
@@ -4068,7 +4075,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bu",
 					"^",
 					"",
@@ -4076,7 +4083,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ibn",
 					"^",
 					"",
@@ -4084,7 +4091,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"els",
 					"^",
 					"",
@@ -4092,7 +4099,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"elS",
 					"^",
 					"",
@@ -4100,7 +4107,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"el",
 					"^",
 					"",
@@ -4108,7 +4115,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"als",
 					"^",
 					"",
@@ -4116,7 +4123,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"alS",
 					"^",
 					"",
@@ -4124,7 +4131,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"al",
 					"^",
 					"",
@@ -4132,7 +4139,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dal",
 					"^",
 					"",
@@ -4140,7 +4147,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"da",
 					"^",
 					"",
@@ -4148,7 +4155,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"della",
 					"^",
 					"",
@@ -4156,7 +4163,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dela",
 					"^",
 					"",
@@ -4164,7 +4171,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"del",
 					"^",
 					"",
@@ -4172,7 +4179,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"des",
 					"^",
 					"",
@@ -4180,7 +4187,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"de",
 					"^",
 					"",
@@ -4188,7 +4195,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"di",
 					"^",
 					"",
@@ -4196,7 +4203,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"do",
 					"^",
 					"",
@@ -4204,7 +4211,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"du",
 					"^",
 					"",
@@ -4212,7 +4219,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oa",
 					"",
 					"",
@@ -4220,7 +4227,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oe",
 					"",
 					"",
@@ -4228,7 +4235,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ae",
 					"",
 					"",
@@ -4236,7 +4243,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"[bp]",
@@ -4244,7 +4251,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ha",
 					"^",
 					"",
@@ -4252,7 +4259,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"",
@@ -4260,7 +4267,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"x",
 					"",
 					"",
@@ -4268,7 +4275,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"",
@@ -4276,7 +4283,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aja",
 					"^",
 					"",
@@ -4284,7 +4291,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aje",
 					"^",
 					"",
@@ -4292,7 +4299,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aji",
 					"^",
 					"",
@@ -4300,7 +4307,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajo",
 					"^",
 					"",
@@ -4308,7 +4315,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aju",
 					"^",
 					"",
@@ -4316,7 +4323,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aj",
 					"",
 					"",
@@ -4324,7 +4331,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ej",
 					"",
 					"",
@@ -4332,7 +4339,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oj",
 					"",
 					"",
@@ -4340,7 +4347,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uj",
 					"",
 					"",
@@ -4348,7 +4355,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"au",
 					"",
 					"",
@@ -4356,7 +4363,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eu",
 					"",
 					"",
@@ -4364,7 +4371,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ou",
 					"",
 					"",
@@ -4372,7 +4379,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"^",
 					"",
@@ -4380,7 +4387,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ja",
 					"^",
 					"",
@@ -4388,7 +4395,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"je",
 					"^",
 					"",
@@ -4396,7 +4403,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jo",
 					"^",
 					"",
@@ -4404,7 +4411,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ju",
 					"^",
 					"",
@@ -4412,7 +4419,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ja",
 					"",
 					"",
@@ -4420,7 +4427,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"je",
 					"",
 					"",
@@ -4428,7 +4435,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"",
 					"",
@@ -4436,7 +4443,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jo",
 					"",
 					"",
@@ -4444,7 +4451,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ju",
 					"",
 					"",
@@ -4452,7 +4459,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"",
@@ -4460,7 +4467,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"",
 					"$",
@@ -4468,7 +4475,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"o",
 					"",
 					"$",
@@ -4476,7 +4483,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"o",
 					"",
 					"",
@@ -4484,7 +4491,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"$",
@@ -4492,7 +4499,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"se",
 					"",
 					"[rmnl]",
@@ -4500,7 +4507,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[rmnl]",
@@ -4508,7 +4515,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Se",
 					"",
 					"[rmnl]",
@@ -4516,7 +4523,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[rmnl]",
@@ -4524,7 +4531,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"[rmnl]",
 					"",
@@ -4532,7 +4539,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"[rmnl]",
 					"",
@@ -4540,7 +4547,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dS",
 					"",
 					"$",
@@ -4548,7 +4555,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"$",
@@ -4556,7 +4563,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"$",
@@ -4564,7 +4571,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"$",
@@ -4572,7 +4579,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"$",
@@ -4580,7 +4587,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"",
@@ -4588,7 +4595,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"",
@@ -4596,7 +4603,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"",
@@ -4604,7 +4611,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"be",
 					"",
 					"[fktSs]",
@@ -4612,7 +4619,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"pe",
 					"",
 					"[vgdZz]",
@@ -4620,7 +4627,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ve",
 					"",
 					"[pktSs]",
@@ -4628,7 +4635,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"fe",
 					"",
 					"[vbgdZz]",
@@ -4636,7 +4643,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ge",
 					"",
 					"[pftSs]",
@@ -4644,7 +4651,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ke",
 					"",
 					"[vbdZz]",
@@ -4652,7 +4659,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"de",
 					"",
 					"[pfkSs]",
@@ -4660,7 +4667,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"te",
 					"",
 					"[vbgZz]",
@@ -4668,7 +4675,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ze",
 					"",
 					"[pfkSt]",
@@ -4676,7 +4683,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"",
 					"",
@@ -4684,7 +4691,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"",
@@ -4692,7 +4699,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"V",
 					"",
 					"",
@@ -4700,7 +4707,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"^",
 					"",
@@ -4738,7 +4745,7 @@ var sepFinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"$",
@@ -4746,7 +4753,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"[fktSs]",
@@ -4754,7 +4761,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"p",
@@ -4762,7 +4769,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"$",
@@ -4770,7 +4777,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"[vgdZz]",
@@ -4778,7 +4785,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"b",
@@ -4786,7 +4793,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"[pktSs]",
@@ -4794,7 +4801,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"f",
@@ -4802,7 +4809,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"$",
@@ -4810,7 +4817,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"[vbgdZz]",
@@ -4818,7 +4825,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"v",
@@ -4826,7 +4833,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"[pftSs]",
@@ -4834,7 +4841,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"k",
@@ -4842,7 +4849,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"$",
@@ -4850,7 +4857,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"[vbdZz]",
@@ -4858,7 +4865,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"g",
@@ -4866,7 +4873,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"[pfkSs]",
@@ -4874,7 +4881,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"t",
@@ -4882,7 +4889,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"$",
@@ -4890,7 +4897,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"[vbgZz]",
@@ -4898,7 +4905,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"d",
@@ -4906,7 +4913,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"dZ",
@@ -4914,7 +4921,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"tS",
@@ -4922,7 +4929,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[pfkSt]",
@@ -4930,7 +4937,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"[sSzZ]",
@@ -4938,7 +4945,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[sSzZ]",
@@ -4946,7 +4953,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"[sSzZ]",
@@ -4954,7 +4961,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[sSzZ]",
@@ -4962,7 +4969,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"nm",
 					"",
 					"",
@@ -4970,7 +4977,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"^",
 					"",
@@ -4978,7 +4985,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"a",
@@ -4986,7 +4993,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"b",
 					"",
 					"b",
@@ -4994,7 +5001,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"d",
 					"",
 					"d",
@@ -5002,7 +5009,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"",
 					"e",
@@ -5010,7 +5017,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"f",
 					"",
 					"f",
@@ -5018,7 +5025,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"g",
 					"",
 					"g",
@@ -5026,7 +5033,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"",
 					"i",
@@ -5034,7 +5041,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"k",
@@ -5042,7 +5049,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"l",
 					"",
 					"l",
@@ -5050,7 +5057,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"m",
 					"",
 					"m",
@@ -5058,7 +5065,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"n",
@@ -5066,7 +5073,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"o",
 					"",
 					"o",
@@ -5074,7 +5081,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"",
 					"p",
@@ -5082,7 +5089,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"r",
 					"",
 					"r",
@@ -5090,7 +5097,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"t",
 					"",
 					"t",
@@ -5098,7 +5105,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"u",
 					"",
 					"u",
@@ -5106,7 +5113,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"v",
 					"",
 					"v",
@@ -5114,7 +5121,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"z",
@@ -5122,7 +5129,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"mbr",
 					"",
 					"",
@@ -5130,7 +5137,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"mpr",
 					"",
 					"",
@@ -5138,7 +5145,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bens",
 					"^",
 					"",
@@ -5146,7 +5153,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"benS",
 					"^",
 					"",
@@ -5154,7 +5161,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ben",
 					"^",
 					"",
@@ -5162,7 +5169,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bar",
 					"^",
 					"",
@@ -5170,7 +5177,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abens",
 					"^",
 					"",
@@ -5178,7 +5185,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abenS",
 					"^",
 					"",
@@ -5186,7 +5193,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aben",
 					"^",
 					"",
@@ -5194,7 +5201,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abe",
 					"^",
 					"",
@@ -5202,7 +5209,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abi",
 					"^",
 					"",
@@ -5210,7 +5217,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abou",
 					"^",
 					"",
@@ -5218,7 +5225,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"abu",
 					"^",
 					"",
@@ -5226,7 +5233,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bou",
 					"^",
 					"",
@@ -5234,7 +5241,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"bu",
 					"^",
 					"",
@@ -5242,7 +5249,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ibn",
 					"^",
 					"",
@@ -5250,7 +5257,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"els",
 					"^",
 					"",
@@ -5258,7 +5265,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"elS",
 					"^",
 					"",
@@ -5266,7 +5273,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"el",
 					"^",
 					"",
@@ -5274,7 +5281,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"als",
 					"^",
 					"",
@@ -5282,7 +5289,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"alS",
 					"^",
 					"",
@@ -5290,7 +5297,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"al",
 					"^",
 					"",
@@ -5298,7 +5305,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dal",
 					"^",
 					"",
@@ -5306,7 +5313,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"da",
 					"^",
 					"",
@@ -5314,7 +5321,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"della",
 					"^",
 					"",
@@ -5322,7 +5329,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dela",
 					"^",
 					"",
@@ -5330,7 +5337,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"del",
 					"^",
 					"",
@@ -5338,7 +5345,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"des",
 					"^",
 					"",
@@ -5346,7 +5353,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"de",
 					"^",
 					"",
@@ -5354,7 +5361,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"di",
 					"^",
 					"",
@@ -5362,7 +5369,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"do",
 					"^",
 					"",
@@ -5370,7 +5377,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"du",
 					"^",
 					"",
@@ -5378,7 +5385,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oa",
 					"",
 					"",
@@ -5386,7 +5393,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oe",
 					"",
 					"",
@@ -5394,7 +5401,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ae",
 					"",
 					"",
@@ -5402,7 +5409,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"n",
 					"",
 					"[bp]",
@@ -5410,7 +5417,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ha",
 					"^",
 					"",
@@ -5418,7 +5425,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"h",
 					"",
 					"",
@@ -5426,7 +5433,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"x",
 					"",
 					"",
@@ -5434,7 +5441,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"k",
 					"",
 					"",
@@ -5442,7 +5449,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aja",
 					"^",
 					"",
@@ -5450,7 +5457,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aje",
 					"^",
 					"",
@@ -5458,7 +5465,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aji",
 					"^",
 					"",
@@ -5466,7 +5473,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ajo",
 					"^",
 					"",
@@ -5474,7 +5481,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aju",
 					"^",
 					"",
@@ -5482,7 +5489,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"aj",
 					"",
 					"",
@@ -5490,7 +5497,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ej",
 					"",
 					"",
@@ -5498,7 +5505,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"oj",
 					"",
 					"",
@@ -5506,7 +5513,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"uj",
 					"",
 					"",
@@ -5514,7 +5521,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"au",
 					"",
 					"",
@@ -5522,7 +5529,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"eu",
 					"",
 					"",
@@ -5530,7 +5537,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ou",
 					"",
 					"",
@@ -5538,7 +5545,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"^",
 					"",
@@ -5546,7 +5553,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ja",
 					"^",
 					"",
@@ -5554,7 +5561,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"je",
 					"^",
 					"",
@@ -5562,7 +5569,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jo",
 					"^",
 					"",
@@ -5570,7 +5577,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ju",
 					"^",
 					"",
@@ -5578,7 +5585,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ja",
 					"",
 					"",
@@ -5586,7 +5593,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"je",
 					"",
 					"",
@@ -5594,7 +5601,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ji",
 					"",
 					"",
@@ -5602,7 +5609,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"jo",
 					"",
 					"",
@@ -5610,7 +5617,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ju",
 					"",
 					"",
@@ -5618,7 +5625,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"j",
 					"",
 					"",
@@ -5626,7 +5633,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"i",
 					"",
 					"$",
@@ -5634,7 +5641,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"o",
 					"",
 					"$",
@@ -5642,7 +5649,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"o",
 					"",
 					"",
@@ -5650,7 +5657,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"a",
 					"",
 					"$",
@@ -5658,7 +5665,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"se",
 					"",
 					"[rmnl]",
@@ -5666,7 +5673,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"",
 					"[rmnl]",
@@ -5674,7 +5681,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Se",
 					"",
 					"[rmnl]",
@@ -5682,7 +5689,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"[rmnl]",
@@ -5690,7 +5697,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"s",
 					"[rmnl]",
 					"",
@@ -5698,7 +5705,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"[rmnl]",
 					"",
@@ -5706,7 +5713,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dS",
 					"",
 					"$",
@@ -5714,7 +5721,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"$",
@@ -5722,7 +5729,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"$",
@@ -5730,7 +5737,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"$",
@@ -5738,7 +5745,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"z",
 					"",
 					"$",
@@ -5746,7 +5753,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"S",
 					"",
 					"",
@@ -5754,7 +5761,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"dZ",
 					"",
 					"",
@@ -5762,7 +5769,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"Z",
 					"",
 					"",
@@ -5770,7 +5777,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"be",
 					"",
 					"[fktSs]",
@@ -5778,7 +5785,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"pe",
 					"",
 					"[vgdZz]",
@@ -5786,7 +5793,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ve",
 					"",
 					"[pktSs]",
@@ -5794,7 +5801,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"fe",
 					"",
 					"[vbgdZz]",
@@ -5802,7 +5809,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ge",
 					"",
 					"[pftSs]",
@@ -5810,7 +5817,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ke",
 					"",
 					"[vbdZz]",
@@ -5818,7 +5825,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"de",
 					"",
 					"[pfkSs]",
@@ -5826,7 +5833,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"te",
 					"",
 					"[vbgZz]",
@@ -5834,7 +5841,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"ze",
 					"",
 					"[pfkSt]",
@@ -5842,7 +5849,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"e",
 					"",
 					"",
@@ -5850,7 +5857,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"B",
 					"",
 					"",
@@ -5858,7 +5865,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"V",
 					"",
 					"",
@@ -5866,7 +5873,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				patterns: []string{
+				patterns: [4]string{
 					"p",
 					"^",
 					"",
