@@ -27,13 +27,13 @@ func Test_detectLang(t *testing.T) {
 			word:      "orange",
 			langRules: genLangRules,
 			allLangs:  uint64(genAll),
-			expected:  249,
+			expected:  uint64(genany | genczech | gendutch | genenglish | genfrench | gengerman),
 		},
 		{
 			word:      "апельсин",
 			langRules: genLangRules,
 			allLangs:  uint64(genAll),
-			expected:  4,
+			expected:  uint64(gencyrillic),
 		},
 	}
 
