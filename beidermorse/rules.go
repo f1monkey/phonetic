@@ -1,4 +1,4 @@
-package bmpm
+package beidermorse
 
 type rule struct {
 	patterns [4]string

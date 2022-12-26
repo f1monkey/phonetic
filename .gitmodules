@@ -1,3 +1,3 @@
-[submodule "bmpm-php"]
-	path = bmpm-php
+[submodule "beidermorse/bmpm-php"]
+	path = beidermorse/bmpm-php
 	url = https://github.com/f1monkey/bmpm-php

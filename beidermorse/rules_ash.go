@@ -1,5 +1,5 @@
 // GENERATED CODE. DO NOT EDIT!
-package bmpm
+package beidermorse
 
 type ashLang uint64
 

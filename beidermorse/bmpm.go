@@ -1,4 +1,4 @@
-package bmpm
+package beidermorse
 
 import (
 	"regexp"

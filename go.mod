@@ -1,6 +1,6 @@
-module github.com/f1monkey/bmpm
+module github.com/f1monkey/phonetic
 
-go 1.15
+go 1.18
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
