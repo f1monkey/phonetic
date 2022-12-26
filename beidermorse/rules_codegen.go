@@ -15,9 +15,9 @@ import (
 )
 
 var ruleSources = map[string]string{
-	"ash": "bmpm-php/ash.json",
-	"gen": "bmpm-php/gen.json",
-	"sep": "bmpm-php/sep.json",
+	"ash": "beidermorse/bmpm-php/ash.json",
+	"gen": "beidermorse/bmpm-php/gen.json",
+	"sep": "beidermorse/bmpm-php/sep.json",
 }
 
 func main() {
@@ -45,7 +45,7 @@ func main() {
 			panic(err)
 		}
 
-		if err := os.WriteFile("rules_"+mode+".go", src, 0644); err != nil {
+		if err := os.WriteFile("beidermorse/rules_"+mode+".go", src, 0644); err != nil {
 			panic(err)
 		}
 	}
@@ -120,7 +120,7 @@ func fixRules(rules map[string]RuleSet) {
 
 const rulesTemplate = `
 // GENERATED CODE. DO NOT EDIT!
-package bmpm
+package beidermorse
 
 type {{ .Mode }}Lang uint64
 
