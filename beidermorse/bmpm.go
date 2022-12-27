@@ -10,10 +10,10 @@ import (
 
 const langAny = 1
 
-func redoLanguage(input string, mode Mode, rules []rule, finalRules1 []rule, finalRules2 []rule, concat bool) string {
+func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) string {
 	// we can do a better job of determining the language now that multiple names have been split
 	languageArg := detectLang(input, mode)
-	return phonetic(input, mode, rules, finalRules1, finalRules2, languageArg, concat)
+	return phonetic(input, mode, ruleset, languageArg, concat)
 }
 
 func detectLang(word string, mode Mode) uint64 {
@@ -51,8 +51,7 @@ func detectLang(word string, mode Mode) uint64 {
 	return remaining
 }
 
-func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRules2 []rule, languageArg uint64, concat bool) string {
-
+func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool) string {
 	// algorithm used here is as follows:
 	//
 	//   Before doing anything else:
@@ -141,7 +140,6 @@ func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRu
 	// process a multiword name of form X Y
 
 	if space := strings.Index(input, " "); space != -1 { // number of words is exactly two
-
 		if concat { // exact matches
 			// X Y => XY
 			input = strings.ReplaceAll(input, " ", "") // concatenate the separate words of a name
@@ -150,14 +148,14 @@ func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRu
 			word2 := substrFrom(input, space+1)
 			if inArray(list, word1) {
 				// X Y => Y and XY
-				results := redoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
-				results += "-" + redoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
+				results := redoLanguage(word2, mode, ruleset, concat)
+				results += "-" + redoLanguage(word1+word2, mode, ruleset, concat)
 				return results
 			} else { // first word is not in list
 				// X Y => X, Y, and XY
-				results := redoLanguage(word1, mode, rules, finalRules1, finalRules2, concat)
-				results += "-" + redoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
-				results += "-" + redoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
+				results := redoLanguage(word1, mode, ruleset, concat)
+				results += "-" + redoLanguage(word2, mode, ruleset, concat)
+				results += "-" + redoLanguage(word1+word2, mode, ruleset, concat)
 				return results
 			}
 		}
@@ -168,6 +166,7 @@ func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRu
 	inputLength := utf8.RuneCountInString(input)
 
 	// apply language rules to map to phonetic alphabet
+	rules, final1, final2 := getRules(mode, ruleset, lang)
 
 	phonetic := ""
 	var patternLength int
@@ -223,7 +222,7 @@ func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRu
 
 			// check for incompatible attributes
 
-			candidate := applyRuleIfCompatible(phonetic, rule.phonetic(), languageArg)
+			candidate := applyRuleIfCompatible(phonetic, rule.phonetic(), lang)
 			if candidate == "" {
 				continue
 			}
@@ -240,8 +239,8 @@ func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRu
 	// apply final rules on phonetic-alphabet, doing a substitution of certain characters
 	// finalRules1 are the common approx rules, finalRules2 are approx rules for specific language
 
-	phonetic = applyFinalRules(phonetic, finalRules1, languageArg, false) // apply common rules
-	phonetic = applyFinalRules(phonetic, finalRules2, languageArg, true)  // apply lang specific rules
+	phonetic = applyFinalRules(phonetic, final1, lang, false) // apply common rules
+	phonetic = applyFinalRules(phonetic, final2, lang, true)  // apply lang specific rules
 
 	return phonetic
 
@@ -618,4 +617,44 @@ func substrFrom(s string, start int) string {
 
 func indexAt(s, sep string, n int) int {
 	return strings.Index(s[n:], sep)
+}
+
+func getRules(
+	mode Mode,
+	ruleset Ruleset,
+	lang uint64,
+) (rules []rule, finalRules1 []rule, finalRules2 []rule) {
+	switch mode {
+	case Generic:
+		rules = genRules[genLang(lang)]
+		switch ruleset {
+		case Approx:
+			finalRules1 = genFinalRules.approx.first
+			finalRules2 = genFinalRules.approx.second[lang]
+		case Exact:
+			finalRules1 = genFinalRules.exact.first
+			finalRules2 = genFinalRules.exact.second[lang]
+		}
+	case Ashkenazi:
+		rules = ashRules[ashLang(lang)]
+		switch ruleset {
+		case Approx:
+			finalRules1 = ashFinalRules.approx.first
+			finalRules2 = ashFinalRules.approx.second[lang]
+		case Exact:
+			finalRules1 = ashFinalRules.exact.first
+			finalRules2 = ashFinalRules.exact.second[lang]
+		}
+	case Sephardic:
+		rules = sepRules[sepLang(lang)]
+		switch ruleset {
+		case Approx:
+			finalRules1 = sepFinalRules.approx.first
+			finalRules2 = sepFinalRules.approx.second[lang]
+		case Exact:
+			finalRules1 = sepFinalRules.exact.first
+			finalRules2 = sepFinalRules.exact.second[lang]
+		}
+	}
+	return
 }

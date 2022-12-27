@@ -19,7 +19,7 @@ func Benchmark_detectLang(b *testing.B) {
 func Test_detectLang(t *testing.T) {
 	cases := []struct {
 		word     string
-		mode     NameMode
+		mode     Mode
 		expected uint64
 	}{
 		{
