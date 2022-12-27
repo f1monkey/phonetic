@@ -15,9 +15,9 @@ import (
 )
 
 var ruleSources = map[string]string{
-	"ash": "beidermorse/bmpm-php/ash.json",
-	"gen": "beidermorse/bmpm-php/gen.json",
-	"sep": "beidermorse/bmpm-php/sep.json",
+	"ash": "beidermorse/bmpm-rules/ash.json",
+	"gen": "beidermorse/bmpm-rules/gen.json",
+	"sep": "beidermorse/bmpm-rules/sep.json",
 }
 
 func main() {
@@ -56,7 +56,7 @@ type Rule struct {
 }
 
 type SecondFinalRule struct {
-	Langs uint64 `json:"langs"`
+	Lang  uint64 `json:"lang"`
 	Rules []Rule `json:"rules"`
 }
 
@@ -188,28 +188,25 @@ var {{ .Mode }}FinalRules = finalRules{
 				},
 			{{- end }}
 		},
-		second: []secondFinalRule{
+		second: map[uint64][]rule{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				{
-					langs: {{ $secRule.Langs }},
-					rules: []rule{
-						{{- range $rule := $secRule.Rules }}
-							{
-								patterns: [4]string{
-								{{- range $pattern := $rule.Patterns }}
-									{{ printf "%q" $pattern }},
-								{{- end }}
-								},
+				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+					{{- range $rule := $secRule.Rules }}
+						{
+							patterns: [4]string{
+							{{- range $pattern := $rule.Patterns }}
+								{{ printf "%q" $pattern }},
+							{{- end }}
 							},
-						{{- end }}
-					},
+						},
+					{{- end }}
 				},
 			{{- end }}
 		},
 	},
 	exact: finalRule{
 		first: []rule{
-			{{- range $rule := .FinalRules.Approx.First }}
+			{{- range $rule := .FinalRules.Exact.First }}
 				{
 					patterns: [4]string{
 					{{- range $pattern := $rule.Patterns }}
@@ -219,21 +216,18 @@ var {{ .Mode }}FinalRules = finalRules{
 				},
 			{{- end }}
 		},
-		second: []secondFinalRule{
-			{{- range $secRule := .FinalRules.Approx.Second }}
-				{
-					langs: {{ $secRule.Langs }},
-					rules: []rule{
-						{{- range $rule := $secRule.Rules }}
-							{
-								patterns: [4]string{
-								{{- range $pattern := $rule.Patterns }}
-									{{ printf "%q" $pattern }},
-								{{- end }}
-								},
+		second: map[uint64][]rule{
+			{{- range $secRule := .FinalRules.Exact.Second }}
+				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+					{{- range $rule := $secRule.Rules }}
+						{
+							patterns: [4]string{
+							{{- range $pattern := $rule.Patterns }}
+								{{ printf "%q" $pattern }},
+							{{- end }}
 							},
-						{{- end }}
-					},
+						},
+					{{- end }}
 				},
 			{{- end }}
 		},

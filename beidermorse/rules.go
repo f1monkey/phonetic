@@ -27,12 +27,7 @@ type finalRules struct {
 
 type finalRule struct {
 	first  []rule
-	second []secondFinalRule
-}
-
-type secondFinalRule struct {
-	langs int
-	rules []rule
+	second map[uint64][]rule
 }
 
 type langRule struct {

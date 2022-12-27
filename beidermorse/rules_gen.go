@@ -15921,3367 +15921,3307 @@ var genFinalRules = finalRules{
 				},
 			},
 		},
-		second: []secondFinalRule{
-			{
-				langs: 0,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"mb",
-							"",
-							"",
-							"(mb|b[512])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"mp",
-							"",
-							"",
-							"(mp|b[512])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ng",
-							"",
-							"",
-							"(ng|g[512])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[fktSs]",
-							"(p|f[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"p",
-							"",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"$",
-							"(p|f[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"[pktSs]",
-							"(f|p[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"f",
-							"",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"$",
-							"(f|p[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"(b|v[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"",
-							"(v|b[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"t",
-							"",
-							"$",
-							"(t|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"g",
-							"n",
-							"$",
-							"(g|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"k",
-							"n",
-							"$",
-							"(k|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"p",
-							"",
-							"$",
-							"(p|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"r",
-							"[Ee]",
-							"$",
-							"(r|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"s",
-							"",
-							"$",
-							"(s|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"t",
-							"[aeiouAEIOU]",
-							"[^aeiouAEIOU]",
-							"(t|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"s",
-							"[aeiouAEIOU]",
-							"[^aeiouAEIOU]",
-							"(s|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiouAEIBFOUQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^aeiouAEBFIOU]e",
-							"(Q[128]|i|D[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(Q[128]|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"lEE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(li|il[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"rEE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(ri|ir[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"lE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(li|il[32]|lY[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"rE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(ri|ir[32]|rY[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EE",
-							"",
-							"",
-							"(i|)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ea",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eu",
-							"",
-							"",
-							"(D|e|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ei",
-							"",
-							"",
-							"(D|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ei",
-							"",
-							"",
-							"(D|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iA",
-							"",
-							"$",
-							"(ia|io)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iA",
-							"",
-							"",
-							"(ia|io|iY[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"[^aeiouAEBFIOU]e",
-							"(a|o|Y[128]|D[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"i[^aeiouAEIOU]",
-							"",
-							"(i|Y[128]|[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"a[^aeiouAEIOU]",
-							"",
-							"(i|Y[128]|[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuAOIUQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoAOQY]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(i|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"P",
-							"",
-							"",
-							"(o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"[fklmnprstv]$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"ts$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"[oeiuQY]",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"",
-							"(o|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"[fklmnprst]$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"ts$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"[oeiuQY]",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"",
-							"(a|o|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"$",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"[DoiuQY]",
-							"",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"[^k]$",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"[lr]",
-							"$",
-							"(uk|Qk[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"",
-							"$",
-							"uk",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sUts",
-							"",
-							"$",
-							"(suts|sQts[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uts",
-							"",
-							"$",
-							"uts",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"",
-							"(u|Q[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"[fklmnprstv]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"[DaoiuAOIUQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"[aoAOQY]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"(i|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+		second: map[uint64][]rule{
+			uint64(genany): []rule{
+				{
+					patterns: [4]string{
+						"mb",
+						"",
+						"",
+						"(mb|b[512])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"mp",
+						"",
+						"",
+						"(mp|b[512])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"ng",
+						"",
+						"",
+						"(ng|g[512])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[fktSs]",
+						"(p|f[262144])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"p",
+						"",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"$",
+						"(p|f[262144])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"[pktSs]",
+						"(f|p[262144])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"f",
+						"",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"$",
+						"(f|p[262144])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"(b|v[262144])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"",
+						"(v|b[262144])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"t",
+						"",
+						"$",
+						"(t|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"g",
+						"n",
+						"$",
+						"(g|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"k",
+						"n",
+						"$",
+						"(k|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"p",
+						"",
+						"$",
+						"(p|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"r",
+						"[Ee]",
+						"$",
+						"(r|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"s",
+						"",
+						"$",
+						"(s|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"t",
+						"[aeiouAEIOU]",
+						"[^aeiouAEIOU]",
+						"(t|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"s",
+						"[aeiouAEIOU]",
+						"[^aeiouAEIOU]",
+						"(s|[64])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aeiouAEIBFOUQY]",
+						"",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^aeiouAEBFIOU]e",
+						"(Q[128]|i|D[32])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
+					},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
+					},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(Q[128]|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"lEE",
+						"[bdfgkmnprsStvzZ]",
+						"",
+						"(li|il[32])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"rEE",
+						"[bdfgkmnprsStvzZ]",
+						"",
+						"(ri|ir[32])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"lE",
+						"[bdfgkmnprsStvzZ]",
+						"",
+						"(li|il[32]|lY[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"rE",
+						"[bdfgkmnprsStvzZ]",
+						"",
+						"(ri|ir[32]|rY[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"EE",
+						"",
+						"",
+						"(i|)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"ea",
+						"",
+						"",
+						"(D|a|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"eu",
+						"",
+						"",
+						"(D|e|u)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Ai",
+						"",
+						"",
+						"(D|a|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Oi",
+						"",
+						"",
+						"(D|o|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Ui",
+						"",
+						"",
+						"(D|u|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"ei",
+						"",
+						"",
+						"(D|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Ei",
+						"",
+						"",
+						"(D|i)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"iA",
+						"",
+						"$",
+						"(ia|io)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"iA",
+						"",
+						"",
+						"(ia|io|iY[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"[^aeiouAEBFIOU]e",
+						"(a|o|Y[128]|D[32])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"i[^aeiouAEIOU]",
+						"",
+						"(i|Y[128]|[32])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"a[^aeiouAEIOU]",
+						"",
+						"(i|Y[128]|[32])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprst]$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoiuAOIUQY]",
+						"",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoAOQY]",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(i|Y[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"P",
+						"",
+						"",
+						"(o|u)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"[fklmnprstv]$",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"ts$",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"$",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"[oeiuQY]",
+						"",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"",
+						"(o|Y[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"[fklmnprst]$",
+						"(a|o)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"ts$",
+						"(a|o)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"$",
+						"(a|o)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"[oeiuQY]",
+						"",
+						"(a|o)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"",
+						"(a|o|Y[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"",
+						"(a|o)",
+					},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"$",
+						"u",
+					},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"[DoiuQY]",
+						"",
+						"u",
+					},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"[^k]$",
+						"u",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Uk",
+						"[lr]",
+						"$",
+						"(uk|Qk[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Uk",
+						"",
+						"$",
+						"uk",
+					},
+				},
+				{
+					patterns: [4]string{
+						"sUts",
+						"",
+						"$",
+						"(suts|sQts[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"Uts",
+						"",
+						"$",
+						"uts",
+					},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"",
+						"(u|Q[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"",
+						"u",
+					},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"[fklmnprstv]$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"ts$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"$",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"[DaoiuAOIUQY]",
+						"",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"[aoAOQY]",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"(i|Y[128])",
+					},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
 				},
 			},
-			{
-				langs: 1,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"1a",
-							"",
-							"",
-							"(D|a)",
-						},
+			uint64(genarabic): []rule{
+				{
+					patterns: [4]string{
+						"1a",
+						"",
+						"",
+						"(D|a)",
 					},
-					{
-						patterns: [4]string{
-							"1i",
-							"",
-							"",
-							"(D|i|e)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"1i",
+						"",
+						"",
+						"(D|i|e)",
 					},
-					{
-						patterns: [4]string{
-							"1u",
-							"",
-							"",
-							"(D|u|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"1u",
+						"",
+						"",
+						"(D|u|o)",
 					},
-					{
-						patterns: [4]string{
-							"j1",
-							"",
-							"",
-							"(ja|je|jo|ju|j)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"j1",
+						"",
+						"",
+						"(ja|je|jo|ju|j)",
 					},
-					{
-						patterns: [4]string{
-							"1",
-							"",
-							"",
-							"(a|e|i|o|u|)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"1",
+						"",
+						"",
+						"(a|e|i|o|u|)",
 					},
-					{
-						patterns: [4]string{
-							"u",
-							"",
-							"",
-							"(o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"u",
+						"",
+						"",
+						"(o|u)",
 					},
-					{
-						patterns: [4]string{
-							"i",
-							"",
-							"",
-							"(i|e)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"i",
+						"",
+						"",
+						"(i|e)",
 					},
-					{
-						patterns: [4]string{
-							"p",
-							"",
-							"$",
-							"p",
-						},
+				},
+				{
+					patterns: [4]string{
+						"p",
+						"",
+						"$",
+						"p",
 					},
-					{
-						patterns: [4]string{
-							"p",
-							"",
-							"",
-							"(p|b)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"p",
+						"",
+						"",
+						"(p|b)",
 					},
 				},
 			},
-			{
-				langs: 17,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+			uint64(genrussian): []rule{
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
 					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiEIou]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aeiEIou]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(i|Q)",
 					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"om",
-							"",
-							"[bp]",
-							"(om|im)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"om",
+						"",
+						"[bp]",
+						"(om|im)",
 					},
-					{
-						patterns: [4]string{
-							"on",
-							"",
-							"[dgkstvz]",
-							"(on|in)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"on",
+						"",
+						"[dgkstvz]",
+						"(on|in)",
 					},
-					{
-						patterns: [4]string{
-							"em",
-							"",
-							"[bp]",
-							"(im|om)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"em",
+						"",
+						"[bp]",
+						"(im|om)",
 					},
-					{
-						patterns: [4]string{
-							"en",
-							"",
-							"[dgkstvz]",
-							"(in|on)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"en",
+						"",
+						"[dgkstvz]",
+						"(in|on)",
 					},
-					{
-						patterns: [4]string{
-							"Em",
-							"",
-							"[bp]",
-							"(im|Ym|om)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Em",
+						"",
+						"[bp]",
+						"(im|Ym|om)",
 					},
-					{
-						patterns: [4]string{
-							"En",
-							"",
-							"[dgkstvz]",
-							"(in|Yn|on)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"En",
+						"",
+						"[dgkstvz]",
+						"(in|Yn|on)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprsStv]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprsStv]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoiuQ]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoQ]",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(Y|i)",
 					},
 				},
 			},
-			{
-				langs: 2,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+			uint64(gencyrillic): []rule{
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
 					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiEIou]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aeiEIou]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(i|Q)",
 					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"om",
-							"",
-							"[bp]",
-							"(om|im)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"om",
+						"",
+						"[bp]",
+						"(om|im)",
 					},
-					{
-						patterns: [4]string{
-							"on",
-							"",
-							"[dgkstvz]",
-							"(on|in)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"on",
+						"",
+						"[dgkstvz]",
+						"(on|in)",
 					},
-					{
-						patterns: [4]string{
-							"em",
-							"",
-							"[bp]",
-							"(im|om)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"em",
+						"",
+						"[bp]",
+						"(im|om)",
 					},
-					{
-						patterns: [4]string{
-							"en",
-							"",
-							"[dgkstvz]",
-							"(in|on)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"en",
+						"",
+						"[dgkstvz]",
+						"(in|on)",
 					},
-					{
-						patterns: [4]string{
-							"Em",
-							"",
-							"[bp]",
-							"(im|Ym|om)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Em",
+						"",
+						"[bp]",
+						"(im|Ym|om)",
 					},
-					{
-						patterns: [4]string{
-							"En",
-							"",
-							"[dgkstvz]",
-							"(in|Yn|on)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"En",
+						"",
+						"[dgkstvz]",
+						"(in|Yn|on)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprsStv]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprsStv]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoiuQ]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoQ]",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(Y|i)",
 					},
 				},
 			},
-			{
-				langs: 6,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genfrench): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 3,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genczech): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 4,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(gendutch): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 5,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^aEIeiou]e",
-							"(Q|i|D)",
-						},
+			uint64(genenglish): []rule{
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^aEIeiou]e",
+						"(Q|i|D)",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aEIeiou]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aEIeiou]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
 					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(i|Q)",
 					},
-					{
-						patterns: [4]string{
-							"lE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(il|li|lY)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"lE",
+						"[bdfgkmnprsStvzZ]",
+						"",
+						"(il|li|lY)",
 					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"D[^aeiEIou]",
-							"",
-							"(i|)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"D[^aeiEIou]",
+						"",
+						"(i|)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"D[^aeiEIou]",
-							"",
-							"(i|)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"D[^aeiEIou]",
+						"",
+						"(i|)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprsStv]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprsStv]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiEuQY]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoiEuQY]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQY]",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoQY]",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(Y|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
 				},
 			},
-			{
-				langs: 7,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+			uint64(gengerman): []rule{
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiAEIOUouQY]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aeiAEIOUouQY]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
 					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(Q|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(Q|i)",
 					},
-					{
-						patterns: [4]string{
-							"AU",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"AU",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"aU",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aU",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"Au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"OU",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"OU",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"oU",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oU",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"Ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"Ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"Oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"Ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprst]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoAOUiuQY]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoAOUiuQY]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoAOQY]",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoAOQY]",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(Y|i)",
 					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"$",
-							"o",
-						},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"$",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"[fklmnprst]$",
-							"o",
-						},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"[fklmnprst]$",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"ts$",
-							"o",
-						},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"ts$",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"O",
-							"[aoAOUeiuQY]",
-							"",
-							"o",
-						},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"[aoAOUeiuQY]",
+						"",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"",
-							"(o|Y)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"",
+						"(o|Y)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"$",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"$",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"[fklmnprst]$",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"[fklmnprst]$",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"ts$",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"ts$",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"A",
-							"[aoeOUiuQY]",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"[aoeOUiuQY]",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"",
-							"(a|o|Y)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"",
+						"(a|o|Y)",
 					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"$",
-							"u",
-						},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"$",
+						"u",
 					},
-					{
-						patterns: [4]string{
-							"U",
-							"[DaoiuUQY]",
-							"",
-							"u",
-						},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"[DaoiuUQY]",
+						"",
+						"u",
 					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"[^k]$",
-							"u",
-						},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"[^k]$",
+						"u",
 					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"[lr]",
-							"$",
-							"(uk|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Uk",
+						"[lr]",
+						"$",
+						"(uk|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"",
-							"$",
-							"uk",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Uk",
+						"",
+						"$",
+						"uk",
 					},
-					{
-						patterns: [4]string{
-							"sUts",
-							"",
-							"$",
-							"(suts|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sUts",
+						"",
+						"$",
+						"(suts|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Uts",
-							"",
-							"$",
-							"uts",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Uts",
+						"",
+						"$",
+						"uts",
 					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"",
-							"(u|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"",
+						"(u|Q)",
 					},
 				},
 			},
-			{
-				langs: 8,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(gengreek): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 9,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(gengreeklatin): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"N",
-							"",
-							"",
-							"",
-						},
+				},
+				{
+					patterns: [4]string{
+						"N",
+						"",
+						"",
+						"",
 					},
 				},
 			},
-			{
-				langs: 10,
-				rules: []rule{},
-			},
-			{
-				langs: 11,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genhebrew): []rule{},
+			uint64(genhungarian): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 12,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genitalian): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 13,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genlatvian): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 14,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+			uint64(genpolish): []rule{
+				{
+					patterns: [4]string{
+						"aiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[bp]",
-							"(o|om|im)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[bp]",
+						"(o|om|im)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[dgkstvz]",
-							"(o|on|in)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[dgkstvz]",
+						"(o|on|in)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"o",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[bp]",
-							"(i|im|om)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"[bp]",
+						"(i|im|om)",
 					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[dgkstvz]",
-							"(i|in|on)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"[dgkstvz]",
+						"(i|in|on)",
 					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"P",
-							"",
-							"",
-							"(o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"P",
+						"",
+						"",
+						"(o|u)",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
 					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiAEBFIou]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aeiAEBFIou]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(i|Q)",
 					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprst]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoiuQ]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoQ]",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(Y|i)",
 					},
 				},
 			},
-			{
-				langs: 15,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genportuguese): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 16,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+			uint64(genromanian): []rule{
+				{
+					patterns: [4]string{
+						"aiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiB",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiB",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[bp]",
-							"(o|om|im)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[bp]",
+						"(o|om|im)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[dgkstvz]",
-							"(o|on|in)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[dgkstvz]",
+						"(o|on|in)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"o",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiF",
+						"",
+						"[bp]",
+						"(D|Dm)",
 					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"aiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"uiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"eiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"EiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"iiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"IiF",
+						"",
+						"[dgkstvz]",
+						"(D|Dn)",
 					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[bp]",
-							"(i|im|om)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"[bp]",
+						"(i|im|om)",
 					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[dgkstvz]",
-							"(i|in|on)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"[dgkstvz]",
+						"(i|in|on)",
 					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"P",
-							"",
-							"",
-							"(o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"P",
+						"",
+						"",
+						"(o|u)",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"[^k]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"[lr]",
+						"$",
+						"(ik|Qk)",
 					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Ik",
+						"",
+						"$",
+						"ik",
 					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"sIts",
+						"",
+						"$",
+						"(sits|sQts)",
 					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
+				},
+				{
+					patterns: [4]string{
+						"Its",
+						"",
+						"$",
+						"its",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiAEBFIou]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"[aeiAEBFIou]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"(i|Q)",
 					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"e",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[fklmnprst]$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"ts$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"$",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"[DaoiuQ]",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"[aoQ]",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"(Y|i)",
 					},
 				},
 			},
-			{
-				langs: 18,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genspanish): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"(b|v)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"(b|v)",
 					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"",
-							"(b|v)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"",
+						"(b|v)",
 					},
 				},
 			},
-			{
-				langs: 19,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genturkish): []rule{
+				{
+					patterns: [4]string{
+						"au",
+						"",
+						"",
+						"(D|a|u)",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ou",
+						"",
+						"",
+						"(D|o|u)",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ai",
+						"",
+						"",
+						"(D|a|i)",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"oi",
+						"",
+						"",
+						"(D|o|i)",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"ui",
+						"",
+						"",
+						"(D|u|i)",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"a",
+						"",
+						"",
+						"(a|o)",
 					},
 				},
 			},
@@ -19675,4721 +19615,526 @@ var genFinalRules = finalRules{
 			},
 			{
 				patterns: [4]string{
-					"vanden",
-					"^",
-					"",
-					"(vanden|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"vander",
-					"^",
-					"",
-					"(vander|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"van",
-					"^",
-					"[bp]",
-					"(vam|[16])",
-				},
-			},
-			{
-				patterns: [4]string{
-					"van",
-					"^",
-					"",
-					"(van|[16])",
-				},
-			},
-			{
-				patterns: [4]string{
-					"n",
-					"",
-					"[bp]",
-					"m",
-				},
-			},
-			{
-				patterns: [4]string{
-					"h",
-					"",
-					"",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
 					"H",
 					"",
 					"",
-					"(x|)",
+					"",
 				},
 			},
 			{
 				patterns: [4]string{
-					"sen",
-					"[rmnl]",
-					"$",
-					"(zn|zon)",
+					"s",
+					"[^t]",
+					"[bgZd]",
+					"z",
 				},
 			},
 			{
 				patterns: [4]string{
-					"sen",
+					"Z",
+					"",
+					"[pfkst]",
+					"S",
+				},
+			},
+			{
+				patterns: [4]string{
+					"Z",
 					"",
 					"$",
-					"(sn|son)",
+					"S",
 				},
 			},
 			{
 				patterns: [4]string{
-					"sEn",
-					"[rmnl]",
-					"$",
-					"(zn|zon)",
+					"S",
+					"",
+					"[bgzd]",
+					"Z",
 				},
 			},
 			{
 				patterns: [4]string{
-					"sEn",
+					"z",
 					"",
 					"$",
-					"(sn|son)",
+					"s",
 				},
 			},
 			{
 				patterns: [4]string{
-					"e",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
+					"ji",
+					"[aAoOeEiIuU]",
 					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"i",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"E",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"I",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Q",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Y",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"e",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(e|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"i",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(i|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"E",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(E|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"I",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(I|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Q",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(Q|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Y",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(Y|)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lEs",
-					"",
-					"",
-					"(lEs|lz)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lE",
-					"[bdfgkmnprStvzZ]",
-					"",
-					"(lE|l)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"aue",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"oue",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AvE",
-					"",
-					"",
-					"(D|AvE)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ave",
-					"",
-					"",
-					"(D|Ave)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"avE",
-					"",
-					"",
-					"(D|avE)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ave",
-					"",
-					"",
-					"(D|ave)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"OvE",
-					"",
-					"",
-					"(D|OvE)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ove",
-					"",
-					"",
-					"(D|Ove)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ovE",
-					"",
-					"",
-					"(D|ovE)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ove",
-					"",
-					"",
-					"(D|ove)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ea",
-					"",
-					"",
-					"(D|ea)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"EA",
-					"",
-					"",
-					"(D|EA)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ea",
-					"",
-					"",
-					"(D|Ea)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"eA",
-					"",
-					"",
-					"(D|eA)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"aji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ajI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"aje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ajE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"oji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ojI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"oje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ojE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Oji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"OjI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Oje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"OjE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"eji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ejI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"eje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ejE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Eji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"EjI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Eje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"EjE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"uji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ujI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"uje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ujE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Uji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"UjI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Uje",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"UjE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"iji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ijI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ije",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ijE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Iji",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"IjI",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ije",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"IjE",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"aja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ajA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ajo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ajO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ajU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ajo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"oja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ojA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ojo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ojO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Oja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"OjA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ojo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"OjO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"eja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ejA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ejo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ejO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Eja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"EjA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ejo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"EjO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"uja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ujA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ujo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ujO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Uja",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"UjA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ujo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"UjO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ija",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ijA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ijo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"ijO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ija",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"IjA",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Ijo",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"IjO",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
-			},
-			{
-				patterns: [4]string{
 					"j",
-					"",
-					"",
-					"i",
 				},
 			},
 			{
 				patterns: [4]string{
-					"lYndEr",
+					"jI",
+					"[aAoOeEiIuU]",
 					"",
-					"$",
-					"lYnder",
+					"j",
 				},
 			},
 			{
 				patterns: [4]string{
-					"lander",
+					"je",
+					"[aAoOeEiIuU]",
 					"",
-					"$",
-					"lYnder",
+					"j",
 				},
 			},
 			{
 				patterns: [4]string{
-					"lAndEr",
+					"jE",
+					"[aAoOeEiIuU]",
 					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lAnder",
-					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"landEr",
-					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lender",
-					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lEndEr",
-					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lendEr",
-					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"lEnder",
-					"",
-					"$",
-					"lYnder",
-				},
-			},
-			{
-				patterns: [4]string{
-					"burk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"bUrk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"burg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"bUrg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Burk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"BUrk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Burg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"BUrg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"s",
-					"",
-					"[rmnl]",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"",
-					"[rmnl]",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"s",
-					"[rmnl]",
-					"",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"[rmnl]",
-					"",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"dS",
-					"",
-					"$",
-					"S",
-				},
-			},
-			{
-				patterns: [4]string{
-					"dZ",
-					"",
-					"$",
-					"S",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"$",
-					"S",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"",
-					"$",
-					"(S|s)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"z",
-					"",
-					"$",
-					"(S|s)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"",
-					"",
-					"s",
-				},
-			},
-			{
-				patterns: [4]string{
-					"dZ",
-					"",
-					"",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"",
-					"z",
+					"j",
 				},
 			},
 		},
-		second: []secondFinalRule{
-			{
-				langs: 0,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"mb",
-							"",
-							"",
-							"(mb|b[512])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"mp",
-							"",
-							"",
-							"(mp|b[512])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ng",
-							"",
-							"",
-							"(ng|g[512])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[fktSs]",
-							"(p|f[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"p",
-							"",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"$",
-							"(p|f[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"[pktSs]",
-							"(f|p[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"f",
-							"",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"$",
-							"(f|p[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"(b|v[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"",
-							"(v|b[262144])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"t",
-							"",
-							"$",
-							"(t|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"g",
-							"n",
-							"$",
-							"(g|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"k",
-							"n",
-							"$",
-							"(k|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"p",
-							"",
-							"$",
-							"(p|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"r",
-							"[Ee]",
-							"$",
-							"(r|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"s",
-							"",
-							"$",
-							"(s|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"t",
-							"[aeiouAEIOU]",
-							"[^aeiouAEIOU]",
-							"(t|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"s",
-							"[aeiouAEIOU]",
-							"[^aeiouAEIOU]",
-							"(s|[64])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiouAEIBFOUQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^aeiouAEBFIOU]e",
-							"(Q[128]|i|D[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(Q[128]|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"lEE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(li|il[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"rEE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(ri|ir[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"lE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(li|il[32]|lY[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"rE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(ri|ir[32]|rY[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EE",
-							"",
-							"",
-							"(i|)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ea",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eu",
-							"",
-							"",
-							"(D|e|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ei",
-							"",
-							"",
-							"(D|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ei",
-							"",
-							"",
-							"(D|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iA",
-							"",
-							"$",
-							"(ia|io)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iA",
-							"",
-							"",
-							"(ia|io|iY[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"[^aeiouAEBFIOU]e",
-							"(a|o|Y[128]|D[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"i[^aeiouAEIOU]",
-							"",
-							"(i|Y[128]|[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"a[^aeiouAEIOU]",
-							"",
-							"(i|Y[128]|[32])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuAOIUQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoAOQY]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(i|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"P",
-							"",
-							"",
-							"(o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"[fklmnprstv]$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"ts$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"[oeiuQY]",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"",
-							"(o|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"[fklmnprst]$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"ts$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"[oeiuQY]",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"",
-							"(a|o|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"$",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"[DoiuQY]",
-							"",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"[^k]$",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"[lr]",
-							"$",
-							"(uk|Qk[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"",
-							"$",
-							"uk",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sUts",
-							"",
-							"$",
-							"(suts|sQts[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uts",
-							"",
-							"$",
-							"uts",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"",
-							"(u|Q[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"[fklmnprstv]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"[DaoiuAOIUQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"[aoAOQY]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"(i|Y[128])",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+		second: map[uint64][]rule{
+			uint64(genany): []rule{
+				{
+					patterns: [4]string{
+						"EE",
+						"",
+						"$",
+						"e",
+					},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"",
+						"a",
+					},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
+					},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
+					},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"P",
+						"",
+						"",
+						"o",
+					},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"",
+						"u",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[fktSs]",
+						"p",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"p",
+						"",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"$",
+						"p",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"[pktSs]",
+						"f",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"f",
+						"",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"$",
+						"f",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"b",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"",
+						"v",
 					},
 				},
 			},
-			{
-				langs: 1,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"1a",
-							"",
-							"",
-							"(D|a)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"1i",
-							"",
-							"",
-							"(D|i|e)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"1u",
-							"",
-							"",
-							"(D|u|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"j1",
-							"",
-							"",
-							"(ja|je|jo|ju|j)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"1",
-							"",
-							"",
-							"(a|e|i|o|u|)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"u",
-							"",
-							"",
-							"(o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"i",
-							"",
-							"",
-							"(i|e)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"p",
-							"",
-							"$",
-							"p",
-						},
-					},
-					{
-						patterns: [4]string{
-							"p",
-							"",
-							"",
-							"(p|b)",
-						},
+			uint64(genarabic): []rule{
+				{
+					patterns: [4]string{
+						"1",
+						"",
+						"",
+						"",
 					},
 				},
 			},
-			{
-				langs: 17,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+			uint64(genrussian): []rule{
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiEIou]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"om",
-							"",
-							"[bp]",
-							"(om|im)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"on",
-							"",
-							"[dgkstvz]",
-							"(on|in)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"em",
-							"",
-							"[bp]",
-							"(im|om)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"en",
-							"",
-							"[dgkstvz]",
-							"(in|on)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Em",
-							"",
-							"[bp]",
-							"(im|Ym|om)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"En",
-							"",
-							"[dgkstvz]",
-							"(in|Yn|on)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprsStv]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 2,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+			uint64(gencyrillic): []rule{
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiEIou]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"om",
-							"",
-							"[bp]",
-							"(om|im)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"on",
-							"",
-							"[dgkstvz]",
-							"(on|in)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"em",
-							"",
-							"[bp]",
-							"(im|om)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"en",
-							"",
-							"[dgkstvz]",
-							"(in|on)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Em",
-							"",
-							"[bp]",
-							"(im|Ym|om)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"En",
-							"",
-							"[dgkstvz]",
-							"(in|Yn|on)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprsStv]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 6,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genczech): []rule{
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 3,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(gendutch): []rule{},
+			uint64(genenglish): []rule{
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 4,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genfrench): []rule{},
+			uint64(gengerman): []rule{
+				{
+					patterns: [4]string{
+						"EE",
+						"",
+						"$",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"A",
+						"",
+						"",
+						"a",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"O",
+						"",
+						"",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"P",
+						"",
+						"",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"U",
+						"",
+						"",
+						"u",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"[fktSs]",
+						"p",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"p",
+						"",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"$",
+						"p",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"[pktSs]",
+						"f",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"f",
+						"",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"$",
+						"f",
+					},
+				},
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"b",
+					},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"",
+						"v",
 					},
 				},
 			},
-			{
-				langs: 5,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^aEIeiou]e",
-							"(Q|i|D)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aEIeiou]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"lE",
-							"[bdfgkmnprsStvzZ]",
-							"",
-							"(il|li|lY)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"D[^aeiEIou]",
-							"",
-							"(i|)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"D[^aeiEIou]",
-							"",
-							"(i|)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprsStv]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiEuQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQY]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
+			uint64(gengreek): []rule{},
+			uint64(gengreeklatin): []rule{
+				{
+					patterns: [4]string{
+						"N",
+						"",
+						"",
+						"n",
 					},
 				},
 			},
-			{
-				langs: 7,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
+			uint64(genhebrew): []rule{},
+			uint64(genhungarian): []rule{
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiAEIOUouQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(Q|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"AU",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aU",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"OU",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oU",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoAOUiuQY]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoAOQY]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"[fklmnprst]$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"ts$",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"[aoAOUeiuQY]",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"O",
-							"",
-							"",
-							"(o|Y)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"[fklmnprst]$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"ts$",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"[aoeOUiuQY]",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"A",
-							"",
-							"",
-							"(a|o|Y)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"$",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"[DaoiuUQY]",
-							"",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"[^k]$",
-							"u",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"[lr]",
-							"$",
-							"(uk|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uk",
-							"",
-							"$",
-							"uk",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sUts",
-							"",
-							"$",
-							"(suts|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Uts",
-							"",
-							"$",
-							"uts",
-						},
-					},
-					{
-						patterns: [4]string{
-							"U",
-							"",
-							"",
-							"(u|Q)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 8,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genitalian): []rule{},
+			uint64(genlatvian): []rule{},
+			uint64(genpolish): []rule{
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"a",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"F",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"P",
+						"",
+						"",
+						"o",
 					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
+				},
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 9,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genportuguese): []rule{},
+			uint64(genromanian): []rule{
+				{
+					patterns: [4]string{
+						"E",
+						"",
+						"",
+						"e",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"N",
-							"",
-							"",
-							"",
-						},
+				},
+				{
+					patterns: [4]string{
+						"I",
+						"",
+						"",
+						"i",
 					},
 				},
 			},
-			{
-				langs: 10,
-				rules: []rule{},
-			},
-			{
-				langs: 11,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
+			uint64(genspanish): []rule{
+				{
+					patterns: [4]string{
+						"B",
+						"",
+						"",
+						"b",
 					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
+				},
+				{
+					patterns: [4]string{
+						"V",
+						"",
+						"",
+						"v",
 					},
 				},
 			},
-			{
-				langs: 12,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-				},
-			},
-			{
-				langs: 13,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-				},
-			},
-			{
-				langs: 14,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[bp]",
-							"(o|om|im)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[dgkstvz]",
-							"(o|on|in)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[bp]",
-							"(i|im|om)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[dgkstvz]",
-							"(i|in|on)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"P",
-							"",
-							"",
-							"(o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiAEBFIou]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
-					},
-				},
-			},
-			{
-				langs: 15,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-				},
-			},
-			{
-				langs: 16,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiB",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[bp]",
-							"(o|om|im)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"[dgkstvz]",
-							"(o|on|in)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"o",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[bp]",
-							"(D|Dm)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"aiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"uiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"eiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"EiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"iiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"IiF",
-							"",
-							"[dgkstvz]",
-							"(D|Dn)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[bp]",
-							"(i|im|om)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"[dgkstvz]",
-							"(i|in|on)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"F",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"P",
-							"",
-							"",
-							"(o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"[^k]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"[lr]",
-							"$",
-							"(ik|Qk)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Ik",
-							"",
-							"$",
-							"ik",
-						},
-					},
-					{
-						patterns: [4]string{
-							"sIts",
-							"",
-							"$",
-							"(sits|sQts)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"Its",
-							"",
-							"$",
-							"its",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"[aeiAEBFIou]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"I",
-							"",
-							"",
-							"(i|Q)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"e",
-							"",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[fklmnprst]$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"ts$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"$",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"[DaoiuQ]",
-							"",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"[aoQ]",
-							"i",
-						},
-					},
-					{
-						patterns: [4]string{
-							"E",
-							"",
-							"",
-							"(Y|i)",
-						},
-					},
-				},
-			},
-			{
-				langs: 18,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"B",
-							"",
-							"",
-							"(b|v)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"V",
-							"",
-							"",
-							"(b|v)",
-						},
-					},
-				},
-			},
-			{
-				langs: 19,
-				rules: []rule{
-					{
-						patterns: [4]string{
-							"au",
-							"",
-							"",
-							"(D|a|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ou",
-							"",
-							"",
-							"(D|o|u)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ai",
-							"",
-							"",
-							"(D|a|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"oi",
-							"",
-							"",
-							"(D|o|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"ui",
-							"",
-							"",
-							"(D|u|i)",
-						},
-					},
-					{
-						patterns: [4]string{
-							"a",
-							"",
-							"",
-							"(a|o)",
-						},
-					},
-				},
-			},
+			uint64(genturkish): []rule{},
 		},
 	},
 }
