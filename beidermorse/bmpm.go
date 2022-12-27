@@ -10,13 +10,13 @@ import (
 
 const langAny = 1
 
-func RedoLanguage(input string, mode NameMode, rules []rule, finalRules1 []rule, finalRules2 []rule, concat bool) string {
+func redoLanguage(input string, mode Mode, rules []rule, finalRules1 []rule, finalRules2 []rule, concat bool) string {
 	// we can do a better job of determining the language now that multiple names have been split
 	languageArg := detectLang(input, mode)
-	return Phonetic(input, mode, rules, finalRules1, finalRules2, languageArg, concat)
+	return phonetic(input, mode, rules, finalRules1, finalRules2, languageArg, concat)
 }
 
-func detectLang(word string, mode NameMode) uint64 {
+func detectLang(word string, mode Mode) uint64 {
 	var rules []langRule
 	var all uint64
 	switch mode {
@@ -51,7 +51,7 @@ func detectLang(word string, mode NameMode) uint64 {
 	return remaining
 }
 
-func Phonetic(input string, mode NameMode, rules []rule, finalRules1 []rule, finalRules2 []rule, languageArg uint64, concat bool) string {
+func phonetic(input string, mode Mode, rules []rule, finalRules1 []rule, finalRules2 []rule, languageArg uint64, concat bool) string {
 
 	// algorithm used here is as follows:
 	//
@@ -150,14 +150,14 @@ func Phonetic(input string, mode NameMode, rules []rule, finalRules1 []rule, fin
 			word2 := substrFrom(input, space+1)
 			if inArray(list, word1) {
 				// X Y => Y and XY
-				results := RedoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
-				results += "-" + RedoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
+				results := redoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
+				results += "-" + redoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
 				return results
 			} else { // first word is not in list
 				// X Y => X, Y, and XY
-				results := RedoLanguage(word1, mode, rules, finalRules1, finalRules2, concat)
-				results += "-" + RedoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
-				results += "-" + RedoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
+				results := redoLanguage(word1, mode, rules, finalRules1, finalRules2, concat)
+				results += "-" + redoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
+				results += "-" + redoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
 				return results
 			}
 		}
@@ -223,7 +223,7 @@ func Phonetic(input string, mode NameMode, rules []rule, finalRules1 []rule, fin
 
 			// check for incompatible attributes
 
-			candidate := ApplyRuleIfCompatible(phonetic, rule.phonetic(), languageArg)
+			candidate := applyRuleIfCompatible(phonetic, rule.phonetic(), languageArg)
 			if candidate == "" {
 				continue
 			}
@@ -240,14 +240,14 @@ func Phonetic(input string, mode NameMode, rules []rule, finalRules1 []rule, fin
 	// apply final rules on phonetic-alphabet, doing a substitution of certain characters
 	// finalRules1 are the common approx rules, finalRules2 are approx rules for specific language
 
-	phonetic = ApplyFinalRules(phonetic, finalRules1, languageArg, false) // apply common rules
-	phonetic = ApplyFinalRules(phonetic, finalRules2, languageArg, true)  // apply lang specific rules
+	phonetic = applyFinalRules(phonetic, finalRules1, languageArg, false) // apply common rules
+	phonetic = applyFinalRules(phonetic, finalRules2, languageArg, true)  // apply lang specific rules
 
 	return phonetic
 
 }
 
-func ApplyFinalRules(phonetic string, finalRules []rule, languageArg uint64, strip bool) string {
+func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, strip bool) string {
 
 	// optimization to save time
 
@@ -257,7 +257,7 @@ func ApplyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 
 	// expand the result
 
-	phonetic = Expand(phonetic)
+	phonetic = expand(phonetic)
 	phoneticArray := strings.Split(phonetic, "|")
 
 	var phonetic2 string
@@ -266,7 +266,7 @@ func ApplyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 		phonetic = phoneticArray[k]
 		phonetic2 = ""
 
-		phoneticx := NormalizeLanguageAttributes(phonetic, true)
+		phoneticx := normalizeLanguageAttributes(phonetic, true)
 		for i := 0; i < utf8.RuneCountInString(phonetic); {
 			found := false
 
@@ -336,7 +336,7 @@ func ApplyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 
 				// check for incompatible attributes
 
-				candidate := ApplyRuleIfCompatible(phonetic2, rule.phonetic(), languageArg)
+				candidate := applyRuleIfCompatible(phonetic2, rule.phonetic(), languageArg)
 				if candidate == "" {
 					continue
 				}
@@ -353,28 +353,19 @@ func ApplyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 			i += patternLength
 
 		}
-		phoneticArray[k] = Expand(phonetic2)
+		phoneticArray[k] = expand(phonetic2)
 	}
 	phonetic = strings.Join(phoneticArray, "|")
 	if strip {
-		phonetic = NormalizeLanguageAttributes(phonetic, true)
+		phonetic = normalizeLanguageAttributes(phonetic, true)
 	}
 	if strings.Index(phonetic, "|") != -1 {
-		phonetic = "(" + RemoveDuplicateAlternates(phonetic) + ")"
+		phonetic = "(" + removeDuplicateAlternates(phonetic) + ")"
 	}
 	return phonetic
 }
 
-func Mod(x int, y int) int {
-	// use this instead of % to avoid negative results
-	mod := x % y
-	if mod < 0 {
-		mod += y
-	}
-	return mod
-}
-
-func PhoneticNumber(phonetic string, hash bool) string {
+func phoneticNumber(phonetic string, hash bool) string {
 	if bracket := strings.Index(phonetic, "["); bracket != -1 {
 		return substr(phonetic, 0, bracket)
 	}
@@ -416,10 +407,10 @@ func PhoneticNumber(phonetic string, hash bool) string {
 	return string(r)
 }
 
-func Expand(phonetic string) string {
+func expand(phonetic string) string {
 	altStart := strings.Index(phonetic, "(")
 	if altStart == -1 {
-		return NormalizeLanguageAttributes(phonetic, false)
+		return normalizeLanguageAttributes(phonetic, false)
 	}
 	prefix := substr(phonetic, 0, altStart)
 	altStart++ // get past the (
@@ -431,7 +422,7 @@ func Expand(phonetic string) string {
 	result := ""
 	for i := 0; i < len(altArray); i++ {
 		alt := altArray[i]
-		alternate := Expand(prefix + alt + suffix)
+		alternate := expand(prefix + alt + suffix)
 		if alternate != "" && alternate != "[0]" {
 			if result != "" {
 				result += "|"
@@ -442,10 +433,10 @@ func Expand(phonetic string) string {
 	return result
 }
 
-func PhoneticNumbersWithLeadingSpace(phonetic string) string {
+func phoneticNumbersWithLeadingSpace(phonetic string) string {
 	altStart := strings.Index(phonetic, "(")
 	if altStart == -1 {
-		return " " + PhoneticNumber(phonetic, true)
+		return " " + phoneticNumber(phonetic, true)
 	}
 	prefix := substr(phonetic, 0, altStart)
 	altStart++ // get past the (
@@ -457,19 +448,19 @@ func PhoneticNumbersWithLeadingSpace(phonetic string) string {
 	result := ""
 	for i := 0; i < len(altArray); i++ {
 		alt := altArray[i]
-		result += PhoneticNumbersWithLeadingSpace(prefix + alt + suffix)
+		result += phoneticNumbersWithLeadingSpace(prefix + alt + suffix)
 	}
 	return result
 }
 
-func PhoneticNumbers(phonetic string) string {
+func phoneticNumbers(phonetic string) string {
 	phoneticArray := strings.Split(phonetic, "-") // for names with spaces in them
 	result := ""
 	for i := 0; i < len(phoneticArray); i++ {
 		if i != 0 {
 			result += " "
 		}
-		result += substrFrom(PhoneticNumbersWithLeadingSpace(phoneticArray[i]), 1)
+		result += substrFrom(phoneticNumbersWithLeadingSpace(phoneticArray[i]), 1)
 	}
 	return result
 }
@@ -490,8 +481,7 @@ func isSZTypeConsonant(c string) bool {
 	return (strings.Index("sSzZ", c) != -1)
 }
 
-func RemoveDuplicateAlternates(phonetic string) string {
-
+func removeDuplicateAlternates(phonetic string) string {
 	altString := phonetic
 	altArray := strings.Split(altString, "|")
 
@@ -509,7 +499,7 @@ func RemoveDuplicateAlternates(phonetic string) string {
 	return result
 }
 
-func NormalizeLanguageAttributes(text string, strip bool) string {
+func normalizeLanguageAttributes(text string, strip bool) string {
 	// this is applied to a single alternative at a time -- not to a parenthisized list
 	// it removes all embedded bracketed attributes, logically-ands them together, and places them at the end.
 
@@ -544,7 +534,7 @@ func NormalizeLanguageAttributes(text string, strip bool) string {
 	}
 }
 
-func ApplyRuleIfCompatible(phonetic string, target string, languageArg uint64) string {
+func applyRuleIfCompatible(phonetic string, target string, languageArg uint64) string {
 
 	// tests for compatible language rules
 	// to do so, apply the rule, expand the results, and detect alternatives with incompatible attributes
@@ -561,7 +551,7 @@ func ApplyRuleIfCompatible(phonetic string, target string, languageArg uint64) s
 
 	// expand the result, converting incompatible attributes to [0]
 
-	candidate = Expand(candidate)
+	candidate = expand(candidate)
 	candidateArray := strings.Split(candidate, "|")
 
 	// drop each alternative that has incompatible attributes
@@ -572,7 +562,7 @@ func ApplyRuleIfCompatible(phonetic string, target string, languageArg uint64) s
 	for i := 0; i < len(candidateArray); i++ {
 		thisCandidate := candidateArray[i]
 		if languageArg != langAny {
-			thisCandidate = NormalizeLanguageAttributes(thisCandidate+"["+strconv.FormatUint(languageArg, 10)+"]", false)
+			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatUint(languageArg, 10)+"]", false)
 		}
 		if thisCandidate != "[0]" {
 			//      if (candidate != "[0]") {
