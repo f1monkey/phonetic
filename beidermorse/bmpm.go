@@ -1,50 +1,38 @@
 package beidermorse
 
 import (
+	"encoding/hex"
 	"regexp"
-	"sync"
+	"strconv"
+	"strings"
+	"unicode/utf8"
 )
 
-type Mode string
+const langAny = 1
 
-const (
-	Generic   Mode = "generic"   // for general usage
-	Ashkenazi Mode = "ashkenazi" // for ashkenazi names
-	Sephardic Mode = "sephardic" // for sephardic names
-)
-
-type Result struct {
-	Tokens []string
+func RedoLanguage(input string, mode NameMode, rules []rule, finalRules1 []rule, finalRules2 []rule, concat bool) string {
+	// we can do a better job of determining the language now that multiple names have been split
+	languageArg := detectLang(input, mode)
+	return Phonetic(input, mode, rules, finalRules1, finalRules2, languageArg, concat)
 }
 
-// // Encode encodes a word using generic rules
-// func Encode(word string, lang Lang) Result {
-// 	return encode(Generic, word, lang)
-// }
+func detectLang(word string, mode NameMode) uint64 {
+	var rules []langRule
+	var all uint64
+	switch mode {
+	case Ashkenazi:
+		rules = ashLangRules
+		all = uint64(ashAll)
+	case Sephardic:
+		rules = sepLangRules
+		all = uint64(sepAll)
+	case Generic:
+		rules = genLangRules
+		all = uint64(genAll)
+	}
 
-// // EncodeAshkenazi encodes a word using ashkenazi rules
-// func EncodeAshkenazi(word string, lang Lang) Result {
-// 	return encode(Ashkenazi, word, lang)
-// }
-
-// // EncodeSephardic encodes a word using sephardic rules
-// func EncodeSephardic(word string, lang Lang) Result {
-// 	return encode(Sephardic, word, lang)
-// }
-
-// func encode(mode Mode, word string, lang Lang) Result {
-// 	if lang == None {
-// 		lang = detectLang(word, mode)
-// 	}
-
-// 	// todo
-// 	return word
-// }
-
-func detectLang(word string, langRules []langRule, availLangs uint64) uint64 {
-	remaining := availLangs
-
-	for _, rule := range langRules {
+	remaining := all
+	for _, rule := range rules {
 		if !regCache.get(rule.pattern).MatchString(word) {
 			continue
 		}
@@ -52,7 +40,7 @@ func detectLang(word string, langRules []langRule, availLangs uint64) uint64 {
 		if rule.accept {
 			remaining &= rule.langs
 		} else {
-			remaining &= (availLangs ^ rule.langs) % (remaining + 1)
+			remaining &= (all ^ rule.langs) % (remaining + 1)
 		}
 
 		if remaining == 0 {
@@ -63,27 +51,581 @@ func detectLang(word string, langRules []langRule, availLangs uint64) uint64 {
 	return remaining
 }
 
-var regCache = regexpCache{
-	data: make(map[string]*regexp.Regexp),
-}
+func Phonetic(input string, mode NameMode, rules []rule, finalRules1 []rule, finalRules2 []rule, languageArg uint64, concat bool) string {
 
-type regexpCache struct {
-	data map[string]*regexp.Regexp
-	mtx  sync.RWMutex
-}
+	// algorithm used here is as follows:
+	//
+	//   Before doing anything else:
+	//    (1) replace leading:
+	//         de<space>la<space> with dela<space>
+	//         van<space>der<space> with vander<space>
+	//         van<space>den<space> with vanden<space>
+	//    (2) gen and ash: remove all apostrophes (i.e., X'Y ==> XY)
+	//    (3) remove all spaces, apostrophes, and dashes except for the first one (i.e. X Y Z ==> X YZ)
+	//    (4) convert remaining dashes and apostrophes (if any) to space (i.e. X'Y ==> X Y)
 
-func (c *regexpCache) get(pattern string) *regexp.Regexp {
-	c.mtx.RLock()
-	r, ok := c.data[pattern]
-	c.mtx.RUnlock()
-	if ok {
-		return r
+	//   if Exact:
+	//     if <space> is present (i.e. X Y/
+	//       X Y => XY
+	//   if Approx or Hebrew:
+	//     if <space> is present (i.e. X Y)
+	//       if X in list (different lists for ash, sep, gen, see below)
+	//         X Y => Y and XY
+	//       else if X is not in list
+	//         X Y => X, Y, and XY
+
+	input = strings.TrimSpace(strings.ToLower(input))
+
+	// determine type (ashkenazic, sephardic, generic
+
+	ash := false // ashkenazic
+	sep := false // sephardic
+	if mode == Ashkenazi {
+		ash = true // ashkenazic
+	} else if mode == Sephardic {
+		sep = true // sephardic
 	}
 
-	c.mtx.Lock()
-	defer c.mtx.Unlock()
-	r = regexp.MustCompile(pattern)
-	c.data[pattern] = r
+	// remove spaces from within certain leading words
 
-	return r
+	list := []string{"de la", "van der", "van den"}
+	for i := 0; i < len(list); i++ {
+		target := list[i] + " "
+		if substr(input, 0, utf8.RuneCountInString(target)) == target {
+			target = list[i]
+			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
+		}
+	}
+
+	// for ash and gen -- remove all apostrophes
+
+	if !sep {
+		input = strings.ReplaceAll(input, "'", "")
+	}
+
+	// remove all apostrophoes, dashes, and spaces except for the first one, replace first one with space
+
+	list = []string{"'", "-", " "}
+	for i := 0; i < len(list); i++ {
+		target := list[i]
+
+		if firstOne := strings.Index(input, target); firstOne != -1 {
+			input = strings.ReplaceAll(input, target, "")                          // remove all occurences
+			input = substr(input, 0, firstOne) + " " + substrFrom(input, firstOne) // replace first occurence with space
+		}
+	}
+
+	if sep {
+
+		list = []string{ // sephardi
+			"abe", "aben", "abi", "abou", "abu", "al", "bar", "ben", "bou", "bu",
+			"d", "da", "dal", "de", "del", "dela", "della", "des", "di",
+			"el", "la", "le", "ibn", "ha",
+		}
+
+	} else if ash { // ashkenazi
+
+		list = []string{
+			"ben", "bar", "ha",
+		}
+
+	} else { // generic
+
+		list = []string{
+			"abe", "aben", "abi", "abou", "abu", "al", "bar", "ben", "bou", "bu",
+			"d", "da", "dal", "de", "del", "dela", "della", "des", "di", "dos", "du",
+			"el", "la", "le", "ibn", "van", "von", "ha", "vanden", "vander",
+		}
+	}
+
+	// process a multiword name of form X Y
+
+	if space := strings.Index(input, " "); space != -1 { // number of words is exactly two
+
+		if concat { // exact matches
+			// X Y => XY
+			input = strings.ReplaceAll(input, " ", "") // concatenate the separate words of a name
+		} else { // number of words is exactly two
+			word1 := substr(input, 0, space)
+			word2 := substrFrom(input, space+1)
+			if inArray(list, word1) {
+				// X Y => Y and XY
+				results := RedoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
+				results += "-" + RedoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
+				return results
+			} else { // first word is not in list
+				// X Y => X, Y, and XY
+				results := RedoLanguage(word1, mode, rules, finalRules1, finalRules2, concat)
+				results += "-" + RedoLanguage(word2, mode, rules, finalRules1, finalRules2, concat)
+				results += "-" + RedoLanguage(word1+word2, mode, rules, finalRules1, finalRules2, concat)
+				return results
+			}
+		}
+	}
+
+	// at this point, input is only a single word
+
+	inputLength := utf8.RuneCountInString(input)
+
+	// apply language rules to map to phonetic alphabet
+
+	phonetic := ""
+	var patternLength int
+	for i := 0; i < inputLength; {
+		found := false
+		for r := 0; r < len(rules); r++ {
+			rule := rules[r]
+			pattern := rule.pattern()
+			patternLength = utf8.RuneCountInString(pattern)
+			lcontext := rule.contextLeft()
+			rcontext := rule.contextRight()
+
+			// check to see if next sequence in input matches the string in the rule
+			if patternLength > inputLength-i || substr(input, i, patternLength) != pattern { // no match
+				continue
+			}
+
+			right := "/^$rcontext/"
+			left := "/$lcontext" + "$" + "/"
+
+			// check that right context is satisfied
+			if rcontext != "" {
+				reg := regexp.MustCompile(right)
+				if !reg.MatchString(substrFrom(input, i+patternLength)) {
+					continue
+				}
+			}
+
+			// check that left context is satisfied
+			if lcontext != "" {
+				reg := regexp.MustCompile(left)
+				if !reg.MatchString(substr(input, 0, i)) {
+					continue
+				}
+			}
+
+			// // check to see if languageArg is one of the allowable ones (used only with "any" rules)
+			// if (languageArg != "1") && (languagePos < len(rule)) {
+			// 	language = rule[languagePos] // the required language(s) for this rule to apply
+			// 	logical := rule[logicalPos]  // do we require ALL or ANY of the required languages
+			// 	if logical == "ALL" {
+			// 		// check to see if languageArg contains all the required languages
+			// 		if (languageArg & language) != language {
+			// 			continue
+			// 		}
+			// 	} else { // any
+			// 		// check to see if languageArg contains at least one required language
+			// 		if (languageArg & language) == 0 {
+			// 			continue
+			// 		}
+			// 	}
+			// }
+
+			// check for incompatible attributes
+
+			candidate := ApplyRuleIfCompatible(phonetic, rule.phonetic(), languageArg)
+			if candidate == "" {
+				continue
+			}
+			phonetic = candidate
+			found = true
+			break
+		}
+		if !found { // character in name that is not in table -- e.g., space
+			patternLength = 1
+		}
+		i += patternLength
+	}
+
+	// apply final rules on phonetic-alphabet, doing a substitution of certain characters
+	// finalRules1 are the common approx rules, finalRules2 are approx rules for specific language
+
+	phonetic = ApplyFinalRules(phonetic, finalRules1, languageArg, false) // apply common rules
+	phonetic = ApplyFinalRules(phonetic, finalRules2, languageArg, true)  // apply lang specific rules
+
+	return phonetic
+
+}
+
+func ApplyFinalRules(phonetic string, finalRules []rule, languageArg uint64, strip bool) string {
+
+	// optimization to save time
+
+	if len(finalRules) == 0 {
+		return phonetic
+	}
+
+	// expand the result
+
+	phonetic = Expand(phonetic)
+	phoneticArray := strings.Split(phonetic, "|")
+
+	var phonetic2 string
+	for k := 0; k < len(phoneticArray); k++ {
+
+		phonetic = phoneticArray[k]
+		phonetic2 = ""
+
+		phoneticx := NormalizeLanguageAttributes(phonetic, true)
+		for i := 0; i < utf8.RuneCountInString(phonetic); {
+			found := false
+
+			if substr(phonetic, i, 1) == "[" { // skip over language attribute
+				attribStart := i
+				i++
+				for {
+					vv := substr(phonetic, i, 1)
+					i++
+					if vv == "]" {
+						attribEnd := i
+						phonetic2 += substr(phonetic, attribStart, attribEnd-attribStart)
+						break
+					}
+				}
+				continue
+			}
+
+			var patternLength int
+			for r := 0; r < len(finalRules); r++ {
+				rule := finalRules[r]
+				pattern := rule.pattern()
+				patternLength = utf8.RuneCountInString(pattern)
+				lcontext := rule.contextLeft()
+				rcontext := rule.contextRight()
+
+				right := "/^$rcontext/"
+				left := "/$lcontext" + "$" + "/"
+
+				// check to see if next sequence in phonetic matches the string in the rule
+				if patternLength > utf8.RuneCountInString(phoneticx)-i || substr(phoneticx, i, patternLength) != pattern { // no match
+					continue
+				}
+
+				// check that right context is satisfied
+				if rcontext != "" {
+					reg := regexp.MustCompile(right)
+					if !reg.MatchString(substrFrom(phoneticx, i+patternLength)) {
+						continue
+					}
+				}
+
+				// check that left context is satisfied
+				if lcontext != "" {
+					reg := regexp.MustCompile(left)
+					if !reg.MatchString(substr(phoneticx, 0, i)) {
+						continue
+					}
+				}
+
+				// // check to see if rule applies to languageArg (used only with "any" rules)
+				// if (languageArg != "1") && (languagePos < len(rule)) {
+				// 	language = rule[languagePos] // the required language(s) for this rule to apply
+				// 	logical = rule[logicalPos]   // do we require ALL or ANY of the required languages
+				// 	if logical == "ALL" {
+				// 		// check to see if languageArg contains all the required languages
+				// 		if (languageArg & language) != language {
+				// 			continue
+				// 		}
+				// 	} else { // any
+				// 		// check to see if languageArg contains at least one required language
+				// 		if (languageArg & language) == 0 {
+				// 			continue
+				// 		}
+				// 	}
+				// }
+
+				// check for incompatible attributes
+
+				candidate := ApplyRuleIfCompatible(phonetic2, rule.phonetic(), languageArg)
+				if candidate == "" {
+					continue
+				}
+				phonetic2 = candidate
+
+				found = true
+				break
+			}
+
+			if !found { // character in name for which there is no subsitution in the table
+				phonetic2 += substr(phonetic, i, 1)
+				patternLength = 1
+			}
+			i += patternLength
+
+		}
+		phoneticArray[k] = Expand(phonetic2)
+	}
+	phonetic = strings.Join(phoneticArray, "|")
+	if strip {
+		phonetic = NormalizeLanguageAttributes(phonetic, true)
+	}
+	if strings.Index(phonetic, "|") != -1 {
+		phonetic = "(" + RemoveDuplicateAlternates(phonetic) + ")"
+	}
+	return phonetic
+}
+
+func Mod(x int, y int) int {
+	// use this instead of % to avoid negative results
+	mod := x % y
+	if mod < 0 {
+		mod += y
+	}
+	return mod
+}
+
+func PhoneticNumber(phonetic string, hash bool) string {
+	if bracket := strings.Index(phonetic, "["); bracket != -1 {
+		return substr(phonetic, 0, bracket)
+	}
+	return phonetic                                              // experimental !!!!
+	phoneticLetters := "!bdfghjklmnNprsSt68vwzZxAa4oe5iI9uUEyQY" // true phonetic letters
+	phoneticLetters += "1BCDEHJKLOTUVWX"                         // metaphonetic letters
+	// dummy first letter, otherwise b would be treated as 0 and have no effect on result
+	metaPhoneticLetters := "" // added letters to be used in finalxxx.php rules
+	result := 0
+
+	for i := 0; i < utf8.RuneCountInString(phonetic); i++ {
+		var j int
+		if substr(phonetic, i, 1) == "#" { // it's a meta phonetic letter
+			if i == (utf8.RuneCountInString(phonetic) - 1) {
+				panic("fatal error: invalid metaphonetic letter at position " + strconv.Itoa(i+1) + " in phonetic<br>")
+			}
+			i++
+			j = strings.Index(metaPhoneticLetters, substr(phonetic, i, 1))
+			if j != -1 {
+				j += utf8.RuneCountInString(phoneticLetters)
+			}
+		} else {
+			j = strings.Index(phoneticLetters, substr(phonetic, i, 1))
+		}
+		if j == -1 {
+			panic("fatal error: invalid phonetic letter at position " + strconv.Itoa(i+1) + " in phonetic<br>")
+		}
+		result *= utf8.RuneCountInString(phoneticLetters) + utf8.RuneCountInString(metaPhoneticLetters)
+		if hash {
+			result = result & 0x7fffffff
+		}
+		result += j
+	}
+	r, err := hex.DecodeString(strconv.Itoa(result))
+	if err != nil {
+		panic(err)
+	}
+
+	return string(r)
+}
+
+func Expand(phonetic string) string {
+	altStart := strings.Index(phonetic, "(")
+	if altStart == -1 {
+		return NormalizeLanguageAttributes(phonetic, false)
+	}
+	prefix := substr(phonetic, 0, altStart)
+	altStart++ // get past the (
+	altEnd := indexAt(phonetic, ")", altStart)
+	altString := substr(phonetic, altStart, altEnd-altStart)
+	altEnd++ // get past the )
+	suffix := substrFrom(phonetic, altEnd)
+	altArray := strings.Split(altString, "|")
+	result := ""
+	for i := 0; i < len(altArray); i++ {
+		alt := altArray[i]
+		alternate := Expand(prefix + alt + suffix)
+		if alternate != "" && alternate != "[0]" {
+			if result != "" {
+				result += "|"
+			}
+			result += alternate
+		}
+	}
+	return result
+}
+
+func PhoneticNumbersWithLeadingSpace(phonetic string) string {
+	altStart := strings.Index(phonetic, "(")
+	if altStart == -1 {
+		return " " + PhoneticNumber(phonetic, true)
+	}
+	prefix := substr(phonetic, 0, altStart)
+	altStart++ // get past the (
+	altEnd := indexAt(phonetic, ")", altStart)
+	altString := substr(phonetic, altStart, altEnd-altStart)
+	altEnd++ // get past the )
+	suffix := substrFrom(phonetic, altEnd)
+	altArray := strings.Split(altString, "|")
+	result := ""
+	for i := 0; i < len(altArray); i++ {
+		alt := altArray[i]
+		result += PhoneticNumbersWithLeadingSpace(prefix + alt + suffix)
+	}
+	return result
+}
+
+func PhoneticNumbers(phonetic string) string {
+	phoneticArray := strings.Split(phonetic, "-") // for names with spaces in them
+	result := ""
+	for i := 0; i < len(phoneticArray); i++ {
+		if i != 0 {
+			result += " "
+		}
+		result += substrFrom(PhoneticNumbersWithLeadingSpace(phoneticArray[i]), 1)
+	}
+	return result
+}
+
+func isPhoneticVowel(c string) bool {
+	return (strings.Index("Aa4oe5iI9uUE", c) != -1)
+}
+
+func isAOTypeVowel(c string) bool {
+	return (strings.Index("a4o59", c) != -1)
+}
+
+func isEITypeVowel(c string) bool {
+	return (strings.Index("eiIy", c) != -1)
+}
+
+func isSZTypeConsonant(c string) bool {
+	return (strings.Index("sSzZ", c) != -1)
+}
+
+func RemoveDuplicateAlternates(phonetic string) string {
+
+	altString := phonetic
+	altArray := strings.Split(altString, "|")
+
+	result := "|"
+	altcount := 0
+	for i := 0; i < len(altArray); i++ {
+		alt := altArray[i]
+		if strings.Index(result, "|"+alt+"|") == -1 {
+			result += alt + "|"
+			altcount++
+		}
+	}
+
+	result = substr(result, 1, utf8.RuneCountInString(result)-2) // remove leading and trailing |
+	return result
+}
+
+func NormalizeLanguageAttributes(text string, strip bool) string {
+	// this is applied to a single alternative at a time -- not to a parenthisized list
+	// it removes all embedded bracketed attributes, logically-ands them together, and places them at the end.
+
+	// however if strip is true, this can indeed remove embedded bracketed attributes from a parenthesized list
+
+	uninitialized := -1 // all 1's
+	attrib := uninitialized
+	for {
+		bracketStart := strings.Index(text, "[")
+		if bracketStart == -1 {
+			break
+		}
+		bracketEnd := indexAt(text, "]", bracketStart)
+		if bracketEnd == -1 {
+			panic("fatal error: no closing square bracket: text=($text) strip=($strip)<br>")
+		}
+
+		v, err := strconv.Atoi(substr(text, bracketStart+1, bracketEnd-(bracketStart+1)))
+		if err != nil {
+			panic(err)
+		}
+
+		attrib &= v
+		text = substr(text, 0, bracketStart) + substrFrom(text, bracketEnd+1)
+	}
+	if attrib == uninitialized || strip {
+		return text
+	} else if attrib == 0 {
+		return "[0]" // means that the attributes were incompatible and there is no alternative here
+	} else {
+		return text + "[" + strconv.Itoa(attrib) + "]"
+	}
+}
+
+func ApplyRuleIfCompatible(phonetic string, target string, languageArg uint64) string {
+
+	// tests for compatible language rules
+	// to do so, apply the rule, expand the results, and detect alternatives with incompatible attributes
+	// then drop each alternative that has incompatible attributes and keep those that are compatible
+	// if there are no compatible alternatives left, return false
+	// otherwise return the compatible alternatives
+
+	// apply the rule
+
+	candidate := phonetic + target
+	if strings.Index(candidate, "[") == -1 { // no attributes so we need test no further
+		return candidate
+	}
+
+	// expand the result, converting incompatible attributes to [0]
+
+	candidate = Expand(candidate)
+	candidateArray := strings.Split(candidate, "|")
+
+	// drop each alternative that has incompatible attributes
+
+	candidate = ""
+	found := false
+
+	for i := 0; i < len(candidateArray); i++ {
+		thisCandidate := candidateArray[i]
+		if languageArg != langAny {
+			thisCandidate = NormalizeLanguageAttributes(thisCandidate+"["+strconv.FormatUint(languageArg, 10)+"]", false)
+		}
+		if thisCandidate != "[0]" {
+			//      if (candidate != "[0]") {
+			found = true
+			if candidate != "" {
+				candidate += "|"
+			}
+			candidate += thisCandidate
+		}
+	}
+
+	// return false if no compatible alternatives remain
+
+	if !found {
+		return ""
+	}
+
+	// return the result of applying the rule
+
+	if strings.Index(candidate, "|") != -1 {
+		candidate = "(" + candidate + ")"
+	}
+	return candidate
+
+}
+
+func inArray[T comparable](data []T, value T) bool {
+	for _, item := range data {
+		if item == value {
+			return true
+		}
+	}
+	return false
+}
+
+func substr(s string, start int, length int) string {
+	asRunes := []rune(s)
+
+	if start >= len(asRunes) {
+		return ""
+	}
+
+	if start+length > len(asRunes) {
+		length = len(asRunes) - start
+	}
+
+	return string(asRunes[start : start+length])
+}
+
+func substrFrom(s string, start int) string {
+	return string([]rune(s)[start:])
+}
+
+func indexAt(s, sep string, n int) int {
+	return strings.Index(s[n:], sep)
 }
