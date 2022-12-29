@@ -98,12794 +98,6903 @@ const genAll = genany +
 var genRules = map[genLang][]rule{
 	genany: []rule{
 		{
-			patterns: [4]string{
-				"yna",
-				"",
-				"$",
-				"(in[131072]|ina)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ina",
-				"",
-				"$",
-				"(in[131072]|ina)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"liova",
-				"",
-				"$",
-				"(lova|lof[131072]|lef[131072])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"lova",
-				"",
-				"$",
-				"(lova|lof[131072]|lef[131072]|l[8]|el[8])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"kova",
-				"",
-				"$",
-				"(kova|kof[131072]|k[8]|ek[8])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ova",
-				"",
-				"$",
-				"(ova|of[131072]|[8])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ová",
-				"",
-				"$",
-				"(ova|[8])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"eva",
-				"",
-				"$",
-				"(eva|ef[131072])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"aia",
-				"",
-				"$",
-				"(aja|i[131072])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"aja",
-				"",
-				"$",
-				"(aja|i[131072])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"aya",
-				"",
-				"$",
-				"(aja|i[131072])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"lowa",
-				"",
-				"$",
-				"(lova|lof[16384]|l[16384]|el[16384])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"kowa",
-				"",
-				"$",
-				"(kova|kof[16384]|k[16384]|ek[16384])",
-			},
+			pattern:      "yna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(in[131072]|ina)",
 		},
 		{
-			patterns: [4]string{
-				"owa",
-				"",
-				"$",
-				"(ova|of[16384]|)",
-			},
+			pattern:      "ina",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(in[131072]|ina)",
 		},
 		{
-			patterns: [4]string{
-				"lowna",
-				"",
-				"$",
-				"(lovna|levna|l[16384]|el[16384])",
-			},
+			pattern:      "liova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lova|lof[131072]|lef[131072])",
 		},
 		{
-			patterns: [4]string{
-				"kowna",
-				"",
-				"$",
-				"(kovna|k[16384]|ek[16384])",
-			},
+			pattern:      "lova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lova|lof[131072]|lef[131072]|l[8]|el[8])",
 		},
 		{
-			patterns: [4]string{
-				"owna",
-				"",
-				"$",
-				"(ovna|[16384])",
-			},
+			pattern:      "kova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(kova|kof[131072]|k[8]|ek[8])",
 		},
 		{
-			patterns: [4]string{
-				"lówna",
-				"",
-				"$",
-				"(l|el)",
-			},
+			pattern:      "ova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ova|of[131072]|[8])",
 		},
 		{
-			patterns: [4]string{
-				"kówna",
-				"",
-				"$",
-				"(k|ek)",
-			},
+			pattern:      "ová",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ova|[8])",
 		},
 		{
-			patterns: [4]string{
-				"ówna",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "eva",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(eva|ef[131072])",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"$",
-				"(a|i[8])",
-			},
+			pattern:      "aia",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(aja|i[131072])",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"$",
-				"(a|i[16392])",
-			},
+			pattern:      "aja",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(aja|i[131072])",
 		},
 		{
-			patterns: [4]string{
-				"pf",
-				"",
-				"",
-				"(pf|p|f)",
-			},
+			pattern:      "aya",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(aja|i[131072])",
 		},
 		{
-			patterns: [4]string{
-				"que",
-				"",
-				"$",
-				"(k[64]|ke|kve)",
-			},
+			pattern:      "lowa",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lova|lof[16384]|l[16384]|el[16384])",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"(kv|k)",
-			},
+			pattern:      "kowa",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(kova|kof[16384]|k[16384]|ek[16384])",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"[bfpv]",
-				"(m|n)",
-			},
+			pattern:      "owa",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ova|of[16384]|)",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"[aeiouy]",
-				"[aeiouy]",
-				"m",
-			},
+			pattern:      "lowna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lovna|levna|l[16384]|el[16384])",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"[aeiouy]",
-				"",
-				"(m|n[32832])",
-			},
+			pattern:      "kowna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(kovna|k[16384]|ek[16384])",
 		},
 		{
-			patterns: [4]string{
-				"ly",
-				"",
-				"[au]",
-				"(l|lj)",
-			},
+			pattern:      "owna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ovna|[16384])",
 		},
 		{
-			patterns: [4]string{
-				"li",
-				"",
-				"[au]",
-				"(l|lj)",
-			},
+			pattern:      "lówna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(l|el)",
 		},
 		{
-			patterns: [4]string{
-				"lio",
-				"",
-				"",
-				"(lo|le[131072])",
-			},
+			pattern:      "kówna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(k|ek)",
 		},
 		{
-			patterns: [4]string{
-				"lyo",
-				"",
-				"",
-				"(lo|le[131072])",
-			},
+			pattern:      "ówna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"lt",
-				"u",
-				"$",
-				"(lt|[64])",
-			},
+			pattern:      "á",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(a|i[8])",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"^",
-				"",
-				"(v|f[128]|b[262144])",
-			},
+			pattern:      "a",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(a|i[16392])",
 		},
 		{
-			patterns: [4]string{
-				"ex",
-				"",
-				"[aáuiíoóeéêy]",
-				"(ez[32768]|eS[32768]|eks|egz)",
-			},
+			pattern:  "pf",
+			phonetic: "(pf|p|f)",
 		},
 		{
-			patterns: [4]string{
-				"ex",
-				"",
-				"[cs]",
-				"(e[32768]|ek)",
-			},
+			pattern:      "que",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(k[64]|ke|kve)",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"u",
-				"$",
-				"(ks|[64])",
-			},
+			pattern:  "qu",
+			phonetic: "(kv|k)",
 		},
 		{
-			patterns: [4]string{
-				"ck",
-				"",
-				"",
-				"(k|tsk[16392])",
-			},
+			pattern:      "m",
+			rightContext: regexp.MustCompile("^[bfpv]"),
+			phonetic:     "(m|n)",
 		},
 		{
-			patterns: [4]string{
-				"cz",
-				"",
-				"",
-				"(tS|tsz[8])",
-			},
+			pattern:      "m",
+			leftContext:  regexp.MustCompile("[aeiouy]$"),
+			rightContext: regexp.MustCompile("^[aeiouy]"),
+			phonetic:     "m",
 		},
 		{
-			patterns: [4]string{
-				"rh",
-				"^",
-				"",
-				"r",
-			},
+			pattern:     "m",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(m|n[32832])",
 		},
 		{
-			patterns: [4]string{
-				"dh",
-				"^",
-				"",
-				"d",
-			},
+			pattern:      "ly",
+			rightContext: regexp.MustCompile("^[au]"),
+			phonetic:     "(l|lj)",
 		},
 		{
-			patterns: [4]string{
-				"bh",
-				"^",
-				"",
-				"b",
-			},
+			pattern:      "li",
+			rightContext: regexp.MustCompile("^[au]"),
+			phonetic:     "(l|lj)",
 		},
 		{
-			patterns: [4]string{
-				"ph",
-				"",
-				"",
-				"(ph|f)",
-			},
+			pattern:  "lio",
+			phonetic: "(lo|le[131072])",
 		},
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"(x[131104]|kh)",
-			},
+			pattern:  "lyo",
+			phonetic: "(lo|le[131072])",
 		},
 		{
-			patterns: [4]string{
-				"lh",
-				"",
-				"",
-				"(lh|l[32768])",
-			},
+			pattern:      "lt",
+			leftContext:  regexp.MustCompile("u$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lt|[64])",
 		},
 		{
-			patterns: [4]string{
-				"nh",
-				"",
-				"",
-				"(nh|nj[32768])",
-			},
+			pattern:     "v",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(v|f[128]|b[262144])",
 		},
 		{
-			patterns: [4]string{
-				"ssch",
-				"",
-				"",
-				"S",
-			},
+			pattern:      "ex",
+			rightContext: regexp.MustCompile("^[aáuiíoóeéêy]"),
+			phonetic:     "(ez[32768]|eS[32768]|eks|egz)",
 		},
 		{
-			patterns: [4]string{
-				"chsch",
-				"",
-				"",
-				"xS",
-			},
+			pattern:      "ex",
+			rightContext: regexp.MustCompile("^[cs]"),
+			phonetic:     "(e[32768]|ek)",
 		},
 		{
-			patterns: [4]string{
-				"tsch",
-				"",
-				"",
-				"tS",
-			},
+			pattern:      "x",
+			leftContext:  regexp.MustCompile("u$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ks|[64])",
 		},
 		{
-			patterns: [4]string{
-				"sch",
-				"[aeiouy]",
-				"[ei]",
-				"(S|StS[131072]|sk[69632])",
-			},
+			pattern:  "ck",
+			phonetic: "(k|tsk[16392])",
 		},
 		{
-			patterns: [4]string{
-				"sch",
-				"[aeiouy]",
-				"",
-				"(S|StS[131072])",
-			},
+			pattern:  "cz",
+			phonetic: "(tS|tsz[8])",
 		},
 		{
-			patterns: [4]string{
-				"sch",
-				"",
-				"[ei]",
-				"(sk[69632]|S|StS[131072])",
-			},
+			pattern:     "rh",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "r",
 		},
 		{
-			patterns: [4]string{
-				"sch",
-				"",
-				"",
-				"(S|StS[131072])",
-			},
+			pattern:     "dh",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "d",
 		},
 		{
-			patterns: [4]string{
-				"ssh",
-				"",
-				"",
-				"S",
-			},
+			pattern:     "bh",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "b",
 		},
 		{
-			patterns: [4]string{
-				"sh",
-				"",
-				"[äöü]",
-				"sh",
-			},
+			pattern:  "ph",
+			phonetic: "(ph|f)",
 		},
 		{
-			patterns: [4]string{
-				"sh",
-				"",
-				"[aeiou]",
-				"(S[131104]|sh)",
-			},
+			pattern:  "kh",
+			phonetic: "(x[131104]|kh)",
 		},
 		{
-			patterns: [4]string{
-				"sh",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "lh",
+			phonetic: "(lh|l[32768])",
 		},
 		{
-			patterns: [4]string{
-				"zh",
-				"",
-				"",
-				"(Z[131104]|zh|tsh[128])",
-			},
+			pattern:  "nh",
+			phonetic: "(nh|nj[32768])",
 		},
 		{
-			patterns: [4]string{
-				"chs",
-				"",
-				"",
-				"(ks[128]|xs|tSs[131104])",
-			},
+			pattern:  "ssch",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"[ei]",
-				"(x|tS[393248]|k[69632]|S[32832])",
-			},
+			pattern:  "chsch",
+			phonetic: "xS",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"(x|tS[393248]|S[32832])",
-			},
+			pattern:  "tsch",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"^",
-				"",
-				"t",
-			},
+			pattern:      "sch",
+			leftContext:  regexp.MustCompile("[aeiouy]$"),
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(S|StS[131072]|sk[69632])",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"[äöüaeiou]",
-				"(t[672]|th)",
-			},
+			pattern:     "sch",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(S|StS[131072])",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"",
-				"t",
-			},
+			pattern:      "sch",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(sk[69632]|S|StS[131072])",
 		},
 		{
-			patterns: [4]string{
-				"gh",
-				"",
-				"[ei]",
-				"(g[70144]|gh)",
-			},
+			pattern:  "sch",
+			phonetic: "(S|StS[131072])",
 		},
 		{
-			patterns: [4]string{
-				"ouh",
-				"",
-				"[aioe]",
-				"(v[64]|uh)",
-			},
+			pattern:  "ssh",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"uh",
-				"",
-				"[aioe]",
-				"(v|uh)",
-			},
+			pattern:      "sh",
+			rightContext: regexp.MustCompile("^[äöü]"),
+			phonetic:     "sh",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "sh",
+			rightContext: regexp.MustCompile("^[aeiou]"),
+			phonetic:     "(S[131104]|sh)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[aeiouyäöü]",
-				"",
-				"",
-			},
+			pattern:  "sh",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"^",
-				"",
-				"(h|x[66048]|H[381024])",
-			},
+			pattern:  "zh",
+			phonetic: "(Z[131104]|zh|tsh[128])",
 		},
 		{
-			patterns: [4]string{
-				"cia",
-				"",
-				"",
-				"(tSa[16384]|tsa)",
-			},
+			pattern:  "chs",
+			phonetic: "(ks[128]|xs|tSs[131104])",
 		},
 		{
-			patterns: [4]string{
-				"cią",
-				"",
-				"[bp]",
-				"(tSom|tsom)",
-			},
+			pattern:      "ch",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(x|tS[393248]|k[69632]|S[32832])",
 		},
 		{
-			patterns: [4]string{
-				"cią",
-				"",
-				"",
-				"(tSon[16384]|tson)",
-			},
+			pattern:  "ch",
+			phonetic: "(x|tS[393248]|S[32832])",
 		},
 		{
-			patterns: [4]string{
-				"cię",
-				"",
-				"[bp]",
-				"(tSem[16384]|tsem)",
-			},
+			pattern:     "th",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "t",
 		},
 		{
-			patterns: [4]string{
-				"cię",
-				"",
-				"",
-				"(tSen[16384]|tsen)",
-			},
+			pattern:      "th",
+			rightContext: regexp.MustCompile("^[äöüaeiou]"),
+			phonetic:     "(t[672]|th)",
 		},
 		{
-			patterns: [4]string{
-				"cie",
-				"",
-				"",
-				"(tSe[16384]|tse)",
-			},
+			pattern:  "th",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"cio",
-				"",
-				"",
-				"(tSo[16384]|tso)",
-			},
+			pattern:      "gh",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(g[70144]|gh)",
 		},
 		{
-			patterns: [4]string{
-				"ciu",
-				"",
-				"",
-				"(tSu[16384]|tsu)",
-			},
+			pattern:      "ouh",
+			rightContext: regexp.MustCompile("^[aioe]"),
+			phonetic:     "(v[64]|uh)",
 		},
 		{
-			patterns: [4]string{
-				"sci",
-				"",
-				"$",
-				"(Si[4096]|stsi[16392]|dZi[524288]|tSi[81920]|tS[65536]|si)",
-			},
+			pattern:      "uh",
+			rightContext: regexp.MustCompile("^[aioe]"),
+			phonetic:     "(v|uh)",
 		},
 		{
-			patterns: [4]string{
-				"sc",
-				"",
-				"[ei]",
-				"(S[4096]|sts[16392]|dZ[524288]|tS[81920]|s)",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"ci",
-				"",
-				"$",
-				"(tsi[16392]|dZi[524288]|tSi[81920]|tS[65536]|si)",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[aeiouyäöü]$"),
+			phonetic:    "",
 		},
 		{
-			patterns: [4]string{
-				"cy",
-				"",
-				"",
-				"(si|tsi[16384])",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(h|x[66048]|H[381024])",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[ei]",
-				"(ts[16392]|dZ[524288]|tS[81920]|k[512]|s)",
-			},
+			pattern:  "cia",
+			phonetic: "(tSa[16384]|tsa)",
 		},
 		{
-			patterns: [4]string{
-				"sç",
-				"",
-				"[aeiou]",
-				"(s|stS[524288])",
-			},
+			pattern:      "cią",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(tSom|tsom)",
 		},
 		{
-			patterns: [4]string{
-				"ssz",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "cią",
+			phonetic: "(tSon[16384]|tson)",
 		},
 		{
-			patterns: [4]string{
-				"sz",
-				"^",
-				"",
-				"(S|s[2048])",
-			},
+			pattern:      "cię",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(tSem[16384]|tsem)",
 		},
 		{
-			patterns: [4]string{
-				"sz",
-				"",
-				"$",
-				"(S|s[2048])",
-			},
+			pattern:  "cię",
+			phonetic: "(tSen[16384]|tsen)",
 		},
 		{
-			patterns: [4]string{
-				"sz",
-				"",
-				"",
-				"(S|s[2048]|sts[128])",
-			},
+			pattern:  "cie",
+			phonetic: "(tSe[16384]|tse)",
 		},
 		{
-			patterns: [4]string{
-				"ssp",
-				"",
-				"",
-				"(Sp[128]|sp)",
-			},
+			pattern:  "cio",
+			phonetic: "(tSo[16384]|tso)",
 		},
 		{
-			patterns: [4]string{
-				"sp",
-				"",
-				"",
-				"(Sp[128]|sp)",
-			},
+			pattern:  "ciu",
+			phonetic: "(tSu[16384]|tsu)",
 		},
 		{
-			patterns: [4]string{
-				"sst",
-				"",
-				"",
-				"(St[128]|st)",
-			},
+			pattern:      "sci",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(Si[4096]|stsi[16392]|dZi[524288]|tSi[81920]|tS[65536]|si)",
 		},
 		{
-			patterns: [4]string{
-				"st",
-				"",
-				"",
-				"(St[128]|st)",
-			},
+			pattern:      "sc",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(S[4096]|sts[16392]|dZ[524288]|tS[81920]|s)",
 		},
 		{
-			patterns: [4]string{
-				"ss",
-				"",
-				"",
-				"s",
-			},
+			pattern:      "ci",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(tsi[16392]|dZi[524288]|tSi[81920]|tS[65536]|si)",
 		},
 		{
-			patterns: [4]string{
-				"sj",
-				"^",
-				"",
-				"S",
-			},
+			pattern:  "cy",
+			phonetic: "(si|tsi[16384])",
 		},
 		{
-			patterns: [4]string{
-				"sj",
-				"",
-				"$",
-				"S",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(ts[16392]|dZ[524288]|tS[81920]|k[512]|s)",
 		},
 		{
-			patterns: [4]string{
-				"sj",
-				"",
-				"",
-				"(sj|S[16]|sx[262144]|sZ[589824])",
-			},
+			pattern:      "sç",
+			rightContext: regexp.MustCompile("^[aeiou]"),
+			phonetic:     "(s|stS[524288])",
 		},
 		{
-			patterns: [4]string{
-				"sia",
-				"",
-				"",
-				"(Sa[16384]|sa[16384]|sja)",
-			},
+			pattern:  "ssz",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"sią",
-				"",
-				"[bp]",
-				"(Som[16384]|som)",
-			},
+			pattern:     "sz",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(S|s[2048])",
 		},
 		{
-			patterns: [4]string{
-				"sią",
-				"",
-				"",
-				"(Son[16384]|son)",
-			},
+			pattern:      "sz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(S|s[2048])",
 		},
 		{
-			patterns: [4]string{
-				"się",
-				"",
-				"[bp]",
-				"(Sem[16384]|sem)",
-			},
+			pattern:  "sz",
+			phonetic: "(S|s[2048]|sts[128])",
 		},
 		{
-			patterns: [4]string{
-				"się",
-				"",
-				"",
-				"(Sen[16384]|sen)",
-			},
+			pattern:  "ssp",
+			phonetic: "(Sp[128]|sp)",
 		},
 		{
-			patterns: [4]string{
-				"sie",
-				"",
-				"",
-				"(se|sje|Se[16384]|zi[128])",
-			},
+			pattern:  "sp",
+			phonetic: "(Sp[128]|sp)",
 		},
 		{
-			patterns: [4]string{
-				"sio",
-				"",
-				"",
-				"(So[16384]|so)",
-			},
+			pattern:  "sst",
+			phonetic: "(St[128]|st)",
 		},
 		{
-			patterns: [4]string{
-				"siu",
-				"",
-				"",
-				"(Su[16384]|sju)",
-			},
+			pattern:  "st",
+			phonetic: "(St[128]|st)",
 		},
 		{
-			patterns: [4]string{
-				"si",
-				"[äöëaáuiíoóeéêy]",
-				"",
-				"(Si[16384]|si|zi[37056])",
-			},
+			pattern:  "ss",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"si",
-				"",
-				"",
-				"(Si[16384]|si|zi[128])",
-			},
+			pattern:     "sj",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "S",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"[aáuiíoóeéêy]",
-				"[aáuíoóeéêy]",
-				"(s|z[37056])",
-			},
+			pattern:      "sj",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "S",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"[aeouäöë]",
-				"(s|z[128])",
-			},
+			pattern:  "sj",
+			phonetic: "(sj|S[16]|sx[262144]|sZ[589824])",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"[aeiouy]",
-				"[dglmnrv]",
-				"(s|z|Z[32768]|[64])",
-			},
+			pattern:  "sia",
+			phonetic: "(Sa[16384]|sa[16384]|sja)",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"[dglmnrv]",
-				"(s|z|Z[32768])",
-			},
+			pattern:      "sią",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Som[16384]|som)",
 		},
 		{
-			patterns: [4]string{
-				"gue",
-				"",
-				"$",
-				"(k[64]|gve)",
-			},
+			pattern:  "sią",
+			phonetic: "(Son[16384]|son)",
 		},
 		{
-			patterns: [4]string{
-				"gu",
-				"",
-				"[ei]",
-				"(g[64]|gv[294912])",
-			},
+			pattern:      "się",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Sem[16384]|sem)",
 		},
 		{
-			patterns: [4]string{
-				"gu",
-				"",
-				"[ao]",
-				"gv",
-			},
+			pattern:  "się",
+			phonetic: "(Sen[16384]|sen)",
 		},
 		{
-			patterns: [4]string{
-				"guy",
-				"",
-				"",
-				"gi",
-			},
+			pattern:  "sie",
+			phonetic: "(se|sje|Se[16384]|zi[128])",
 		},
 		{
-			patterns: [4]string{
-				"gli",
-				"",
-				"",
-				"(glI|l[4096])",
-			},
+			pattern:  "sio",
+			phonetic: "(So[16384]|so)",
 		},
 		{
-			patterns: [4]string{
-				"gni",
-				"",
-				"",
-				"(gnI|ni[4160])",
-			},
+			pattern:  "siu",
+			phonetic: "(Su[16384]|sju)",
 		},
 		{
-			patterns: [4]string{
-				"gn",
-				"",
-				"[aeou]",
-				"(n[4160]|nj[4160]|gn)",
-			},
+			pattern:     "si",
+			leftContext: regexp.MustCompile("[äöëaáuiíoóeéêy]$"),
+			phonetic:    "(Si[16384]|si|zi[37056])",
 		},
 		{
-			patterns: [4]string{
-				"ggie",
-				"",
-				"",
-				"(je[512]|dZe)",
-			},
+			pattern:  "si",
+			phonetic: "(Si[16384]|si|zi[128])",
 		},
 		{
-			patterns: [4]string{
-				"ggi",
-				"",
-				"[aou]",
-				"(j[512]|dZ)",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aáuiíoóeéêy]$"),
+			rightContext: regexp.MustCompile("^[aáuíoóeéêy]"),
+			phonetic:     "(s|z[37056])",
 		},
 		{
-			patterns: [4]string{
-				"ggi",
-				"[yaeiou]",
-				"[aou]",
-				"(gI|dZ[4096]|j[512])",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^[aeouäöë]"),
+			phonetic:     "(s|z[128])",
 		},
 		{
-			patterns: [4]string{
-				"gge",
-				"[yaeiou]",
-				"",
-				"(gE|xe[262144]|gZe[32832]|dZe[331808]|je[512])",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aeiouy]$"),
+			rightContext: regexp.MustCompile("^[dglmnrv]"),
+			phonetic:     "(s|z|Z[32768]|[64])",
 		},
 		{
-			patterns: [4]string{
-				"ggi",
-				"[yaeiou]",
-				"",
-				"(gI|xi[262144]|gZi[32832]|dZi[331808]|i[512])",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^[dglmnrv]"),
+			phonetic:     "(s|z|Z[32768])",
 		},
 		{
-			patterns: [4]string{
-				"ggi",
-				"",
-				"[aou]",
-				"(gI|dZ[4096]|j[512])",
-			},
+			pattern:      "gue",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(k[64]|gve)",
 		},
 		{
-			patterns: [4]string{
-				"gie",
-				"",
-				"$",
-				"(ge|gi[128]|ji[64]|dZe[4096])",
-			},
+			pattern:      "gu",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(g[64]|gv[294912])",
 		},
 		{
-			patterns: [4]string{
-				"gie",
-				"",
-				"",
-				"(ge|gi[128]|dZe[4096]|je[512])",
-			},
+			pattern:      "gu",
+			rightContext: regexp.MustCompile("^[ao]"),
+			phonetic:     "gv",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"",
-				"[aou]",
-				"(i[512]|dZ)",
-			},
+			pattern:  "guy",
+			phonetic: "gi",
 		},
 		{
-			patterns: [4]string{
-				"ge",
-				"[yaeiou]",
-				"",
-				"(gE|xe[262144]|Ze[32832]|dZe[331808])",
-			},
+			pattern:  "gli",
+			phonetic: "(glI|l[4096])",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"[yaeiou]",
-				"",
-				"(gI|xi[262144]|Zi[32832]|dZi[331808])",
-			},
+			pattern:  "gni",
+			phonetic: "(gnI|ni[4160])",
 		},
 		{
-			patterns: [4]string{
-				"ge",
-				"",
-				"",
-				"(gE|xe[262144]|hE[131072]|je[512]|Ze[32832]|dZe[331808])",
-			},
+			pattern:      "gn",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "(n[4160]|nj[4160]|gn)",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"",
-				"",
-				"(gI|xi[262144]|hI[131072]|i[512]|Zi[32832]|dZi[331808])",
-			},
+			pattern:  "ggie",
+			phonetic: "(je[512]|dZe)",
 		},
 		{
-			patterns: [4]string{
-				"gy",
-				"",
-				"[aeouáéóúüöőű]",
-				"(gi|dj[2048])",
-			},
+			pattern:      "ggi",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "(j[512]|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"gy",
-				"",
-				"",
-				"(gi|d[2048])",
-			},
+			pattern:      "ggi",
+			leftContext:  regexp.MustCompile("[yaeiou]$"),
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "(gI|dZ[4096]|j[512])",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"[yaeiou]",
-				"[aouyei]",
-				"g",
-			},
+			pattern:     "gge",
+			leftContext: regexp.MustCompile("[yaeiou]$"),
+			phonetic:    "(gE|xe[262144]|gZe[32832]|dZe[331808]|je[512])",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[aouei]",
-				"(g|h[131072])",
-			},
+			pattern:     "ggi",
+			leftContext: regexp.MustCompile("[yaeiou]$"),
+			phonetic:    "(gI|xi[262144]|gZi[32832]|dZi[331808]|i[512])",
 		},
 		{
-			patterns: [4]string{
-				"ij",
-				"",
-				"",
-				"(i|ej[16]|ix[262144]|iZ[622656])",
-			},
+			pattern:      "ggi",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "(gI|dZ[4096]|j[512])",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"[aoeiuy]",
-				"(j|dZ[32]|x[262144]|Z[622656])",
-			},
+			pattern:      "gie",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ge|gi[128]|ji[64]|dZe[4096])",
 		},
 		{
-			patterns: [4]string{
-				"rz",
-				"t",
-				"",
-				"(S[16384]|r)",
-			},
+			pattern:  "gie",
+			phonetic: "(ge|gi[128]|dZe[4096]|je[512])",
 		},
 		{
-			patterns: [4]string{
-				"rz",
-				"",
-				"",
-				"(rz|rts[128]|Z[16384]|r[16384]|rZ[16384])",
-			},
+			pattern:      "gi",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "(i[512]|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"$",
-				"(ts|tS[160])",
-			},
+			pattern:     "ge",
+			leftContext: regexp.MustCompile("[yaeiou]$"),
+			phonetic:    "(gE|xe[262144]|Ze[32832]|dZe[331808])",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"^",
-				"",
-				"(ts[131232]|tS[160])",
-			},
+			pattern:     "gi",
+			leftContext: regexp.MustCompile("[yaeiou]$"),
+			phonetic:    "(gI|xi[262144]|Zi[32832]|dZi[331808])",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"",
-				"(ts[131232]|tz)",
-			},
+			pattern:  "ge",
+			phonetic: "(gE|xe[262144]|hE[131072]|je[512]|Ze[32832]|dZe[331808])",
 		},
 		{
-			patterns: [4]string{
-				"zia",
-				"",
-				"[bcdgkpstwzż]",
-				"(Za[16384]|za[16384]|zja)",
-			},
+			pattern:  "gi",
+			phonetic: "(gI|xi[262144]|hI[131072]|i[512]|Zi[32832]|dZi[331808])",
 		},
 		{
-			patterns: [4]string{
-				"zia",
-				"",
-				"",
-				"(Za[16384]|zja)",
-			},
+			pattern:      "gy",
+			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
+			phonetic:     "(gi|dj[2048])",
 		},
 		{
-			patterns: [4]string{
-				"zią",
-				"",
-				"[bp]",
-				"(Zom[16384]|zom)",
-			},
+			pattern:  "gy",
+			phonetic: "(gi|d[2048])",
 		},
 		{
-			patterns: [4]string{
-				"zią",
-				"",
-				"",
-				"(Zon[16384]|zon)",
-			},
+			pattern:      "g",
+			leftContext:  regexp.MustCompile("[yaeiou]$"),
+			rightContext: regexp.MustCompile("^[aouyei]"),
+			phonetic:     "g",
 		},
 		{
-			patterns: [4]string{
-				"zię",
-				"",
-				"[bp]",
-				"(Zem[16384]|zem)",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[aouei]"),
+			phonetic:     "(g|h[131072])",
 		},
 		{
-			patterns: [4]string{
-				"zię",
-				"",
-				"",
-				"(Zen[16384]|zen)",
-			},
+			pattern:  "ij",
+			phonetic: "(i|ej[16]|ix[262144]|iZ[622656])",
 		},
 		{
-			patterns: [4]string{
-				"zie",
-				"",
-				"[bcdgkpstwzż]",
-				"(Ze[16384]|ze[16384]|ze|tsi[128])",
-			},
+			pattern:      "j",
+			rightContext: regexp.MustCompile("^[aoeiuy]"),
+			phonetic:     "(j|dZ[32]|x[262144]|Z[622656])",
 		},
 		{
-			patterns: [4]string{
-				"zie",
-				"",
-				"",
-				"(ze|Ze[16384]|tsi[128])",
-			},
+			pattern:     "rz",
+			leftContext: regexp.MustCompile("t$"),
+			phonetic:    "(S[16384]|r)",
 		},
 		{
-			patterns: [4]string{
-				"zio",
-				"",
-				"",
-				"(Zo[16384]|zo)",
-			},
+			pattern:  "rz",
+			phonetic: "(rz|rts[128]|Z[16384]|r[16384]|rZ[16384])",
 		},
 		{
-			patterns: [4]string{
-				"ziu",
-				"",
-				"",
-				"(Zu[16384]|zju)",
-			},
+			pattern:      "tz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ts|tS[160])",
 		},
 		{
-			patterns: [4]string{
-				"zi",
-				"",
-				"",
-				"(Zi[16384]|zi|tsi[128]|dzi[4096]|tsi[4096]|si[262144])",
-			},
+			pattern:     "tz",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(ts[131232]|tS[160])",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"$",
-				"(s|ts[128]|ts[4096]|S[32768])",
-			},
+			pattern:  "tz",
+			phonetic: "(ts[131232]|tz)",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"[bdgv]",
-				"(z|dz[4096]|Z[32768])",
-			},
+			pattern:      "zia",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(Za[16384]|za[16384]|zja)",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"[ptckf]",
-				"(s|ts[4096]|S[32768])",
-			},
+			pattern:  "zia",
+			phonetic: "(Za[16384]|zja)",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:      "zią",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Zom[16384]|zom)",
 		},
 		{
-			patterns: [4]string{
-				"oue",
-				"",
-				"",
-				"(oue|ve[64])",
-			},
+			pattern:  "zią",
+			phonetic: "(Zon[16384]|zon)",
 		},
 		{
-			patterns: [4]string{
-				"eau",
-				"",
-				"",
-				"o",
-			},
+			pattern:      "zię",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Zem[16384]|zem)",
 		},
 		{
-			patterns: [4]string{
-				"ae",
-				"",
-				"",
-				"(Y[128]|aje[131072]|ae)",
-			},
+			pattern:  "zię",
+			phonetic: "(Zen[16384]|zen)",
 		},
 		{
-			patterns: [4]string{
-				"ai",
-				"",
-				"",
-				"aj",
-			},
+			pattern:      "zie",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(Ze[16384]|ze[16384]|ze|tsi[128])",
 		},
 		{
-			patterns: [4]string{
-				"au",
-				"",
-				"",
-				"(au|o[64])",
-			},
+			pattern:  "zie",
+			phonetic: "(ze|Ze[16384]|tsi[128])",
 		},
 		{
-			patterns: [4]string{
-				"ay",
-				"",
-				"",
-				"aj",
-			},
+			pattern:  "zio",
+			phonetic: "(Zo[16384]|zo)",
 		},
 		{
-			patterns: [4]string{
-				"ão",
-				"",
-				"",
-				"(au|an)",
-			},
+			pattern:  "ziu",
+			phonetic: "(Zu[16384]|zju)",
 		},
 		{
-			patterns: [4]string{
-				"ãe",
-				"",
-				"",
-				"(aj|an)",
-			},
+			pattern:  "zi",
+			phonetic: "(Zi[16384]|zi|tsi[128]|dzi[4096]|tsi[4096]|si[262144])",
 		},
 		{
-			patterns: [4]string{
-				"ãi",
-				"",
-				"",
-				"(aj|an)",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(s|ts[128]|ts[4096]|S[32768])",
 		},
 		{
-			patterns: [4]string{
-				"ea",
-				"",
-				"",
-				"(ea|ja[65536])",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^[bdgv]"),
+			phonetic:     "(z|dz[4096]|Z[32768])",
 		},
 		{
-			patterns: [4]string{
-				"ee",
-				"",
-				"",
-				"(i[32]|aje[131072]|e)",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^[ptckf]"),
+			phonetic:     "(s|ts[4096]|S[32768])",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"",
-				"(eu|Yj[128]|ej[128]|oj[128]|Y[16])",
-			},
+			pattern:  "oue",
+			phonetic: "(oue|ve[64])",
 		},
 		{
-			patterns: [4]string{
-				"ey",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:  "eau",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ia",
-				"",
-				"",
-				"ja",
-			},
+			pattern:  "ae",
+			phonetic: "(Y[128]|aje[131072]|ae)",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"(i[128]|e[16384]|ije[131072]|Q[16]|je)",
-			},
+			pattern:  "ai",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"ii",
-				"",
-				"$",
-				"i",
-			},
+			pattern:  "au",
+			phonetic: "(au|o[64])",
 		},
 		{
-			patterns: [4]string{
-				"io",
-				"",
-				"",
-				"(jo|e[131072])",
-			},
+			pattern:  "ay",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"iu",
-				"",
-				"",
-				"ju",
-			},
+			pattern:  "ão",
+			phonetic: "(au|an)",
 		},
 		{
-			patterns: [4]string{
-				"iy",
-				"",
-				"$",
-				"i",
-			},
+			pattern:  "ãe",
+			phonetic: "(aj|an)",
 		},
 		{
-			patterns: [4]string{
-				"oe",
-				"",
-				"",
-				"(Y[128]|oje[131072]|u[16]|oe)",
-			},
+			pattern:  "ãi",
+			phonetic: "(aj|an)",
 		},
 		{
-			patterns: [4]string{
-				"oi",
-				"",
-				"",
-				"oj",
-			},
+			pattern:  "ea",
+			phonetic: "(ea|ja[65536])",
 		},
 		{
-			patterns: [4]string{
-				"oo",
-				"",
-				"",
-				"(u[32]|o)",
-			},
+			pattern:  "ee",
+			phonetic: "(i[32]|aje[131072]|e)",
 		},
 		{
-			patterns: [4]string{
-				"ou",
-				"",
-				"",
-				"(ou|u[576]|au[16])",
-			},
+			pattern:  "ei",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"où",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "eu",
+			phonetic: "(eu|Yj[128]|ej[128]|oj[128]|Y[16])",
 		},
 		{
-			patterns: [4]string{
-				"oy",
-				"",
-				"",
-				"oj",
-			},
+			pattern:  "ey",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"õe",
-				"",
-				"",
-				"(oj|on)",
-			},
+			pattern:  "ia",
+			phonetic: "ja",
 		},
 		{
-			patterns: [4]string{
-				"ua",
-				"",
-				"",
-				"va",
-			},
+			pattern:  "ie",
+			phonetic: "(i[128]|e[16384]|ije[131072]|Q[16]|je)",
 		},
 		{
-			patterns: [4]string{
-				"ue",
-				"",
-				"",
-				"(Q[128]|uje[131072]|ve)",
-			},
+			pattern:      "ii",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"ui",
-				"",
-				"",
-				"(uj|vi|Y[16])",
-			},
+			pattern:  "io",
+			phonetic: "(jo|e[131072])",
 		},
 		{
-			patterns: [4]string{
-				"uu",
-				"",
-				"",
-				"(u|Q[16])",
-			},
+			pattern:  "iu",
+			phonetic: "ju",
 		},
 		{
-			patterns: [4]string{
-				"uo",
-				"",
-				"",
-				"(vo|o)",
-			},
+			pattern:      "iy",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"uy",
-				"",
-				"",
-				"uj",
-			},
+			pattern:  "oe",
+			phonetic: "(Y[128]|oje[131072]|u[16]|oe)",
 		},
 		{
-			patterns: [4]string{
-				"ya",
-				"",
-				"",
-				"ja",
-			},
+			pattern:  "oi",
+			phonetic: "oj",
 		},
 		{
-			patterns: [4]string{
-				"ye",
-				"",
-				"",
-				"(je|ije[131072])",
-			},
+			pattern:  "oo",
+			phonetic: "(u[32]|o)",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"^",
-				"",
-				"i",
-			},
+			pattern:  "ou",
+			phonetic: "(ou|u[576]|au[16])",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"",
-				"$",
-				"i",
-			},
+			pattern:  "où",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"yo",
-				"",
-				"",
-				"(jo|e[131072])",
-			},
+			pattern:  "oy",
+			phonetic: "oj",
 		},
 		{
-			patterns: [4]string{
-				"yu",
-				"",
-				"",
-				"ju",
-			},
+			pattern:  "õe",
+			phonetic: "(oj|on)",
 		},
 		{
-			patterns: [4]string{
-				"yy",
-				"",
-				"$",
-				"i",
-			},
+			pattern:  "ua",
+			phonetic: "va",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[áóéê]",
-				"",
-				"j",
-			},
+			pattern:  "ue",
+			phonetic: "(Q[128]|uje[131072]|ve)",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[áóéê]",
-				"",
-				"j",
-			},
+			pattern:  "ui",
+			phonetic: "(uj|vi|Y[16])",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"^",
-				"",
-				"(e|je[131072])",
-			},
+			pattern:  "uu",
+			phonetic: "(u|Q[16])",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"$",
-				"(e|EE[96])",
-			},
+			pattern:  "uo",
+			phonetic: "(vo|o)",
 		},
 		{
-			patterns: [4]string{
-				"ą",
-				"",
-				"[bp]",
-				"om",
-			},
+			pattern:  "uy",
+			phonetic: "uj",
 		},
 		{
-			patterns: [4]string{
-				"ą",
-				"",
-				"",
-				"on",
-			},
+			pattern:  "ya",
+			phonetic: "ja",
 		},
 		{
-			patterns: [4]string{
-				"ä",
-				"",
-				"",
-				"(Y|e)",
-			},
+			pattern:  "ye",
+			phonetic: "(je|ije[131072])",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"",
-				"a",
-			},
+			pattern:     "yi",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "i",
 		},
 		{
-			patterns: [4]string{
-				"à",
-				"",
-				"",
-				"a",
-			},
+			pattern:      "yi",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"â",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "yo",
+			phonetic: "(jo|e[131072])",
 		},
 		{
-			patterns: [4]string{
-				"ã",
-				"",
-				"",
-				"(a|an)",
-			},
+			pattern:  "yu",
+			phonetic: "ju",
 		},
 		{
-			patterns: [4]string{
-				"ă",
-				"",
-				"",
-				"(e[65536]|a)",
-			},
+			pattern:      "yy",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"ā",
-				"",
-				"",
-				"a",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[áóéê]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"č",
-				"",
-				"",
-				"tS",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[áóéê]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"ć",
-				"",
-				"",
-				"(tS[16384]|ts)",
-			},
+			pattern:     "e",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(e|je[131072])",
 		},
 		{
-			patterns: [4]string{
-				"ç",
-				"",
-				"",
-				"(s|tS[524288])",
-			},
+			pattern:      "e",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(e|EE[96])",
 		},
 		{
-			patterns: [4]string{
-				"ď",
-				"",
-				"",
-				"(d|dj[8])",
-			},
+			pattern:      "ą",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "om",
 		},
 		{
-			patterns: [4]string{
-				"ę",
-				"",
-				"[bp]",
-				"em",
-			},
+			pattern:  "ą",
+			phonetic: "on",
 		},
 		{
-			patterns: [4]string{
-				"ę",
-				"",
-				"",
-				"en",
-			},
+			pattern:  "ä",
+			phonetic: "(Y|e)",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "á",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"è",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "à",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"ê",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "â",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"ě",
-				"",
-				"",
-				"(e|je[8])",
-			},
+			pattern:  "ã",
+			phonetic: "(a|an)",
 		},
 		{
-			patterns: [4]string{
-				"ē",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "ă",
+			phonetic: "(e[65536]|a)",
 		},
 		{
-			patterns: [4]string{
-				"ģ",
-				"",
-				"",
-				"(d|dj)",
-			},
+			pattern:  "ā",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"ğ",
-				"",
-				"",
-				"",
-			},
+			pattern:  "č",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"í",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ć",
+			phonetic: "(tS[16384]|ts)",
 		},
 		{
-			patterns: [4]string{
-				"î",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ç",
+			phonetic: "(s|tS[524288])",
 		},
 		{
-			patterns: [4]string{
-				"ī",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ď",
+			phonetic: "(d|dj[8])",
 		},
 		{
-			patterns: [4]string{
-				"ı",
-				"",
-				"",
-				"(i|e[524288]|[524288])",
-			},
+			pattern:      "ę",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "em",
 		},
 		{
-			patterns: [4]string{
-				"ķ",
-				"",
-				"",
-				"(k|t[8192]|tj[8192])",
-			},
+			pattern:  "ę",
+			phonetic: "en",
 		},
 		{
-			patterns: [4]string{
-				"ļ",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ł",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "è",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ń",
-				"",
-				"",
-				"(n|nj[16384])",
-			},
+			pattern:  "ê",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ñ",
-				"",
-				"",
-				"(n|nj[262144])",
-			},
+			pattern:  "ě",
+			phonetic: "(e|je[8])",
 		},
 		{
-			patterns: [4]string{
-				"ņ",
-				"",
-				"",
-				"(n|nj[8192])",
-			},
+			pattern:  "ē",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"(u[16384]|o)",
-			},
+			pattern:  "ģ",
+			phonetic: "(d|dj)",
 		},
 		{
-			patterns: [4]string{
-				"ô",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ğ",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"õ",
-				"",
-				"",
-				"(o|on[32768]|Y[2048])",
-			},
+			pattern:  "í",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ò",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "î",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ö",
-				"",
-				"",
-				"Y",
-			},
+			pattern:  "ī",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ř",
-				"",
-				"",
-				"(r|rZ[8])",
-			},
+			pattern:  "ı",
+			phonetic: "(i|e[524288]|[524288])",
 		},
 		{
-			patterns: [4]string{
-				"ś",
-				"",
-				"",
-				"(S[16384]|s)",
-			},
+			pattern:  "ķ",
+			phonetic: "(k|t[8192]|tj[8192])",
 		},
 		{
-			patterns: [4]string{
-				"ş",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "ļ",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"š",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "ł",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"ţ",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "ń",
+			phonetic: "(n|nj[16384])",
 		},
 		{
-			patterns: [4]string{
-				"ť",
-				"",
-				"",
-				"(t|tj[8])",
-			},
+			pattern:  "ñ",
+			phonetic: "(n|nj[262144])",
 		},
 		{
-			patterns: [4]string{
-				"ű",
-				"",
-				"",
-				"Q",
-			},
+			pattern:  "ņ",
+			phonetic: "(n|nj[8192])",
 		},
 		{
-			patterns: [4]string{
-				"ü",
-				"",
-				"",
-				"(Q|u[294912])",
-			},
+			pattern:  "ó",
+			phonetic: "(u[16384]|o)",
 		},
 		{
-			patterns: [4]string{
-				"ū",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ô",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ú",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "õ",
+			phonetic: "(o|on[32768]|Y[2048])",
 		},
 		{
-			patterns: [4]string{
-				"ů",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ò",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ù",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ö",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ý",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ř",
+			phonetic: "(r|rZ[8])",
 		},
 		{
-			patterns: [4]string{
-				"ż",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "ś",
+			phonetic: "(S[16384]|s)",
 		},
 		{
-			patterns: [4]string{
-				"ź",
-				"",
-				"",
-				"(Z[16384]|z)",
-			},
+			pattern:  "ş",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ž",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "š",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ß",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ţ",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"'",
-				"",
-				"",
-				"",
-			},
+			pattern:  "ť",
+			phonetic: "(t|tj[8])",
 		},
 		{
-			patterns: [4]string{
-				"\"",
-				"",
-				"",
-				"",
-			},
+			pattern:  "ű",
+			phonetic: "Q",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"[bcćdgklłmnńrsśtwzźż]",
-				"(O|P[16384])",
-			},
+			pattern:  "ü",
+			phonetic: "(Q|u[294912])",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"A",
-			},
+			pattern:  "ū",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"B",
-			},
+			pattern:  "ú",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"(k|ts[16392]|dZ[524288])",
-			},
+			pattern:  "ů",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "ù",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "ý",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "ż",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "ź",
+			phonetic: "(Z[16384]|z)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"(h|x[65536]|H[299072])",
-			},
+			pattern:  "ž",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "ß",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"(j|x[262144]|Z[622656])",
-			},
+			pattern:  "'",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "\"",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:      "o",
+			rightContext: regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
+			phonetic:     "(O|P[16384])",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "A",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"O",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"(s|S[32768])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"U",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"V",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"(v|w[48])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"(ks|gz|S[294912])",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"(z|ts[128]|dz[4096]|ts[4096]|s[262144])",
-			},
+			pattern:  "b",
+			phonetic: "B",
+		},
+		{
+			pattern:  "c",
+			phonetic: "(k|ts[16392]|dZ[524288])",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "E",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "(h|x[65536]|H[299072])",
+		},
+		{
+			pattern:  "i",
+			phonetic: "I",
+		},
+		{
+			pattern:  "j",
+			phonetic: "(j|x[262144]|Z[622656])",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "O",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "(s|S[32768])",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "U",
+		},
+		{
+			pattern:  "v",
+			phonetic: "V",
+		},
+		{
+			pattern:  "w",
+			phonetic: "(v|w[48])",
+		},
+		{
+			pattern:  "x",
+			phonetic: "(ks|gz|S[294912])",
+		},
+		{
+			pattern:  "y",
+			phonetic: "i",
+		},
+		{
+			pattern:  "z",
+			phonetic: "(z|ts[128]|dz[4096]|ts[4096]|s[262144])",
 		},
 	},
 	genarabic: []rule{
 		{
-			patterns: [4]string{
-				"ا",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "ا",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"ب",
-				"",
-				"$",
-				"b",
-			},
+			pattern:      "ب",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "b",
 		},
 		{
-			patterns: [4]string{
-				"ب",
-				"",
-				"",
-				"b1",
-			},
+			pattern:  "ب",
+			phonetic: "b1",
 		},
 		{
-			patterns: [4]string{
-				"ت",
-				"",
-				"$",
-				"t",
-			},
+			pattern:      "ت",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "t",
 		},
 		{
-			patterns: [4]string{
-				"ت",
-				"",
-				"",
-				"t1",
-			},
+			pattern:  "ت",
+			phonetic: "t1",
 		},
 		{
-			patterns: [4]string{
-				"ث",
-				"",
-				"$",
-				"t",
-			},
+			pattern:      "ث",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "t",
 		},
 		{
-			patterns: [4]string{
-				"ث",
-				"",
-				"",
-				"t1",
-			},
+			pattern:  "ث",
+			phonetic: "t1",
 		},
 		{
-			patterns: [4]string{
-				"ج",
-				"",
-				"$",
-				"(dZ|Z)",
-			},
+			pattern:      "ج",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(dZ|Z)",
 		},
 		{
-			patterns: [4]string{
-				"ج",
-				"",
-				"",
-				"(dZ1|Z1)",
-			},
+			pattern:  "ج",
+			phonetic: "(dZ1|Z1)",
 		},
 		{
-			patterns: [4]string{
-				"ح",
-				"^",
-				"",
-				"1",
-			},
+			pattern:     "ح",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "1",
 		},
 		{
-			patterns: [4]string{
-				"ح",
-				"",
-				"$",
-				"1",
-			},
+			pattern:      "ح",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "1",
 		},
 		{
-			patterns: [4]string{
-				"ح",
-				"",
-				"",
-				"(h1|1)",
-			},
+			pattern:  "ح",
+			phonetic: "(h1|1)",
 		},
 		{
-			patterns: [4]string{
-				"خ",
-				"",
-				"$",
-				"x",
-			},
+			pattern:      "خ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "x",
 		},
 		{
-			patterns: [4]string{
-				"خ",
-				"",
-				"",
-				"x1",
-			},
+			pattern:  "خ",
+			phonetic: "x1",
 		},
 		{
-			patterns: [4]string{
-				"د",
-				"",
-				"$",
-				"d",
-			},
+			pattern:      "د",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "d",
 		},
 		{
-			patterns: [4]string{
-				"د",
-				"",
-				"",
-				"d1",
-			},
+			pattern:  "د",
+			phonetic: "d1",
 		},
 		{
-			patterns: [4]string{
-				"ذ",
-				"",
-				"$",
-				"d",
-			},
+			pattern:      "ذ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "d",
 		},
 		{
-			patterns: [4]string{
-				"ذ",
-				"",
-				"",
-				"d1",
-			},
+			pattern:  "ذ",
+			phonetic: "d1",
 		},
 		{
-			patterns: [4]string{
-				"ر",
-				"",
-				"$",
-				"r",
-			},
+			pattern:      "ر",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "r",
 		},
 		{
-			patterns: [4]string{
-				"ر",
-				"",
-				"",
-				"r1",
-			},
+			pattern:  "ر",
+			phonetic: "r1",
 		},
 		{
-			patterns: [4]string{
-				"ز",
-				"",
-				"$",
-				"z",
-			},
+			pattern:      "ز",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"ز",
-				"",
-				"",
-				"z1",
-			},
+			pattern:  "ز",
+			phonetic: "z1",
 		},
 		{
-			patterns: [4]string{
-				"س",
-				"",
-				"$",
-				"s",
-			},
+			pattern:      "س",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"س",
-				"",
-				"",
-				"s1",
-			},
+			pattern:  "س",
+			phonetic: "s1",
 		},
 		{
-			patterns: [4]string{
-				"ش",
-				"",
-				"$",
-				"S",
-			},
+			pattern:      "ش",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "S",
 		},
 		{
-			patterns: [4]string{
-				"ش",
-				"",
-				"",
-				"S1",
-			},
+			pattern:  "ش",
+			phonetic: "S1",
 		},
 		{
-			patterns: [4]string{
-				"ص",
-				"",
-				"$",
-				"s",
-			},
+			pattern:      "ص",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"ص",
-				"",
-				"",
-				"s1",
-			},
+			pattern:  "ص",
+			phonetic: "s1",
 		},
 		{
-			patterns: [4]string{
-				"ض",
-				"",
-				"$",
-				"d",
-			},
+			pattern:      "ض",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "d",
 		},
 		{
-			patterns: [4]string{
-				"ض",
-				"",
-				"",
-				"d1",
-			},
+			pattern:  "ض",
+			phonetic: "d1",
 		},
 		{
-			patterns: [4]string{
-				"ط",
-				"",
-				"$",
-				"t",
-			},
+			pattern:      "ط",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "t",
 		},
 		{
-			patterns: [4]string{
-				"ط",
-				"",
-				"",
-				"t1",
-			},
+			pattern:  "ط",
+			phonetic: "t1",
 		},
 		{
-			patterns: [4]string{
-				"ظ",
-				"",
-				"$",
-				"z",
-			},
+			pattern:      "ظ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"ظ",
-				"",
-				"",
-				"z1",
-			},
+			pattern:  "ظ",
+			phonetic: "z1",
 		},
 		{
-			patterns: [4]string{
-				"ع",
-				"^",
-				"",
-				"1",
-			},
+			pattern:     "ع",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "1",
 		},
 		{
-			patterns: [4]string{
-				"ع",
-				"",
-				"$",
-				"1",
-			},
+			pattern:      "ع",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "1",
 		},
 		{
-			patterns: [4]string{
-				"ع",
-				"",
-				"",
-				"(h1|1)",
-			},
+			pattern:  "ع",
+			phonetic: "(h1|1)",
 		},
 		{
-			patterns: [4]string{
-				"غ",
-				"",
-				"$",
-				"g",
-			},
+			pattern:      "غ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "g",
 		},
 		{
-			patterns: [4]string{
-				"غ",
-				"",
-				"",
-				"g1",
-			},
+			pattern:  "غ",
+			phonetic: "g1",
 		},
 		{
-			patterns: [4]string{
-				"ف",
-				"",
-				"$",
-				"f",
-			},
+			pattern:      "ف",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "f",
 		},
 		{
-			patterns: [4]string{
-				"ف",
-				"",
-				"",
-				"f1",
-			},
+			pattern:  "ف",
+			phonetic: "f1",
 		},
 		{
-			patterns: [4]string{
-				"ق",
-				"",
-				"$",
-				"k",
-			},
+			pattern:      "ق",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"ق",
-				"",
-				"",
-				"k1",
-			},
+			pattern:  "ق",
+			phonetic: "k1",
 		},
 		{
-			patterns: [4]string{
-				"ك",
-				"",
-				"$",
-				"k",
-			},
+			pattern:      "ك",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"ك",
-				"",
-				"",
-				"k1",
-			},
+			pattern:  "ك",
+			phonetic: "k1",
 		},
 		{
-			patterns: [4]string{
-				"ل",
-				"",
-				"$",
-				"l",
-			},
+			pattern:      "ل",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "l",
 		},
 		{
-			patterns: [4]string{
-				"ل",
-				"",
-				"",
-				"l1",
-			},
+			pattern:  "ل",
+			phonetic: "l1",
 		},
 		{
-			patterns: [4]string{
-				"م",
-				"",
-				"$",
-				"m",
-			},
+			pattern:      "م",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "m",
 		},
 		{
-			patterns: [4]string{
-				"م",
-				"",
-				"",
-				"m1",
-			},
+			pattern:  "م",
+			phonetic: "m1",
 		},
 		{
-			patterns: [4]string{
-				"ن",
-				"",
-				"$",
-				"n",
-			},
+			pattern:      "ن",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "n",
 		},
 		{
-			patterns: [4]string{
-				"ن",
-				"",
-				"",
-				"n1",
-			},
+			pattern:  "ن",
+			phonetic: "n1",
 		},
 		{
-			patterns: [4]string{
-				"ه",
-				"^",
-				"",
-				"1",
-			},
+			pattern:     "ه",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "1",
 		},
 		{
-			patterns: [4]string{
-				"ه",
-				"",
-				"$",
-				"1",
-			},
+			pattern:      "ه",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "1",
 		},
 		{
-			patterns: [4]string{
-				"ه",
-				"",
-				"",
-				"(h1|1)",
-			},
+			pattern:  "ه",
+			phonetic: "(h1|1)",
 		},
 		{
-			patterns: [4]string{
-				"و",
-				"",
-				"$",
-				"(u|v)",
-			},
+			pattern:      "و",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(u|v)",
 		},
 		{
-			patterns: [4]string{
-				"و",
-				"",
-				"",
-				"(u|v1)",
-			},
+			pattern:  "و",
+			phonetic: "(u|v1)",
 		},
 		{
-			patterns: [4]string{
-				"ي\u200e",
-				"",
-				"$",
-				"(i|j)",
-			},
+			pattern:      "ي\u200e",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(i|j)",
 		},
 		{
-			patterns: [4]string{
-				"ي\u200e",
-				"",
-				"",
-				"(i|j1)",
-			},
+			pattern:  "ي\u200e",
+			phonetic: "(i|j1)",
 		},
 	},
 	gencyrillic: []rule{
 		{
-			patterns: [4]string{
-				"ця",
-				"",
-				"",
-				"tsa",
-			},
-		},
-		{
-			patterns: [4]string{
-				"цю",
-				"",
-				"",
-				"tsu",
-			},
-		},
-		{
-			patterns: [4]string{
-				"циа",
-				"",
-				"",
-				"tsa",
-			},
-		},
-		{
-			patterns: [4]string{
-				"цие",
-				"",
-				"",
-				"tse",
-			},
-		},
-		{
-			patterns: [4]string{
-				"цио",
-				"",
-				"",
-				"tso",
-			},
-		},
-		{
-			patterns: [4]string{
-				"циу",
-				"",
-				"",
-				"tsu",
-			},
-		},
-		{
-			patterns: [4]string{
-				"сие",
-				"",
-				"",
-				"se",
-			},
-		},
-		{
-			patterns: [4]string{
-				"сио",
-				"",
-				"",
-				"so",
-			},
-		},
-		{
-			patterns: [4]string{
-				"зие",
-				"",
-				"",
-				"ze",
-			},
-		},
-		{
-			patterns: [4]string{
-				"зио",
-				"",
-				"",
-				"zo",
-			},
-		},
-		{
-			patterns: [4]string{
-				"с",
-				"",
-				"с",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"гауз",
-				"",
-				"$",
-				"haus",
-			},
-		},
-		{
-			patterns: [4]string{
-				"гаус",
-				"",
-				"$",
-				"haus",
-			},
+			pattern:  "ця",
+			phonetic: "tsa",
 		},
 		{
-			patterns: [4]string{
-				"гольц",
-				"",
-				"$",
-				"holts",
-			},
+			pattern:  "цю",
+			phonetic: "tsu",
 		},
 		{
-			patterns: [4]string{
-				"геймер",
-				"",
-				"$",
-				"(hejmer|hajmer)",
-			},
+			pattern:  "циа",
+			phonetic: "tsa",
 		},
 		{
-			patterns: [4]string{
-				"гейм",
-				"",
-				"$",
-				"(hejm|hajm)",
-			},
+			pattern:  "цие",
+			phonetic: "tse",
 		},
 		{
-			patterns: [4]string{
-				"гоф",
-				"",
-				"$",
-				"hof",
-			},
+			pattern:  "цио",
+			phonetic: "tso",
 		},
 		{
-			patterns: [4]string{
-				"гер",
-				"",
-				"$",
-				"ger",
-			},
+			pattern:  "циу",
+			phonetic: "tsu",
 		},
 		{
-			patterns: [4]string{
-				"ген",
-				"",
-				"$",
-				"gen",
-			},
+			pattern:  "сие",
+			phonetic: "se",
 		},
 		{
-			patterns: [4]string{
-				"гин",
-				"",
-				"$",
-				"gin",
-			},
+			pattern:  "сио",
+			phonetic: "so",
 		},
 		{
-			patterns: [4]string{
-				"г",
-				"(й|ё|я|ю|ы|а|е|о|и|у)",
-				"(а|е|о|и|у)",
-				"g",
-			},
+			pattern:  "зие",
+			phonetic: "ze",
 		},
 		{
-			patterns: [4]string{
-				"г",
-				"",
-				"(а|е|о|и|у)",
-				"(g|h)",
-			},
+			pattern:  "зио",
+			phonetic: "zo",
 		},
 		{
-			patterns: [4]string{
-				"ля",
-				"",
-				"",
-				"la",
-			},
+			pattern:      "с",
+			rightContext: regexp.MustCompile("^с"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"лю",
-				"",
-				"",
-				"lu",
-			},
+			pattern:      "гауз",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "haus",
 		},
 		{
-			patterns: [4]string{
-				"лё",
-				"",
-				"",
-				"(le|lo)",
-			},
+			pattern:      "гаус",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "haus",
 		},
 		{
-			patterns: [4]string{
-				"лио",
-				"",
-				"",
-				"(le|lo)",
-			},
+			pattern:      "гольц",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "holts",
 		},
 		{
-			patterns: [4]string{
-				"ле",
-				"",
-				"",
-				"(lE|lo)",
-			},
+			pattern:      "геймер",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(hejmer|hajmer)",
 		},
 		{
-			patterns: [4]string{
-				"ийе",
-				"",
-				"",
-				"je",
-			},
+			pattern:      "гейм",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(hejm|hajm)",
 		},
 		{
-			patterns: [4]string{
-				"ие",
-				"",
-				"",
-				"je",
-			},
+			pattern:      "гоф",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "hof",
 		},
 		{
-			patterns: [4]string{
-				"ыйе",
-				"",
-				"",
-				"je",
-			},
+			pattern:      "гер",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ger",
 		},
 		{
-			patterns: [4]string{
-				"ые",
-				"",
-				"",
-				"je",
-			},
+			pattern:      "ген",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "gen",
 		},
 		{
-			patterns: [4]string{
-				"ий",
-				"",
-				"(а|о|у)",
-				"j",
-			},
+			pattern:      "гин",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "gin",
 		},
 		{
-			patterns: [4]string{
-				"ый",
-				"",
-				"(а|о|у)",
-				"j",
-			},
+			pattern:      "г",
+			leftContext:  regexp.MustCompile("(й|ё|я|ю|ы|а|е|о|и|у)$"),
+			rightContext: regexp.MustCompile("^(а|е|о|и|у)"),
+			phonetic:     "g",
 		},
 		{
-			patterns: [4]string{
-				"ий",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "г",
+			rightContext: regexp.MustCompile("^(а|е|о|и|у)"),
+			phonetic:     "(g|h)",
 		},
 		{
-			patterns: [4]string{
-				"ый",
-				"",
-				"$",
-				"i",
-			},
+			pattern:  "ля",
+			phonetic: "la",
 		},
 		{
-			patterns: [4]string{
-				"ей",
-				"^",
-				"",
-				"(jej|ej)",
-			},
+			pattern:  "лю",
+			phonetic: "lu",
 		},
 		{
-			patterns: [4]string{
-				"е",
-				"(а|е|о|у)",
-				"",
-				"je",
-			},
+			pattern:  "лё",
+			phonetic: "(le|lo)",
 		},
 		{
-			patterns: [4]string{
-				"е",
-				"^",
-				"",
-				"je",
-			},
+			pattern:  "лио",
+			phonetic: "(le|lo)",
 		},
 		{
-			patterns: [4]string{
-				"эй",
-				"",
-				"",
-				"ej",
-			},
+			pattern:  "ле",
+			phonetic: "(lE|lo)",
 		},
 		{
-			patterns: [4]string{
-				"ей",
-				"",
-				"",
-				"ej",
-			},
+			pattern:  "ийе",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"ауе",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "ие",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"ауэ",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "ыйе",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"а",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "ые",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"б",
-				"",
-				"",
-				"b",
-			},
+			pattern:      "ий",
+			rightContext: regexp.MustCompile("^(а|о|у)"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"в",
-				"",
-				"",
-				"v",
-			},
+			pattern:      "ый",
+			rightContext: regexp.MustCompile("^(а|о|у)"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"г",
-				"",
-				"",
-				"g",
-			},
+			pattern:      "ий",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"д",
-				"",
-				"",
-				"d",
-			},
+			pattern:      "ый",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"е",
-				"",
-				"",
-				"E",
-			},
+			pattern:     "ей",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(jej|ej)",
 		},
 		{
-			patterns: [4]string{
-				"ё",
-				"",
-				"",
-				"(e|jo)",
-			},
+			pattern:     "е",
+			leftContext: regexp.MustCompile("(а|е|о|у)$"),
+			phonetic:    "je",
 		},
 		{
-			patterns: [4]string{
-				"ж",
-				"",
-				"",
-				"Z",
-			},
+			pattern:     "е",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "je",
 		},
 		{
-			patterns: [4]string{
-				"з",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "эй",
+			phonetic: "ej",
 		},
 		{
-			patterns: [4]string{
-				"и",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "ей",
+			phonetic: "ej",
 		},
 		{
-			patterns: [4]string{
-				"й",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "ауе",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"к",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ауэ",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"л",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "а",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"м",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "б",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"н",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "в",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"о",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "г",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"п",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "д",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"р",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "е",
+			phonetic: "E",
 		},
 		{
-			patterns: [4]string{
-				"с",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ё",
+			phonetic: "(e|jo)",
 		},
 		{
-			patterns: [4]string{
-				"т",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "ж",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"у",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ф",
-				"",
-				"",
-				"f",
-			},
-		},
-		{
-			patterns: [4]string{
-				"х",
-				"",
-				"",
-				"x",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ц",
-				"",
-				"",
-				"ts",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ч",
-				"",
-				"",
-				"tS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ш",
-				"",
-				"",
-				"S",
-			},
-		},
-		{
-			patterns: [4]string{
-				"щ",
-				"",
-				"",
-				"StS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ъ",
-				"",
-				"",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ы",
-				"",
-				"",
-				"I",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ь",
-				"",
-				"",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"э",
-				"",
-				"",
-				"E",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ю",
-				"",
-				"",
-				"ju",
-			},
-		},
-		{
-			patterns: [4]string{
-				"я",
-				"",
-				"",
-				"ja",
-			},
+			pattern:  "з",
+			phonetic: "z",
+		},
+		{
+			pattern:  "и",
+			phonetic: "I",
+		},
+		{
+			pattern:  "й",
+			phonetic: "j",
+		},
+		{
+			pattern:  "к",
+			phonetic: "k",
+		},
+		{
+			pattern:  "л",
+			phonetic: "l",
+		},
+		{
+			pattern:  "м",
+			phonetic: "m",
+		},
+		{
+			pattern:  "н",
+			phonetic: "n",
+		},
+		{
+			pattern:  "о",
+			phonetic: "o",
+		},
+		{
+			pattern:  "п",
+			phonetic: "p",
+		},
+		{
+			pattern:  "р",
+			phonetic: "r",
+		},
+		{
+			pattern:  "с",
+			phonetic: "s",
+		},
+		{
+			pattern:  "т",
+			phonetic: "t",
+		},
+		{
+			pattern:  "у",
+			phonetic: "u",
+		},
+		{
+			pattern:  "ф",
+			phonetic: "f",
+		},
+		{
+			pattern:  "х",
+			phonetic: "x",
+		},
+		{
+			pattern:  "ц",
+			phonetic: "ts",
+		},
+		{
+			pattern:  "ч",
+			phonetic: "tS",
+		},
+		{
+			pattern:  "ш",
+			phonetic: "S",
+		},
+		{
+			pattern:  "щ",
+			phonetic: "StS",
+		},
+		{
+			pattern:  "ъ",
+			phonetic: "",
+		},
+		{
+			pattern:  "ы",
+			phonetic: "I",
+		},
+		{
+			pattern:  "ь",
+			phonetic: "",
+		},
+		{
+			pattern:  "э",
+			phonetic: "E",
+		},
+		{
+			pattern:  "ю",
+			phonetic: "ju",
+		},
+		{
+			pattern:  "я",
+			phonetic: "ja",
 		},
 	},
 	genczech: []rule{
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "ch",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"(k|kv)",
-			},
+			pattern:  "qu",
+			phonetic: "(k|kv)",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(ej|aj)",
-			},
+			pattern:  "ei",
+			phonetic: "(ej|aj)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aou]",
-				"",
-				"j",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"č",
-				"",
-				"",
-				"tS",
-			},
+			pattern:  "č",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"š",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "š",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ž",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "ž",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"ň",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "ň",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"ť",
-				"",
-				"",
-				"(t|tj)",
-			},
+			pattern:  "ť",
+			phonetic: "(t|tj)",
 		},
 		{
-			patterns: [4]string{
-				"ď",
-				"",
-				"",
-				"(d|dj)",
-			},
+			pattern:  "ď",
+			phonetic: "(d|dj)",
 		},
 		{
-			patterns: [4]string{
-				"ř",
-				"",
-				"",
-				"(r|rZ)",
-			},
+			pattern:  "ř",
+			phonetic: "(r|rZ)",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "á",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"í",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "í",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ó",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ú",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ú",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"ý",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ý",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ě",
-				"",
-				"",
-				"(e|je)",
-			},
+			pattern:  "ě",
+			phonetic: "(e|je)",
 		},
 		{
-			patterns: [4]string{
-				"ů",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ů",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "c",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "e",
+			phonetic: "E",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"(h|g)",
-			},
+			pattern:  "h",
+			phonetic: "(h|g)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "i",
+			phonetic: "I",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "j",
+			phonetic: "j",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"(k|kv)",
-			},
+			pattern:  "q",
+			phonetic: "(k|kv)",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "w",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "y",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	gendutch: []rule{
 		{
-			patterns: [4]string{
-				"ssj",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "ssj",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"sj",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "sj",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "ch",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[eiy]",
-				"ts",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[eiy]"),
+			phonetic:     "ts",
 		},
 		{
-			patterns: [4]string{
-				"ck",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ck",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"pf",
-				"",
-				"",
-				"(pf|p|f)",
-			},
+			pattern:  "pf",
+			phonetic: "(pf|p|f)",
 		},
 		{
-			patterns: [4]string{
-				"ph",
-				"",
-				"",
-				"(ph|f)",
-			},
+			pattern:  "ph",
+			phonetic: "(ph|f)",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"kv",
-			},
+			pattern:  "qu",
+			phonetic: "kv",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"^",
-				"",
-				"t",
-			},
+			pattern:     "th",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "t",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"[äöüaeiou]",
-				"(t|th)",
-			},
+			pattern:      "th",
+			rightContext: regexp.MustCompile("^[äöüaeiou]"),
+			phonetic:     "(t|th)",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "th",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"ss",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ss",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[aeiouy]",
-				"",
-				"",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"ou",
-				"",
-				"",
-				"au",
-			},
+			pattern:  "ou",
+			phonetic: "au",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"(Q|i)",
-			},
+			pattern:  "ie",
+			phonetic: "(Q|i)",
 		},
 		{
-			patterns: [4]string{
-				"uu",
-				"",
-				"",
-				"(Q|u)",
-			},
+			pattern:  "uu",
+			phonetic: "(Q|u)",
 		},
 		{
-			patterns: [4]string{
-				"ee",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "ee",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"",
-				"(Y|Yj)",
-			},
+			pattern:  "eu",
+			phonetic: "(Y|Yj)",
 		},
 		{
-			patterns: [4]string{
-				"aa",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "aa",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"oo",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "oo",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"oe",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "oe",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"ij",
-				"",
-				"",
-				"ej",
-			},
+			pattern:  "ij",
+			phonetic: "ej",
 		},
 		{
-			patterns: [4]string{
-				"ui",
-				"",
-				"",
-				"(Y|uj)",
-			},
+			pattern:  "ui",
+			phonetic: "(Y|uj)",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(ej|aj)",
-			},
+			pattern:  "ei",
+			phonetic: "(ej|aj)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aou]",
-				"",
-				"j",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "c",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "e",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"(g|x)",
-			},
+			pattern:  "g",
+			phonetic: "(g|x)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "h",
+			phonetic: "h",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"(i|Q)",
-			},
+			pattern:  "i",
+			phonetic: "(i|Q)",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "j",
+			phonetic: "j",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "q",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"(u|Q)",
-			},
+			pattern:  "u",
+			phonetic: "(u|Q)",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"(w|v)",
-			},
+			pattern:  "w",
+			phonetic: "(w|v)",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "y",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genenglish: []rule{
 		{
-			patterns: [4]string{
-				"�",
-				"",
-				"",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"'",
-				"",
-				"",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"mc",
-				"^",
-				"",
-				"mak",
-			},
-		},
-		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"",
-				"ts",
-			},
-		},
-		{
-			patterns: [4]string{
-				"tch",
-				"",
-				"",
-				"tS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"(tS|x)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ck",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"cc",
-				"",
-				"[iey]",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"c",
-				"",
-				"c",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[iey]",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"gh",
-				"^",
-				"",
-				"g",
-			},
-		},
-		{
-			patterns: [4]string{
-				"gh",
-				"",
-				"",
-				"(g|f|w)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"gn",
-				"",
-				"",
-				"(gn|n)",
-			},
+			pattern:  "�",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[iey]",
-				"(g|dZ)",
-			},
+			pattern:  "'",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"",
-				"t",
-			},
+			pattern:     "mc",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "mak",
 		},
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "tz",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"ph",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "tch",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"sch",
-				"",
-				"",
-				"(S|sk)",
-			},
+			pattern:  "ch",
+			phonetic: "(tS|x)",
 		},
 		{
-			patterns: [4]string{
-				"sh",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "ck",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"who",
-				"^",
-				"",
-				"hu",
-			},
+			pattern:      "cc",
+			rightContext: regexp.MustCompile("^[iey]"),
+			phonetic:     "ks",
 		},
 		{
-			patterns: [4]string{
-				"wh",
-				"^",
-				"",
-				"w",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^c"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[iey]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"[^aeiou]",
-				"",
-			},
+			pattern:     "gh",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"^",
-				"",
-				"H",
-			},
+			pattern:  "gh",
+			phonetic: "(g|f|w)",
 		},
 		{
-			patterns: [4]string{
-				"kn",
-				"^",
-				"",
-				"n",
-			},
+			pattern:  "gn",
+			phonetic: "(gn|n)",
 		},
 		{
-			patterns: [4]string{
-				"mb",
-				"",
-				"$",
-				"m",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[iey]"),
+			phonetic:     "(g|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"ng",
-				"",
-				"$",
-				"(N|ng)",
-			},
+			pattern:  "th",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"pn",
-				"^",
-				"",
-				"(pn|n)",
-			},
+			pattern:  "kh",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"ps",
-				"^",
-				"",
-				"(ps|s)",
-			},
+			pattern:  "ph",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"kw",
-			},
+			pattern:  "sch",
+			phonetic: "(S|sk)",
 		},
 		{
-			patterns: [4]string{
-				"tia",
-				"",
-				"",
-				"(So|Sa)",
-			},
+			pattern:  "sh",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"tio",
-				"",
-				"",
-				"So",
-			},
+			pattern:     "who",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "hu",
 		},
 		{
-			patterns: [4]string{
-				"wr",
-				"^",
-				"",
-				"r",
-			},
+			pattern:     "wh",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "w",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"^",
-				"",
-				"z",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"^",
-				"",
-				"j",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^[^aeiou]"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"^",
-				"[aeiouy]",
-				"j",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "H",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"^",
-				"",
-				"i",
-			},
+			pattern:     "kn",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "n",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:      "mb",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "m",
 		},
 		{
-			patterns: [4]string{
-				"oue",
-				"",
-				"",
-				"(aue|oue)",
-			},
+			pattern:      "ng",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(N|ng)",
 		},
 		{
-			patterns: [4]string{
-				"ai",
-				"",
-				"",
-				"(aj|ej|e)",
-			},
+			pattern:     "pn",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(pn|n)",
 		},
 		{
-			patterns: [4]string{
-				"ay",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:     "ps",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(ps|s)",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"[^aeiou]e",
-				"ej",
-			},
+			pattern:  "qu",
+			phonetic: "kw",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(ej|aj|i)",
-			},
+			pattern:  "tia",
+			phonetic: "(So|Sa)",
 		},
 		{
-			patterns: [4]string{
-				"ey",
-				"",
-				"",
-				"(ej|aj|i)",
-			},
+			pattern:  "tio",
+			phonetic: "So",
 		},
 		{
-			patterns: [4]string{
-				"ear",
-				"",
-				"",
-				"ia",
-			},
+			pattern:     "wr",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "r",
 		},
 		{
-			patterns: [4]string{
-				"ea",
-				"",
-				"",
-				"(i|e)",
-			},
+			pattern:     "x",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "z",
 		},
 		{
-			patterns: [4]string{
-				"ee",
-				"",
-				"",
-				"i",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"[^aeiou]e",
-				"i",
-			},
+			pattern:      "y",
+			leftContext:  regexp.MustCompile("^$"),
+			rightContext: regexp.MustCompile("^[aeiouy]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"$",
-				"(|E)",
-			},
+			pattern:     "yi",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "i",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[^aeiou]e",
-				"aj",
-			},
+			pattern:  "oue",
+			phonetic: "(aue|oue)",
 		},
 		{
-			patterns: [4]string{
-				"oa",
-				"",
-				"",
-				"ou",
-			},
+			pattern:  "ai",
+			phonetic: "(aj|ej|e)",
 		},
 		{
-			patterns: [4]string{
-				"oi",
-				"",
-				"",
-				"oj",
-			},
+			pattern:  "ay",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"oo",
-				"",
-				"",
-				"u",
-			},
+			pattern:      "a",
+			rightContext: regexp.MustCompile("^[^aeiou]e"),
+			phonetic:     "ej",
 		},
 		{
-			patterns: [4]string{
-				"ou",
-				"",
-				"",
-				"(u|ou)",
-			},
+			pattern:  "ei",
+			phonetic: "(ej|aj|i)",
 		},
 		{
-			patterns: [4]string{
-				"oy",
-				"",
-				"",
-				"oj",
-			},
+			pattern:  "ey",
+			phonetic: "(ej|aj|i)",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"[^aeiou]e",
-				"ou",
-			},
+			pattern:  "ear",
+			phonetic: "ia",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"[^aeiou]e",
-				"(ju|u)",
-			},
+			pattern:  "ea",
+			phonetic: "(i|e)",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"r",
-				"(e|u)",
-			},
+			pattern:  "ee",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"(e|o|a)",
-			},
+			pattern:      "e",
+			rightContext: regexp.MustCompile("^[^aeiou]e"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:      "e",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(|E)",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ie",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[^aeiou]e"),
+			phonetic:     "aj",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "oa",
+			phonetic: "ou",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "oi",
+			phonetic: "oj",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "oo",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "ou",
+			phonetic: "(u|ou)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "oy",
+			phonetic: "oj",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"dZ",
-			},
+			pattern:      "o",
+			rightContext: regexp.MustCompile("^[^aeiou]e"),
+			phonetic:     "ou",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:      "u",
+			rightContext: regexp.MustCompile("^[^aeiou]e"),
+			phonetic:     "(ju|u)",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:      "u",
+			rightContext: regexp.MustCompile("^r"),
+			phonetic:     "(e|u)",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "(e|o|a)",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"(o|a)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"(u|a)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"(w|v)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "b",
+			phonetic: "b",
+		},
+		{
+			pattern:  "c",
+			phonetic: "k",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "E",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "h",
+		},
+		{
+			pattern:  "i",
+			phonetic: "I",
+		},
+		{
+			pattern:  "j",
+			phonetic: "dZ",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "(o|a)",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "s",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "(u|a)",
+		},
+		{
+			pattern:  "v",
+			phonetic: "v",
+		},
+		{
+			pattern:  "w",
+			phonetic: "(w|v)",
+		},
+		{
+			pattern:  "x",
+			phonetic: "ks",
+		},
+		{
+			pattern:  "y",
+			phonetic: "i",
+		},
+		{
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genfrench: []rule{
 		{
-			patterns: [4]string{
-				"lt",
-				"u",
-				"$",
-				"(lt|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"c",
-				"n",
-				"$",
-				"(k|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"d",
-				"",
-				"$",
-				"(t|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"g",
-				"n",
-				"$",
-				"(k|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"$",
-				"(p|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"e",
-				"$",
-				"(r|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"$",
-				"(t|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"$",
-				"(s|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ds",
-				"",
-				"$",
-				"(ds|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ps",
-				"",
-				"$",
-				"(ps|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"rs",
-				"e",
-				"$",
-				"(rs|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ts",
-				"",
-				"$",
-				"(ts|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"$",
-				"(s|)",
-			},
+			pattern:      "lt",
+			leftContext:  regexp.MustCompile("u$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lt|)",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"u",
-				"$",
-				"(ks|)",
-			},
+			pattern:      "c",
+			leftContext:  regexp.MustCompile("n$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(k|)",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"[aeéèêiou]",
-				"[^aeéèêiou]",
-				"(s|)",
-			},
+			pattern:      "d",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(t|)",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"[aeéèêiou]",
-				"[^aeéèêiou]",
-				"(t|)",
-			},
+			pattern:      "g",
+			leftContext:  regexp.MustCompile("n$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(k|)",
 		},
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"x",
-			},
+			pattern:      "p",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(p|)",
 		},
 		{
-			patterns: [4]string{
-				"ph",
-				"",
-				"",
-				"f",
-			},
+			pattern:      "r",
+			leftContext:  regexp.MustCompile("e$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(r|)",
 		},
 		{
-			patterns: [4]string{
-				"ç",
-				"",
-				"",
-				"s",
-			},
+			pattern:      "t",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(t|)",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(s|)",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"S",
-			},
+			pattern:      "ds",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ds|)",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[eiyéèê]",
-				"s",
-			},
+			pattern:      "ps",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ps|)",
 		},
 		{
-			patterns: [4]string{
-				"gn",
-				"",
-				"",
-				"(n|gn)",
-			},
+			pattern:      "rs",
+			leftContext:  regexp.MustCompile("e$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(rs|)",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[eiy]",
-				"Z",
-			},
+			pattern:      "ts",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ts|)",
 		},
 		{
-			patterns: [4]string{
-				"gue",
-				"",
-				"$",
-				"k",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(s|)",
 		},
 		{
-			patterns: [4]string{
-				"gu",
-				"",
-				"[eiy]",
-				"g",
-			},
+			pattern:      "x",
+			leftContext:  regexp.MustCompile("u$"),
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ks|)",
 		},
 		{
-			patterns: [4]string{
-				"aill",
-				"",
-				"e",
-				"aj",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aeéèêiou]$"),
+			rightContext: regexp.MustCompile("^[^aeéèêiou]"),
+			phonetic:     "(s|)",
 		},
 		{
-			patterns: [4]string{
-				"ll",
-				"",
-				"e",
-				"(l|j)",
-			},
+			pattern:      "t",
+			leftContext:  regexp.MustCompile("[aeéèêiou]$"),
+			rightContext: regexp.MustCompile("^[^aeéèêiou]"),
+			phonetic:     "(t|)",
 		},
 		{
-			patterns: [4]string{
-				"que",
-				"",
-				"$",
-				"k",
-			},
+			pattern:  "kh",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ph",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"[aeiouyéèê]",
-				"[aeiouyéèê]",
-				"z",
-			},
+			pattern:  "ç",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[bdgt]",
-				"",
-				"",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"[aeiouy]",
-				"[aeiouy]",
-				"m",
-			},
+			pattern:  "ch",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"[aeiouy]",
-				"",
-				"(m|n)",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[eiyéèê]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"ou",
-				"",
-				"[aeio]",
-				"v",
-			},
+			pattern:  "gn",
+			phonetic: "(n|gn)",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"[aeio]",
-				"v",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[eiy]"),
+			phonetic:     "Z",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:      "gue",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"eau",
-				"",
-				"",
-				"o",
-			},
+			pattern:      "gu",
+			rightContext: regexp.MustCompile("^[eiy]"),
+			phonetic:     "g",
 		},
 		{
-			patterns: [4]string{
-				"au",
-				"",
-				"",
-				"(o|au)",
-			},
+			pattern:      "aill",
+			rightContext: regexp.MustCompile("^e"),
+			phonetic:     "aj",
 		},
 		{
-			patterns: [4]string{
-				"ai",
-				"",
-				"",
-				"(e|aj)",
-			},
+			pattern:      "ll",
+			rightContext: regexp.MustCompile("^e"),
+			phonetic:     "(l|j)",
 		},
 		{
-			patterns: [4]string{
-				"ay",
-				"",
-				"",
-				"(e|aj)",
-			},
+			pattern:      "que",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "qu",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"ê",
-				"",
-				"",
-				"e",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aeiouyéèê]$"),
+			rightContext: regexp.MustCompile("^[aeiouyéèê]"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"è",
-				"",
-				"",
-				"e",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[bdgt]$"),
+			phonetic:    "",
 		},
 		{
-			patterns: [4]string{
-				"à",
-				"",
-				"",
-				"a",
-			},
+			pattern:      "m",
+			leftContext:  regexp.MustCompile("[aeiouy]$"),
+			rightContext: regexp.MustCompile("^[aeiouy]"),
+			phonetic:     "m",
 		},
 		{
-			patterns: [4]string{
-				"â",
-				"",
-				"",
-				"a",
-			},
+			pattern:     "m",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(m|n)",
 		},
 		{
-			patterns: [4]string{
-				"où",
-				"",
-				"",
-				"u",
-			},
+			pattern:      "ou",
+			rightContext: regexp.MustCompile("^[aeio]"),
+			phonetic:     "v",
 		},
 		{
-			patterns: [4]string{
-				"ou",
-				"",
-				"",
-				"u",
-			},
+			pattern:      "u",
+			rightContext: regexp.MustCompile("^[aeio]"),
+			phonetic:     "v",
 		},
 		{
-			patterns: [4]string{
-				"oi",
-				"",
-				"",
-				"(oj|va)",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(aj|ej|e)",
-			},
+			pattern:  "eau",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ey",
-				"",
-				"",
-				"(aj|ej|e)",
-			},
+			pattern:  "au",
+			phonetic: "(o|au)",
 		},
 		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"",
-				"(ej|Y)",
-			},
+			pattern:  "ai",
+			phonetic: "(e|aj)",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[ou]",
-				"",
-				"j",
-			},
+			pattern:  "ay",
+			phonetic: "(e|aj)",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"$",
-				"(e|)",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ê",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aoeu]",
-				"j",
-			},
+			pattern:  "è",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "à",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "â",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "où",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "ou",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "oi",
+			phonetic: "(oj|va)",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "ei",
+			phonetic: "(aj|ej|e)",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "ey",
+			phonetic: "(aj|ej|e)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "eu",
+			phonetic: "(ej|Y)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"i",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[ou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"Z",
-			},
+			pattern:      "e",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(e|)",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aoeu]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
-		},
-		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"(u|Q)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "a",
+			phonetic: "a",
+		},
+		{
+			pattern:  "b",
+			phonetic: "b",
+		},
+		{
+			pattern:  "c",
+			phonetic: "k",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "e",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "h",
+		},
+		{
+			pattern:  "i",
+			phonetic: "i",
+		},
+		{
+			pattern:  "j",
+			phonetic: "Z",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "o",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "s",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "(u|Q)",
+		},
+		{
+			pattern:  "v",
+			phonetic: "v",
+		},
+		{
+			pattern:  "w",
+			phonetic: "v",
+		},
+		{
+			pattern:  "y",
+			phonetic: "i",
+		},
+		{
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	gengerman: []rule{
 		{
-			patterns: [4]string{
-				"ewitsch",
-				"",
-				"$",
-				"evitS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"owitsch",
-				"",
-				"$",
-				"ovitS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"evitsch",
-				"",
-				"$",
-				"evitS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ovitsch",
-				"",
-				"$",
-				"ovitS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"witsch",
-				"",
-				"$",
-				"vitS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"vitsch",
-				"",
-				"$",
-				"vitS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ssch",
-				"",
-				"",
-				"S",
-			},
-		},
-		{
-			patterns: [4]string{
-				"chsch",
-				"",
-				"",
-				"xS",
-			},
-		},
-		{
-			patterns: [4]string{
-				"sch",
-				"",
-				"",
-				"S",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ziu",
-				"",
-				"",
-				"tsu",
-			},
-		},
-		{
-			patterns: [4]string{
-				"zia",
-				"",
-				"",
-				"tsa",
-			},
-		},
-		{
-			patterns: [4]string{
-				"zio",
-				"",
-				"",
-				"tso",
-			},
-		},
-		{
-			patterns: [4]string{
-				"chs",
-				"",
-				"",
-				"ks",
-			},
+			pattern:      "ewitsch",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "evitS",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"x",
-			},
+			pattern:      "owitsch",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ovitS",
 		},
 		{
-			patterns: [4]string{
-				"ck",
-				"",
-				"",
-				"k",
-			},
+			pattern:      "evitsch",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "evitS",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[eiy]",
-				"ts",
-			},
+			pattern:      "ovitsch",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ovitS",
 		},
 		{
-			patterns: [4]string{
-				"sp",
-				"^",
-				"",
-				"Sp",
-			},
+			pattern:      "witsch",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "vitS",
 		},
 		{
-			patterns: [4]string{
-				"st",
-				"^",
-				"",
-				"St",
-			},
+			pattern:      "vitsch",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "vitS",
 		},
 		{
-			patterns: [4]string{
-				"ssp",
-				"",
-				"",
-				"(Sp|sp)",
-			},
+			pattern:  "ssch",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"sp",
-				"",
-				"",
-				"(Sp|sp)",
-			},
+			pattern:  "chsch",
+			phonetic: "xS",
 		},
 		{
-			patterns: [4]string{
-				"sst",
-				"",
-				"",
-				"(St|st)",
-			},
+			pattern:  "sch",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"st",
-				"",
-				"",
-				"(St|st)",
-			},
+			pattern:  "ziu",
+			phonetic: "tsu",
 		},
 		{
-			patterns: [4]string{
-				"pf",
-				"",
-				"",
-				"(pf|p|f)",
-			},
+			pattern:  "zia",
+			phonetic: "tsa",
 		},
 		{
-			patterns: [4]string{
-				"ph",
-				"",
-				"",
-				"(ph|f)",
-			},
+			pattern:  "zio",
+			phonetic: "tso",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"kv",
-			},
+			pattern:  "chs",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"ewitz",
-				"",
-				"$",
-				"(evits|evitS)",
-			},
+			pattern:  "ch",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"ewiz",
-				"",
-				"$",
-				"(evits|evitS)",
-			},
+			pattern:  "ck",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"evitz",
-				"",
-				"$",
-				"(evits|evitS)",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[eiy]"),
+			phonetic:     "ts",
 		},
 		{
-			patterns: [4]string{
-				"eviz",
-				"",
-				"$",
-				"(evits|evitS)",
-			},
+			pattern:     "sp",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "Sp",
 		},
 		{
-			patterns: [4]string{
-				"owitz",
-				"",
-				"$",
-				"(ovits|ovitS)",
-			},
+			pattern:     "st",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "St",
 		},
 		{
-			patterns: [4]string{
-				"owiz",
-				"",
-				"$",
-				"(ovits|ovitS)",
-			},
+			pattern:  "ssp",
+			phonetic: "(Sp|sp)",
 		},
 		{
-			patterns: [4]string{
-				"ovitz",
-				"",
-				"$",
-				"(ovits|ovitS)",
-			},
+			pattern:  "sp",
+			phonetic: "(Sp|sp)",
 		},
 		{
-			patterns: [4]string{
-				"oviz",
-				"",
-				"$",
-				"(ovits|ovitS)",
-			},
+			pattern:  "sst",
+			phonetic: "(St|st)",
 		},
 		{
-			patterns: [4]string{
-				"witz",
-				"",
-				"$",
-				"(vits|vitS)",
-			},
+			pattern:  "st",
+			phonetic: "(St|st)",
 		},
 		{
-			patterns: [4]string{
-				"wiz",
-				"",
-				"$",
-				"(vits|vitS)",
-			},
+			pattern:  "pf",
+			phonetic: "(pf|p|f)",
 		},
 		{
-			patterns: [4]string{
-				"vitz",
-				"",
-				"$",
-				"(vits|vitS)",
-			},
+			pattern:  "ph",
+			phonetic: "(ph|f)",
 		},
 		{
-			patterns: [4]string{
-				"viz",
-				"",
-				"$",
-				"(vits|vitS)",
-			},
+			pattern:  "qu",
+			phonetic: "kv",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"",
-				"ts",
-			},
+			pattern:      "ewitz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(evits|evitS)",
 		},
 		{
-			patterns: [4]string{
-				"thal",
-				"",
-				"$",
-				"tal",
-			},
+			pattern:      "ewiz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(evits|evitS)",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"^",
-				"",
-				"t",
-			},
+			pattern:      "evitz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(evits|evitS)",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"[äöüaeiou]",
-				"(t|th)",
-			},
+			pattern:      "eviz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(evits|evitS)",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"",
-				"t",
-			},
+			pattern:      "owitz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ovits|ovitS)",
 		},
 		{
-			patterns: [4]string{
-				"rh",
-				"^",
-				"",
-				"r",
-			},
+			pattern:      "owiz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ovits|ovitS)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[aeiouyäöü]",
-				"",
-				"",
-			},
+			pattern:      "ovitz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ovits|ovitS)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"^",
-				"",
-				"H",
-			},
+			pattern:      "oviz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ovits|ovitS)",
 		},
 		{
-			patterns: [4]string{
-				"ss",
-				"",
-				"",
-				"s",
-			},
+			pattern:      "witz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(vits|vitS)",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"[äöüaeiouy]",
-				"(z|s)",
-			},
+			pattern:      "wiz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(vits|vitS)",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"[aeiouyäöüj]",
-				"[aeiouyäöü]",
-				"z",
-			},
+			pattern:      "vitz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(vits|vitS)",
 		},
 		{
-			patterns: [4]string{
-				"ß",
-				"",
-				"",
-				"s",
-			},
+			pattern:      "viz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(vits|vitS)",
 		},
 		{
-			patterns: [4]string{
-				"ij",
-				"",
-				"$",
-				"i",
-			},
+			pattern:  "tz",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:      "thal",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "tal",
 		},
 		{
-			patterns: [4]string{
-				"ue",
-				"",
-				"",
-				"Q",
-			},
+			pattern:     "th",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "t",
 		},
 		{
-			patterns: [4]string{
-				"ae",
-				"",
-				"",
-				"Y",
-			},
+			pattern:      "th",
+			rightContext: regexp.MustCompile("^[äöüaeiou]"),
+			phonetic:     "(t|th)",
 		},
 		{
-			patterns: [4]string{
-				"oe",
-				"",
-				"",
-				"Y",
-			},
+			pattern:  "th",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"ü",
-				"",
-				"",
-				"Q",
-			},
+			pattern:     "rh",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "r",
 		},
 		{
-			patterns: [4]string{
-				"ä",
-				"",
-				"",
-				"(Y|e)",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[aeiouyäöü]$"),
+			phonetic:    "",
 		},
 		{
-			patterns: [4]string{
-				"ö",
-				"",
-				"",
-				"Y",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "H",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:  "ss",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"ey",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^[äöüaeiouy]"),
+			phonetic:     "(z|s)",
 		},
 		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"",
-				"(Yj|ej|aj|oj)",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aeiouyäöüj]$"),
+			rightContext: regexp.MustCompile("^[aeiouyäöü]"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aou]",
-				"",
-				"j",
-			},
+			pattern:  "ß",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aou]",
-				"",
-				"j",
-			},
+			pattern:      "ij",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ue",
+			phonetic: "Q",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aoeu]",
-				"j",
-			},
+			pattern:  "ae",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ñ",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "oe",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ã",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "ü",
+			phonetic: "Q",
 		},
 		{
-			patterns: [4]string{
-				"ő",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ä",
+			phonetic: "(Y|e)",
 		},
 		{
-			patterns: [4]string{
-				"ű",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ö",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ç",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ei",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"A",
-			},
+			pattern:  "ey",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "eu",
+			phonetic: "(Yj|ej|aj|oj)",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "ie",
+			phonetic: "I",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aoeu]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "ñ",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "ã",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "ő",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ű",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "ç",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "A",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"O",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"U",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"(f|v)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "b",
+			phonetic: "b",
+		},
+		{
+			pattern:  "c",
+			phonetic: "k",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "E",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "h",
+		},
+		{
+			pattern:  "i",
+			phonetic: "I",
+		},
+		{
+			pattern:  "j",
+			phonetic: "j",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "O",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "s",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "U",
+		},
+		{
+			pattern:  "v",
+			phonetic: "(f|v)",
+		},
+		{
+			pattern:  "w",
+			phonetic: "v",
+		},
+		{
+			pattern:  "x",
+			phonetic: "ks",
+		},
+		{
+			pattern:  "y",
+			phonetic: "i",
+		},
+		{
+			pattern:  "z",
+			phonetic: "ts",
 		},
 	},
 	gengreek: []rule{
 		{
-			patterns: [4]string{
-				"αυ",
-				"",
-				"$",
-				"af",
-			},
-		},
-		{
-			patterns: [4]string{
-				"αυ",
-				"",
-				"(κ|π|σ|τ|φ|θ|χ|ψ)",
-				"af",
-			},
-		},
-		{
-			patterns: [4]string{
-				"αυ",
-				"",
-				"",
-				"av",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ευ",
-				"",
-				"$",
-				"ef",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ευ",
-				"",
-				"(κ|π|σ|τ|φ|θ|χ|ψ)",
-				"ef",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ευ",
-				"",
-				"",
-				"ev",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ηυ",
-				"",
-				"$",
-				"if",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ηυ",
-				"",
-				"(κ|π|σ|τ|φ|θ|χ|ψ)",
-				"if",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ηυ",
-				"",
-				"",
-				"iv",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ου",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"αι",
-				"",
-				"",
-				"aj",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ει",
-				"",
-				"",
-				"ej",
-			},
-		},
-		{
-			patterns: [4]string{
-				"οι",
-				"",
-				"",
-				"oj",
-			},
+			pattern:      "αυ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "af",
 		},
 		{
-			patterns: [4]string{
-				"ωι",
-				"",
-				"",
-				"oj",
-			},
+			pattern:      "αυ",
+			rightContext: regexp.MustCompile("^(κ|π|σ|τ|φ|θ|χ|ψ)"),
+			phonetic:     "af",
 		},
 		{
-			patterns: [4]string{
-				"ηι",
-				"",
-				"",
-				"ej",
-			},
+			pattern:  "αυ",
+			phonetic: "av",
 		},
 		{
-			patterns: [4]string{
-				"υι",
-				"",
-				"",
-				"i",
-			},
+			pattern:      "ευ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ef",
 		},
 		{
-			patterns: [4]string{
-				"γγ",
-				"(ε|ι|η|α|ο|ω|υ)",
-				"(ε|ι|η)",
-				"(nj|j)",
-			},
+			pattern:      "ευ",
+			rightContext: regexp.MustCompile("^(κ|π|σ|τ|φ|θ|χ|ψ)"),
+			phonetic:     "ef",
 		},
 		{
-			patterns: [4]string{
-				"γγ",
-				"",
-				"(ε|ι|η)",
-				"j",
-			},
+			pattern:  "ευ",
+			phonetic: "ev",
 		},
 		{
-			patterns: [4]string{
-				"γγ",
-				"(ε|ι|η|α|ο|ω|υ)",
-				"",
-				"(ng|g)",
-			},
+			pattern:      "ηυ",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "if",
 		},
 		{
-			patterns: [4]string{
-				"γγ",
-				"",
-				"",
-				"g",
-			},
+			pattern:      "ηυ",
+			rightContext: regexp.MustCompile("^(κ|π|σ|τ|φ|θ|χ|ψ)"),
+			phonetic:     "if",
 		},
 		{
-			patterns: [4]string{
-				"γκ",
-				"^",
-				"",
-				"g",
-			},
+			pattern:  "ηυ",
+			phonetic: "iv",
 		},
 		{
-			patterns: [4]string{
-				"γκ",
-				"(ε|ι|η|α|ο|ω|υ)",
-				"(ε|ι|η)",
-				"(nj|j)",
-			},
+			pattern:  "ου",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"γκ",
-				"",
-				"(ε|ι|η)",
-				"j",
-			},
+			pattern:  "αι",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"γκ",
-				"(ε|ι|η|α|ο|ω|υ)",
-				"",
-				"(ng|g)",
-			},
+			pattern:  "ει",
+			phonetic: "ej",
 		},
 		{
-			patterns: [4]string{
-				"γκ",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "οι",
+			phonetic: "oj",
 		},
 		{
-			patterns: [4]string{
-				"γι",
-				"",
-				"(α|ο|ω|υ)",
-				"j",
-			},
+			pattern:  "ωι",
+			phonetic: "oj",
 		},
 		{
-			patterns: [4]string{
-				"γι",
-				"",
-				"",
-				"(gi|i)",
-			},
+			pattern:  "ηι",
+			phonetic: "ej",
 		},
 		{
-			patterns: [4]string{
-				"γε",
-				"",
-				"(α|ο|ω|υ)",
-				"j",
-			},
+			pattern:  "υι",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"γε",
-				"",
-				"",
-				"(ge|je)",
-			},
+			pattern:      "γγ",
+			leftContext:  regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
+			rightContext: regexp.MustCompile("^(ε|ι|η)"),
+			phonetic:     "(nj|j)",
 		},
 		{
-			patterns: [4]string{
-				"κζ",
-				"",
-				"",
-				"gz",
-			},
+			pattern:      "γγ",
+			rightContext: regexp.MustCompile("^(ε|ι|η)"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"τζ",
-				"",
-				"",
-				"dz",
-			},
+			pattern:     "γγ",
+			leftContext: regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
+			phonetic:    "(ng|g)",
 		},
 		{
-			patterns: [4]string{
-				"σ",
-				"",
-				"(β|γ|δ|μ|ν|ρ)",
-				"z",
-			},
+			pattern:  "γγ",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"μβ",
-				"",
-				"",
-				"(mb|b)",
-			},
+			pattern:     "γκ",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "g",
 		},
 		{
-			patterns: [4]string{
-				"μπ",
-				"^",
-				"",
-				"b",
-			},
+			pattern:      "γκ",
+			leftContext:  regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
+			rightContext: regexp.MustCompile("^(ε|ι|η)"),
+			phonetic:     "(nj|j)",
 		},
 		{
-			patterns: [4]string{
-				"μπ",
-				"(ε|ι|η|α|ο|ω|υ)",
-				"",
-				"mb",
-			},
+			pattern:      "γκ",
+			rightContext: regexp.MustCompile("^(ε|ι|η)"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"μπ",
-				"",
-				"",
-				"b",
-			},
+			pattern:     "γκ",
+			leftContext: regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
+			phonetic:    "(ng|g)",
 		},
 		{
-			patterns: [4]string{
-				"ντ",
-				"^",
-				"",
-				"d",
-			},
+			pattern:  "γκ",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"ντ",
-				"(ε|ι|η|α|ο|ω|υ)",
-				"",
-				"(nd|nt)",
-			},
+			pattern:      "γι",
+			rightContext: regexp.MustCompile("^(α|ο|ω|υ)"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ντ",
-				"",
-				"",
-				"(nt|d)",
-			},
+			pattern:  "γι",
+			phonetic: "(gi|i)",
 		},
 		{
-			patterns: [4]string{
-				"ά",
-				"",
-				"",
-				"a",
-			},
+			pattern:      "γε",
+			rightContext: regexp.MustCompile("^(α|ο|ω|υ)"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"έ",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "γε",
+			phonetic: "(ge|je)",
 		},
 		{
-			patterns: [4]string{
-				"ή",
-				"",
-				"",
-				"(i|e)",
-			},
+			pattern:  "κζ",
+			phonetic: "gz",
 		},
 		{
-			patterns: [4]string{
-				"ί",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "τζ",
+			phonetic: "dz",
 		},
 		{
-			patterns: [4]string{
-				"ό",
-				"",
-				"",
-				"o",
-			},
+			pattern:      "σ",
+			rightContext: regexp.MustCompile("^(β|γ|δ|μ|ν|ρ)"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"ύ",
-				"",
-				"",
-				"(Q|i|u)",
-			},
+			pattern:  "μβ",
+			phonetic: "(mb|b)",
 		},
 		{
-			patterns: [4]string{
-				"ώ",
-				"",
-				"",
-				"o",
-			},
+			pattern:     "μπ",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "b",
 		},
 		{
-			patterns: [4]string{
-				"ΰ",
-				"",
-				"",
-				"(Q|i|u)",
-			},
+			pattern:     "μπ",
+			leftContext: regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
+			phonetic:    "mb",
 		},
 		{
-			patterns: [4]string{
-				"ϋ",
-				"",
-				"",
-				"(Q|i|u)",
-			},
+			pattern:  "μπ",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"ϊ",
-				"",
-				"",
-				"j",
-			},
+			pattern:     "ντ",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "d",
 		},
 		{
-			patterns: [4]string{
-				"α",
-				"",
-				"",
-				"a",
-			},
+			pattern:     "ντ",
+			leftContext: regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
+			phonetic:    "(nd|nt)",
 		},
 		{
-			patterns: [4]string{
-				"β",
-				"",
-				"",
-				"(v|b)",
-			},
+			pattern:  "ντ",
+			phonetic: "(nt|d)",
 		},
 		{
-			patterns: [4]string{
-				"γ",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "ά",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"δ",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "έ",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ε",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "ή",
+			phonetic: "(i|e)",
 		},
 		{
-			patterns: [4]string{
-				"ζ",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "ί",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"η",
-				"",
-				"",
-				"(i|e)",
-			},
+			pattern:  "ό",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ι",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ύ",
+			phonetic: "(Q|i|u)",
 		},
 		{
-			patterns: [4]string{
-				"κ",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ώ",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"λ",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "ΰ",
+			phonetic: "(Q|i|u)",
 		},
 		{
-			patterns: [4]string{
-				"μ",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "ϋ",
+			phonetic: "(Q|i|u)",
 		},
 		{
-			patterns: [4]string{
-				"ν",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "ϊ",
+			phonetic: "j",
 		},
 		{
-			patterns: [4]string{
-				"ξ",
-				"",
-				"",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ο",
-				"",
-				"",
-				"o",
-			},
-		},
-		{
-			patterns: [4]string{
-				"π",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ρ",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"σ",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ς",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"τ",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"υ",
-				"",
-				"",
-				"(Q|i|u)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"φ",
-				"",
-				"",
-				"f",
-			},
-		},
-		{
-			patterns: [4]string{
-				"θ",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"χ",
-				"",
-				"",
-				"x",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ψ",
-				"",
-				"",
-				"ps",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ω",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "α",
+			phonetic: "a",
+		},
+		{
+			pattern:  "β",
+			phonetic: "(v|b)",
+		},
+		{
+			pattern:  "γ",
+			phonetic: "g",
+		},
+		{
+			pattern:  "δ",
+			phonetic: "d",
+		},
+		{
+			pattern:  "ε",
+			phonetic: "e",
+		},
+		{
+			pattern:  "ζ",
+			phonetic: "z",
+		},
+		{
+			pattern:  "η",
+			phonetic: "(i|e)",
+		},
+		{
+			pattern:  "ι",
+			phonetic: "i",
+		},
+		{
+			pattern:  "κ",
+			phonetic: "k",
+		},
+		{
+			pattern:  "λ",
+			phonetic: "l",
+		},
+		{
+			pattern:  "μ",
+			phonetic: "m",
+		},
+		{
+			pattern:  "ν",
+			phonetic: "n",
+		},
+		{
+			pattern:  "ξ",
+			phonetic: "ks",
+		},
+		{
+			pattern:  "ο",
+			phonetic: "o",
+		},
+		{
+			pattern:  "π",
+			phonetic: "p",
+		},
+		{
+			pattern:  "ρ",
+			phonetic: "r",
+		},
+		{
+			pattern:  "σ",
+			phonetic: "s",
+		},
+		{
+			pattern:  "ς",
+			phonetic: "s",
+		},
+		{
+			pattern:  "τ",
+			phonetic: "t",
+		},
+		{
+			pattern:  "υ",
+			phonetic: "(Q|i|u)",
+		},
+		{
+			pattern:  "φ",
+			phonetic: "f",
+		},
+		{
+			pattern:  "θ",
+			phonetic: "t",
+		},
+		{
+			pattern:  "χ",
+			phonetic: "x",
+		},
+		{
+			pattern:  "ψ",
+			phonetic: "ps",
+		},
+		{
+			pattern:  "ω",
+			phonetic: "o",
 		},
 	},
 	gengreeklatin: []rule{
 		{
-			patterns: [4]string{
-				"au",
-				"",
-				"$",
-				"af",
-			},
-		},
-		{
-			patterns: [4]string{
-				"au",
-				"",
-				"[kpstfh]",
-				"af",
-			},
-		},
-		{
-			patterns: [4]string{
-				"au",
-				"",
-				"",
-				"av",
-			},
-		},
-		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"$",
-				"ef",
-			},
-		},
-		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"[kpstfh]",
-				"ef",
-			},
-		},
-		{
-			patterns: [4]string{
-				"eu",
-				"",
-				"",
-				"ev",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ou",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"gge",
-				"[aeiouy]",
-				"",
-				"(nje|je)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ggi",
-				"[aeiouy]",
-				"[aou]",
-				"(nj|j)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ggi",
-				"[aeiouy]",
-				"",
-				"(ni|i)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"gge",
-				"",
-				"",
-				"je",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ggi",
-				"",
-				"",
-				"i",
-			},
-		},
-		{
-			patterns: [4]string{
-				"gg",
-				"[aeiouy]",
-				"",
-				"(ng|g)",
-			},
+			pattern:      "au",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "af",
 		},
 		{
-			patterns: [4]string{
-				"gg",
-				"",
-				"",
-				"g",
-			},
+			pattern:      "au",
+			rightContext: regexp.MustCompile("^[kpstfh]"),
+			phonetic:     "af",
 		},
 		{
-			patterns: [4]string{
-				"gk",
-				"^",
-				"",
-				"g",
-			},
+			pattern:  "au",
+			phonetic: "av",
 		},
 		{
-			patterns: [4]string{
-				"gke",
-				"[aeiouy]",
-				"",
-				"(nje|je)",
-			},
+			pattern:      "eu",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ef",
 		},
 		{
-			patterns: [4]string{
-				"gki",
-				"[aeiouy]",
-				"",
-				"(ni|i)",
-			},
+			pattern:      "eu",
+			rightContext: regexp.MustCompile("^[kpstfh]"),
+			phonetic:     "ef",
 		},
 		{
-			patterns: [4]string{
-				"gke",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "eu",
+			phonetic: "ev",
 		},
 		{
-			patterns: [4]string{
-				"gki",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ou",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"gk",
-				"[aeiouy]",
-				"",
-				"(ng|g)",
-			},
+			pattern:     "gge",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(nje|je)",
 		},
 		{
-			patterns: [4]string{
-				"gk",
-				"",
-				"",
-				"g",
-			},
+			pattern:      "ggi",
+			leftContext:  regexp.MustCompile("[aeiouy]$"),
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "(nj|j)",
 		},
 		{
-			patterns: [4]string{
-				"nghi",
-				"",
-				"[aouy]",
-				"Nj",
-			},
+			pattern:     "ggi",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(ni|i)",
 		},
 		{
-			patterns: [4]string{
-				"nghi",
-				"",
-				"",
-				"(Ngi|Ni)",
-			},
+			pattern:  "gge",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"nghe",
-				"",
-				"[aouy]",
-				"Nj",
-			},
+			pattern:  "ggi",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"nghe",
-				"",
-				"",
-				"(Nje|Nge)",
-			},
+			pattern:     "gg",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(ng|g)",
 		},
 		{
-			patterns: [4]string{
-				"ghi",
-				"",
-				"[aouy]",
-				"j",
-			},
+			pattern:  "gg",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"ghi",
-				"",
-				"",
-				"(gi|i)",
-			},
+			pattern:     "gk",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "g",
 		},
 		{
-			patterns: [4]string{
-				"ghe",
-				"",
-				"[aouy]",
-				"j",
-			},
+			pattern:     "gke",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(nje|je)",
 		},
 		{
-			patterns: [4]string{
-				"ghe",
-				"",
-				"",
-				"(je|ge)",
-			},
+			pattern:     "gki",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(ni|i)",
 		},
 		{
-			patterns: [4]string{
-				"ngh",
-				"",
-				"",
-				"Ng",
-			},
+			pattern:  "gke",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"gh",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "gki",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ngi",
-				"",
-				"[aouy]",
-				"Nj",
-			},
+			pattern:     "gk",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(ng|g)",
 		},
 		{
-			patterns: [4]string{
-				"ngi",
-				"",
-				"",
-				"(Ngi|Ni)",
-			},
+			pattern:  "gk",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"nge",
-				"",
-				"[aouy]",
-				"Nj",
-			},
+			pattern:      "nghi",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "Nj",
 		},
 		{
-			patterns: [4]string{
-				"nge",
-				"",
-				"",
-				"(Nje|Nge)",
-			},
+			pattern:  "nghi",
+			phonetic: "(Ngi|Ni)",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"",
-				"[aouy]",
-				"j",
-			},
+			pattern:      "nghe",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "Nj",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"",
-				"",
-				"(gi|i)",
-			},
+			pattern:  "nghe",
+			phonetic: "(Nje|Nge)",
 		},
 		{
-			patterns: [4]string{
-				"ge",
-				"",
-				"[aouy]",
-				"j",
-			},
+			pattern:      "ghi",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ge",
-				"",
-				"",
-				"(je|ge)",
-			},
+			pattern:  "ghi",
+			phonetic: "(gi|i)",
 		},
 		{
-			patterns: [4]string{
-				"ng",
-				"",
-				"",
-				"Ng",
-			},
+			pattern:      "ghe",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:  "ghe",
+			phonetic: "(je|ge)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:  "ngh",
+			phonetic: "Ng",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:  "gh",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:      "ngi",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "Nj",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:  "ngi",
+			phonetic: "(Ngi|Ni)",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"",
-				"",
-				"i",
-			},
+			pattern:      "nge",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "Nj",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "nge",
+			phonetic: "(Nje|Nge)",
 		},
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"x",
-			},
+			pattern:      "gi",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"dh",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "gi",
+			phonetic: "(gi|i)",
 		},
 		{
-			patterns: [4]string{
-				"dj",
-				"",
-				"",
-				"dZ",
-			},
+			pattern:      "ge",
+			rightContext: regexp.MustCompile("^[aouy]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ph",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "ge",
+			phonetic: "(je|ge)",
 		},
 		{
-			patterns: [4]string{
-				"th",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "ng",
+			phonetic: "Ng",
 		},
 		{
-			patterns: [4]string{
-				"kz",
-				"",
-				"",
-				"gz",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"",
-				"dz",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"[bgdmnr]",
-				"z",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"mb",
-				"",
-				"",
-				"(mb|b)",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"mp",
-				"^",
-				"",
-				"b",
-			},
+			pattern:      "yi",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"mp",
-				"[aeiouy]",
-				"",
-				"mp",
-			},
+			pattern:  "yi",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"mp",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "ch",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"nt",
-				"^",
-				"",
-				"d",
-			},
+			pattern:  "kh",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"nt",
-				"[aeiouy]",
-				"",
-				"(nd|nt)",
-			},
+			pattern:  "dh",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"nt",
-				"",
-				"",
-				"(nt|d)",
-			},
+			pattern:  "dj",
+			phonetic: "dZ",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "ph",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "th",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"í",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "kz",
+			phonetic: "gz",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "tz",
+			phonetic: "dz",
 		},
 		{
-			patterns: [4]string{
-				"óu",
-				"",
-				"",
-				"u",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^[bgdmnr]"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"ú",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "mb",
+			phonetic: "(mb|b)",
 		},
 		{
-			patterns: [4]string{
-				"ý",
-				"",
-				"",
-				"(i|Q|u)",
-			},
+			pattern:     "mp",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "b",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:     "mp",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "mp",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"(b|v)",
-			},
+			pattern:  "mp",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:     "nt",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "d",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:     "nt",
+			leftContext: regexp.MustCompile("[aeiouy]$"),
+			phonetic:    "(nd|nt)",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "nt",
+			phonetic: "(nt|d)",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "á",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "í",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ó",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"(j|Z)",
-			},
+			pattern:  "óu",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ú",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "ý",
+			phonetic: "(i|Q|u)",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ο",
-				"",
-				"",
-				"o",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"(i|Q|u)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "b",
+			phonetic: "(b|v)",
+		},
+		{
+			pattern:  "c",
+			phonetic: "k",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "e",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "x",
+		},
+		{
+			pattern:  "i",
+			phonetic: "i",
+		},
+		{
+			pattern:  "j",
+			phonetic: "(j|Z)",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "ο",
+			phonetic: "o",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "s",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "u",
+		},
+		{
+			pattern:  "v",
+			phonetic: "v",
+		},
+		{
+			pattern:  "w",
+			phonetic: "v",
+		},
+		{
+			pattern:  "x",
+			phonetic: "ks",
+		},
+		{
+			pattern:  "y",
+			phonetic: "(i|Q|u)",
+		},
+		{
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genhebrew: []rule{
 		{
-			patterns: [4]string{
-				"אי",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "אי",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"עי",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "עי",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"עו",
-				"",
-				"",
-				"VV",
-			},
+			pattern:  "עו",
+			phonetic: "VV",
 		},
 		{
-			patterns: [4]string{
-				"או",
-				"",
-				"",
-				"VV",
-			},
+			pattern:  "או",
+			phonetic: "VV",
 		},
 		{
-			patterns: [4]string{
-				"ג׳",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "ג׳",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"ד׳",
-				"",
-				"",
-				"dZ",
-			},
+			pattern:  "ד׳",
+			phonetic: "dZ",
 		},
 		{
-			patterns: [4]string{
-				"א",
-				"",
-				"",
-				"L",
-			},
+			pattern:  "א",
+			phonetic: "L",
 		},
 		{
-			patterns: [4]string{
-				"ב",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "ב",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"ג",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "ג",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"ד",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "ד",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"ה",
-				"^",
-				"",
-				"1",
-			},
+			pattern:     "ה",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "1",
 		},
 		{
-			patterns: [4]string{
-				"ה",
-				"",
-				"$",
-				"1",
-			},
+			pattern:      "ה",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "1",
 		},
 		{
-			patterns: [4]string{
-				"ה",
-				"",
-				"",
-				"",
-			},
+			pattern:  "ה",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"וו",
-				"",
-				"",
-				"V",
-			},
+			pattern:  "וו",
+			phonetic: "V",
 		},
 		{
-			patterns: [4]string{
-				"וי",
-				"",
-				"",
-				"WW",
-			},
+			pattern:  "וי",
+			phonetic: "WW",
 		},
 		{
-			patterns: [4]string{
-				"ו",
-				"",
-				"",
-				"W",
-			},
+			pattern:  "ו",
+			phonetic: "W",
 		},
 		{
-			patterns: [4]string{
-				"ז",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "ז",
+			phonetic: "z",
 		},
 		{
-			patterns: [4]string{
-				"ח",
-				"",
-				"",
-				"X",
-			},
+			pattern:  "ח",
+			phonetic: "X",
 		},
 		{
-			patterns: [4]string{
-				"ט",
-				"",
-				"",
-				"T",
-			},
+			pattern:  "ט",
+			phonetic: "T",
 		},
 		{
-			patterns: [4]string{
-				"יי",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "יי",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"י",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "י",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ך",
-				"",
-				"",
-				"X",
-			},
+			pattern:  "ך",
+			phonetic: "X",
 		},
 		{
-			patterns: [4]string{
-				"כ",
-				"^",
-				"",
-				"K",
-			},
+			pattern:     "כ",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "K",
 		},
 		{
-			patterns: [4]string{
-				"כ",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "כ",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"ל",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "ל",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"ם",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "ם",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"מ",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "מ",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"ן",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "ן",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"נ",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "נ",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"ס",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ס",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"ע",
-				"",
-				"",
-				"L",
-			},
+			pattern:  "ע",
+			phonetic: "L",
 		},
 		{
-			patterns: [4]string{
-				"ף",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "ף",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"פ",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "פ",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"ץ",
-				"",
-				"",
-				"C",
-			},
+			pattern:  "ץ",
+			phonetic: "C",
 		},
 		{
-			patterns: [4]string{
-				"צ",
-				"",
-				"",
-				"C",
-			},
+			pattern:  "צ",
+			phonetic: "C",
 		},
 		{
-			patterns: [4]string{
-				"ק",
-				"",
-				"",
-				"K",
-			},
+			pattern:  "ק",
+			phonetic: "K",
 		},
 		{
-			patterns: [4]string{
-				"ר",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "ר",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"ש",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ש",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"ת",
-				"",
-				"",
-				"TB",
-			},
+			pattern:  "ת",
+			phonetic: "TB",
 		},
 	},
 	genhungarian: []rule{
 		{
-			patterns: [4]string{
-				"sz",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "sz",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"zs",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "zs",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"cs",
-				"",
-				"",
-				"tS",
-			},
+			pattern:  "cs",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"ay",
-				"",
-				"",
-				"(oj|aj)",
-			},
+			pattern:  "ay",
+			phonetic: "(oj|aj)",
 		},
 		{
-			patterns: [4]string{
-				"ai",
-				"",
-				"",
-				"(oj|aj)",
-			},
+			pattern:  "ai",
+			phonetic: "(oj|aj)",
 		},
 		{
-			patterns: [4]string{
-				"aj",
-				"",
-				"",
-				"(oj|aj)",
-			},
+			pattern:  "aj",
+			phonetic: "(oj|aj)",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:  "ei",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"ey",
-				"",
-				"",
-				"(aj|ej)",
-			},
+			pattern:  "ey",
+			phonetic: "(aj|ej)",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[áo]",
-				"",
-				"j",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[áo]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[áo]",
-				"",
-				"j",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[áo]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"ee",
-				"",
-				"",
-				"(ej|e)",
-			},
+			pattern:  "ee",
+			phonetic: "(ej|e)",
 		},
 		{
-			patterns: [4]string{
-				"ely",
-				"",
-				"",
-				"(ej|eli)",
-			},
+			pattern:  "ely",
+			phonetic: "(ej|eli)",
 		},
 		{
-			patterns: [4]string{
-				"ly",
-				"",
-				"",
-				"(j|li)",
-			},
+			pattern:  "ly",
+			phonetic: "(j|li)",
 		},
 		{
-			patterns: [4]string{
-				"gy",
-				"",
-				"[aeouáéóúüöőű]",
-				"dj",
-			},
+			pattern:      "gy",
+			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
+			phonetic:     "dj",
 		},
 		{
-			patterns: [4]string{
-				"gy",
-				"",
-				"",
-				"(d|gi)",
-			},
+			pattern:  "gy",
+			phonetic: "(d|gi)",
 		},
 		{
-			patterns: [4]string{
-				"ny",
-				"",
-				"[aeouáéóúüöőű]",
-				"nj",
-			},
+			pattern:      "ny",
+			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
+			phonetic:     "nj",
 		},
 		{
-			patterns: [4]string{
-				"ny",
-				"",
-				"",
-				"(n|ni)",
-			},
+			pattern:  "ny",
+			phonetic: "(n|ni)",
 		},
 		{
-			patterns: [4]string{
-				"ty",
-				"",
-				"[aeouáéóúüöőű]",
-				"tj",
-			},
+			pattern:      "ty",
+			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
+			phonetic:     "tj",
 		},
 		{
-			patterns: [4]string{
-				"ty",
-				"",
-				"",
-				"(t|ti)",
-			},
+			pattern:  "ty",
+			phonetic: "(t|ti)",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"(ku|kv)",
-			},
+			pattern:  "qu",
+			phonetic: "(ku|kv)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "á",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"í",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "í",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ó",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ú",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ú",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"ö",
-				"",
-				"",
-				"Y",
-			},
+			pattern:  "ö",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ő",
-				"",
-				"",
-				"Y",
-			},
+			pattern:  "ő",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ü",
-				"",
-				"",
-				"Q",
-			},
+			pattern:  "ü",
+			phonetic: "Q",
 		},
 		{
-			patterns: [4]string{
-				"ű",
-				"",
-				"",
-				"Q",
-			},
+			pattern:  "ű",
+			phonetic: "Q",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "c",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "e",
+			phonetic: "E",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "h",
+			phonetic: "h",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "i",
+			phonetic: "I",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "j",
+			phonetic: "j",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "q",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"(S|s)",
-			},
+			pattern:  "s",
+			phonetic: "(S|s)",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "w",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "y",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genitalian: []rule{
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "kh",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"gli",
-				"",
-				"",
-				"(l|gli)",
-			},
+			pattern:  "gli",
+			phonetic: "(l|gli)",
 		},
 		{
-			patterns: [4]string{
-				"gn",
-				"",
-				"[aeou]",
-				"(n|nj|gn)",
-			},
+			pattern:      "gn",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "(n|nj|gn)",
 		},
 		{
-			patterns: [4]string{
-				"gni",
-				"",
-				"",
-				"(ni|gni)",
-			},
+			pattern:  "gni",
+			phonetic: "(ni|gni)",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"",
-				"[aeou]",
-				"dZ",
-			},
+			pattern:      "gi",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "dZ",
 		},
 		{
-			patterns: [4]string{
-				"gg",
-				"",
-				"[ei]",
-				"dZ",
-			},
+			pattern:      "gg",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "dZ",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[ei]",
-				"dZ",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "dZ",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[bdgt]",
-				"",
-				"g",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[bdgt]$"),
+			phonetic:    "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"ci",
-				"",
-				"[aeou]",
-				"tS",
-			},
+			pattern:      "ci",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "tS",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"[ei]",
-				"k",
-			},
+			pattern:      "ch",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"sc",
-				"",
-				"[ei]",
-				"S",
-			},
+			pattern:      "sc",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "S",
 		},
 		{
-			patterns: [4]string{
-				"cc",
-				"",
-				"[ei]",
-				"tS",
-			},
+			pattern:      "cc",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "tS",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[ei]",
-				"tS",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "tS",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"[aeiou]",
-				"[aeiou]",
-				"z",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aeiou]$"),
+			rightContext: regexp.MustCompile("^[aeiou]"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "qu",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"uo",
-				"",
-				"",
-				"(vo|o)",
-			},
+			pattern:  "uo",
+			phonetic: "(vo|o)",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"[aei]",
-				"v",
-			},
+			pattern:      "u",
+			rightContext: regexp.MustCompile("^[aei]"),
+			phonetic:     "v",
 		},
 		{
-			patterns: [4]string{
-				"�",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "�",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"�",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "�",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"�",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "�",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"�",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "�",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "c",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "e",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "h",
+			phonetic: "h",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "i",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"(Z|dZ|j)",
-			},
+			pattern:  "j",
+			phonetic: "(Z|dZ|j)",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "q",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "w",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "y",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"(ts|dz)",
-			},
+			pattern:  "z",
+			phonetic: "(ts|dz)",
 		},
 	},
 	genlatvian: []rule{
 		{
-			patterns: [4]string{
-				"č",
-				"",
-				"",
-				"tS",
-			},
+			pattern:  "č",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"ģ",
-				"",
-				"",
-				"(d|dj)",
-			},
+			pattern:  "ģ",
+			phonetic: "(d|dj)",
 		},
 		{
-			patterns: [4]string{
-				"ķ",
-				"",
-				"",
-				"(t|tj)",
-			},
+			pattern:  "ķ",
+			phonetic: "(t|tj)",
 		},
 		{
-			patterns: [4]string{
-				"ļ",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "ļ",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"š",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "š",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ņ",
-				"",
-				"",
-				"(n|nj)",
-			},
+			pattern:  "ņ",
+			phonetic: "(n|nj)",
 		},
 		{
-			patterns: [4]string{
-				"ž",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "ž",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"ā",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "ā",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"ē",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "ē",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ī",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ī",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ū",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ū",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"ai",
-				"",
-				"",
-				"aj",
-			},
+			pattern:  "ai",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"ej",
-			},
+			pattern:  "ei",
+			phonetic: "ej",
 		},
 		{
-			patterns: [4]string{
-				"io",
-				"",
-				"",
-				"jo",
-			},
+			pattern:  "io",
+			phonetic: "jo",
 		},
 		{
-			patterns: [4]string{
-				"iu",
-				"",
-				"",
-				"ju",
-			},
+			pattern:  "iu",
+			phonetic: "ju",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "ie",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ui",
-				"",
-				"",
-				"uj",
-			},
+			pattern:  "ui",
+			phonetic: "uj",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "c",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "e",
+			phonetic: "E",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "h",
+			phonetic: "h",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "i",
+			phonetic: "I",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "j",
+			phonetic: "j",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genpolish: []rule{
 		{
-			patterns: [4]string{
-				"ska",
-				"",
-				"$",
-				"ski",
-			},
-		},
-		{
-			patterns: [4]string{
-				"cka",
-				"",
-				"$",
-				"tski",
-			},
-		},
-		{
-			patterns: [4]string{
-				"lowa",
-				"",
-				"$",
-				"(lova|lof|l|el)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"kowa",
-				"",
-				"$",
-				"(kova|kof|k|ek)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"owa",
-				"",
-				"$",
-				"(ova|of|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"lowna",
-				"",
-				"$",
-				"(lovna|levna|l|el)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"kowna",
-				"",
-				"$",
-				"(kovna|k|ek)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"owna",
-				"",
-				"$",
-				"(ovna|)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"lówna",
-				"",
-				"$",
-				"(l|el)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"kówna",
-				"",
-				"$",
-				"(k|ek)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ówna",
-				"",
-				"$",
-				"",
-			},
-		},
-		{
-			patterns: [4]string{
-				"a",
-				"",
-				"$",
-				"(a|i)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"czy",
-				"",
-				"",
-				"tSi",
-			},
+			pattern:      "ska",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ski",
 		},
 		{
-			patterns: [4]string{
-				"cze",
-				"",
-				"[bcdgkpstwzż]",
-				"(tSe|tSF)",
-			},
+			pattern:      "cka",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "tski",
 		},
 		{
-			patterns: [4]string{
-				"ciewicz",
-				"",
-				"",
-				"(tsevitS|tSevitS)",
-			},
+			pattern:      "lowa",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lova|lof|l|el)",
 		},
 		{
-			patterns: [4]string{
-				"siewicz",
-				"",
-				"",
-				"(sevitS|SevitS)",
-			},
+			pattern:      "kowa",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(kova|kof|k|ek)",
 		},
 		{
-			patterns: [4]string{
-				"ziewicz",
-				"",
-				"",
-				"(zevitS|ZevitS)",
-			},
+			pattern:      "owa",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ova|of|)",
 		},
 		{
-			patterns: [4]string{
-				"riewicz",
-				"",
-				"",
-				"rjevitS",
-			},
+			pattern:      "lowna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lovna|levna|l|el)",
 		},
 		{
-			patterns: [4]string{
-				"diewicz",
-				"",
-				"",
-				"djevitS",
-			},
+			pattern:      "kowna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(kovna|k|ek)",
 		},
 		{
-			patterns: [4]string{
-				"tiewicz",
-				"",
-				"",
-				"tjevitS",
-			},
+			pattern:      "owna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ovna|)",
 		},
 		{
-			patterns: [4]string{
-				"iewicz",
-				"",
-				"",
-				"evitS",
-			},
+			pattern:      "lówna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(l|el)",
 		},
 		{
-			patterns: [4]string{
-				"ewicz",
-				"",
-				"",
-				"evitS",
-			},
+			pattern:      "kówna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(k|ek)",
 		},
 		{
-			patterns: [4]string{
-				"owicz",
-				"",
-				"",
-				"ovitS",
-			},
+			pattern:      "ówna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"icz",
-				"",
-				"",
-				"itS",
-			},
+			pattern:      "a",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(a|i)",
 		},
 		{
-			patterns: [4]string{
-				"cz",
-				"",
-				"",
-				"tS",
-			},
+			pattern:  "czy",
+			phonetic: "tSi",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"x",
-			},
+			pattern:      "cze",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(tSe|tSF)",
 		},
 		{
-			patterns: [4]string{
-				"cia",
-				"",
-				"[bcdgkpstwzż]",
-				"(tSB|tsB)",
-			},
+			pattern:  "ciewicz",
+			phonetic: "(tsevitS|tSevitS)",
 		},
 		{
-			patterns: [4]string{
-				"cia",
-				"",
-				"",
-				"(tSa|tsa)",
-			},
+			pattern:  "siewicz",
+			phonetic: "(sevitS|SevitS)",
 		},
 		{
-			patterns: [4]string{
-				"cią",
-				"",
-				"[bp]",
-				"(tSom|tsom)",
-			},
+			pattern:  "ziewicz",
+			phonetic: "(zevitS|ZevitS)",
 		},
 		{
-			patterns: [4]string{
-				"cią",
-				"",
-				"",
-				"(tSon|tson)",
-			},
+			pattern:  "riewicz",
+			phonetic: "rjevitS",
 		},
 		{
-			patterns: [4]string{
-				"cię",
-				"",
-				"[bp]",
-				"(tSem|tsem)",
-			},
+			pattern:  "diewicz",
+			phonetic: "djevitS",
 		},
 		{
-			patterns: [4]string{
-				"cię",
-				"",
-				"",
-				"(tSen|tsen)",
-			},
+			pattern:  "tiewicz",
+			phonetic: "tjevitS",
 		},
 		{
-			patterns: [4]string{
-				"cie",
-				"",
-				"[bcdgkpstwzż]",
-				"(tSF|tsF)",
-			},
+			pattern:  "iewicz",
+			phonetic: "evitS",
 		},
 		{
-			patterns: [4]string{
-				"cie",
-				"",
-				"",
-				"(tSe|tse)",
-			},
+			pattern:  "ewicz",
+			phonetic: "evitS",
 		},
 		{
-			patterns: [4]string{
-				"cio",
-				"",
-				"",
-				"(tSo|tso)",
-			},
+			pattern:  "owicz",
+			phonetic: "ovitS",
 		},
 		{
-			patterns: [4]string{
-				"ciu",
-				"",
-				"",
-				"(tSu|tsu)",
-			},
+			pattern:  "icz",
+			phonetic: "itS",
 		},
 		{
-			patterns: [4]string{
-				"ci",
-				"",
-				"",
-				"(tSi|tsI)",
-			},
+			pattern:  "cz",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"ć",
-				"",
-				"",
-				"(tS|ts)",
-			},
+			pattern:  "ch",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"ssz",
-				"",
-				"",
-				"S",
-			},
+			pattern:      "cia",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(tSB|tsB)",
 		},
 		{
-			patterns: [4]string{
-				"sz",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "cia",
+			phonetic: "(tSa|tsa)",
 		},
 		{
-			patterns: [4]string{
-				"sia",
-				"",
-				"[bcdgkpstwzż]",
-				"(SB|sB|sja)",
-			},
+			pattern:      "cią",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(tSom|tsom)",
 		},
 		{
-			patterns: [4]string{
-				"sia",
-				"",
-				"",
-				"(Sa|sja)",
-			},
+			pattern:  "cią",
+			phonetic: "(tSon|tson)",
 		},
 		{
-			patterns: [4]string{
-				"sią",
-				"",
-				"[bp]",
-				"(Som|som)",
-			},
+			pattern:      "cię",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(tSem|tsem)",
 		},
 		{
-			patterns: [4]string{
-				"sią",
-				"",
-				"",
-				"(Son|son)",
-			},
+			pattern:  "cię",
+			phonetic: "(tSen|tsen)",
 		},
 		{
-			patterns: [4]string{
-				"się",
-				"",
-				"[bp]",
-				"(Sem|sem)",
-			},
+			pattern:      "cie",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(tSF|tsF)",
 		},
 		{
-			patterns: [4]string{
-				"się",
-				"",
-				"",
-				"(Sen|sen)",
-			},
+			pattern:  "cie",
+			phonetic: "(tSe|tse)",
 		},
 		{
-			patterns: [4]string{
-				"sie",
-				"",
-				"[bcdgkpstwzż]",
-				"(SF|sF|se)",
-			},
+			pattern:  "cio",
+			phonetic: "(tSo|tso)",
 		},
 		{
-			patterns: [4]string{
-				"sie",
-				"",
-				"",
-				"(Se|se)",
-			},
+			pattern:  "ciu",
+			phonetic: "(tSu|tsu)",
 		},
 		{
-			patterns: [4]string{
-				"sio",
-				"",
-				"",
-				"(So|so)",
-			},
+			pattern:  "ci",
+			phonetic: "(tSi|tsI)",
 		},
 		{
-			patterns: [4]string{
-				"siu",
-				"",
-				"",
-				"(Su|sju)",
-			},
+			pattern:  "ć",
+			phonetic: "(tS|ts)",
 		},
 		{
-			patterns: [4]string{
-				"si",
-				"",
-				"",
-				"(Si|sI)",
-			},
+			pattern:  "ssz",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ś",
-				"",
-				"",
-				"(S|s)",
-			},
+			pattern:  "sz",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"zia",
-				"",
-				"[bcdgkpstwzż]",
-				"(ZB|zB|zja)",
-			},
+			pattern:      "sia",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(SB|sB|sja)",
 		},
 		{
-			patterns: [4]string{
-				"zia",
-				"",
-				"",
-				"(Za|zja)",
-			},
+			pattern:  "sia",
+			phonetic: "(Sa|sja)",
 		},
 		{
-			patterns: [4]string{
-				"zią",
-				"",
-				"[bp]",
-				"(Zom|zom)",
-			},
+			pattern:      "sią",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Som|som)",
 		},
 		{
-			patterns: [4]string{
-				"zią",
-				"",
-				"",
-				"(Zon|zon)",
-			},
+			pattern:  "sią",
+			phonetic: "(Son|son)",
 		},
 		{
-			patterns: [4]string{
-				"zię",
-				"",
-				"[bp]",
-				"(Zem|zem)",
-			},
+			pattern:      "się",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Sem|sem)",
 		},
 		{
-			patterns: [4]string{
-				"zię",
-				"",
-				"",
-				"(Zen|zen)",
-			},
+			pattern:  "się",
+			phonetic: "(Sen|sen)",
 		},
 		{
-			patterns: [4]string{
-				"zie",
-				"",
-				"[bcdgkpstwzż]",
-				"(ZF|zF)",
-			},
+			pattern:      "sie",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(SF|sF|se)",
 		},
 		{
-			patterns: [4]string{
-				"zie",
-				"",
-				"",
-				"(Ze|ze)",
-			},
+			pattern:  "sie",
+			phonetic: "(Se|se)",
 		},
 		{
-			patterns: [4]string{
-				"zio",
-				"",
-				"",
-				"(Zo|zo)",
-			},
+			pattern:  "sio",
+			phonetic: "(So|so)",
 		},
 		{
-			patterns: [4]string{
-				"ziu",
-				"",
-				"",
-				"(Zu|zju)",
-			},
+			pattern:  "siu",
+			phonetic: "(Su|sju)",
 		},
 		{
-			patterns: [4]string{
-				"zi",
-				"",
-				"",
-				"(Zi|zI)",
-			},
+			pattern:  "si",
+			phonetic: "(Si|sI)",
 		},
 		{
-			patterns: [4]string{
-				"że",
-				"",
-				"[bcdgkpstwzż]",
-				"(Ze|ZF)",
-			},
+			pattern:  "ś",
+			phonetic: "(S|s)",
 		},
 		{
-			patterns: [4]string{
-				"że",
-				"",
-				"[bcdgkpstwzż]",
-				"(Ze|ZF|ze|zF)",
-			},
+			pattern:      "zia",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(ZB|zB|zja)",
 		},
 		{
-			patterns: [4]string{
-				"że",
-				"",
-				"",
-				"Ze",
-			},
+			pattern:  "zia",
+			phonetic: "(Za|zja)",
 		},
 		{
-			patterns: [4]string{
-				"źe",
-				"",
-				"",
-				"(Ze|ze)",
-			},
+			pattern:      "zią",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Zom|zom)",
 		},
 		{
-			patterns: [4]string{
-				"ży",
-				"",
-				"",
-				"Zi",
-			},
+			pattern:  "zią",
+			phonetic: "(Zon|zon)",
 		},
 		{
-			patterns: [4]string{
-				"źi",
-				"",
-				"",
-				"(Zi|zi)",
-			},
+			pattern:      "zię",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "(Zem|zem)",
 		},
 		{
-			patterns: [4]string{
-				"ż",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "zię",
+			phonetic: "(Zen|zen)",
 		},
 		{
-			patterns: [4]string{
-				"ź",
-				"",
-				"",
-				"(Z|z)",
-			},
+			pattern:      "zie",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(ZF|zF)",
 		},
 		{
-			patterns: [4]string{
-				"rze",
-				"t",
-				"",
-				"(Se|re)",
-			},
+			pattern:  "zie",
+			phonetic: "(Ze|ze)",
 		},
 		{
-			patterns: [4]string{
-				"rze",
-				"",
-				"",
-				"(Ze|re|rZe)",
-			},
+			pattern:  "zio",
+			phonetic: "(Zo|zo)",
 		},
 		{
-			patterns: [4]string{
-				"rzy",
-				"t",
-				"",
-				"(Si|ri)",
-			},
+			pattern:  "ziu",
+			phonetic: "(Zu|zju)",
 		},
 		{
-			patterns: [4]string{
-				"rzy",
-				"",
-				"",
-				"(Zi|ri|rZi)",
-			},
+			pattern:  "zi",
+			phonetic: "(Zi|zI)",
 		},
 		{
-			patterns: [4]string{
-				"rz",
-				"t",
-				"",
-				"(S|r)",
-			},
+			pattern:      "że",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(Ze|ZF)",
 		},
 		{
-			patterns: [4]string{
-				"rz",
-				"",
-				"",
-				"(Z|r|rZ)",
-			},
+			pattern:      "że",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(Ze|ZF|ze|zF)",
 		},
 		{
-			patterns: [4]string{
-				"lio",
-				"",
-				"",
-				"(lo|le)",
-			},
+			pattern:  "że",
+			phonetic: "Ze",
 		},
 		{
-			patterns: [4]string{
-				"ł",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "źe",
+			phonetic: "(Ze|ze)",
 		},
 		{
-			patterns: [4]string{
-				"ń",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "ży",
+			phonetic: "Zi",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "źi",
+			phonetic: "(Zi|zi)",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"s",
-				"",
-			},
+			pattern:  "ż",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"(u|o)",
-			},
+			pattern:  "ź",
+			phonetic: "(Z|z)",
 		},
 		{
-			patterns: [4]string{
-				"ą",
-				"",
-				"[bp]",
-				"om",
-			},
+			pattern:     "rze",
+			leftContext: regexp.MustCompile("t$"),
+			phonetic:    "(Se|re)",
 		},
 		{
-			patterns: [4]string{
-				"ę",
-				"",
-				"[bp]",
-				"em",
-			},
+			pattern:  "rze",
+			phonetic: "(Ze|re|rZe)",
 		},
 		{
-			patterns: [4]string{
-				"ą",
-				"",
-				"",
-				"on",
-			},
+			pattern:     "rzy",
+			leftContext: regexp.MustCompile("t$"),
+			phonetic:    "(Si|ri)",
 		},
 		{
-			patterns: [4]string{
-				"ę",
-				"",
-				"",
-				"en",
-			},
+			pattern:  "rzy",
+			phonetic: "(Zi|ri|rZi)",
 		},
 		{
-			patterns: [4]string{
-				"ije",
-				"",
-				"",
-				"je",
-			},
+			pattern:     "rz",
+			leftContext: regexp.MustCompile("t$"),
+			phonetic:    "(S|r)",
 		},
 		{
-			patterns: [4]string{
-				"yje",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "rz",
+			phonetic: "(Z|r|rZ)",
 		},
 		{
-			patterns: [4]string{
-				"iie",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "lio",
+			phonetic: "(lo|le)",
 		},
 		{
-			patterns: [4]string{
-				"yie",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "ł",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"iye",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "ń",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"yye",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "qu",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"ij",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^s"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"yj",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ó",
+			phonetic: "(u|o)",
 		},
 		{
-			patterns: [4]string{
-				"ii",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:      "ą",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "om",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:      "ę",
+			rightContext: regexp.MustCompile("^[bp]"),
+			phonetic:     "em",
 		},
 		{
-			patterns: [4]string{
-				"iy",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ą",
+			phonetic: "on",
 		},
 		{
-			patterns: [4]string{
-				"yy",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ę",
+			phonetic: "en",
 		},
 		{
-			patterns: [4]string{
-				"rie",
-				"",
-				"",
-				"rje",
-			},
+			pattern:  "ije",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"die",
-				"",
-				"",
-				"dje",
-			},
+			pattern:  "yje",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"tie",
-				"",
-				"",
-				"tje",
-			},
+			pattern:  "iie",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"[bcdgkpstwzż]",
-				"F",
-			},
+			pattern:  "yie",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "iye",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "yye",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"au",
-				"",
-				"",
-				"au",
-			},
+			pattern:      "ij",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ei",
-				"",
-				"",
-				"aj",
-			},
+			pattern:      "yj",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ey",
-				"",
-				"",
-				"aj",
-			},
+			pattern:      "ii",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ej",
-				"",
-				"",
-				"aj",
-			},
+			pattern:      "yi",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ai",
-				"",
-				"",
-				"aj",
-			},
+			pattern:      "iy",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ay",
-				"",
-				"",
-				"aj",
-			},
+			pattern:      "yy",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"aj",
-				"",
-				"",
-				"aj",
-			},
+			pattern:  "rie",
+			phonetic: "rje",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:  "die",
+			phonetic: "dje",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:  "tie",
+			phonetic: "tje",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:      "ie",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "F",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:  "ie",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"[bcdgkpstwzż]",
-				"B",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"[bcdgkpstwzż]",
-				"(E|F)",
-			},
+			pattern:  "au",
+			phonetic: "au",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"[bcćdgklłmnńrsśtwzźż]",
-				"P",
-			},
+			pattern:  "ei",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "ey",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "ej",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "ai",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "ay",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "aj",
+			phonetic: "aj",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"(h|x)",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:      "a",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "B",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:      "e",
+			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
+			phonetic:     "(E|F)",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:      "o",
+			rightContext: regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
+			phonetic:     "P",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"I",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "b",
+			phonetic: "b",
+		},
+		{
+			pattern:  "c",
+			phonetic: "ts",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "E",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "(h|x)",
+		},
+		{
+			pattern:  "i",
+			phonetic: "I",
+		},
+		{
+			pattern:  "j",
+			phonetic: "j",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "o",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "s",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "u",
+		},
+		{
+			pattern:  "v",
+			phonetic: "v",
+		},
+		{
+			pattern:  "w",
+			phonetic: "v",
+		},
+		{
+			pattern:  "x",
+			phonetic: "ks",
+		},
+		{
+			pattern:  "y",
+			phonetic: "I",
+		},
+		{
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genportuguese: []rule{
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"x",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"S",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ss",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"sc",
-				"",
-				"[ei]",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"sç",
-				"",
-				"[aou]",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ç",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[ei]",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"^",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"[aáuiíoóeéêy]",
-				"[aáuiíoóeéêy]",
-				"z",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"[dglmnrv]",
-				"(Z|S)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"$",
-				"(Z|s|S)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"[bdgv]",
-				"(Z|z)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"[ptckf]",
-				"(s|S|z)",
-			},
+			pattern:  "kh",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"gu",
-				"",
-				"[eiu]",
-				"g",
-			},
+			pattern:  "ch",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"gu",
-				"",
-				"[ao]",
-				"gv",
-			},
+			pattern:  "ss",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[ei]",
-				"Z",
-			},
+			pattern:      "sc",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"[eiu]",
-				"k",
-			},
+			pattern:      "sç",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"[ao]",
-				"kv",
-			},
+			pattern:  "ç",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"uo",
-				"",
-				"",
-				"(vo|o|u)",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"[aei]",
-				"v",
-			},
+			pattern:     "s",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "s",
 		},
 		{
-			patterns: [4]string{
-				"lh",
-				"",
-				"",
-				"l",
-			},
+			pattern:      "s",
+			leftContext:  regexp.MustCompile("[aáuiíoóeéêy]$"),
+			rightContext: regexp.MustCompile("^[aáuiíoóeéêy]"),
+			phonetic:     "z",
 		},
 		{
-			patterns: [4]string{
-				"nh",
-				"",
-				"",
-				"nj",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^[dglmnrv]"),
+			phonetic:     "(Z|S)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[bdgt]",
-				"",
-				"",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(Z|s|S)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^[bdgv]"),
+			phonetic:     "(Z|z)",
 		},
 		{
-			patterns: [4]string{
-				"ex",
-				"",
-				"[aáuiíoóeéêy]",
-				"(ez|eS|eks)",
-			},
+			pattern:      "z",
+			rightContext: regexp.MustCompile("^[ptckf]"),
+			phonetic:     "(s|S|z)",
 		},
 		{
-			patterns: [4]string{
-				"ex",
-				"",
-				"[cs]",
-				"e",
-			},
+			pattern:      "gu",
+			rightContext: regexp.MustCompile("^[eiu]"),
+			phonetic:     "g",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aáuiíoóeéê]",
-				"",
-				"j",
-			},
+			pattern:      "gu",
+			rightContext: regexp.MustCompile("^[ao]"),
+			phonetic:     "gv",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[aeiíou]",
-				"j",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "Z",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"[bcdfglnprstv]",
-				"(m|n)",
-			},
+			pattern:      "qu",
+			rightContext: regexp.MustCompile("^[eiu]"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"$",
-				"(m|n)",
-			},
+			pattern:      "qu",
+			rightContext: regexp.MustCompile("^[ao]"),
+			phonetic:     "kv",
 		},
 		{
-			patterns: [4]string{
-				"ão",
-				"",
-				"",
-				"(au|an|on)",
-			},
+			pattern:  "uo",
+			phonetic: "(vo|o|u)",
 		},
 		{
-			patterns: [4]string{
-				"ãe",
-				"",
-				"",
-				"(aj|an)",
-			},
+			pattern:      "u",
+			rightContext: regexp.MustCompile("^[aei]"),
+			phonetic:     "v",
 		},
 		{
-			patterns: [4]string{
-				"ãi",
-				"",
-				"",
-				"(aj|an)",
-			},
+			pattern:  "lh",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"õe",
-				"",
-				"",
-				"(oj|on)",
-			},
+			pattern:  "nh",
+			phonetic: "nj",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aáuoóeéê]",
-				"",
-				"j",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[bdgt]$"),
+			phonetic:    "",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"â",
-				"",
-				"",
-				"a",
-			},
+			pattern:      "ex",
+			rightContext: regexp.MustCompile("^[aáuiíoóeéêy]"),
+			phonetic:     "(ez|eS|eks)",
 		},
 		{
-			patterns: [4]string{
-				"à",
-				"",
-				"",
-				"a",
-			},
+			pattern:      "ex",
+			rightContext: regexp.MustCompile("^[cs]"),
+			phonetic:     "e",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"",
-				"a",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aáuiíoóeéê]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"ã",
-				"",
-				"",
-				"(a|an|on)",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[aeiíou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:      "m",
+			rightContext: regexp.MustCompile("^[bcdfglnprstv]"),
+			phonetic:     "(m|n)",
 		},
 		{
-			patterns: [4]string{
-				"ê",
-				"",
-				"",
-				"e",
-			},
+			pattern:      "m",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(m|n)",
 		},
 		{
-			patterns: [4]string{
-				"í",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "ão",
+			phonetic: "(au|an|on)",
 		},
 		{
-			patterns: [4]string{
-				"ô",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ãe",
+			phonetic: "(aj|an)",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ãi",
+			phonetic: "(aj|an)",
 		},
 		{
-			patterns: [4]string{
-				"õ",
-				"",
-				"",
-				"(o|on)",
-			},
+			pattern:  "õe",
+			phonetic: "(oj|on)",
 		},
 		{
-			patterns: [4]string{
-				"ú",
-				"",
-				"",
-				"u",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aáuoóeéê]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"ü",
-				"",
-				"",
-				"u",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "â",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "à",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "á",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ã",
+			phonetic: "(a|an|on)",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"(e|i)",
-			},
+			pattern:  "ê",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "í",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "ô",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "ó",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "õ",
+			phonetic: "(o|on)",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "ú",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "ü",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"(o|u)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"S",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"(S|ks)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "b",
+			phonetic: "b",
+		},
+		{
+			pattern:  "c",
+			phonetic: "k",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "(e|i)",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "h",
+		},
+		{
+			pattern:  "i",
+			phonetic: "i",
+		},
+		{
+			pattern:  "j",
+			phonetic: "Z",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "(o|u)",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "S",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "u",
+		},
+		{
+			pattern:  "v",
+			phonetic: "v",
+		},
+		{
+			pattern:  "w",
+			phonetic: "v",
+		},
+		{
+			pattern:  "x",
+			phonetic: "(S|ks)",
+		},
+		{
+			pattern:  "y",
+			phonetic: "i",
+		},
+		{
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genromanian: []rule{
 		{
-			patterns: [4]string{
-				"ce",
-				"",
-				"",
-				"tSe",
-			},
+			pattern:  "ce",
+			phonetic: "tSe",
 		},
 		{
-			patterns: [4]string{
-				"ci",
-				"",
-				"",
-				"(tSi|tS)",
-			},
+			pattern:  "ci",
+			phonetic: "(tSi|tS)",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"[ei]",
-				"k",
-			},
+			pattern:      "ch",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "k",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "ch",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"gi",
-				"",
-				"",
-				"(dZi|dZ)",
-			},
+			pattern:  "gi",
+			phonetic: "(dZi|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[ei]",
-				"dZ",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "dZ",
 		},
 		{
-			patterns: [4]string{
-				"gh",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "gh",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[aeou]",
-				"j",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[aeou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ţ",
-				"",
-				"",
-				"ts",
-			},
+			pattern:  "ţ",
+			phonetic: "ts",
 		},
 		{
-			patterns: [4]string{
-				"ş",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "ş",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "qu",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"î",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "î",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ea",
-				"",
-				"",
-				"ja",
-			},
+			pattern:  "ea",
+			phonetic: "ja",
 		},
 		{
-			patterns: [4]string{
-				"ă",
-				"",
-				"",
-				"(e|a)",
-			},
+			pattern:  "ă",
+			phonetic: "(e|a)",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "c",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:  "e",
+			phonetic: "E",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"(x|h)",
-			},
+			pattern:  "h",
+			phonetic: "(x|h)",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "i",
+			phonetic: "I",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "j",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "q",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "w",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "y",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genrussian: []rule{
 		{
-			patterns: [4]string{
-				"yna",
-				"",
-				"$",
-				"(in|ina)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ina",
-				"",
-				"$",
-				"(in|ina)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"liova",
-				"",
-				"$",
-				"(lof|lef)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"lova",
-				"",
-				"$",
-				"(lof|lef|lova)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"ova",
-				"",
-				"$",
-				"(of|ova)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"eva",
-				"",
-				"$",
-				"(ef|ova)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"aia",
-				"",
-				"$",
-				"(aja|i)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"aja",
-				"",
-				"$",
-				"(aja|i)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"aya",
-				"",
-				"$",
-				"(aja|i)",
-			},
-		},
-		{
-			patterns: [4]string{
-				"tsya",
-				"",
-				"",
-				"tsa",
-			},
-		},
-		{
-			patterns: [4]string{
-				"tsyu",
-				"",
-				"",
-				"tsu",
-			},
-		},
-		{
-			patterns: [4]string{
-				"tsia",
-				"",
-				"",
-				"tsa",
-			},
-		},
-		{
-			patterns: [4]string{
-				"tsie",
-				"",
-				"",
-				"tse",
-			},
+			pattern:      "yna",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(in|ina)",
 		},
 		{
-			patterns: [4]string{
-				"tsio",
-				"",
-				"",
-				"tso",
-			},
+			pattern:      "ina",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(in|ina)",
 		},
 		{
-			patterns: [4]string{
-				"tsye",
-				"",
-				"",
-				"tse",
-			},
+			pattern:      "liova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lof|lef)",
 		},
 		{
-			patterns: [4]string{
-				"tsyo",
-				"",
-				"",
-				"tso",
-			},
+			pattern:      "lova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(lof|lef|lova)",
 		},
 		{
-			patterns: [4]string{
-				"tsiu",
-				"",
-				"",
-				"tsu",
-			},
+			pattern:      "ova",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(of|ova)",
 		},
 		{
-			patterns: [4]string{
-				"sie",
-				"",
-				"",
-				"se",
-			},
+			pattern:      "eva",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(ef|ova)",
 		},
 		{
-			patterns: [4]string{
-				"sio",
-				"",
-				"",
-				"so",
-			},
+			pattern:      "aia",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(aja|i)",
 		},
 		{
-			patterns: [4]string{
-				"zie",
-				"",
-				"",
-				"ze",
-			},
+			pattern:      "aja",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(aja|i)",
 		},
 		{
-			patterns: [4]string{
-				"zio",
-				"",
-				"",
-				"zo",
-			},
+			pattern:      "aya",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "(aja|i)",
 		},
 		{
-			patterns: [4]string{
-				"sye",
-				"",
-				"",
-				"se",
-			},
+			pattern:  "tsya",
+			phonetic: "tsa",
 		},
 		{
-			patterns: [4]string{
-				"syo",
-				"",
-				"",
-				"so",
-			},
+			pattern:  "tsyu",
+			phonetic: "tsu",
 		},
 		{
-			patterns: [4]string{
-				"zye",
-				"",
-				"",
-				"ze",
-			},
+			pattern:  "tsia",
+			phonetic: "tsa",
 		},
 		{
-			patterns: [4]string{
-				"zyo",
-				"",
-				"",
-				"zo",
-			},
+			pattern:  "tsie",
+			phonetic: "tse",
 		},
 		{
-			patterns: [4]string{
-				"ger",
-				"",
-				"$",
-				"ger",
-			},
+			pattern:  "tsio",
+			phonetic: "tso",
 		},
 		{
-			patterns: [4]string{
-				"gen",
-				"",
-				"$",
-				"gen",
-			},
+			pattern:  "tsye",
+			phonetic: "tse",
 		},
 		{
-			patterns: [4]string{
-				"gin",
-				"",
-				"$",
-				"gin",
-			},
+			pattern:  "tsyo",
+			phonetic: "tso",
 		},
 		{
-			patterns: [4]string{
-				"gg",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "tsiu",
+			phonetic: "tsu",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"[jaeoiuy]",
-				"[aeoiu]",
-				"g",
-			},
+			pattern:  "sie",
+			phonetic: "se",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[aeoiu]",
-				"(g|h)",
-			},
+			pattern:  "sio",
+			phonetic: "so",
 		},
 		{
-			patterns: [4]string{
-				"kh",
-				"",
-				"",
-				"x",
-			},
+			pattern:  "zie",
+			phonetic: "ze",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"(tS|x)",
-			},
+			pattern:  "zio",
+			phonetic: "zo",
 		},
 		{
-			patterns: [4]string{
-				"sch",
-				"",
-				"",
-				"(StS|S)",
-			},
+			pattern:  "sye",
+			phonetic: "se",
 		},
 		{
-			patterns: [4]string{
-				"ssh",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "syo",
+			phonetic: "so",
 		},
 		{
-			patterns: [4]string{
-				"sh",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "zye",
+			phonetic: "ze",
 		},
 		{
-			patterns: [4]string{
-				"zh",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "zyo",
+			phonetic: "zo",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"$",
-				"ts",
-			},
+			pattern:      "ger",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ger",
 		},
 		{
-			patterns: [4]string{
-				"tz",
-				"",
-				"",
-				"(ts|tz)",
-			},
+			pattern:      "gen",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "gen",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[iey]",
-				"s",
-			},
+			pattern:      "gin",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "gin",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"(kv|k)",
-			},
+			pattern:  "gg",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"s",
-				"",
-			},
+			pattern:      "g",
+			leftContext:  regexp.MustCompile("[jaeoiuy]$"),
+			rightContext: regexp.MustCompile("^[aeoiu]"),
+			phonetic:     "g",
 		},
 		{
-			patterns: [4]string{
-				"lya",
-				"",
-				"",
-				"la",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[aeoiu]"),
+			phonetic:     "(g|h)",
 		},
 		{
-			patterns: [4]string{
-				"lyu",
-				"",
-				"",
-				"lu",
-			},
+			pattern:  "kh",
+			phonetic: "x",
 		},
 		{
-			patterns: [4]string{
-				"lia",
-				"",
-				"",
-				"la",
-			},
+			pattern:  "ch",
+			phonetic: "(tS|x)",
 		},
 		{
-			patterns: [4]string{
-				"liu",
-				"",
-				"",
-				"lu",
-			},
+			pattern:  "sch",
+			phonetic: "(StS|S)",
 		},
 		{
-			patterns: [4]string{
-				"lja",
-				"",
-				"",
-				"la",
-			},
+			pattern:  "ssh",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"lju",
-				"",
-				"",
-				"lu",
-			},
+			pattern:  "sh",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"le",
-				"",
-				"",
-				"(lo|lE)",
-			},
+			pattern:  "zh",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"lyo",
-				"",
-				"",
-				"(lo|le)",
-			},
+			pattern:      "tz",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "ts",
 		},
 		{
-			patterns: [4]string{
-				"lio",
-				"",
-				"",
-				"(lo|le)",
-			},
+			pattern:  "tz",
+			phonetic: "(ts|tz)",
 		},
 		{
-			patterns: [4]string{
-				"ije",
-				"",
-				"",
-				"je",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[iey]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"ie",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "qu",
+			phonetic: "(kv|k)",
 		},
 		{
-			patterns: [4]string{
-				"iye",
-				"",
-				"",
-				"je",
-			},
+			pattern:      "s",
+			rightContext: regexp.MustCompile("^s"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"iie",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "lya",
+			phonetic: "la",
 		},
 		{
-			patterns: [4]string{
-				"yje",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "lyu",
+			phonetic: "lu",
 		},
 		{
-			patterns: [4]string{
-				"ye",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "lia",
+			phonetic: "la",
 		},
 		{
-			patterns: [4]string{
-				"yye",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "liu",
+			phonetic: "lu",
 		},
 		{
-			patterns: [4]string{
-				"yie",
-				"",
-				"",
-				"je",
-			},
+			pattern:  "lja",
+			phonetic: "la",
 		},
 		{
-			patterns: [4]string{
-				"ij",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "lju",
+			phonetic: "lu",
 		},
 		{
-			patterns: [4]string{
-				"iy",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "le",
+			phonetic: "(lo|lE)",
 		},
 		{
-			patterns: [4]string{
-				"ii",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "lyo",
+			phonetic: "(lo|le)",
 		},
 		{
-			patterns: [4]string{
-				"yj",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "lio",
+			phonetic: "(lo|le)",
 		},
 		{
-			patterns: [4]string{
-				"yy",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ije",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"",
-				"[aou]",
-				"j",
-			},
+			pattern:  "ie",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"io",
-				"",
-				"",
-				"(jo|e)",
-			},
+			pattern:  "iye",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"[au]",
-				"j",
-			},
+			pattern:  "iie",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"[aeou]",
-				"",
-				"j",
-			},
+			pattern:  "yje",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"yo",
-				"",
-				"",
-				"(jo|e)",
-			},
+			pattern:  "ye",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"[au]",
-				"j",
-			},
+			pattern:  "yye",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"[aeiou]",
-				"",
-				"j",
-			},
+			pattern:  "yie",
+			phonetic: "je",
 		},
 		{
-			patterns: [4]string{
-				"ii",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "ij",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"iy",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "iy",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"yy",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "ii",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"yi",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "yj",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"yj",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "yy",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"ij",
-				"",
-				"$",
-				"i",
-			},
+			pattern:      "yi",
+			rightContext: regexp.MustCompile("^[aou]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"^",
-				"",
-				"(je|E)",
-			},
+			pattern:  "io",
+			phonetic: "(jo|e)",
 		},
 		{
-			patterns: [4]string{
-				"ee",
-				"",
-				"",
-				"(aje|i)",
-			},
+			pattern:      "i",
+			rightContext: regexp.MustCompile("^[au]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"[aou]",
-				"",
-				"je",
-			},
+			pattern:     "i",
+			leftContext: regexp.MustCompile("[aeou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"oo",
-				"",
-				"",
-				"(oo|u)",
-			},
+			pattern:  "yo",
+			phonetic: "(jo|e)",
 		},
 		{
-			patterns: [4]string{
-				"'",
-				"",
-				"",
-				"",
-			},
+			pattern:      "y",
+			rightContext: regexp.MustCompile("^[au]"),
+			phonetic:     "j",
 		},
 		{
-			patterns: [4]string{
-				"\"",
-				"",
-				"",
-				"",
-			},
+			pattern:     "y",
+			leftContext: regexp.MustCompile("[aeiou]$"),
+			phonetic:    "j",
 		},
 		{
-			patterns: [4]string{
-				"aue",
-				"",
-				"",
-				"aue",
-			},
+			pattern:      "ii",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:      "iy",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:      "yy",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:      "yi",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:      "yj",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"E",
-			},
+			pattern:      "ij",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "i",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:     "e",
+			leftContext: regexp.MustCompile("^$"),
+			phonetic:    "(je|E)",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "ee",
+			phonetic: "(aje|i)",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:     "e",
+			leftContext: regexp.MustCompile("[aou]$"),
+			phonetic:    "je",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"I",
-			},
+			pattern:  "oo",
+			phonetic: "(oo|u)",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "'",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "\"",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "aue",
+			phonetic: "aue",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
-		},
-		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
-		},
-		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
-		},
-		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
-		},
-		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
-		},
-		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
-		},
-		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
-		},
-		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
-		},
-		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
-		},
-		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
-		},
-		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"I",
-			},
-		},
-		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "b",
+			phonetic: "b",
+		},
+		{
+			pattern:  "c",
+			phonetic: "k",
+		},
+		{
+			pattern:  "d",
+			phonetic: "d",
+		},
+		{
+			pattern:  "e",
+			phonetic: "E",
+		},
+		{
+			pattern:  "f",
+			phonetic: "f",
+		},
+		{
+			pattern:  "g",
+			phonetic: "g",
+		},
+		{
+			pattern:  "h",
+			phonetic: "h",
+		},
+		{
+			pattern:  "i",
+			phonetic: "I",
+		},
+		{
+			pattern:  "j",
+			phonetic: "j",
+		},
+		{
+			pattern:  "k",
+			phonetic: "k",
+		},
+		{
+			pattern:  "l",
+			phonetic: "l",
+		},
+		{
+			pattern:  "m",
+			phonetic: "m",
+		},
+		{
+			pattern:  "n",
+			phonetic: "n",
+		},
+		{
+			pattern:  "o",
+			phonetic: "o",
+		},
+		{
+			pattern:  "p",
+			phonetic: "p",
+		},
+		{
+			pattern:  "q",
+			phonetic: "k",
+		},
+		{
+			pattern:  "r",
+			phonetic: "r",
+		},
+		{
+			pattern:  "s",
+			phonetic: "s",
+		},
+		{
+			pattern:  "t",
+			phonetic: "t",
+		},
+		{
+			pattern:  "u",
+			phonetic: "u",
+		},
+		{
+			pattern:  "v",
+			phonetic: "v",
+		},
+		{
+			pattern:  "w",
+			phonetic: "v",
+		},
+		{
+			pattern:  "x",
+			phonetic: "ks",
+		},
+		{
+			pattern:  "y",
+			phonetic: "I",
+		},
+		{
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 	genspanish: []rule{
 		{
-			patterns: [4]string{
-				"ñ",
-				"",
-				"",
-				"(n|nj)",
-			},
+			pattern:  "ñ",
+			phonetic: "(n|nj)",
 		},
 		{
-			patterns: [4]string{
-				"ny",
-				"",
-				"",
-				"nj",
-			},
+			pattern:  "ny",
+			phonetic: "nj",
 		},
 		{
-			patterns: [4]string{
-				"ç",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "ç",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"ig",
-				"[aeiou]",
-				"",
-				"(tS|ig)",
-			},
+			pattern:     "ig",
+			leftContext: regexp.MustCompile("[aeiou]$"),
+			phonetic:    "(tS|ig)",
 		},
 		{
-			patterns: [4]string{
-				"ix",
-				"[aeiou]",
-				"",
-				"S",
-			},
+			pattern:     "ix",
+			leftContext: regexp.MustCompile("[aeiou]$"),
+			phonetic:    "S",
 		},
 		{
-			patterns: [4]string{
-				"tx",
-				"",
-				"",
-				"tS",
-			},
+			pattern:  "tx",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"tj",
-				"",
-				"$",
-				"tS",
-			},
+			pattern:      "tj",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "tS",
 		},
 		{
-			patterns: [4]string{
-				"tj",
-				"",
-				"",
-				"dZ",
-			},
+			pattern:  "tj",
+			phonetic: "dZ",
 		},
 		{
-			patterns: [4]string{
-				"tg",
-				"",
-				"",
-				"(tg|dZ)",
-			},
+			pattern:  "tg",
+			phonetic: "(tg|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"ch",
-				"",
-				"",
-				"(tS|dZ)",
-			},
+			pattern:  "ch",
+			phonetic: "(tS|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"bh",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "bh",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"[dgt]",
-				"",
-				"",
-			},
+			pattern:     "h",
+			leftContext: regexp.MustCompile("[dgt]$"),
+			phonetic:    "",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"$",
-				"",
-			},
+			pattern:      "h",
+			rightContext: regexp.MustCompile("^$"),
+			phonetic:     "",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"[bpvf]",
-				"(m|n)",
-			},
+			pattern:      "m",
+			rightContext: regexp.MustCompile("^[bpvf]"),
+			phonetic:     "(m|n)",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"[ei]",
-				"s",
-			},
+			pattern:      "c",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "s",
 		},
 		{
-			patterns: [4]string{
-				"gu",
-				"",
-				"[ei]",
-				"(g|gv)",
-			},
+			pattern:      "gu",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(g|gv)",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"[ei]",
-				"(x|g|dZ)",
-			},
+			pattern:      "g",
+			rightContext: regexp.MustCompile("^[ei]"),
+			phonetic:     "(x|g|dZ)",
 		},
 		{
-			patterns: [4]string{
-				"qu",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "qu",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"uo",
-				"",
-				"",
-				"(vo|o)",
-			},
+			pattern:  "uo",
+			phonetic: "(vo|o)",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"[aei]",
-				"v",
-			},
+			pattern:      "u",
+			rightContext: regexp.MustCompile("^[aei]"),
+			phonetic:     "v",
 		},
 		{
-			patterns: [4]string{
-				"ü",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "ü",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"á",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "á",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"é",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "é",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"í",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "í",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"ó",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ó",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"ú",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "ú",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"à",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "à",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"è",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "è",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"ò",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "ò",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"B",
-			},
+			pattern:  "b",
+			phonetic: "B",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "c",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "e",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "h",
+			phonetic: "h",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "i",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"(x|Z)",
-			},
+			pattern:  "j",
+			phonetic: "(x|Z)",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "q",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"V",
-			},
+			pattern:  "v",
+			phonetic: "V",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "w",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"(ks|gz|S)",
-			},
+			pattern:  "x",
+			phonetic: "(ks|gz|S)",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"(i|j)",
-			},
+			pattern:  "y",
+			phonetic: "(i|j)",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"(z|s)",
-			},
+			pattern:  "z",
+			phonetic: "(z|s)",
 		},
 	},
 	genturkish: []rule{
 		{
-			patterns: [4]string{
-				"ç",
-				"",
-				"",
-				"tS",
-			},
+			pattern:  "ç",
+			phonetic: "tS",
 		},
 		{
-			patterns: [4]string{
-				"ğ",
-				"",
-				"",
-				"",
-			},
+			pattern:  "ğ",
+			phonetic: "",
 		},
 		{
-			patterns: [4]string{
-				"ş",
-				"",
-				"",
-				"S",
-			},
+			pattern:  "ş",
+			phonetic: "S",
 		},
 		{
-			patterns: [4]string{
-				"ü",
-				"",
-				"",
-				"Q",
-			},
+			pattern:  "ü",
+			phonetic: "Q",
 		},
 		{
-			patterns: [4]string{
-				"ö",
-				"",
-				"",
-				"Y",
-			},
+			pattern:  "ö",
+			phonetic: "Y",
 		},
 		{
-			patterns: [4]string{
-				"ı",
-				"",
-				"",
-				"(e|i|)",
-			},
+			pattern:  "ı",
+			phonetic: "(e|i|)",
 		},
 		{
-			patterns: [4]string{
-				"a",
-				"",
-				"",
-				"a",
-			},
+			pattern:  "a",
+			phonetic: "a",
 		},
 		{
-			patterns: [4]string{
-				"b",
-				"",
-				"",
-				"b",
-			},
+			pattern:  "b",
+			phonetic: "b",
 		},
 		{
-			patterns: [4]string{
-				"c",
-				"",
-				"",
-				"dZ",
-			},
+			pattern:  "c",
+			phonetic: "dZ",
 		},
 		{
-			patterns: [4]string{
-				"d",
-				"",
-				"",
-				"d",
-			},
+			pattern:  "d",
+			phonetic: "d",
 		},
 		{
-			patterns: [4]string{
-				"e",
-				"",
-				"",
-				"e",
-			},
+			pattern:  "e",
+			phonetic: "e",
 		},
 		{
-			patterns: [4]string{
-				"f",
-				"",
-				"",
-				"f",
-			},
+			pattern:  "f",
+			phonetic: "f",
 		},
 		{
-			patterns: [4]string{
-				"g",
-				"",
-				"",
-				"g",
-			},
+			pattern:  "g",
+			phonetic: "g",
 		},
 		{
-			patterns: [4]string{
-				"h",
-				"",
-				"",
-				"h",
-			},
+			pattern:  "h",
+			phonetic: "h",
 		},
 		{
-			patterns: [4]string{
-				"i",
-				"",
-				"",
-				"i",
-			},
+			pattern:  "i",
+			phonetic: "i",
 		},
 		{
-			patterns: [4]string{
-				"j",
-				"",
-				"",
-				"Z",
-			},
+			pattern:  "j",
+			phonetic: "Z",
 		},
 		{
-			patterns: [4]string{
-				"k",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "k",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"l",
-				"",
-				"",
-				"l",
-			},
+			pattern:  "l",
+			phonetic: "l",
 		},
 		{
-			patterns: [4]string{
-				"m",
-				"",
-				"",
-				"m",
-			},
+			pattern:  "m",
+			phonetic: "m",
 		},
 		{
-			patterns: [4]string{
-				"n",
-				"",
-				"",
-				"n",
-			},
+			pattern:  "n",
+			phonetic: "n",
 		},
 		{
-			patterns: [4]string{
-				"o",
-				"",
-				"",
-				"o",
-			},
+			pattern:  "o",
+			phonetic: "o",
 		},
 		{
-			patterns: [4]string{
-				"p",
-				"",
-				"",
-				"p",
-			},
+			pattern:  "p",
+			phonetic: "p",
 		},
 		{
-			patterns: [4]string{
-				"q",
-				"",
-				"",
-				"k",
-			},
+			pattern:  "q",
+			phonetic: "k",
 		},
 		{
-			patterns: [4]string{
-				"r",
-				"",
-				"",
-				"r",
-			},
+			pattern:  "r",
+			phonetic: "r",
 		},
 		{
-			patterns: [4]string{
-				"s",
-				"",
-				"",
-				"s",
-			},
+			pattern:  "s",
+			phonetic: "s",
 		},
 		{
-			patterns: [4]string{
-				"t",
-				"",
-				"",
-				"t",
-			},
+			pattern:  "t",
+			phonetic: "t",
 		},
 		{
-			patterns: [4]string{
-				"u",
-				"",
-				"",
-				"u",
-			},
+			pattern:  "u",
+			phonetic: "u",
 		},
 		{
-			patterns: [4]string{
-				"v",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "v",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"w",
-				"",
-				"",
-				"v",
-			},
+			pattern:  "w",
+			phonetic: "v",
 		},
 		{
-			patterns: [4]string{
-				"x",
-				"",
-				"",
-				"ks",
-			},
+			pattern:  "x",
+			phonetic: "ks",
 		},
 		{
-			patterns: [4]string{
-				"y",
-				"",
-				"",
-				"j",
-			},
+			pattern:  "y",
+			phonetic: "j",
 		},
 		{
-			patterns: [4]string{
-				"z",
-				"",
-				"",
-				"z",
-			},
+			pattern:  "z",
+			phonetic: "z",
 		},
 	},
 }
@@ -14187,5044 +8296,2888 @@ var genFinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{
-				patterns: [4]string{
-					"h",
-					"",
-					"$",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"b",
-					"",
-					"[fktSs]",
-					"p",
-				},
-			},
-			{
-				patterns: [4]string{
-					"b",
-					"",
-					"p",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"b",
-					"",
-					"$",
-					"p",
-				},
-			},
-			{
-				patterns: [4]string{
-					"p",
-					"",
-					"[vgdZz]",
-					"b",
-				},
-			},
-			{
-				patterns: [4]string{
-					"p",
-					"",
-					"b",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"v",
-					"",
-					"[pktSs]",
-					"f",
-				},
-			},
-			{
-				patterns: [4]string{
-					"v",
-					"",
-					"f",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"v",
-					"",
-					"$",
-					"f",
-				},
-			},
-			{
-				patterns: [4]string{
-					"f",
-					"",
-					"[vbgdZz]",
-					"v",
-				},
-			},
-			{
-				patterns: [4]string{
-					"f",
-					"",
-					"v",
-					"",
-				},
-			},
-			{
-				patterns: [4]string{
-					"g",
-					"",
-					"[pftSs]",
-					"k",
-				},
-			},
-			{
-				patterns: [4]string{
-					"g",
-					"",
-					"k",
-					"",
-				},
+				pattern:      "h",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"g",
-					"",
-					"$",
-					"k",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^[fktSs]"),
+				phonetic:     "p",
 			},
 			{
-				patterns: [4]string{
-					"k",
-					"",
-					"[vbdZz]",
-					"g",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^p"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"k",
-					"",
-					"g",
-					"",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "p",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"[pfkSs]",
-					"t",
-				},
+				pattern:      "p",
+				rightContext: regexp.MustCompile("^[vgdZz]"),
+				phonetic:     "b",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"t",
-					"",
-				},
+				pattern:      "p",
+				rightContext: regexp.MustCompile("^b"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"$",
-					"t",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^[pktSs]"),
+				phonetic:     "f",
 			},
 			{
-				patterns: [4]string{
-					"t",
-					"",
-					"[vbgZz]",
-					"d",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^f"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"t",
-					"",
-					"d",
-					"",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "f",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"",
-					"dZ",
-					"",
-				},
+				pattern:      "f",
+				rightContext: regexp.MustCompile("^[vbgdZz]"),
+				phonetic:     "v",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"",
-					"tS",
-					"",
-				},
+				pattern:      "f",
+				rightContext: regexp.MustCompile("^v"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"[pfkSt]",
-					"s",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^[pftSs]"),
+				phonetic:     "k",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^k"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "k",
 			},
 			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "k",
+				rightContext: regexp.MustCompile("^[vbdZz]"),
+				phonetic:     "g",
 			},
 			{
-				patterns: [4]string{
-					"S",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "k",
+				rightContext: regexp.MustCompile("^g"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"jnm",
-					"",
-					"",
-					"jm",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^[pfkSs]"),
+				phonetic:     "t",
 			},
 			{
-				patterns: [4]string{
-					"ji",
-					"^",
-					"",
-					"i",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^t"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"jI",
-					"^",
-					"",
-					"I",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "t",
 			},
 			{
-				patterns: [4]string{
-					"a",
-					"",
-					"[aA]",
-					"",
-				},
+				pattern:      "t",
+				rightContext: regexp.MustCompile("^[vbgZz]"),
+				phonetic:     "d",
 			},
 			{
-				patterns: [4]string{
-					"a",
-					"A",
-					"",
-					"",
-				},
+				pattern:      "t",
+				rightContext: regexp.MustCompile("^d"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"A",
-					"",
-					"A",
-					"",
-				},
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^dZ"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"b",
-					"",
-					"b",
-					"",
-				},
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^tS"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"d",
-					"",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^[pfkSt]"),
+				phonetic:     "s",
 			},
 			{
-				patterns: [4]string{
-					"f",
-					"",
-					"f",
-					"",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"g",
-					"",
-					"g",
-					"",
-				},
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"j",
-					"",
-					"j",
-					"",
-				},
+				pattern:      "Z",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"k",
-					"",
-					"k",
-					"",
-				},
+				pattern:      "S",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"l",
-					"",
-					"l",
-					"",
-				},
+				pattern:  "jnm",
+				phonetic: "jm",
 			},
 			{
-				patterns: [4]string{
-					"m",
-					"",
-					"m",
-					"",
-				},
+				pattern:     "ji",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "i",
 			},
 			{
-				patterns: [4]string{
-					"n",
-					"",
-					"n",
-					"",
-				},
+				pattern:     "jI",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "I",
 			},
 			{
-				patterns: [4]string{
-					"p",
-					"",
-					"p",
-					"",
-				},
+				pattern:      "a",
+				rightContext: regexp.MustCompile("^[aA]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"r",
-					"",
-					"r",
-					"",
-				},
+				pattern:     "a",
+				leftContext: regexp.MustCompile("A$"),
+				phonetic:    "",
 			},
 			{
-				patterns: [4]string{
-					"t",
-					"",
-					"t",
-					"",
-				},
+				pattern:      "A",
+				rightContext: regexp.MustCompile("^A"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"v",
-					"",
-					"v",
-					"",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^b"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"z",
-					"",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^d"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"vanden",
-					"^",
-					"",
-					"(vanden|)",
-				},
+				pattern:      "f",
+				rightContext: regexp.MustCompile("^f"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"vander",
-					"^",
-					"",
-					"(vander|)",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^g"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"van",
-					"^",
-					"[bp]",
-					"(vam|[16])",
-				},
+				pattern:      "j",
+				rightContext: regexp.MustCompile("^j"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"van",
-					"^",
-					"",
-					"(van|[16])",
-				},
+				pattern:      "k",
+				rightContext: regexp.MustCompile("^k"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"n",
-					"",
-					"[bp]",
-					"m",
-				},
+				pattern:      "l",
+				rightContext: regexp.MustCompile("^l"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"h",
-					"",
-					"",
-					"",
-				},
+				pattern:      "m",
+				rightContext: regexp.MustCompile("^m"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"H",
-					"",
-					"",
-					"(x|)",
-				},
+				pattern:      "n",
+				rightContext: regexp.MustCompile("^n"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"sen",
-					"[rmnl]",
-					"$",
-					"(zn|zon)",
-				},
+				pattern:      "p",
+				rightContext: regexp.MustCompile("^p"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"sen",
-					"",
-					"$",
-					"(sn|son)",
-				},
+				pattern:      "r",
+				rightContext: regexp.MustCompile("^r"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"sEn",
-					"[rmnl]",
-					"$",
-					"(zn|zon)",
-				},
+				pattern:      "t",
+				rightContext: regexp.MustCompile("^t"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"sEn",
-					"",
-					"$",
-					"(sn|son)",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^v"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"e",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^z"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"i",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
+				pattern:     "vanden",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "(vanden|)",
 			},
 			{
-				patterns: [4]string{
-					"E",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
+				pattern:     "vander",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "(vander|)",
 			},
 			{
-				patterns: [4]string{
-					"I",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
+				pattern:      "van",
+				leftContext:  regexp.MustCompile("^$"),
+				rightContext: regexp.MustCompile("^[bp]"),
+				phonetic:     "(vam|[16])",
 			},
 			{
-				patterns: [4]string{
-					"Q",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
+				pattern:     "van",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "(van|[16])",
 			},
 			{
-				patterns: [4]string{
-					"Y",
-					"[BbdfgklmnprsStvzZ]",
-					"[ln]$",
-					"",
-				},
+				pattern:      "n",
+				rightContext: regexp.MustCompile("^[bp]"),
+				phonetic:     "m",
 			},
 			{
-				patterns: [4]string{
-					"e",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(e|)",
-				},
+				pattern:  "h",
+				phonetic: "",
 			},
 			{
-				patterns: [4]string{
-					"i",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(i|)",
-				},
+				pattern:  "H",
+				phonetic: "(x|)",
 			},
 			{
-				patterns: [4]string{
-					"E",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(E|)",
-				},
+				pattern:      "sen",
+				leftContext:  regexp.MustCompile("[rmnl]$"),
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(zn|zon)",
 			},
 			{
-				patterns: [4]string{
-					"I",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(I|)",
-				},
+				pattern:      "sen",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(sn|son)",
 			},
 			{
-				patterns: [4]string{
-					"Q",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(Q|)",
-				},
+				pattern:      "sEn",
+				leftContext:  regexp.MustCompile("[rmnl]$"),
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(zn|zon)",
 			},
 			{
-				patterns: [4]string{
-					"Y",
-					"[bdfgklmnprsStvzZ]",
-					"[ln][bdfgklmnprsStvzZ]",
-					"(Y|)",
-				},
+				pattern:      "sEn",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(sn|son)",
 			},
 			{
-				patterns: [4]string{
-					"lEs",
-					"",
-					"",
-					"(lEs|lz)",
-				},
+				pattern:      "e",
+				leftContext:  regexp.MustCompile("[BbdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln]$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"lE",
-					"[bdfgkmnprStvzZ]",
-					"",
-					"(lE|l)",
-				},
+				pattern:      "i",
+				leftContext:  regexp.MustCompile("[BbdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln]$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"aue",
-					"",
-					"",
-					"D",
-				},
+				pattern:      "E",
+				leftContext:  regexp.MustCompile("[BbdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln]$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"oue",
-					"",
-					"",
-					"D",
-				},
+				pattern:      "I",
+				leftContext:  regexp.MustCompile("[BbdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln]$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"AvE",
-					"",
-					"",
-					"(D|AvE)",
-				},
+				pattern:      "Q",
+				leftContext:  regexp.MustCompile("[BbdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln]$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"Ave",
-					"",
-					"",
-					"(D|Ave)",
-				},
+				pattern:      "Y",
+				leftContext:  regexp.MustCompile("[BbdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln]$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"avE",
-					"",
-					"",
-					"(D|avE)",
-				},
+				pattern:      "e",
+				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				phonetic:     "(e|)",
 			},
 			{
-				patterns: [4]string{
-					"ave",
-					"",
-					"",
-					"(D|ave)",
-				},
+				pattern:      "i",
+				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				phonetic:     "(i|)",
 			},
 			{
-				patterns: [4]string{
-					"OvE",
-					"",
-					"",
-					"(D|OvE)",
-				},
+				pattern:      "E",
+				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				phonetic:     "(E|)",
 			},
 			{
-				patterns: [4]string{
-					"Ove",
-					"",
-					"",
-					"(D|Ove)",
-				},
+				pattern:      "I",
+				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				phonetic:     "(I|)",
 			},
 			{
-				patterns: [4]string{
-					"ovE",
-					"",
-					"",
-					"(D|ovE)",
-				},
+				pattern:      "Q",
+				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				phonetic:     "(Q|)",
 			},
 			{
-				patterns: [4]string{
-					"ove",
-					"",
-					"",
-					"(D|ove)",
-				},
+				pattern:      "Y",
+				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				phonetic:     "(Y|)",
 			},
 			{
-				patterns: [4]string{
-					"ea",
-					"",
-					"",
-					"(D|ea)",
-				},
+				pattern:  "lEs",
+				phonetic: "(lEs|lz)",
 			},
 			{
-				patterns: [4]string{
-					"EA",
-					"",
-					"",
-					"(D|EA)",
-				},
+				pattern:     "lE",
+				leftContext: regexp.MustCompile("[bdfgkmnprStvzZ]$"),
+				phonetic:    "(lE|l)",
 			},
 			{
-				patterns: [4]string{
-					"Ea",
-					"",
-					"",
-					"(D|Ea)",
-				},
+				pattern:  "aue",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"eA",
-					"",
-					"",
-					"(D|eA)",
-				},
+				pattern:  "oue",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"aji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AvE",
+				phonetic: "(D|AvE)",
 			},
 			{
-				patterns: [4]string{
-					"ajI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ave",
+				phonetic: "(D|Ave)",
 			},
 			{
-				patterns: [4]string{
-					"aje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "avE",
+				phonetic: "(D|avE)",
 			},
 			{
-				patterns: [4]string{
-					"ajE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ave",
+				phonetic: "(D|ave)",
 			},
 			{
-				patterns: [4]string{
-					"Aji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "OvE",
+				phonetic: "(D|OvE)",
 			},
 			{
-				patterns: [4]string{
-					"AjI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ove",
+				phonetic: "(D|Ove)",
 			},
 			{
-				patterns: [4]string{
-					"Aje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ovE",
+				phonetic: "(D|ovE)",
 			},
 			{
-				patterns: [4]string{
-					"AjE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ove",
+				phonetic: "(D|ove)",
 			},
 			{
-				patterns: [4]string{
-					"oji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ea",
+				phonetic: "(D|ea)",
 			},
 			{
-				patterns: [4]string{
-					"ojI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "EA",
+				phonetic: "(D|EA)",
 			},
 			{
-				patterns: [4]string{
-					"oje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ea",
+				phonetic: "(D|Ea)",
 			},
 			{
-				patterns: [4]string{
-					"ojE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "eA",
+				phonetic: "(D|eA)",
 			},
 			{
-				patterns: [4]string{
-					"Oji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "aji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"OjI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ajI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Oje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "aje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"OjE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ajE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"eji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ejI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"eje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ejE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Eji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "oji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"EjI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ojI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Eje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "oje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"EjE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ojE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"uji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Oji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ujI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "OjI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"uje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Oje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ujE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "OjE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Uji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "eji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"UjI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ejI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Uje",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "eje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"UjE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ejE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"iji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Eji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ijI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "EjI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ije",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Eje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ijE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "EjE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Iji",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "uji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"IjI",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ujI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ije",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "uje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"IjE",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ujE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"aja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Uji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ajA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "UjI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ajo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Uje",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ajO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "UjE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "iji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ajU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ijI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ije",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ijE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ajo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Iji",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "IjI",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ije",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "IjE",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"oja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "aja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ojA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ajA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ojo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ajo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ojO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ajO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ajU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Oja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"OjA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ojo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ajo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"OjO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"eja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "oja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ejA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ojA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ejo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ojo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ejO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ojO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Eja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Oja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"EjA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "OjA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ejo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ojo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"EjO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "OjO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"uja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "eja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ujA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ejA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ujo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ejo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ujO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ejO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Uja",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Eja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"UjA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "EjA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ujo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ejo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"UjO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "EjO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ija",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "uja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ijA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ujA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ijo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ujo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"ijO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "ujO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ija",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Uja",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"IjA",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "UjA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Ijo",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Ujo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"IjO",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "UjO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"Aju",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"AjU",
-					"",
-					"",
-					"D",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"j",
-					"",
-					"",
-					"i",
-				},
+				pattern:  "ija",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lYndEr",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "ijA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lander",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "ijo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lAndEr",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "ijO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lAnder",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"landEr",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lender",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "Ija",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lEndEr",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "IjA",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lendEr",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "Ijo",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"lEnder",
-					"",
-					"$",
-					"lYnder",
-				},
+				pattern:  "IjO",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"burk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:  "Aju",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"bUrk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:  "AjU",
+				phonetic: "D",
 			},
 			{
-				patterns: [4]string{
-					"burg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:  "j",
+				phonetic: "i",
 			},
 			{
-				patterns: [4]string{
-					"bUrg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:      "lYndEr",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
 			},
 			{
-				patterns: [4]string{
-					"Burk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:      "lander",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
 			},
 			{
-				patterns: [4]string{
-					"BUrk",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:      "lAndEr",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
 			},
 			{
-				patterns: [4]string{
-					"Burg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
+				pattern:      "lAnder",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
 			},
 			{
-				patterns: [4]string{
-					"BUrg",
-					"",
-					"$",
-					"(burk|berk)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"s",
-					"",
-					"[rmnl]",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"",
-					"[rmnl]",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"s",
-					"[rmnl]",
-					"",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"[rmnl]",
-					"",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"dS",
-					"",
-					"$",
-					"S",
-				},
-			},
-			{
-				patterns: [4]string{
-					"dZ",
-					"",
-					"$",
-					"S",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"$",
-					"S",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"",
-					"$",
-					"(S|s)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"z",
-					"",
-					"$",
-					"(S|s)",
-				},
-			},
-			{
-				patterns: [4]string{
-					"S",
-					"",
-					"",
-					"s",
-				},
-			},
-			{
-				patterns: [4]string{
-					"dZ",
-					"",
-					"",
-					"z",
-				},
-			},
-			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"",
-					"z",
-				},
+				pattern:      "landEr",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
+			},
+			{
+				pattern:      "lender",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
+			},
+			{
+				pattern:      "lEndEr",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
+			},
+			{
+				pattern:      "lendEr",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
+			},
+			{
+				pattern:      "lEnder",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "lYnder",
+			},
+			{
+				pattern:      "burk",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "bUrk",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "burg",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "bUrg",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "Burk",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "BUrk",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "Burg",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "BUrg",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(burk|berk)",
+			},
+			{
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^[rmnl]"),
+				phonetic:     "z",
+			},
+			{
+				pattern:      "S",
+				rightContext: regexp.MustCompile("^[rmnl]"),
+				phonetic:     "z",
+			},
+			{
+				pattern:     "s",
+				leftContext: regexp.MustCompile("[rmnl]$"),
+				phonetic:    "z",
+			},
+			{
+				pattern:     "S",
+				leftContext: regexp.MustCompile("[rmnl]$"),
+				phonetic:    "z",
+			},
+			{
+				pattern:      "dS",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "S",
+			},
+			{
+				pattern:      "dZ",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "S",
+			},
+			{
+				pattern:      "Z",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "S",
+			},
+			{
+				pattern:      "S",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(S|s)",
+			},
+			{
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "(S|s)",
+			},
+			{
+				pattern:  "S",
+				phonetic: "s",
+			},
+			{
+				pattern:  "dZ",
+				phonetic: "z",
+			},
+			{
+				pattern:  "Z",
+				phonetic: "z",
 			},
 		},
 		second: map[uint64][]rule{
 			uint64(genany): []rule{
 				{
-					patterns: [4]string{
-						"mb",
-						"",
-						"",
-						"(mb|b[512])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"mp",
-						"",
-						"",
-						"(mp|b[512])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"ng",
-						"",
-						"",
-						"(ng|g[512])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[fktSs]",
-						"(p|f[262144])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"B",
-						"",
-						"p",
-						"",
-					},
-				},
-				{
-					patterns: [4]string{
-						"B",
-						"",
-						"$",
-						"(p|f[262144])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"V",
-						"",
-						"[pktSs]",
-						"(f|p[262144])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"V",
-						"",
-						"f",
-						"",
-					},
-				},
-				{
-					patterns: [4]string{
-						"V",
-						"",
-						"$",
-						"(f|p[262144])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"(b|v[262144])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"V",
-						"",
-						"",
-						"(v|b[262144])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"t",
-						"",
-						"$",
-						"(t|[64])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"g",
-						"n",
-						"$",
-						"(g|[64])",
-					},
+					pattern:  "mb",
+					phonetic: "(mb|b[512])",
 				},
 				{
-					patterns: [4]string{
-						"k",
-						"n",
-						"$",
-						"(k|[64])",
-					},
+					pattern:  "mp",
+					phonetic: "(mp|b[512])",
 				},
 				{
-					patterns: [4]string{
-						"p",
-						"",
-						"$",
-						"(p|[64])",
-					},
+					pattern:  "ng",
+					phonetic: "(ng|g[512])",
 				},
 				{
-					patterns: [4]string{
-						"r",
-						"[Ee]",
-						"$",
-						"(r|[64])",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[fktSs]"),
+					phonetic:     "(p|f[262144])",
 				},
 				{
-					patterns: [4]string{
-						"s",
-						"",
-						"$",
-						"(s|[64])",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^p"),
+					phonetic:     "",
 				},
 				{
-					patterns: [4]string{
-						"t",
-						"[aeiouAEIOU]",
-						"[^aeiouAEIOU]",
-						"(t|[64])",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(p|f[262144])",
 				},
 				{
-					patterns: [4]string{
-						"s",
-						"[aeiouAEIOU]",
-						"[^aeiouAEIOU]",
-						"(s|[64])",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^[pktSs]"),
+					phonetic:     "(f|p[262144])",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aeiouAEIBFOUQY]",
-						"",
-						"i",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^f"),
+					phonetic:     "",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^aeiouAEBFIOU]e",
-						"(Q[128]|i|D[32])",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(f|p[262144])",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:  "B",
+					phonetic: "(b|v[262144])",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:  "V",
+					phonetic: "(v|b[262144])",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk[128])",
-					},
+					pattern:      "t",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(t|[64])",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "g",
+					leftContext:  regexp.MustCompile("n$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(g|[64])",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts[128])",
-					},
+					pattern:      "k",
+					leftContext:  regexp.MustCompile("n$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(k|[64])",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "p",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(p|[64])",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(Q[128]|i)",
-					},
+					pattern:      "r",
+					leftContext:  regexp.MustCompile("[Ee]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(r|[64])",
 				},
 				{
-					patterns: [4]string{
-						"lEE",
-						"[bdfgkmnprsStvzZ]",
-						"",
-						"(li|il[32])",
-					},
+					pattern:      "s",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(s|[64])",
 				},
 				{
-					patterns: [4]string{
-						"rEE",
-						"[bdfgkmnprsStvzZ]",
-						"",
-						"(ri|ir[32])",
-					},
+					pattern:      "t",
+					leftContext:  regexp.MustCompile("[aeiouAEIOU]$"),
+					rightContext: regexp.MustCompile("^[^aeiouAEIOU]"),
+					phonetic:     "(t|[64])",
 				},
 				{
-					patterns: [4]string{
-						"lE",
-						"[bdfgkmnprsStvzZ]",
-						"",
-						"(li|il[32]|lY[128])",
-					},
+					pattern:      "s",
+					leftContext:  regexp.MustCompile("[aeiouAEIOU]$"),
+					rightContext: regexp.MustCompile("^[^aeiouAEIOU]"),
+					phonetic:     "(s|[64])",
 				},
 				{
-					patterns: [4]string{
-						"rE",
-						"[bdfgkmnprsStvzZ]",
-						"",
-						"(ri|ir[32]|rY[128])",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aeiouAEIBFOUQY]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"EE",
-						"",
-						"",
-						"(i|)",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^aeiouAEBFIOU]e"),
+					phonetic:     "(Q[128]|i|D[32])",
 				},
 				{
-					patterns: [4]string{
-						"ea",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk[128])",
 				},
 				{
-					patterns: [4]string{
-						"eu",
-						"",
-						"",
-						"(D|e|u)",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts[128])",
 				},
 				{
-					patterns: [4]string{
-						"Ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "I",
+					phonetic: "(Q[128]|i)",
 				},
 				{
-					patterns: [4]string{
-						"Oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:     "lEE",
+					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					phonetic:    "(li|il[32])",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:     "rEE",
+					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					phonetic:    "(ri|ir[32])",
 				},
 				{
-					patterns: [4]string{
-						"Ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:     "lE",
+					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					phonetic:    "(li|il[32]|lY[128])",
 				},
 				{
-					patterns: [4]string{
-						"ei",
-						"",
-						"",
-						"(D|i)",
-					},
+					pattern:     "rE",
+					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					phonetic:    "(ri|ir[32]|rY[128])",
 				},
 				{
-					patterns: [4]string{
-						"Ei",
-						"",
-						"",
-						"(D|i)",
-					},
+					pattern:  "EE",
+					phonetic: "(i|)",
 				},
 				{
-					patterns: [4]string{
-						"iA",
-						"",
-						"$",
-						"(ia|io)",
-					},
+					pattern:  "ea",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"iA",
-						"",
-						"",
-						"(ia|io|iY[128])",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"[^aeiouAEBFIOU]e",
-						"(a|o|Y[128]|D[32])",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"i[^aeiouAEIOU]",
-						"",
-						"(i|Y[128]|[32])",
-					},
+					pattern:  "eu",
+					phonetic: "(D|e|u)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"a[^aeiouAEIOU]",
-						"",
-						"(i|Y[128]|[32])",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprst]$",
-						"i",
-					},
+					pattern:  "Ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"$",
-						"i",
-					},
+					pattern:  "Oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoiuAOIUQY]",
-						"",
-						"i",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoAOQY]",
-						"i",
-					},
+					pattern:  "Ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(i|Y[128])",
-					},
+					pattern:  "ei",
+					phonetic: "(D|i)",
 				},
 				{
-					patterns: [4]string{
-						"P",
-						"",
-						"",
-						"(o|u)",
-					},
+					pattern:  "Ei",
+					phonetic: "(D|i)",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"[fklmnprstv]$",
-						"o",
-					},
+					pattern:      "iA",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ia|io)",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"ts$",
-						"o",
-					},
+					pattern:  "iA",
+					phonetic: "(ia|io|iY[128])",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"$",
-						"o",
-					},
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^[^aeiouAEBFIOU]e"),
+					phonetic:     "(a|o|Y[128]|D[32])",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"[oeiuQY]",
-						"",
-						"o",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("i[^aeiouAEIOU]$"),
+					phonetic:    "(i|Y[128]|[32])",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"",
-						"(o|Y[128])",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("a[^aeiouAEIOU]$"),
+					phonetic:    "(i|Y[128]|[32])",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"",
-						"o",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"[fklmnprst]$",
-						"(a|o)",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"ts$",
-						"(a|o)",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"$",
-						"(a|o)",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoiuAOIUQY]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"[oeiuQY]",
-						"",
-						"(a|o)",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoAOQY]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"",
-						"(a|o|Y[128])",
-					},
+					pattern:  "E",
+					phonetic: "(i|Y[128])",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "P",
+					phonetic: "(o|u)",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"$",
-						"u",
-					},
+					pattern:      "O",
+					rightContext: regexp.MustCompile("^[fklmnprstv]$"),
+					phonetic:     "o",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"[DoiuQY]",
-						"",
-						"u",
-					},
+					pattern:      "O",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "o",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"[^k]$",
-						"u",
-					},
+					pattern:      "O",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "o",
 				},
 				{
-					patterns: [4]string{
-						"Uk",
-						"[lr]",
-						"$",
-						"(uk|Qk[128])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"Uk",
-						"",
-						"$",
-						"uk",
-					},
-				},
-				{
-					patterns: [4]string{
-						"sUts",
-						"",
-						"$",
-						"(suts|sQts[128])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"Uts",
-						"",
-						"$",
-						"uts",
-					},
-				},
-				{
-					patterns: [4]string{
-						"U",
-						"",
-						"",
-						"(u|Q[128])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"U",
-						"",
-						"",
-						"u",
-					},
-				},
-				{
-					patterns: [4]string{
-						"e",
-						"",
-						"[fklmnprstv]$",
-						"i",
-					},
-				},
-				{
-					patterns: [4]string{
-						"e",
-						"",
-						"ts$",
-						"i",
-					},
-				},
-				{
-					patterns: [4]string{
-						"e",
-						"",
-						"$",
-						"i",
-					},
-				},
-				{
-					patterns: [4]string{
-						"e",
-						"[DaoiuAOIUQY]",
-						"",
-						"i",
-					},
-				},
-				{
-					patterns: [4]string{
-						"e",
-						"",
-						"[aoAOQY]",
-						"i",
-					},
-				},
-				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"(i|Y[128])",
-					},
-				},
-				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:     "O",
+					leftContext: regexp.MustCompile("[oeiuQY]$"),
+					phonetic:    "o",
+				},
+				{
+					pattern:  "O",
+					phonetic: "(o|Y[128])",
+				},
+				{
+					pattern:  "O",
+					phonetic: "o",
+				},
+				{
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "(a|o)",
+				},
+				{
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "(a|o)",
+				},
+				{
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(a|o)",
+				},
+				{
+					pattern:     "A",
+					leftContext: regexp.MustCompile("[oeiuQY]$"),
+					phonetic:    "(a|o)",
+				},
+				{
+					pattern:  "A",
+					phonetic: "(a|o|Y[128])",
+				},
+				{
+					pattern:  "A",
+					phonetic: "(a|o)",
+				},
+				{
+					pattern:      "U",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "u",
+				},
+				{
+					pattern:     "U",
+					leftContext: regexp.MustCompile("[DoiuQY]$"),
+					phonetic:    "u",
+				},
+				{
+					pattern:      "U",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "u",
+				},
+				{
+					pattern:      "Uk",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(uk|Qk[128])",
+				},
+				{
+					pattern:      "Uk",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "uk",
+				},
+				{
+					pattern:      "sUts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(suts|sQts[128])",
+				},
+				{
+					pattern:      "Uts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "uts",
+				},
+				{
+					pattern:  "U",
+					phonetic: "(u|Q[128])",
+				},
+				{
+					pattern:  "U",
+					phonetic: "u",
+				},
+				{
+					pattern:      "e",
+					rightContext: regexp.MustCompile("^[fklmnprstv]$"),
+					phonetic:     "i",
+				},
+				{
+					pattern:      "e",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
+				},
+				{
+					pattern:      "e",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
+				},
+				{
+					pattern:     "e",
+					leftContext: regexp.MustCompile("[DaoiuAOIUQY]$"),
+					phonetic:    "i",
+				},
+				{
+					pattern:      "e",
+					rightContext: regexp.MustCompile("^[aoAOQY]"),
+					phonetic:     "i",
+				},
+				{
+					pattern:  "e",
+					phonetic: "(i|Y[128])",
+				},
+				{
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 			},
 			uint64(genarabic): []rule{
 				{
-					patterns: [4]string{
-						"1a",
-						"",
-						"",
-						"(D|a)",
-					},
+					pattern:  "1a",
+					phonetic: "(D|a)",
 				},
 				{
-					patterns: [4]string{
-						"1i",
-						"",
-						"",
-						"(D|i|e)",
-					},
+					pattern:  "1i",
+					phonetic: "(D|i|e)",
 				},
 				{
-					patterns: [4]string{
-						"1u",
-						"",
-						"",
-						"(D|u|o)",
-					},
+					pattern:  "1u",
+					phonetic: "(D|u|o)",
 				},
 				{
-					patterns: [4]string{
-						"j1",
-						"",
-						"",
-						"(ja|je|jo|ju|j)",
-					},
+					pattern:  "j1",
+					phonetic: "(ja|je|jo|ju|j)",
 				},
 				{
-					patterns: [4]string{
-						"1",
-						"",
-						"",
-						"(a|e|i|o|u|)",
-					},
+					pattern:  "1",
+					phonetic: "(a|e|i|o|u|)",
 				},
 				{
-					patterns: [4]string{
-						"u",
-						"",
-						"",
-						"(o|u)",
-					},
+					pattern:  "u",
+					phonetic: "(o|u)",
 				},
 				{
-					patterns: [4]string{
-						"i",
-						"",
-						"",
-						"(i|e)",
-					},
+					pattern:  "i",
+					phonetic: "(i|e)",
 				},
 				{
-					patterns: [4]string{
-						"p",
-						"",
-						"$",
-						"p",
-					},
+					pattern:      "p",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "p",
 				},
 				{
-					patterns: [4]string{
-						"p",
-						"",
-						"",
-						"(p|b)",
-					},
+					pattern:  "p",
+					phonetic: "(p|b)",
 				},
 			},
 			uint64(genrussian): []rule{
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aeiEIou]",
-						"",
-						"i",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aeiEIou]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(i|Q)",
-					},
+					pattern:  "I",
+					phonetic: "(i|Q)",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"om",
-						"",
-						"[bp]",
-						"(om|im)",
-					},
+					pattern:      "om",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(om|im)",
 				},
 				{
-					patterns: [4]string{
-						"on",
-						"",
-						"[dgkstvz]",
-						"(on|in)",
-					},
+					pattern:      "on",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(on|in)",
 				},
 				{
-					patterns: [4]string{
-						"em",
-						"",
-						"[bp]",
-						"(im|om)",
-					},
+					pattern:      "em",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(im|om)",
 				},
 				{
-					patterns: [4]string{
-						"en",
-						"",
-						"[dgkstvz]",
-						"(in|on)",
-					},
+					pattern:      "en",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(in|on)",
 				},
 				{
-					patterns: [4]string{
-						"Em",
-						"",
-						"[bp]",
-						"(im|Ym|om)",
-					},
+					pattern:      "Em",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(im|Ym|om)",
 				},
 				{
-					patterns: [4]string{
-						"En",
-						"",
-						"[dgkstvz]",
-						"(in|Yn|on)",
-					},
+					pattern:      "En",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(in|Yn|on)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprsStv]$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoiuQ]",
-						"",
-						"i",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoiuQ]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoQ]",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoQ]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(Y|i)",
-					},
+					pattern:  "E",
+					phonetic: "(Y|i)",
 				},
 			},
 			uint64(gencyrillic): []rule{
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aeiEIou]",
-						"",
-						"i",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aeiEIou]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(i|Q)",
-					},
+					pattern:  "I",
+					phonetic: "(i|Q)",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"om",
-						"",
-						"[bp]",
-						"(om|im)",
-					},
+					pattern:      "om",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(om|im)",
 				},
 				{
-					patterns: [4]string{
-						"on",
-						"",
-						"[dgkstvz]",
-						"(on|in)",
-					},
+					pattern:      "on",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(on|in)",
 				},
 				{
-					patterns: [4]string{
-						"em",
-						"",
-						"[bp]",
-						"(im|om)",
-					},
+					pattern:      "em",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(im|om)",
 				},
 				{
-					patterns: [4]string{
-						"en",
-						"",
-						"[dgkstvz]",
-						"(in|on)",
-					},
+					pattern:      "en",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(in|on)",
 				},
 				{
-					patterns: [4]string{
-						"Em",
-						"",
-						"[bp]",
-						"(im|Ym|om)",
-					},
+					pattern:      "Em",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(im|Ym|om)",
 				},
 				{
-					patterns: [4]string{
-						"En",
-						"",
-						"[dgkstvz]",
-						"(in|Yn|on)",
-					},
+					pattern:      "En",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(in|Yn|on)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprsStv]$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoiuQ]",
-						"",
-						"i",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoiuQ]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoQ]",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoQ]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(Y|i)",
-					},
+					pattern:  "E",
+					phonetic: "(Y|i)",
 				},
 			},
 			uint64(genfrench): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(genczech): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(gendutch): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(genenglish): []rule{
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^aEIeiou]e",
-						"(Q|i|D)",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^aEIeiou]e"),
+					phonetic:     "(Q|i|D)",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aEIeiou]",
-						"",
-						"i",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aEIeiou]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(i|Q)",
-					},
+					pattern:  "I",
+					phonetic: "(i|Q)",
 				},
 				{
-					patterns: [4]string{
-						"lE",
-						"[bdfgkmnprsStvzZ]",
-						"",
-						"(il|li|lY)",
-					},
+					pattern:     "lE",
+					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					phonetic:    "(il|li|lY)",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"D[^aeiEIou]",
-						"",
-						"(i|)",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("D[^aeiEIou]$"),
+					phonetic:    "(i|)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"D[^aeiEIou]",
-						"",
-						"(i|)",
-					},
+					pattern:     "e",
+					leftContext: regexp.MustCompile("D[^aeiEIou]$"),
+					phonetic:    "(i|)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprsStv]$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoiEuQY]",
-						"",
-						"i",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoiEuQY]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoQY]",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoQY]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(Y|i)",
-					},
+					pattern:  "E",
+					phonetic: "(Y|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 			},
 			uint64(gengerman): []rule{
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aeiAEIOUouQY]",
-						"",
-						"i",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aeiAEIOUouQY]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(Q|i)",
-					},
+					pattern:  "I",
+					phonetic: "(Q|i)",
 				},
 				{
-					patterns: [4]string{
-						"AU",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "AU",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"aU",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "aU",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"Au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "Au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"OU",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "OU",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"oU",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "oU",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"Ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "Ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"Ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "Ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"Oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "Oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"Ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "Ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprst]$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoAOUiuQY]",
-						"",
-						"i",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoAOUiuQY]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoAOQY]",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoAOQY]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(Y|i)",
-					},
+					pattern:  "E",
+					phonetic: "(Y|i)",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"$",
-						"o",
-					},
+					pattern:      "O",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "o",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"[fklmnprst]$",
-						"o",
-					},
+					pattern:      "O",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "o",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"ts$",
-						"o",
-					},
+					pattern:      "O",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "o",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"[aoAOUeiuQY]",
-						"",
-						"o",
-					},
+					pattern:     "O",
+					leftContext: regexp.MustCompile("[aoAOUeiuQY]$"),
+					phonetic:    "o",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"",
-						"(o|Y)",
-					},
+					pattern:  "O",
+					phonetic: "(o|Y)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"$",
-						"(a|o)",
-					},
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"[fklmnprst]$",
-						"(a|o)",
-					},
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"ts$",
-						"(a|o)",
-					},
+					pattern:      "A",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"[aoeOUiuQY]",
-						"",
-						"(a|o)",
-					},
+					pattern:     "A",
+					leftContext: regexp.MustCompile("[aoeOUiuQY]$"),
+					phonetic:    "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"",
-						"(a|o|Y)",
-					},
+					pattern:  "A",
+					phonetic: "(a|o|Y)",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"$",
-						"u",
-					},
+					pattern:      "U",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "u",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"[DaoiuUQY]",
-						"",
-						"u",
-					},
+					pattern:     "U",
+					leftContext: regexp.MustCompile("[DaoiuUQY]$"),
+					phonetic:    "u",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"[^k]$",
-						"u",
-					},
+					pattern:      "U",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "u",
 				},
 				{
-					patterns: [4]string{
-						"Uk",
-						"[lr]",
-						"$",
-						"(uk|Qk)",
-					},
+					pattern:      "Uk",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(uk|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Uk",
-						"",
-						"$",
-						"uk",
-					},
+					pattern:      "Uk",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "uk",
 				},
 				{
-					patterns: [4]string{
-						"sUts",
-						"",
-						"$",
-						"(suts|sQts)",
-					},
+					pattern:      "sUts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(suts|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Uts",
-						"",
-						"$",
-						"uts",
-					},
+					pattern:      "Uts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "uts",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"",
-						"(u|Q)",
-					},
+					pattern:  "U",
+					phonetic: "(u|Q)",
 				},
 			},
 			uint64(gengreek): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(gengreeklatin): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"N",
-						"",
-						"",
-						"",
-					},
+					pattern:  "N",
+					phonetic: "",
 				},
 			},
 			uint64(genhebrew): []rule{},
 			uint64(genhungarian): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(genitalian): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(genlatvian): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(genpolish): []rule{
 				{
-					patterns: [4]string{
-						"aiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "aiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"oiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "oiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"uiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "uiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"eiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "eiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"EiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "EiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"iiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "iiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"IiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "IiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"aiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "aiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"oiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "oiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"uiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "uiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"eiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "eiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"EiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "EiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"iiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "iiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"IiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "IiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[bp]",
-						"(o|om|im)",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(o|om|im)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[dgkstvz]",
-						"(o|on|in)",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(o|on|in)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "B",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"aiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "aiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"oiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "oiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"uiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "uiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"eiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "eiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"EiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "EiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"iiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "iiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"IiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "IiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"aiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "aiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"oiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "oiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"uiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "uiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"eiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "eiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"EiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "EiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"iiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "iiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"IiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "IiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"[bp]",
-						"(i|im|om)",
-					},
+					pattern:      "F",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(i|im|om)",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"[dgkstvz]",
-						"(i|in|on)",
-					},
+					pattern:      "F",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(i|in|on)",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "F",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"P",
-						"",
-						"",
-						"(o|u)",
-					},
+					pattern:  "P",
+					phonetic: "(o|u)",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aeiAEBFIou]",
-						"",
-						"i",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aeiAEBFIou]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(i|Q)",
-					},
+					pattern:  "I",
+					phonetic: "(i|Q)",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprst]$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoiuQ]",
-						"",
-						"i",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoiuQ]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoQ]",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoQ]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(Y|i)",
-					},
+					pattern:  "E",
+					phonetic: "(Y|i)",
 				},
 			},
 			uint64(genportuguese): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 			},
 			uint64(genromanian): []rule{
 				{
-					patterns: [4]string{
-						"aiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "aiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"oiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "oiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"uiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "uiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"eiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "eiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"EiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "EiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"iiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "iiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"IiB",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "IiB",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"aiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "aiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"oiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "oiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"uiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "uiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"eiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "eiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"EiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "EiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"iiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "iiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"IiB",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "IiB",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[bp]",
-						"(o|om|im)",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(o|om|im)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[dgkstvz]",
-						"(o|on|in)",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(o|on|in)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "B",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"aiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "aiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"oiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "oiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"uiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "uiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"eiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "eiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"EiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "EiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"iiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "iiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"IiF",
-						"",
-						"[bp]",
-						"(D|Dm)",
-					},
+					pattern:      "IiF",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(D|Dm)",
 				},
 				{
-					patterns: [4]string{
-						"aiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "aiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"oiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "oiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"uiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "uiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"eiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "eiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"EiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "EiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"iiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "iiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"IiF",
-						"",
-						"[dgkstvz]",
-						"(D|Dn)",
-					},
+					pattern:      "IiF",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(D|Dn)",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"[bp]",
-						"(i|im|om)",
-					},
+					pattern:      "F",
+					rightContext: regexp.MustCompile("^[bp]"),
+					phonetic:     "(i|im|om)",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"[dgkstvz]",
-						"(i|in|on)",
-					},
+					pattern:      "F",
+					rightContext: regexp.MustCompile("^[dgkstvz]"),
+					phonetic:     "(i|in|on)",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "F",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"P",
-						"",
-						"",
-						"(o|u)",
-					},
+					pattern:  "P",
+					phonetic: "(o|u)",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"[^k]$",
-						"i",
-					},
+					pattern:      "I",
+					rightContext: regexp.MustCompile("^[^k]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"[lr]",
-						"$",
-						"(ik|Qk)",
-					},
+					pattern:      "Ik",
+					leftContext:  regexp.MustCompile("[lr]$"),
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(ik|Qk)",
 				},
 				{
-					patterns: [4]string{
-						"Ik",
-						"",
-						"$",
-						"ik",
-					},
+					pattern:      "Ik",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "ik",
 				},
 				{
-					patterns: [4]string{
-						"sIts",
-						"",
-						"$",
-						"(sits|sQts)",
-					},
+					pattern:      "sIts",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "(sits|sQts)",
 				},
 				{
-					patterns: [4]string{
-						"Its",
-						"",
-						"$",
-						"its",
-					},
+					pattern:      "Its",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "its",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"[aeiAEBFIou]",
-						"",
-						"i",
-					},
+					pattern:     "I",
+					leftContext: regexp.MustCompile("[aeiAEBFIou]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"(i|Q)",
-					},
+					pattern:  "I",
+					phonetic: "(i|Q)",
 				},
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"e",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "e",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[fklmnprst]$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[fklmnprst]$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"ts$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^ts$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"$",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"[DaoiuQ]",
-						"",
-						"i",
-					},
+					pattern:     "E",
+					leftContext: regexp.MustCompile("[DaoiuQ]$"),
+					phonetic:    "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"[aoQ]",
-						"i",
-					},
+					pattern:      "E",
+					rightContext: regexp.MustCompile("^[aoQ]"),
+					phonetic:     "i",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"(Y|i)",
-					},
+					pattern:  "E",
+					phonetic: "(Y|i)",
 				},
 			},
 			uint64(genspanish): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"(b|v)",
-					},
+					pattern:  "B",
+					phonetic: "(b|v)",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"",
-						"(b|v)",
-					},
+					pattern:  "V",
+					phonetic: "(b|v)",
 				},
 			},
 			uint64(genturkish): []rule{
 				{
-					patterns: [4]string{
-						"au",
-						"",
-						"",
-						"(D|a|u)",
-					},
+					pattern:  "au",
+					phonetic: "(D|a|u)",
 				},
 				{
-					patterns: [4]string{
-						"ou",
-						"",
-						"",
-						"(D|o|u)",
-					},
+					pattern:  "ou",
+					phonetic: "(D|o|u)",
 				},
 				{
-					patterns: [4]string{
-						"ai",
-						"",
-						"",
-						"(D|a|i)",
-					},
+					pattern:  "ai",
+					phonetic: "(D|a|i)",
 				},
 				{
-					patterns: [4]string{
-						"oi",
-						"",
-						"",
-						"(D|o|i)",
-					},
+					pattern:  "oi",
+					phonetic: "(D|o|i)",
 				},
 				{
-					patterns: [4]string{
-						"ui",
-						"",
-						"",
-						"(D|u|i)",
-					},
+					pattern:  "ui",
+					phonetic: "(D|u|i)",
 				},
 				{
-					patterns: [4]string{
-						"a",
-						"",
-						"",
-						"(a|o)",
-					},
+					pattern:  "a",
+					phonetic: "(a|o)",
 				},
 			},
 		},
@@ -19232,908 +11185,543 @@ var genFinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{
-				patterns: [4]string{
-					"h",
-					"",
-					"$",
-					"",
-				},
+				pattern:      "h",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"b",
-					"",
-					"[fktSs]",
-					"p",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^[fktSs]"),
+				phonetic:     "p",
 			},
 			{
-				patterns: [4]string{
-					"b",
-					"",
-					"p",
-					"",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^p"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"b",
-					"",
-					"$",
-					"p",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "p",
 			},
 			{
-				patterns: [4]string{
-					"p",
-					"",
-					"[vgdZz]",
-					"b",
-				},
+				pattern:      "p",
+				rightContext: regexp.MustCompile("^[vgdZz]"),
+				phonetic:     "b",
 			},
 			{
-				patterns: [4]string{
-					"p",
-					"",
-					"b",
-					"",
-				},
+				pattern:      "p",
+				rightContext: regexp.MustCompile("^b"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"v",
-					"",
-					"[pktSs]",
-					"f",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^[pktSs]"),
+				phonetic:     "f",
 			},
 			{
-				patterns: [4]string{
-					"v",
-					"",
-					"f",
-					"",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^f"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"v",
-					"",
-					"$",
-					"f",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "f",
 			},
 			{
-				patterns: [4]string{
-					"f",
-					"",
-					"[vbgdZz]",
-					"v",
-				},
+				pattern:      "f",
+				rightContext: regexp.MustCompile("^[vbgdZz]"),
+				phonetic:     "v",
 			},
 			{
-				patterns: [4]string{
-					"f",
-					"",
-					"v",
-					"",
-				},
+				pattern:      "f",
+				rightContext: regexp.MustCompile("^v"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"g",
-					"",
-					"[pftSs]",
-					"k",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^[pftSs]"),
+				phonetic:     "k",
 			},
 			{
-				patterns: [4]string{
-					"g",
-					"",
-					"k",
-					"",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^k"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"g",
-					"",
-					"$",
-					"k",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "k",
 			},
 			{
-				patterns: [4]string{
-					"k",
-					"",
-					"[vbdZz]",
-					"g",
-				},
+				pattern:      "k",
+				rightContext: regexp.MustCompile("^[vbdZz]"),
+				phonetic:     "g",
 			},
 			{
-				patterns: [4]string{
-					"k",
-					"",
-					"g",
-					"",
-				},
+				pattern:      "k",
+				rightContext: regexp.MustCompile("^g"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"[pfkSs]",
-					"t",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^[pfkSs]"),
+				phonetic:     "t",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"t",
-					"",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^t"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"$",
-					"t",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "t",
 			},
 			{
-				patterns: [4]string{
-					"t",
-					"",
-					"[vbgZz]",
-					"d",
-				},
+				pattern:      "t",
+				rightContext: regexp.MustCompile("^[vbgZz]"),
+				phonetic:     "d",
 			},
 			{
-				patterns: [4]string{
-					"t",
-					"",
-					"d",
-					"",
-				},
+				pattern:      "t",
+				rightContext: regexp.MustCompile("^d"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"",
-					"dZ",
-					"",
-				},
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^dZ"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"",
-					"tS",
-					"",
-				},
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^tS"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"[pfkSt]",
-					"s",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^[pfkSt]"),
+				phonetic:     "s",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "s",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "Z",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"S",
-					"",
-					"[sSzZ]",
-					"",
-				},
+				pattern:      "S",
+				rightContext: regexp.MustCompile("^[sSzZ]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"jnm",
-					"",
-					"",
-					"jm",
-				},
+				pattern:  "jnm",
+				phonetic: "jm",
 			},
 			{
-				patterns: [4]string{
-					"ji",
-					"^",
-					"",
-					"i",
-				},
+				pattern:     "ji",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "i",
 			},
 			{
-				patterns: [4]string{
-					"jI",
-					"^",
-					"",
-					"I",
-				},
+				pattern:     "jI",
+				leftContext: regexp.MustCompile("^$"),
+				phonetic:    "I",
 			},
 			{
-				patterns: [4]string{
-					"a",
-					"",
-					"[aA]",
-					"",
-				},
+				pattern:      "a",
+				rightContext: regexp.MustCompile("^[aA]"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"a",
-					"A",
-					"",
-					"",
-				},
+				pattern:     "a",
+				leftContext: regexp.MustCompile("A$"),
+				phonetic:    "",
 			},
 			{
-				patterns: [4]string{
-					"A",
-					"",
-					"A",
-					"",
-				},
+				pattern:      "A",
+				rightContext: regexp.MustCompile("^A"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"b",
-					"",
-					"b",
-					"",
-				},
+				pattern:      "b",
+				rightContext: regexp.MustCompile("^b"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"d",
-					"",
-					"d",
-					"",
-				},
+				pattern:      "d",
+				rightContext: regexp.MustCompile("^d"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"f",
-					"",
-					"f",
-					"",
-				},
+				pattern:      "f",
+				rightContext: regexp.MustCompile("^f"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"g",
-					"",
-					"g",
-					"",
-				},
+				pattern:      "g",
+				rightContext: regexp.MustCompile("^g"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"j",
-					"",
-					"j",
-					"",
-				},
+				pattern:      "j",
+				rightContext: regexp.MustCompile("^j"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"k",
-					"",
-					"k",
-					"",
-				},
+				pattern:      "k",
+				rightContext: regexp.MustCompile("^k"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"l",
-					"",
-					"l",
-					"",
-				},
+				pattern:      "l",
+				rightContext: regexp.MustCompile("^l"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"m",
-					"",
-					"m",
-					"",
-				},
+				pattern:      "m",
+				rightContext: regexp.MustCompile("^m"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"n",
-					"",
-					"n",
-					"",
-				},
+				pattern:      "n",
+				rightContext: regexp.MustCompile("^n"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"p",
-					"",
-					"p",
-					"",
-				},
+				pattern:      "p",
+				rightContext: regexp.MustCompile("^p"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"r",
-					"",
-					"r",
-					"",
-				},
+				pattern:      "r",
+				rightContext: regexp.MustCompile("^r"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"t",
-					"",
-					"t",
-					"",
-				},
+				pattern:      "t",
+				rightContext: regexp.MustCompile("^t"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"v",
-					"",
-					"v",
-					"",
-				},
+				pattern:      "v",
+				rightContext: regexp.MustCompile("^v"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"z",
-					"",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^z"),
+				phonetic:     "",
 			},
 			{
-				patterns: [4]string{
-					"H",
-					"",
-					"",
-					"",
-				},
+				pattern:  "H",
+				phonetic: "",
 			},
 			{
-				patterns: [4]string{
-					"s",
-					"[^t]",
-					"[bgZd]",
-					"z",
-				},
+				pattern:      "s",
+				leftContext:  regexp.MustCompile("[^t]$"),
+				rightContext: regexp.MustCompile("^[bgZd]"),
+				phonetic:     "z",
 			},
 			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"[pfkst]",
-					"S",
-				},
+				pattern:      "Z",
+				rightContext: regexp.MustCompile("^[pfkst]"),
+				phonetic:     "S",
 			},
 			{
-				patterns: [4]string{
-					"Z",
-					"",
-					"$",
-					"S",
-				},
+				pattern:      "Z",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "S",
 			},
 			{
-				patterns: [4]string{
-					"S",
-					"",
-					"[bgzd]",
-					"Z",
-				},
+				pattern:      "S",
+				rightContext: regexp.MustCompile("^[bgzd]"),
+				phonetic:     "Z",
 			},
 			{
-				patterns: [4]string{
-					"z",
-					"",
-					"$",
-					"s",
-				},
+				pattern:      "z",
+				rightContext: regexp.MustCompile("^$"),
+				phonetic:     "s",
 			},
 			{
-				patterns: [4]string{
-					"ji",
-					"[aAoOeEiIuU]",
-					"",
-					"j",
-				},
+				pattern:     "ji",
+				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
+				phonetic:    "j",
 			},
 			{
-				patterns: [4]string{
-					"jI",
-					"[aAoOeEiIuU]",
-					"",
-					"j",
-				},
+				pattern:     "jI",
+				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
+				phonetic:    "j",
 			},
 			{
-				patterns: [4]string{
-					"je",
-					"[aAoOeEiIuU]",
-					"",
-					"j",
-				},
+				pattern:     "je",
+				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
+				phonetic:    "j",
 			},
 			{
-				patterns: [4]string{
-					"jE",
-					"[aAoOeEiIuU]",
-					"",
-					"j",
-				},
+				pattern:     "jE",
+				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
+				phonetic:    "j",
 			},
 		},
 		second: map[uint64][]rule{
 			uint64(genany): []rule{
 				{
-					patterns: [4]string{
-						"EE",
-						"",
-						"$",
-						"e",
-					},
+					pattern:      "EE",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "e",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"",
-						"a",
-					},
+					pattern:  "A",
+					phonetic: "a",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "O",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"P",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "P",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"",
-						"u",
-					},
+					pattern:  "U",
+					phonetic: "u",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[fktSs]",
-						"p",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[fktSs]"),
+					phonetic:     "p",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"p",
-						"",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^p"),
+					phonetic:     "",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"$",
-						"p",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "p",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"[pktSs]",
-						"f",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^[pktSs]"),
+					phonetic:     "f",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"f",
-						"",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^f"),
+					phonetic:     "",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"$",
-						"f",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "f",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"b",
-					},
+					pattern:  "B",
+					phonetic: "b",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"",
-						"v",
-					},
+					pattern:  "V",
+					phonetic: "v",
 				},
 			},
 			uint64(genarabic): []rule{
 				{
-					patterns: [4]string{
-						"1",
-						"",
-						"",
-						"",
-					},
+					pattern:  "1",
+					phonetic: "",
 				},
 			},
 			uint64(genrussian): []rule{
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(gencyrillic): []rule{
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(genczech): []rule{
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(gendutch): []rule{},
 			uint64(genenglish): []rule{
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(genfrench): []rule{},
 			uint64(gengerman): []rule{
 				{
-					patterns: [4]string{
-						"EE",
-						"",
-						"$",
-						"e",
-					},
+					pattern:      "EE",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "e",
 				},
 				{
-					patterns: [4]string{
-						"A",
-						"",
-						"",
-						"a",
-					},
+					pattern:  "A",
+					phonetic: "a",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 				{
-					patterns: [4]string{
-						"O",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "O",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"P",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "P",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"U",
-						"",
-						"",
-						"u",
-					},
+					pattern:  "U",
+					phonetic: "u",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"[fktSs]",
-						"p",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^[fktSs]"),
+					phonetic:     "p",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"p",
-						"",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^p"),
+					phonetic:     "",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"$",
-						"p",
-					},
+					pattern:      "B",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "p",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"[pktSs]",
-						"f",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^[pktSs]"),
+					phonetic:     "f",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"f",
-						"",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^f"),
+					phonetic:     "",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"$",
-						"f",
-					},
+					pattern:      "V",
+					rightContext: regexp.MustCompile("^$"),
+					phonetic:     "f",
 				},
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"b",
-					},
+					pattern:  "B",
+					phonetic: "b",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"",
-						"v",
-					},
+					pattern:  "V",
+					phonetic: "v",
 				},
 			},
 			uint64(gengreek): []rule{},
 			uint64(gengreeklatin): []rule{
 				{
-					patterns: [4]string{
-						"N",
-						"",
-						"",
-						"n",
-					},
+					pattern:  "N",
+					phonetic: "n",
 				},
 			},
 			uint64(genhebrew): []rule{},
 			uint64(genhungarian): []rule{
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(genitalian): []rule{},
 			uint64(genlatvian): []rule{},
 			uint64(genpolish): []rule{
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"a",
-					},
+					pattern:  "B",
+					phonetic: "a",
 				},
 				{
-					patterns: [4]string{
-						"F",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "F",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"P",
-						"",
-						"",
-						"o",
-					},
+					pattern:  "P",
+					phonetic: "o",
 				},
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(genportuguese): []rule{},
 			uint64(genromanian): []rule{
 				{
-					patterns: [4]string{
-						"E",
-						"",
-						"",
-						"e",
-					},
+					pattern:  "E",
+					phonetic: "e",
 				},
 				{
-					patterns: [4]string{
-						"I",
-						"",
-						"",
-						"i",
-					},
+					pattern:  "I",
+					phonetic: "i",
 				},
 			},
 			uint64(genspanish): []rule{
 				{
-					patterns: [4]string{
-						"B",
-						"",
-						"",
-						"b",
-					},
+					pattern:  "B",
+					phonetic: "b",
 				},
 				{
-					patterns: [4]string{
-						"V",
-						"",
-						"",
-						"v",
-					},
+					pattern:  "V",
+					phonetic: "v",
 				},
 			},
 			uint64(genturkish): []rule{},

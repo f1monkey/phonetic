@@ -2,9 +2,7 @@ package beidermorse
 
 import (
 	"fmt"
-	"regexp"
 	"strings"
-	"sync"
 )
 
 var ErrInvalidMode = fmt.Errorf("invalid name mode")
@@ -75,29 +73,4 @@ func WithRuleset(r Ruleset) EncoderOption {
 		e.ruleset = r
 		return nil
 	}
-}
-
-var regCache = regexpCache{
-	data: make(map[string]*regexp.Regexp),
-}
-
-type regexpCache struct {
-	data map[string]*regexp.Regexp
-	mtx  sync.RWMutex
-}
-
-func (c *regexpCache) get(pattern string) *regexp.Regexp {
-	c.mtx.RLock()
-	r, ok := c.data[pattern]
-	c.mtx.RUnlock()
-	if ok {
-		return r
-	}
-
-	c.mtx.Lock()
-	defer c.mtx.Unlock()
-	r = regexp.MustCompile(pattern)
-	c.data[pattern] = r
-
-	return r
 }

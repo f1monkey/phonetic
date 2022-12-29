@@ -2,7 +2,6 @@ package beidermorse
 
 import (
 	"encoding/hex"
-	"regexp"
 	"strconv"
 	"strings"
 	"unicode/utf8"
@@ -163,31 +162,24 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 	for i := 0; i < inputLength; {
 		found := false
 		for _, rule := range rules {
-			pattern := rule.pattern()
+			pattern := rule.pattern
 			patternLength = utf8.RuneCountInString(pattern)
-			lcontext := rule.contextLeft()
-			rcontext := rule.contextRight()
 
 			// check to see if next sequence in input matches the string in the rule
 			if patternLength > inputLength-i || substr(input, i, patternLength) != pattern { // no match
 				continue
 			}
 
-			right := "^" + rcontext + ""
-			left := "" + lcontext + "$" + ""
-
 			// check that right context is satisfied
-			if rcontext != "" {
-				reg := regexp.MustCompile(right)
-				if !reg.MatchString(substrFrom(input, i+patternLength)) {
+			if rule.rightContext != nil {
+				if !rule.rightContext.MatchString(substrFrom(input, i+patternLength)) {
 					continue
 				}
 			}
 
 			// check that left context is satisfied
-			if lcontext != "" {
-				reg := regexp.MustCompile(left)
-				if !reg.MatchString(substr(input, 0, i)) {
+			if rule.leftContext != nil {
+				if !rule.leftContext.MatchString(substr(input, 0, i)) {
 					continue
 				}
 			}
@@ -211,7 +203,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 			// check for incompatible attributes
 
-			candidate := applyRuleIfCompatible(phonetic, rule.phonetic(), lang)
+			candidate := applyRuleIfCompatible(phonetic, rule.phonetic, lang)
 			if candidate == "" {
 				continue
 			}
@@ -276,13 +268,8 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 			var patternLength int
 			for r := 0; r < len(finalRules); r++ {
 				rule := finalRules[r]
-				pattern := rule.pattern()
+				pattern := rule.pattern
 				patternLength = utf8.RuneCountInString(pattern)
-				lcontext := rule.contextLeft()
-				rcontext := rule.contextRight()
-
-				right := "^" + rcontext
-				left := lcontext + "$"
 
 				// check to see if next sequence in phonetic matches the string in the rule
 				if patternLength > utf8.RuneCountInString(phoneticx)-i || substr(phoneticx, i, patternLength) != pattern { // no match
@@ -290,17 +277,15 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 				}
 
 				// check that right context is satisfied
-				if rcontext != "" {
-					reg := regexp.MustCompile(right)
-					if !reg.MatchString(substrFrom(phoneticx, i+patternLength)) {
+				if rule.rightContext != nil {
+					if !rule.rightContext.MatchString(substrFrom(phoneticx, i+patternLength)) {
 						continue
 					}
 				}
 
 				// check that left context is satisfied
-				if lcontext != "" {
-					reg := regexp.MustCompile(left)
-					if !reg.MatchString(substr(phoneticx, 0, i)) {
+				if rule.leftContext != nil {
+					if !rule.leftContext.MatchString(substr(phoneticx, 0, i)) {
 						continue
 					}
 				}
@@ -324,7 +309,7 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 
 				// check for incompatible attributes
 
-				candidate := applyRuleIfCompatible(phonetic2, rule.phonetic(), languageArg)
+				candidate := applyRuleIfCompatible(phonetic2, rule.phonetic, languageArg)
 				if candidate == "" {
 					continue
 				}
