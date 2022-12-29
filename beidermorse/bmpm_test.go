@@ -8,9 +8,6 @@ import (
 )
 
 func Benchmark_detectLang(b *testing.B) {
-	detectLang("orange", Generic)
-	b.ResetTimer()
-
 	for i := 0; i < b.N; i++ {
 		detectLang("orange", Generic)
 	}

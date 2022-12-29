@@ -122,6 +122,8 @@ const rulesTemplate = `
 // GENERATED CODE. DO NOT EDIT!
 package beidermorse
 
+import "regexp"
+
 type {{ .Mode }}Lang uint64
 
 
@@ -168,7 +170,7 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
-			pattern: {{ printf "%q" $rule.Pattern }},
+			pattern: regexp.MustCompile({{ printf "%q" $rule.Pattern }}),
 			langs: {{ $rule.Langs }},
 			accept: {{ $rule.Accept }},
 		},

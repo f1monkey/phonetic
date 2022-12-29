@@ -1,5 +1,7 @@
 package beidermorse
 
+import "regexp"
+
 // Mode which name mode to use for matching
 type Mode string
 
@@ -56,7 +58,7 @@ type finalRule struct {
 }
 
 type langRule struct {
-	pattern string
+	pattern *regexp.Regexp
 	langs   uint64
 	accept  bool
 }
