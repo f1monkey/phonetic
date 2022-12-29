@@ -42,25 +42,8 @@ func Test_detectLang(t *testing.T) {
 	}
 }
 
-// func Test_Phonetic(t *testing.T) {
-// 	cases := []struct {
-// 		name     string
-// 		mode     NameMode
-// 		input    string
-// 		expected string
-// 	}{
-// 		{
-// 			name:     "ru_generic",
-// 			mode:     Generic,
-// 			input:    "апельсин",
-// 			expected: "",
-// 		},
-// 	}
-
-// 	for _, c := range cases {
-// 		t.Run(c.name, func(t *testing.T) {
-// 			result := Phonetic(c.input, c.mode)
-// 			require.Equal(t, c.expected, result)
-// 		})
-// 	}
-// }
+func Benchmark_phonetic(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		phonetic("test", Generic, Approx, 1, false)
+	}
+}

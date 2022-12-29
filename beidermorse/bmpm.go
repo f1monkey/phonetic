@@ -75,16 +75,6 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 	input = strings.TrimSpace(strings.ToLower(input))
 
-	// determine type (ashkenazic, sephardic, generic
-
-	ash := false // ashkenazic
-	sep := false // sephardic
-	if mode == Ashkenazi {
-		ash = true // ashkenazic
-	} else if mode == Sephardic {
-		sep = true // sephardic
-	}
-
 	// remove spaces from within certain leading words
 
 	list := []string{"de la", "van der", "van den"}
@@ -98,7 +88,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 	// for ash and gen -- remove all apostrophes
 
-	if !sep {
+	if mode != Sephardic {
 		input = strings.ReplaceAll(input, "'", "")
 	}
 
@@ -114,7 +104,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 		}
 	}
 
-	if sep {
+	if mode == Sephardic {
 
 		list = []string{ // sephardi
 			"abe", "aben", "abi", "abou", "abu", "al", "bar", "ben", "bou", "bu",
@@ -122,7 +112,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 			"el", "la", "le", "ibn", "ha",
 		}
 
-	} else if ash { // ashkenazi
+	} else if mode == Ashkenazi { // ashkenazi
 
 		list = []string{
 			"ben", "bar", "ha",
@@ -163,7 +153,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 	// at this point, input is only a single word
 
-	inputLength := utf8.RuneCountInString(input)
+	inputLength := len([]rune(input))
 
 	// apply language rules to map to phonetic alphabet
 	rules, final1, final2 := getRules(mode, ruleset, lang)
@@ -172,8 +162,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 	var patternLength int
 	for i := 0; i < inputLength; {
 		found := false
-		for r := 0; r < len(rules); r++ {
-			rule := rules[r]
+		for _, rule := range rules {
 			pattern := rule.pattern()
 			patternLength = utf8.RuneCountInString(pattern)
 			lcontext := rule.contextLeft()
@@ -184,8 +173,8 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 				continue
 			}
 
-			right := "/^$rcontext/"
-			left := "/$lcontext" + "$" + "/"
+			right := "^" + rcontext + ""
+			left := "" + lcontext + "$" + ""
 
 			// check that right context is satisfied
 			if rcontext != "" {
@@ -616,7 +605,7 @@ func substrFrom(s string, start int) string {
 }
 
 func indexAt(s, sep string, n int) int {
-	return strings.Index(s[n:], sep)
+	return n + strings.Index(s[n:], sep)
 }
 
 func getRules(
