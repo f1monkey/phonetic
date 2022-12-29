@@ -15,9 +15,9 @@ import (
 )
 
 var ruleSources = map[string]string{
-	"ash": "beidermorse/bmpm-php/ash.json",
-	"gen": "beidermorse/bmpm-php/gen.json",
-	"sep": "beidermorse/bmpm-php/sep.json",
+	"ash": "beidermorse/bmpm-rules/ash.json",
+	"gen": "beidermorse/bmpm-rules/gen.json",
+	"sep": "beidermorse/bmpm-rules/sep.json",
 }
 
 func main() {
@@ -56,7 +56,7 @@ type Rule struct {
 }
 
 type SecondFinalRule struct {
-	Langs uint64 `json:"langs"`
+	Lang  uint64 `json:"lang"`
 	Rules []Rule `json:"rules"`
 }
 
@@ -122,6 +122,8 @@ const rulesTemplate = `
 // GENERATED CODE. DO NOT EDIT!
 package beidermorse
 
+import "regexp"
+
 type {{ .Mode }}Lang uint64
 
 
@@ -154,11 +156,14 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 		{{ $.Mode }}{{ $lang}}: []rule{
 			{{- range $rule := $rules }}
 				{
-					patterns: [4]string{
-					{{- range $pattern := $rule.Patterns }}
-						{{ printf "%q" $pattern }},
+					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
+					{{- if ne (index $rule.Patterns 1) ""}}
+						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
 					{{- end }}
-					},
+					{{- if ne (index $rule.Patterns 2) ""}}
+						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+					{{- end }}
+					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
 				},
 			{{- end }}
 		},
@@ -168,7 +173,7 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
-			pattern: {{ printf "%q" $rule.Pattern }},
+			pattern: regexp.MustCompile({{ printf "%q" $rule.Pattern }}),
 			langs: {{ $rule.Langs }},
 			accept: {{ $rule.Accept }},
 		},
@@ -180,60 +185,66 @@ var {{ .Mode }}FinalRules = finalRules{
 		first: []rule{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{
-					patterns: [4]string{
-					{{- range $pattern := $rule.Patterns }}
-						{{ printf "%q" $pattern }},
+					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
+					{{- if ne (index $rule.Patterns 1) ""}}
+						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
 					{{- end }}
-					},
+					{{- if ne (index $rule.Patterns 2) ""}}
+						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+					{{- end }}
+					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
 				},
 			{{- end }}
 		},
-		second: []secondFinalRule{
+		second: map[uint64][]rule{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				{
-					langs: {{ $secRule.Langs }},
-					rules: []rule{
-						{{- range $rule := $secRule.Rules }}
-							{
-								patterns: [4]string{
-								{{- range $pattern := $rule.Patterns }}
-									{{ printf "%q" $pattern }},
-								{{- end }}
-								},
-							},
-						{{- end }}
-					},
+				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+					{{- range $rule := $secRule.Rules }}
+						{
+							pattern: {{ printf "%q" (index $rule.Patterns 0) }},
+							{{- if ne (index $rule.Patterns 1) ""}}
+								leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+							{{- end }}
+							{{- if ne (index $rule.Patterns 2) ""}}
+								rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+							{{- end }}
+							phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+						},
+					{{- end }}
 				},
 			{{- end }}
 		},
 	},
 	exact: finalRule{
 		first: []rule{
-			{{- range $rule := .FinalRules.Approx.First }}
+			{{- range $rule := .FinalRules.Exact.First }}
 				{
-					patterns: [4]string{
-					{{- range $pattern := $rule.Patterns }}
-						{{ printf "%q" $pattern }},
+					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
+					{{- if ne (index $rule.Patterns 1) ""}}
+						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
 					{{- end }}
-					},
+					{{- if ne (index $rule.Patterns 2) ""}}
+						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+					{{- end }}
+					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
 				},
 			{{- end }}
 		},
-		second: []secondFinalRule{
-			{{- range $secRule := .FinalRules.Approx.Second }}
-				{
-					langs: {{ $secRule.Langs }},
-					rules: []rule{
-						{{- range $rule := $secRule.Rules }}
-							{
-								patterns: [4]string{
-								{{- range $pattern := $rule.Patterns }}
-									{{ printf "%q" $pattern }},
-								{{- end }}
-								},
-							},
-						{{- end }}
-					},
+		second: map[uint64][]rule{
+			{{- range $secRule := .FinalRules.Exact.Second }}
+				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+					{{- range $rule := $secRule.Rules }}
+						{
+							pattern: {{ printf "%q" (index $rule.Patterns 0) }},
+							{{- if ne (index $rule.Patterns 1) ""}}
+								leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+							{{- end }}
+							{{- if ne (index $rule.Patterns 2) ""}}
+								rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+							{{- end }}
+							phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+						},
+					{{- end }}
 				},
 			{{- end }}
 		},

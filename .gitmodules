@@ -1,3 +1,6 @@
 [submodule "beidermorse/bmpm-php"]
 	path = beidermorse/bmpm-php
-	url = https://github.com/f1monkey/bmpm-php
+	url = git://github.com/f1monkey/bmpm-php
+[submodule "beidermorse/bmpm-rules"]
+	path = beidermorse/bmpm-rules
+	url = git@github.com:f1monkey/bmpm-rules.git
