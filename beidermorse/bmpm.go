@@ -281,8 +281,8 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 				lcontext := rule.contextLeft()
 				rcontext := rule.contextRight()
 
-				right := "/^$rcontext/"
-				left := "/$lcontext" + "$" + "/"
+				right := "^" + rcontext
+				left := lcontext + "$"
 
 				// check to see if next sequence in phonetic matches the string in the rule
 				if patternLength > utf8.RuneCountInString(phoneticx)-i || substr(phoneticx, i, patternLength) != pattern { // no match

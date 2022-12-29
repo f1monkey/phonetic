@@ -21,6 +21,20 @@ func Test_Encoder_Encode(t *testing.T) {
 			input:    "апельсин",
 			expected: []string{"apelsin"},
 		},
+		{
+			name:    "ru_generic_approx",
+			mode:    Generic,
+			ruleset: Approx,
+			input:   "апельсин",
+			expected: []string{
+				"apYlzn",
+				"apilzn",
+				"opYlzn",
+				"opilzn",
+				"aplzn",
+				"oplzn",
+			},
+		},
 	}
 
 	for _, c := range cases {
