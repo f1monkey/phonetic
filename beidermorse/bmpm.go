@@ -103,28 +103,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 		}
 	}
 
-	if mode == Sephardic {
-
-		list = []string{ // sephardi
-			"abe", "aben", "abi", "abou", "abu", "al", "bar", "ben", "bou", "bu",
-			"d", "da", "dal", "de", "del", "dela", "della", "des", "di",
-			"el", "la", "le", "ibn", "ha",
-		}
-
-	} else if mode == Ashkenazi { // ashkenazi
-
-		list = []string{
-			"ben", "bar", "ha",
-		}
-
-	} else { // generic
-
-		list = []string{
-			"abe", "aben", "abi", "abou", "abu", "al", "bar", "ben", "bou", "bu",
-			"d", "da", "dal", "de", "del", "dela", "della", "des", "di", "dos", "du",
-			"el", "la", "le", "ibn", "van", "von", "ha", "vanden", "vander",
-		}
-	}
+	rules, final1, final2, discards := getRules(mode, ruleset, lang)
 
 	// process a multiword name of form X Y
 
@@ -135,7 +114,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 		} else { // number of words is exactly two
 			word1 := substr(input, 0, space)
 			word2 := substrFrom(input, space+1)
-			if inArray(list, word1) {
+			if inArray(discards, word1) {
 				// X Y => Y and XY
 				results := redoLanguage(word2, mode, ruleset, concat)
 				results += "-" + redoLanguage(word1+word2, mode, ruleset, concat)
@@ -155,7 +134,6 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 	inputLength := len([]rune(input))
 
 	// apply language rules to map to phonetic alphabet
-	rules, final1, final2 := getRules(mode, ruleset, lang)
 
 	phonetic := ""
 	var patternLength int
@@ -438,22 +416,6 @@ func phoneticNumbers(phonetic string) string {
 	return result
 }
 
-func isPhoneticVowel(c string) bool {
-	return (strings.Index("Aa4oe5iI9uUE", c) != -1)
-}
-
-func isAOTypeVowel(c string) bool {
-	return (strings.Index("a4o59", c) != -1)
-}
-
-func isEITypeVowel(c string) bool {
-	return (strings.Index("eiIy", c) != -1)
-}
-
-func isSZTypeConsonant(c string) bool {
-	return (strings.Index("sSzZ", c) != -1)
-}
-
 func removeDuplicateAlternates(phonetic string) string {
 	altString := phonetic
 	altArray := strings.Split(altString, "|")
@@ -597,10 +559,11 @@ func getRules(
 	mode Mode,
 	ruleset Ruleset,
 	lang uint64,
-) (rules []rule, finalRules1 []rule, finalRules2 []rule) {
+) (rules []rule, finalRules1 []rule, finalRules2 []rule, discards []string) {
 	switch mode {
 	case Generic:
 		rules = genRules[genLang(lang)]
+		discards = genDiscards
 		switch ruleset {
 		case Approx:
 			finalRules1 = genFinalRules.approx.first
@@ -611,6 +574,7 @@ func getRules(
 		}
 	case Ashkenazi:
 		rules = ashRules[ashLang(lang)]
+		discards = ashDiscards
 		switch ruleset {
 		case Approx:
 			finalRules1 = ashFinalRules.approx.first
@@ -621,6 +585,7 @@ func getRules(
 		}
 	case Sephardic:
 		rules = sepRules[sepLang(lang)]
+		discards = sepDiscards
 		switch ruleset {
 		case Approx:
 			finalRules1 = sepFinalRules.approx.first

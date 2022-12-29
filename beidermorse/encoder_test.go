@@ -42,6 +42,41 @@ func Test_Encoder_Encode(t *testing.T) {
 				"oplzn",
 			},
 		},
+		{
+			name:     "ru_ashkenazi_exact",
+			mode:     Ashkenazi,
+			ruleset:  Exact,
+			input:    "апельсин",
+			expected: []string{"apelsin"},
+		},
+		{
+			name:    "ru_ashkenazi_approx",
+			mode:    Ashkenazi,
+			ruleset: Approx,
+			input:   "апельсин",
+			expected: []string{
+				"apYlzn",
+				"apilzn",
+				"opYlzn",
+				"opilzn",
+				"aplzn",
+				"oplzn",
+			},
+		},
+		{
+			name:     "ru_sephardic_exact",
+			mode:     Sephardic,
+			ruleset:  Exact,
+			input:    "апельсин",
+			expected: []string{},
+		},
+		{
+			name:     "ru_sephardic_approx",
+			mode:     Sephardic,
+			ruleset:  Approx,
+			input:    "апельсин",
+			expected: []string{},
+		},
 	}
 
 	for _, c := range cases {
