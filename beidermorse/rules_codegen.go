@@ -247,8 +247,10 @@ func (l {{ .Mode }}Lang) String() string {
 }
 
 const {{ .Mode }}All = {{- range $i, $lang := .Languages }}
-	{{- if ne $i 0 }}+{{- end }}
-	{{ $.Mode }}{{ $lang }}
+	{{- if ne $i 0 }}
+		{{- if ne $i 1 }}+{{- end }}
+		{{ $.Mode }}{{ $lang }}
+	{{- end }}
 {{- end}}
 
 var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
@@ -265,6 +267,7 @@ var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
 			match: ruleMatcher{
+				matchEmptyString: {{ $rule.Match.MatchEmptyString }},
 				contains: {{ printf "%q" $rule.Match.Contains }},
 				prefix: {{ printf "%q" $rule.Match.Prefix }},
 				suffix: {{ printf "%q" $rule.Match.Suffix }},

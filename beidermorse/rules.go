@@ -62,7 +62,7 @@ type ruleMatcher struct {
 }
 
 func (r ruleMatcher) matches(str string) bool {
-	if r.matchEmptyString && str == "" {
+	if r.matchEmptyString && len(str) == 0 {
 		return true
 	}
 
