@@ -142,7 +142,9 @@ func transformRule(src SrcRule) DestRule {
 func transformPattern(pattern string) DestRuleMatch {
 	r := DestRuleMatch{}
 
-	if containsRegexp.MatchString(pattern) {
+	if pattern == "^$" {
+		r.MatchEmptyString = true
+	} else if containsRegexp.MatchString(pattern) {
 		r.Contains = pattern
 	} else if prefixRegexp.MatchString(pattern) {
 		r.Prefix = strings.ReplaceAll(pattern, "^", "")
@@ -194,6 +196,7 @@ const rulesTemplate = `
 	pattern: {{ printf "%q" .Pattern }},
 	{{- if ne .LeftContext nil}}
 		leftContext: &ruleMatcher{
+			matchEmptyString: {{ .LeftContext.MatchEmptyString }},
 			contains: {{ printf "%q" .LeftContext.Contains }},
 			prefix: {{ printf "%q" .LeftContext.Prefix }},
 			suffix: {{ printf "%q" .LeftContext.Suffix }},
@@ -204,6 +207,7 @@ const rulesTemplate = `
 	{{- end }}
 	{{- if ne .RightContext nil}}
 		rightContext: &ruleMatcher{
+			matchEmptyString: {{ .RightContext.MatchEmptyString }},
 			contains: {{ printf "%q" .RightContext.Contains }},
 			prefix: {{ printf "%q" .RightContext.Prefix }},
 			suffix: {{ printf "%q" .RightContext.Suffix }},
@@ -389,12 +393,17 @@ type DestFinalRules struct {
 }
 
 type DestRuleMatch struct {
-	Pattern  string
-	Prefix   string
-	Suffix   string
-	Contains string
+	MatchEmptyString bool
+	Pattern          string
+	Prefix           string
+	Suffix           string
+	Contains         string
 }
 
 func (m DestRuleMatch) IsEmpty() bool {
-	return m.Contains == "" && m.Prefix == "" && m.Suffix == "" && m.Pattern == ""
+	return m.Contains == "" &&
+		m.Prefix == "" &&
+		m.Suffix == "" &&
+		m.Pattern == "" &&
+		m.MatchEmptyString == false
 }

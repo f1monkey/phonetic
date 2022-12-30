@@ -54,13 +54,18 @@ type langRule struct {
 }
 
 type ruleMatcher struct {
-	pattern  *regexp.Regexp
-	prefix   string
-	suffix   string
-	contains string
+	matchEmptyString bool
+	pattern          *regexp.Regexp
+	prefix           string
+	suffix           string
+	contains         string
 }
 
 func (r ruleMatcher) matches(str string) bool {
+	if r.matchEmptyString && str == "" {
+		return true
+	}
+
 	if r.contains != "" {
 		return strings.Contains(str, r.contains)
 	}
