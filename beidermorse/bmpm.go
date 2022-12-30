@@ -50,50 +50,29 @@ func detectLang(word string, mode Mode) uint64 {
 	return remaining
 }
 
+var firstList = []string{"de la", "van der", "van den"}
+
 func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool) string {
-	// algorithm used here is as follows:
-	//
-	//   Before doing anything else:
-	//    (1) replace leading:
-	//         de<space>la<space> with dela<space>
-	//         van<space>der<space> with vander<space>
-	//         van<space>den<space> with vanden<space>
-	//    (2) gen and ash: remove all apostrophes (i.e., X'Y ==> XY)
-	//    (3) remove all spaces, apostrophes, and dashes except for the first one (i.e. X Y Z ==> X YZ)
-	//    (4) convert remaining dashes and apostrophes (if any) to space (i.e. X'Y ==> X Y)
-
-	//   if Exact:
-	//     if <space> is present (i.e. X Y/
-	//       X Y => XY
-	//   if Approx or Hebrew:
-	//     if <space> is present (i.e. X Y)
-	//       if X in list (different lists for ash, sep, gen, see below)
-	//         X Y => Y and XY
-	//       else if X is not in list
-	//         X Y => X, Y, and XY
-
 	input = strings.TrimSpace(strings.ToLower(input))
 
 	// remove spaces from within certain leading words
 
-	list := []string{"de la", "van der", "van den"}
-	for i := 0; i < len(list); i++ {
-		target := list[i] + " "
+	for _, item := range firstList {
+		target := item + " "
 		if substr(input, 0, utf8.RuneCountInString(target)) == target {
-			target = list[i]
+			target = item
 			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
 		}
 	}
 
 	// for ash and gen -- remove all apostrophes
-
 	if mode != Sephardic {
 		input = strings.ReplaceAll(input, "'", "")
 	}
 
 	// remove all apostrophoes, dashes, and spaces except for the first one, replace first one with space
 
-	list = []string{"'", "-", " "}
+	list := []string{"'", "-", " "}
 	for i := 0; i < len(list); i++ {
 		target := list[i]
 
@@ -150,14 +129,14 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 			// check that right context is satisfied
 			if rule.rightContext != nil {
-				if !rule.rightContext.MatchString(substrFrom(input, i+patternLength)) {
+				if !rule.rightContext.matches(substrFrom(input, i+patternLength)) {
 					continue
 				}
 			}
 
 			// check that left context is satisfied
 			if rule.leftContext != nil {
-				if !rule.leftContext.MatchString(substr(input, 0, i)) {
+				if !rule.leftContext.matches(substr(input, 0, i)) {
 					continue
 				}
 			}
@@ -256,14 +235,14 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 
 				// check that right context is satisfied
 				if rule.rightContext != nil {
-					if !rule.rightContext.MatchString(substrFrom(phoneticx, i+patternLength)) {
+					if !rule.rightContext.matches(substrFrom(phoneticx, i+patternLength)) {
 						continue
 					}
 				}
 
 				// check that left context is satisfied
 				if rule.leftContext != nil {
-					if !rule.leftContext.MatchString(substr(phoneticx, 0, i)) {
+					if !rule.leftContext.matches(substr(phoneticx, 0, i)) {
 						continue
 					}
 				}

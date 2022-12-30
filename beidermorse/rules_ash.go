@@ -62,104 +62,204 @@ const ashAll = ashany +
 var ashRules = map[ashLang][]rule{
 	ashany: []rule{
 		{
-			pattern:      "yna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(in[512]|ina)",
+			pattern: "yna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(in[512]|ina)",
 		},
 		{
-			pattern:      "ina",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(in[512]|ina)",
+			pattern: "ina",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(in[512]|ina)",
 		},
 		{
-			pattern:      "liova",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lof[512]|lef[512]|lova)",
+			pattern: "liova",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lof[512]|lef[512]|lova)",
 		},
 		{
-			pattern:      "lova",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lof[512]|lef[512]|lova)",
+			pattern: "lova",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lof[512]|lef[512]|lova)",
 		},
 		{
-			pattern:      "ova",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(of[512]|ova)",
+			pattern: "ova",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(of[512]|ova)",
 		},
 		{
-			pattern:      "eva",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ef[512]|eva)",
+			pattern: "eva",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ef[512]|eva)",
 		},
 		{
-			pattern:      "aia",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(aja|i[512])",
+			pattern: "aia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(aja|i[512])",
 		},
 		{
-			pattern:      "aja",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(aja|i[512])",
+			pattern: "aja",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(aja|i[512])",
 		},
 		{
-			pattern:      "aya",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(aja|i[512])",
+			pattern: "aya",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(aja|i[512])",
 		},
 		{
-			pattern:      "lowa",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lova|lof[128]|l[128]|el[128])",
+			pattern: "lowa",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lova|lof[128]|l[128]|el[128])",
 		},
 		{
-			pattern:      "kowa",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(kova|kof[128]|k[128]|ek[128])",
+			pattern: "kowa",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(kova|kof[128]|k[128]|ek[128])",
 		},
 		{
-			pattern:      "owa",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ova|of[128]|)",
+			pattern: "owa",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ova|of[128]|)",
 		},
 		{
-			pattern:      "lowna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lovna|levna|l[128]|el[128])",
+			pattern: "lowna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lovna|levna|l[128]|el[128])",
 		},
 		{
-			pattern:      "kowna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(kovna|k[128]|ek[128])",
+			pattern: "kowna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(kovna|k[128]|ek[128])",
 		},
 		{
-			pattern:      "owna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ovna|[128])",
+			pattern: "owna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ovna|[128])",
 		},
 		{
-			pattern:      "lówna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(l|el[128])",
+			pattern: "lówna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(l|el[128])",
 		},
 		{
-			pattern:      "kówna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(k|ek[128])",
+			pattern: "kówna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(k|ek[128])",
 		},
 		{
-			pattern:      "ówna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "",
+			pattern: "ówna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:      "a",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(a|i[128])",
+			pattern: "a",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(a|i[128])",
 		},
 		{
-			pattern:     "rh",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "r",
+			pattern: "rh",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "r",
 		},
 		{
 			pattern:  "ssch",
@@ -174,9 +274,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "tS",
 		},
 		{
-			pattern:      "sch",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "(sk[256]|S|StS[512])",
+			pattern: "sch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "(sk[256]|S|StS[512])",
 		},
 		{
 			pattern:  "sch",
@@ -187,14 +292,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "S",
 		},
 		{
-			pattern:      "sh",
-			rightContext: regexp.MustCompile("^[äöü]"),
-			phonetic:     "sh",
+			pattern: "sh",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[äöü]"),
+			},
+			phonetic: "sh",
 		},
 		{
-			pattern:      "sh",
-			rightContext: regexp.MustCompile("^[aeiou]"),
-			phonetic:     "(S[516]|sh)",
+			pattern: "sh",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeiou]"),
+			},
+			phonetic: "(S[516]|sh)",
 		},
 		{
 			pattern:  "sh",
@@ -209,9 +324,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(ks[16]|xs|tSs[516])",
 		},
 		{
-			pattern:      "ch",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "(x|k[256]|tS[516])",
+			pattern: "ch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "(x|k[256]|tS[516])",
 		},
 		{
 			pattern:  "ch",
@@ -226,9 +346,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "tSi",
 		},
 		{
-			pattern:      "cze",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tSe|tSF)",
+			pattern: "cze",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tSe|tSF)",
 		},
 		{
 			pattern:  "ciewicz",
@@ -275,36 +400,56 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "tS",
 		},
 		{
-			pattern:      "cia",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tSB[128]|tsB)",
+			pattern: "cia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tSB[128]|tsB)",
 		},
 		{
 			pattern:  "cia",
 			phonetic: "(tSa[128]|tsa)",
 		},
 		{
-			pattern:      "cią",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(tSom[128]|tsom)",
+			pattern: "cią",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(tSom[128]|tsom)",
 		},
 		{
 			pattern:  "cią",
 			phonetic: "(tSon[128]|tson)",
 		},
 		{
-			pattern:      "cię",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(tSem[128]|tsem)",
+			pattern: "cię",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(tSem[128]|tsem)",
 		},
 		{
 			pattern:  "cię",
 			phonetic: "(tSen[128]|tsen)",
 		},
 		{
-			pattern:      "cie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tSF[128]|tsF)",
+			pattern: "cie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tSF[128]|tsF)",
 		},
 		{
 			pattern:  "cie",
@@ -319,18 +464,28 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(tSu[128]|tsu)",
 		},
 		{
-			pattern:      "ci",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(tsi[128]|tSi[384]|tS[256]|si)",
+			pattern: "ci",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(tsi[128]|tSi[384]|tS[256]|si)",
 		},
 		{
 			pattern:  "ci",
 			phonetic: "(tsi[128]|tSi[384]|si)",
 		},
 		{
-			pattern:      "ce",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tsF[128]|tSe[384]|se)",
+			pattern: "ce",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tsF[128]|tSe[384]|se)",
 		},
 		{
 			pattern:  "ce",
@@ -369,36 +524,56 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "s",
 		},
 		{
-			pattern:      "sia",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(SB[128]|sB[128]|sja)",
+			pattern: "sia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(SB[128]|sB[128]|sja)",
 		},
 		{
 			pattern:  "sia",
 			phonetic: "(Sa[128]|sja)",
 		},
 		{
-			pattern:      "sią",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Som[128]|som)",
+			pattern: "sią",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Som[128]|som)",
 		},
 		{
 			pattern:  "sią",
 			phonetic: "(Son[128]|son)",
 		},
 		{
-			pattern:      "się",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Sem[128]|sem)",
+			pattern: "się",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Sem[128]|sem)",
 		},
 		{
 			pattern:  "się",
 			phonetic: "(Sen[128]|sen)",
 		},
 		{
-			pattern:      "sie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(SF[128]|sF|zi[16])",
+			pattern: "sie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(SF[128]|sF|zi[16])",
 		},
 		{
 			pattern:  "sie",
@@ -417,9 +592,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(Si[128]|si|zi[16])",
 		},
 		{
-			pattern:      "s",
-			rightContext: regexp.MustCompile("^[aeiouäöë]"),
-			phonetic:     "(s|z[16])",
+			pattern: "s",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeiouäöë]"),
+			},
+			phonetic: "(s|z[16])",
 		},
 		{
 			pattern:  "gue",
@@ -434,132 +614,252 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "gi",
 		},
 		{
-			pattern:      "gh",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "(g[256]|gh)",
+			pattern: "gh",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "(g[256]|gh)",
 		},
 		{
-			pattern:      "gauz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "haus",
+			pattern: "gauz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "haus",
 		},
 		{
-			pattern:      "gaus",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "haus",
+			pattern: "gaus",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "haus",
 		},
 		{
-			pattern:      "gol'ts",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "gol'ts",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "golts",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "golts",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "gol'tz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "gol'tz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
 			pattern:  "goltz",
 			phonetic: "holts",
 		},
 		{
-			pattern:     "gol'ts",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "holts",
+			pattern: "gol'ts",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:     "golts",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "holts",
+			pattern: "golts",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:     "gol'tz",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "holts",
+			pattern: "gol'tz",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:     "goltz",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "holts",
+			pattern: "goltz",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "gendler",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hendler",
+			pattern: "gendler",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hendler",
 		},
 		{
-			pattern:      "gejmer",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "gejmer",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "gejm",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "gejm",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "geymer",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "geymer",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "geym",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "geym",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "geimer",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "geimer",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "geim",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "geim",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "gof",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hof",
+			pattern: "gof",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hof",
 		},
 		{
-			pattern:      "ger",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ger",
+			pattern: "ger",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ger",
 		},
 		{
-			pattern:      "gen",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "gen",
+			pattern: "gen",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "gen",
 		},
 		{
-			pattern:      "gin",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "gin",
+			pattern: "gin",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "gin",
 		},
 		{
-			pattern:      "gie",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ge|gi[16]|ji[8])",
+			pattern: "gie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ge|gi[16]|ji[8])",
 		},
 		{
 			pattern:  "gie",
 			phonetic: "ge",
 		},
 		{
-			pattern:     "ge",
-			leftContext: regexp.MustCompile("[yaeiou]$"),
-			phonetic:    "(gE|xe[1024]|dZe[260])",
+			pattern: "ge",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[yaeiou]$"),
+			},
+			phonetic: "(gE|xe[1024]|dZe[260])",
 		},
 		{
-			pattern:     "gi",
-			leftContext: regexp.MustCompile("[yaeiou]$"),
-			phonetic:    "(gI|xi[1024]|dZi[260])",
+			pattern: "gi",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[yaeiou]$"),
+			},
+			phonetic: "(gI|xi[1024]|dZi[260])",
 		},
 		{
 			pattern:  "ge",
@@ -570,24 +870,44 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(gI|dZi[260]|hI[512]|xi[1024])",
 		},
 		{
-			pattern:      "gy",
-			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
-			phonetic:     "(gi|dj[64])",
+			pattern: "gy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeouáéóúüöőű]"),
+			},
+			phonetic: "(gi|dj[64])",
 		},
 		{
 			pattern:  "gy",
 			phonetic: "(gi|d[64])",
 		},
 		{
-			pattern:      "g",
-			leftContext:  regexp.MustCompile("[jyaeiou]$"),
-			rightContext: regexp.MustCompile("^[aouyei]"),
-			phonetic:     "g",
+			pattern: "g",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[jyaeiou]$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aouyei]"),
+			},
+			phonetic: "g",
 		},
 		{
-			pattern:      "g",
-			rightContext: regexp.MustCompile("^[aouei]"),
-			phonetic:     "(g|h[512])",
+			pattern: "g",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aouei]"),
+			},
+			phonetic: "(g|h[512])",
 		},
 		{
 			pattern:  "ej",
@@ -598,19 +918,34 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "aj",
 		},
 		{
-			pattern:      "ly",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "(l|lj)",
+			pattern: "ly",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "(l|lj)",
 		},
 		{
-			pattern:      "li",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "(l|lj)",
+			pattern: "li",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "(l|lj)",
 		},
 		{
-			pattern:      "lj",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "(l|lj)",
+			pattern: "lj",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "(l|lj)",
 		},
 		{
 			pattern:  "lio",
@@ -625,9 +960,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(l|J[1024])",
 		},
 		{
-			pattern:      "j",
-			rightContext: regexp.MustCompile("^[aoeiuy]"),
-			phonetic:     "(j|dZ[4]|x[1024]|Z[264])",
+			pattern: "j",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aoeiuy]"),
+			},
+			phonetic: "(j|dZ[4]|x[1024]|Z[264])",
 		},
 		{
 			pattern:  "j",
@@ -646,41 +986,63 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(kv[16]|k)",
 		},
 		{
-			pattern:     "rze",
-			leftContext: regexp.MustCompile("t$"),
-			phonetic:    "(Se[128]|re)",
+			pattern: "rze",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "t",
+			},
+			phonetic: "(Se[128]|re)",
 		},
 		{
 			pattern:  "rze",
 			phonetic: "(rze|rtsE[16]|Ze[128]|re[128]|rZe[128])",
 		},
 		{
-			pattern:     "rzy",
-			leftContext: regexp.MustCompile("t$"),
-			phonetic:    "(Si[128]|ri)",
+			pattern: "rzy",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "t",
+			},
+			phonetic: "(Si[128]|ri)",
 		},
 		{
 			pattern:  "rzy",
 			phonetic: "(Zi[128]|ri[128]|rZi)",
 		},
 		{
-			pattern:     "rz",
-			leftContext: regexp.MustCompile("t$"),
-			phonetic:    "(S[128]|r)",
+			pattern: "rz",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "t",
+			},
+			phonetic: "(S[128]|r)",
 		},
 		{
 			pattern:  "rz",
 			phonetic: "(rz|rts[16]|Z[128]|r[128]|rZ[128])",
 		},
 		{
-			pattern:      "tz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ts|tS[20])",
+			pattern: "tz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ts|tS[20])",
 		},
 		{
-			pattern:     "tz",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(ts|tS[20])",
+			pattern: "tz",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ts|tS[20])",
 		},
 		{
 			pattern:  "tz",
@@ -691,36 +1053,56 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(Z|zh[128]|tsh[16])",
 		},
 		{
-			pattern:      "zia",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(ZB[128]|zB[128]|zja)",
+			pattern: "zia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(ZB[128]|zB[128]|zja)",
 		},
 		{
 			pattern:  "zia",
 			phonetic: "(Za[128]|zja)",
 		},
 		{
-			pattern:      "zią",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Zom[128]|zom)",
+			pattern: "zią",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Zom[128]|zom)",
 		},
 		{
 			pattern:  "zią",
 			phonetic: "(Zon[128]|zon)",
 		},
 		{
-			pattern:      "zię",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Zem[128]|zem)",
+			pattern: "zię",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Zem[128]|zem)",
 		},
 		{
 			pattern:  "zię",
 			phonetic: "(Zen[128]|zen)",
 		},
 		{
-			pattern:      "zie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(ZF[128]|zF[128]|ze|tsi[16])",
+			pattern: "zie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(ZF[128]|zF[128]|ze|tsi[16])",
 		},
 		{
 			pattern:  "zie",
@@ -739,19 +1121,34 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(Zi[128]|zi|tsi[16])",
 		},
 		{
-			pattern:      "thal",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "tal",
+			pattern: "thal",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "tal",
 		},
 		{
-			pattern:     "th",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "t",
+			pattern: "th",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "t",
 		},
 		{
-			pattern:      "th",
-			rightContext: regexp.MustCompile("^[aeiou]"),
-			phonetic:     "(t[16]|th)",
+			pattern: "th",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeiou]"),
+			},
+			phonetic: "(t[16]|th)",
 		},
 		{
 			pattern:  "th",
@@ -762,59 +1159,113 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(vogel|fogel[16])",
 		},
 		{
-			pattern:     "v",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(v|f[16])",
+			pattern: "v",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(v|f[16])",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("[aeiouyäöü]$"),
-			phonetic:    "",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aeiouyäöü]$"),
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "h",
 			phonetic: "(h|x[384])",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(h|H[20])",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(h|H[20])",
 		},
 		{
-			pattern:     "yi",
-			leftContext: regexp.MustCompile(" $"),
-			phonetic:    "i",
+			pattern: "yi",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile(" $"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "ii",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "ii",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "iy",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "iy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "yy",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "yy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "e",
-			leftContext:  regexp.MustCompile("in$"),
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(e|[8])",
+			pattern: "e",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "in",
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(e|[8])",
 		},
 		{
-			pattern:      "yj",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "yj",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "ij",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "ij",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
 			pattern:  "aue",
@@ -861,19 +1312,34 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(aj[16]|oj[16]|eu)",
 		},
 		{
-			pattern:     "i",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "j",
+			pattern: "i",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:     "y",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "ie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(i[16]|e[128]|ije[512]|je)",
+			pattern: "ie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(i[16]|e[128]|ije[512]|je)",
 		},
 		{
 			pattern:  "ie",
@@ -884,14 +1350,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(je|ije[512])",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "j",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "y",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "j",
+			pattern: "y",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "io",
@@ -906,9 +1382,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(ea|ja[256])",
 		},
 		{
-			pattern:     "e",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(e|je[512])",
+			pattern: "e",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(e|je[512])",
 		},
 		{
 			pattern:  "oo",
@@ -959,9 +1440,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "u",
 		},
 		{
-			pattern:      "ą",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "om",
+			pattern: "ą",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "om",
 		},
 		{
 			pattern:  "ą",
@@ -1000,9 +1486,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "e",
 		},
 		{
-			pattern:      "ę",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "em",
+			pattern: "ę",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "em",
 		},
 		{
 			pattern:  "ę",
@@ -1057,19 +1548,34 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "",
 		},
 		{
-			pattern:      "a",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(A|B[128])",
+			pattern: "a",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(A|B[128])",
 		},
 		{
-			pattern:      "e",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(E|F[128])",
+			pattern: "e",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(E|F[128])",
 		},
 		{
-			pattern:      "o",
-			rightContext: regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
-			phonetic:     "(O|P[128])",
+			pattern: "o",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
+			},
+			phonetic: "(O|P[128])",
 		},
 		{
 			pattern:  "a",
@@ -1218,60 +1724,120 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "zo",
 		},
 		{
-			pattern:      "гауз",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "haus",
+			pattern: "гауз",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "haus",
 		},
 		{
-			pattern:      "гаус",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "haus",
+			pattern: "гаус",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "haus",
 		},
 		{
-			pattern:      "гольц",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "гольц",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "геймер",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "геймер",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "гейм",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "гейм",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "гоф",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hof",
+			pattern: "гоф",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hof",
 		},
 		{
-			pattern:      "гер",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ger",
+			pattern: "гер",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ger",
 		},
 		{
-			pattern:      "ген",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "gen",
+			pattern: "ген",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "gen",
 		},
 		{
-			pattern:      "гин",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "gin",
+			pattern: "гин",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "gin",
 		},
 		{
-			pattern:      "г",
-			leftContext:  regexp.MustCompile("(й|ё|я|ю|ы|а|е|о|и|у)$"),
-			rightContext: regexp.MustCompile("^(а|е|о|и|у)"),
-			phonetic:     "g",
+			pattern: "г",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("(й|ё|я|ю|ы|а|е|о|и|у)$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^(а|е|о|и|у)"),
+			},
+			phonetic: "g",
 		},
 		{
-			pattern:      "г",
-			rightContext: regexp.MustCompile("^(а|е|о|и|у)"),
-			phonetic:     "(g|h)",
+			pattern: "г",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^(а|е|о|и|у)"),
+			},
+			phonetic: "(g|h)",
 		},
 		{
 			pattern:  "ля",
@@ -1310,43 +1876,78 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "je",
 		},
 		{
-			pattern:      "ий",
-			rightContext: regexp.MustCompile("^(а|о|у)"),
-			phonetic:     "j",
+			pattern: "ий",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^(а|о|у)"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "ый",
-			rightContext: regexp.MustCompile("^(а|о|у)"),
-			phonetic:     "j",
+			pattern: "ый",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^(а|о|у)"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "ий",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "ий",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "ый",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "ый",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
 			pattern:  "ё",
 			phonetic: "(e|jo)",
 		},
 		{
-			pattern:     "ей",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(jaj|aj)",
+			pattern: "ей",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(jaj|aj)",
 		},
 		{
-			pattern:     "е",
-			leftContext: regexp.MustCompile("(а|е|о|у)$"),
-			phonetic:    "je",
+			pattern: "е",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("(а|е|о|у)$"),
+			},
+			phonetic: "je",
 		},
 		{
-			pattern:     "е",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "je",
+			pattern: "е",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "je",
 		},
 		{
 			pattern:  "эй",
@@ -1433,9 +2034,13 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "r",
 		},
 		{
-			pattern:      "с",
-			rightContext: regexp.MustCompile("^с"),
-			phonetic:     "",
+			pattern: "с",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "с",
+				suffix:   "",
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "с",
@@ -1512,28 +2117,47 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "k",
 		},
 		{
-			pattern:      "cc",
-			rightContext: regexp.MustCompile("^[iey]"),
-			phonetic:     "ks",
+			pattern: "cc",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[iey]"),
+			},
+			phonetic: "ks",
 		},
 		{
-			pattern:      "c",
-			rightContext: regexp.MustCompile("^c"),
-			phonetic:     "",
+			pattern: "c",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "c",
+				suffix:   "",
+			},
+			phonetic: "",
 		},
 		{
-			pattern:      "c",
-			rightContext: regexp.MustCompile("^[iey]"),
-			phonetic:     "s",
+			pattern: "c",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[iey]"),
+			},
+			phonetic: "s",
 		},
 		{
 			pattern:  "c",
 			phonetic: "k",
 		},
 		{
-			pattern:     "gh",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "g",
+			pattern: "gh",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "g",
 		},
 		{
 			pattern:  "gh",
@@ -1544,9 +2168,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(gn|n)",
 		},
 		{
-			pattern:      "g",
-			rightContext: regexp.MustCompile("^[iey]"),
-			phonetic:     "(g|dZ)",
+			pattern: "g",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[iey]"),
+			},
+			phonetic: "(g|dZ)",
 		},
 		{
 			pattern:  "th",
@@ -1569,29 +2198,54 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "S",
 		},
 		{
-			pattern:     "who",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "hu",
+			pattern: "who",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hu",
 		},
 		{
-			pattern:     "wh",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "w",
+			pattern: "wh",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "w",
 		},
 		{
-			pattern:      "h",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "",
+			pattern: "h",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:      "h",
-			rightContext: regexp.MustCompile("^[^aeiou]"),
-			phonetic:     "",
+			pattern: "h",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[^aeiou]"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "H",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "H",
 		},
 		{
 			pattern:  "h",
@@ -1602,29 +2256,54 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "dZ",
 		},
 		{
-			pattern:     "kn",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "n",
+			pattern: "kn",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "n",
 		},
 		{
-			pattern:      "mb",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "m",
+			pattern: "mb",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "m",
 		},
 		{
-			pattern:      "ng",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(N|ng)",
+			pattern: "ng",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(N|ng)",
 		},
 		{
-			pattern:     "pn",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(pn|n)",
+			pattern: "pn",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(pn|n)",
 		},
 		{
-			pattern:     "ps",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(ps|s)",
+			pattern: "ps",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ps|s)",
 		},
 		{
 			pattern:  "qu",
@@ -1643,33 +2322,58 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "So",
 		},
 		{
-			pattern:     "wr",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "r",
+			pattern: "wr",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "r",
 		},
 		{
 			pattern:  "w",
 			phonetic: "(w|v)",
 		},
 		{
-			pattern:     "x",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "z",
+			pattern: "x",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "z",
 		},
 		{
 			pattern:  "x",
 			phonetic: "ks",
 		},
 		{
-			pattern:     "yi",
-			leftContext: regexp.MustCompile(" $"),
-			phonetic:    "i",
+			pattern: "yi",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile(" $"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "y",
-			leftContext:  regexp.MustCompile("^$"),
-			rightContext: regexp.MustCompile("^[aeiouy]"),
-			phonetic:     "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeiouy]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "aue",
@@ -1688,9 +2392,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "aj",
 		},
 		{
-			pattern:      "a",
-			rightContext: regexp.MustCompile("^[^aeiou]e"),
-			phonetic:     "aj",
+			pattern: "a",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[^aeiou]e"),
+			},
+			phonetic: "aj",
 		},
 		{
 			pattern:  "a",
@@ -1717,14 +2426,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "i",
 		},
 		{
-			pattern:      "e",
-			rightContext: regexp.MustCompile("^[^aeiou]e"),
-			phonetic:     "i",
+			pattern: "e",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[^aeiou]e"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "e",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(|E)",
+			pattern: "e",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(|E)",
 		},
 		{
 			pattern:  "e",
@@ -1735,9 +2454,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "i",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[^aeiou]e"),
-			phonetic:     "aj",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[^aeiou]e"),
+			},
+			phonetic: "aj",
 		},
 		{
 			pattern:  "i",
@@ -1764,23 +2488,37 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "oj",
 		},
 		{
-			pattern:      "o",
-			rightContext: regexp.MustCompile("^[^aeiou]e"),
-			phonetic:     "ou",
+			pattern: "o",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[^aeiou]e"),
+			},
+			phonetic: "ou",
 		},
 		{
 			pattern:  "o",
 			phonetic: "(o|a)",
 		},
 		{
-			pattern:      "u",
-			rightContext: regexp.MustCompile("^[^aeiou]e"),
-			phonetic:     "(ju|u)",
+			pattern: "u",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[^aeiou]e"),
+			},
+			phonetic: "(ju|u)",
 		},
 		{
-			pattern:      "u",
-			rightContext: regexp.MustCompile("^r"),
-			phonetic:     "(e|u)",
+			pattern: "u",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "r",
+				suffix:   "",
+			},
+			phonetic: "(e|u)",
 		},
 		{
 			pattern:  "u",
@@ -1869,9 +2607,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "S",
 		},
 		{
-			pattern:      "c",
-			rightContext: regexp.MustCompile("^[eiyéèê]"),
-			phonetic:     "s",
+			pattern: "c",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[eiyéèê]"),
+			},
+			phonetic: "s",
 		},
 		{
 			pattern:  "c",
@@ -1882,24 +2625,44 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(n|gn)",
 		},
 		{
-			pattern:      "g",
-			rightContext: regexp.MustCompile("^[eiy]"),
-			phonetic:     "Z",
+			pattern: "g",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[eiy]"),
+			},
+			phonetic: "Z",
 		},
 		{
-			pattern:      "gue",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "k",
+			pattern: "gue",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "k",
 		},
 		{
-			pattern:      "gu",
-			rightContext: regexp.MustCompile("^[eiy]"),
-			phonetic:     "g",
+			pattern: "gu",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[eiy]"),
+			},
+			phonetic: "g",
 		},
 		{
-			pattern:      "que",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "k",
+			pattern: "que",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "k",
 		},
 		{
 			pattern:  "qu",
@@ -1910,20 +2673,40 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "k",
 		},
 		{
-			pattern:      "s",
-			leftContext:  regexp.MustCompile("[aeiouyéèê]$"),
-			rightContext: regexp.MustCompile("^[aeiouyéèê]"),
-			phonetic:     "z",
+			pattern: "s",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aeiouyéèê]$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeiouyéèê]"),
+			},
+			phonetic: "z",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("[bdgt]$"),
-			phonetic:    "",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[bdgt]$"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:      "h",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "",
+			pattern: "h",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "j",
@@ -1934,23 +2717,38 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "v",
 		},
 		{
-			pattern:      "ouh",
-			rightContext: regexp.MustCompile("^[aioe]"),
-			phonetic:     "(v|uh)",
+			pattern: "ouh",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aioe]"),
+			},
+			phonetic: "(v|uh)",
 		},
 		{
-			pattern:      "ou",
-			rightContext: regexp.MustCompile("^[aeio]"),
-			phonetic:     "v",
+			pattern: "ou",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeio]"),
+			},
+			phonetic: "v",
 		},
 		{
 			pattern:  "uo",
 			phonetic: "(vo|o)",
 		},
 		{
-			pattern:      "u",
-			rightContext: regexp.MustCompile("^[aeio]"),
-			phonetic:     "v",
+			pattern: "u",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeio]"),
+			},
+			phonetic: "v",
 		},
 		{
 			pattern:  "aue",
@@ -2009,24 +2807,44 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "aj",
 		},
 		{
-			pattern:     "y",
-			leftContext: regexp.MustCompile("[ou]$"),
-			phonetic:    "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[ou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "e",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(e|)",
+			pattern: "e",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(e|)",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "y",
-			rightContext: regexp.MustCompile("^[aoeu]"),
-			phonetic:     "j",
+			pattern: "y",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aoeu]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "yi",
@@ -2147,34 +2965,64 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "xS",
 		},
 		{
-			pattern:      "ewitsch",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "evitS",
+			pattern: "ewitsch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "evitS",
 		},
 		{
-			pattern:      "owitsch",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ovitS",
+			pattern: "owitsch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ovitS",
 		},
 		{
-			pattern:      "evitsch",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "evitS",
+			pattern: "evitsch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "evitS",
 		},
 		{
-			pattern:      "ovitsch",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ovitS",
+			pattern: "ovitsch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ovitS",
 		},
 		{
-			pattern:      "witsch",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "vitS",
+			pattern: "witsch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "vitS",
 		},
 		{
-			pattern:      "vitsch",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "vitS",
+			pattern: "vitsch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "vitS",
 		},
 		{
 			pattern:  "sch",
@@ -2193,19 +3041,34 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "k",
 		},
 		{
-			pattern:      "c",
-			rightContext: regexp.MustCompile("^[eiy]"),
-			phonetic:     "ts",
+			pattern: "c",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[eiy]"),
+			},
+			phonetic: "ts",
 		},
 		{
-			pattern:     "sp",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "Sp",
+			pattern: "sp",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "Sp",
 		},
 		{
-			pattern:     "st",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "St",
+			pattern: "st",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "St",
 		},
 		{
 			pattern:  "ssp",
@@ -2236,126 +3099,236 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "kv",
 		},
 		{
-			pattern:      "ewitz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(evits|evitS)",
+			pattern: "ewitz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(evits|evitS)",
 		},
 		{
-			pattern:      "ewiz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(evits|evitS)",
+			pattern: "ewiz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(evits|evitS)",
 		},
 		{
-			pattern:      "evitz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(evits|evitS)",
+			pattern: "evitz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(evits|evitS)",
 		},
 		{
-			pattern:      "eviz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(evits|evitS)",
+			pattern: "eviz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(evits|evitS)",
 		},
 		{
-			pattern:      "owitz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ovits|ovitS)",
+			pattern: "owitz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ovits|ovitS)",
 		},
 		{
-			pattern:      "owiz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ovits|ovitS)",
+			pattern: "owiz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ovits|ovitS)",
 		},
 		{
-			pattern:      "ovitz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ovits|ovitS)",
+			pattern: "ovitz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ovits|ovitS)",
 		},
 		{
-			pattern:      "oviz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ovits|ovitS)",
+			pattern: "oviz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ovits|ovitS)",
 		},
 		{
-			pattern:      "witz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(vits|vitS)",
+			pattern: "witz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(vits|vitS)",
 		},
 		{
-			pattern:      "wiz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(vits|vitS)",
+			pattern: "wiz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(vits|vitS)",
 		},
 		{
-			pattern:      "vitz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(vits|vitS)",
+			pattern: "vitz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(vits|vitS)",
 		},
 		{
-			pattern:      "viz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(vits|vitS)",
+			pattern: "viz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(vits|vitS)",
 		},
 		{
 			pattern:  "tz",
 			phonetic: "ts",
 		},
 		{
-			pattern:      "thal",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "tal",
+			pattern: "thal",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "tal",
 		},
 		{
-			pattern:     "th",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "t",
+			pattern: "th",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "t",
 		},
 		{
-			pattern:      "th",
-			rightContext: regexp.MustCompile("^[äöüaeiou]"),
-			phonetic:     "(t|th)",
+			pattern: "th",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[äöüaeiou]"),
+			},
+			phonetic: "(t|th)",
 		},
 		{
 			pattern:  "th",
 			phonetic: "t",
 		},
 		{
-			pattern:     "rh",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "r",
+			pattern: "rh",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "r",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("[aeiouyäöü]$"),
-			phonetic:    "",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aeiouyäöü]$"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "H",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "H",
 		},
 		{
 			pattern:  "ss",
 			phonetic: "s",
 		},
 		{
-			pattern:      "s",
-			rightContext: regexp.MustCompile("^[äöüaeiouy]"),
-			phonetic:     "(z|s)",
+			pattern: "s",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[äöüaeiouy]"),
+			},
+			phonetic: "(z|s)",
 		},
 		{
-			pattern:      "s",
-			leftContext:  regexp.MustCompile("[aeiouyäöüj]$"),
-			rightContext: regexp.MustCompile("^[aeiouyäöü]"),
-			phonetic:     "z",
+			pattern: "s",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aeiouyäöüj]$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeiouyäöü]"),
+			},
+			phonetic: "z",
 		},
 		{
 			pattern:  "ß",
 			phonetic: "s",
 		},
 		{
-			pattern:      "ij",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "ij",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
 			pattern:  "aue",
@@ -2398,28 +3371,48 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(aj|oj)",
 		},
 		{
-			pattern:     "i",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "j",
+			pattern: "i",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:     "y",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "ie",
 			phonetic: "I",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "y",
-			rightContext: regexp.MustCompile("^[aoeu]"),
-			phonetic:     "j",
+			pattern: "y",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aoeu]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "ñ",
@@ -2588,14 +3581,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "d",
 		},
 		{
-			pattern:     "ה",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "1",
+			pattern: "ה",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "1",
 		},
 		{
-			pattern:      "ה",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "1",
+			pattern: "ה",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "1",
 		},
 		{
 			pattern:  "ה",
@@ -2638,9 +3641,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "X",
 		},
 		{
-			pattern:     "כ",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "K",
+			pattern: "כ",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "K",
 		},
 		{
 			pattern:  "כ",
@@ -2741,14 +3749,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "aj",
 		},
 		{
-			pattern:     "y",
-			leftContext: regexp.MustCompile("[áo]$"),
-			phonetic:    "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[áo]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:     "i",
-			leftContext: regexp.MustCompile("[áo]$"),
-			phonetic:    "j",
+			pattern: "i",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[áo]$"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "ee",
@@ -2763,27 +3781,42 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(j|li)",
 		},
 		{
-			pattern:      "gy",
-			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
-			phonetic:     "dj",
+			pattern: "gy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeouáéóúüöőű]"),
+			},
+			phonetic: "dj",
 		},
 		{
 			pattern:  "gy",
 			phonetic: "(d|gi)",
 		},
 		{
-			pattern:      "ny",
-			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
-			phonetic:     "nj",
+			pattern: "ny",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeouáéóúüöőű]"),
+			},
+			phonetic: "nj",
 		},
 		{
 			pattern:  "ny",
 			phonetic: "(n|ni)",
 		},
 		{
-			pattern:      "ty",
-			rightContext: regexp.MustCompile("^[aeouáéóúüöőű]"),
-			phonetic:     "tj",
+			pattern: "ty",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeouáéóúüöőű]"),
+			},
+			phonetic: "tj",
 		},
 		{
 			pattern:  "ty",
@@ -2794,9 +3827,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(ku|kv)",
 		},
 		{
-			pattern:      "h",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "",
+			pattern: "h",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "á",
@@ -2941,73 +3979,138 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashpolish: []rule{
 		{
-			pattern:      "ska",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ski",
+			pattern: "ska",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ski",
 		},
 		{
-			pattern:      "cka",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "tski",
+			pattern: "cka",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "tski",
 		},
 		{
-			pattern:      "lowa",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lova|lof|l|el)",
+			pattern: "lowa",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lova|lof|l|el)",
 		},
 		{
-			pattern:      "kowa",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(kova|kof|k|ek)",
+			pattern: "kowa",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(kova|kof|k|ek)",
 		},
 		{
-			pattern:      "owa",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ova|of|)",
+			pattern: "owa",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ova|of|)",
 		},
 		{
-			pattern:      "lowna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lovna|levna|l|el)",
+			pattern: "lowna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lovna|levna|l|el)",
 		},
 		{
-			pattern:      "kowna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(kovna|k|ek)",
+			pattern: "kowna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(kovna|k|ek)",
 		},
 		{
-			pattern:      "owna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ovna|)",
+			pattern: "owna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ovna|)",
 		},
 		{
-			pattern:      "lówna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(l|el)",
+			pattern: "lówna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(l|el)",
 		},
 		{
-			pattern:      "kówna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(k|ek)",
+			pattern: "kówna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(k|ek)",
 		},
 		{
-			pattern:      "ówna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "",
+			pattern: "ówna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:      "a",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(a|i)",
+			pattern: "a",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(a|i)",
 		},
 		{
 			pattern:  "czy",
 			phonetic: "tSi",
 		},
 		{
-			pattern:      "cze",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tSe|tSF)",
+			pattern: "cze",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tSe|tSF)",
 		},
 		{
 			pattern:  "ciewicz",
@@ -3058,36 +4161,56 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "x",
 		},
 		{
-			pattern:      "cia",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tSB|tsB)",
+			pattern: "cia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tSB|tsB)",
 		},
 		{
 			pattern:  "cia",
 			phonetic: "(tSa|tsa)",
 		},
 		{
-			pattern:      "cią",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(tSom|tsom)",
+			pattern: "cią",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(tSom|tsom)",
 		},
 		{
 			pattern:  "cią",
 			phonetic: "(tSon|tson)",
 		},
 		{
-			pattern:      "cię",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(tSem|tsem)",
+			pattern: "cię",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(tSem|tsem)",
 		},
 		{
 			pattern:  "cię",
 			phonetic: "(tSen|tsen)",
 		},
 		{
-			pattern:      "cie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(tSF|tsF)",
+			pattern: "cie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(tSF|tsF)",
 		},
 		{
 			pattern:  "cie",
@@ -3118,36 +4241,56 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "S",
 		},
 		{
-			pattern:      "sia",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(SB|sB|sja)",
+			pattern: "sia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(SB|sB|sja)",
 		},
 		{
 			pattern:  "sia",
 			phonetic: "(Sa|sja)",
 		},
 		{
-			pattern:      "sią",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Som|som)",
+			pattern: "sią",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Som|som)",
 		},
 		{
 			pattern:  "sią",
 			phonetic: "(Son|son)",
 		},
 		{
-			pattern:      "się",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Sem|sem)",
+			pattern: "się",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Sem|sem)",
 		},
 		{
 			pattern:  "się",
 			phonetic: "(Sen|sen)",
 		},
 		{
-			pattern:      "sie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(SF|sF|se)",
+			pattern: "sie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(SF|sF|se)",
 		},
 		{
 			pattern:  "sie",
@@ -3170,36 +4313,56 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(S|s)",
 		},
 		{
-			pattern:      "zia",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(ZB|zB|zja)",
+			pattern: "zia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(ZB|zB|zja)",
 		},
 		{
 			pattern:  "zia",
 			phonetic: "(Za|zja)",
 		},
 		{
-			pattern:      "zią",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Zom|zom)",
+			pattern: "zią",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Zom|zom)",
 		},
 		{
 			pattern:  "zią",
 			phonetic: "(Zon|zon)",
 		},
 		{
-			pattern:      "zię",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "(Zem|zem)",
+			pattern: "zię",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "(Zem|zem)",
 		},
 		{
 			pattern:  "zię",
 			phonetic: "(Zen|zen)",
 		},
 		{
-			pattern:      "zie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(ZF|zF)",
+			pattern: "zie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(ZF|zF)",
 		},
 		{
 			pattern:  "zie",
@@ -3218,14 +4381,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(Zi|zI)",
 		},
 		{
-			pattern:      "że",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(Ze|ZF)",
+			pattern: "że",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(Ze|ZF)",
 		},
 		{
-			pattern:      "że",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(Ze|ZF|ze|zF)",
+			pattern: "że",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(Ze|ZF|ze|zF)",
 		},
 		{
 			pattern:  "że",
@@ -3252,27 +4425,39 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(Z|z)",
 		},
 		{
-			pattern:     "rze",
-			leftContext: regexp.MustCompile("t$"),
-			phonetic:    "(Se|re)",
+			pattern: "rze",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "t",
+			},
+			phonetic: "(Se|re)",
 		},
 		{
 			pattern:  "rze",
 			phonetic: "(Ze|re|rZe)",
 		},
 		{
-			pattern:     "rzy",
-			leftContext: regexp.MustCompile("t$"),
-			phonetic:    "(Si|ri)",
+			pattern: "rzy",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "t",
+			},
+			phonetic: "(Si|ri)",
 		},
 		{
 			pattern:  "rzy",
 			phonetic: "(Zi|ri|rZi)",
 		},
 		{
-			pattern:     "rz",
-			leftContext: regexp.MustCompile("t$"),
-			phonetic:    "(S|r)",
+			pattern: "rz",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "t",
+			},
+			phonetic: "(S|r)",
 		},
 		{
 			pattern:  "rz",
@@ -3295,23 +4480,37 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "k",
 		},
 		{
-			pattern:      "s",
-			rightContext: regexp.MustCompile("^s"),
-			phonetic:     "",
+			pattern: "s",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "s",
+				suffix:   "",
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "ó",
 			phonetic: "(u|o)",
 		},
 		{
-			pattern:      "ą",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "om",
+			pattern: "ą",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "om",
 		},
 		{
-			pattern:      "ę",
-			rightContext: regexp.MustCompile("^[bp]"),
-			phonetic:     "em",
+			pattern: "ę",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bp]"),
+			},
+			phonetic: "em",
 		},
 		{
 			pattern:  "ą",
@@ -3346,34 +4545,64 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "je",
 		},
 		{
-			pattern:      "ij",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "ij",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "yj",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "yj",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "ii",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "ii",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "yi",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "yi",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "iy",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "iy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "yy",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "yy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "rie",
@@ -3388,9 +4617,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "tje",
 		},
 		{
-			pattern:      "ie",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "F",
+			pattern: "ie",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "F",
 		},
 		{
 			pattern:  "ie",
@@ -3429,39 +4663,74 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "aj",
 		},
 		{
-			pattern:     "i",
-			leftContext: regexp.MustCompile("[ou]$"),
-			phonetic:    "j",
+			pattern: "i",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[ou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:     "y",
-			leftContext: regexp.MustCompile("[ou]$"),
-			phonetic:    "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[ou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "y",
-			rightContext: regexp.MustCompile("^[aeou]"),
-			phonetic:     "j",
+			pattern: "y",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "a",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "B",
+			pattern: "a",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "B",
 		},
 		{
-			pattern:      "e",
-			rightContext: regexp.MustCompile("^[bcdgkpstwzż]"),
-			phonetic:     "(E|F)",
+			pattern: "e",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcdgkpstwzż]"),
+			},
+			phonetic: "(E|F)",
 		},
 		{
-			pattern:      "o",
-			rightContext: regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
-			phonetic:     "P",
+			pattern: "o",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
+			},
+			phonetic: "P",
 		},
 		{
 			pattern:  "a",
@@ -3582,9 +4851,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(tSi|tS)",
 		},
 		{
-			pattern:      "ch",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "k",
+			pattern: "ch",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "k",
 		},
 		{
 			pattern:  "ch",
@@ -3599,9 +4873,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(dZi|dZ)",
 		},
 		{
-			pattern:      "g",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "dZ",
+			pattern: "g",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "dZ",
 		},
 		{
 			pattern:  "gh",
@@ -3612,14 +4891,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "aj",
 		},
 		{
-			pattern:     "i",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "j",
+			pattern: "i",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[aeou]"),
-			phonetic:     "j",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeou]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "ţ",
@@ -3748,49 +5037,94 @@ var ashRules = map[ashLang][]rule{
 	},
 	ashrussian: []rule{
 		{
-			pattern:      "yna",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(in|ina)",
+			pattern: "yna",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(in|ina)",
 		},
 		{
-			pattern:      "ina",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(in|ina)",
+			pattern: "ina",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(in|ina)",
 		},
 		{
-			pattern:      "liova",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lof|lef)",
+			pattern: "liova",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lof|lef)",
 		},
 		{
-			pattern:      "lova",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(lof|lef|lova)",
+			pattern: "lova",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(lof|lef|lova)",
 		},
 		{
-			pattern:      "ova",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(of|ova)",
+			pattern: "ova",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(of|ova)",
 		},
 		{
-			pattern:      "eva",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(ef|ova)",
+			pattern: "eva",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(ef|ova)",
 		},
 		{
-			pattern:      "aia",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(aja|i)",
+			pattern: "aia",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(aja|i)",
 		},
 		{
-			pattern:      "aja",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(aja|i)",
+			pattern: "aja",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(aja|i)",
 		},
 		{
-			pattern:      "aya",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "(aja|i)",
+			pattern: "aya",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(aja|i)",
 		},
 		{
 			pattern:  "tsya",
@@ -3857,131 +5191,266 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "zo",
 		},
 		{
-			pattern:      "gauz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "haus",
+			pattern: "gauz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "haus",
 		},
 		{
-			pattern:      "gaus",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "haus",
+			pattern: "gaus",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "haus",
 		},
 		{
-			pattern:      "gol'ts",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "gol'ts",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "golts",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "golts",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "gol'tz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "gol'tz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "goltz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "holts",
+			pattern: "goltz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "holts",
 		},
 		{
-			pattern:      "gejmer",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "gejmer",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "gejm",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "gejm",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "geimer",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "geimer",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "geim",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "geim",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "geymer",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajmer",
+			pattern: "geymer",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajmer",
 		},
 		{
-			pattern:      "geym",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hajm",
+			pattern: "geym",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hajm",
 		},
 		{
-			pattern:      "gendler",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hendler",
+			pattern: "gendler",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hendler",
 		},
 		{
-			pattern:      "gof",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hof",
+			pattern: "gof",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hof",
 		},
 		{
-			pattern:      "gojf",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hojf",
+			pattern: "gojf",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hojf",
 		},
 		{
-			pattern:      "goyf",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hojf",
+			pattern: "goyf",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hojf",
 		},
 		{
-			pattern:      "goif",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "hojf",
+			pattern: "goif",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "hojf",
 		},
 		{
-			pattern:      "ger",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ger",
+			pattern: "ger",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ger",
 		},
 		{
-			pattern:      "gen",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "gen",
+			pattern: "gen",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "gen",
 		},
 		{
-			pattern:      "gin",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "gin",
+			pattern: "gin",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "gin",
 		},
 		{
 			pattern:  "gg",
 			phonetic: "g",
 		},
 		{
-			pattern:      "kog",
-			leftContext:  regexp.MustCompile("^$"),
-			rightContext: regexp.MustCompile("^[aeoiu]"),
-			phonetic:     "(kog|koh)",
+			pattern: "kog",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeoiu]"),
+			},
+			phonetic: "(kog|koh)",
 		},
 		{
-			pattern:      "kag",
-			leftContext:  regexp.MustCompile("^$"),
-			rightContext: regexp.MustCompile("^[aeoiu]"),
-			phonetic:     "(kag|kah)",
+			pattern: "kag",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeoiu]"),
+			},
+			phonetic: "(kag|kah)",
 		},
 		{
-			pattern:      "g",
-			leftContext:  regexp.MustCompile("[jaeoiuy]$"),
-			rightContext: regexp.MustCompile("^[aeoiu]"),
-			phonetic:     "g",
+			pattern: "g",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[jaeoiuy]$"),
+			},
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeoiu]"),
+			},
+			phonetic: "g",
 		},
 		{
-			pattern:      "g",
-			rightContext: regexp.MustCompile("^[aeoiu]"),
-			phonetic:     "(g|h)",
+			pattern: "g",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aeoiu]"),
+			},
+			phonetic: "(g|h)",
 		},
 		{
 			pattern:  "kh",
@@ -4008,18 +5477,28 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "Z",
 		},
 		{
-			pattern:      "tz",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "ts",
+			pattern: "tz",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "ts",
 		},
 		{
 			pattern:  "tz",
 			phonetic: "(ts|tz)",
 		},
 		{
-			pattern:      "c",
-			rightContext: regexp.MustCompile("^[iey]"),
-			phonetic:     "s",
+			pattern: "c",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[iey]"),
+			},
+			phonetic: "s",
 		},
 		{
 			pattern:  "c",
@@ -4034,9 +5513,13 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "k",
 		},
 		{
-			pattern:      "s",
-			rightContext: regexp.MustCompile("^s"),
-			phonetic:     "",
+			pattern: "s",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "s",
+				suffix:   "",
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "w",
@@ -4115,48 +5598,88 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "je",
 		},
 		{
-			pattern:      "ij",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "ij",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "iy",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "iy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "ii",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "ii",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "yj",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "yj",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "yy",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "yy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "yi",
-			rightContext: regexp.MustCompile("^[aou]"),
-			phonetic:     "j",
+			pattern: "yi",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aou]"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "io",
 			phonetic: "(jo|e)",
 		},
 		{
-			pattern:      "i",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "j",
+			pattern: "i",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:     "i",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "j",
+			pattern: "i",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "j",
 		},
 		{
 			pattern:  "ei",
@@ -4175,58 +5698,108 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(jo|e)",
 		},
 		{
-			pattern:      "y",
-			rightContext: regexp.MustCompile("^[au]"),
-			phonetic:     "j",
+			pattern: "y",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[au]"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:     "y",
-			leftContext: regexp.MustCompile("[aiou]$"),
-			phonetic:    "j",
+			pattern: "y",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aiou]$"),
+			},
+			phonetic: "j",
 		},
 		{
-			pattern:      "ii",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "ii",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "iy",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "iy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "yy",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "yy",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "yi",
-			rightContext: regexp.MustCompile("^ "),
-			phonetic:     "i",
+			pattern: "yi",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^ "),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "yj",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "yj",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:      "ij",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "i",
+			pattern: "ij",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "i",
 		},
 		{
-			pattern:     "e",
-			leftContext: regexp.MustCompile("^$"),
-			phonetic:    "(je|E)",
+			pattern: "e",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "(je|E)",
 		},
 		{
 			pattern:  "ee",
 			phonetic: "(aje|i)",
 		},
 		{
-			pattern:     "e",
-			leftContext: regexp.MustCompile("[aou]$"),
-			phonetic:    "je",
+			pattern: "e",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[aou]$"),
+			},
+			phonetic: "je",
 		},
 		{
 			pattern:  "y",
@@ -4343,14 +5916,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(tS|dZ)",
 		},
 		{
-			pattern:     "h",
-			leftContext: regexp.MustCompile("[bdgt]$"),
-			phonetic:    "",
+			pattern: "h",
+			leftContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("[bdgt]$"),
+			},
+			phonetic: "",
 		},
 		{
-			pattern:      "h",
-			rightContext: regexp.MustCompile("^$"),
-			phonetic:     "",
+			pattern: "h",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^$"),
+			},
+			phonetic: "",
 		},
 		{
 			pattern:  "j",
@@ -4377,14 +5960,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(b|v)",
 		},
 		{
-			pattern:      "m",
-			rightContext: regexp.MustCompile("^[bpvf]"),
-			phonetic:     "(m|n)",
+			pattern: "m",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[bpvf]"),
+			},
+			phonetic: "(m|n)",
 		},
 		{
-			pattern:      "c",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "s",
+			pattern: "c",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "s",
 		},
 		{
 			pattern:  "c",
@@ -4395,14 +5988,24 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(z|s)",
 		},
 		{
-			pattern:      "gu",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "(g|gv)",
+			pattern: "gu",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "(g|gv)",
 		},
 		{
-			pattern:      "g",
-			rightContext: regexp.MustCompile("^[ei]"),
-			phonetic:     "(x|g)",
+			pattern: "g",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[ei]"),
+			},
+			phonetic: "(x|g)",
 		},
 		{
 			pattern:  "qu",
@@ -4417,9 +6020,14 @@ var ashRules = map[ashLang][]rule{
 			phonetic: "(vo|o)",
 		},
 		{
-			pattern:      "u",
-			rightContext: regexp.MustCompile("^[aei]"),
-			phonetic:     "v",
+			pattern: "u",
+			rightContext: &ruleMatcher{
+				contains: "",
+				prefix:   "",
+				suffix:   "",
+				pattern:  regexp.MustCompile("^[aei]"),
+			},
+			phonetic: "v",
 		},
 		{
 			pattern:  "y",
@@ -4522,7 +6130,7 @@ var ashRules = map[ashLang][]rule{
 
 var ashLangRules = []langRule{
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "zh",
 			prefix:   "",
 			suffix:   "",
@@ -4531,7 +6139,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "eau",
 			prefix:   "",
 			suffix:   "",
@@ -4540,7 +6148,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -4550,7 +6158,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "vogel",
 			suffix:   "",
@@ -4559,7 +6167,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "vogel",
@@ -4568,7 +6176,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "witz",
 			prefix:   "",
 			suffix:   "",
@@ -4577,7 +6185,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "tz",
@@ -4586,7 +6194,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "tz",
 			suffix:   "",
@@ -4595,7 +6203,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "güe",
 			prefix:   "",
 			suffix:   "",
@@ -4604,7 +6212,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "güi",
 			prefix:   "",
 			suffix:   "",
@@ -4613,7 +6221,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ghe",
 			prefix:   "",
 			suffix:   "",
@@ -4622,7 +6230,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ghi",
 			prefix:   "",
 			suffix:   "",
@@ -4631,7 +6239,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "vici",
@@ -4640,7 +6248,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "schi",
@@ -4649,7 +6257,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "chsch",
 			prefix:   "",
 			suffix:   "",
@@ -4658,7 +6266,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "tsch",
 			prefix:   "",
 			suffix:   "",
@@ -4667,7 +6275,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ssch",
 			prefix:   "",
 			suffix:   "",
@@ -4676,7 +6284,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "sch",
@@ -4685,7 +6293,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "sch",
 			suffix:   "",
@@ -4694,7 +6302,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "rz",
 			suffix:   "",
@@ -4703,7 +6311,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "rz",
@@ -4712,7 +6320,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -4722,7 +6330,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -4732,7 +6340,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "cki",
@@ -4741,7 +6349,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "ska",
@@ -4750,7 +6358,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "cka",
@@ -4759,7 +6367,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ue",
 			prefix:   "",
 			suffix:   "",
@@ -4768,7 +6376,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ae",
 			prefix:   "",
 			suffix:   "",
@@ -4777,7 +6385,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "oe",
 			prefix:   "",
 			suffix:   "",
@@ -4786,7 +6394,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "th",
@@ -4795,7 +6403,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "th",
 			suffix:   "",
@@ -4804,7 +6412,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -4814,7 +6422,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "mann",
 			prefix:   "",
 			suffix:   "",
@@ -4823,7 +6431,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "cz",
 			prefix:   "",
 			suffix:   "",
@@ -4832,7 +6440,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "cy",
 			prefix:   "",
 			suffix:   "",
@@ -4841,7 +6449,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "niew",
 			prefix:   "",
 			suffix:   "",
@@ -4850,7 +6458,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "stein",
 			prefix:   "",
 			suffix:   "",
@@ -4859,7 +6467,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "heim",
@@ -4868,7 +6476,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "heimer",
@@ -4877,7 +6485,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "ii",
@@ -4886,7 +6494,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "iy",
@@ -4895,7 +6503,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "yy",
@@ -4904,7 +6512,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "yi",
@@ -4913,7 +6521,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "yj",
@@ -4922,7 +6530,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "ij",
@@ -4931,7 +6539,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gaus",
@@ -4940,7 +6548,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gauz",
@@ -4949,7 +6557,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gauz",
@@ -4958,7 +6566,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "goltz",
@@ -4967,7 +6575,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -4977,7 +6585,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "golts",
@@ -4986,7 +6594,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -4996,7 +6604,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "goltz",
 			suffix:   "",
@@ -5005,7 +6613,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -5015,7 +6623,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "golts",
 			suffix:   "",
@@ -5024,7 +6632,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -5034,7 +6642,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gendler",
@@ -5043,7 +6651,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gejmer",
@@ -5052,7 +6660,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gejm",
@@ -5061,7 +6669,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "geimer",
@@ -5070,7 +6678,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "geim",
@@ -5079,7 +6687,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "geymer",
 			prefix:   "",
 			suffix:   "",
@@ -5088,7 +6696,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "geym",
@@ -5097,7 +6705,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gof",
@@ -5106,7 +6714,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "thal",
 			prefix:   "",
 			suffix:   "",
@@ -5115,7 +6723,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "zweig",
 			prefix:   "",
 			suffix:   "",
@@ -5124,7 +6732,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "ck",
@@ -5133,7 +6741,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "c",
@@ -5142,7 +6750,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "sz",
 			prefix:   "",
 			suffix:   "",
@@ -5151,7 +6759,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "gue",
 			prefix:   "",
 			suffix:   "",
@@ -5160,7 +6768,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "gui",
 			prefix:   "",
 			suffix:   "",
@@ -5169,7 +6777,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "guy",
 			prefix:   "",
 			suffix:   "",
@@ -5178,7 +6786,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "cs",
@@ -5187,7 +6795,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "cs",
 			suffix:   "",
@@ -5196,7 +6804,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "dzs",
 			prefix:   "",
 			suffix:   "",
@@ -5205,7 +6813,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "zs",
@@ -5214,7 +6822,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "zs",
 			suffix:   "",
@@ -5223,7 +6831,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "wl",
 			suffix:   "",
@@ -5232,7 +6840,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "wr",
 			suffix:   "",
@@ -5241,7 +6849,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "gy",
@@ -5250,7 +6858,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -5260,7 +6868,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "gy",
 			prefix:   "",
 			suffix:   "",
@@ -5269,7 +6877,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ly",
 			prefix:   "",
 			suffix:   "",
@@ -5278,7 +6886,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ny",
 			prefix:   "",
 			suffix:   "",
@@ -5287,7 +6895,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ty",
 			prefix:   "",
 			suffix:   "",
@@ -5296,7 +6904,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "â",
 			prefix:   "",
 			suffix:   "",
@@ -5305,7 +6913,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ă",
 			prefix:   "",
 			suffix:   "",
@@ -5314,7 +6922,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "à",
 			prefix:   "",
 			suffix:   "",
@@ -5323,7 +6931,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ä",
 			prefix:   "",
 			suffix:   "",
@@ -5332,7 +6940,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "á",
 			prefix:   "",
 			suffix:   "",
@@ -5341,7 +6949,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ą",
 			prefix:   "",
 			suffix:   "",
@@ -5350,7 +6958,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ć",
 			prefix:   "",
 			suffix:   "",
@@ -5359,7 +6967,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ç",
 			prefix:   "",
 			suffix:   "",
@@ -5368,7 +6976,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ę",
 			prefix:   "",
 			suffix:   "",
@@ -5377,7 +6985,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "é",
 			prefix:   "",
 			suffix:   "",
@@ -5386,7 +6994,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "è",
 			prefix:   "",
 			suffix:   "",
@@ -5395,7 +7003,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ê",
 			prefix:   "",
 			suffix:   "",
@@ -5404,7 +7012,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "í",
 			prefix:   "",
 			suffix:   "",
@@ -5413,7 +7021,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "î",
 			prefix:   "",
 			suffix:   "",
@@ -5422,7 +7030,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ł",
 			prefix:   "",
 			suffix:   "",
@@ -5431,7 +7039,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ń",
 			prefix:   "",
 			suffix:   "",
@@ -5440,7 +7048,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ñ",
 			prefix:   "",
 			suffix:   "",
@@ -5449,7 +7057,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ó",
 			prefix:   "",
 			suffix:   "",
@@ -5458,7 +7066,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ö",
 			prefix:   "",
 			suffix:   "",
@@ -5467,7 +7075,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "õ",
 			prefix:   "",
 			suffix:   "",
@@ -5476,7 +7084,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ş",
 			prefix:   "",
 			suffix:   "",
@@ -5485,7 +7093,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ś",
 			prefix:   "",
 			suffix:   "",
@@ -5494,7 +7102,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ţ",
 			prefix:   "",
 			suffix:   "",
@@ -5503,7 +7111,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ü",
 			prefix:   "",
 			suffix:   "",
@@ -5512,7 +7120,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ù",
 			prefix:   "",
 			suffix:   "",
@@ -5521,7 +7129,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ű",
 			prefix:   "",
 			suffix:   "",
@@ -5530,7 +7138,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ú",
 			prefix:   "",
 			suffix:   "",
@@ -5539,7 +7147,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ź",
 			prefix:   "",
 			suffix:   "",
@@ -5548,7 +7156,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ż",
 			prefix:   "",
 			suffix:   "",
@@ -5557,7 +7165,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ß",
 			prefix:   "",
 			suffix:   "",
@@ -5566,7 +7174,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "а",
 			prefix:   "",
 			suffix:   "",
@@ -5575,7 +7183,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ё",
 			prefix:   "",
 			suffix:   "",
@@ -5584,7 +7192,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "о",
 			prefix:   "",
 			suffix:   "",
@@ -5593,7 +7201,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "е",
 			prefix:   "",
 			suffix:   "",
@@ -5602,7 +7210,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "и",
 			prefix:   "",
 			suffix:   "",
@@ -5611,7 +7219,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "у",
 			prefix:   "",
 			suffix:   "",
@@ -5620,7 +7228,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ы",
 			prefix:   "",
 			suffix:   "",
@@ -5629,7 +7237,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "э",
 			prefix:   "",
 			suffix:   "",
@@ -5638,7 +7246,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ю",
 			prefix:   "",
 			suffix:   "",
@@ -5647,7 +7255,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "я",
 			prefix:   "",
 			suffix:   "",
@@ -5656,7 +7264,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "א",
 			prefix:   "",
 			suffix:   "",
@@ -5665,7 +7273,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ב",
 			prefix:   "",
 			suffix:   "",
@@ -5674,7 +7282,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ג",
 			prefix:   "",
 			suffix:   "",
@@ -5683,7 +7291,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ד",
 			prefix:   "",
 			suffix:   "",
@@ -5692,7 +7300,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ה",
 			prefix:   "",
 			suffix:   "",
@@ -5701,7 +7309,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ו",
 			prefix:   "",
 			suffix:   "",
@@ -5710,7 +7318,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ז",
 			prefix:   "",
 			suffix:   "",
@@ -5719,7 +7327,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ח",
 			prefix:   "",
 			suffix:   "",
@@ -5728,7 +7336,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ט",
 			prefix:   "",
 			suffix:   "",
@@ -5737,7 +7345,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "י",
 			prefix:   "",
 			suffix:   "",
@@ -5746,7 +7354,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "כ",
 			prefix:   "",
 			suffix:   "",
@@ -5755,7 +7363,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ל",
 			prefix:   "",
 			suffix:   "",
@@ -5764,7 +7372,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "מ",
 			prefix:   "",
 			suffix:   "",
@@ -5773,7 +7381,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "נ",
 			prefix:   "",
 			suffix:   "",
@@ -5782,7 +7390,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ס",
 			prefix:   "",
 			suffix:   "",
@@ -5791,7 +7399,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ע",
 			prefix:   "",
 			suffix:   "",
@@ -5800,7 +7408,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "פ",
 			prefix:   "",
 			suffix:   "",
@@ -5809,7 +7417,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "צ",
 			prefix:   "",
 			suffix:   "",
@@ -5818,7 +7426,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ק",
 			prefix:   "",
 			suffix:   "",
@@ -5827,7 +7435,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ר",
 			prefix:   "",
 			suffix:   "",
@@ -5836,7 +7444,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ש",
 			prefix:   "",
 			suffix:   "",
@@ -5845,7 +7453,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ת",
 			prefix:   "",
 			suffix:   "",
@@ -5854,7 +7462,7 @@ var ashLangRules = []langRule{
 		accept: true,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "a",
 			prefix:   "",
 			suffix:   "",
@@ -5863,7 +7471,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "o",
 			prefix:   "",
 			suffix:   "",
@@ -5872,7 +7480,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "e",
 			prefix:   "",
 			suffix:   "",
@@ -5881,7 +7489,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "i",
 			prefix:   "",
 			suffix:   "",
@@ -5890,7 +7498,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "y",
 			prefix:   "",
 			suffix:   "",
@@ -5899,7 +7507,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "u",
 			prefix:   "",
 			suffix:   "",
@@ -5908,7 +7516,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -5918,7 +7526,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -5928,7 +7536,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "",
 			suffix:   "",
@@ -5938,7 +7546,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "dzi",
 			prefix:   "",
 			suffix:   "",
@@ -5947,7 +7555,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ou",
 			prefix:   "",
 			suffix:   "",
@@ -5956,7 +7564,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "aj",
 			prefix:   "",
 			suffix:   "",
@@ -5965,7 +7573,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ej",
 			prefix:   "",
 			suffix:   "",
@@ -5974,7 +7582,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "oj",
 			prefix:   "",
 			suffix:   "",
@@ -5983,7 +7591,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "uj",
 			prefix:   "",
 			suffix:   "",
@@ -5992,7 +7600,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "k",
 			prefix:   "",
 			suffix:   "",
@@ -6001,7 +7609,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "v",
 			prefix:   "",
 			suffix:   "",
@@ -6010,7 +7618,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "ky",
 			prefix:   "",
 			suffix:   "",
@@ -6019,7 +7627,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "eu",
 			prefix:   "",
 			suffix:   "",
@@ -6028,7 +7636,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "w",
 			prefix:   "",
 			suffix:   "",
@@ -6037,7 +7645,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "kie",
 			prefix:   "",
 			suffix:   "",
@@ -6046,7 +7654,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "gie",
 			prefix:   "",
 			suffix:   "",
@@ -6055,7 +7663,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "q",
 			prefix:   "",
 			suffix:   "",
@@ -6064,7 +7672,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "sch",
 			prefix:   "",
 			suffix:   "",
@@ -6073,7 +7681,7 @@ var ashLangRules = []langRule{
 		accept: false,
 	},
 	{
-		match: ruleMatch{
+		match: ruleMatcher{
 			contains: "",
 			prefix:   "h",
 			suffix:   "",
@@ -6087,272 +7695,527 @@ var ashFinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{
-				pattern:      "h",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "",
+				pattern: "h",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^[fktSs]"),
-				phonetic:     "p",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[fktSs]"),
+				},
+				phonetic: "p",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^p"),
-				phonetic:     "",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "p",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "p",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "p",
 			},
 			{
-				pattern:      "p",
-				rightContext: regexp.MustCompile("^[gdZz]"),
-				phonetic:     "b",
+				pattern: "p",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[gdZz]"),
+				},
+				phonetic: "b",
 			},
 			{
-				pattern:      "p",
-				rightContext: regexp.MustCompile("^b"),
-				phonetic:     "",
+				pattern: "p",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "b",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^[pktSs]"),
-				phonetic:     "f",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pktSs]"),
+				},
+				phonetic: "f",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^f"),
-				phonetic:     "",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "f",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "f",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "f",
 			},
 			{
-				pattern:      "f",
-				rightContext: regexp.MustCompile("^[bgdZz]"),
-				phonetic:     "v",
+				pattern: "f",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bgdZz]"),
+				},
+				phonetic: "v",
 			},
 			{
-				pattern:      "f",
-				rightContext: regexp.MustCompile("^v"),
-				phonetic:     "",
+				pattern: "f",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "v",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^[pftSs]"),
-				phonetic:     "k",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pftSs]"),
+				},
+				phonetic: "k",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^k"),
-				phonetic:     "",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "k",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "k",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "k",
 			},
 			{
-				pattern:      "k",
-				rightContext: regexp.MustCompile("^[bdZz]"),
-				phonetic:     "g",
+				pattern: "k",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bdZz]"),
+				},
+				phonetic: "g",
 			},
 			{
-				pattern:      "k",
-				rightContext: regexp.MustCompile("^g"),
-				phonetic:     "",
+				pattern: "k",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "g",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^[pfkSs]"),
-				phonetic:     "t",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pfkSs]"),
+				},
+				phonetic: "t",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^t"),
-				phonetic:     "",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "t",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "t",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "t",
 			},
 			{
-				pattern:      "t",
-				rightContext: regexp.MustCompile("^[bgZz]"),
-				phonetic:     "d",
+				pattern: "t",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bgZz]"),
+				},
+				phonetic: "d",
 			},
 			{
-				pattern:      "t",
-				rightContext: regexp.MustCompile("^d"),
-				phonetic:     "",
+				pattern: "t",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "d",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^dZ"),
-				phonetic:     "",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "dZ",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^tS"),
-				phonetic:     "",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "tS",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^[pfkSt]"),
-				phonetic:     "s",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pfkSt]"),
+				},
+				phonetic: "s",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "Z",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "Z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "S",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "S",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
 				pattern:  "jnm",
 				phonetic: "jm",
 			},
 			{
-				pattern:     "ji",
-				leftContext: regexp.MustCompile("^$"),
-				phonetic:    "i",
+				pattern: "ji",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "i",
 			},
 			{
-				pattern:     "jI",
-				leftContext: regexp.MustCompile("^$"),
-				phonetic:    "I",
+				pattern: "jI",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "I",
 			},
 			{
-				pattern:      "a",
-				rightContext: regexp.MustCompile("^[aAB]"),
-				phonetic:     "",
+				pattern: "a",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[aAB]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:     "a",
-				leftContext: regexp.MustCompile("[AB]$"),
-				phonetic:    "",
+				pattern: "a",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[AB]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "A",
-				rightContext: regexp.MustCompile("^A"),
-				phonetic:     "",
+				pattern: "A",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "A",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "B",
-				rightContext: regexp.MustCompile("^B"),
-				phonetic:     "",
+				pattern: "B",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "B",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^b"),
-				phonetic:     "",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "b",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^d"),
-				phonetic:     "",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "d",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "f",
-				rightContext: regexp.MustCompile("^f"),
-				phonetic:     "",
+				pattern: "f",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "f",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^g"),
-				phonetic:     "",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "g",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "k",
-				rightContext: regexp.MustCompile("^k"),
-				phonetic:     "",
+				pattern: "k",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "k",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "l",
-				rightContext: regexp.MustCompile("^l"),
-				phonetic:     "",
+				pattern: "l",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "l",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "m",
-				rightContext: regexp.MustCompile("^m"),
-				phonetic:     "",
+				pattern: "m",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "m",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "n",
-				rightContext: regexp.MustCompile("^n"),
-				phonetic:     "",
+				pattern: "n",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "n",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "p",
-				rightContext: regexp.MustCompile("^p"),
-				phonetic:     "",
+				pattern: "p",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "p",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "r",
-				rightContext: regexp.MustCompile("^r"),
-				phonetic:     "",
+				pattern: "r",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "r",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "t",
-				rightContext: regexp.MustCompile("^t"),
-				phonetic:     "",
+				pattern: "t",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "t",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^v"),
-				phonetic:     "",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "v",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^z"),
-				phonetic:     "",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "z",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "n",
-				rightContext: regexp.MustCompile("^[bp]"),
-				phonetic:     "m",
+				pattern: "n",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bp]"),
+				},
+				phonetic: "m",
 			},
 			{
-				pattern:      "kAg",
-				leftContext:  regexp.MustCompile("^$"),
-				rightContext: regexp.MustCompile("^[AEOIUaeoiu]"),
-				phonetic:     "(kOg|kO[512])",
+				pattern: "kAg",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[AEOIUaeoiu]"),
+				},
+				phonetic: "(kOg|kO[512])",
 			},
 			{
-				pattern:      "kOg",
-				leftContext:  regexp.MustCompile("^$"),
-				rightContext: regexp.MustCompile("^[AEOIUaeoiu]"),
-				phonetic:     "(kAg|kA[512])",
+				pattern: "kOg",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[AEOIUaeoiu]"),
+				},
+				phonetic: "(kAg|kA[512])",
 			},
 			{
-				pattern:      "kog",
-				leftContext:  regexp.MustCompile("^$"),
-				rightContext: regexp.MustCompile("^[AEOIUaeoiu]"),
-				phonetic:     "(kog|ko[512])",
+				pattern: "kog",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[AEOIUaeoiu]"),
+				},
+				phonetic: "(kog|ko[512])",
 			},
 			{
-				pattern:      "kag",
-				leftContext:  regexp.MustCompile("^$"),
-				rightContext: regexp.MustCompile("^[AEOIUaeoiu]"),
-				phonetic:     "(kag|ka[512])",
+				pattern: "kag",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[AEOIUaeoiu]"),
+				},
+				phonetic: "(kag|ka[512])",
 			},
 			{
 				pattern:  "h",
@@ -6363,117 +8226,282 @@ var ashFinalRules = finalRules{
 				phonetic: "(x|)",
 			},
 			{
-				pattern:      "F",
-				rightContext: regexp.MustCompile("^[bdgkpstvzZ]h"),
-				phonetic:     "e",
+				pattern: "F",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bdgkpstvzZ]h"),
+				},
+				phonetic: "e",
 			},
 			{
-				pattern:      "F",
-				rightContext: regexp.MustCompile("^[bdgkpstvzZ]x"),
-				phonetic:     "e",
+				pattern: "F",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bdgkpstvzZ]x"),
+				},
+				phonetic: "e",
 			},
 			{
-				pattern:      "B",
-				rightContext: regexp.MustCompile("^[bdgkpstvzZ]h"),
-				phonetic:     "a",
+				pattern: "B",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bdgkpstvzZ]h"),
+				},
+				phonetic: "a",
 			},
 			{
-				pattern:      "B",
-				rightContext: regexp.MustCompile("^[bdgkpstvzZ]x"),
-				phonetic:     "a",
+				pattern: "B",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bdgkpstvzZ]x"),
+				},
+				phonetic: "a",
 			},
 			{
-				pattern:      "e",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "e",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "i",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "i",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "E",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "E",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "I",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "I",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "F",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "F",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "Q",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "Q",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "Y",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln]$"),
-				phonetic:     "",
+				pattern: "Y",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "e",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(e|)",
+				pattern: "e",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(e|)",
 			},
 			{
-				pattern:      "i",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(i|)",
+				pattern: "i",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(i|)",
 			},
 			{
-				pattern:      "E",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(E|)",
+				pattern: "E",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(E|)",
 			},
 			{
-				pattern:      "I",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(I|)",
+				pattern: "I",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(I|)",
 			},
 			{
-				pattern:      "F",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(F|)",
+				pattern: "F",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(F|)",
 			},
 			{
-				pattern:      "Q",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(Q|)",
+				pattern: "Q",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(Q|)",
 			},
 			{
-				pattern:      "Y",
-				leftContext:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
-				rightContext: regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
-				phonetic:     "(Y|)",
+				pattern: "Y",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+				},
+				phonetic: "(Y|)",
 			},
 			{
 				pattern:  "lEs",
 				phonetic: "(lEs|lz)",
 			},
 			{
-				pattern:     "lE",
-				leftContext: regexp.MustCompile("[bdfgkmnprStvzZ]$"),
-				phonetic:    "(lE|l)",
+				pattern: "lE",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[bdfgkmnprStvzZ]$"),
+				},
+				phonetic: "(lE|l)",
 			},
 			{
 				pattern:  "aue",
@@ -6936,114 +8964,224 @@ var ashFinalRules = finalRules{
 				phonetic: "i",
 			},
 			{
-				pattern:      "lYndEr",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lYndEr",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lander",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lander",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lAndEr",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lAndEr",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lAnder",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lAnder",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "landEr",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "landEr",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lender",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lender",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lEndEr",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lEndEr",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lendEr",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lendEr",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "lEnder",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "lYnder",
+				pattern: "lEnder",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "lYnder",
 			},
 			{
-				pattern:      "bUrk",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "(burk|berk)",
+				pattern: "bUrk",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "(burk|berk)",
 			},
 			{
-				pattern:      "burk",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "(burk|berk)",
+				pattern: "burk",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "(burk|berk)",
 			},
 			{
-				pattern:      "bUrg",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "(burk|berk)",
+				pattern: "bUrg",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "(burk|berk)",
 			},
 			{
-				pattern:      "burg",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "(burk|berk)",
+				pattern: "burg",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "(burk|berk)",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^[rmnl]"),
-				phonetic:     "z",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[rmnl]"),
+				},
+				phonetic: "z",
 			},
 			{
-				pattern:      "S",
-				rightContext: regexp.MustCompile("^[rmnl]"),
-				phonetic:     "z",
+				pattern: "S",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[rmnl]"),
+				},
+				phonetic: "z",
 			},
 			{
-				pattern:     "s",
-				leftContext: regexp.MustCompile("[rmnl]$"),
-				phonetic:    "z",
+				pattern: "s",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[rmnl]$"),
+				},
+				phonetic: "z",
 			},
 			{
-				pattern:     "S",
-				leftContext: regexp.MustCompile("[rmnl]$"),
-				phonetic:    "z",
+				pattern: "S",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[rmnl]$"),
+				},
+				phonetic: "z",
 			},
 			{
-				pattern:      "dS",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "S",
+				pattern: "dS",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "S",
 			},
 			{
-				pattern:      "dZ",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "S",
+				pattern: "dZ",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "S",
 			},
 			{
-				pattern:      "Z",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "S",
+				pattern: "Z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "S",
 			},
 			{
-				pattern:      "S",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "(S|s)",
+				pattern: "S",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "(S|s)",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "(S|s)",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "(S|s)",
 			},
 			{
 				pattern:  "S",
@@ -7069,228 +9207,448 @@ var ashFinalRules = finalRules{
 					phonetic: "z",
 				},
 				{
-					pattern:      "aiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "aiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "AiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "AiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "oiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "oiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "OiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "OiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "uiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "uiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "UiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "UiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "eiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "eiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "EiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "EiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "iiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "iiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "IiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "IiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "aiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "aiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "AiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "AiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "oiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "oiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "OiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "OiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "uiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "uiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "UiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "UiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "eiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "eiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "EiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "EiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "iiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "iiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "IiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "IiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "B",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(o|om[128]|im[128])",
+					pattern: "B",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(o|om[128]|im[128])",
 				},
 				{
-					pattern:      "B",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(a|o|on[128]|in[128])",
+					pattern: "B",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(a|o|on[128]|in[128])",
 				},
 				{
 					pattern:  "B",
 					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "aiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "aiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "AiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "AiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "oiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "oiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "OiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "OiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "uiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "uiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "UiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "UiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "eiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "eiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "EiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "EiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "iiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "iiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "IiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "IiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "aiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "aiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "AiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "AiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "oiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "oiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "OiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "OiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "uiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "uiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "UiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "UiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "eiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "eiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "EiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "EiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "iiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "iiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "IiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "IiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "F",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(i|im[128]|om[128])",
+					pattern: "F",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(i|im[128]|om[128])",
 				},
 				{
-					pattern:      "F",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(i|in[128]|on[128])",
+					pattern: "F",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(i|in[128]|on[128])",
 				},
 				{
 					pattern:  "F",
@@ -7301,60 +9659,120 @@ var ashFinalRules = finalRules{
 					phonetic: "(o|u)",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aeiouAEIBFOUQY]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aeiouAEIBFOUQY]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^aeiouAEBFIOU]e"),
-					phonetic:     "(Q[16]|i|D[4])",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^aeiouAEBFIOU]e"),
+					},
+					phonetic: "(Q[16]|i|D[4])",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk[16])",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk[16])",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts[16])",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts[16])",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
 					pattern:  "I",
 					phonetic: "(Q[16]|i)",
 				},
 				{
-					pattern:      "lE",
-					leftContext:  regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(li|il[4])",
+					pattern: "lE",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(li|il[4])",
 				},
 				{
-					pattern:     "lE",
-					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
-					phonetic:    "(li|il[4]|lY[16])",
+					pattern: "lE",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					},
+					phonetic: "(li|il[4]|lY[16])",
 				},
 				{
 					pattern:  "au",
@@ -7397,82 +9815,152 @@ var ashFinalRules = finalRules{
 					phonetic: "(D|i)",
 				},
 				{
-					pattern:      "iA",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ia|io)",
+					pattern: "iA",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ia|io)",
 				},
 				{
 					pattern:  "iA",
 					phonetic: "(ia|io|iY[16])",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^[^aeiouAEBFIOU]e"),
-					phonetic:     "(a|o|Y[16]|D[4])",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^aeiouAEBFIOU]e"),
+					},
+					phonetic: "(a|o|Y[16]|D[4])",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("i[^aeiouAEIOU]$"),
-					phonetic:    "(i|Y[16]|[4])",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("i[^aeiouAEIOU]$"),
+					},
+					phonetic: "(i|Y[16]|[4])",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("a[^aeiouAEIOU]$"),
-					phonetic:    "(i|Y[16]|[4])",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("a[^aeiouAEIOU]$"),
+					},
+					phonetic: "(i|Y[16]|[4])",
 				},
 				{
-					pattern:      "e",
-					rightContext: regexp.MustCompile("^[fklmnprstv]$"),
-					phonetic:     "i",
+					pattern: "e",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprstv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "e",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "e",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "e",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "e",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "e",
-					leftContext: regexp.MustCompile("[DaoiuAOIUQY]$"),
-					phonetic:    "i",
+					pattern: "e",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuAOIUQY]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "e",
-					rightContext: regexp.MustCompile("^[aoAOQY]"),
-					phonetic:     "i",
+					pattern: "e",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoAOQY]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "e",
 					phonetic: "(i|Y[16])",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoiuAOIUQY]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuAOIUQY]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoAOQY]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoAOQY]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -7483,88 +9971,168 @@ var ashFinalRules = finalRules{
 					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "O",
-					rightContext: regexp.MustCompile("^[fklmnprstv]$"),
-					phonetic:     "o",
+					pattern: "O",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprstv]$"),
+					},
+					phonetic: "o",
 				},
 				{
-					pattern:      "O",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "o",
+					pattern: "O",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "o",
 				},
 				{
-					pattern:      "O",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "o",
+					pattern: "O",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "o",
 				},
 				{
-					pattern:     "O",
-					leftContext: regexp.MustCompile("[oeiuQY]$"),
-					phonetic:    "o",
+					pattern: "O",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[oeiuQY]$"),
+					},
+					phonetic: "o",
 				},
 				{
 					pattern:  "O",
 					phonetic: "(o|Y[16])",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "(a|o)",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "(a|o)",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(a|o)",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
-					pattern:     "A",
-					leftContext: regexp.MustCompile("[oeiuQY]$"),
-					phonetic:    "(a|o)",
+					pattern: "A",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[oeiuQY]$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
 					pattern:  "A",
 					phonetic: "(a|o|Y[16])",
 				},
 				{
-					pattern:      "U",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "u",
+					pattern: "U",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "u",
 				},
 				{
-					pattern:     "U",
-					leftContext: regexp.MustCompile("[DoiuQY]$"),
-					phonetic:    "u",
+					pattern: "U",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DoiuQY]$"),
+					},
+					phonetic: "u",
 				},
 				{
-					pattern:      "U",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "u",
+					pattern: "U",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "u",
 				},
 				{
-					pattern:      "Uk",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(uk|Qk[16])",
+					pattern: "Uk",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(uk|Qk[16])",
 				},
 				{
-					pattern:      "Uk",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "uk",
+					pattern: "Uk",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "uk",
 				},
 				{
-					pattern:      "sUts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(suts|sQts[16])",
+					pattern: "sUts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(suts|sQts[16])",
 				},
 				{
-					pattern:      "Uts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "uts",
+					pattern: "Uts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "uts",
 				},
 				{
 					pattern:  "U",
@@ -7573,40 +10141,80 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashrussian): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aeiEIou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aeiEIou]$"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "I",
@@ -7633,34 +10241,64 @@ var ashFinalRules = finalRules{
 					phonetic: "(D|u|i)",
 				},
 				{
-					pattern:      "om",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(om|im)",
+					pattern: "om",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(om|im)",
 				},
 				{
-					pattern:      "on",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(on|in)",
+					pattern: "on",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(on|in)",
 				},
 				{
-					pattern:      "em",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(im|om)",
+					pattern: "em",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(im|om)",
 				},
 				{
-					pattern:      "en",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(in|on)",
+					pattern: "en",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(in|on)",
 				},
 				{
-					pattern:      "Em",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(im|Ym|om)",
+					pattern: "Em",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(im|Ym|om)",
 				},
 				{
-					pattern:      "En",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(in|Yn|on)",
+					pattern: "En",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(in|Yn|on)",
 				},
 				{
 					pattern:  "a",
@@ -7671,24 +10309,44 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprsStv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -7697,40 +10355,80 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashcyrillic): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aeiEIou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aeiEIou]$"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "I",
@@ -7757,34 +10455,64 @@ var ashFinalRules = finalRules{
 					phonetic: "(D|u|i)",
 				},
 				{
-					pattern:      "om",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(om|im)",
+					pattern: "om",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(om|im)",
 				},
 				{
-					pattern:      "on",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(on|in)",
+					pattern: "on",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(on|in)",
 				},
 				{
-					pattern:      "em",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(im|om)",
+					pattern: "em",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(im|om)",
 				},
 				{
-					pattern:      "en",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(in|on)",
+					pattern: "en",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(in|on)",
 				},
 				{
-					pattern:      "Em",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(im|Ym|om)",
+					pattern: "Em",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(im|Ym|om)",
 				},
 				{
-					pattern:      "En",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(in|Yn|on)",
+					pattern: "En",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(in|Yn|on)",
 				},
 				{
 					pattern:  "a",
@@ -7795,24 +10523,44 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprsStv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -7821,54 +10569,104 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashenglish): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^aEIeiou]e"),
-					phonetic:     "(Q|i|D)",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^aEIeiou]e"),
+					},
+					phonetic: "(Q|i|D)",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aEIeiou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aEIeiou]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
 				},
 				{
-					pattern:     "lE",
-					leftContext: regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
-					phonetic:    "(il|li|lY)",
+					pattern: "lE",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+					},
+					phonetic: "(il|li|lY)",
 				},
 				{
 					pattern:  "au",
@@ -7891,38 +10689,68 @@ var ashFinalRules = finalRules{
 					phonetic: "(D|u|i)",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("D[^aeiEIou]$"),
-					phonetic:    "(i|)",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("D[^aeiEIou]$"),
+					},
+					phonetic: "(i|)",
 				},
 				{
-					pattern:     "e",
-					leftContext: regexp.MustCompile("D[^aeiEIou]$"),
-					phonetic:    "(i|)",
+					pattern: "e",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("D[^aeiEIou]$"),
+					},
+					phonetic: "(i|)",
 				},
 				{
 					pattern:  "e",
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprsStv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoiEuQY]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiEuQY]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQY]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQY]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -7935,40 +10763,80 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashfrench): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aEIeiou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aEIeiou]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
 					pattern:  "I",
@@ -8003,24 +10871,44 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprsStv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[aoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -8029,40 +10917,80 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashgerman): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aeiAEIOUouQY]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aeiAEIOUouQY]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
 					pattern:  "I",
@@ -8129,53 +11057,98 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoAOUiuQY]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoAOUiuQY]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoAOQY]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoAOQY]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
 				},
 				{
-					pattern:      "O",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "o",
+					pattern: "O",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "o",
 				},
 				{
-					pattern:      "O",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "o",
+					pattern: "O",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "o",
 				},
 				{
-					pattern:      "O",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "o",
+					pattern: "O",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "o",
 				},
 				{
-					pattern:     "O",
-					leftContext: regexp.MustCompile("[aoAOUeiuQY]$"),
-					phonetic:    "o",
+					pattern: "O",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aoAOUeiuQY]$"),
+					},
+					phonetic: "o",
 				},
 				{
 					pattern:  "O",
@@ -8186,64 +11159,124 @@ var ashFinalRules = finalRules{
 					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(a|o)",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "(a|o)",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
-					pattern:      "A",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "(a|o)",
+					pattern: "A",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
-					pattern:     "A",
-					leftContext: regexp.MustCompile("[aoeOUiuQY]$"),
-					phonetic:    "(a|o)",
+					pattern: "A",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aoeOUiuQY]$"),
+					},
+					phonetic: "(a|o)",
 				},
 				{
 					pattern:  "A",
 					phonetic: "(a|o|Y)",
 				},
 				{
-					pattern:      "U",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "u",
+					pattern: "U",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "u",
 				},
 				{
-					pattern:     "U",
-					leftContext: regexp.MustCompile("[DaoiuUQY]$"),
-					phonetic:    "u",
+					pattern: "U",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuUQY]$"),
+					},
+					phonetic: "u",
 				},
 				{
-					pattern:      "U",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "u",
+					pattern: "U",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "u",
 				},
 				{
-					pattern:      "Uk",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(uk|Qk)",
+					pattern: "Uk",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(uk|Qk)",
 				},
 				{
-					pattern:      "Uk",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "uk",
+					pattern: "Uk",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "uk",
 				},
 				{
-					pattern:      "sUts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(suts|sQts)",
+					pattern: "sUts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(suts|sQts)",
 				},
 				{
-					pattern:      "Uts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "uts",
+					pattern: "Uts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "uts",
 				},
 				{
 					pattern:  "U",
@@ -8253,40 +11286,80 @@ var ashFinalRules = finalRules{
 			uint64(ashhebrew): []rule{},
 			uint64(ashhungarian): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aEIeiou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aEIeiou]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
 					pattern:  "I",
@@ -8321,24 +11394,44 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprsStv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[aoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -8347,168 +11440,328 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashpolish): []rule{
 				{
-					pattern:      "aiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "aiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "oiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "oiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "uiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "uiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "eiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "eiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "EiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "EiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "iiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "iiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "IiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "IiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "aiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "aiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "oiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "oiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "uiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "uiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "eiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "eiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "EiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "EiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "iiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "iiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "IiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "IiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "B",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(o|om|im)",
+					pattern: "B",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(o|om|im)",
 				},
 				{
-					pattern:      "B",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(o|on|in)",
+					pattern: "B",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(o|on|in)",
 				},
 				{
 					pattern:  "B",
 					phonetic: "o",
 				},
 				{
-					pattern:      "aiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "aiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "oiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "oiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "uiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "uiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "eiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "eiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "EiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "EiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "iiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "iiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "IiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "IiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "aiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "aiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "oiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "oiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "uiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "uiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "eiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "eiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "EiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "EiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "iiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "iiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "IiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "IiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "F",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(i|im|om)",
+					pattern: "F",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(i|im|om)",
 				},
 				{
-					pattern:      "F",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(i|in|on)",
+					pattern: "F",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(i|in|on)",
 				},
 				{
 					pattern:  "F",
@@ -8519,40 +11772,80 @@ var ashFinalRules = finalRules{
 					phonetic: "(o|u)",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aeiAEBFIou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aeiAEBFIou]$"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "I",
@@ -8587,29 +11880,54 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -8618,168 +11936,328 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashromanian): []rule{
 				{
-					pattern:      "aiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "aiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "oiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "oiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "uiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "uiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "eiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "eiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "EiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "EiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "iiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "iiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "IiB",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "IiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "aiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "aiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "oiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "oiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "uiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "uiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "eiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "eiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "EiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "EiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "iiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "iiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "IiB",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "IiB",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "B",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(o|om|im)",
+					pattern: "B",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(o|om|im)",
 				},
 				{
-					pattern:      "B",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(o|on|in)",
+					pattern: "B",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(o|on|in)",
 				},
 				{
 					pattern:  "B",
 					phonetic: "o",
 				},
 				{
-					pattern:      "aiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "aiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "oiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "oiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "uiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "uiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "eiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "eiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "EiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "EiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "iiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "iiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "IiF",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(D|Dm)",
+					pattern: "IiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(D|Dm)",
 				},
 				{
-					pattern:      "aiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "aiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "oiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "oiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "uiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "uiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "eiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "eiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "EiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "EiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "iiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "iiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "IiF",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(D|Dn)",
+					pattern: "IiF",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(D|Dn)",
 				},
 				{
-					pattern:      "F",
-					rightContext: regexp.MustCompile("^[bp]"),
-					phonetic:     "(i|im|om)",
+					pattern: "F",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[bp]"),
+					},
+					phonetic: "(i|im|om)",
 				},
 				{
-					pattern:      "F",
-					rightContext: regexp.MustCompile("^[dgkstvz]"),
-					phonetic:     "(i|in|on)",
+					pattern: "F",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[dgkstvz]"),
+					},
+					phonetic: "(i|in|on)",
 				},
 				{
 					pattern:  "F",
@@ -8790,40 +12268,80 @@ var ashFinalRules = finalRules{
 					phonetic: "(o|u)",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aeiAEBFIou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aeiAEBFIou]$"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "I",
@@ -8858,29 +12376,54 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprst]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprst]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[DaoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[DaoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -8889,40 +12432,80 @@ var ashFinalRules = finalRules{
 			},
 			uint64(ashspanish): []rule{
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "I",
-					leftContext: regexp.MustCompile("[aEIeiou]$"),
-					phonetic:    "i",
+					pattern: "I",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aEIeiou]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "I",
-					rightContext: regexp.MustCompile("^[^k]$"),
-					phonetic:     "i",
+					pattern: "I",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[^k]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "Ik",
-					leftContext:  regexp.MustCompile("[lr]$"),
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(ik|Qk)",
+					pattern: "Ik",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[lr]$"),
+					},
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(ik|Qk)",
 				},
 				{
-					pattern:      "Ik",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "ik",
+					pattern: "Ik",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "ik",
 				},
 				{
-					pattern:      "sIts",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "(sits|sQts)",
+					pattern: "sIts",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "(sits|sQts)",
 				},
 				{
-					pattern:      "Its",
-					rightContext: regexp.MustCompile("^$"),
-					phonetic:     "its",
+					pattern: "Its",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^$"),
+					},
+					phonetic: "its",
 				},
 				{
 					pattern:  "I",
@@ -8957,24 +12540,44 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[fklmnprsStv]$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[fklmnprsStv]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^ts$"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^ts$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:     "E",
-					leftContext: regexp.MustCompile("[aoiuQ]$"),
-					phonetic:    "i",
+					pattern: "E",
+					leftContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("[aoiuQ]$"),
+					},
+					phonetic: "i",
 				},
 				{
-					pattern:      "E",
-					rightContext: regexp.MustCompile("^[aoQ]"),
-					phonetic:     "i",
+					pattern: "E",
+					rightContext: &ruleMatcher{
+						contains: "",
+						prefix:   "",
+						suffix:   "",
+						pattern:  regexp.MustCompile("^[aoQ]"),
+					},
+					phonetic: "i",
 				},
 				{
 					pattern:  "E",
@@ -8986,293 +12589,553 @@ var ashFinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{
-				pattern:      "h",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "",
+				pattern: "h",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^[fktSs]"),
-				phonetic:     "p",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[fktSs]"),
+				},
+				phonetic: "p",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^p"),
-				phonetic:     "",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "p",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "p",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "p",
 			},
 			{
-				pattern:      "p",
-				rightContext: regexp.MustCompile("^[gdZz]"),
-				phonetic:     "b",
+				pattern: "p",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[gdZz]"),
+				},
+				phonetic: "b",
 			},
 			{
-				pattern:      "p",
-				rightContext: regexp.MustCompile("^b"),
-				phonetic:     "",
+				pattern: "p",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "b",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^[pktSs]"),
-				phonetic:     "f",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pktSs]"),
+				},
+				phonetic: "f",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^f"),
-				phonetic:     "",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "f",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "f",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "f",
 			},
 			{
-				pattern:      "f",
-				rightContext: regexp.MustCompile("^[bgdZz]"),
-				phonetic:     "v",
+				pattern: "f",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bgdZz]"),
+				},
+				phonetic: "v",
 			},
 			{
-				pattern:      "f",
-				rightContext: regexp.MustCompile("^v"),
-				phonetic:     "",
+				pattern: "f",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "v",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^[pftSs]"),
-				phonetic:     "k",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pftSs]"),
+				},
+				phonetic: "k",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^k"),
-				phonetic:     "",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "k",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "k",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "k",
 			},
 			{
-				pattern:      "k",
-				rightContext: regexp.MustCompile("^[bdZz]"),
-				phonetic:     "g",
+				pattern: "k",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bdZz]"),
+				},
+				phonetic: "g",
 			},
 			{
-				pattern:      "k",
-				rightContext: regexp.MustCompile("^g"),
-				phonetic:     "",
+				pattern: "k",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "g",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^[pfkSs]"),
-				phonetic:     "t",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pfkSs]"),
+				},
+				phonetic: "t",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^t"),
-				phonetic:     "",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "t",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "t",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "t",
 			},
 			{
-				pattern:      "t",
-				rightContext: regexp.MustCompile("^[bgZz]"),
-				phonetic:     "d",
+				pattern: "t",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bgZz]"),
+				},
+				phonetic: "d",
 			},
 			{
-				pattern:      "t",
-				rightContext: regexp.MustCompile("^d"),
-				phonetic:     "",
+				pattern: "t",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "d",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^dZ"),
-				phonetic:     "",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "dZ",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^tS"),
-				phonetic:     "",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "tS",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^[pfkSt]"),
-				phonetic:     "s",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pfkSt]"),
+				},
+				phonetic: "s",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "s",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "s",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "Z",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "Z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "S",
-				rightContext: regexp.MustCompile("^[sSzZ]"),
-				phonetic:     "",
+				pattern: "S",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[sSzZ]"),
+				},
+				phonetic: "",
 			},
 			{
 				pattern:  "jnm",
 				phonetic: "jm",
 			},
 			{
-				pattern:     "ji",
-				leftContext: regexp.MustCompile("^$"),
-				phonetic:    "i",
+				pattern: "ji",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "i",
 			},
 			{
-				pattern:     "jI",
-				leftContext: regexp.MustCompile("^$"),
-				phonetic:    "I",
+				pattern: "jI",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "I",
 			},
 			{
-				pattern:      "a",
-				rightContext: regexp.MustCompile("^[aAB]"),
-				phonetic:     "",
+				pattern: "a",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[aAB]"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:     "a",
-				leftContext: regexp.MustCompile("[AB]$"),
-				phonetic:    "",
+				pattern: "a",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[AB]$"),
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "A",
-				rightContext: regexp.MustCompile("^A"),
-				phonetic:     "",
+				pattern: "A",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "A",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "B",
-				rightContext: regexp.MustCompile("^B"),
-				phonetic:     "",
+				pattern: "B",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "B",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "b",
-				rightContext: regexp.MustCompile("^b"),
-				phonetic:     "",
+				pattern: "b",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "b",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "d",
-				rightContext: regexp.MustCompile("^d"),
-				phonetic:     "",
+				pattern: "d",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "d",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "f",
-				rightContext: regexp.MustCompile("^f"),
-				phonetic:     "",
+				pattern: "f",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "f",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "g",
-				rightContext: regexp.MustCompile("^g"),
-				phonetic:     "",
+				pattern: "g",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "g",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "k",
-				rightContext: regexp.MustCompile("^k"),
-				phonetic:     "",
+				pattern: "k",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "k",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "l",
-				rightContext: regexp.MustCompile("^l"),
-				phonetic:     "",
+				pattern: "l",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "l",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "m",
-				rightContext: regexp.MustCompile("^m"),
-				phonetic:     "",
+				pattern: "m",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "m",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "n",
-				rightContext: regexp.MustCompile("^n"),
-				phonetic:     "",
+				pattern: "n",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "n",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "p",
-				rightContext: regexp.MustCompile("^p"),
-				phonetic:     "",
+				pattern: "p",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "p",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "r",
-				rightContext: regexp.MustCompile("^r"),
-				phonetic:     "",
+				pattern: "r",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "r",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "t",
-				rightContext: regexp.MustCompile("^t"),
-				phonetic:     "",
+				pattern: "t",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "t",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "v",
-				rightContext: regexp.MustCompile("^v"),
-				phonetic:     "",
+				pattern: "v",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "v",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^z"),
-				phonetic:     "",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "z",
+					suffix:   "",
+				},
+				phonetic: "",
 			},
 			{
 				pattern:  "H",
 				phonetic: "h",
 			},
 			{
-				pattern:      "s",
-				leftContext:  regexp.MustCompile("[^t]$"),
-				rightContext: regexp.MustCompile("^[bgZd]"),
-				phonetic:     "z",
+				pattern: "s",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[^t]$"),
+				},
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bgZd]"),
+				},
+				phonetic: "z",
 			},
 			{
-				pattern:      "Z",
-				rightContext: regexp.MustCompile("^[pfkst]"),
-				phonetic:     "S",
+				pattern: "Z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[pfkst]"),
+				},
+				phonetic: "S",
 			},
 			{
-				pattern:      "Z",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "S",
+				pattern: "Z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "S",
 			},
 			{
-				pattern:      "S",
-				rightContext: regexp.MustCompile("^[bgzd]"),
-				phonetic:     "Z",
+				pattern: "S",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^[bgzd]"),
+				},
+				phonetic: "Z",
 			},
 			{
-				pattern:      "z",
-				rightContext: regexp.MustCompile("^$"),
-				phonetic:     "s",
+				pattern: "z",
+				rightContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("^$"),
+				},
+				phonetic: "s",
 			},
 			{
-				pattern:     "ji",
-				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
-				phonetic:    "j",
+				pattern: "ji",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[aAoOeEiIuU]$"),
+				},
+				phonetic: "j",
 			},
 			{
-				pattern:     "jI",
-				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
-				phonetic:    "j",
+				pattern: "jI",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[aAoOeEiIuU]$"),
+				},
+				phonetic: "j",
 			},
 			{
-				pattern:     "je",
-				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
-				phonetic:    "j",
+				pattern: "je",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[aAoOeEiIuU]$"),
+				},
+				phonetic: "j",
 			},
 			{
-				pattern:     "jE",
-				leftContext: regexp.MustCompile("[aAoOeEiIuU]$"),
-				phonetic:    "j",
+				pattern: "jE",
+				leftContext: &ruleMatcher{
+					contains: "",
+					prefix:   "",
+					suffix:   "",
+					pattern:  regexp.MustCompile("[aAoOeEiIuU]$"),
+				},
+				phonetic: "j",
 			},
 		},
 		second: map[uint64][]rule{

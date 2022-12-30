@@ -57,8 +57,16 @@ func transformRuleSet(src SrcRuleSet) DestRuleSet {
 
 	result.Mode = src.Mode
 	result.Languages = src.Languages
-	result.Rules = src.Rules
-	result.FinalRules = src.FinalRules
+
+	result.Rules = make(map[string][]DestRule, len(src.Rules))
+	for code, rules := range src.Rules {
+		result.Rules[code] = transformRules(rules)
+	}
+
+	result.FinalRules = DestFinalRules{
+		Approx: transformFinalRule(src.FinalRules.Approx),
+		Exact:  transformFinalRule(src.FinalRules.Exact),
+	}
 
 	result.LangRules = make([]DestLangRule, len(src.LangRules))
 	for i, lr := range src.LangRules {
@@ -81,6 +89,55 @@ var (
 	prefixRegexp   = regexp.MustCompile(`^\^\p{L}+$`)
 	suffixRegexp   = regexp.MustCompile(`^\p{L}+\$$`)
 )
+
+func transformFinalRule(src SrcFinalRule) DestFinalRule {
+	result := DestFinalRule{
+		First:  transformRules(src.First),
+		Second: make([]DestSecondFinalRule, len(src.Second)),
+	}
+
+	for i, sr := range src.Second {
+		result.Second[i] = DestSecondFinalRule{
+			Lang:  sr.Lang,
+			Rules: transformRules(sr.Rules),
+		}
+	}
+
+	return result
+}
+
+func transformRules(src []SrcRule) []DestRule {
+	result := make([]DestRule, len(src))
+	for i, s := range src {
+		result[i] = transformRule(s)
+	}
+	return result
+}
+
+func transformRule(src SrcRule) DestRule {
+	result := DestRule{
+		Pattern:  src.Patterns[0],
+		Phonetic: src.Patterns[3],
+	}
+
+	l := ""
+	if src.Patterns[1] != "" {
+		l = src.Patterns[1] + "$"
+	}
+	if lm := transformPattern(l); !lm.IsEmpty() {
+		result.LeftContext = &lm
+	}
+
+	r := ""
+	if src.Patterns[2] != "" {
+		r = "^" + src.Patterns[2]
+	}
+	if rm := transformPattern(r); !rm.IsEmpty() {
+		result.RightContext = &rm
+	}
+
+	return result
+}
 
 func transformPattern(pattern string) DestRuleMatch {
 	r := DestRuleMatch{}
@@ -169,14 +226,28 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 		{{ $.Mode }}{{ $lang}}: []rule{
 			{{- range $rule := $rules }}
 				{
-					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-					{{- if ne (index $rule.Patterns 1) ""}}
-						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+					pattern: {{ printf "%q" $rule.Pattern }},
+					{{- if ne $rule.LeftContext nil}}
+						leftContext: &ruleMatcher{
+							contains: {{ printf "%q" $rule.LeftContext.Contains }},
+							prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
+							suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
+							{{- if ne $rule.LeftContext.Pattern ""}}
+								pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
+							{{- end }}
+						},
 					{{- end }}
-					{{- if ne (index $rule.Patterns 2) ""}}
-						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+					{{- if ne $rule.RightContext nil}}
+						rightContext: &ruleMatcher{
+							contains: {{ printf "%q" $rule.RightContext.Contains }},
+							prefix: {{ printf "%q" $rule.RightContext.Prefix }},
+							suffix: {{ printf "%q" $rule.RightContext.Suffix }},
+							{{- if ne $rule.RightContext.Pattern ""}}
+								pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
+							{{- end }}
+						},
 					{{- end }}
-					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+					phonetic: {{ printf "%q" $rule.Phonetic }},
 				},
 			{{- end }}
 		},
@@ -186,7 +257,7 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
-			match: ruleMatch{
+			match: ruleMatcher{
 				contains: {{ printf "%q" $rule.Match.Contains }},
 				prefix: {{ printf "%q" $rule.Match.Prefix }},
 				suffix: {{ printf "%q" $rule.Match.Suffix }},
@@ -205,14 +276,28 @@ var {{ .Mode }}FinalRules = finalRules{
 		first: []rule{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{
-					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-					{{- if ne (index $rule.Patterns 1) ""}}
-						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+					pattern: {{ printf "%q" $rule.Pattern }},
+					{{- if ne $rule.LeftContext nil}}
+						leftContext: &ruleMatcher{
+							contains: {{ printf "%q" $rule.LeftContext.Contains }},
+							prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
+							suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
+							{{- if ne $rule.LeftContext.Pattern ""}}
+								pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
+							{{- end }}
+						},
 					{{- end }}
-					{{- if ne (index $rule.Patterns 2) ""}}
-						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+					{{- if ne $rule.RightContext nil}}
+						rightContext: &ruleMatcher{
+							contains: {{ printf "%q" $rule.RightContext.Contains }},
+							prefix: {{ printf "%q" $rule.RightContext.Prefix }},
+							suffix: {{ printf "%q" $rule.RightContext.Suffix }},
+							{{- if ne $rule.RightContext.Pattern ""}}
+								pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
+							{{- end }}
+						},
 					{{- end }}
-					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+					phonetic: {{ printf "%q" $rule.Phonetic }},
 				},
 			{{- end }}
 		},
@@ -221,14 +306,28 @@ var {{ .Mode }}FinalRules = finalRules{
 				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
 						{
-							pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-							{{- if ne (index $rule.Patterns 1) ""}}
-								leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+							pattern: {{ printf "%q" $rule.Pattern }},
+							{{- if ne $rule.LeftContext nil}}
+								leftContext: &ruleMatcher{
+									contains: {{ printf "%q" $rule.LeftContext.Contains }},
+									prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
+									suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
+									{{- if ne $rule.LeftContext.Pattern ""}}
+										pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
+									{{- end }}
+								},
 							{{- end }}
-							{{- if ne (index $rule.Patterns 2) ""}}
-								rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+							{{- if ne $rule.RightContext nil}}
+								rightContext: &ruleMatcher{
+									contains: {{ printf "%q" $rule.RightContext.Contains }},
+									prefix: {{ printf "%q" $rule.RightContext.Prefix }},
+									suffix: {{ printf "%q" $rule.RightContext.Suffix }},
+									{{- if ne $rule.RightContext.Pattern ""}}
+										pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
+									{{- end }}
+								},
 							{{- end }}
-							phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+							phonetic: {{ printf "%q" $rule.Phonetic }},
 						},
 					{{- end }}
 				},
@@ -239,14 +338,28 @@ var {{ .Mode }}FinalRules = finalRules{
 		first: []rule{
 			{{- range $rule := .FinalRules.Exact.First }}
 				{
-					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-					{{- if ne (index $rule.Patterns 1) ""}}
-						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+					pattern: {{ printf "%q" $rule.Pattern }},
+					{{- if ne $rule.LeftContext nil}}
+						leftContext: &ruleMatcher{
+							contains: {{ printf "%q" $rule.LeftContext.Contains }},
+							prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
+							suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
+							{{- if ne $rule.LeftContext.Pattern ""}}
+								pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
+							{{- end }}
+						},
 					{{- end }}
-					{{- if ne (index $rule.Patterns 2) ""}}
-						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+					{{- if ne $rule.RightContext nil}}
+						rightContext: &ruleMatcher{
+							contains: {{ printf "%q" $rule.RightContext.Contains }},
+							prefix: {{ printf "%q" $rule.RightContext.Prefix }},
+							suffix: {{ printf "%q" $rule.RightContext.Suffix }},
+							{{- if ne $rule.RightContext.Pattern ""}}
+								pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
+							{{- end }}
+						},
 					{{- end }}
-					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+					phonetic: {{ printf "%q" $rule.Phonetic }},
 				},
 			{{- end }}
 		},
@@ -255,14 +368,28 @@ var {{ .Mode }}FinalRules = finalRules{
 				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
 						{
-							pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-							{{- if ne (index $rule.Patterns 1) ""}}
-								leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
+							pattern: {{ printf "%q" $rule.Pattern }},
+							{{- if ne $rule.LeftContext nil}}
+								leftContext: &ruleMatcher{
+									contains: {{ printf "%q" $rule.LeftContext.Contains }},
+									prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
+									suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
+									{{- if ne $rule.LeftContext.Pattern ""}}
+										pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
+									{{- end }}
+								},
 							{{- end }}
-							{{- if ne (index $rule.Patterns 2) ""}}
-								rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
+							{{- if ne $rule.RightContext nil}}
+								rightContext: &ruleMatcher{
+									contains: {{ printf "%q" $rule.RightContext.Contains }},
+									prefix: {{ printf "%q" $rule.RightContext.Prefix }},
+									suffix: {{ printf "%q" $rule.RightContext.Suffix }},
+									{{- if ne $rule.RightContext.Pattern ""}}
+										pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
+									{{- end }}
+								},
 							{{- end }}
-							phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
+							phonetic: {{ printf "%q" $rule.Phonetic }},
 						},
 					{{- end }}
 				},
@@ -316,10 +443,17 @@ type SrcRuleSet struct {
 type DestRuleSet struct {
 	Mode       string
 	Languages  []string
-	Rules      map[string][]SrcRule
-	FinalRules SrcFinalRules
+	Rules      map[string][]DestRule
+	FinalRules DestFinalRules
 	LangRules  []DestLangRule
 	Discards   []string
+}
+
+type DestRule struct {
+	Pattern      string
+	LeftContext  *DestRuleMatch
+	RightContext *DestRuleMatch
+	Phonetic     string
 }
 
 type DestLangRule struct {
@@ -328,9 +462,28 @@ type DestLangRule struct {
 	Accept bool
 }
 
+type DestSecondFinalRule struct {
+	Lang  uint64     `json:"lang"`
+	Rules []DestRule `json:"rules"`
+}
+
+type DestFinalRule struct {
+	First  []DestRule            `json:"first"`
+	Second []DestSecondFinalRule `json:"second"`
+}
+
+type DestFinalRules struct {
+	Approx DestFinalRule `json:"approx"`
+	Exact  DestFinalRule `json:"exact"`
+}
+
 type DestRuleMatch struct {
 	Pattern  string
 	Prefix   string
 	Suffix   string
 	Contains string
+}
+
+func (m DestRuleMatch) IsEmpty() bool {
+	return m.Contains == "" && m.Prefix == "" && m.Suffix == "" && m.Pattern == ""
 }

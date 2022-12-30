@@ -32,8 +32,8 @@ func (r Ruleset) Valid() bool {
 
 type rule struct {
 	pattern      string
-	leftContext  *regexp.Regexp
-	rightContext *regexp.Regexp
+	leftContext  *ruleMatcher
+	rightContext *ruleMatcher
 	phonetic     string
 }
 
@@ -48,19 +48,19 @@ type finalRule struct {
 }
 
 type langRule struct {
-	match  ruleMatch
+	match  ruleMatcher
 	langs  uint64
 	accept bool
 }
 
-type ruleMatch struct {
+type ruleMatcher struct {
 	pattern  *regexp.Regexp
 	prefix   string
 	suffix   string
 	contains string
 }
 
-func (r ruleMatch) matches(str string) bool {
+func (r ruleMatcher) matches(str string) bool {
 	if r.contains != "" {
 		return strings.Contains(str, r.contains)
 	}
