@@ -10,6 +10,7 @@ import (
 	"go/format"
 	"io/ioutil"
 	"os"
+	"regexp"
 	"strings"
 	"text/template"
 )
@@ -34,7 +35,7 @@ func main() {
 
 	for mode, ruleSet := range rules {
 		var buf bytes.Buffer
-		err := tpl.Execute(&buf, ruleSet)
+		err := tpl.Execute(&buf, transformRuleSet(ruleSet))
 		if err != nil {
 			panic(err)
 		}
@@ -51,42 +52,54 @@ func main() {
 	}
 }
 
-type Rule struct {
-	Patterns [4]string `json:"patterns"`
+func transformRuleSet(src SrcRuleSet) DestRuleSet {
+	result := DestRuleSet{}
+
+	result.Mode = src.Mode
+	result.Languages = src.Languages
+	result.Rules = src.Rules
+	result.FinalRules = src.FinalRules
+
+	result.LangRules = make([]DestLangRule, len(src.LangRules))
+	for i, lr := range src.LangRules {
+		r := DestLangRule{
+			Langs:  lr.Langs,
+			Accept: lr.Accept,
+			Match:  transformPattern(lr.Pattern),
+		}
+
+		result.LangRules[i] = r
+	}
+
+	result.Discards = src.Discards
+
+	return result
 }
 
-type SecondFinalRule struct {
-	Lang  uint64 `json:"lang"`
-	Rules []Rule `json:"rules"`
+var (
+	containsRegexp = regexp.MustCompile(`^\p{L}+$`)
+	prefixRegexp   = regexp.MustCompile(`^\^\p{L}+$`)
+	suffixRegexp   = regexp.MustCompile(`^\p{L}+\$$`)
+)
+
+func transformPattern(pattern string) DestRuleMatch {
+	r := DestRuleMatch{}
+
+	if containsRegexp.MatchString(pattern) {
+		r.Contains = pattern
+	} else if prefixRegexp.MatchString(pattern) {
+		r.Prefix = strings.ReplaceAll(pattern, "^", "")
+	} else if suffixRegexp.MatchString(pattern) {
+		r.Suffix = strings.ReplaceAll(pattern, "$", "")
+	} else {
+		r.Pattern = pattern
+	}
+
+	return r
 }
 
-type FinalRule struct {
-	First  []Rule            `json:"first"`
-	Second []SecondFinalRule `json:"second"`
-}
-
-type FinalRules struct {
-	Approx FinalRule `json:"approx"`
-	Exact  FinalRule `json:"exact"`
-}
-
-type LangRule struct {
-	Pattern string `json:"pattern"`
-	Langs   uint64 `json:"langs"`
-	Accept  bool   `json:"accept"`
-}
-
-type RuleSet struct {
-	Mode       string            `json:"-"`
-	Languages  []string          `json:"languages"`
-	Rules      map[string][]Rule `json:"rules"`
-	FinalRules FinalRules        `json:"finalRules"`
-	LangRules  []LangRule        `json:"langRules"`
-	Discards   []string          `json:"discards"`
-}
-
-func loadRules() (map[string]RuleSet, error) {
-	result := make(map[string]RuleSet)
+func loadRules() (map[string]SrcRuleSet, error) {
+	result := make(map[string]SrcRuleSet)
 	for mode, filename := range ruleSources {
 		f, err := os.Open(filename)
 		if err != nil {
@@ -96,7 +109,7 @@ func loadRules() (map[string]RuleSet, error) {
 		if err != nil {
 			return nil, err
 		}
-		var rules RuleSet
+		var rules SrcRuleSet
 		if err := json.Unmarshal(data, &rules); err != nil {
 			return nil, fmt.Errorf("%q unmarshal err: %w", mode, err)
 		}
@@ -106,7 +119,7 @@ func loadRules() (map[string]RuleSet, error) {
 	return result, nil
 }
 
-func fixRules(rules map[string]RuleSet) {
+func fixRules(rules map[string]SrcRuleSet) {
 	// remove "/" in lang rules' patterns
 	for mode, ruleSet := range rules {
 		for i := range ruleSet.LangRules {
@@ -173,7 +186,14 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
-			pattern: regexp.MustCompile({{ printf "%q" $rule.Pattern }}),
+			match: ruleMatch{
+				contains: {{ printf "%q" $rule.Match.Contains }},
+				prefix: {{ printf "%q" $rule.Match.Prefix }},
+				suffix: {{ printf "%q" $rule.Match.Suffix }},
+				{{- if ne $rule.Match.Pattern ""}}
+					pattern: regexp.MustCompile({{ printf "%q" $rule.Match.Pattern }}),
+				{{- end }}
+			},
 			langs: {{ $rule.Langs }},
 			accept: {{ $rule.Accept }},
 		},
@@ -258,3 +278,59 @@ var {{ .Mode }}Discards = []string{
 	{{- end }}
 }
 `
+
+type SrcRule struct {
+	Patterns [4]string `json:"patterns"`
+}
+
+type SrcSecondFinalRule struct {
+	Lang  uint64    `json:"lang"`
+	Rules []SrcRule `json:"rules"`
+}
+
+type SrcFinalRule struct {
+	First  []SrcRule            `json:"first"`
+	Second []SrcSecondFinalRule `json:"second"`
+}
+
+type SrcFinalRules struct {
+	Approx SrcFinalRule `json:"approx"`
+	Exact  SrcFinalRule `json:"exact"`
+}
+
+type SrcLangRule struct {
+	Pattern string `json:"pattern"`
+	Langs   uint64 `json:"langs"`
+	Accept  bool   `json:"accept"`
+}
+
+type SrcRuleSet struct {
+	Mode       string               `json:"-"`
+	Languages  []string             `json:"languages"`
+	Rules      map[string][]SrcRule `json:"rules"`
+	FinalRules SrcFinalRules        `json:"finalRules"`
+	LangRules  []SrcLangRule        `json:"langRules"`
+	Discards   []string             `json:"discards"`
+}
+
+type DestRuleSet struct {
+	Mode       string
+	Languages  []string
+	Rules      map[string][]SrcRule
+	FinalRules SrcFinalRules
+	LangRules  []DestLangRule
+	Discards   []string
+}
+
+type DestLangRule struct {
+	Match  DestRuleMatch
+	Langs  uint64
+	Accept bool
+}
+
+type DestRuleMatch struct {
+	Pattern  string
+	Prefix   string
+	Suffix   string
+	Contains string
+}

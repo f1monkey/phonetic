@@ -7001,1294 +7001,2353 @@ var genRules = map[genLang][]rule{
 
 var genLangRules = []langRule{
 	{
-		pattern: regexp.MustCompile("^o’"),
-		langs:   32,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^o'"),
-		langs:   32,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^mc"),
-		langs:   32,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^fitz"),
-		langs:   32,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ceau"),
-		langs:   65600,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("eau"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ault$"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("oult$"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("eux$"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("eix$"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("glou$"),
-		langs:   512,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("uu"),
-		langs:   16,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("tx"),
-		langs:   262144,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("witz"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("tz$"),
-		langs:   131232,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^tz"),
-		langs:   131104,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("poulos$"),
-		langs:   512,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("pulos$"),
-		langs:   512,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("iou"),
-		langs:   512,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("sj$"),
-		langs:   16,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^sj"),
-		langs:   16,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("güe"),
-		langs:   262144,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("güi"),
-		langs:   262144,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ghe"),
-		langs:   66048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ghi"),
-		langs:   66048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("escu$"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("esco$"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("vici$"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("schi$"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ii$"),
-		langs:   131072,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("iy$"),
-		langs:   131072,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("yy$"),
-		langs:   131072,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("yi$"),
-		langs:   131072,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^rz"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("rz$"),
-		langs:   16512,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("[bcdfgklmnpstwz]rz"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("rz[bcdfghklmnpstw]"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("cki$"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ska$"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("cka$"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ae"),
-		langs:   131232,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("oe"),
-		langs:   131312,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("th$"),
-		langs:   160,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^th"),
-		langs:   672,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("mann"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("cz"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("cy"),
-		langs:   16896,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("niew"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("etti$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("eti$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ati$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ato$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("[aoei]no$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("[aoei]ni$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("esi$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("oli$"),
-		langs:   4096,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("field$"),
-		langs:   32,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("stein"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("heim$"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("heimer$"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("thal"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("zweig"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("[aeou]h"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("äh"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("öh"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("üh"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("[ln]h[ao]$"),
-		langs:   32768,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("[ln]h[aou]"),
-		langs:   819416,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("chsch"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("tsch"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("sch$"),
-		langs:   131200,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^sch"),
-		langs:   131200,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ck$"),
-		langs:   160,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("c$"),
-		langs:   608264,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("sz"),
-		langs:   18432,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("cs$"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^cs"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("dzs"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("zs$"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^zs"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^wl"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("^wr"),
-		langs:   16560,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("gy$"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("gy[aeou]"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("gy"),
-		langs:   133696,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("guy"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("gu[ei]"),
-		langs:   294976,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("gu[ao]"),
-		langs:   294912,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("gi[aou]"),
-		langs:   4608,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ly"),
-		langs:   150016,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ny"),
-		langs:   412160,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ty"),
-		langs:   150016,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ā"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ć"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ç"),
-		langs:   819264,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("č"),
-		langs:   8200,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ď"),
-		langs:   8,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ē"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ğ"),
-		langs:   524288,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ģ"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ī"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ķ"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ļ"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ł"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ņ"),
-		langs:   8192,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ń"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ñ"),
-		langs:   262144,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ň"),
-		langs:   8,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ř"),
-		langs:   8,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ś"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ş"),
-		langs:   589824,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("š"),
-		langs:   8200,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ţ"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ť"),
-		langs:   8,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ź"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ž"),
-		langs:   8200,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ż"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ß"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ä"),
-		langs:   128,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("á"),
-		langs:   297480,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("â"),
-		langs:   98368,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ă"),
-		langs:   65536,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ą"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("à"),
-		langs:   32768,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ã"),
-		langs:   32768,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ę"),
-		langs:   16384,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("é"),
-		langs:   2632,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("è"),
-		langs:   266304,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ê"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ě"),
-		langs:   8,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ê"),
-		langs:   32832,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("í"),
-		langs:   297480,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("î"),
-		langs:   65600,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ı"),
-		langs:   524288,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ó"),
-		langs:   317960,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ö"),
-		langs:   526464,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ô"),
-		langs:   32832,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("õ"),
-		langs:   34816,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ò"),
-		langs:   266240,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ű"),
-		langs:   2048,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ú"),
-		langs:   297480,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ü"),
-		langs:   821376,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ù"),
-		langs:   64,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ů"),
-		langs:   8,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ý"),
-		langs:   520,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("а"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ё"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("о"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("е"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("и"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("у"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ы"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("э"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ю"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("я"),
-		langs:   4,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("α"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ε"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("η"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ι"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ο"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("υ"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ω"),
-		langs:   256,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ا"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ب"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ت"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ث"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ج"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ح"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("خ'"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("د"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ذ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ر"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ز"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("س"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ش"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ص"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ض"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ط"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ظ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ع"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("غ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ف"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ق"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ك"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ل"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("م"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ن"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ه"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("و"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ي"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("آ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("إ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("أ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ؤ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ئ"),
-		langs:   2,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("א"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ב"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ג"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ד"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ה"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ו"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ז"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ח"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ט"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("י"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("כ"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ל"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("מ"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("נ"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ס"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ע"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("פ"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("צ"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ק"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ר"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ש"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("ת"),
-		langs:   1024,
-		accept:  true,
-	},
-	{
-		pattern: regexp.MustCompile("a"),
-		langs:   1286,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("o"),
-		langs:   1286,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("e"),
-		langs:   1286,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("i"),
-		langs:   1286,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("y"),
-		langs:   75030,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("u"),
-		langs:   1286,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("j"),
-		langs:   4096,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("j[^aoeiuy]"),
-		langs:   295488,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("g"),
-		langs:   8,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("k"),
-		langs:   364608,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("q"),
-		langs:   748056,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("v"),
-		langs:   16384,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("w"),
-		langs:   993864,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("x"),
-		langs:   534552,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("dj"),
-		langs:   786432,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("v[^aoeiu]"),
-		langs:   128,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("y[^aoeiu]"),
-		langs:   128,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("c[^aohk]"),
-		langs:   128,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("dzi"),
-		langs:   524512,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ou"),
-		langs:   128,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("a[eiou]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ö[eaiou]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ü[eaiou]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("e[aiou]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("i[aeou]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("o[aieu]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("u[aieo]"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("aj"),
-		langs:   240,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ej"),
-		langs:   240,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("oj"),
-		langs:   240,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("uj"),
-		langs:   240,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("eu"),
-		langs:   147456,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ky"),
-		langs:   16384,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("kie"),
-		langs:   262720,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("gie"),
-		langs:   360960,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ch[aou]"),
-		langs:   4096,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("ch"),
-		langs:   524288,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("son$"),
-		langs:   128,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("sc[ei]"),
-		langs:   64,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("sch"),
-		langs:   280640,
-		accept:  false,
-	},
-	{
-		pattern: regexp.MustCompile("^h"),
-		langs:   131072,
-		accept:  false,
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("^o’"),
+		},
+		langs:  32,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("^o'"),
+		},
+		langs:  32,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "mc",
+			suffix:   "",
+		},
+		langs:  32,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "fitz",
+			suffix:   "",
+		},
+		langs:  32,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ceau",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  65600,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "eau",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "ault",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "oult",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "eux",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "eix",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "glou",
+		},
+		langs:  512,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "uu",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "tx",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  262144,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "witz",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "tz",
+		},
+		langs:  131232,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "tz",
+			suffix:   "",
+		},
+		langs:  131104,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "poulos",
+		},
+		langs:  512,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "pulos",
+		},
+		langs:  512,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "iou",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  512,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "sj",
+		},
+		langs:  16,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "sj",
+			suffix:   "",
+		},
+		langs:  16,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "güe",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  262144,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "güi",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  262144,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ghe",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  66048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ghi",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  66048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "escu",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "esco",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "vici",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "schi",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "ii",
+		},
+		langs:  131072,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "iy",
+		},
+		langs:  131072,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "yy",
+		},
+		langs:  131072,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "yi",
+		},
+		langs:  131072,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "rz",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "rz",
+		},
+		langs:  16512,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("[bcdfgklmnpstwz]rz"),
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("rz[bcdfghklmnpstw]"),
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "cki",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "ska",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "cka",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ae",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  131232,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "oe",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  131312,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "th",
+		},
+		langs:  160,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "th",
+			suffix:   "",
+		},
+		langs:  672,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "mann",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "cz",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "cy",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16896,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "niew",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "etti",
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "eti",
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "ati",
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "ato",
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("[aoei]no$"),
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("[aoei]ni$"),
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "esi",
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "oli",
+		},
+		langs:  4096,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "field",
+		},
+		langs:  32,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "stein",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "heim",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "heimer",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "thal",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "zweig",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("[aeou]h"),
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "äh",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "öh",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "üh",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("[ln]h[ao]$"),
+		},
+		langs:  32768,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("[ln]h[aou]"),
+		},
+		langs:  819416,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "chsch",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "tsch",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "sch",
+		},
+		langs:  131200,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "sch",
+			suffix:   "",
+		},
+		langs:  131200,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "ck",
+		},
+		langs:  160,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "c",
+		},
+		langs:  608264,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "sz",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  18432,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "cs",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "cs",
+			suffix:   "",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "dzs",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "zs",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "zs",
+			suffix:   "",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "wl",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "wr",
+			suffix:   "",
+		},
+		langs:  16560,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "gy",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("gy[aeou]"),
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "gy",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  133696,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "guy",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("gu[ei]"),
+		},
+		langs:  294976,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("gu[ao]"),
+		},
+		langs:  294912,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("gi[aou]"),
+		},
+		langs:  4608,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ly",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  150016,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ny",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  412160,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ty",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  150016,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ā",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ć",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ç",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  819264,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "č",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8200,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ď",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ē",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ğ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  524288,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ģ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ī",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ķ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ļ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ł",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ņ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8192,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ń",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ñ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  262144,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ň",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ř",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ś",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ş",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  589824,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "š",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8200,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ţ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ť",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ź",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ž",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8200,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ż",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ß",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ä",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "á",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  297480,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "â",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  98368,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ă",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  65536,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ą",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "à",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  32768,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ã",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  32768,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ę",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "é",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2632,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "è",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  266304,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ê",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ě",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ê",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  32832,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "í",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  297480,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "î",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  65600,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ı",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  524288,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ó",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  317960,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ö",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  526464,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ô",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  32832,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "õ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  34816,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ò",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  266240,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ű",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2048,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ú",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  297480,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ü",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  821376,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ù",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  64,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ů",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ý",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  520,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "а",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ё",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "о",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "е",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "и",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "у",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ы",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "э",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ю",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "я",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "α",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ε",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "η",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ι",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ο",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "υ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ω",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  256,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ا",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ب",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ت",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ث",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ج",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ح",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("خ'"),
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "د",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ذ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ر",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ز",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "س",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ش",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ص",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ض",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ط",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ظ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ع",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "غ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ف",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ق",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ك",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ل",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "م",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ن",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ه",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "و",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ي",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "آ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "إ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "أ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ؤ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ئ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  2,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "א",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ב",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ג",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ד",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ה",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ו",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ז",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ח",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ט",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "י",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "כ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ל",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "מ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "נ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ס",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ע",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "פ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "צ",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ק",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ר",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ש",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "ת",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1024,
+		accept: true,
+	},
+	{
+		match: ruleMatch{
+			contains: "a",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1286,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "o",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1286,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "e",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1286,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "i",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1286,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "y",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  75030,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "u",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  1286,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "j",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  4096,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("j[^aoeiuy]"),
+		},
+		langs:  295488,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "g",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  8,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "k",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  364608,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "q",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  748056,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "v",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "w",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  993864,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "x",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  534552,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "dj",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  786432,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("v[^aoeiu]"),
+		},
+		langs:  128,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("y[^aoeiu]"),
+		},
+		langs:  128,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("c[^aohk]"),
+		},
+		langs:  128,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "dzi",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  524512,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "ou",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  128,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("a[eiou]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("ö[eaiou]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("ü[eaiou]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("e[aiou]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("i[aeou]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("o[aieu]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("u[aieo]"),
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "aj",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  240,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "ej",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  240,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "oj",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  240,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "uj",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  240,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "eu",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  147456,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "ky",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  16384,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "kie",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  262720,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "gie",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  360960,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("ch[aou]"),
+		},
+		langs:  4096,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "ch",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  524288,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "son",
+		},
+		langs:  128,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "",
+			suffix:   "",
+			pattern:  regexp.MustCompile("sc[ei]"),
+		},
+		langs:  64,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "sch",
+			prefix:   "",
+			suffix:   "",
+		},
+		langs:  280640,
+		accept: false,
+	},
+	{
+		match: ruleMatch{
+			contains: "",
+			prefix:   "h",
+			suffix:   "",
+		},
+		langs:  131072,
+		accept: false,
 	},
 }
 

@@ -32,7 +32,7 @@ func detectLang(word string, mode Mode) uint64 {
 
 	remaining := all
 	for _, rule := range rules {
-		if !rule.pattern.MatchString(word) {
+		if !rule.match.matches(word) {
 			continue
 		}
 
