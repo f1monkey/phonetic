@@ -189,13 +189,39 @@ func fixRules(rules map[string]SrcRuleSet) {
 }
 
 const rulesTemplate = `
+{{- define "ruletpl" }}
+{
+	pattern: {{ printf "%q" .Pattern }},
+	{{- if ne .LeftContext nil}}
+		leftContext: &ruleMatcher{
+			contains: {{ printf "%q" .LeftContext.Contains }},
+			prefix: {{ printf "%q" .LeftContext.Prefix }},
+			suffix: {{ printf "%q" .LeftContext.Suffix }},
+			{{- if ne .LeftContext.Pattern ""}}
+				pattern: regexp.MustCompile({{ printf "%q" .LeftContext.Pattern }}),
+			{{- end }}
+		},
+	{{- end }}
+	{{- if ne .RightContext nil}}
+		rightContext: &ruleMatcher{
+			contains: {{ printf "%q" .RightContext.Contains }},
+			prefix: {{ printf "%q" .RightContext.Prefix }},
+			suffix: {{ printf "%q" .RightContext.Suffix }},
+			{{- if ne .RightContext.Pattern ""}}
+				pattern: regexp.MustCompile({{ printf "%q" .RightContext.Pattern }}),
+			{{- end }}
+		},
+	{{- end }}
+	phonetic: {{ printf "%q" .Phonetic }},
+},
+{{- end }}
+
 // GENERATED CODE. DO NOT EDIT!
 package beidermorse
 
 import "regexp"
 
 type {{ .Mode }}Lang uint64
-
 
 const (
 	{{.Mode}}{{ (index .Languages 0) }} {{ .Mode }}Lang = 1 << iota
@@ -225,30 +251,7 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 	{{- range $lang, $rules := .Rules }}
 		{{ $.Mode }}{{ $lang}}: []rule{
 			{{- range $rule := $rules }}
-				{
-					pattern: {{ printf "%q" $rule.Pattern }},
-					{{- if ne $rule.LeftContext nil}}
-						leftContext: &ruleMatcher{
-							contains: {{ printf "%q" $rule.LeftContext.Contains }},
-							prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
-							suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
-							{{- if ne $rule.LeftContext.Pattern ""}}
-								pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
-							{{- end }}
-						},
-					{{- end }}
-					{{- if ne $rule.RightContext nil}}
-						rightContext: &ruleMatcher{
-							contains: {{ printf "%q" $rule.RightContext.Contains }},
-							prefix: {{ printf "%q" $rule.RightContext.Prefix }},
-							suffix: {{ printf "%q" $rule.RightContext.Suffix }},
-							{{- if ne $rule.RightContext.Pattern ""}}
-								pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
-							{{- end }}
-						},
-					{{- end }}
-					phonetic: {{ printf "%q" $rule.Phonetic }},
-				},
+				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
 	{{- end }}
@@ -275,60 +278,14 @@ var {{ .Mode }}FinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{{- range $rule := .FinalRules.Approx.First }}
-				{
-					pattern: {{ printf "%q" $rule.Pattern }},
-					{{- if ne $rule.LeftContext nil}}
-						leftContext: &ruleMatcher{
-							contains: {{ printf "%q" $rule.LeftContext.Contains }},
-							prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
-							suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
-							{{- if ne $rule.LeftContext.Pattern ""}}
-								pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
-							{{- end }}
-						},
-					{{- end }}
-					{{- if ne $rule.RightContext nil}}
-						rightContext: &ruleMatcher{
-							contains: {{ printf "%q" $rule.RightContext.Contains }},
-							prefix: {{ printf "%q" $rule.RightContext.Prefix }},
-							suffix: {{ printf "%q" $rule.RightContext.Suffix }},
-							{{- if ne $rule.RightContext.Pattern ""}}
-								pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
-							{{- end }}
-						},
-					{{- end }}
-					phonetic: {{ printf "%q" $rule.Phonetic }},
-				},
+				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
 		second: map[uint64][]rule{
 			{{- range $secRule := .FinalRules.Approx.Second }}
 				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
-						{
-							pattern: {{ printf "%q" $rule.Pattern }},
-							{{- if ne $rule.LeftContext nil}}
-								leftContext: &ruleMatcher{
-									contains: {{ printf "%q" $rule.LeftContext.Contains }},
-									prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
-									suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
-									{{- if ne $rule.LeftContext.Pattern ""}}
-										pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
-									{{- end }}
-								},
-							{{- end }}
-							{{- if ne $rule.RightContext nil}}
-								rightContext: &ruleMatcher{
-									contains: {{ printf "%q" $rule.RightContext.Contains }},
-									prefix: {{ printf "%q" $rule.RightContext.Prefix }},
-									suffix: {{ printf "%q" $rule.RightContext.Suffix }},
-									{{- if ne $rule.RightContext.Pattern ""}}
-										pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
-									{{- end }}
-								},
-							{{- end }}
-							phonetic: {{ printf "%q" $rule.Phonetic }},
-						},
+						{{- template "ruletpl" $rule }}
 					{{- end }}
 				},
 			{{- end }}
@@ -337,60 +294,14 @@ var {{ .Mode }}FinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{{- range $rule := .FinalRules.Exact.First }}
-				{
-					pattern: {{ printf "%q" $rule.Pattern }},
-					{{- if ne $rule.LeftContext nil}}
-						leftContext: &ruleMatcher{
-							contains: {{ printf "%q" $rule.LeftContext.Contains }},
-							prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
-							suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
-							{{- if ne $rule.LeftContext.Pattern ""}}
-								pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
-							{{- end }}
-						},
-					{{- end }}
-					{{- if ne $rule.RightContext nil}}
-						rightContext: &ruleMatcher{
-							contains: {{ printf "%q" $rule.RightContext.Contains }},
-							prefix: {{ printf "%q" $rule.RightContext.Prefix }},
-							suffix: {{ printf "%q" $rule.RightContext.Suffix }},
-							{{- if ne $rule.RightContext.Pattern ""}}
-								pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
-							{{- end }}
-						},
-					{{- end }}
-					phonetic: {{ printf "%q" $rule.Phonetic }},
-				},
+				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
 		second: map[uint64][]rule{
 			{{- range $secRule := .FinalRules.Exact.Second }}
 				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
-						{
-							pattern: {{ printf "%q" $rule.Pattern }},
-							{{- if ne $rule.LeftContext nil}}
-								leftContext: &ruleMatcher{
-									contains: {{ printf "%q" $rule.LeftContext.Contains }},
-									prefix: {{ printf "%q" $rule.LeftContext.Prefix }},
-									suffix: {{ printf "%q" $rule.LeftContext.Suffix }},
-									{{- if ne $rule.LeftContext.Pattern ""}}
-										pattern: regexp.MustCompile({{ printf "%q" $rule.LeftContext.Pattern }}),
-									{{- end }}
-								},
-							{{- end }}
-							{{- if ne $rule.RightContext nil}}
-								rightContext: &ruleMatcher{
-									contains: {{ printf "%q" $rule.RightContext.Contains }},
-									prefix: {{ printf "%q" $rule.RightContext.Prefix }},
-									suffix: {{ printf "%q" $rule.RightContext.Suffix }},
-									{{- if ne $rule.RightContext.Pattern ""}}
-										pattern: regexp.MustCompile({{ printf "%q" $rule.RightContext.Pattern }}),
-									{{- end }}
-								},
-							{{- end }}
-							phonetic: {{ printf "%q" $rule.Phonetic }},
-						},
+						{{- template "ruletpl" $rule }}
 					{{- end }}
 				},
 			{{- end }}
