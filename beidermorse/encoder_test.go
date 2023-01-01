@@ -22,6 +22,29 @@ func Test_Encoder_Encode(t *testing.T) {
 		expected []string
 	}{
 		{
+			name:    "en_generic_approx",
+			mode:    Generic,
+			ruleset: Approx,
+			input:   "test",
+			expected: []string{
+				"tist",
+				"tYst",
+				"tis",
+				"tit",
+				"ti",
+			},
+		},
+		{
+			name:    "en_generic_exact",
+			mode:    Generic,
+			ruleset: Exact,
+			input:   "test",
+			expected: []string{
+				"teSt",
+				"test",
+			},
+		},
+		{
 			name:     "ru_generic_exact",
 			mode:     Generic,
 			ruleset:  Exact,
