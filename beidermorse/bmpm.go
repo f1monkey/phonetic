@@ -2,6 +2,7 @@ package beidermorse
 
 import (
 	"encoding/hex"
+	"math/bits"
 	"strconv"
 	"strings"
 	"unicode/utf8"
@@ -140,23 +141,6 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 					continue
 				}
 			}
-
-			// // check to see if languageArg is one of the allowable ones (used only with "any" rules)
-			// if (languageArg != "1") && (languagePos < len(rule)) {
-			// 	language = rule[languagePos] // the required language(s) for this rule to apply
-			// 	logical := rule[logicalPos]  // do we require ALL or ANY of the required languages
-			// 	if logical == "ALL" {
-			// 		// check to see if languageArg contains all the required languages
-			// 		if (languageArg & language) != language {
-			// 			continue
-			// 		}
-			// 	} else { // any
-			// 		// check to see if languageArg contains at least one required language
-			// 		if (languageArg & language) == 0 {
-			// 			continue
-			// 		}
-			// 	}
-			// }
 
 			// check for incompatible attributes
 
@@ -539,6 +523,11 @@ func getRules(
 	ruleset Ruleset,
 	lang uint64,
 ) (rules []rule, finalRules1 []rule, finalRules2 []rule, discards []string) {
+	langCount := bits.OnesCount64(lang)
+	if langCount > 1 {
+		lang = 1 // any
+	}
+
 	switch mode {
 	case Generic:
 		rules = genRules[genLang(lang)]
