@@ -8,9 +8,15 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func Benchmark_detectLang(b *testing.B) {
+func Benchmark_detectLang_en(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		detectLang("orange", Generic)
+	}
+}
+
+func Benchmark_detectLang_ru(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		detectLang("апельсин", Generic)
 	}
 }
 

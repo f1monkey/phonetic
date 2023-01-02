@@ -13,6 +13,27 @@ func Benchmark_Encoder_Encode_Ru_Approx(b *testing.B) {
 	}
 }
 
+func Benchmark_Encoder_Encode_Ru_Exact(b *testing.B) {
+	e := MustNewEncoder(WithNameMode(Generic), WithRuleset(Exact))
+	for i := 0; i < b.N; i++ {
+		e.Encode("апельсин")
+	}
+}
+
+func Benchmark_Encoder_Encode_En_Approx(b *testing.B) {
+	e := MustNewEncoder(WithNameMode(Generic), WithRuleset(Approx))
+	for i := 0; i < b.N; i++ {
+		e.Encode("orange")
+	}
+}
+
+func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
+	e := MustNewEncoder(WithNameMode(Generic), WithRuleset(Exact))
+	for i := 0; i < b.N; i++ {
+		e.Encode("orange")
+	}
+}
+
 func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
 		name     string
