@@ -31,10 +31,16 @@ func (r Ruleset) Valid() bool {
 }
 
 type rule struct {
-	pattern      string
-	leftContext  *ruleMatcher
-	rightContext *ruleMatcher
-	phonetic     string
+	pattern       string
+	leftContext   *ruleMatcher
+	rightContext  *ruleMatcher
+	phonetic      string
+	phoneticRules []phoneticRule
+}
+
+type phoneticRule struct {
+	text  string
+	langs int64
 }
 
 type finalRules struct {

@@ -11,6 +11,7 @@ import (
 	"io/ioutil"
 	"os"
 	"regexp"
+	"strconv"
 	"strings"
 	"text/template"
 )
@@ -116,8 +117,9 @@ func transformRules(src []SrcRule) []DestRule {
 
 func transformRule(src SrcRule) DestRule {
 	result := DestRule{
-		Pattern:  src.Patterns[0],
-		Phonetic: src.Patterns[3],
+		Pattern:       src.Patterns[0],
+		Phonetic:      src.Patterns[3],
+		PhoneticRules: transformRulesPhonetic(src.Patterns[3]),
 	}
 
 	l := ""
@@ -137,6 +139,46 @@ func transformRule(src SrcRule) DestRule {
 	}
 
 	return result
+}
+
+func transformRulesPhonetic(src string) []DestRulePhonetic {
+	if strings.Index(src, "(") == -1 {
+		return []DestRulePhonetic{transformRulePhonetic(src)}
+	}
+
+	if strings.Index(src, ")") == -1 {
+		panic(fmt.Errorf("invalid rule %q: must contain closing bracket ')'", src))
+	}
+
+	src = strings.Trim(src, "()")
+	parts := strings.Split(src, "|")
+	result := make([]DestRulePhonetic, len(parts))
+	for i, part := range parts {
+		result[i] = transformRulePhonetic(part)
+	}
+	return result
+}
+
+func transformRulePhonetic(src string) DestRulePhonetic {
+	langs := -1 // apply to all langs
+	if start := strings.Index(src, "["); start != -1 {
+		end := strings.Index(src, "]")
+		if end == -1 {
+			panic(fmt.Errorf("invalid rule %q: must contain closing bracket ']'", src))
+		}
+
+		l, err := strconv.Atoi(src[start+1 : end])
+		if err != nil {
+			panic(fmt.Errorf("invalid rule %q: unable to parse lang attibute as integer", src))
+		}
+		langs = l
+		src = src[0:start]
+	}
+
+	return DestRulePhonetic{
+		Text:  src,
+		Langs: langs,
+	}
 }
 
 func transformPattern(pattern string) DestRuleMatch {
@@ -217,6 +259,14 @@ const rulesTemplate = `
 		},
 	{{- end }}
 	phonetic: {{ printf "%q" .Phonetic }},
+	phoneticRules: []phoneticRule{
+		{{- range $i, $p := .PhoneticRules }}
+			{
+				text: {{ printf "%q" $p.Text }},
+				langs: {{ $p.Langs }},
+			},
+		{{- end }}
+	},
 },
 {{- end }}
 
@@ -368,10 +418,16 @@ type DestRuleSet struct {
 }
 
 type DestRule struct {
-	Pattern      string
-	LeftContext  *DestRuleMatch
-	RightContext *DestRuleMatch
-	Phonetic     string
+	Pattern       string
+	LeftContext   *DestRuleMatch
+	RightContext  *DestRuleMatch
+	Phonetic      string
+	PhoneticRules []DestRulePhonetic
+}
+
+type DestRulePhonetic struct {
+	Text  string
+	Langs int
 }
 
 type DestLangRule struct {
