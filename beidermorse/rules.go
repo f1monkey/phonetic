@@ -44,12 +44,12 @@ type finalRules struct {
 
 type finalRule struct {
 	first  []rule
-	second map[uint64][]rule
+	second map[int64][]rule
 }
 
 type langRule struct {
 	match  ruleMatcher
-	langs  uint64
+	langs  int64
 	accept bool
 }
 

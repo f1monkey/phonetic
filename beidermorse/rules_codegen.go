@@ -225,7 +225,7 @@ package beidermorse
 
 import "regexp"
 
-type {{ .Mode }}Lang uint64
+type {{ .Mode }}Lang int64
 
 const (
 	{{.Mode}}{{ (index .Languages 0) }} {{ .Mode }}Lang = 1 << iota
@@ -288,9 +288,9 @@ var {{ .Mode }}FinalRules = finalRules{
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[uint64][]rule{
+		second: map[int64][]rule{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				int64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -304,9 +304,9 @@ var {{ .Mode }}FinalRules = finalRules{
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[uint64][]rule{
+		second: map[int64][]rule{
 			{{- range $secRule := .FinalRules.Exact.Second }}
-				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				int64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -329,7 +329,7 @@ type SrcRule struct {
 }
 
 type SrcSecondFinalRule struct {
-	Lang  uint64    `json:"lang"`
+	Lang  int64     `json:"lang"`
 	Rules []SrcRule `json:"rules"`
 }
 
@@ -345,7 +345,7 @@ type SrcFinalRules struct {
 
 type SrcLangRule struct {
 	Pattern string `json:"pattern"`
-	Langs   uint64 `json:"langs"`
+	Langs   int64  `json:"langs"`
 	Accept  bool   `json:"accept"`
 }
 
@@ -376,12 +376,12 @@ type DestRule struct {
 
 type DestLangRule struct {
 	Match  DestRuleMatch
-	Langs  uint64
+	Langs  int64
 	Accept bool
 }
 
 type DestSecondFinalRule struct {
-	Lang  uint64     `json:"lang"`
+	Lang  int64      `json:"lang"`
 	Rules []DestRule `json:"rules"`
 }
 

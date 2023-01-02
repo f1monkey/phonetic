@@ -3,7 +3,7 @@ package beidermorse
 
 import "regexp"
 
-type ashLang uint64
+type ashLang int64
 
 const (
 	ashany ashLang = 1 << iota
@@ -9613,8 +9613,8 @@ var ashFinalRules = finalRules{
 				phonetic: "z",
 			},
 		},
-		second: map[uint64][]rule{
-			uint64(ashany): []rule{
+		second: map[int64][]rule{
+			int64(ashany): []rule{
 				{
 					pattern:  "b",
 					phonetic: "(b|v[1024])",
@@ -10626,7 +10626,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(u|Q[16])",
 				},
 			},
-			uint64(ashrussian): []rule{
+			int64(ashrussian): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -10853,7 +10853,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(Y|i)",
 				},
 			},
-			uint64(ashcyrillic): []rule{
+			int64(ashcyrillic): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -11080,7 +11080,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(Y|i)",
 				},
 			},
-			uint64(ashenglish): []rule{
+			int64(ashenglish): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -11285,7 +11285,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(a|o)",
 				},
 			},
-			uint64(ashfrench): []rule{
+			int64(ashfrench): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -11446,7 +11446,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(Y|i)",
 				},
 			},
-			uint64(ashgerman): []rule{
+			int64(ashgerman): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -11830,8 +11830,8 @@ var ashFinalRules = finalRules{
 					phonetic: "(u|Q)",
 				},
 			},
-			uint64(ashhebrew): []rule{},
-			uint64(ashhungarian): []rule{
+			int64(ashhebrew): []rule{},
+			int64(ashhungarian): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -11992,7 +11992,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(Y|i)",
 				},
 			},
-			uint64(ashpolish): []rule{
+			int64(ashpolish): []rule{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -12527,7 +12527,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(Y|i)",
 				},
 			},
-			uint64(ashromanian): []rule{
+			int64(ashromanian): []rule{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -13062,7 +13062,7 @@ var ashFinalRules = finalRules{
 					phonetic: "(Y|i)",
 				},
 			},
-			uint64(ashspanish): []rule{
+			int64(ashspanish): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -13825,8 +13825,8 @@ var ashFinalRules = finalRules{
 				phonetic: "j",
 			},
 		},
-		second: map[uint64][]rule{
-			uint64(ashany): []rule{
+		second: map[int64][]rule{
+			int64(ashany): []rule{
 				{
 					pattern:  "A",
 					phonetic: "a",
@@ -13864,7 +13864,7 @@ var ashFinalRules = finalRules{
 					phonetic: "l",
 				},
 			},
-			uint64(ashrussian): []rule{
+			int64(ashrussian): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -13874,7 +13874,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashcyrillic): []rule{
+			int64(ashcyrillic): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -13884,7 +13884,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashenglish): []rule{
+			int64(ashenglish): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -13894,7 +13894,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashfrench): []rule{
+			int64(ashfrench): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -13904,7 +13904,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashgerman): []rule{
+			int64(ashgerman): []rule{
 				{
 					pattern:  "A",
 					phonetic: "a",
@@ -13942,8 +13942,8 @@ var ashFinalRules = finalRules{
 					phonetic: "l",
 				},
 			},
-			uint64(ashhebrew): []rule{},
-			uint64(ashhungarian): []rule{
+			int64(ashhebrew): []rule{},
+			int64(ashhungarian): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -13953,7 +13953,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashpolish): []rule{
+			int64(ashpolish): []rule{
 				{
 					pattern:  "B",
 					phonetic: "a",
@@ -13975,7 +13975,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashromanian): []rule{
+			int64(ashromanian): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -13985,7 +13985,7 @@ var ashFinalRules = finalRules{
 					phonetic: "i",
 				},
 			},
-			uint64(ashspanish): []rule{
+			int64(ashspanish): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",

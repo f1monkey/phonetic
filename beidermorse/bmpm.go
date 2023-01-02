@@ -16,19 +16,19 @@ func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) string 
 	return phonetic(input, mode, ruleset, languageArg, concat)
 }
 
-func detectLang(word string, mode Mode) uint64 {
+func detectLang(word string, mode Mode) int64 {
 	var rules []langRule
-	var all uint64
+	var all int64
 	switch mode {
 	case Ashkenazi:
 		rules = ashLangRules
-		all = uint64(ashAll)
+		all = int64(ashAll)
 	case Sephardic:
 		rules = sepLangRules
-		all = uint64(sepAll)
+		all = int64(sepAll)
 	case Generic:
 		rules = genLangRules
-		all = uint64(genAll)
+		all = int64(genAll)
 	}
 
 	remaining := all
@@ -40,7 +40,7 @@ func detectLang(word string, mode Mode) uint64 {
 		if rule.accept {
 			remaining &= rule.langs
 		} else {
-			remaining &= (all ^ rule.langs) % (remaining + 1)
+			remaining &= ^rule.langs % (remaining + 1)
 		}
 
 		if remaining == 0 {
@@ -53,7 +53,7 @@ func detectLang(word string, mode Mode) uint64 {
 
 var firstList = []string{"de la", "van der", "van den"}
 
-func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool) string {
+func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool) string {
 	input = strings.TrimSpace(strings.ToLower(input))
 
 	// remove spaces from within certain leading words
@@ -168,7 +168,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 }
 
-func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, strip bool) string {
+func applyFinalRules(phonetic string, finalRules []rule, languageArg int64, strip bool) string {
 
 	// optimization to save time
 
@@ -432,7 +432,7 @@ func normalizeLanguageAttributes(text string, strip bool) string {
 	}
 }
 
-func applyRuleIfCompatible(phonetic string, target string, languageArg uint64) string {
+func applyRuleIfCompatible(phonetic string, target string, languageArg int64) string {
 
 	// tests for compatible language rules
 	// to do so, apply the rule, expand the results, and detect alternatives with incompatible attributes
@@ -460,7 +460,7 @@ func applyRuleIfCompatible(phonetic string, target string, languageArg uint64) s
 	for i := 0; i < len(candidateArray); i++ {
 		thisCandidate := candidateArray[i]
 		if languageArg != langAny {
-			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatUint(languageArg, 10)+"]", false)
+			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatInt(languageArg, 10)+"]", false)
 		}
 		if thisCandidate != "[0]" {
 			//      if (candidate != "[0]") {
@@ -521,9 +521,9 @@ func indexAt(s, sep string, n int) int {
 func getRules(
 	mode Mode,
 	ruleset Ruleset,
-	lang uint64,
+	lang int64,
 ) (rules []rule, finalRules1 []rule, finalRules2 []rule, discards []string) {
-	langCount := bits.OnesCount64(lang)
+	langCount := bits.OnesCount64(uint64(lang))
 	if langCount > 1 {
 		lang = 1 // any
 	}
