@@ -13,6 +13,27 @@ func Benchmark_Encoder_Encode_Ru_Approx(b *testing.B) {
 	}
 }
 
+func Benchmark_Encoder_Encode_Ru_Exact(b *testing.B) {
+	e := MustNewEncoder(WithNameMode(Generic), WithRuleset(Exact))
+	for i := 0; i < b.N; i++ {
+		e.Encode("апельсин")
+	}
+}
+
+func Benchmark_Encoder_Encode_En_Approx(b *testing.B) {
+	e := MustNewEncoder(WithNameMode(Generic), WithRuleset(Approx))
+	for i := 0; i < b.N; i++ {
+		e.Encode("orange")
+	}
+}
+
+func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
+	e := MustNewEncoder(WithNameMode(Generic), WithRuleset(Exact))
+	for i := 0; i < b.N; i++ {
+		e.Encode("orange")
+	}
+}
+
 func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
 		name     string
@@ -21,6 +42,69 @@ func Test_Encoder_Encode(t *testing.T) {
 		input    string
 		expected []string
 	}{
+		{
+			name:    "en_generic_approx",
+			mode:    Generic,
+			ruleset: Approx,
+			input:   "orange",
+			expected: []string{
+				"orangi",
+				"oragi",
+				"orongi",
+				"orogi",
+				"orYngi",
+				"Yrangi",
+				"Yrongi",
+				"YrYngi",
+				"oranxi",
+				"oronxi",
+				"orani",
+				"oroni",
+				"oranii",
+				"oronii",
+				"oranzi",
+				"oronzi",
+				"urangi",
+				"urongi",
+			},
+		},
+		{
+			name:    "en_generic_exact",
+			mode:    Generic,
+			ruleset: Exact,
+			input:   "orange",
+			expected: []string{
+				"orange",
+				"oranxe",
+				"oranhe",
+				"oranje",
+				"oranZe",
+				"orandZe",
+			},
+		},
+		{
+			name:    "en_generic_approx",
+			mode:    Generic,
+			ruleset: Approx,
+			input:   "test",
+			expected: []string{
+				"tist",
+				"tYst",
+				"tis",
+				"tit",
+				"ti",
+			},
+		},
+		{
+			name:    "en_generic_exact",
+			mode:    Generic,
+			ruleset: Exact,
+			input:   "test",
+			expected: []string{
+				"teSt",
+				"test",
+			},
+		},
 		{
 			name:     "ru_generic_exact",
 			mode:     Generic,

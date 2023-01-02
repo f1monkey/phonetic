@@ -2,6 +2,7 @@ package beidermorse
 
 import (
 	"encoding/hex"
+	"math/bits"
 	"strconv"
 	"strings"
 	"unicode/utf8"
@@ -15,31 +16,31 @@ func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) string 
 	return phonetic(input, mode, ruleset, languageArg, concat)
 }
 
-func detectLang(word string, mode Mode) uint64 {
+func detectLang(word string, mode Mode) int64 {
 	var rules []langRule
-	var all uint64
+	var all int64
 	switch mode {
 	case Ashkenazi:
 		rules = ashLangRules
-		all = uint64(ashAll)
+		all = int64(ashAll)
 	case Sephardic:
 		rules = sepLangRules
-		all = uint64(sepAll)
+		all = int64(sepAll)
 	case Generic:
 		rules = genLangRules
-		all = uint64(genAll)
+		all = int64(genAll)
 	}
 
 	remaining := all
 	for _, rule := range rules {
-		if !rule.pattern.MatchString(word) {
+		if !rule.match.matches(word) {
 			continue
 		}
 
 		if rule.accept {
 			remaining &= rule.langs
 		} else {
-			remaining &= (all ^ rule.langs) % (remaining + 1)
+			remaining &= ^rule.langs % (remaining + 1)
 		}
 
 		if remaining == 0 {
@@ -50,50 +51,29 @@ func detectLang(word string, mode Mode) uint64 {
 	return remaining
 }
 
-func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool) string {
-	// algorithm used here is as follows:
-	//
-	//   Before doing anything else:
-	//    (1) replace leading:
-	//         de<space>la<space> with dela<space>
-	//         van<space>der<space> with vander<space>
-	//         van<space>den<space> with vanden<space>
-	//    (2) gen and ash: remove all apostrophes (i.e., X'Y ==> XY)
-	//    (3) remove all spaces, apostrophes, and dashes except for the first one (i.e. X Y Z ==> X YZ)
-	//    (4) convert remaining dashes and apostrophes (if any) to space (i.e. X'Y ==> X Y)
+var firstList = []string{"de la", "van der", "van den"}
 
-	//   if Exact:
-	//     if <space> is present (i.e. X Y/
-	//       X Y => XY
-	//   if Approx or Hebrew:
-	//     if <space> is present (i.e. X Y)
-	//       if X in list (different lists for ash, sep, gen, see below)
-	//         X Y => Y and XY
-	//       else if X is not in list
-	//         X Y => X, Y, and XY
-
+func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool) string {
 	input = strings.TrimSpace(strings.ToLower(input))
 
 	// remove spaces from within certain leading words
 
-	list := []string{"de la", "van der", "van den"}
-	for i := 0; i < len(list); i++ {
-		target := list[i] + " "
+	for _, item := range firstList {
+		target := item + " "
 		if substr(input, 0, utf8.RuneCountInString(target)) == target {
-			target = list[i]
+			target = item
 			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
 		}
 	}
 
 	// for ash and gen -- remove all apostrophes
-
 	if mode != Sephardic {
 		input = strings.ReplaceAll(input, "'", "")
 	}
 
 	// remove all apostrophoes, dashes, and spaces except for the first one, replace first one with space
 
-	list = []string{"'", "-", " "}
+	list := []string{"'", "-", " "}
 	for i := 0; i < len(list); i++ {
 		target := list[i]
 
@@ -150,34 +130,17 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 			// check that right context is satisfied
 			if rule.rightContext != nil {
-				if !rule.rightContext.MatchString(substrFrom(input, i+patternLength)) {
+				if !rule.rightContext.matches(substrFrom(input, i+patternLength)) {
 					continue
 				}
 			}
 
 			// check that left context is satisfied
 			if rule.leftContext != nil {
-				if !rule.leftContext.MatchString(substr(input, 0, i)) {
+				if !rule.leftContext.matches(substr(input, 0, i)) {
 					continue
 				}
 			}
-
-			// // check to see if languageArg is one of the allowable ones (used only with "any" rules)
-			// if (languageArg != "1") && (languagePos < len(rule)) {
-			// 	language = rule[languagePos] // the required language(s) for this rule to apply
-			// 	logical := rule[logicalPos]  // do we require ALL or ANY of the required languages
-			// 	if logical == "ALL" {
-			// 		// check to see if languageArg contains all the required languages
-			// 		if (languageArg & language) != language {
-			// 			continue
-			// 		}
-			// 	} else { // any
-			// 		// check to see if languageArg contains at least one required language
-			// 		if (languageArg & language) == 0 {
-			// 			continue
-			// 		}
-			// 	}
-			// }
 
 			// check for incompatible attributes
 
@@ -205,7 +168,7 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang uint64, concat bool
 
 }
 
-func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, strip bool) string {
+func applyFinalRules(phonetic string, finalRules []rule, languageArg int64, strip bool) string {
 
 	// optimization to save time
 
@@ -256,14 +219,14 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg uint64, str
 
 				// check that right context is satisfied
 				if rule.rightContext != nil {
-					if !rule.rightContext.MatchString(substrFrom(phoneticx, i+patternLength)) {
+					if !rule.rightContext.matches(substrFrom(phoneticx, i+patternLength)) {
 						continue
 					}
 				}
 
 				// check that left context is satisfied
 				if rule.leftContext != nil {
-					if !rule.leftContext.MatchString(substr(phoneticx, 0, i)) {
+					if !rule.leftContext.matches(substr(phoneticx, 0, i)) {
 						continue
 					}
 				}
@@ -469,7 +432,7 @@ func normalizeLanguageAttributes(text string, strip bool) string {
 	}
 }
 
-func applyRuleIfCompatible(phonetic string, target string, languageArg uint64) string {
+func applyRuleIfCompatible(phonetic string, target string, languageArg int64) string {
 
 	// tests for compatible language rules
 	// to do so, apply the rule, expand the results, and detect alternatives with incompatible attributes
@@ -497,7 +460,7 @@ func applyRuleIfCompatible(phonetic string, target string, languageArg uint64) s
 	for i := 0; i < len(candidateArray); i++ {
 		thisCandidate := candidateArray[i]
 		if languageArg != langAny {
-			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatUint(languageArg, 10)+"]", false)
+			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatInt(languageArg, 10)+"]", false)
 		}
 		if thisCandidate != "[0]" {
 			//      if (candidate != "[0]") {
@@ -558,8 +521,13 @@ func indexAt(s, sep string, n int) int {
 func getRules(
 	mode Mode,
 	ruleset Ruleset,
-	lang uint64,
+	lang int64,
 ) (rules []rule, finalRules1 []rule, finalRules2 []rule, discards []string) {
+	langCount := bits.OnesCount64(uint64(lang))
+	if langCount > 1 {
+		lang = 1 // any
+	}
+
 	switch mode {
 	case Generic:
 		rules = genRules[genLang(lang)]

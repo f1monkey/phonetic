@@ -1,6 +1,9 @@
 package beidermorse
 
-import "regexp"
+import (
+	"regexp"
+	"strings"
+)
 
 // Mode which name mode to use for matching
 type Mode string
@@ -29,8 +32,8 @@ func (r Ruleset) Valid() bool {
 
 type rule struct {
 	pattern      string
-	leftContext  *regexp.Regexp
-	rightContext *regexp.Regexp
+	leftContext  *ruleMatcher
+	rightContext *ruleMatcher
 	phonetic     string
 }
 
@@ -41,11 +44,43 @@ type finalRules struct {
 
 type finalRule struct {
 	first  []rule
-	second map[uint64][]rule
+	second map[int64][]rule
 }
 
 type langRule struct {
-	pattern *regexp.Regexp
-	langs   uint64
-	accept  bool
+	match  ruleMatcher
+	langs  int64
+	accept bool
+}
+
+type ruleMatcher struct {
+	matchEmptyString bool
+	pattern          *regexp.Regexp
+	prefix           string
+	suffix           string
+	contains         string
+}
+
+func (r ruleMatcher) matches(str string) bool {
+	if r.matchEmptyString && len(str) == 0 {
+		return true
+	}
+
+	if r.contains != "" {
+		return strings.Contains(str, r.contains)
+	}
+
+	if r.prefix != "" {
+		return strings.HasPrefix(str, r.prefix)
+	}
+
+	if r.suffix != "" {
+		return strings.HasSuffix(str, r.suffix)
+	}
+
+	if r.pattern != nil {
+		return r.pattern.MatchString(str)
+	}
+
+	return false
 }

@@ -10,6 +10,7 @@ import (
 	"go/format"
 	"io/ioutil"
 	"os"
+	"regexp"
 	"strings"
 	"text/template"
 )
@@ -34,7 +35,7 @@ func main() {
 
 	for mode, ruleSet := range rules {
 		var buf bytes.Buffer
-		err := tpl.Execute(&buf, ruleSet)
+		err := tpl.Execute(&buf, transformRuleSet(ruleSet))
 		if err != nil {
 			panic(err)
 		}
@@ -51,42 +52,113 @@ func main() {
 	}
 }
 
-type Rule struct {
-	Patterns [4]string `json:"patterns"`
+func transformRuleSet(src SrcRuleSet) DestRuleSet {
+	result := DestRuleSet{}
+
+	result.Mode = src.Mode
+	result.Languages = src.Languages
+
+	result.Rules = make(map[string][]DestRule, len(src.Rules))
+	for code, rules := range src.Rules {
+		result.Rules[code] = transformRules(rules)
+	}
+
+	result.FinalRules = DestFinalRules{
+		Approx: transformFinalRule(src.FinalRules.Approx),
+		Exact:  transformFinalRule(src.FinalRules.Exact),
+	}
+
+	result.LangRules = make([]DestLangRule, len(src.LangRules))
+	for i, lr := range src.LangRules {
+		r := DestLangRule{
+			Langs:  lr.Langs,
+			Accept: lr.Accept,
+			Match:  transformPattern(lr.Pattern),
+		}
+
+		result.LangRules[i] = r
+	}
+
+	result.Discards = src.Discards
+
+	return result
 }
 
-type SecondFinalRule struct {
-	Lang  uint64 `json:"lang"`
-	Rules []Rule `json:"rules"`
+var (
+	containsRegexp = regexp.MustCompile(`^\p{L}+$`)
+	prefixRegexp   = regexp.MustCompile(`^\^\p{L}+$`)
+	suffixRegexp   = regexp.MustCompile(`^\p{L}+\$$`)
+)
+
+func transformFinalRule(src SrcFinalRule) DestFinalRule {
+	result := DestFinalRule{
+		First:  transformRules(src.First),
+		Second: make([]DestSecondFinalRule, len(src.Second)),
+	}
+
+	for i, sr := range src.Second {
+		result.Second[i] = DestSecondFinalRule{
+			Lang:  sr.Lang,
+			Rules: transformRules(sr.Rules),
+		}
+	}
+
+	return result
 }
 
-type FinalRule struct {
-	First  []Rule            `json:"first"`
-	Second []SecondFinalRule `json:"second"`
+func transformRules(src []SrcRule) []DestRule {
+	result := make([]DestRule, len(src))
+	for i, s := range src {
+		result[i] = transformRule(s)
+	}
+	return result
 }
 
-type FinalRules struct {
-	Approx FinalRule `json:"approx"`
-	Exact  FinalRule `json:"exact"`
+func transformRule(src SrcRule) DestRule {
+	result := DestRule{
+		Pattern:  src.Patterns[0],
+		Phonetic: src.Patterns[3],
+	}
+
+	l := ""
+	if src.Patterns[1] != "" {
+		l = src.Patterns[1] + "$"
+	}
+	if lm := transformPattern(l); !lm.IsEmpty() {
+		result.LeftContext = &lm
+	}
+
+	r := ""
+	if src.Patterns[2] != "" {
+		r = "^" + src.Patterns[2]
+	}
+	if rm := transformPattern(r); !rm.IsEmpty() {
+		result.RightContext = &rm
+	}
+
+	return result
 }
 
-type LangRule struct {
-	Pattern string `json:"pattern"`
-	Langs   uint64 `json:"langs"`
-	Accept  bool   `json:"accept"`
+func transformPattern(pattern string) DestRuleMatch {
+	r := DestRuleMatch{}
+
+	if pattern == "^$" {
+		r.MatchEmptyString = true
+	} else if containsRegexp.MatchString(pattern) {
+		r.Contains = pattern
+	} else if prefixRegexp.MatchString(pattern) {
+		r.Prefix = strings.ReplaceAll(pattern, "^", "")
+	} else if suffixRegexp.MatchString(pattern) {
+		r.Suffix = strings.ReplaceAll(pattern, "$", "")
+	} else {
+		r.Pattern = pattern
+	}
+
+	return r
 }
 
-type RuleSet struct {
-	Mode       string            `json:"-"`
-	Languages  []string          `json:"languages"`
-	Rules      map[string][]Rule `json:"rules"`
-	FinalRules FinalRules        `json:"finalRules"`
-	LangRules  []LangRule        `json:"langRules"`
-	Discards   []string          `json:"discards"`
-}
-
-func loadRules() (map[string]RuleSet, error) {
-	result := make(map[string]RuleSet)
+func loadRules() (map[string]SrcRuleSet, error) {
+	result := make(map[string]SrcRuleSet)
 	for mode, filename := range ruleSources {
 		f, err := os.Open(filename)
 		if err != nil {
@@ -96,7 +168,7 @@ func loadRules() (map[string]RuleSet, error) {
 		if err != nil {
 			return nil, err
 		}
-		var rules RuleSet
+		var rules SrcRuleSet
 		if err := json.Unmarshal(data, &rules); err != nil {
 			return nil, fmt.Errorf("%q unmarshal err: %w", mode, err)
 		}
@@ -106,7 +178,7 @@ func loadRules() (map[string]RuleSet, error) {
 	return result, nil
 }
 
-func fixRules(rules map[string]RuleSet) {
+func fixRules(rules map[string]SrcRuleSet) {
 	// remove "/" in lang rules' patterns
 	for mode, ruleSet := range rules {
 		for i := range ruleSet.LangRules {
@@ -119,13 +191,41 @@ func fixRules(rules map[string]RuleSet) {
 }
 
 const rulesTemplate = `
+{{- define "ruletpl" }}
+{
+	pattern: {{ printf "%q" .Pattern }},
+	{{- if ne .LeftContext nil}}
+		leftContext: &ruleMatcher{
+			matchEmptyString: {{ .LeftContext.MatchEmptyString }},
+			contains: {{ printf "%q" .LeftContext.Contains }},
+			prefix: {{ printf "%q" .LeftContext.Prefix }},
+			suffix: {{ printf "%q" .LeftContext.Suffix }},
+			{{- if ne .LeftContext.Pattern ""}}
+				pattern: regexp.MustCompile({{ printf "%q" .LeftContext.Pattern }}),
+			{{- end }}
+		},
+	{{- end }}
+	{{- if ne .RightContext nil}}
+		rightContext: &ruleMatcher{
+			matchEmptyString: {{ .RightContext.MatchEmptyString }},
+			contains: {{ printf "%q" .RightContext.Contains }},
+			prefix: {{ printf "%q" .RightContext.Prefix }},
+			suffix: {{ printf "%q" .RightContext.Suffix }},
+			{{- if ne .RightContext.Pattern ""}}
+				pattern: regexp.MustCompile({{ printf "%q" .RightContext.Pattern }}),
+			{{- end }}
+		},
+	{{- end }}
+	phonetic: {{ printf "%q" .Phonetic }},
+},
+{{- end }}
+
 // GENERATED CODE. DO NOT EDIT!
 package beidermorse
 
 import "regexp"
 
-type {{ .Mode }}Lang uint64
-
+type {{ .Mode }}Lang int64
 
 const (
 	{{.Mode}}{{ (index .Languages 0) }} {{ .Mode }}Lang = 1 << iota
@@ -147,24 +247,17 @@ func (l {{ .Mode }}Lang) String() string {
 }
 
 const {{ .Mode }}All = {{- range $i, $lang := .Languages }}
-	{{- if ne $i 0 }}+{{- end }}
-	{{ $.Mode }}{{ $lang }}
+	{{- if ne $i 0 }}
+		{{- if ne $i 1 }}+{{- end }}
+		{{ $.Mode }}{{ $lang }}
+	{{- end }}
 {{- end}}
 
 var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 	{{- range $lang, $rules := .Rules }}
 		{{ $.Mode }}{{ $lang}}: []rule{
 			{{- range $rule := $rules }}
-				{
-					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-					{{- if ne (index $rule.Patterns 1) ""}}
-						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
-					{{- end }}
-					{{- if ne (index $rule.Patterns 2) ""}}
-						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
-					{{- end }}
-					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
-				},
+				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
 	{{- end }}
@@ -173,7 +266,15 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
 var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
-			pattern: regexp.MustCompile({{ printf "%q" $rule.Pattern }}),
+			match: ruleMatcher{
+				matchEmptyString: {{ $rule.Match.MatchEmptyString }},
+				contains: {{ printf "%q" $rule.Match.Contains }},
+				prefix: {{ printf "%q" $rule.Match.Prefix }},
+				suffix: {{ printf "%q" $rule.Match.Suffix }},
+				{{- if ne $rule.Match.Pattern ""}}
+					pattern: regexp.MustCompile({{ printf "%q" $rule.Match.Pattern }}),
+				{{- end }}
+			},
 			langs: {{ $rule.Langs }},
 			accept: {{ $rule.Accept }},
 		},
@@ -184,32 +285,14 @@ var {{ .Mode }}FinalRules = finalRules{
 	approx: finalRule{
 		first: []rule{
 			{{- range $rule := .FinalRules.Approx.First }}
-				{
-					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-					{{- if ne (index $rule.Patterns 1) ""}}
-						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
-					{{- end }}
-					{{- if ne (index $rule.Patterns 2) ""}}
-						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
-					{{- end }}
-					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
-				},
+				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[uint64][]rule{
+		second: map[int64][]rule{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				int64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
-						{
-							pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-							{{- if ne (index $rule.Patterns 1) ""}}
-								leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
-							{{- end }}
-							{{- if ne (index $rule.Patterns 2) ""}}
-								rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
-							{{- end }}
-							phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
-						},
+						{{- template "ruletpl" $rule }}
 					{{- end }}
 				},
 			{{- end }}
@@ -218,32 +301,14 @@ var {{ .Mode }}FinalRules = finalRules{
 	exact: finalRule{
 		first: []rule{
 			{{- range $rule := .FinalRules.Exact.First }}
-				{
-					pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-					{{- if ne (index $rule.Patterns 1) ""}}
-						leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
-					{{- end }}
-					{{- if ne (index $rule.Patterns 2) ""}}
-						rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
-					{{- end }}
-					phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
-				},
+				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[uint64][]rule{
+		second: map[int64][]rule{
 			{{- range $secRule := .FinalRules.Exact.Second }}
-				uint64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				int64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
-						{
-							pattern: {{ printf "%q" (index $rule.Patterns 0) }},
-							{{- if ne (index $rule.Patterns 1) ""}}
-								leftContext: regexp.MustCompile({{ printf "\"%s$\"" (index $rule.Patterns 1) }}),
-							{{- end }}
-							{{- if ne (index $rule.Patterns 2) ""}}
-								rightContext: regexp.MustCompile({{ printf "\"^%s\"" (index $rule.Patterns 2) }}),
-							{{- end }}
-							phonetic: {{ printf "%q" (index $rule.Patterns 3) }},
-						},
+						{{- template "ruletpl" $rule }}
 					{{- end }}
 				},
 			{{- end }}
@@ -258,3 +323,90 @@ var {{ .Mode }}Discards = []string{
 	{{- end }}
 }
 `
+
+type SrcRule struct {
+	Patterns [4]string `json:"patterns"`
+}
+
+type SrcSecondFinalRule struct {
+	Lang  int64     `json:"lang"`
+	Rules []SrcRule `json:"rules"`
+}
+
+type SrcFinalRule struct {
+	First  []SrcRule            `json:"first"`
+	Second []SrcSecondFinalRule `json:"second"`
+}
+
+type SrcFinalRules struct {
+	Approx SrcFinalRule `json:"approx"`
+	Exact  SrcFinalRule `json:"exact"`
+}
+
+type SrcLangRule struct {
+	Pattern string `json:"pattern"`
+	Langs   int64  `json:"langs"`
+	Accept  bool   `json:"accept"`
+}
+
+type SrcRuleSet struct {
+	Mode       string               `json:"-"`
+	Languages  []string             `json:"languages"`
+	Rules      map[string][]SrcRule `json:"rules"`
+	FinalRules SrcFinalRules        `json:"finalRules"`
+	LangRules  []SrcLangRule        `json:"langRules"`
+	Discards   []string             `json:"discards"`
+}
+
+type DestRuleSet struct {
+	Mode       string
+	Languages  []string
+	Rules      map[string][]DestRule
+	FinalRules DestFinalRules
+	LangRules  []DestLangRule
+	Discards   []string
+}
+
+type DestRule struct {
+	Pattern      string
+	LeftContext  *DestRuleMatch
+	RightContext *DestRuleMatch
+	Phonetic     string
+}
+
+type DestLangRule struct {
+	Match  DestRuleMatch
+	Langs  int64
+	Accept bool
+}
+
+type DestSecondFinalRule struct {
+	Lang  int64      `json:"lang"`
+	Rules []DestRule `json:"rules"`
+}
+
+type DestFinalRule struct {
+	First  []DestRule            `json:"first"`
+	Second []DestSecondFinalRule `json:"second"`
+}
+
+type DestFinalRules struct {
+	Approx DestFinalRule `json:"approx"`
+	Exact  DestFinalRule `json:"exact"`
+}
+
+type DestRuleMatch struct {
+	MatchEmptyString bool
+	Pattern          string
+	Prefix           string
+	Suffix           string
+	Contains         string
+}
+
+func (m DestRuleMatch) IsEmpty() bool {
+	return m.Contains == "" &&
+		m.Prefix == "" &&
+		m.Suffix == "" &&
+		m.Pattern == "" &&
+		m.MatchEmptyString == false
+}
