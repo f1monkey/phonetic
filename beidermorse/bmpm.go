@@ -81,58 +81,9 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool)
 		}
 	}
 
-	// at this point, input is only a single word
-	inputLength := len([]rune(input))
-
-	// apply language rules to map to phonetic alphabet
-	phonetic := ""
-	var patternLength int
-	for i := 0; i < inputLength; {
-		found := false
-		for _, rule := range rules {
-			pattern := rule.pattern
-			patternLength = utf8.RuneCountInString(pattern)
-
-			// check to see if next sequence in input matches the string in the rule
-			if patternLength > inputLength-i || substr(input, i, patternLength) != pattern { // no match
-				continue
-			}
-
-			// check that right context is satisfied
-			if rule.rightContext != nil {
-				if !rule.rightContext.matches(substrFrom(input, i+patternLength)) {
-					continue
-				}
-			}
-
-			// check that left context is satisfied
-			if rule.leftContext != nil {
-				if !rule.leftContext.matches(substr(input, 0, i)) {
-					continue
-				}
-			}
-
-			// check for incompatible attributes
-
-			candidate := applyRuleIfCompatible(phonetic, rule.phonetic, lang)
-			if candidate == "" {
-				continue
-			}
-			phonetic = candidate
-			found = true
-			break
-		}
-		if !found { // character in name that is not in table -- e.g., space
-			patternLength = 1
-		}
-		i += patternLength
-	}
-
-	// apply final rules on phonetic-alphabet, doing a substitution of certain characters
-	// finalRules1 are the common approx rules, finalRules2 are approx rules for specific language
-
-	phonetic = applyFinalRules(phonetic, final1, lang, false) // apply common rules
-	phonetic = applyFinalRules(phonetic, final2, lang, true)  // apply lang specific rules
+	phonetic := applyRules(input, rules, lang, false)    // apply main set of rules
+	phonetic = applyRules(phonetic, final1, lang, false) // apply common final rules
+	phonetic = applyRules(phonetic, final2, lang, true)  // apply lang specific final rules
 
 	return phonetic
 
@@ -169,7 +120,7 @@ func prepareInput(input string, mode Mode) string {
 	return input
 }
 
-func applyFinalRules(phonetic string, rules []rule, languageArg int64, strip bool) string {
+func applyRules(phonetic string, rules []rule, languageArg int64, strip bool) string {
 	if len(rules) == 0 {
 		return phonetic
 	}
