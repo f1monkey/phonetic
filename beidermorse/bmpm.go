@@ -54,39 +54,11 @@ func detectLang(word string, mode Mode) int64 {
 var firstList = []string{"de la", "van der", "van den"}
 
 func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool) string {
-	input = strings.TrimSpace(strings.ToLower(input))
-
-	// remove spaces from within certain leading words
-
-	for _, item := range firstList {
-		target := item + " "
-		if substr(input, 0, utf8.RuneCountInString(target)) == target {
-			target = item
-			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
-		}
-	}
-
-	// for ash and gen -- remove all apostrophes
-	if mode != Sephardic {
-		input = strings.ReplaceAll(input, "'", "")
-	}
-
-	// remove all apostrophoes, dashes, and spaces except for the first one, replace first one with space
-
-	list := []string{"'", "-", " "}
-	for i := 0; i < len(list); i++ {
-		target := list[i]
-
-		if firstOne := strings.Index(input, target); firstOne != -1 {
-			input = strings.ReplaceAll(input, target, "")                          // remove all occurences
-			input = substr(input, 0, firstOne) + " " + substrFrom(input, firstOne) // replace first occurence with space
-		}
-	}
+	input = prepareInput(input, mode)
 
 	rules, final1, final2, discards := getRules(mode, ruleset, lang)
 
 	// process a multiword name of form X Y
-
 	if space := strings.Index(input, " "); space != -1 { // number of words is exactly two
 		if concat { // exact matches
 			// X Y => XY
@@ -110,11 +82,9 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool)
 	}
 
 	// at this point, input is only a single word
-
 	inputLength := len([]rune(input))
 
 	// apply language rules to map to phonetic alphabet
-
 	phonetic := ""
 	var patternLength int
 	for i := 0; i < inputLength; {
@@ -168,16 +138,43 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool)
 
 }
 
-func applyFinalRules(phonetic string, finalRules []rule, languageArg int64, strip bool) string {
+func prepareInput(input string, mode Mode) string {
+	input = strings.TrimSpace(strings.ToLower(input))
 
-	// optimization to save time
+	// remove spaces from within certain leading words
+	for _, item := range firstList {
+		target := item + " "
+		if substr(input, 0, utf8.RuneCountInString(target)) == target {
+			target = item
+			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
+		}
+	}
 
-	if len(finalRules) == 0 {
+	// for ash and gen -- remove all apostrophes
+	if mode != Sephardic {
+		input = strings.ReplaceAll(input, "'", "")
+	}
+
+	// remove all apostrophoes, dashes, and spaces except for the first one, replace first one with space
+	list := []string{"'", "-", " "}
+	for i := 0; i < len(list); i++ {
+		target := list[i]
+
+		if firstOne := strings.Index(input, target); firstOne != -1 {
+			input = strings.ReplaceAll(input, target, "")                          // remove all occurences
+			input = substr(input, 0, firstOne) + " " + substrFrom(input, firstOne) // replace first occurence with space
+		}
+	}
+
+	return input
+}
+
+func applyFinalRules(phonetic string, rules []rule, languageArg int64, strip bool) string {
+	if len(rules) == 0 {
 		return phonetic
 	}
 
 	// expand the result
-
 	phonetic = expand(phonetic)
 	phoneticArray := strings.Split(phonetic, "|")
 
@@ -207,8 +204,7 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg int64, stri
 			}
 
 			var patternLength int
-			for r := 0; r < len(finalRules); r++ {
-				rule := finalRules[r]
+			for _, rule := range rules {
 				pattern := rule.pattern
 				patternLength = utf8.RuneCountInString(pattern)
 
@@ -230,23 +226,6 @@ func applyFinalRules(phonetic string, finalRules []rule, languageArg int64, stri
 						continue
 					}
 				}
-
-				// // check to see if rule applies to languageArg (used only with "any" rules)
-				// if (languageArg != "1") && (languagePos < len(rule)) {
-				// 	language = rule[languagePos] // the required language(s) for this rule to apply
-				// 	logical = rule[logicalPos]   // do we require ALL or ANY of the required languages
-				// 	if logical == "ALL" {
-				// 		// check to see if languageArg contains all the required languages
-				// 		if (languageArg & language) != language {
-				// 			continue
-				// 		}
-				// 	} else { // any
-				// 		// check to see if languageArg contains at least one required language
-				// 		if (languageArg & language) == 0 {
-				// 			continue
-				// 		}
-				// 	}
-				// }
 
 				// check for incompatible attributes
 
