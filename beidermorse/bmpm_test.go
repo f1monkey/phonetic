@@ -78,11 +78,61 @@ func Test_expand(t *testing.T) {
 			phonetic: "(O|P[16384])",
 			expected: "O|P[16384]",
 		},
+		{
+			phonetic: "(k[1047288]|ts[16392]|dZ[524288])(O|P[16384])",
+			expected: "kO[1047288]|kP[16384]|tsO[16392]|tsP[16384]|dZO[524288]",
+		},
 	}
 
 	for _, c := range cases {
 		t.Run(c.phonetic, func(t *testing.T) {
 			result := expand(c.phonetic)
+			require.Equal(t, c.expected, result)
+		})
+	}
+}
+
+func Test_normalizeLanguageAttributes(t *testing.T) {
+	cases := []struct {
+		phonetic string
+		strip    bool
+		expected string
+	}{
+		{
+			phonetic: "tsYkYtsolo[128][16384]",
+			strip:    false,
+			expected: "[0]",
+		},
+		{
+			phonetic: "tso",
+			strip:    false,
+			expected: "tso",
+		},
+		{
+			phonetic: "tsokatsola[1047288][16384]",
+			strip:    false,
+			expected: "tsokatsola[16384]",
+		},
+		{
+			phonetic: "tsokosu[64]lo",
+			strip:    false,
+			expected: "tsokosulo[64]",
+		},
+		{
+			phonetic: "kOka[1047288]",
+			strip:    true,
+			expected: "kOka",
+		},
+		{
+			phonetic: "kOdZa[524288]",
+			strip:    true,
+			expected: "kOdZa",
+		},
+	}
+
+	for _, c := range cases {
+		t.Run(c.phonetic, func(t *testing.T) {
+			result := normalizeLanguageAttributes(c.phonetic, c.strip)
 			require.Equal(t, c.expected, result)
 		})
 	}
