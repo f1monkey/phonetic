@@ -69,6 +69,12 @@ func Benchmark_phonetic(b *testing.B) {
 	}
 }
 
+func Benchmark_expand(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		expand("(k[1047288]|ts[16392]|dZ[524288])(O|P[16384])")
+	}
+}
+
 func Test_expand(t *testing.T) {
 	cases := []struct {
 		phonetic string
@@ -89,6 +95,12 @@ func Test_expand(t *testing.T) {
 			result := expand(c.phonetic)
 			require.Equal(t, c.expected, result)
 		})
+	}
+}
+
+func Benchmark_normalizeLanguageAttributes(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		normalizeLanguageAttributes("tsokatsola[1047288][16384]", false)
 	}
 }
 
@@ -133,6 +145,117 @@ func Test_normalizeLanguageAttributes(t *testing.T) {
 	for _, c := range cases {
 		t.Run(c.phonetic, func(t *testing.T) {
 			result := normalizeLanguageAttributes(c.phonetic, c.strip)
+			require.Equal(t, c.expected, result)
+		})
+	}
+}
+
+func Benchmark_mergePhoneticResults(b *testing.B) {
+	r := [][]phoneticResult{
+		{
+			{text: "k", langs: []phoneticResultLang{{from: 0, to: 1, lang: 1047288}}},
+			{text: "ts", langs: []phoneticResultLang{{from: 0, to: 2, lang: 16392}}},
+			{text: "dZ", langs: []phoneticResultLang{{from: 0, to: 2, lang: 524288}}},
+		},
+		{
+			{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
+			{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+		},
+	}
+
+	for i := 0; i < b.N; i++ {
+		mergePhoneticResults(r)
+	}
+}
+
+func Test_mergePhoneticResults(t *testing.T) {
+	cases := []struct {
+		src      [][]phoneticResult
+		expected []phoneticResult
+	}{
+		{}, // empty
+		{
+			src: [][]phoneticResult{
+				{
+					{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
+					{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+				},
+			},
+			expected: []phoneticResult{
+				{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
+				{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+			},
+		},
+		{
+			src: [][]phoneticResult{
+				{
+					{text: "k", langs: []phoneticResultLang{{from: 0, to: 1, lang: 1047288}}},
+					{text: "ts", langs: []phoneticResultLang{{from: 0, to: 2, lang: 16392}}},
+					{text: "dZ", langs: []phoneticResultLang{{from: 0, to: 2, lang: 524288}}},
+				},
+				{
+					{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
+					{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+				},
+			},
+			expected: []phoneticResult{
+				{text: "kO", langs: []phoneticResultLang{{from: 0, to: 2, lang: 1047288}}},
+				{text: "kP", langs: []phoneticResultLang{{from: 0, to: 2, lang: 16384}}},
+				{text: "tsO", langs: []phoneticResultLang{{from: 0, to: 3, lang: 16392}}},
+				{text: "tsP", langs: []phoneticResultLang{{from: 0, to: 3, lang: 16384}}},
+				{text: "dZO", langs: []phoneticResultLang{{from: 0, to: 3, lang: 524288}}},
+			},
+		},
+	}
+
+	for i, c := range cases {
+		t.Run(fmt.Sprint(i), func(t *testing.T) {
+			result := mergePhoneticResults(c.src)
+			require.Equal(t, c.expected, result)
+		})
+	}
+}
+
+func Benchmark_mergeLangResults(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		mergeLangResults([]phoneticResultLang{
+			{from: 0, to: 10, lang: 1047288},
+			{from: 0, to: 10, lang: 16384},
+		})
+	}
+}
+
+func Test_mergeLangResults(t *testing.T) {
+	cases := []struct {
+		src      []phoneticResultLang
+		expected phoneticResultLang
+	}{
+		{
+			src: []phoneticResultLang{
+				{from: 0, to: 10, lang: 128},
+				{from: 0, to: 10, lang: 16384},
+			},
+			expected: phoneticResultLang{from: 0, to: 10, lang: 0},
+		},
+		{
+			src: []phoneticResultLang{
+				{from: 0, to: 10, lang: 1047288},
+				{from: 0, to: 10, lang: 16384},
+			},
+			expected: phoneticResultLang{from: 0, to: 10, lang: 16384},
+		},
+		{
+			src: []phoneticResultLang{
+				{from: 0, to: 5, lang: 1047288},
+				{from: 5, to: 10, lang: 16384},
+			},
+			expected: phoneticResultLang{from: 0, to: 10, lang: 16384},
+		},
+	}
+
+	for i, c := range cases {
+		t.Run(fmt.Sprint(i), func(t *testing.T) {
+			result := mergeLangResults(c.src)
 			require.Equal(t, c.expected, result)
 		})
 	}

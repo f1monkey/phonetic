@@ -362,8 +362,102 @@ func normalizeLanguageAttributes(text string, strip bool) string {
 	}
 }
 
-func applyRuleIfCompatible(phonetic string, target string, languageArg int64) string {
+type phoneticResult struct {
+	text  string
+	langs []phoneticResultLang
+}
 
+type phoneticResultLang struct {
+	from int
+	to   int
+	lang int
+}
+
+const (
+	langsUnitialized = -1
+	langsInvalid     = 0
+)
+
+func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
+	if len(src) == 0 {
+		return nil
+	}
+
+	if len(src) == 1 {
+		for i, r := range src[0] {
+			src[0][i].langs = []phoneticResultLang{mergeLangResults(r.langs)}
+		}
+		return src[0]
+	}
+
+	l := 0
+	for _, r := range src {
+		l += len(r)
+	}
+
+	result := src[0]
+	i := 1
+	for i < len(src) {
+		newResult := make([]phoneticResult, 0, len(result)*len(src[i]))
+		for _, r1 := range result {
+			for _, r2 := range src[i] {
+				lang := mergeLangResults(append(r1.langs, r2.langs...))
+				if lang.lang == langsInvalid {
+					continue
+				}
+
+				lang.from = 0
+				lang.to = len([]rune(r1.text)) + len([]rune(r2.text))
+
+				newResult = append(newResult, phoneticResult{
+					text:  r1.text + r2.text,
+					langs: []phoneticResultLang{lang},
+				})
+			}
+		}
+		result = newResult
+		i++
+	}
+
+	return result
+}
+
+func mergeLangResults(src []phoneticResultLang) phoneticResultLang {
+	if len(src) == 0 {
+		return phoneticResultLang{
+			lang: langsInvalid,
+		}
+	}
+
+	resultLang := langsUnitialized
+	from, to := 0, 0
+	for _, l := range src {
+		if resultLang == langsUnitialized {
+			resultLang = l.lang
+			from = l.from
+			to = l.to
+			continue
+		}
+
+		if from > l.from {
+			from = l.from
+		}
+
+		if to < l.to {
+			to = l.to
+		}
+
+		resultLang &= l.lang
+	}
+
+	return phoneticResultLang{
+		lang: resultLang,
+		from: from,
+		to:   to,
+	}
+}
+
+func applyRuleIfCompatible(phonetic string, target string, languageArg int64) string {
 	// tests for compatible language rules
 	// to do so, apply the rule, expand the results, and detect alternatives with incompatible attributes
 	// then drop each alternative that has incompatible attributes and keep those that are compatible
