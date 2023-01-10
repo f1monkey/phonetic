@@ -24,12 +24,12 @@ func Test_detectLang(t *testing.T) {
 	cases := []struct {
 		word     string
 		mode     Mode
-		expected int64
+		expected languageID
 	}{
 		{
 			word: "orange",
 			mode: Generic,
-			expected: int64(
+			expected: languageID(
 				gendutch |
 					genenglish |
 					genfrench |
@@ -49,15 +49,13 @@ func Test_detectLang(t *testing.T) {
 		{
 			word:     "апельсин",
 			mode:     Generic,
-			expected: int64(gencyrillic),
+			expected: languageID(gencyrillic),
 		},
 	}
 
 	for i, c := range cases {
 		t.Run(strconv.Itoa(i), func(t *testing.T) {
 			result := detectLang(c.word, c.mode)
-
-			fmt.Printf("%b\n", result)
 			require.Equal(t, c.expected, result)
 		})
 	}
@@ -153,13 +151,13 @@ func Test_normalizeLanguageAttributes(t *testing.T) {
 func Benchmark_mergePhoneticResults(b *testing.B) {
 	r := [][]phoneticResult{
 		{
-			{text: "k", langs: []phoneticResultLang{{from: 0, to: 1, lang: 1047288}}},
-			{text: "ts", langs: []phoneticResultLang{{from: 0, to: 2, lang: 16392}}},
-			{text: "dZ", langs: []phoneticResultLang{{from: 0, to: 2, lang: 524288}}},
+			{text: "k", langs: 1047288},
+			{text: "ts", langs: 16392},
+			{text: "dZ", langs: 524288},
 		},
 		{
-			{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
-			{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+			{text: "O", langs: -1},
+			{text: "P", langs: 16384},
 		},
 	}
 
@@ -177,33 +175,33 @@ func Test_mergePhoneticResults(t *testing.T) {
 		{
 			src: [][]phoneticResult{
 				{
-					{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
-					{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+					{text: "O", langs: -1},
+					{text: "P", langs: 16384},
 				},
 			},
 			expected: []phoneticResult{
-				{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
-				{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+				{text: "O", langs: -1},
+				{text: "P", langs: 16384},
 			},
 		},
 		{
 			src: [][]phoneticResult{
 				{
-					{text: "k", langs: []phoneticResultLang{{from: 0, to: 1, lang: 1047288}}},
-					{text: "ts", langs: []phoneticResultLang{{from: 0, to: 2, lang: 16392}}},
-					{text: "dZ", langs: []phoneticResultLang{{from: 0, to: 2, lang: 524288}}},
+					{text: "k", langs: 1047288},
+					{text: "ts", langs: 16392},
+					{text: "dZ", langs: 524288},
 				},
 				{
-					{text: "O", langs: []phoneticResultLang{{from: 0, to: 1, lang: -1}}},
-					{text: "P", langs: []phoneticResultLang{{from: 0, to: 1, lang: 16384}}},
+					{text: "O", langs: -1},
+					{text: "P", langs: 16384},
 				},
 			},
 			expected: []phoneticResult{
-				{text: "kO", langs: []phoneticResultLang{{from: 0, to: 2, lang: 1047288}}},
-				{text: "kP", langs: []phoneticResultLang{{from: 0, to: 2, lang: 16384}}},
-				{text: "tsO", langs: []phoneticResultLang{{from: 0, to: 3, lang: 16392}}},
-				{text: "tsP", langs: []phoneticResultLang{{from: 0, to: 3, lang: 16384}}},
-				{text: "dZO", langs: []phoneticResultLang{{from: 0, to: 3, lang: 524288}}},
+				{text: "kO", langs: 1047288},
+				{text: "kP", langs: 16384},
+				{text: "tsO", langs: 16392},
+				{text: "tsP", langs: 16384},
+				{text: "dZO", langs: 524288},
 			},
 		},
 	}
@@ -218,44 +216,32 @@ func Test_mergePhoneticResults(t *testing.T) {
 
 func Benchmark_mergeLangResults(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		mergeLangResults([]phoneticResultLang{
-			{from: 0, to: 10, lang: 1047288},
-			{from: 0, to: 10, lang: 16384},
-		})
+		mergeLangResults(1047288, 16384)
 	}
 }
 
 func Test_mergeLangResults(t *testing.T) {
 	cases := []struct {
-		src      []phoneticResultLang
-		expected phoneticResultLang
+		src      []languageID
+		expected languageID
 	}{
 		{
-			src: []phoneticResultLang{
-				{from: 0, to: 10, lang: 128},
-				{from: 0, to: 10, lang: 16384},
-			},
-			expected: phoneticResultLang{from: 0, to: 10, lang: 0},
+			src:      []languageID{128, 16384},
+			expected: 0,
 		},
 		{
-			src: []phoneticResultLang{
-				{from: 0, to: 10, lang: 1047288},
-				{from: 0, to: 10, lang: 16384},
-			},
-			expected: phoneticResultLang{from: 0, to: 10, lang: 16384},
+			src:      []languageID{1047288, 16384},
+			expected: 16384,
 		},
 		{
-			src: []phoneticResultLang{
-				{from: 0, to: 5, lang: 1047288},
-				{from: 5, to: 10, lang: 16384},
-			},
-			expected: phoneticResultLang{from: 0, to: 10, lang: 16384},
+			src:      []languageID{1047288, 16384},
+			expected: 16384,
 		},
 	}
 
 	for i, c := range cases {
 		t.Run(fmt.Sprint(i), func(t *testing.T) {
-			result := mergeLangResults(c.src)
+			result := mergeLangResults(c.src...)
 			require.Equal(t, c.expected, result)
 		})
 	}

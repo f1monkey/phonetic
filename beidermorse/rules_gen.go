@@ -3,7 +3,7 @@ package beidermorse
 
 import "regexp"
 
-type genLang int64
+type genLang languageID
 
 const (
 	genany genLang = 1 << iota
@@ -27461,8 +27461,8 @@ var genFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[int64][]rule{
-			int64(genany): []rule{
+		second: map[languageID][]rule{
+			languageID(genany): []rule{
 				{
 					pattern:  "mb",
 					phonetic: "(mb|b[512])",
@@ -29025,7 +29025,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genarabic): []rule{
+			languageID(genarabic): []rule{
 				{
 					pattern:  "1a",
 					phonetic: "(D|a)",
@@ -29191,7 +29191,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genrussian): []rule{
+			languageID(genrussian): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -29666,7 +29666,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gencyrillic): []rule{
+			languageID(gencyrillic): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -30141,7 +30141,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genfrench): []rule{
+			languageID(genfrench): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -30257,7 +30257,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genczech): []rule{
+			languageID(genczech): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -30373,7 +30373,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gendutch): []rule{
+			languageID(gendutch): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -30489,7 +30489,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genenglish): []rule{
+			languageID(genenglish): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -30922,7 +30922,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gengerman): []rule{
+			languageID(gengerman): []rule{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -31766,7 +31766,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gengreek): []rule{
+			languageID(gengreek): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -31882,7 +31882,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gengreeklatin): []rule{
+			languageID(gengreeklatin): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -32008,8 +32008,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genhebrew): []rule{},
-			int64(genhungarian): []rule{
+			languageID(genhebrew): []rule{},
+			languageID(genhungarian): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -32125,7 +32125,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genitalian): []rule{
+			languageID(genitalian): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -32241,7 +32241,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genlatvian): []rule{
+			languageID(genlatvian): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -32357,7 +32357,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genpolish): []rule{
+			languageID(genpolish): []rule{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -33436,7 +33436,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genportuguese): []rule{
+			languageID(genportuguese): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -33552,7 +33552,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genromanian): []rule{
+			languageID(genromanian): []rule{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -34631,7 +34631,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genspanish): []rule{
+			languageID(genspanish): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -34765,7 +34765,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genturkish): []rule{
+			languageID(genturkish): []rule{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
@@ -35820,8 +35820,8 @@ var genFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[int64][]rule{
-			int64(genany): []rule{
+		second: map[languageID][]rule{
+			languageID(genany): []rule{
 				{
 					pattern: "EE",
 					rightContext: &ruleMatcher{
@@ -36017,7 +36017,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genarabic): []rule{
+			languageID(genarabic): []rule{
 				{
 					pattern:  "1",
 					phonetic: "",
@@ -36029,7 +36029,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genrussian): []rule{
+			languageID(genrussian): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -36051,7 +36051,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gencyrillic): []rule{
+			languageID(gencyrillic): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -36073,7 +36073,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genczech): []rule{
+			languageID(genczech): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -36095,8 +36095,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gendutch): []rule{},
-			int64(genenglish): []rule{
+			languageID(gendutch): []rule{},
+			languageID(genenglish): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -36118,8 +36118,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genfrench): []rule{},
-			int64(gengerman): []rule{
+			languageID(genfrench): []rule{},
+			languageID(gengerman): []rule{
 				{
 					pattern: "EE",
 					rightContext: &ruleMatcher{
@@ -36315,8 +36315,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(gengreek): []rule{},
-			int64(gengreeklatin): []rule{
+			languageID(gengreek): []rule{},
+			languageID(gengreeklatin): []rule{
 				{
 					pattern:  "N",
 					phonetic: "n",
@@ -36328,8 +36328,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genhebrew): []rule{},
-			int64(genhungarian): []rule{
+			languageID(genhebrew): []rule{},
+			languageID(genhungarian): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -36351,9 +36351,9 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genitalian): []rule{},
-			int64(genlatvian): []rule{},
-			int64(genpolish): []rule{
+			languageID(genitalian): []rule{},
+			languageID(genlatvian): []rule{},
+			languageID(genpolish): []rule{
 				{
 					pattern:  "B",
 					phonetic: "a",
@@ -36405,8 +36405,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genportuguese): []rule{},
-			int64(genromanian): []rule{
+			languageID(genportuguese): []rule{},
+			languageID(genromanian): []rule{
 				{
 					pattern:  "E",
 					phonetic: "e",
@@ -36428,7 +36428,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genspanish): []rule{
+			languageID(genspanish): []rule{
 				{
 					pattern:  "B",
 					phonetic: "b",
@@ -36450,7 +36450,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			int64(genturkish): []rule{},
+			languageID(genturkish): []rule{},
 		},
 	},
 }

@@ -3,7 +3,7 @@ package beidermorse
 
 import "regexp"
 
-type sepLang int64
+type sepLang languageID
 
 const (
 	sepany sepLang = 1 << iota
@@ -8443,13 +8443,13 @@ var sepFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[int64][]rule{
-			int64(sepany):        []rule{},
-			int64(sepfrench):     []rule{},
-			int64(sephebrew):     []rule{},
-			int64(sepitalian):    []rule{},
-			int64(sepportuguese): []rule{},
-			int64(sepspanish):    []rule{},
+		second: map[languageID][]rule{
+			languageID(sepany):        []rule{},
+			languageID(sepfrench):     []rule{},
+			languageID(sephebrew):     []rule{},
+			languageID(sepitalian):    []rule{},
+			languageID(sepportuguese): []rule{},
+			languageID(sepspanish):    []rule{},
 		},
 	},
 	exact: finalRule{
@@ -9350,13 +9350,13 @@ var sepFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[int64][]rule{
-			int64(sepany):        []rule{},
-			int64(sepfrench):     []rule{},
-			int64(sephebrew):     []rule{},
-			int64(sepitalian):    []rule{},
-			int64(sepportuguese): []rule{},
-			int64(sepspanish):    []rule{},
+		second: map[languageID][]rule{
+			languageID(sepany):        []rule{},
+			languageID(sepfrench):     []rule{},
+			languageID(sephebrew):     []rule{},
+			languageID(sepitalian):    []rule{},
+			languageID(sepportuguese): []rule{},
+			languageID(sepspanish):    []rule{},
 		},
 	},
 }

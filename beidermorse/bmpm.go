@@ -16,19 +16,19 @@ func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) string 
 	return phonetic(input, mode, ruleset, languageArg, concat)
 }
 
-func detectLang(word string, mode Mode) int64 {
+func detectLang(word string, mode Mode) languageID {
 	var rules []langRule
-	var all int64
+	var all languageID
 	switch mode {
 	case Ashkenazi:
 		rules = ashLangRules
-		all = int64(ashAll)
+		all = languageID(ashAll)
 	case Sephardic:
 		rules = sepLangRules
-		all = int64(sepAll)
+		all = languageID(sepAll)
 	case Generic:
 		rules = genLangRules
-		all = int64(genAll)
+		all = languageID(genAll)
 	}
 
 	remaining := all
@@ -53,7 +53,7 @@ func detectLang(word string, mode Mode) int64 {
 
 var firstList = []string{"de la", "van der", "van den"}
 
-func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool) string {
+func phonetic(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) string {
 	input = prepareInput(input, mode)
 
 	rules, final1, final2, discards := getRules(mode, ruleset, lang)
@@ -86,7 +86,6 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang int64, concat bool)
 	phonetic = applyRules(phonetic, final2, lang, true)  // apply lang specific final rules
 
 	return phonetic
-
 }
 
 func prepareInput(input string, mode Mode) string {
@@ -120,7 +119,7 @@ func prepareInput(input string, mode Mode) string {
 	return input
 }
 
-func applyRules(phonetic string, rules []rule, languageArg int64, strip bool) string {
+func applyRules(phonetic string, rules []rule, languageArg languageID, strip bool) string {
 	if len(rules) == 0 {
 		return phonetic
 	}
@@ -364,19 +363,8 @@ func normalizeLanguageAttributes(text string, strip bool) string {
 
 type phoneticResult struct {
 	text  string
-	langs []phoneticResultLang
+	langs languageID
 }
-
-type phoneticResultLang struct {
-	from int
-	to   int
-	lang int
-}
-
-const (
-	langsUnitialized = -1
-	langsInvalid     = 0
-)
 
 func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
 	if len(src) == 0 {
@@ -384,9 +372,6 @@ func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
 	}
 
 	if len(src) == 1 {
-		for i, r := range src[0] {
-			src[0][i].langs = []phoneticResultLang{mergeLangResults(r.langs)}
-		}
 		return src[0]
 	}
 
@@ -401,17 +386,14 @@ func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
 		newResult := make([]phoneticResult, 0, len(result)*len(src[i]))
 		for _, r1 := range result {
 			for _, r2 := range src[i] {
-				lang := mergeLangResults(append(r1.langs, r2.langs...))
-				if lang.lang == langsInvalid {
+				lang := mergeLangResults(r1.langs, r2.langs)
+				if lang == langsInvalid {
 					continue
 				}
 
-				lang.from = 0
-				lang.to = len([]rune(r1.text)) + len([]rune(r2.text))
-
 				newResult = append(newResult, phoneticResult{
 					text:  r1.text + r2.text,
-					langs: []phoneticResultLang{lang},
+					langs: lang,
 				})
 			}
 		}
@@ -422,42 +404,24 @@ func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
 	return result
 }
 
-func mergeLangResults(src []phoneticResultLang) phoneticResultLang {
+func mergeLangResults(src ...languageID) languageID {
 	if len(src) == 0 {
-		return phoneticResultLang{
-			lang: langsInvalid,
-		}
+		return langsInvalid
 	}
 
-	resultLang := langsUnitialized
-	from, to := 0, 0
+	result := langsUnitialized
 	for _, l := range src {
-		if resultLang == langsUnitialized {
-			resultLang = l.lang
-			from = l.from
-			to = l.to
+		if result == langsUnitialized {
+			result = l
 			continue
 		}
-
-		if from > l.from {
-			from = l.from
-		}
-
-		if to < l.to {
-			to = l.to
-		}
-
-		resultLang &= l.lang
+		result &= l
 	}
 
-	return phoneticResultLang{
-		lang: resultLang,
-		from: from,
-		to:   to,
-	}
+	return result
 }
 
-func applyRuleIfCompatible(phonetic string, target string, languageArg int64) string {
+func applyRuleIfCompatible(phonetic string, target string, languageArg languageID) string {
 	// tests for compatible language rules
 	// to do so, apply the rule, expand the results, and detect alternatives with incompatible attributes
 	// then drop each alternative that has incompatible attributes and keep those that are compatible
@@ -484,7 +448,7 @@ func applyRuleIfCompatible(phonetic string, target string, languageArg int64) st
 	for i := 0; i < len(candidateArray); i++ {
 		thisCandidate := candidateArray[i]
 		if languageArg != langAny {
-			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatInt(languageArg, 10)+"]", false)
+			thisCandidate = normalizeLanguageAttributes(thisCandidate+"["+strconv.FormatInt(int64(languageArg), 10)+"]", false)
 		}
 		if thisCandidate != "[0]" {
 			//      if (candidate != "[0]") {
@@ -545,7 +509,7 @@ func indexAt(s, sep string, n int) int {
 func getRules(
 	mode Mode,
 	ruleset Ruleset,
-	lang int64,
+	lang languageID,
 ) (rules []rule, finalRules1 []rule, finalRules2 []rule, discards []string) {
 	langCount := bits.OnesCount64(uint64(lang))
 	if langCount > 1 {

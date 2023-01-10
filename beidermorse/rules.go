@@ -50,12 +50,12 @@ type finalRules struct {
 
 type finalRule struct {
 	first  []rule
-	second map[int64][]rule
+	second map[languageID][]rule
 }
 
 type langRule struct {
 	match  ruleMatcher
-	langs  int64
+	langs  languageID
 	accept bool
 }
 
@@ -90,3 +90,10 @@ func (r ruleMatcher) matches(str string) bool {
 
 	return false
 }
+
+type languageID int64
+
+const (
+	langsUnitialized languageID = -1
+	langsInvalid     languageID = 0
+)

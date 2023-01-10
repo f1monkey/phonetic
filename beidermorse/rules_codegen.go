@@ -275,7 +275,7 @@ package beidermorse
 
 import "regexp"
 
-type {{ .Mode }}Lang int64
+type {{ .Mode }}Lang languageID
 
 const (
 	{{.Mode}}{{ (index .Languages 0) }} {{ .Mode }}Lang = 1 << iota
@@ -338,9 +338,9 @@ var {{ .Mode }}FinalRules = finalRules{
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[int64][]rule{
+		second: map[languageID][]rule{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				int64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -354,9 +354,9 @@ var {{ .Mode }}FinalRules = finalRules{
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[int64][]rule{
+		second: map[languageID][]rule{
 			{{- range $secRule := .FinalRules.Exact.Second }}
-				int64({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
