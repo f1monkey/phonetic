@@ -40,7 +40,7 @@ func MustNewEncoder(opts ...EncoderOption) *Encoder {
 
 // Encode transform a passed string to a slice of phonetic tokens
 func (e *Encoder) Encode(input string) []string {
-	result := phonetic(input, e.mode, e.ruleset, detectLang(input, e.mode), false)
+	result := makeTokens(input, e.mode, e.ruleset, detectLang(input, e.mode), false)
 	result = phoneticNumbers(result)
 	return strings.Fields(result)
 }

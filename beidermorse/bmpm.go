@@ -13,7 +13,7 @@ const langAny = 1
 func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) string {
 	// we can do a better job of determining the language now that multiple names have been split
 	languageArg := detectLang(input, mode)
-	return phonetic(input, mode, ruleset, languageArg, concat)
+	return makeTokens(input, mode, ruleset, languageArg, concat)
 }
 
 func detectLang(word string, mode Mode) languageID {
@@ -53,7 +53,7 @@ func detectLang(word string, mode Mode) languageID {
 
 var firstList = []string{"de la", "van der", "van den"}
 
-func phonetic(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) string {
+func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) string {
 	input = prepareInput(input, mode)
 
 	rules, final1, final2, discards := getRules(mode, ruleset, lang)
@@ -81,11 +81,11 @@ func phonetic(input string, mode Mode, ruleset Ruleset, lang languageID, concat 
 		}
 	}
 
-	phonetic := applyRules(input, rules, lang, false)    // apply main set of rules
-	phonetic = applyRules(phonetic, final1, lang, false) // apply common final rules
-	phonetic = applyRules(phonetic, final2, lang, true)  // apply lang specific final rules
+	result := applyRules(input, rules, lang, false)  // apply main set of rules
+	result = applyRules(result, final1, lang, false) // apply common final rules
+	result = applyRules(result, final2, lang, true)  // apply lang specific final rules
 
-	return phonetic
+	return result
 }
 
 func prepareInput(input string, mode Mode) string {
@@ -361,12 +361,12 @@ func normalizeLanguageAttributes(text string, strip bool) string {
 	}
 }
 
-type phoneticResult struct {
+type phonetic struct {
 	text  string
 	langs languageID
 }
 
-func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
+func mergePhoneticResults(src [][]phonetic) []phonetic {
 	if len(src) == 0 {
 		return nil
 	}
@@ -383,7 +383,7 @@ func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
 	result := src[0]
 	i := 1
 	for i < len(src) {
-		newResult := make([]phoneticResult, 0, len(result)*len(src[i]))
+		newResult := make([]phonetic, 0, len(result)*len(src[i]))
 		for _, r1 := range result {
 			for _, r2 := range src[i] {
 				lang := mergeLangResults(r1.langs, r2.langs)
@@ -391,7 +391,7 @@ func mergePhoneticResults(src [][]phoneticResult) []phoneticResult {
 					continue
 				}
 
-				newResult = append(newResult, phoneticResult{
+				newResult = append(newResult, phonetic{
 					text:  r1.text + r2.text,
 					langs: lang,
 				})

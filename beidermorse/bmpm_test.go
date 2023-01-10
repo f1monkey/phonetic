@@ -63,7 +63,7 @@ func Test_detectLang(t *testing.T) {
 
 func Benchmark_phonetic(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		phonetic("test", Generic, Approx, 1, false)
+		makeTokens("test", Generic, Approx, 1, false)
 	}
 }
 
@@ -149,7 +149,7 @@ func Test_normalizeLanguageAttributes(t *testing.T) {
 }
 
 func Benchmark_mergePhoneticResults(b *testing.B) {
-	r := [][]phoneticResult{
+	r := [][]phonetic{
 		{
 			{text: "k", langs: 1047288},
 			{text: "ts", langs: 16392},
@@ -168,24 +168,24 @@ func Benchmark_mergePhoneticResults(b *testing.B) {
 
 func Test_mergePhoneticResults(t *testing.T) {
 	cases := []struct {
-		src      [][]phoneticResult
-		expected []phoneticResult
+		src      [][]phonetic
+		expected []phonetic
 	}{
 		{}, // empty
 		{
-			src: [][]phoneticResult{
+			src: [][]phonetic{
 				{
 					{text: "O", langs: -1},
 					{text: "P", langs: 16384},
 				},
 			},
-			expected: []phoneticResult{
+			expected: []phonetic{
 				{text: "O", langs: -1},
 				{text: "P", langs: 16384},
 			},
 		},
 		{
-			src: [][]phoneticResult{
+			src: [][]phonetic{
 				{
 					{text: "k", langs: 1047288},
 					{text: "ts", langs: 16392},
@@ -196,7 +196,7 @@ func Test_mergePhoneticResults(t *testing.T) {
 					{text: "P", langs: 16384},
 				},
 			},
-			expected: []phoneticResult{
+			expected: []phonetic{
 				{text: "kO", langs: 1047288},
 				{text: "kP", langs: 16384},
 				{text: "tsO", langs: 16392},
