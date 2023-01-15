@@ -67,88 +67,103 @@ func Benchmark_phonetic(b *testing.B) {
 	}
 }
 
-func Benchmark_expand(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		expand("(k[1047288]|ts[16392]|dZ[524288])(O|P[16384])")
-	}
-}
-
-func Test_expand(t *testing.T) {
+func Test_applyRules(t *testing.T) {
 	cases := []struct {
-		phonetic string
-		expected string
+		name        string
+		src         []phonetic
+		lang        languageID
+		rules       []rule
+		ignoreLangs bool
+		expected    []phonetic
 	}{
 		{
-			phonetic: "(O|P[16384])",
-			expected: "O|P[16384]",
+			name: "orange_approx_lang=1_stage=1",
+			src: []phonetic{
+				{text: "orange", langs: 1047280},
+			},
+			lang:  1047280,
+			rules: genRules[1],
+			expected: []phonetic{
+				{text: "OrAngE", langs: 1047280},
+				{text: "OrAnxe", langs: 262144},
+				{text: "OrAnhE", langs: 131072},
+				{text: "OrAnje", langs: 512},
+				{text: "OrAnZe", langs: 32832},
+				{text: "OrAndZe", langs: 331808},
+				{text: "PrAngE", langs: 16384},
+			},
+			ignoreLangs: false,
 		},
 		{
-			phonetic: "(k[1047288]|ts[16392]|dZ[524288])(O|P[16384])",
-			expected: "kO[1047288]|kP[16384]|tsO[16392]|tsP[16384]|dZO[524288]",
+			name: "orange_approx_lang=1_stage=2",
+			src: []phonetic{
+				{text: "OrAngE", langs: 1047280},
+				{text: "OrAnxe", langs: 262144},
+				{text: "OrAnhE", langs: 131072},
+				{text: "OrAnje", langs: 512},
+				{text: "OrAnZe", langs: 32832},
+				{text: "OrAndZe", langs: 331808},
+				{text: "PrAngE", langs: 16384},
+			},
+			lang:  1047280,
+			rules: genFinalRules.approx.first,
+			expected: []phonetic{
+				{text: "OrAngE", langs: 1047280},
+				{text: "OrAnxe", langs: 262144},
+				{text: "OrAnE", langs: 131072},
+				{text: "OrAnie", langs: 512},
+				{text: "OrAnze", langs: 32832},
+				{text: "OrAnze", langs: 331808},
+				{text: "PrAngE", langs: 16384},
+			},
+			ignoreLangs: false,
+		},
+		{
+			name: "orange_stage=3_lang=1",
+			src: []phonetic{
+				{text: "OrAngE", langs: 1047280},
+				{text: "OrAnxe", langs: 262144},
+				{text: "OrAnE", langs: 131072},
+				{text: "OrAnie", langs: 512},
+				{text: "OrAnze", langs: 32832},
+				{text: "OrAnze", langs: 331808},
+				{text: "PrAngE", langs: 16384},
+			},
+			lang:  1047280,
+			rules: genFinalRules.approx.second[1],
+			expected: []phonetic{
+				{text: "orangi", langs: 1},
+				{text: "oragi", langs: 1},
+				{text: "orongi", langs: 1},
+				{text: "orogi", langs: 1},
+				{text: "orYngi", langs: 1},
+				{text: "Yrangi", langs: 1},
+				{text: "Yrongi", langs: 1},
+				{text: "YrYngi", langs: 1},
+				{text: "oranxi", langs: 1},
+				{text: "oronxi", langs: 1},
+				{text: "orani", langs: 1},
+				{text: "oroni", langs: 1},
+				{text: "oranii", langs: 1},
+				{text: "oronii", langs: 1},
+				{text: "oranzi", langs: 1},
+				{text: "oronzi", langs: 1},
+				{text: "urangi", langs: 1},
+				{text: "urongi", langs: 1},
+			},
+			ignoreLangs: true,
 		},
 	}
 
 	for _, c := range cases {
-		t.Run(c.phonetic, func(t *testing.T) {
-			result := expand(c.phonetic)
+		t.Run(c.name, func(t *testing.T) {
+			result := applyRules(c.src, c.rules, c.lang, c.ignoreLangs)
 			require.Equal(t, c.expected, result)
 		})
 	}
 }
 
-func Benchmark_normalizeLanguageAttributes(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		normalizeLanguageAttributes("tsokatsola[1047288][16384]", false)
-	}
-}
-
-func Test_normalizeLanguageAttributes(t *testing.T) {
-	cases := []struct {
-		phonetic string
-		strip    bool
-		expected string
-	}{
-		{
-			phonetic: "tsYkYtsolo[128][16384]",
-			strip:    false,
-			expected: "[0]",
-		},
-		{
-			phonetic: "tso",
-			strip:    false,
-			expected: "tso",
-		},
-		{
-			phonetic: "tsokatsola[1047288][16384]",
-			strip:    false,
-			expected: "tsokatsola[16384]",
-		},
-		{
-			phonetic: "tsokosu[64]lo",
-			strip:    false,
-			expected: "tsokosulo[64]",
-		},
-		{
-			phonetic: "kOka[1047288]",
-			strip:    true,
-			expected: "kOka",
-		},
-		{
-			phonetic: "kOdZa[524288]",
-			strip:    true,
-			expected: "kOdZa",
-		},
-	}
-
-	for _, c := range cases {
-		t.Run(c.phonetic, func(t *testing.T) {
-			result := normalizeLanguageAttributes(c.phonetic, c.strip)
-			require.Equal(t, c.expected, result)
-		})
-	}
-}
-
-func Benchmark_mergePhoneticResults(b *testing.B) {
+func Benchmark_mergeTokenGroups(b *testing.B) {
 	r := [][]phonetic{
 		{
 			{text: "k", langs: 1047288},
@@ -162,16 +177,28 @@ func Benchmark_mergePhoneticResults(b *testing.B) {
 	}
 
 	for i := 0; i < b.N; i++ {
-		mergePhoneticResults(r)
+		mergeTokenGroups(langsAny, r...)
 	}
 }
 
-func Test_mergePhoneticResults(t *testing.T) {
+func Test_mergeTokenGroups(t *testing.T) {
 	cases := []struct {
 		src      [][]phonetic
 		expected []phonetic
 	}{
 		{}, // empty
+		{
+			src: [][]phonetic{
+				{
+					{text: "O", langs: -1},
+					{text: "P", langs: 16384},
+				},
+			},
+			expected: []phonetic{
+				{text: "O", langs: -1},
+				{text: "P", langs: 16384},
+			},
+		},
 		{
 			src: [][]phonetic{
 				{
@@ -208,7 +235,7 @@ func Test_mergePhoneticResults(t *testing.T) {
 
 	for i, c := range cases {
 		t.Run(fmt.Sprint(i), func(t *testing.T) {
-			result := mergePhoneticResults(c.src)
+			result := mergeTokenGroups(langsAny, c.src...)
 			require.Equal(t, c.expected, result)
 		})
 	}
@@ -226,7 +253,11 @@ func Test_mergeLangResults(t *testing.T) {
 		expected languageID
 	}{
 		{
-			src:      []languageID{128, 16384},
+			src:      []languageID{1, 128, 16384},
+			expected: 0,
+		},
+		{
+			src:      []languageID{4, 128, 16384},
 			expected: 0,
 		},
 		{

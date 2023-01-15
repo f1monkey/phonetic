@@ -35,12 +35,12 @@ type rule struct {
 	leftContext   *ruleMatcher
 	rightContext  *ruleMatcher
 	phonetic      string
-	phoneticRules []phoneticRule
+	phoneticRules []phonetic
 }
 
-type phoneticRule struct {
+type phonetic struct {
 	text  string
-	langs int64
+	langs languageID
 }
 
 type finalRules struct {
@@ -96,4 +96,5 @@ type languageID int64
 const (
 	langsUnitialized languageID = -1
 	langsInvalid     languageID = 0
+	langsAny         languageID = 1
 )

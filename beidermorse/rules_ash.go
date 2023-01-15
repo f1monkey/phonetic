@@ -69,7 +69,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(in[512]|ina)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "in",
 					langs: 512,
@@ -89,7 +89,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(in[512]|ina)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "in",
 					langs: 512,
@@ -109,7 +109,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lof[512]|lef[512]|lova)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lof",
 					langs: 512,
@@ -133,7 +133,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lof[512]|lef[512]|lova)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lof",
 					langs: 512,
@@ -157,7 +157,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(of[512]|ova)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "of",
 					langs: 512,
@@ -177,7 +177,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ef[512]|eva)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ef",
 					langs: 512,
@@ -197,7 +197,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(aja|i[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aja",
 					langs: -1,
@@ -217,7 +217,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(aja|i[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aja",
 					langs: -1,
@@ -237,7 +237,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(aja|i[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aja",
 					langs: -1,
@@ -257,7 +257,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lova|lof[128]|l[128]|el[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lova",
 					langs: -1,
@@ -285,7 +285,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(kova|kof[128]|k[128]|ek[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kova",
 					langs: -1,
@@ -313,7 +313,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ova|of[128]|)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ova",
 					langs: -1,
@@ -337,7 +337,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lovna|levna|l[128]|el[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lovna",
 					langs: -1,
@@ -365,7 +365,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(kovna|k[128]|ek[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kovna",
 					langs: -1,
@@ -389,7 +389,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ovna|[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovna",
 					langs: -1,
@@ -409,7 +409,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(l|el[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -429,7 +429,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(k|ek[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -449,7 +449,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -465,7 +465,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(a|i[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -485,7 +485,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -495,7 +495,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssch",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -505,7 +505,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "chsch",
 			phonetic: "xS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "xS",
 					langs: -1,
@@ -515,7 +515,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsch",
 			phonetic: "tS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -532,7 +532,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "(sk[256]|S|StS[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "sk",
 					langs: 256,
@@ -550,7 +550,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sch",
 			phonetic: "(S|StS[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -564,7 +564,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssh",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -581,7 +581,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[äöü]"),
 			},
 			phonetic: "sh",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "sh",
 					langs: -1,
@@ -598,7 +598,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
 			phonetic: "(S[516]|sh)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: 516,
@@ -612,7 +612,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sh",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -622,7 +622,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "kh",
 			phonetic: "(x[516]|kh)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: 516,
@@ -636,7 +636,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "chs",
 			phonetic: "(ks[16]|xs|tSs[516])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: 16,
@@ -661,7 +661,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "(x|k[256]|tS[516])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -679,7 +679,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "(x|tS[516])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -693,7 +693,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ck",
 			phonetic: "(k|tsk[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -707,7 +707,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "czy",
 			phonetic: "tSi",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
 					langs: -1,
@@ -724,7 +724,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tSe|tSF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
 					langs: -1,
@@ -738,7 +738,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ciewicz",
 			phonetic: "(tsevitS|tSevitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsevitS",
 					langs: -1,
@@ -752,7 +752,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "siewicz",
 			phonetic: "(sevitS|SevitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "sevitS",
 					langs: -1,
@@ -766,7 +766,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ziewicz",
 			phonetic: "(zevitS|ZevitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "zevitS",
 					langs: -1,
@@ -780,7 +780,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "riewicz",
 			phonetic: "rjevitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "rjevitS",
 					langs: -1,
@@ -790,7 +790,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "diewicz",
 			phonetic: "djevitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "djevitS",
 					langs: -1,
@@ -800,7 +800,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tiewicz",
 			phonetic: "tjevitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tjevitS",
 					langs: -1,
@@ -810,7 +810,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "iewicz",
 			phonetic: "evitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
 					langs: -1,
@@ -820,7 +820,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ewicz",
 			phonetic: "evitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
 					langs: -1,
@@ -830,7 +830,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "owicz",
 			phonetic: "ovitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
 					langs: -1,
@@ -840,7 +840,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "icz",
 			phonetic: "itS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "itS",
 					langs: -1,
@@ -850,7 +850,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cz",
 			phonetic: "tS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -867,7 +867,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tSB[128]|tsB)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSB",
 					langs: 128,
@@ -881,7 +881,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cia",
 			phonetic: "(tSa[128]|tsa)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSa",
 					langs: 128,
@@ -902,7 +902,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(tSom[128]|tsom)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSom",
 					langs: 128,
@@ -916,7 +916,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cią",
 			phonetic: "(tSon[128]|tson)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSon",
 					langs: 128,
@@ -937,7 +937,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(tSem[128]|tsem)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSem",
 					langs: 128,
@@ -951,7 +951,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cię",
 			phonetic: "(tSen[128]|tsen)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSen",
 					langs: 128,
@@ -972,7 +972,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tSF[128]|tsF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSF",
 					langs: 128,
@@ -986,7 +986,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cie",
 			phonetic: "(tSe[128]|tse)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
 					langs: 128,
@@ -1000,7 +1000,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cio",
 			phonetic: "(tSo[128]|tso)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSo",
 					langs: 128,
@@ -1014,7 +1014,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ciu",
 			phonetic: "(tSu[128]|tsu)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSu",
 					langs: 128,
@@ -1034,7 +1034,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(tsi[128]|tSi[384]|tS[256]|si)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsi",
 					langs: 128,
@@ -1056,7 +1056,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ci",
 			phonetic: "(tsi[128]|tSi[384]|si)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsi",
 					langs: 128,
@@ -1081,7 +1081,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tsF[128]|tSe[384]|se)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsF",
 					langs: 128,
@@ -1099,7 +1099,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ce",
 			phonetic: "(tSe[384]|tse[128]|se)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
 					langs: 384,
@@ -1117,7 +1117,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cy",
 			phonetic: "(si|tsi[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "si",
 					langs: -1,
@@ -1131,7 +1131,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssz",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -1141,7 +1141,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sz",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -1151,7 +1151,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssp",
 			phonetic: "(Sp[16]|sp)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
 					langs: 16,
@@ -1165,7 +1165,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sp",
 			phonetic: "(Sp[16]|sp)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
 					langs: 16,
@@ -1179,7 +1179,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sst",
 			phonetic: "(St[16]|st)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "St",
 					langs: 16,
@@ -1193,7 +1193,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "st",
 			phonetic: "(St[16]|st)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "St",
 					langs: 16,
@@ -1207,7 +1207,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ss",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -1224,7 +1224,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(SB[128]|sB[128]|sja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "SB",
 					langs: 128,
@@ -1242,7 +1242,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sia",
 			phonetic: "(Sa[128]|sja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sa",
 					langs: 128,
@@ -1263,7 +1263,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Som[128]|som)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Som",
 					langs: 128,
@@ -1277,7 +1277,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sią",
 			phonetic: "(Son[128]|son)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Son",
 					langs: 128,
@@ -1298,7 +1298,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Sem[128]|sem)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sem",
 					langs: 128,
@@ -1312,7 +1312,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "się",
 			phonetic: "(Sen[128]|sen)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sen",
 					langs: 128,
@@ -1333,7 +1333,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(SF[128]|sF|zi[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "SF",
 					langs: 128,
@@ -1351,7 +1351,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sie",
 			phonetic: "(se|Se[128]|zi[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "se",
 					langs: -1,
@@ -1369,7 +1369,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sio",
 			phonetic: "(So[128]|so)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "So",
 					langs: 128,
@@ -1383,7 +1383,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "siu",
 			phonetic: "(Su[128]|sju)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Su",
 					langs: 128,
@@ -1397,7 +1397,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "si",
 			phonetic: "(Si[128]|si|zi[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Si",
 					langs: 128,
@@ -1422,7 +1422,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeiouäöë]"),
 			},
 			phonetic: "(s|z[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -1436,7 +1436,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gue",
 			phonetic: "ge",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ge",
 					langs: -1,
@@ -1446,7 +1446,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gui",
 			phonetic: "gi",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gi",
 					langs: -1,
@@ -1456,7 +1456,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "guy",
 			phonetic: "gi",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gi",
 					langs: -1,
@@ -1473,7 +1473,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "(g[256]|gh)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: 256,
@@ -1493,7 +1493,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "haus",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "haus",
 					langs: -1,
@@ -1509,7 +1509,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "haus",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "haus",
 					langs: -1,
@@ -1525,7 +1525,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1541,7 +1541,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1557,7 +1557,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1567,7 +1567,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "goltz",
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1583,7 +1583,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1599,7 +1599,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1615,7 +1615,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1631,7 +1631,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -1647,7 +1647,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hendler",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hendler",
 					langs: -1,
@@ -1663,7 +1663,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -1679,7 +1679,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -1695,7 +1695,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -1711,7 +1711,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -1727,7 +1727,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -1743,7 +1743,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -1759,7 +1759,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hof",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hof",
 					langs: -1,
@@ -1775,7 +1775,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ger",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ger",
 					langs: -1,
@@ -1791,7 +1791,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "gen",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gen",
 					langs: -1,
@@ -1807,7 +1807,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "gin",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gin",
 					langs: -1,
@@ -1823,7 +1823,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ge|gi[16]|ji[8])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ge",
 					langs: -1,
@@ -1841,7 +1841,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gie",
 			phonetic: "ge",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ge",
 					langs: -1,
@@ -1858,7 +1858,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
 			phonetic: "(gE|xe[1024]|dZe[260])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gE",
 					langs: -1,
@@ -1883,7 +1883,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
 			phonetic: "(gI|xi[1024]|dZi[260])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gI",
 					langs: -1,
@@ -1901,7 +1901,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ge",
 			phonetic: "(gE|dZe[260]|hE[512]|xe[1024])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gE",
 					langs: -1,
@@ -1923,7 +1923,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gi",
 			phonetic: "(gI|dZi[260]|hI[512]|xi[1024])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gI",
 					langs: -1,
@@ -1952,7 +1952,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
 			phonetic: "(gi|dj[64])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gi",
 					langs: -1,
@@ -1966,7 +1966,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gy",
 			phonetic: "(gi|d[64])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gi",
 					langs: -1,
@@ -1994,7 +1994,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aouyei]"),
 			},
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -2011,7 +2011,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aouei]"),
 			},
 			phonetic: "(g|h[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -2025,7 +2025,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ej",
 			phonetic: "(aj|eZ[264]|ex[1024])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -2043,7 +2043,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ej",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -2060,7 +2060,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "(l|lj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -2081,7 +2081,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "(l|lj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -2102,7 +2102,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "(l|lj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -2116,7 +2116,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lio",
 			phonetic: "(lo|le[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lo",
 					langs: -1,
@@ -2130,7 +2130,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lyo",
 			phonetic: "(lo|le[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lo",
 					langs: -1,
@@ -2144,7 +2144,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ll",
 			phonetic: "(l|J[1024])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -2165,7 +2165,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aoeiuy]"),
 			},
 			phonetic: "(j|dZ[4]|x[1024]|Z[264])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -2187,7 +2187,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "(j|x[1024])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -2201,7 +2201,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "pf",
 			phonetic: "(pf|p|f)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "pf",
 					langs: -1,
@@ -2219,7 +2219,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ph",
 			phonetic: "(ph|f)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ph",
 					langs: -1,
@@ -2233,7 +2233,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "(kv[16]|k)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kv",
 					langs: 16,
@@ -2253,7 +2253,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "t",
 			},
 			phonetic: "(Se[128]|re)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Se",
 					langs: 128,
@@ -2267,7 +2267,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rze",
 			phonetic: "(rze|rtsE[16]|Ze[128]|re[128]|rZe[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "rze",
 					langs: -1,
@@ -2299,7 +2299,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "t",
 			},
 			phonetic: "(Si[128]|ri)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Si",
 					langs: 128,
@@ -2313,7 +2313,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rzy",
 			phonetic: "(Zi[128]|ri[128]|rZi)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
 					langs: 128,
@@ -2337,7 +2337,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "t",
 			},
 			phonetic: "(S[128]|r)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: 128,
@@ -2351,7 +2351,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rz",
 			phonetic: "(rz|rts[16]|Z[128]|r[128]|rZ[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "rz",
 					langs: -1,
@@ -2383,7 +2383,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ts|tS[20])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -2403,7 +2403,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ts|tS[20])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -2417,7 +2417,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tz",
 			phonetic: "(ts[532]|tz)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: 532,
@@ -2431,7 +2431,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zh",
 			phonetic: "(Z|zh[128]|tsh[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -2456,7 +2456,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(ZB[128]|zB[128]|zja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ZB",
 					langs: 128,
@@ -2474,7 +2474,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zia",
 			phonetic: "(Za[128]|zja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Za",
 					langs: 128,
@@ -2495,7 +2495,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Zom[128]|zom)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zom",
 					langs: 128,
@@ -2509,7 +2509,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zią",
 			phonetic: "(Zon[128]|zon)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zon",
 					langs: 128,
@@ -2530,7 +2530,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Zem[128]|zem)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zem",
 					langs: 128,
@@ -2544,7 +2544,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zię",
 			phonetic: "(Zen[128]|zen)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zen",
 					langs: 128,
@@ -2565,7 +2565,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(ZF[128]|zF[128]|ze|tsi[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ZF",
 					langs: 128,
@@ -2587,7 +2587,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zie",
 			phonetic: "(ze|Ze[128]|tsi[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ze",
 					langs: -1,
@@ -2605,7 +2605,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zio",
 			phonetic: "(Zo[128]|zo)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zo",
 					langs: 128,
@@ -2619,7 +2619,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ziu",
 			phonetic: "(Zu[128]|zju)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zu",
 					langs: 128,
@@ -2633,7 +2633,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zi",
 			phonetic: "(Zi[128]|zi|tsi[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
 					langs: 128,
@@ -2657,7 +2657,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "tal",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tal",
 					langs: -1,
@@ -2673,7 +2673,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -2690,7 +2690,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
 			phonetic: "(t[16]|th)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: 16,
@@ -2704,7 +2704,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "th",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -2714,7 +2714,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "vogel",
 			phonetic: "(vogel|fogel[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vogel",
 					langs: -1,
@@ -2734,7 +2734,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(v|f[16])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -2755,7 +2755,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aeiouyäöü]$"),
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -2765,7 +2765,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "(h|x[384])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -2785,7 +2785,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(h|H[20])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -2806,7 +2806,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile(" $"),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -2823,7 +2823,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -2840,7 +2840,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -2857,7 +2857,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -2879,7 +2879,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(e|[8])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -2899,7 +2899,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -2915,7 +2915,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -2925,7 +2925,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -2935,7 +2935,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oue",
 			phonetic: "oue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oue",
 					langs: -1,
@@ -2945,7 +2945,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "au",
 			phonetic: "(au|o[8])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "au",
 					langs: -1,
@@ -2959,7 +2959,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ou",
 			phonetic: "(ou|u[8])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ou",
 					langs: -1,
@@ -2973,7 +2973,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ue",
 			phonetic: "(Q|uje[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -2987,7 +2987,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ae",
 			phonetic: "(Y[16]|aje[512]|ae)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: 16,
@@ -3005,7 +3005,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oe",
 			phonetic: "(Y[16]|oje[512]|oe)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: 16,
@@ -3023,7 +3023,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ee",
 			phonetic: "(i[4]|aje[512]|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: 4,
@@ -3041,7 +3041,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -3051,7 +3051,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -3061,7 +3061,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "eu",
 			phonetic: "(aj[16]|oj[16]|eu)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: 16,
@@ -3086,7 +3086,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -3103,7 +3103,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -3120,7 +3120,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(i[16]|e[128]|ije[512]|je)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: 16,
@@ -3142,7 +3142,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ie",
 			phonetic: "(i[16]|e[128]|ije[512]|je)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: 16,
@@ -3164,7 +3164,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ye",
 			phonetic: "(je|ije[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -3185,7 +3185,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -3202,7 +3202,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -3212,7 +3212,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "io",
 			phonetic: "(jo|e[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "jo",
 					langs: -1,
@@ -3226,7 +3226,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yo",
 			phonetic: "(jo|e[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "jo",
 					langs: -1,
@@ -3240,7 +3240,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ea",
 			phonetic: "(ea|ja[256])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ea",
 					langs: -1,
@@ -3260,7 +3260,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(e|je[512])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -3274,7 +3274,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oo",
 			phonetic: "(u[4]|o)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: 4,
@@ -3288,7 +3288,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "uu",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -3298,7 +3298,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ć",
 			phonetic: "(tS[128]|ts)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: 128,
@@ -3312,7 +3312,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ł",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -3322,7 +3322,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ń",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -3332,7 +3332,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ñ",
 			phonetic: "(n|nj[1024])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -3346,7 +3346,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ś",
 			phonetic: "(S[128]|s)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: 128,
@@ -3360,7 +3360,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ş",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -3370,7 +3370,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ţ",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -3380,7 +3380,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ż",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -3390,7 +3390,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ź",
 			phonetic: "(Z[128]|z)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: 128,
@@ -3404,7 +3404,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "où",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -3421,7 +3421,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "om",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "om",
 					langs: -1,
@@ -3431,7 +3431,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ą",
 			phonetic: "on",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "on",
 					langs: -1,
@@ -3441,7 +3441,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ä",
 			phonetic: "(Y|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -3455,7 +3455,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "á",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -3465,7 +3465,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ă",
 			phonetic: "(e[256]|a)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: 256,
@@ -3479,7 +3479,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "à",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -3489,7 +3489,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "â",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -3499,7 +3499,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "é",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -3509,7 +3509,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "è",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -3519,7 +3519,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ê",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -3536,7 +3536,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "em",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "em",
 					langs: -1,
@@ -3546,7 +3546,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ę",
 			phonetic: "en",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "en",
 					langs: -1,
@@ -3556,7 +3556,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "í",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -3566,7 +3566,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "î",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -3576,7 +3576,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ö",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -3586,7 +3586,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ő",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -3596,7 +3596,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ó",
 			phonetic: "(u[128]|o)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: 128,
@@ -3610,7 +3610,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ű",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -3620,7 +3620,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ü",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -3630,7 +3630,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ú",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -3640,7 +3640,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ű",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -3650,7 +3650,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ß",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -3660,7 +3660,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "'",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -3670,7 +3670,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "\"",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -3687,7 +3687,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(A|B[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "A",
 					langs: -1,
@@ -3708,7 +3708,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(E|F[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -3729,7 +3729,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
 			},
 			phonetic: "(O|P[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "O",
 					langs: -1,
@@ -3743,7 +3743,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "A",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "A",
 					langs: -1,
@@ -3753,7 +3753,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -3763,7 +3763,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "(k|ts[128])",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -3777,7 +3777,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -3787,7 +3787,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -3797,7 +3797,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -3807,7 +3807,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -3817,7 +3817,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -3827,7 +3827,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -3837,7 +3837,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -3847,7 +3847,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -3857,7 +3857,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -3867,7 +3867,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -3877,7 +3877,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -3887,7 +3887,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "O",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "O",
 					langs: -1,
@@ -3897,7 +3897,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -3907,7 +3907,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -3917,7 +3917,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -3927,7 +3927,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -3937,7 +3937,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -3947,7 +3947,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "U",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "U",
 					langs: -1,
@@ -3957,7 +3957,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -3967,7 +3967,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -3977,7 +3977,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -3987,7 +3987,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -3997,7 +3997,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "(ts[16]|z)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: 16,
@@ -4013,7 +4013,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ця",
 			phonetic: "tsa",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
 					langs: -1,
@@ -4023,7 +4023,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "цю",
 			phonetic: "tsu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
 					langs: -1,
@@ -4033,7 +4033,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "циа",
 			phonetic: "tsa",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
 					langs: -1,
@@ -4043,7 +4043,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "цие",
 			phonetic: "tse",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tse",
 					langs: -1,
@@ -4053,7 +4053,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "цио",
 			phonetic: "tso",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tso",
 					langs: -1,
@@ -4063,7 +4063,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "циу",
 			phonetic: "tsu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
 					langs: -1,
@@ -4073,7 +4073,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "сие",
 			phonetic: "se",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "se",
 					langs: -1,
@@ -4083,7 +4083,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "сио",
 			phonetic: "so",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "so",
 					langs: -1,
@@ -4093,7 +4093,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "зие",
 			phonetic: "ze",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ze",
 					langs: -1,
@@ -4103,7 +4103,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "зио",
 			phonetic: "zo",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "zo",
 					langs: -1,
@@ -4119,7 +4119,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "haus",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "haus",
 					langs: -1,
@@ -4135,7 +4135,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "haus",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "haus",
 					langs: -1,
@@ -4151,7 +4151,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -4167,7 +4167,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -4183,7 +4183,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -4199,7 +4199,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hof",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hof",
 					langs: -1,
@@ -4215,7 +4215,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ger",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ger",
 					langs: -1,
@@ -4231,7 +4231,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "gen",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gen",
 					langs: -1,
@@ -4247,7 +4247,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "gin",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gin",
 					langs: -1,
@@ -4271,7 +4271,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
 			},
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -4288,7 +4288,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
 			},
 			phonetic: "(g|h)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -4302,7 +4302,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ля",
 			phonetic: "la",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "la",
 					langs: -1,
@@ -4312,7 +4312,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "лю",
 			phonetic: "lu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lu",
 					langs: -1,
@@ -4322,7 +4322,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "лё",
 			phonetic: "(le|lo)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "le",
 					langs: -1,
@@ -4336,7 +4336,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "лио",
 			phonetic: "(le|lo)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "le",
 					langs: -1,
@@ -4350,7 +4350,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ле",
 			phonetic: "(lE|lo)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lE",
 					langs: -1,
@@ -4364,7 +4364,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ийе",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -4374,7 +4374,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ие",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -4384,7 +4384,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ыйе",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -4394,7 +4394,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ые",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -4411,7 +4411,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^(а|о|у)"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -4428,7 +4428,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^(а|о|у)"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -4444,7 +4444,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -4460,7 +4460,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -4470,7 +4470,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ё",
 			phonetic: "(e|jo)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -4490,7 +4490,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(jaj|aj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "jaj",
 					langs: -1,
@@ -4511,7 +4511,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("(а|е|о|у)$"),
 			},
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -4527,7 +4527,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -4537,7 +4537,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "эй",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -4547,7 +4547,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ей",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -4557,7 +4557,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ауе",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -4567,7 +4567,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ауэ",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -4577,7 +4577,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "а",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -4587,7 +4587,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "б",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -4597,7 +4597,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "в",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -4607,7 +4607,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "г",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -4617,7 +4617,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "д",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -4627,7 +4627,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "е",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -4637,7 +4637,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ж",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -4647,7 +4647,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "з",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -4657,7 +4657,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "и",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -4667,7 +4667,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "й",
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -4677,7 +4677,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "к",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -4687,7 +4687,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "л",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -4697,7 +4697,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "м",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -4707,7 +4707,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "н",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -4717,7 +4717,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "о",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -4727,7 +4727,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "п",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -4737,7 +4737,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "р",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -4753,7 +4753,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -4763,7 +4763,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "с",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -4773,7 +4773,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "т",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -4783,7 +4783,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "у",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -4793,7 +4793,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ф",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -4803,7 +4803,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "х",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -4813,7 +4813,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ц",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -4823,7 +4823,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ч",
 			phonetic: "tS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4833,7 +4833,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ш",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -4843,7 +4843,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "щ",
 			phonetic: "StS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "StS",
 					langs: -1,
@@ -4853,7 +4853,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ъ",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -4863,7 +4863,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ы",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -4873,7 +4873,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ь",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -4883,7 +4883,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "э",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -4893,7 +4893,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ю",
 			phonetic: "ju",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ju",
 					langs: -1,
@@ -4903,7 +4903,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "я",
 			phonetic: "ja",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ja",
 					langs: -1,
@@ -4915,7 +4915,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tch",
 			phonetic: "tS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4925,7 +4925,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "(tS|x)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4939,7 +4939,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ck",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -4956,7 +4956,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -4972,7 +4972,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -4989,7 +4989,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -4999,7 +4999,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -5015,7 +5015,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -5025,7 +5025,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gh",
 			phonetic: "(g|f|w)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -5043,7 +5043,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gn",
 			phonetic: "(gn|n)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gn",
 					langs: -1,
@@ -5064,7 +5064,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
 			phonetic: "(g|dZ)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -5078,7 +5078,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "th",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -5088,7 +5088,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "kh",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -5098,7 +5098,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ph",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -5108,7 +5108,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sch",
 			phonetic: "(S|sk)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -5122,7 +5122,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sh",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -5138,7 +5138,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hu",
 					langs: -1,
@@ -5154,7 +5154,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "w",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "w",
 					langs: -1,
@@ -5170,7 +5170,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -5187,7 +5187,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[^aeiou]"),
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -5203,7 +5203,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "H",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "H",
 					langs: -1,
@@ -5213,7 +5213,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -5223,7 +5223,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "dZ",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -5239,7 +5239,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -5255,7 +5255,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -5271,7 +5271,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(N|ng)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "N",
 					langs: -1,
@@ -5291,7 +5291,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(pn|n)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "pn",
 					langs: -1,
@@ -5311,7 +5311,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ps|s)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ps",
 					langs: -1,
@@ -5325,7 +5325,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "kw",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kw",
 					langs: -1,
@@ -5335,7 +5335,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -5345,7 +5345,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tia",
 			phonetic: "(So|Sa)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "So",
 					langs: -1,
@@ -5359,7 +5359,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tio",
 			phonetic: "So",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "So",
 					langs: -1,
@@ -5375,7 +5375,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -5385,7 +5385,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "(w|v)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "w",
 					langs: -1,
@@ -5405,7 +5405,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -5415,7 +5415,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -5432,7 +5432,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile(" $"),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -5455,7 +5455,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeiouy]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -5465,7 +5465,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -5475,7 +5475,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oue",
 			phonetic: "(aue|oue)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -5489,7 +5489,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ai",
 			phonetic: "(aj|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -5503,7 +5503,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ay",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -5520,7 +5520,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -5530,7 +5530,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "(e|o|a)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -5548,7 +5548,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "(aj|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -5562,7 +5562,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "(aj|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -5576,7 +5576,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ear",
 			phonetic: "ia",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ia",
 					langs: -1,
@@ -5586,7 +5586,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ea",
 			phonetic: "(i|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -5600,7 +5600,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ee",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -5617,7 +5617,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -5633,7 +5633,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(|E)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -5647,7 +5647,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -5657,7 +5657,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ie",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -5674,7 +5674,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -5684,7 +5684,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -5694,7 +5694,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oa",
 			phonetic: "ou",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ou",
 					langs: -1,
@@ -5704,7 +5704,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oi",
 			phonetic: "oj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oj",
 					langs: -1,
@@ -5714,7 +5714,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oo",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -5724,7 +5724,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ou",
 			phonetic: "(u|ou)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -5738,7 +5738,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oy",
 			phonetic: "oj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oj",
 					langs: -1,
@@ -5755,7 +5755,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
 			phonetic: "ou",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ou",
 					langs: -1,
@@ -5765,7 +5765,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "(o|a)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -5786,7 +5786,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
 			phonetic: "(ju|u)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ju",
 					langs: -1,
@@ -5806,7 +5806,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(e|u)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -5820,7 +5820,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "(u|a)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -5834,7 +5834,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -5844,7 +5844,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -5854,7 +5854,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -5864,7 +5864,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -5874,7 +5874,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -5884,7 +5884,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -5894,7 +5894,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -5904,7 +5904,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -5914,7 +5914,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -5924,7 +5924,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -5934,7 +5934,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -5944,7 +5944,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -5954,7 +5954,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -5964,7 +5964,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -5974,7 +5974,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -5986,7 +5986,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "kh",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -5996,7 +5996,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ph",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -6006,7 +6006,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ç",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -6016,7 +6016,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -6026,7 +6026,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -6043,7 +6043,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -6053,7 +6053,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6063,7 +6063,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gn",
 			phonetic: "(n|gn)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -6084,7 +6084,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -6100,7 +6100,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6117,7 +6117,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -6133,7 +6133,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6143,7 +6143,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6153,7 +6153,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6177,7 +6177,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeiouyéèê]"),
 			},
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -6194,7 +6194,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -6210,7 +6210,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -6220,7 +6220,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -6230,7 +6230,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -6247,7 +6247,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
 			phonetic: "(v|uh)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -6268,7 +6268,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -6278,7 +6278,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "uo",
 			phonetic: "(vo|o)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vo",
 					langs: -1,
@@ -6299,7 +6299,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -6309,7 +6309,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -6319,7 +6319,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "eau",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -6329,7 +6329,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ai",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -6339,7 +6339,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ay",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -6349,7 +6349,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "é",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -6359,7 +6359,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ê",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -6369,7 +6369,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "è",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -6379,7 +6379,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "à",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -6389,7 +6389,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "â",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -6399,7 +6399,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "où",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -6409,7 +6409,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ou",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -6419,7 +6419,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oi",
 			phonetic: "oj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oj",
 					langs: -1,
@@ -6429,7 +6429,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -6439,7 +6439,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -6456,7 +6456,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[ou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -6472,7 +6472,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(e|)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -6493,7 +6493,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -6510,7 +6510,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aoeu]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -6520,7 +6520,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yi",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -6530,7 +6530,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ii",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -6540,7 +6540,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yy",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -6550,7 +6550,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -6560,7 +6560,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -6570,7 +6570,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -6580,7 +6580,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -6590,7 +6590,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -6600,7 +6600,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -6610,7 +6610,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -6620,7 +6620,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -6630,7 +6630,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -6640,7 +6640,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6650,7 +6650,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -6660,7 +6660,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -6670,7 +6670,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -6680,7 +6680,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -6690,7 +6690,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -6700,7 +6700,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -6710,7 +6710,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -6720,7 +6720,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -6730,7 +6730,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -6740,7 +6740,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -6750,7 +6750,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -6762,7 +6762,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ziu",
 			phonetic: "tsu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
 					langs: -1,
@@ -6772,7 +6772,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zia",
 			phonetic: "tsa",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
 					langs: -1,
@@ -6782,7 +6782,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zio",
 			phonetic: "tso",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tso",
 					langs: -1,
@@ -6792,7 +6792,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssch",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -6802,7 +6802,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "chsch",
 			phonetic: "xS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "xS",
 					langs: -1,
@@ -6818,7 +6818,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "evitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
 					langs: -1,
@@ -6834,7 +6834,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ovitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
 					langs: -1,
@@ -6850,7 +6850,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "evitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
 					langs: -1,
@@ -6866,7 +6866,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ovitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
 					langs: -1,
@@ -6882,7 +6882,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "vitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vitS",
 					langs: -1,
@@ -6898,7 +6898,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "vitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vitS",
 					langs: -1,
@@ -6908,7 +6908,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sch",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -6918,7 +6918,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "chs",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -6928,7 +6928,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -6938,7 +6938,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ck",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -6955,7 +6955,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -6971,7 +6971,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "Sp",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
 					langs: -1,
@@ -6987,7 +6987,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "St",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "St",
 					langs: -1,
@@ -6997,7 +6997,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssp",
 			phonetic: "(Sp|sp)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
 					langs: -1,
@@ -7011,7 +7011,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sp",
 			phonetic: "(Sp|sp)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
 					langs: -1,
@@ -7025,7 +7025,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sst",
 			phonetic: "(St|st)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "St",
 					langs: -1,
@@ -7039,7 +7039,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "st",
 			phonetic: "(St|st)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "St",
 					langs: -1,
@@ -7053,7 +7053,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "pf",
 			phonetic: "(pf|p|f)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "pf",
 					langs: -1,
@@ -7071,7 +7071,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ph",
 			phonetic: "(ph|f)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ph",
 					langs: -1,
@@ -7085,7 +7085,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "kv",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kv",
 					langs: -1,
@@ -7101,7 +7101,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(evits|evitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evits",
 					langs: -1,
@@ -7121,7 +7121,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(evits|evitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evits",
 					langs: -1,
@@ -7141,7 +7141,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(evits|evitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evits",
 					langs: -1,
@@ -7161,7 +7161,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(evits|evitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evits",
 					langs: -1,
@@ -7181,7 +7181,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ovits|ovitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
 					langs: -1,
@@ -7201,7 +7201,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ovits|ovitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
 					langs: -1,
@@ -7221,7 +7221,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ovits|ovitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
 					langs: -1,
@@ -7241,7 +7241,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ovits|ovitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
 					langs: -1,
@@ -7261,7 +7261,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(vits|vitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vits",
 					langs: -1,
@@ -7281,7 +7281,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(vits|vitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vits",
 					langs: -1,
@@ -7301,7 +7301,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(vits|vitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vits",
 					langs: -1,
@@ -7321,7 +7321,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(vits|vitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vits",
 					langs: -1,
@@ -7335,7 +7335,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tz",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -7351,7 +7351,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "tal",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tal",
 					langs: -1,
@@ -7367,7 +7367,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -7384,7 +7384,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[äöüaeiou]"),
 			},
 			phonetic: "(t|th)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -7398,7 +7398,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "th",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -7414,7 +7414,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -7431,7 +7431,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aeiouyäöü]$"),
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -7447,7 +7447,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "H",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "H",
 					langs: -1,
@@ -7457,7 +7457,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ss",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -7474,7 +7474,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[äöüaeiouy]"),
 			},
 			phonetic: "(z|s)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -7502,7 +7502,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeiouyäöü]"),
 			},
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -7512,7 +7512,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ß",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -7528,7 +7528,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -7538,7 +7538,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -7548,7 +7548,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ue",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -7558,7 +7558,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ae",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -7568,7 +7568,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oe",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -7578,7 +7578,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ü",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -7588,7 +7588,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ä",
 			phonetic: "(Y|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -7602,7 +7602,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ö",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -7612,7 +7612,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -7622,7 +7622,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -7632,7 +7632,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "eu",
 			phonetic: "(aj|oj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -7653,7 +7653,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -7670,7 +7670,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -7680,7 +7680,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ie",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -7697,7 +7697,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -7714,7 +7714,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aoeu]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -7724,7 +7724,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ñ",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -7734,7 +7734,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ã",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -7744,7 +7744,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ő",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -7754,7 +7754,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ű",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -7764,7 +7764,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ç",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -7774,7 +7774,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "A",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "A",
 					langs: -1,
@@ -7784,7 +7784,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -7794,7 +7794,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -7804,7 +7804,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -7814,7 +7814,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -7824,7 +7824,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -7834,7 +7834,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -7844,7 +7844,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -7854,7 +7854,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -7864,7 +7864,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -7874,7 +7874,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -7884,7 +7884,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -7894,7 +7894,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -7904,7 +7904,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -7914,7 +7914,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "O",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "O",
 					langs: -1,
@@ -7924,7 +7924,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -7934,7 +7934,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -7944,7 +7944,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -7954,7 +7954,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -7964,7 +7964,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -7974,7 +7974,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "U",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "U",
 					langs: -1,
@@ -7984,7 +7984,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "(f|v)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -7998,7 +7998,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -8008,7 +8008,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -8018,7 +8018,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -8028,7 +8028,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -8040,7 +8040,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "אי",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -8050,7 +8050,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "עי",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -8060,7 +8060,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "עו",
 			phonetic: "VV",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "VV",
 					langs: -1,
@@ -8070,7 +8070,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "או",
 			phonetic: "VV",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "VV",
 					langs: -1,
@@ -8080,7 +8080,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ג׳",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -8090,7 +8090,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ד׳",
 			phonetic: "dZ",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -8100,7 +8100,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "א",
 			phonetic: "L",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "L",
 					langs: -1,
@@ -8110,7 +8110,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ב",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -8120,7 +8120,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ג",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -8130,7 +8130,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ד",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -8146,7 +8146,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "1",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "1",
 					langs: -1,
@@ -8162,7 +8162,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "1",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "1",
 					langs: -1,
@@ -8172,7 +8172,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ה",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -8182,7 +8182,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "וו",
 			phonetic: "V",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "V",
 					langs: -1,
@@ -8192,7 +8192,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "וי",
 			phonetic: "WW",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "WW",
 					langs: -1,
@@ -8202,7 +8202,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ו",
 			phonetic: "W",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "W",
 					langs: -1,
@@ -8212,7 +8212,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ז",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -8222,7 +8222,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ח",
 			phonetic: "X",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "X",
 					langs: -1,
@@ -8232,7 +8232,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ט",
 			phonetic: "T",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "T",
 					langs: -1,
@@ -8242,7 +8242,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "יי",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -8252,7 +8252,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "י",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -8262,7 +8262,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ך",
 			phonetic: "X",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "X",
 					langs: -1,
@@ -8278,7 +8278,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "K",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "K",
 					langs: -1,
@@ -8288,7 +8288,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "כ",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -8298,7 +8298,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ל",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -8308,7 +8308,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ם",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -8318,7 +8318,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "מ",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -8328,7 +8328,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ן",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -8338,7 +8338,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "נ",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -8348,7 +8348,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ס",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -8358,7 +8358,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ע",
 			phonetic: "L",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "L",
 					langs: -1,
@@ -8368,7 +8368,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ף",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -8378,7 +8378,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "פ",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -8388,7 +8388,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ץ",
 			phonetic: "C",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "C",
 					langs: -1,
@@ -8398,7 +8398,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "צ",
 			phonetic: "C",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "C",
 					langs: -1,
@@ -8408,7 +8408,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ק",
 			phonetic: "K",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "K",
 					langs: -1,
@@ -8418,7 +8418,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ר",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -8428,7 +8428,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ש",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -8438,7 +8438,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ת",
 			phonetic: "TB",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "TB",
 					langs: -1,
@@ -8450,7 +8450,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sz",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -8460,7 +8460,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zs",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -8470,7 +8470,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cs",
 			phonetic: "tS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -8480,7 +8480,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ay",
 			phonetic: "(oj|aj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oj",
 					langs: -1,
@@ -8494,7 +8494,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ai",
 			phonetic: "(oj|aj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oj",
 					langs: -1,
@@ -8508,7 +8508,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aj",
 			phonetic: "(oj|aj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oj",
 					langs: -1,
@@ -8522,7 +8522,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -8532,7 +8532,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -8549,7 +8549,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[áo]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -8566,7 +8566,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[áo]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -8576,7 +8576,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ee",
 			phonetic: "(aj|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -8590,7 +8590,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ely",
 			phonetic: "(aj|eli)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -8604,7 +8604,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ly",
 			phonetic: "(j|li)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -8625,7 +8625,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
 			phonetic: "dj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "dj",
 					langs: -1,
@@ -8635,7 +8635,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gy",
 			phonetic: "(d|gi)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -8656,7 +8656,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
 			phonetic: "nj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "nj",
 					langs: -1,
@@ -8666,7 +8666,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ny",
 			phonetic: "(n|ni)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -8687,7 +8687,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
 			phonetic: "tj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tj",
 					langs: -1,
@@ -8697,7 +8697,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ty",
 			phonetic: "(t|ti)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -8711,7 +8711,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "(ku|kv)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ku",
 					langs: -1,
@@ -8731,7 +8731,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -8741,7 +8741,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "á",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -8751,7 +8751,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "é",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -8761,7 +8761,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "í",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -8771,7 +8771,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ó",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -8781,7 +8781,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ö",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -8791,7 +8791,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ő",
 			phonetic: "Y",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Y",
 					langs: -1,
@@ -8801,7 +8801,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ú",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -8811,7 +8811,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ü",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -8821,7 +8821,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ű",
 			phonetic: "Q",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Q",
 					langs: -1,
@@ -8831,7 +8831,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -8841,7 +8841,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -8851,7 +8851,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -8861,7 +8861,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -8871,7 +8871,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -8881,7 +8881,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -8891,7 +8891,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -8901,7 +8901,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -8911,7 +8911,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -8921,7 +8921,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -8931,7 +8931,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -8941,7 +8941,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -8951,7 +8951,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -8961,7 +8961,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -8971,7 +8971,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -8981,7 +8981,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -8991,7 +8991,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -9001,7 +9001,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -9011,7 +9011,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "(S|s)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -9025,7 +9025,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -9035,7 +9035,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -9045,7 +9045,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -9055,7 +9055,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -9065,7 +9065,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -9075,7 +9075,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -9085,7 +9085,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -9103,7 +9103,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ski",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ski",
 					langs: -1,
@@ -9119,7 +9119,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "tski",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tski",
 					langs: -1,
@@ -9135,7 +9135,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lova|lof|l|el)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lova",
 					langs: -1,
@@ -9163,7 +9163,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(kova|kof|k|ek)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kova",
 					langs: -1,
@@ -9191,7 +9191,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ova|of|)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ova",
 					langs: -1,
@@ -9215,7 +9215,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lovna|levna|l|el)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lovna",
 					langs: -1,
@@ -9243,7 +9243,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(kovna|k|ek)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kovna",
 					langs: -1,
@@ -9267,7 +9267,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ovna|)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovna",
 					langs: -1,
@@ -9287,7 +9287,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(l|el)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -9307,7 +9307,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(k|ek)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -9327,7 +9327,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -9343,7 +9343,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(a|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -9357,7 +9357,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "czy",
 			phonetic: "tSi",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
 					langs: -1,
@@ -9374,7 +9374,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tSe|tSF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
 					langs: -1,
@@ -9388,7 +9388,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ciewicz",
 			phonetic: "(tsevitS|tSevitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsevitS",
 					langs: -1,
@@ -9402,7 +9402,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "siewicz",
 			phonetic: "(sevitS|SevitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "sevitS",
 					langs: -1,
@@ -9416,7 +9416,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ziewicz",
 			phonetic: "(zevitS|ZevitS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "zevitS",
 					langs: -1,
@@ -9430,7 +9430,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "riewicz",
 			phonetic: "rjevitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "rjevitS",
 					langs: -1,
@@ -9440,7 +9440,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "diewicz",
 			phonetic: "djevitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "djevitS",
 					langs: -1,
@@ -9450,7 +9450,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tiewicz",
 			phonetic: "tjevitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tjevitS",
 					langs: -1,
@@ -9460,7 +9460,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "iewicz",
 			phonetic: "evitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
 					langs: -1,
@@ -9470,7 +9470,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ewicz",
 			phonetic: "evitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
 					langs: -1,
@@ -9480,7 +9480,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "owicz",
 			phonetic: "ovitS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
 					langs: -1,
@@ -9490,7 +9490,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "icz",
 			phonetic: "itS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "itS",
 					langs: -1,
@@ -9500,7 +9500,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cz",
 			phonetic: "tS",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -9510,7 +9510,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -9527,7 +9527,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tSB|tsB)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSB",
 					langs: -1,
@@ -9541,7 +9541,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cia",
 			phonetic: "(tSa|tsa)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSa",
 					langs: -1,
@@ -9562,7 +9562,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(tSom|tsom)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSom",
 					langs: -1,
@@ -9576,7 +9576,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cią",
 			phonetic: "(tSon|tson)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSon",
 					langs: -1,
@@ -9597,7 +9597,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(tSem|tsem)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSem",
 					langs: -1,
@@ -9611,7 +9611,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cię",
 			phonetic: "(tSen|tsen)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSen",
 					langs: -1,
@@ -9632,7 +9632,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(tSF|tsF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSF",
 					langs: -1,
@@ -9646,7 +9646,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cie",
 			phonetic: "(tSe|tse)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
 					langs: -1,
@@ -9660,7 +9660,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "cio",
 			phonetic: "(tSo|tso)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSo",
 					langs: -1,
@@ -9674,7 +9674,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ciu",
 			phonetic: "(tSu|tsu)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSu",
 					langs: -1,
@@ -9688,7 +9688,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ci",
 			phonetic: "(tSi|tsI)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
 					langs: -1,
@@ -9702,7 +9702,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ć",
 			phonetic: "(tS|ts)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -9716,7 +9716,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssz",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -9726,7 +9726,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sz",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -9743,7 +9743,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(SB|sB|sja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "SB",
 					langs: -1,
@@ -9761,7 +9761,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sia",
 			phonetic: "(Sa|sja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sa",
 					langs: -1,
@@ -9782,7 +9782,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Som|som)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Som",
 					langs: -1,
@@ -9796,7 +9796,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sią",
 			phonetic: "(Son|son)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Son",
 					langs: -1,
@@ -9817,7 +9817,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Sem|sem)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sem",
 					langs: -1,
@@ -9831,7 +9831,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "się",
 			phonetic: "(Sen|sen)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Sen",
 					langs: -1,
@@ -9852,7 +9852,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(SF|sF|se)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "SF",
 					langs: -1,
@@ -9870,7 +9870,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sie",
 			phonetic: "(Se|se)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Se",
 					langs: -1,
@@ -9884,7 +9884,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sio",
 			phonetic: "(So|so)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "So",
 					langs: -1,
@@ -9898,7 +9898,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "siu",
 			phonetic: "(Su|sju)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Su",
 					langs: -1,
@@ -9912,7 +9912,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "si",
 			phonetic: "(Si|sI)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Si",
 					langs: -1,
@@ -9926,7 +9926,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ś",
 			phonetic: "(S|s)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -9947,7 +9947,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(ZB|zB|zja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ZB",
 					langs: -1,
@@ -9965,7 +9965,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zia",
 			phonetic: "(Za|zja)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Za",
 					langs: -1,
@@ -9986,7 +9986,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Zom|zom)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zom",
 					langs: -1,
@@ -10000,7 +10000,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zią",
 			phonetic: "(Zon|zon)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zon",
 					langs: -1,
@@ -10021,7 +10021,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "(Zem|zem)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zem",
 					langs: -1,
@@ -10035,7 +10035,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zię",
 			phonetic: "(Zen|zen)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zen",
 					langs: -1,
@@ -10056,7 +10056,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(ZF|zF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ZF",
 					langs: -1,
@@ -10070,7 +10070,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zie",
 			phonetic: "(Ze|ze)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
 					langs: -1,
@@ -10084,7 +10084,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zio",
 			phonetic: "(Zo|zo)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zo",
 					langs: -1,
@@ -10098,7 +10098,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ziu",
 			phonetic: "(Zu|zju)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zu",
 					langs: -1,
@@ -10112,7 +10112,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zi",
 			phonetic: "(Zi|zI)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
 					langs: -1,
@@ -10133,7 +10133,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(Ze|ZF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
 					langs: -1,
@@ -10154,7 +10154,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(Ze|ZF|ze|zF)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
 					langs: -1,
@@ -10176,7 +10176,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "że",
 			phonetic: "Ze",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
 					langs: -1,
@@ -10186,7 +10186,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "źe",
 			phonetic: "(Ze|ze)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
 					langs: -1,
@@ -10200,7 +10200,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ży",
 			phonetic: "Zi",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
 					langs: -1,
@@ -10210,7 +10210,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "źi",
 			phonetic: "(Zi|zi)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
 					langs: -1,
@@ -10224,7 +10224,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ż",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -10234,7 +10234,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ź",
 			phonetic: "(Z|z)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -10254,7 +10254,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "t",
 			},
 			phonetic: "(Se|re)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Se",
 					langs: -1,
@@ -10268,7 +10268,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rze",
 			phonetic: "(Ze|re|rZe)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
 					langs: -1,
@@ -10292,7 +10292,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "t",
 			},
 			phonetic: "(Si|ri)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Si",
 					langs: -1,
@@ -10306,7 +10306,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rzy",
 			phonetic: "(Zi|ri|rZi)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
 					langs: -1,
@@ -10330,7 +10330,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "t",
 			},
 			phonetic: "(S|r)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -10344,7 +10344,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rz",
 			phonetic: "(Z|r|rZ)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -10362,7 +10362,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lio",
 			phonetic: "(lo|le)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lo",
 					langs: -1,
@@ -10376,7 +10376,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ł",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -10386,7 +10386,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ń",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -10396,7 +10396,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -10412,7 +10412,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -10422,7 +10422,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ó",
 			phonetic: "(u|o)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -10443,7 +10443,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "om",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "om",
 					langs: -1,
@@ -10460,7 +10460,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
 			phonetic: "em",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "em",
 					langs: -1,
@@ -10470,7 +10470,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ą",
 			phonetic: "on",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "on",
 					langs: -1,
@@ -10480,7 +10480,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ę",
 			phonetic: "en",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "en",
 					langs: -1,
@@ -10490,7 +10490,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ije",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -10500,7 +10500,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yje",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -10510,7 +10510,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "iie",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -10520,7 +10520,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yie",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -10530,7 +10530,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "iye",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -10540,7 +10540,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yye",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -10557,7 +10557,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10574,7 +10574,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10591,7 +10591,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10608,7 +10608,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10625,7 +10625,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10642,7 +10642,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10652,7 +10652,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "rie",
 			phonetic: "rje",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "rje",
 					langs: -1,
@@ -10662,7 +10662,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "die",
 			phonetic: "dje",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "dje",
 					langs: -1,
@@ -10672,7 +10672,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tie",
 			phonetic: "tje",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tje",
 					langs: -1,
@@ -10689,7 +10689,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "F",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "F",
 					langs: -1,
@@ -10699,7 +10699,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ie",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -10709,7 +10709,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -10719,7 +10719,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "au",
 			phonetic: "au",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "au",
 					langs: -1,
@@ -10729,7 +10729,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -10739,7 +10739,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -10749,7 +10749,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ej",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -10759,7 +10759,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ai",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -10769,7 +10769,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ay",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -10779,7 +10779,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aj",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -10796,7 +10796,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[ou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10813,7 +10813,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[ou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10830,7 +10830,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10847,7 +10847,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -10864,7 +10864,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "B",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "B",
 					langs: -1,
@@ -10881,7 +10881,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
 			phonetic: "(E|F)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -10902,7 +10902,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
 			},
 			phonetic: "P",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "P",
 					langs: -1,
@@ -10912,7 +10912,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -10922,7 +10922,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -10932,7 +10932,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -10942,7 +10942,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -10952,7 +10952,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -10962,7 +10962,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -10972,7 +10972,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -10982,7 +10982,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "(h|x)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -10996,7 +10996,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -11006,7 +11006,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -11016,7 +11016,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11026,7 +11026,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -11036,7 +11036,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -11046,7 +11046,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -11056,7 +11056,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -11066,7 +11066,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -11076,7 +11076,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11086,7 +11086,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -11096,7 +11096,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -11106,7 +11106,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -11116,7 +11116,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -11126,7 +11126,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -11136,7 +11136,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -11146,7 +11146,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -11156,7 +11156,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -11166,7 +11166,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -11178,7 +11178,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -11188,7 +11188,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ce",
 			phonetic: "tSe",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
 					langs: -1,
@@ -11198,7 +11198,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ci",
 			phonetic: "(tSi|tS)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
 					langs: -1,
@@ -11219,7 +11219,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11229,7 +11229,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -11239,7 +11239,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11249,7 +11249,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gi",
 			phonetic: "(dZi|dZ)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "dZi",
 					langs: -1,
@@ -11270,7 +11270,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "dZ",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -11280,7 +11280,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gh",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -11290,7 +11290,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -11307,7 +11307,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -11324,7 +11324,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -11334,7 +11334,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ţ",
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -11344,7 +11344,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ş",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -11354,7 +11354,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "(x|h)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -11368,7 +11368,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11378,7 +11378,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11388,7 +11388,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -11398,7 +11398,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -11408,7 +11408,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -11418,7 +11418,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "î",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -11428,7 +11428,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ea",
 			phonetic: "ja",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ja",
 					langs: -1,
@@ -11438,7 +11438,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ă",
 			phonetic: "(e|a)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -11452,7 +11452,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -11462,7 +11462,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -11472,7 +11472,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -11482,7 +11482,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -11492,7 +11492,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -11502,7 +11502,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -11512,7 +11512,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -11522,7 +11522,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -11532,7 +11532,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -11542,7 +11542,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -11552,7 +11552,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -11562,7 +11562,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -11572,7 +11572,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -11582,7 +11582,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -11592,7 +11592,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -11602,7 +11602,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -11612,7 +11612,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -11622,7 +11622,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -11632,7 +11632,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -11642,7 +11642,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -11660,7 +11660,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(in|ina)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "in",
 					langs: -1,
@@ -11680,7 +11680,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(in|ina)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "in",
 					langs: -1,
@@ -11700,7 +11700,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lof|lef)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lof",
 					langs: -1,
@@ -11720,7 +11720,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(lof|lef|lova)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lof",
 					langs: -1,
@@ -11744,7 +11744,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(of|ova)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "of",
 					langs: -1,
@@ -11764,7 +11764,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(ef|ova)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ef",
 					langs: -1,
@@ -11784,7 +11784,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(aja|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aja",
 					langs: -1,
@@ -11804,7 +11804,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(aja|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aja",
 					langs: -1,
@@ -11824,7 +11824,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(aja|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aja",
 					langs: -1,
@@ -11838,7 +11838,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsya",
 			phonetic: "tsa",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
 					langs: -1,
@@ -11848,7 +11848,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsyu",
 			phonetic: "tsu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
 					langs: -1,
@@ -11858,7 +11858,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsia",
 			phonetic: "tsa",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
 					langs: -1,
@@ -11868,7 +11868,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsie",
 			phonetic: "tse",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tse",
 					langs: -1,
@@ -11878,7 +11878,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsio",
 			phonetic: "tso",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tso",
 					langs: -1,
@@ -11888,7 +11888,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsye",
 			phonetic: "tse",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tse",
 					langs: -1,
@@ -11898,7 +11898,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsyo",
 			phonetic: "tso",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tso",
 					langs: -1,
@@ -11908,7 +11908,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tsiu",
 			phonetic: "tsu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
 					langs: -1,
@@ -11918,7 +11918,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sie",
 			phonetic: "se",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "se",
 					langs: -1,
@@ -11928,7 +11928,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sio",
 			phonetic: "so",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "so",
 					langs: -1,
@@ -11938,7 +11938,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zie",
 			phonetic: "ze",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ze",
 					langs: -1,
@@ -11948,7 +11948,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zio",
 			phonetic: "zo",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "zo",
 					langs: -1,
@@ -11958,7 +11958,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sye",
 			phonetic: "se",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "se",
 					langs: -1,
@@ -11968,7 +11968,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "syo",
 			phonetic: "so",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "so",
 					langs: -1,
@@ -11978,7 +11978,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zye",
 			phonetic: "ze",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ze",
 					langs: -1,
@@ -11988,7 +11988,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zyo",
 			phonetic: "zo",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "zo",
 					langs: -1,
@@ -12004,7 +12004,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "haus",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "haus",
 					langs: -1,
@@ -12020,7 +12020,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "haus",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "haus",
 					langs: -1,
@@ -12036,7 +12036,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -12052,7 +12052,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -12068,7 +12068,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -12084,7 +12084,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "holts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "holts",
 					langs: -1,
@@ -12100,7 +12100,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -12116,7 +12116,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -12132,7 +12132,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -12148,7 +12148,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -12164,7 +12164,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajmer",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajmer",
 					langs: -1,
@@ -12180,7 +12180,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hajm",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hajm",
 					langs: -1,
@@ -12196,7 +12196,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hendler",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hendler",
 					langs: -1,
@@ -12212,7 +12212,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hof",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hof",
 					langs: -1,
@@ -12228,7 +12228,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hojf",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hojf",
 					langs: -1,
@@ -12244,7 +12244,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hojf",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hojf",
 					langs: -1,
@@ -12260,7 +12260,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "hojf",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "hojf",
 					langs: -1,
@@ -12276,7 +12276,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ger",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ger",
 					langs: -1,
@@ -12292,7 +12292,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "gen",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gen",
 					langs: -1,
@@ -12308,7 +12308,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "gin",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "gin",
 					langs: -1,
@@ -12318,7 +12318,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "gg",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -12341,7 +12341,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
 			phonetic: "(kog|koh)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kog",
 					langs: -1,
@@ -12368,7 +12368,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
 			phonetic: "(kag|kah)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kag",
 					langs: -1,
@@ -12396,7 +12396,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -12413,7 +12413,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
 			phonetic: "(g|h)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -12427,7 +12427,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "kh",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -12437,7 +12437,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "(tS|x)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -12451,7 +12451,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sch",
 			phonetic: "(StS|S)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "StS",
 					langs: -1,
@@ -12465,7 +12465,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ssh",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -12475,7 +12475,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "sh",
 			phonetic: "S",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "S",
 					langs: -1,
@@ -12485,7 +12485,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "zh",
 			phonetic: "Z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "Z",
 					langs: -1,
@@ -12501,7 +12501,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "ts",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -12511,7 +12511,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "tz",
 			phonetic: "(ts|tz)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ts",
 					langs: -1,
@@ -12532,7 +12532,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -12542,7 +12542,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -12552,7 +12552,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "(kv|k)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "kv",
 					langs: -1,
@@ -12566,7 +12566,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -12582,7 +12582,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -12592,7 +12592,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -12602,7 +12602,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -12612,7 +12612,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lya",
 			phonetic: "la",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "la",
 					langs: -1,
@@ -12622,7 +12622,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lyu",
 			phonetic: "lu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lu",
 					langs: -1,
@@ -12632,7 +12632,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lia",
 			phonetic: "la",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "la",
 					langs: -1,
@@ -12642,7 +12642,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "liu",
 			phonetic: "lu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lu",
 					langs: -1,
@@ -12652,7 +12652,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lja",
 			phonetic: "la",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "la",
 					langs: -1,
@@ -12662,7 +12662,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lju",
 			phonetic: "lu",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lu",
 					langs: -1,
@@ -12672,7 +12672,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "le",
 			phonetic: "(lo|lE)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lo",
 					langs: -1,
@@ -12686,7 +12686,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lyo",
 			phonetic: "(lo|le)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lo",
 					langs: -1,
@@ -12700,7 +12700,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "lio",
 			phonetic: "(lo|le)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "lo",
 					langs: -1,
@@ -12714,7 +12714,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ije",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12724,7 +12724,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ie",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12734,7 +12734,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "iye",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12744,7 +12744,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "iie",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12754,7 +12754,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yje",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12764,7 +12764,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ye",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12774,7 +12774,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yye",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12784,7 +12784,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yie",
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -12801,7 +12801,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12818,7 +12818,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12835,7 +12835,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12852,7 +12852,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12869,7 +12869,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12886,7 +12886,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12896,7 +12896,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "io",
 			phonetic: "(jo|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "jo",
 					langs: -1,
@@ -12917,7 +12917,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12934,7 +12934,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -12944,7 +12944,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ei",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -12954,7 +12954,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ey",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -12964,7 +12964,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ej",
 			phonetic: "aj",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aj",
 					langs: -1,
@@ -12974,7 +12974,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "yo",
 			phonetic: "(jo|e)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "jo",
 					langs: -1,
@@ -12995,7 +12995,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[au]"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -13012,7 +13012,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aiou]$"),
 			},
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -13029,7 +13029,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13046,7 +13046,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13063,7 +13063,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13080,7 +13080,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^ "),
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13096,7 +13096,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13112,7 +13112,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13128,7 +13128,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "(je|E)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -13142,7 +13142,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ee",
 			phonetic: "(aje|i)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aje",
 					langs: -1,
@@ -13163,7 +13163,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
 			phonetic: "je",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "je",
 					langs: -1,
@@ -13173,7 +13173,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -13183,7 +13183,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "oo",
 			phonetic: "(oo|u)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "oo",
 					langs: -1,
@@ -13197,7 +13197,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "'",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -13207,7 +13207,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "\"",
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -13217,7 +13217,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "aue",
 			phonetic: "aue",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "aue",
 					langs: -1,
@@ -13227,7 +13227,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -13237,7 +13237,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "b",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -13247,7 +13247,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -13257,7 +13257,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -13267,7 +13267,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -13277,7 +13277,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -13287,7 +13287,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -13297,7 +13297,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -13307,7 +13307,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "j",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "j",
 					langs: -1,
@@ -13317,7 +13317,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -13327,7 +13327,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -13337,7 +13337,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -13347,7 +13347,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -13357,7 +13357,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -13367,7 +13367,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -13377,7 +13377,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -13387,7 +13387,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -13397,7 +13397,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -13407,7 +13407,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -13417,7 +13417,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -13427,7 +13427,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "z",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -13439,7 +13439,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ñ",
 			phonetic: "(n|nj)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -13453,7 +13453,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ch",
 			phonetic: "(tS|dZ)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "tS",
 					langs: -1,
@@ -13474,7 +13474,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -13490,7 +13490,7 @@ var ashRules = map[ashLang][]rule{
 				suffix:           "",
 			},
 			phonetic: "",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "",
 					langs: -1,
@@ -13500,7 +13500,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "j",
 			phonetic: "x",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -13510,7 +13510,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "x",
 			phonetic: "ks",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "ks",
 					langs: -1,
@@ -13520,7 +13520,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ll",
 			phonetic: "(l|Z)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -13534,7 +13534,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "w",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -13544,7 +13544,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "v",
 			phonetic: "(b|v)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -13558,7 +13558,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "b",
 			phonetic: "(b|v)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "b",
 					langs: -1,
@@ -13579,7 +13579,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[bpvf]"),
 			},
 			phonetic: "(m|n)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -13600,7 +13600,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -13610,7 +13610,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "c",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -13620,7 +13620,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "z",
 			phonetic: "(z|s)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "z",
 					langs: -1,
@@ -13641,7 +13641,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "(g|gv)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -13662,7 +13662,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phonetic: "(x|g)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "x",
 					langs: -1,
@@ -13676,7 +13676,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "qu",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -13686,7 +13686,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "q",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -13696,7 +13696,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "uo",
 			phonetic: "(vo|o)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "vo",
 					langs: -1,
@@ -13717,7 +13717,7 @@ var ashRules = map[ashLang][]rule{
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -13727,7 +13727,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "y",
 			phonetic: "(i|j|S|Z)",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13749,7 +13749,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ü",
 			phonetic: "v",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "v",
 					langs: -1,
@@ -13759,7 +13759,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "á",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -13769,7 +13769,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "é",
 			phonetic: "e",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "e",
 					langs: -1,
@@ -13779,7 +13779,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "í",
 			phonetic: "i",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "i",
 					langs: -1,
@@ -13789,7 +13789,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ó",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -13799,7 +13799,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "ú",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -13809,7 +13809,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "a",
 			phonetic: "a",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "a",
 					langs: -1,
@@ -13819,7 +13819,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "d",
 			phonetic: "d",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "d",
 					langs: -1,
@@ -13829,7 +13829,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "e",
 			phonetic: "E",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "E",
 					langs: -1,
@@ -13839,7 +13839,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "f",
 			phonetic: "f",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "f",
 					langs: -1,
@@ -13849,7 +13849,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "g",
 			phonetic: "g",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "g",
 					langs: -1,
@@ -13859,7 +13859,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "h",
 			phonetic: "h",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "h",
 					langs: -1,
@@ -13869,7 +13869,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "i",
 			phonetic: "I",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "I",
 					langs: -1,
@@ -13879,7 +13879,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "k",
 			phonetic: "k",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "k",
 					langs: -1,
@@ -13889,7 +13889,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "l",
 			phonetic: "l",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "l",
 					langs: -1,
@@ -13899,7 +13899,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "m",
 			phonetic: "m",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "m",
 					langs: -1,
@@ -13909,7 +13909,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "n",
 			phonetic: "n",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "n",
 					langs: -1,
@@ -13919,7 +13919,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "o",
 			phonetic: "o",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "o",
 					langs: -1,
@@ -13929,7 +13929,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "p",
 			phonetic: "p",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "p",
 					langs: -1,
@@ -13939,7 +13939,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "r",
 			phonetic: "r",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "r",
 					langs: -1,
@@ -13949,7 +13949,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "s",
 			phonetic: "s",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "s",
 					langs: -1,
@@ -13959,7 +13959,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "t",
 			phonetic: "t",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "t",
 					langs: -1,
@@ -13969,7 +13969,7 @@ var ashRules = map[ashLang][]rule{
 		{
 			pattern:  "u",
 			phonetic: "u",
-			phoneticRules: []phoneticRule{
+			phoneticRules: []phonetic{
 				{
 					text:  "u",
 					langs: -1,
@@ -15726,7 +15726,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15743,7 +15743,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
 				phonetic: "p",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "p",
 						langs: -1,
@@ -15759,7 +15759,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15775,7 +15775,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "p",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "p",
 						langs: -1,
@@ -15792,7 +15792,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[gdZz]"),
 				},
 				phonetic: "b",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "b",
 						langs: -1,
@@ -15808,7 +15808,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15825,7 +15825,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
 				phonetic: "f",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "f",
 						langs: -1,
@@ -15841,7 +15841,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15857,7 +15857,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "f",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "f",
 						langs: -1,
@@ -15874,7 +15874,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bgdZz]"),
 				},
 				phonetic: "v",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "v",
 						langs: -1,
@@ -15890,7 +15890,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15907,7 +15907,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
 				phonetic: "k",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "k",
 						langs: -1,
@@ -15923,7 +15923,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15939,7 +15939,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "k",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "k",
 						langs: -1,
@@ -15956,7 +15956,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bdZz]"),
 				},
 				phonetic: "g",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "g",
 						langs: -1,
@@ -15972,7 +15972,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -15989,7 +15989,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
 				phonetic: "t",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "t",
 						langs: -1,
@@ -16005,7 +16005,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16021,7 +16021,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "t",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "t",
 						langs: -1,
@@ -16038,7 +16038,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bgZz]"),
 				},
 				phonetic: "d",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "d",
 						langs: -1,
@@ -16054,7 +16054,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16070,7 +16070,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16086,7 +16086,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16103,7 +16103,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
 				phonetic: "s",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "s",
 						langs: -1,
@@ -16120,7 +16120,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16137,7 +16137,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16154,7 +16154,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16171,7 +16171,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16181,7 +16181,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "jnm",
 				phonetic: "jm",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "jm",
 						langs: -1,
@@ -16197,7 +16197,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "i",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "i",
 						langs: -1,
@@ -16213,7 +16213,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "I",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "I",
 						langs: -1,
@@ -16230,7 +16230,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[aAB]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16247,7 +16247,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[AB]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16263,7 +16263,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16279,7 +16279,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16295,7 +16295,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16311,7 +16311,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16327,7 +16327,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16343,7 +16343,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16359,7 +16359,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16375,7 +16375,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16391,7 +16391,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16407,7 +16407,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16423,7 +16423,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16439,7 +16439,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16455,7 +16455,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16471,7 +16471,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16487,7 +16487,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16504,7 +16504,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bp]"),
 				},
 				phonetic: "m",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "m",
 						langs: -1,
@@ -16527,7 +16527,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
 				phonetic: "(kOg|kO[512])",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "kOg",
 						langs: -1,
@@ -16554,7 +16554,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
 				phonetic: "(kAg|kA[512])",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "kAg",
 						langs: -1,
@@ -16581,7 +16581,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
 				phonetic: "(kog|ko[512])",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "kog",
 						langs: -1,
@@ -16608,7 +16608,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
 				phonetic: "(kag|ka[512])",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "kag",
 						langs: -1,
@@ -16622,7 +16622,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "h",
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16632,7 +16632,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "H",
 				phonetic: "(x|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "x",
 						langs: -1,
@@ -16653,7 +16653,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bdgkpstvzZ]h"),
 				},
 				phonetic: "e",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "e",
 						langs: -1,
@@ -16670,7 +16670,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bdgkpstvzZ]x"),
 				},
 				phonetic: "e",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "e",
 						langs: -1,
@@ -16687,7 +16687,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bdgkpstvzZ]h"),
 				},
 				phonetic: "a",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "a",
 						langs: -1,
@@ -16704,7 +16704,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bdgkpstvzZ]x"),
 				},
 				phonetic: "a",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "a",
 						langs: -1,
@@ -16728,7 +16728,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16752,7 +16752,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16776,7 +16776,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16800,7 +16800,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16824,7 +16824,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16848,7 +16848,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16872,7 +16872,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -16896,7 +16896,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(e|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "e",
 						langs: -1,
@@ -16924,7 +16924,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(i|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "i",
 						langs: -1,
@@ -16952,7 +16952,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(E|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "E",
 						langs: -1,
@@ -16980,7 +16980,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(I|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "I",
 						langs: -1,
@@ -17008,7 +17008,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(F|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "F",
 						langs: -1,
@@ -17036,7 +17036,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(Q|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "Q",
 						langs: -1,
@@ -17064,7 +17064,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
 				phonetic: "(Y|)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "Y",
 						langs: -1,
@@ -17078,7 +17078,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "lEs",
 				phonetic: "(lEs|lz)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lEs",
 						langs: -1,
@@ -17099,7 +17099,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[bdfgkmnprStvzZ]$"),
 				},
 				phonetic: "(lE|l)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lE",
 						langs: -1,
@@ -17113,7 +17113,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "aue",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17123,7 +17123,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "oue",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17133,7 +17133,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AvE",
 				phonetic: "(D|AvE)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17147,7 +17147,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ave",
 				phonetic: "(D|Ave)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17161,7 +17161,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "avE",
 				phonetic: "(D|avE)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17175,7 +17175,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ave",
 				phonetic: "(D|ave)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17189,7 +17189,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "OvE",
 				phonetic: "(D|OvE)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17203,7 +17203,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ove",
 				phonetic: "(D|Ove)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17217,7 +17217,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ovE",
 				phonetic: "(D|ovE)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17231,7 +17231,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ove",
 				phonetic: "(D|ove)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17245,7 +17245,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ea",
 				phonetic: "(D|ea)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17259,7 +17259,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "EA",
 				phonetic: "(D|EA)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17273,7 +17273,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ea",
 				phonetic: "(D|Ea)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17287,7 +17287,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "eA",
 				phonetic: "(D|eA)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17301,7 +17301,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "aji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17311,7 +17311,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ajI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17321,7 +17321,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "aje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17331,7 +17331,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ajE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17341,7 +17341,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17351,7 +17351,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17361,7 +17361,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17371,7 +17371,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17381,7 +17381,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "oji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17391,7 +17391,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ojI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17401,7 +17401,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "oje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17411,7 +17411,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ojE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17421,7 +17421,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Oji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17431,7 +17431,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "OjI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17441,7 +17441,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Oje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17451,7 +17451,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "OjE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17461,7 +17461,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "eji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17471,7 +17471,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ejI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17481,7 +17481,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "eje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17491,7 +17491,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ejE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17501,7 +17501,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Eji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17511,7 +17511,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "EjI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17521,7 +17521,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Eje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17531,7 +17531,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "EjE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17541,7 +17541,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "uji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17551,7 +17551,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ujI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17561,7 +17561,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "uje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17571,7 +17571,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ujE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17581,7 +17581,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Uji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17591,7 +17591,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "UjI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17601,7 +17601,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Uje",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17611,7 +17611,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "UjE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17621,7 +17621,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "iji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17631,7 +17631,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ijI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17641,7 +17641,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ije",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17651,7 +17651,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ijE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17661,7 +17661,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Iji",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17671,7 +17671,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "IjI",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17681,7 +17681,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ije",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17691,7 +17691,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "IjE",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17701,7 +17701,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "aja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17711,7 +17711,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ajA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17721,7 +17721,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ajo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17731,7 +17731,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ajO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17741,7 +17741,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17751,7 +17751,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ajU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17761,7 +17761,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17771,7 +17771,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17781,7 +17781,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ajo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17791,7 +17791,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17801,7 +17801,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17811,7 +17811,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17821,7 +17821,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "oja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17831,7 +17831,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ojA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17841,7 +17841,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ojo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17851,7 +17851,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ojO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17861,7 +17861,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17871,7 +17871,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17881,7 +17881,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Oja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17891,7 +17891,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "OjA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17901,7 +17901,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ojo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17911,7 +17911,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "OjO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17921,7 +17921,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17931,7 +17931,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17941,7 +17941,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "eja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17951,7 +17951,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ejA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17961,7 +17961,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ejo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17971,7 +17971,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ejO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17981,7 +17981,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -17991,7 +17991,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18001,7 +18001,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Eja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18011,7 +18011,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "EjA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18021,7 +18021,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ejo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18031,7 +18031,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "EjO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18041,7 +18041,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18051,7 +18051,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18061,7 +18061,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "uja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18071,7 +18071,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ujA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18081,7 +18081,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ujo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18091,7 +18091,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ujO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18101,7 +18101,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18111,7 +18111,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18121,7 +18121,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Uja",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18131,7 +18131,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "UjA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18141,7 +18141,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ujo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18151,7 +18151,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "UjO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18161,7 +18161,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18171,7 +18171,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18181,7 +18181,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ija",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18191,7 +18191,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ijA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18201,7 +18201,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ijo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18211,7 +18211,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "ijO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18221,7 +18221,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18231,7 +18231,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18241,7 +18241,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ija",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18251,7 +18251,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "IjA",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18261,7 +18261,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Ijo",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18271,7 +18271,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "IjO",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18281,7 +18281,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Aju",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18291,7 +18291,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "AjU",
 				phonetic: "D",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "D",
 						langs: -1,
@@ -18301,7 +18301,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "j",
 				phonetic: "i",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "i",
 						langs: -1,
@@ -18317,7 +18317,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18333,7 +18333,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18349,7 +18349,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18365,7 +18365,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18381,7 +18381,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18397,7 +18397,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18413,7 +18413,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18429,7 +18429,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18445,7 +18445,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "lYnder",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
 						langs: -1,
@@ -18461,7 +18461,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "(burk|berk)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "burk",
 						langs: -1,
@@ -18481,7 +18481,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "(burk|berk)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "burk",
 						langs: -1,
@@ -18501,7 +18501,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "(burk|berk)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "burk",
 						langs: -1,
@@ -18521,7 +18521,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "(burk|berk)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "burk",
 						langs: -1,
@@ -18542,7 +18542,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -18559,7 +18559,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -18576,7 +18576,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -18593,7 +18593,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -18609,7 +18609,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "S",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -18625,7 +18625,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "S",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -18641,7 +18641,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "S",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -18657,7 +18657,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "(S|s)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -18677,7 +18677,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "(S|s)",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -18691,7 +18691,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "S",
 				phonetic: "s",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "s",
 						langs: -1,
@@ -18701,7 +18701,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "dZ",
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -18711,7 +18711,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "Z",
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -18724,7 +18724,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "b",
 					phonetic: "(b|v[1024])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "b",
 							langs: -1,
@@ -18738,7 +18738,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "J",
 					phonetic: "z",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "z",
 							langs: -1,
@@ -18755,7 +18755,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18776,7 +18776,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18797,7 +18797,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18818,7 +18818,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18839,7 +18839,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18860,7 +18860,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18881,7 +18881,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18902,7 +18902,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18923,7 +18923,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18944,7 +18944,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18965,7 +18965,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -18986,7 +18986,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19007,7 +19007,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19028,7 +19028,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19049,7 +19049,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19070,7 +19070,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19091,7 +19091,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19112,7 +19112,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19133,7 +19133,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19154,7 +19154,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19175,7 +19175,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(o|om[128]|im[128])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -19200,7 +19200,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(a|o|on[128]|in[128])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -19222,7 +19222,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "B",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -19243,7 +19243,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19264,7 +19264,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19285,7 +19285,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19306,7 +19306,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19327,7 +19327,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19348,7 +19348,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19369,7 +19369,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19390,7 +19390,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19411,7 +19411,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19432,7 +19432,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19453,7 +19453,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19474,7 +19474,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19495,7 +19495,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19516,7 +19516,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19537,7 +19537,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19558,7 +19558,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19579,7 +19579,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19600,7 +19600,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19621,7 +19621,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19642,7 +19642,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19663,7 +19663,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(i|im[128]|om[128])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -19688,7 +19688,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(i|in[128]|on[128])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -19706,7 +19706,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "F",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -19716,7 +19716,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "P",
 					phonetic: "(o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -19737,7 +19737,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aeiouAEIBFOUQY]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -19754,7 +19754,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^aeiouAEBFIOU]e"),
 					},
 					phonetic: "(Q[16]|i|D[4])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Q",
 							langs: 16,
@@ -19778,7 +19778,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -19795,7 +19795,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -19818,7 +19818,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -19838,7 +19838,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -19854,7 +19854,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -19874,7 +19874,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -19884,7 +19884,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(Q[16]|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Q",
 							langs: 16,
@@ -19911,7 +19911,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(li|il[4])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "li",
 							langs: -1,
@@ -19932,7 +19932,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
 					phonetic: "(li|il[4]|lY[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "li",
 							langs: -1,
@@ -19950,7 +19950,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19968,7 +19968,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -19986,7 +19986,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20004,7 +20004,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20022,7 +20022,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20040,7 +20040,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20058,7 +20058,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20076,7 +20076,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20094,7 +20094,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ei",
 					phonetic: "(D|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20108,7 +20108,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Ei",
 					phonetic: "(D|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20128,7 +20128,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ia|io)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ia",
 							langs: -1,
@@ -20142,7 +20142,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "iA",
 					phonetic: "(ia|io|iY[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ia",
 							langs: -1,
@@ -20167,7 +20167,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^aeiouAEBFIOU]e"),
 					},
 					phonetic: "(a|o|Y[16]|D[4])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20196,7 +20196,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("i[^aeiouAEIOU]$"),
 					},
 					phonetic: "(i|Y[16]|[4])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20221,7 +20221,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("a[^aeiouAEIOU]$"),
 					},
 					phonetic: "(i|Y[16]|[4])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20246,7 +20246,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprstv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20263,7 +20263,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20279,7 +20279,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20296,7 +20296,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20313,7 +20313,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20323,7 +20323,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "(i|Y[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20344,7 +20344,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20361,7 +20361,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20377,7 +20377,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20394,7 +20394,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20411,7 +20411,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20421,7 +20421,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(i|Y[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20435,7 +20435,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20456,7 +20456,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprstv]$"),
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -20473,7 +20473,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -20489,7 +20489,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -20506,7 +20506,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[oeiuQY]$"),
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -20516,7 +20516,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "O",
 					phonetic: "(o|Y[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -20537,7 +20537,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20558,7 +20558,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20578,7 +20578,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20599,7 +20599,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[oeiuQY]$"),
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20613,7 +20613,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "A",
 					phonetic: "(a|o|Y[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -20637,7 +20637,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -20654,7 +20654,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DoiuQY]$"),
 					},
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -20671,7 +20671,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -20694,7 +20694,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(uk|Qk[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "uk",
 							langs: -1,
@@ -20714,7 +20714,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "uk",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "uk",
 							langs: -1,
@@ -20730,7 +20730,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(suts|sQts[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "suts",
 							langs: -1,
@@ -20750,7 +20750,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "uts",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "uts",
 							langs: -1,
@@ -20760,7 +20760,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "U",
 					phonetic: "(u|Q[16])",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -20782,7 +20782,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20799,7 +20799,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20822,7 +20822,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -20842,7 +20842,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -20858,7 +20858,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -20878,7 +20878,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -20895,7 +20895,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aeiEIou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20905,7 +20905,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -20919,7 +20919,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20937,7 +20937,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20955,7 +20955,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20973,7 +20973,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -20991,7 +20991,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21016,7 +21016,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(om|im)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "om",
 							langs: -1,
@@ -21037,7 +21037,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(on|in)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "on",
 							langs: -1,
@@ -21058,7 +21058,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(im|om)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "im",
 							langs: -1,
@@ -21079,7 +21079,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(in|on)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "in",
 							langs: -1,
@@ -21100,7 +21100,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(im|Ym|om)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "im",
 							langs: -1,
@@ -21125,7 +21125,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(in|Yn|on)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "in",
 							langs: -1,
@@ -21143,7 +21143,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -21157,7 +21157,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21174,7 +21174,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21191,7 +21191,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21208,7 +21208,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21225,7 +21225,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21235,7 +21235,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -21257,7 +21257,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21274,7 +21274,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21297,7 +21297,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -21317,7 +21317,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -21333,7 +21333,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -21353,7 +21353,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -21370,7 +21370,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aeiEIou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21380,7 +21380,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21394,7 +21394,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21412,7 +21412,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21430,7 +21430,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21448,7 +21448,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21466,7 +21466,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21491,7 +21491,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(om|im)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "om",
 							langs: -1,
@@ -21512,7 +21512,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(on|in)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "on",
 							langs: -1,
@@ -21533,7 +21533,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(im|om)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "im",
 							langs: -1,
@@ -21554,7 +21554,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(in|on)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "in",
 							langs: -1,
@@ -21575,7 +21575,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(im|Ym|om)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "im",
 							langs: -1,
@@ -21600,7 +21600,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(in|Yn|on)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "in",
 							langs: -1,
@@ -21618,7 +21618,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -21632,7 +21632,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21649,7 +21649,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21666,7 +21666,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21683,7 +21683,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21700,7 +21700,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21710,7 +21710,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -21733,7 +21733,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^aEIeiou]e"),
 					},
 					phonetic: "(Q|i|D)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Q",
 							langs: -1,
@@ -21757,7 +21757,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21774,7 +21774,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21791,7 +21791,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21814,7 +21814,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -21834,7 +21834,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -21850,7 +21850,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -21870,7 +21870,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -21880,7 +21880,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -21901,7 +21901,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
 					phonetic: "(il|li|lY)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "il",
 							langs: -1,
@@ -21919,7 +21919,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21937,7 +21937,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21955,7 +21955,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21973,7 +21973,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -21991,7 +21991,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22016,7 +22016,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("D[^aeiEIou]$"),
 					},
 					phonetic: "(i|)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22037,7 +22037,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("D[^aeiEIou]$"),
 					},
 					phonetic: "(i|)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22051,7 +22051,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22068,7 +22068,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22085,7 +22085,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22102,7 +22102,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiEuQY]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22119,7 +22119,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQY]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22129,7 +22129,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -22143,7 +22143,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -22165,7 +22165,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22182,7 +22182,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22199,7 +22199,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22222,7 +22222,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -22242,7 +22242,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -22258,7 +22258,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -22278,7 +22278,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -22288,7 +22288,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22302,7 +22302,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22320,7 +22320,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22338,7 +22338,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22356,7 +22356,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22374,7 +22374,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22392,7 +22392,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -22406,7 +22406,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22423,7 +22423,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22440,7 +22440,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22457,7 +22457,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22474,7 +22474,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22484,7 +22484,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -22506,7 +22506,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22523,7 +22523,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aeiAEIOUouQY]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22540,7 +22540,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22563,7 +22563,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -22583,7 +22583,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -22599,7 +22599,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -22619,7 +22619,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -22629,7 +22629,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(Q|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Q",
 							langs: -1,
@@ -22643,7 +22643,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "AU",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22661,7 +22661,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "aU",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22679,7 +22679,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22697,7 +22697,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22715,7 +22715,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22733,7 +22733,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "OU",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22751,7 +22751,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oU",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22769,7 +22769,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22787,7 +22787,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22805,7 +22805,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22823,7 +22823,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22841,7 +22841,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22859,7 +22859,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22877,7 +22877,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "Ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -22895,7 +22895,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22912,7 +22912,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22929,7 +22929,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22945,7 +22945,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22962,7 +22962,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoAOUiuQY]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22979,7 +22979,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -22989,7 +22989,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -23009,7 +23009,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -23026,7 +23026,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -23043,7 +23043,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -23060,7 +23060,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aoAOUeiuQY]$"),
 					},
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -23070,7 +23070,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "O",
 					phonetic: "(o|Y)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -23084,7 +23084,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23104,7 +23104,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23125,7 +23125,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23146,7 +23146,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23167,7 +23167,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aoeOUiuQY]$"),
 					},
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23181,7 +23181,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "A",
 					phonetic: "(a|o|Y)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23205,7 +23205,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -23222,7 +23222,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuUQY]$"),
 					},
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -23239,7 +23239,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -23262,7 +23262,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(uk|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "uk",
 							langs: -1,
@@ -23282,7 +23282,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "uk",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "uk",
 							langs: -1,
@@ -23298,7 +23298,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(suts|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "suts",
 							langs: -1,
@@ -23318,7 +23318,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "uts",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "uts",
 							langs: -1,
@@ -23328,7 +23328,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "U",
 					phonetic: "(u|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -23351,7 +23351,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23368,7 +23368,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23385,7 +23385,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23408,7 +23408,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -23428,7 +23428,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -23444,7 +23444,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -23464,7 +23464,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -23474,7 +23474,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23488,7 +23488,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23506,7 +23506,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23524,7 +23524,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23542,7 +23542,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23560,7 +23560,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23578,7 +23578,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -23592,7 +23592,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23609,7 +23609,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23626,7 +23626,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23643,7 +23643,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23660,7 +23660,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -23670,7 +23670,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -23693,7 +23693,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23714,7 +23714,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23735,7 +23735,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23756,7 +23756,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23777,7 +23777,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23798,7 +23798,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23819,7 +23819,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23840,7 +23840,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23861,7 +23861,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23882,7 +23882,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23903,7 +23903,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23924,7 +23924,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23945,7 +23945,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23966,7 +23966,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -23987,7 +23987,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(o|om|im)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -24012,7 +24012,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(o|on|in)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -24030,7 +24030,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "B",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -24047,7 +24047,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24068,7 +24068,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24089,7 +24089,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24110,7 +24110,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24131,7 +24131,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24152,7 +24152,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24173,7 +24173,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24194,7 +24194,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24215,7 +24215,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24236,7 +24236,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24257,7 +24257,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24278,7 +24278,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24299,7 +24299,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24320,7 +24320,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24341,7 +24341,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(i|im|om)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24366,7 +24366,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(i|in|on)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24384,7 +24384,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "F",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24394,7 +24394,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "P",
 					phonetic: "(o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -24414,7 +24414,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24431,7 +24431,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24454,7 +24454,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -24474,7 +24474,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -24490,7 +24490,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -24510,7 +24510,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -24527,7 +24527,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24537,7 +24537,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24551,7 +24551,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24569,7 +24569,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24587,7 +24587,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24605,7 +24605,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24623,7 +24623,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24641,7 +24641,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -24655,7 +24655,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24672,7 +24672,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24689,7 +24689,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24705,7 +24705,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24722,7 +24722,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24739,7 +24739,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -24749,7 +24749,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -24772,7 +24772,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24793,7 +24793,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24814,7 +24814,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24835,7 +24835,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24856,7 +24856,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24877,7 +24877,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24898,7 +24898,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24919,7 +24919,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24940,7 +24940,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24961,7 +24961,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -24982,7 +24982,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25003,7 +25003,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25024,7 +25024,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25045,7 +25045,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25066,7 +25066,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(o|om|im)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -25091,7 +25091,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(o|on|in)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -25109,7 +25109,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "B",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -25126,7 +25126,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25147,7 +25147,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25168,7 +25168,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25189,7 +25189,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25210,7 +25210,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25231,7 +25231,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25252,7 +25252,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(D|Dm)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25273,7 +25273,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25294,7 +25294,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25315,7 +25315,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25336,7 +25336,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25357,7 +25357,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25378,7 +25378,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25399,7 +25399,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(D|Dn)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25420,7 +25420,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
 					phonetic: "(i|im|om)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25445,7 +25445,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
 					phonetic: "(i|in|on)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25463,7 +25463,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "F",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25473,7 +25473,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "P",
 					phonetic: "(o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -25493,7 +25493,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25510,7 +25510,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25533,7 +25533,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -25553,7 +25553,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -25569,7 +25569,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -25589,7 +25589,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -25606,7 +25606,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25616,7 +25616,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25630,7 +25630,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25648,7 +25648,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25666,7 +25666,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25684,7 +25684,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25702,7 +25702,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -25720,7 +25720,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -25734,7 +25734,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25751,7 +25751,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25768,7 +25768,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25784,7 +25784,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25801,7 +25801,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25818,7 +25818,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25828,7 +25828,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -25850,7 +25850,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25867,7 +25867,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25884,7 +25884,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25907,7 +25907,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(ik|Qk)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -25927,7 +25927,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "ik",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "ik",
 							langs: -1,
@@ -25943,7 +25943,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "(sits|sQts)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "sits",
 							langs: -1,
@@ -25963,7 +25963,7 @@ var ashFinalRules = finalRules{
 						suffix:           "",
 					},
 					phonetic: "its",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "its",
 							langs: -1,
@@ -25973,7 +25973,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "(i|Q)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -25987,7 +25987,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "au",
 					phonetic: "(D|a|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -26005,7 +26005,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ou",
 					phonetic: "(D|o|u)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -26023,7 +26023,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ai",
 					phonetic: "(D|a|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -26041,7 +26041,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "oi",
 					phonetic: "(D|o|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -26059,7 +26059,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "ui",
 					phonetic: "(D|u|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "D",
 							langs: -1,
@@ -26077,7 +26077,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "a",
 					phonetic: "(a|o)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -26091,7 +26091,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "e",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -26108,7 +26108,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -26125,7 +26125,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^ts$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -26142,7 +26142,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("[aoiuQ]$"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -26159,7 +26159,7 @@ var ashFinalRules = finalRules{
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -26169,7 +26169,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "(Y|i)",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "Y",
 							langs: -1,
@@ -26194,7 +26194,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26211,7 +26211,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
 				phonetic: "p",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "p",
 						langs: -1,
@@ -26227,7 +26227,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26243,7 +26243,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "p",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "p",
 						langs: -1,
@@ -26260,7 +26260,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[gdZz]"),
 				},
 				phonetic: "b",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "b",
 						langs: -1,
@@ -26276,7 +26276,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26293,7 +26293,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
 				phonetic: "f",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "f",
 						langs: -1,
@@ -26309,7 +26309,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26325,7 +26325,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "f",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "f",
 						langs: -1,
@@ -26342,7 +26342,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bgdZz]"),
 				},
 				phonetic: "v",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "v",
 						langs: -1,
@@ -26358,7 +26358,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26375,7 +26375,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
 				phonetic: "k",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "k",
 						langs: -1,
@@ -26391,7 +26391,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26407,7 +26407,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "k",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "k",
 						langs: -1,
@@ -26424,7 +26424,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bdZz]"),
 				},
 				phonetic: "g",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "g",
 						langs: -1,
@@ -26440,7 +26440,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26457,7 +26457,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
 				phonetic: "t",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "t",
 						langs: -1,
@@ -26473,7 +26473,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26489,7 +26489,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "t",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "t",
 						langs: -1,
@@ -26506,7 +26506,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bgZz]"),
 				},
 				phonetic: "d",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "d",
 						langs: -1,
@@ -26522,7 +26522,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26538,7 +26538,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26554,7 +26554,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26571,7 +26571,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
 				phonetic: "s",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "s",
 						langs: -1,
@@ -26588,7 +26588,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26605,7 +26605,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26622,7 +26622,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26639,7 +26639,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26649,7 +26649,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "jnm",
 				phonetic: "jm",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "jm",
 						langs: -1,
@@ -26665,7 +26665,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "i",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "i",
 						langs: -1,
@@ -26681,7 +26681,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "I",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "I",
 						langs: -1,
@@ -26698,7 +26698,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[aAB]"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26715,7 +26715,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[AB]$"),
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26731,7 +26731,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26747,7 +26747,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26763,7 +26763,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26779,7 +26779,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26795,7 +26795,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26811,7 +26811,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26827,7 +26827,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26843,7 +26843,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26859,7 +26859,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26875,7 +26875,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26891,7 +26891,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26907,7 +26907,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26923,7 +26923,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26939,7 +26939,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26955,7 +26955,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "",
 						langs: -1,
@@ -26965,7 +26965,7 @@ var ashFinalRules = finalRules{
 			{
 				pattern:  "H",
 				phonetic: "h",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "h",
 						langs: -1,
@@ -26989,7 +26989,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bgZd]"),
 				},
 				phonetic: "z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "z",
 						langs: -1,
@@ -27006,7 +27006,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[pfkst]"),
 				},
 				phonetic: "S",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -27022,7 +27022,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "S",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "S",
 						langs: -1,
@@ -27039,7 +27039,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("^[bgzd]"),
 				},
 				phonetic: "Z",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "Z",
 						langs: -1,
@@ -27055,7 +27055,7 @@ var ashFinalRules = finalRules{
 					suffix:           "",
 				},
 				phonetic: "s",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "s",
 						langs: -1,
@@ -27072,7 +27072,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
 				phonetic: "j",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "j",
 						langs: -1,
@@ -27089,7 +27089,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
 				phonetic: "j",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "j",
 						langs: -1,
@@ -27106,7 +27106,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
 				phonetic: "j",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "j",
 						langs: -1,
@@ -27123,7 +27123,7 @@ var ashFinalRules = finalRules{
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
 				phonetic: "j",
-				phoneticRules: []phoneticRule{
+				phoneticRules: []phonetic{
 					{
 						text:  "j",
 						langs: -1,
@@ -27136,7 +27136,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "A",
 					phonetic: "a",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -27146,7 +27146,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "B",
 					phonetic: "a",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -27156,7 +27156,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27166,7 +27166,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "F",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27176,7 +27176,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27186,7 +27186,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "O",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -27196,7 +27196,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "P",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -27206,7 +27206,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "U",
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -27216,7 +27216,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "J",
 					phonetic: "l",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "l",
 							langs: -1,
@@ -27228,7 +27228,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27238,7 +27238,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27250,7 +27250,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27260,7 +27260,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27272,7 +27272,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27282,7 +27282,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27294,7 +27294,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27304,7 +27304,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27316,7 +27316,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "A",
 					phonetic: "a",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -27326,7 +27326,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "B",
 					phonetic: "a",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -27336,7 +27336,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27346,7 +27346,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "F",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27356,7 +27356,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27366,7 +27366,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "O",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -27376,7 +27376,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "P",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -27386,7 +27386,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "U",
 					phonetic: "u",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "u",
 							langs: -1,
@@ -27396,7 +27396,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "J",
 					phonetic: "l",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "l",
 							langs: -1,
@@ -27409,7 +27409,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27419,7 +27419,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27431,7 +27431,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "B",
 					phonetic: "a",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "a",
 							langs: -1,
@@ -27441,7 +27441,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "F",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27451,7 +27451,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "P",
 					phonetic: "o",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "o",
 							langs: -1,
@@ -27461,7 +27461,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27471,7 +27471,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27483,7 +27483,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27493,7 +27493,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
@@ -27505,7 +27505,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "E",
 					phonetic: "e",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "e",
 							langs: -1,
@@ -27515,7 +27515,7 @@ var ashFinalRules = finalRules{
 				{
 					pattern:  "I",
 					phonetic: "i",
-					phoneticRules: []phoneticRule{
+					phoneticRules: []phonetic{
 						{
 							text:  "i",
 							langs: -1,
