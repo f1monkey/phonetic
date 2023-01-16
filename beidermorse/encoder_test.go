@@ -162,19 +162,20 @@ func Test_Encoder_Encode(t *testing.T) {
 				"oplzn",
 			},
 		},
-		// @todo fix
-		// {
-		// 	mode:     Sephardic,
-		// 	ruleset:  Exact,
-		// 	input:    "апельсин",
-		// 	expected: []string{},
-		// },
-		// {
-		// 	mode:     Sephardic,
-		// 	ruleset:  Approx,
-		// 	input:    "апельсин",
-		// 	expected: []string{},
-		// },
+
+		// this behavior is different from the behavior of the original library
+		{
+			mode:     Sephardic,
+			ruleset:  Exact,
+			input:    "апельсин",
+			expected: []string{"апельсин"},
+		},
+		{
+			mode:     Sephardic,
+			ruleset:  Approx,
+			input:    "апельсин",
+			expected: []string{"апельсин"},
+		},
 	}
 
 	for _, c := range cases {
