@@ -35,7 +35,6 @@ type rule struct {
 	pattern       string
 	leftContext   *ruleMatcher
 	rightContext  *ruleMatcher
-	phonetic      string
 	phoneticRules []phonetic
 }
 
