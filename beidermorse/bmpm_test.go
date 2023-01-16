@@ -67,6 +67,14 @@ func Benchmark_phonetic(b *testing.B) {
 	}
 }
 
+func Benchmark_applyRules(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		applyRules([]phonetic{
+			{text: "orange", langs: 1047280},
+		}, genRules[1], 1047280, false)
+	}
+}
+
 func Test_applyRules(t *testing.T) {
 	cases := []struct {
 		name        string
