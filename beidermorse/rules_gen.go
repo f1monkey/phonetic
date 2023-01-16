@@ -104,7 +104,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(in[131072]|ina)",
 			phoneticRules: []phonetic{
 				{
 					text:  "in",
@@ -124,7 +123,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(in[131072]|ina)",
 			phoneticRules: []phonetic{
 				{
 					text:  "in",
@@ -144,7 +142,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lova|lof[131072]|lef[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "lova",
@@ -168,7 +165,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lova|lof[131072]|lef[131072]|l[8]|el[8])",
 			phoneticRules: []phonetic{
 				{
 					text:  "lova",
@@ -200,7 +196,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(kova|kof[131072]|k[8]|ek[8])",
 			phoneticRules: []phonetic{
 				{
 					text:  "kova",
@@ -228,7 +223,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ova|of[131072]|[8])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ova",
@@ -252,7 +246,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ova|[8])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ova",
@@ -272,7 +265,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(eva|ef[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "eva",
@@ -292,7 +284,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(aja|i[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "aja",
@@ -312,7 +303,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(aja|i[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "aja",
@@ -332,7 +322,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(aja|i[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "aja",
@@ -352,7 +341,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lova|lof[16384]|l[16384]|el[16384])",
 			phoneticRules: []phonetic{
 				{
 					text:  "lova",
@@ -380,7 +368,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(kova|kof[16384]|k[16384]|ek[16384])",
 			phoneticRules: []phonetic{
 				{
 					text:  "kova",
@@ -408,7 +395,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ova|of[16384]|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ova",
@@ -432,7 +418,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lovna|levna|l[16384]|el[16384])",
 			phoneticRules: []phonetic{
 				{
 					text:  "lovna",
@@ -460,7 +445,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(kovna|k[16384]|ek[16384])",
 			phoneticRules: []phonetic{
 				{
 					text:  "kovna",
@@ -484,7 +468,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ovna|[16384])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovna",
@@ -504,7 +487,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(l|el)",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -524,7 +506,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k|ek)",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -544,7 +525,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -560,7 +540,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(a|i[8])",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -580,7 +559,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(a|i[16392])",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -593,8 +571,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "pf",
-			phonetic: "(pf|p|f)",
+			pattern: "pf",
 			phoneticRules: []phonetic{
 				{
 					text:  "pf",
@@ -618,7 +595,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k[64]|ke|kve)",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -635,8 +611,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "(kv|k)",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "kv",
@@ -657,7 +632,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bfpv]"),
 			},
-			phonetic: "(m|n)",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -685,7 +659,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouy]"),
 			},
-			phonetic: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -702,7 +675,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(m|n[32832])",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -723,7 +695,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[au]"),
 			},
-			phonetic: "(l|lj)",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -744,7 +715,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[au]"),
 			},
-			phonetic: "(l|lj)",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -757,8 +727,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lio",
-			phonetic: "(lo|le[131072])",
+			pattern: "lio",
 			phoneticRules: []phonetic{
 				{
 					text:  "lo",
@@ -771,8 +740,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lyo",
-			phonetic: "(lo|le[131072])",
+			pattern: "lyo",
 			phoneticRules: []phonetic{
 				{
 					text:  "lo",
@@ -798,7 +766,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lt|[64])",
 			phoneticRules: []phonetic{
 				{
 					text:  "lt",
@@ -818,7 +785,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(v|f[128]|b[262144])",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -843,7 +809,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "(ez[32768]|eS[32768]|eks|egz)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ez",
@@ -872,7 +837,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[cs]"),
 			},
-			phonetic: "(e[32768]|ek)",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -898,7 +862,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ks|[64])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -911,8 +874,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ck",
-			phonetic: "(k|tsk[16392])",
+			pattern: "ck",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -925,8 +887,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cz",
-			phonetic: "(tS|tsz[8])",
+			pattern: "cz",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -946,7 +907,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -962,7 +922,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -978,7 +937,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -987,8 +945,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "(ph|f)",
+			pattern: "ph",
 			phoneticRules: []phonetic{
 				{
 					text:  "ph",
@@ -1001,8 +958,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "kh",
-			phonetic: "(x[131104]|kh)",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -1015,8 +971,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lh",
-			phonetic: "(lh|l[32768])",
+			pattern: "lh",
 			phoneticRules: []phonetic{
 				{
 					text:  "lh",
@@ -1029,8 +984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "nh",
-			phonetic: "(nh|nj[32768])",
+			pattern: "nh",
 			phoneticRules: []phonetic{
 				{
 					text:  "nh",
@@ -1043,8 +997,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssch",
-			phonetic: "S",
+			pattern: "ssch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1053,8 +1006,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "chsch",
-			phonetic: "xS",
+			pattern: "chsch",
 			phoneticRules: []phonetic{
 				{
 					text:  "xS",
@@ -1063,8 +1015,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsch",
-			phonetic: "tS",
+			pattern: "tsch",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -1088,7 +1039,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(S|StS[131072]|sk[69632])",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1113,7 +1063,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(S|StS[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1134,7 +1083,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(sk[69632]|S|StS[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "sk",
@@ -1151,8 +1099,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sch",
-			phonetic: "(S|StS[131072])",
+			pattern: "sch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1165,8 +1112,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssh",
-			phonetic: "S",
+			pattern: "ssh",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1183,7 +1129,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[äöü]"),
 			},
-			phonetic: "sh",
 			phoneticRules: []phonetic{
 				{
 					text:  "sh",
@@ -1200,7 +1145,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			phonetic: "(S[131104]|sh)",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1213,8 +1157,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sh",
-			phonetic: "S",
+			pattern: "sh",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1223,8 +1166,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zh",
-			phonetic: "(Z[131104]|zh|tsh[128])",
+			pattern: "zh",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -1241,8 +1183,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "chs",
-			phonetic: "(ks[128]|xs|tSs[131104])",
+			pattern: "chs",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -1267,7 +1208,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(x|tS[393248]|k[69632]|S[32832])",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -1288,8 +1228,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "(x|tS[393248]|S[32832])",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -1313,7 +1252,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -1330,7 +1268,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[äöüaeiou]"),
 			},
-			phonetic: "(t[672]|th)",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -1343,8 +1280,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "th",
-			phonetic: "t",
+			pattern: "th",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -1361,7 +1297,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(g[70144]|gh)",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -1382,7 +1317,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			phonetic: "(v[64]|uh)",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -1403,7 +1337,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			phonetic: "(v|uh)",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -1423,7 +1356,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -1440,7 +1372,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouyäöü]$"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -1456,7 +1387,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(h|x[66048]|H[381024])",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -1473,8 +1403,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cia",
-			phonetic: "(tSa[16384]|tsa)",
+			pattern: "cia",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSa",
@@ -1495,7 +1424,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(tSom|tsom)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSom",
@@ -1508,8 +1436,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cią",
-			phonetic: "(tSon[16384]|tson)",
+			pattern: "cią",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSon",
@@ -1530,7 +1457,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(tSem[16384]|tsem)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSem",
@@ -1543,8 +1469,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cię",
-			phonetic: "(tSen[16384]|tsen)",
+			pattern: "cię",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSen",
@@ -1557,8 +1482,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cie",
-			phonetic: "(tSe[16384]|tse)",
+			pattern: "cie",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
@@ -1571,8 +1495,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cio",
-			phonetic: "(tSo[16384]|tso)",
+			pattern: "cio",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSo",
@@ -1585,8 +1508,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ciu",
-			phonetic: "(tSu[16384]|tsu)",
+			pattern: "ciu",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSu",
@@ -1606,7 +1528,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(Si[4096]|stsi[16392]|dZi[524288]|tSi[81920]|tS[65536]|si)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Si",
@@ -1643,7 +1564,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(S[4096]|sts[16392]|dZ[524288]|tS[81920]|s)",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1675,7 +1595,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(tsi[16392]|dZi[524288]|tSi[81920]|tS[65536]|si)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsi",
@@ -1700,8 +1619,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cy",
-			phonetic: "(si|tsi[16384])",
+			pattern: "cy",
 			phoneticRules: []phonetic{
 				{
 					text:  "si",
@@ -1722,7 +1640,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(ts[16392]|dZ[524288]|tS[81920]|k[512]|s)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -1755,7 +1672,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			phonetic: "(s|stS[524288])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -1768,8 +1684,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssz",
-			phonetic: "S",
+			pattern: "ssz",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1785,7 +1700,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(S|s[2048])",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1805,7 +1719,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(S|s[2048])",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1818,8 +1731,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sz",
-			phonetic: "(S|s[2048]|sts[128])",
+			pattern: "sz",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1836,8 +1748,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssp",
-			phonetic: "(Sp[128]|sp)",
+			pattern: "ssp",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
@@ -1850,8 +1761,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sp",
-			phonetic: "(Sp[128]|sp)",
+			pattern: "sp",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
@@ -1864,8 +1774,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sst",
-			phonetic: "(St[128]|st)",
+			pattern: "sst",
 			phoneticRules: []phonetic{
 				{
 					text:  "St",
@@ -1878,8 +1787,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "st",
-			phonetic: "(St[128]|st)",
+			pattern: "st",
 			phoneticRules: []phonetic{
 				{
 					text:  "St",
@@ -1892,8 +1800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
+			pattern: "ss",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -1909,7 +1816,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "S",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1925,7 +1831,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "S",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -1934,8 +1839,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sj",
-			phonetic: "(sj|S[16]|sx[262144]|sZ[589824])",
+			pattern: "sj",
 			phoneticRules: []phonetic{
 				{
 					text:  "sj",
@@ -1956,8 +1860,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sia",
-			phonetic: "(Sa[16384]|sa[16384]|sja)",
+			pattern: "sia",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sa",
@@ -1982,7 +1885,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Som[16384]|som)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Som",
@@ -1995,8 +1897,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sią",
-			phonetic: "(Son[16384]|son)",
+			pattern: "sią",
 			phoneticRules: []phonetic{
 				{
 					text:  "Son",
@@ -2017,7 +1918,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Sem[16384]|sem)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sem",
@@ -2030,8 +1930,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "się",
-			phonetic: "(Sen[16384]|sen)",
+			pattern: "się",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sen",
@@ -2044,8 +1943,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sie",
-			phonetic: "(se|sje|Se[16384]|zi[128])",
+			pattern: "sie",
 			phoneticRules: []phonetic{
 				{
 					text:  "se",
@@ -2066,8 +1964,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sio",
-			phonetic: "(So[16384]|so)",
+			pattern: "sio",
 			phoneticRules: []phonetic{
 				{
 					text:  "So",
@@ -2080,8 +1977,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "siu",
-			phonetic: "(Su[16384]|sju)",
+			pattern: "siu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Su",
@@ -2102,7 +1998,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[äöëaáuiíoóeéêy]$"),
 			},
-			phonetic: "(Si[16384]|si|zi[37056])",
 			phoneticRules: []phonetic{
 				{
 					text:  "Si",
@@ -2119,8 +2014,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "si",
-			phonetic: "(Si[16384]|si|zi[128])",
+			pattern: "si",
 			phoneticRules: []phonetic{
 				{
 					text:  "Si",
@@ -2152,7 +2046,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuíoóeéêy]"),
 			},
-			phonetic: "(s|z[37056])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -2173,7 +2066,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeouäöë]"),
 			},
-			phonetic: "(s|z[128])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -2201,7 +2093,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
-			phonetic: "(s|z|Z[32768]|[64])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -2230,7 +2121,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
-			phonetic: "(s|z|Z[32768])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -2254,7 +2144,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k[64]|gve)",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -2275,7 +2164,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(g[64]|gv[294912])",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -2296,7 +2184,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "gv",
 			phoneticRules: []phonetic{
 				{
 					text:  "gv",
@@ -2305,8 +2192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "guy",
-			phonetic: "gi",
+			pattern: "guy",
 			phoneticRules: []phonetic{
 				{
 					text:  "gi",
@@ -2315,8 +2201,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gli",
-			phonetic: "(glI|l[4096])",
+			pattern: "gli",
 			phoneticRules: []phonetic{
 				{
 					text:  "glI",
@@ -2329,8 +2214,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gni",
-			phonetic: "(gnI|ni[4160])",
+			pattern: "gni",
 			phoneticRules: []phonetic{
 				{
 					text:  "gnI",
@@ -2351,7 +2235,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "(n[4160]|nj[4160]|gn)",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -2368,8 +2251,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ggie",
-			phonetic: "(je[512]|dZe)",
+			pattern: "ggie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -2390,7 +2272,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "(j[512]|dZ)",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -2418,7 +2299,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "(gI|dZ[4096]|j[512])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gI",
@@ -2443,7 +2323,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
-			phonetic: "(gE|xe[262144]|gZe[32832]|dZe[331808]|je[512])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gE",
@@ -2476,7 +2355,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
-			phonetic: "(gI|xi[262144]|gZi[32832]|dZi[331808]|i[512])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gI",
@@ -2509,7 +2387,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "(gI|dZ[4096]|j[512])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gI",
@@ -2533,7 +2410,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ge|gi[128]|ji[64]|dZe[4096])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ge",
@@ -2554,8 +2430,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gie",
-			phonetic: "(ge|gi[128]|dZe[4096]|je[512])",
+			pattern: "gie",
 			phoneticRules: []phonetic{
 				{
 					text:  "ge",
@@ -2584,7 +2459,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "(i[512]|dZ)",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -2605,7 +2479,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
-			phonetic: "(gE|xe[262144]|Ze[32832]|dZe[331808])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gE",
@@ -2634,7 +2507,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
-			phonetic: "(gI|xi[262144]|Zi[32832]|dZi[331808])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gI",
@@ -2655,8 +2527,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ge",
-			phonetic: "(gE|xe[262144]|hE[131072]|je[512]|Ze[32832]|dZe[331808])",
+			pattern: "ge",
 			phoneticRules: []phonetic{
 				{
 					text:  "gE",
@@ -2685,8 +2556,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gi",
-			phonetic: "(gI|xi[262144]|hI[131072]|i[512]|Zi[32832]|dZi[331808])",
+			pattern: "gi",
 			phoneticRules: []phonetic{
 				{
 					text:  "gI",
@@ -2723,7 +2593,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			phonetic: "(gi|dj[2048])",
 			phoneticRules: []phonetic{
 				{
 					text:  "gi",
@@ -2736,8 +2605,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gy",
-			phonetic: "(gi|d[2048])",
+			pattern: "gy",
 			phoneticRules: []phonetic{
 				{
 					text:  "gi",
@@ -2765,7 +2633,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouyei]"),
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -2782,7 +2649,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouei]"),
 			},
-			phonetic: "(g|h[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -2795,8 +2661,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ij",
-			phonetic: "(i|ej[16]|ix[262144]|iZ[622656])",
+			pattern: "ij",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -2825,7 +2690,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aoeiuy]"),
 			},
-			phonetic: "(j|dZ[32]|x[262144]|Z[622656])",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -2853,7 +2717,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "t",
 			},
-			phonetic: "(S[16384]|r)",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -2866,8 +2729,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "rz",
-			phonetic: "(rz|rts[128]|Z[16384]|r[16384]|rZ[16384])",
+			pattern: "rz",
 			phoneticRules: []phonetic{
 				{
 					text:  "rz",
@@ -2899,7 +2761,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ts|tS[160])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -2919,7 +2780,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ts[131232]|tS[160])",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -2932,8 +2792,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tz",
-			phonetic: "(ts[131232]|tz)",
+			pattern: "tz",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -2954,7 +2813,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(Za[16384]|za[16384]|zja)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Za",
@@ -2971,8 +2829,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zia",
-			phonetic: "(Za[16384]|zja)",
+			pattern: "zia",
 			phoneticRules: []phonetic{
 				{
 					text:  "Za",
@@ -2993,7 +2850,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Zom[16384]|zom)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zom",
@@ -3006,8 +2862,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zią",
-			phonetic: "(Zon[16384]|zon)",
+			pattern: "zią",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zon",
@@ -3028,7 +2883,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Zem[16384]|zem)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zem",
@@ -3041,8 +2895,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zię",
-			phonetic: "(Zen[16384]|zen)",
+			pattern: "zię",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zen",
@@ -3063,7 +2916,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(Ze[16384]|ze[16384]|ze|tsi[128])",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -3084,8 +2936,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zie",
-			phonetic: "(ze|Ze[16384]|tsi[128])",
+			pattern: "zie",
 			phoneticRules: []phonetic{
 				{
 					text:  "ze",
@@ -3102,8 +2953,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zio",
-			phonetic: "(Zo[16384]|zo)",
+			pattern: "zio",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zo",
@@ -3116,8 +2966,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ziu",
-			phonetic: "(Zu[16384]|zju)",
+			pattern: "ziu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zu",
@@ -3130,8 +2979,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zi",
-			phonetic: "(Zi[16384]|zi|tsi[128]|dzi[4096]|tsi[4096]|si[262144])",
+			pattern: "zi",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
@@ -3167,7 +3015,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(s|ts[128]|ts[4096]|S[32768])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -3196,7 +3043,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bdgv]"),
 			},
-			phonetic: "(z|dz[4096]|Z[32768])",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -3221,7 +3067,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ptckf]"),
 			},
-			phonetic: "(s|ts[4096]|S[32768])",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -3238,8 +3083,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -3248,8 +3092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oue",
-			phonetic: "(oue|ve[64])",
+			pattern: "oue",
 			phoneticRules: []phonetic{
 				{
 					text:  "oue",
@@ -3262,8 +3105,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eau",
-			phonetic: "o",
+			pattern: "eau",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -3272,8 +3114,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ae",
-			phonetic: "(Y[128]|aje[131072]|ae)",
+			pattern: "ae",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -3290,8 +3131,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "aj",
+			pattern: "ai",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -3300,8 +3140,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "au",
-			phonetic: "(au|o[64])",
+			pattern: "au",
 			phoneticRules: []phonetic{
 				{
 					text:  "au",
@@ -3314,8 +3153,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ay",
-			phonetic: "aj",
+			pattern: "ay",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -3324,8 +3162,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ão",
-			phonetic: "(au|an)",
+			pattern: "ão",
 			phoneticRules: []phonetic{
 				{
 					text:  "au",
@@ -3338,8 +3175,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãe",
-			phonetic: "(aj|an)",
+			pattern: "ãe",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -3352,8 +3188,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãi",
-			phonetic: "(aj|an)",
+			pattern: "ãi",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -3366,8 +3201,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ea",
-			phonetic: "(ea|ja[65536])",
+			pattern: "ea",
 			phoneticRules: []phonetic{
 				{
 					text:  "ea",
@@ -3380,8 +3214,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ee",
-			phonetic: "(i[32]|aje[131072]|e)",
+			pattern: "ee",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3398,8 +3231,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(aj|ej)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -3412,8 +3244,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eu",
-			phonetic: "(eu|Yj[128]|ej[128]|oj[128]|Y[16])",
+			pattern: "eu",
 			phoneticRules: []phonetic{
 				{
 					text:  "eu",
@@ -3438,8 +3269,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ey",
-			phonetic: "(aj|ej)",
+			pattern: "ey",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -3452,8 +3282,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ia",
-			phonetic: "ja",
+			pattern: "ia",
 			phoneticRules: []phonetic{
 				{
 					text:  "ja",
@@ -3462,8 +3291,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "(i[128]|e[16384]|ije[131072]|Q[16]|je)",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3495,7 +3323,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3504,8 +3331,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "io",
-			phonetic: "(jo|e[131072])",
+			pattern: "io",
 			phoneticRules: []phonetic{
 				{
 					text:  "jo",
@@ -3518,8 +3344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iu",
-			phonetic: "ju",
+			pattern: "iu",
 			phoneticRules: []phonetic{
 				{
 					text:  "ju",
@@ -3535,7 +3360,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3544,8 +3368,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oe",
-			phonetic: "(Y[128]|oje[131072]|u[16]|oe)",
+			pattern: "oe",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -3566,8 +3389,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oi",
-			phonetic: "oj",
+			pattern: "oi",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -3576,8 +3398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oo",
-			phonetic: "(u[32]|o)",
+			pattern: "oo",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -3590,8 +3411,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "(ou|u[576]|au[16])",
+			pattern: "ou",
 			phoneticRules: []phonetic{
 				{
 					text:  "ou",
@@ -3608,8 +3428,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "où",
-			phonetic: "u",
+			pattern: "où",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -3618,8 +3437,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oy",
-			phonetic: "oj",
+			pattern: "oy",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -3628,8 +3446,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "õe",
-			phonetic: "(oj|on)",
+			pattern: "õe",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -3642,8 +3459,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ua",
-			phonetic: "va",
+			pattern: "ua",
 			phoneticRules: []phonetic{
 				{
 					text:  "va",
@@ -3652,8 +3468,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ue",
-			phonetic: "(Q[128]|uje[131072]|ve)",
+			pattern: "ue",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -3670,8 +3485,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ui",
-			phonetic: "(uj|vi|Y[16])",
+			pattern: "ui",
 			phoneticRules: []phonetic{
 				{
 					text:  "uj",
@@ -3688,8 +3502,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uu",
-			phonetic: "(u|Q[16])",
+			pattern: "uu",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -3702,8 +3515,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
+			pattern: "uo",
 			phoneticRules: []phonetic{
 				{
 					text:  "vo",
@@ -3716,8 +3528,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uy",
-			phonetic: "uj",
+			pattern: "uy",
 			phoneticRules: []phonetic{
 				{
 					text:  "uj",
@@ -3726,8 +3537,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ya",
-			phonetic: "ja",
+			pattern: "ya",
 			phoneticRules: []phonetic{
 				{
 					text:  "ja",
@@ -3736,8 +3546,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ye",
-			phonetic: "(je|ije[131072])",
+			pattern: "ye",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -3757,7 +3566,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3773,7 +3581,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3782,8 +3589,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yo",
-			phonetic: "(jo|e[131072])",
+			pattern: "yo",
 			phoneticRules: []phonetic{
 				{
 					text:  "jo",
@@ -3796,8 +3602,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yu",
-			phonetic: "ju",
+			pattern: "yu",
 			phoneticRules: []phonetic{
 				{
 					text:  "ju",
@@ -3813,7 +3618,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -3830,7 +3634,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[áóéê]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -3847,7 +3650,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[áóéê]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -3863,7 +3665,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(e|je[131072])",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -3883,7 +3684,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(e|EE[96])",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -3904,7 +3704,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "om",
 			phoneticRules: []phonetic{
 				{
 					text:  "om",
@@ -3913,8 +3712,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ą",
-			phonetic: "on",
+			pattern: "ą",
 			phoneticRules: []phonetic{
 				{
 					text:  "on",
@@ -3923,8 +3721,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ä",
-			phonetic: "(Y|e)",
+			pattern: "ä",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -3937,8 +3734,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
+			pattern: "á",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -3947,8 +3743,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
+			pattern: "à",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -3957,8 +3752,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "â",
-			phonetic: "a",
+			pattern: "â",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -3967,8 +3761,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ã",
-			phonetic: "(a|an)",
+			pattern: "ã",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -3981,8 +3774,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ă",
-			phonetic: "(e[65536]|a)",
+			pattern: "ă",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -3995,8 +3787,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ā",
-			phonetic: "a",
+			pattern: "ā",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -4005,8 +3796,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "č",
-			phonetic: "tS",
+			pattern: "č",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -4015,8 +3805,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ć",
-			phonetic: "(tS[16384]|ts)",
+			pattern: "ć",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -4029,8 +3818,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "(s|tS[524288])",
+			pattern: "ç",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -4043,8 +3831,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ď",
-			phonetic: "(d|dj[8])",
+			pattern: "ď",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -4065,7 +3852,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "em",
 			phoneticRules: []phonetic{
 				{
 					text:  "em",
@@ -4074,8 +3860,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ę",
-			phonetic: "en",
+			pattern: "ę",
 			phoneticRules: []phonetic{
 				{
 					text:  "en",
@@ -4084,8 +3869,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -4094,8 +3878,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "è",
-			phonetic: "e",
+			pattern: "è",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -4104,8 +3887,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ê",
-			phonetic: "e",
+			pattern: "ê",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -4114,8 +3896,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ě",
-			phonetic: "(e|je[8])",
+			pattern: "ě",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -4128,8 +3909,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ē",
-			phonetic: "e",
+			pattern: "ē",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -4138,8 +3918,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ģ",
-			phonetic: "(d|dj)",
+			pattern: "ģ",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -4152,8 +3931,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ğ",
-			phonetic: "",
+			pattern: "ğ",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -4162,8 +3940,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
+			pattern: "í",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -4172,8 +3949,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "î",
-			phonetic: "i",
+			pattern: "î",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -4182,8 +3958,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ī",
-			phonetic: "i",
+			pattern: "ī",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -4192,8 +3967,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ı",
-			phonetic: "(i|e[524288]|[524288])",
+			pattern: "ı",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -4210,8 +3984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ķ",
-			phonetic: "(k|t[8192]|tj[8192])",
+			pattern: "ķ",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -4228,8 +4001,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ļ",
-			phonetic: "l",
+			pattern: "ļ",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -4238,8 +4010,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ł",
-			phonetic: "l",
+			pattern: "ł",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -4248,8 +4019,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ń",
-			phonetic: "(n|nj[16384])",
+			pattern: "ń",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -4262,8 +4032,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ñ",
-			phonetic: "(n|nj[262144])",
+			pattern: "ñ",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -4276,8 +4045,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ņ",
-			phonetic: "(n|nj[8192])",
+			pattern: "ņ",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -4290,8 +4058,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "(u[16384]|o)",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -4304,8 +4071,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ô",
-			phonetic: "o",
+			pattern: "ô",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -4314,8 +4080,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "õ",
-			phonetic: "(o|on[32768]|Y[2048])",
+			pattern: "õ",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -4332,8 +4097,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ò",
-			phonetic: "o",
+			pattern: "ò",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -4342,8 +4106,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ö",
-			phonetic: "Y",
+			pattern: "ö",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -4352,8 +4115,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ř",
-			phonetic: "(r|rZ[8])",
+			pattern: "ř",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -4366,8 +4128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ś",
-			phonetic: "(S[16384]|s)",
+			pattern: "ś",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -4380,8 +4141,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ş",
-			phonetic: "S",
+			pattern: "ş",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -4390,8 +4150,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "š",
-			phonetic: "S",
+			pattern: "š",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -4400,8 +4159,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ţ",
-			phonetic: "ts",
+			pattern: "ţ",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -4410,8 +4168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ť",
-			phonetic: "(t|tj[8])",
+			pattern: "ť",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -4424,8 +4181,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ű",
-			phonetic: "Q",
+			pattern: "ű",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -4434,8 +4190,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "(Q|u[294912])",
+			pattern: "ü",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -4448,8 +4203,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ū",
-			phonetic: "u",
+			pattern: "ū",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -4458,8 +4212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
+			pattern: "ú",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -4468,8 +4221,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ů",
-			phonetic: "u",
+			pattern: "ů",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -4478,8 +4230,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ù",
-			phonetic: "u",
+			pattern: "ù",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -4488,8 +4239,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ý",
-			phonetic: "i",
+			pattern: "ý",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -4498,8 +4248,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ż",
-			phonetic: "Z",
+			pattern: "ż",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -4508,8 +4257,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ź",
-			phonetic: "(Z[16384]|z)",
+			pattern: "ź",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -4522,8 +4270,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ž",
-			phonetic: "Z",
+			pattern: "ž",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -4532,8 +4279,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ß",
-			phonetic: "s",
+			pattern: "ß",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -4542,8 +4288,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "'",
-			phonetic: "",
+			pattern: "'",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -4552,8 +4297,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "\"",
-			phonetic: "",
+			pattern: "\"",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -4570,7 +4314,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
 			},
-			phonetic: "(O|P[16384])",
 			phoneticRules: []phonetic{
 				{
 					text:  "O",
@@ -4583,8 +4326,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "A",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "A",
@@ -4593,8 +4335,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "B",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "B",
@@ -4603,8 +4344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "(k|ts[16392]|dZ[524288])",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -4621,8 +4361,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -4631,8 +4370,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -4641,8 +4379,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -4651,8 +4388,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -4661,8 +4397,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "(h|x[65536]|H[299072])",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -4679,8 +4414,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -4689,8 +4423,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(j|x[262144]|Z[622656])",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -4707,8 +4440,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -4717,8 +4449,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -4727,8 +4458,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -4737,8 +4467,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -4747,8 +4476,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "O",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "O",
@@ -4757,8 +4485,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -4767,8 +4494,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -4777,8 +4503,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -4787,8 +4512,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "(s|S[32768])",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -4801,8 +4525,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -4811,8 +4534,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "U",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "U",
@@ -4821,8 +4543,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "V",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "V",
@@ -4831,8 +4552,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "(v|w[48])",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -4845,8 +4565,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "(ks|gz|S[294912])",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -4863,8 +4582,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -4873,8 +4591,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "(z|ts[128]|dz[4096]|ts[4096]|s[262144])",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -4901,8 +4618,7 @@ var genRules = map[genLang][]rule{
 	},
 	genarabic: []rule{
 		{
-			pattern:  "ا",
-			phonetic: "a",
+			pattern: "ا",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -4918,7 +4634,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -4927,8 +4642,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ب",
-			phonetic: "b1",
+			pattern: "ب",
 			phoneticRules: []phonetic{
 				{
 					text:  "b1",
@@ -4944,7 +4658,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -4953,8 +4666,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ت",
-			phonetic: "t1",
+			pattern: "ت",
 			phoneticRules: []phonetic{
 				{
 					text:  "t1",
@@ -4970,7 +4682,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -4979,8 +4690,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ث",
-			phonetic: "t1",
+			pattern: "ث",
 			phoneticRules: []phonetic{
 				{
 					text:  "t1",
@@ -4996,7 +4706,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(dZ|Z)",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -5009,8 +4718,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ج",
-			phonetic: "(dZ1|Z1)",
+			pattern: "ج",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ1",
@@ -5030,7 +4738,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -5046,7 +4753,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -5055,8 +4761,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ح",
-			phonetic: "(h1|1)",
+			pattern: "ح",
 			phoneticRules: []phonetic{
 				{
 					text:  "h1",
@@ -5076,7 +4781,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -5085,8 +4789,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "خ",
-			phonetic: "x1",
+			pattern: "خ",
 			phoneticRules: []phonetic{
 				{
 					text:  "x1",
@@ -5102,7 +4805,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -5111,8 +4813,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "د",
-			phonetic: "d1",
+			pattern: "د",
 			phoneticRules: []phonetic{
 				{
 					text:  "d1",
@@ -5128,7 +4829,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -5137,8 +4837,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ذ",
-			phonetic: "d1",
+			pattern: "ذ",
 			phoneticRules: []phonetic{
 				{
 					text:  "d1",
@@ -5154,7 +4853,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -5163,8 +4861,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ر",
-			phonetic: "r1",
+			pattern: "ر",
 			phoneticRules: []phonetic{
 				{
 					text:  "r1",
@@ -5180,7 +4877,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -5189,8 +4885,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ز",
-			phonetic: "z1",
+			pattern: "ز",
 			phoneticRules: []phonetic{
 				{
 					text:  "z1",
@@ -5206,7 +4901,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -5215,8 +4909,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "س",
-			phonetic: "s1",
+			pattern: "س",
 			phoneticRules: []phonetic{
 				{
 					text:  "s1",
@@ -5232,7 +4925,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "S",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -5241,8 +4933,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ش",
-			phonetic: "S1",
+			pattern: "ش",
 			phoneticRules: []phonetic{
 				{
 					text:  "S1",
@@ -5258,7 +4949,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -5267,8 +4957,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ص",
-			phonetic: "s1",
+			pattern: "ص",
 			phoneticRules: []phonetic{
 				{
 					text:  "s1",
@@ -5284,7 +4973,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -5293,8 +4981,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ض",
-			phonetic: "d1",
+			pattern: "ض",
 			phoneticRules: []phonetic{
 				{
 					text:  "d1",
@@ -5310,7 +4997,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -5319,8 +5005,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ط",
-			phonetic: "t1",
+			pattern: "ط",
 			phoneticRules: []phonetic{
 				{
 					text:  "t1",
@@ -5336,7 +5021,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -5345,8 +5029,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ظ",
-			phonetic: "z1",
+			pattern: "ظ",
 			phoneticRules: []phonetic{
 				{
 					text:  "z1",
@@ -5362,7 +5045,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -5378,7 +5060,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -5387,8 +5068,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ع",
-			phonetic: "(h1|1)",
+			pattern: "ع",
 			phoneticRules: []phonetic{
 				{
 					text:  "h1",
@@ -5408,7 +5088,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -5417,8 +5096,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "غ",
-			phonetic: "g1",
+			pattern: "غ",
 			phoneticRules: []phonetic{
 				{
 					text:  "g1",
@@ -5434,7 +5112,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -5443,8 +5120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ف",
-			phonetic: "f1",
+			pattern: "ف",
 			phoneticRules: []phonetic{
 				{
 					text:  "f1",
@@ -5460,7 +5136,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -5469,8 +5144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ق",
-			phonetic: "k1",
+			pattern: "ق",
 			phoneticRules: []phonetic{
 				{
 					text:  "k1",
@@ -5486,7 +5160,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -5495,8 +5168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ك",
-			phonetic: "k1",
+			pattern: "ك",
 			phoneticRules: []phonetic{
 				{
 					text:  "k1",
@@ -5512,7 +5184,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -5521,8 +5192,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ل",
-			phonetic: "l1",
+			pattern: "ل",
 			phoneticRules: []phonetic{
 				{
 					text:  "l1",
@@ -5538,7 +5208,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -5547,8 +5216,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "م",
-			phonetic: "m1",
+			pattern: "م",
 			phoneticRules: []phonetic{
 				{
 					text:  "m1",
@@ -5564,7 +5232,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -5573,8 +5240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ن",
-			phonetic: "n1",
+			pattern: "ن",
 			phoneticRules: []phonetic{
 				{
 					text:  "n1",
@@ -5590,7 +5256,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -5606,7 +5271,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -5615,8 +5279,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ه",
-			phonetic: "(h1|1)",
+			pattern: "ه",
 			phoneticRules: []phonetic{
 				{
 					text:  "h1",
@@ -5636,7 +5299,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(u|v)",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -5649,8 +5311,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "و",
-			phonetic: "(u|v1)",
+			pattern: "و",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -5670,7 +5331,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(i|j)",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -5683,8 +5343,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ي\u200e",
-			phonetic: "(i|j1)",
+			pattern: "ي\u200e",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -5699,8 +5358,7 @@ var genRules = map[genLang][]rule{
 	},
 	gencyrillic: []rule{
 		{
-			pattern:  "ця",
-			phonetic: "tsa",
+			pattern: "ця",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
@@ -5709,8 +5367,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "цю",
-			phonetic: "tsu",
+			pattern: "цю",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
@@ -5719,8 +5376,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "циа",
-			phonetic: "tsa",
+			pattern: "циа",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
@@ -5729,8 +5385,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "цие",
-			phonetic: "tse",
+			pattern: "цие",
 			phoneticRules: []phonetic{
 				{
 					text:  "tse",
@@ -5739,8 +5394,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "цио",
-			phonetic: "tso",
+			pattern: "цио",
 			phoneticRules: []phonetic{
 				{
 					text:  "tso",
@@ -5749,8 +5403,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "циу",
-			phonetic: "tsu",
+			pattern: "циу",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
@@ -5759,8 +5412,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "сие",
-			phonetic: "se",
+			pattern: "сие",
 			phoneticRules: []phonetic{
 				{
 					text:  "se",
@@ -5769,8 +5421,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "сио",
-			phonetic: "so",
+			pattern: "сио",
 			phoneticRules: []phonetic{
 				{
 					text:  "so",
@@ -5779,8 +5430,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "зие",
-			phonetic: "ze",
+			pattern: "зие",
 			phoneticRules: []phonetic{
 				{
 					text:  "ze",
@@ -5789,8 +5439,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "зио",
-			phonetic: "zo",
+			pattern: "зио",
 			phoneticRules: []phonetic{
 				{
 					text:  "zo",
@@ -5806,7 +5455,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "с",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -5822,7 +5470,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "haus",
 			phoneticRules: []phonetic{
 				{
 					text:  "haus",
@@ -5838,7 +5485,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "haus",
 			phoneticRules: []phonetic{
 				{
 					text:  "haus",
@@ -5854,7 +5500,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "holts",
 			phoneticRules: []phonetic{
 				{
 					text:  "holts",
@@ -5870,7 +5515,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(hejmer|hajmer)",
 			phoneticRules: []phonetic{
 				{
 					text:  "hejmer",
@@ -5890,7 +5534,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(hejm|hajm)",
 			phoneticRules: []phonetic{
 				{
 					text:  "hejm",
@@ -5910,7 +5553,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "hof",
 			phoneticRules: []phonetic{
 				{
 					text:  "hof",
@@ -5926,7 +5568,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ger",
 			phoneticRules: []phonetic{
 				{
 					text:  "ger",
@@ -5942,7 +5583,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "gen",
 			phoneticRules: []phonetic{
 				{
 					text:  "gen",
@@ -5958,7 +5598,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "gin",
 			phoneticRules: []phonetic{
 				{
 					text:  "gin",
@@ -5982,7 +5621,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -5999,7 +5637,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
 			},
-			phonetic: "(g|h)",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -6012,8 +5649,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ля",
-			phonetic: "la",
+			pattern: "ля",
 			phoneticRules: []phonetic{
 				{
 					text:  "la",
@@ -6022,8 +5658,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "лю",
-			phonetic: "lu",
+			pattern: "лю",
 			phoneticRules: []phonetic{
 				{
 					text:  "lu",
@@ -6032,8 +5667,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "лё",
-			phonetic: "(le|lo)",
+			pattern: "лё",
 			phoneticRules: []phonetic{
 				{
 					text:  "le",
@@ -6046,8 +5680,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "лио",
-			phonetic: "(le|lo)",
+			pattern: "лио",
 			phoneticRules: []phonetic{
 				{
 					text:  "le",
@@ -6060,8 +5693,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ле",
-			phonetic: "(lE|lo)",
+			pattern: "ле",
 			phoneticRules: []phonetic{
 				{
 					text:  "lE",
@@ -6074,8 +5706,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ийе",
-			phonetic: "je",
+			pattern: "ийе",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -6084,8 +5715,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ие",
-			phonetic: "je",
+			pattern: "ие",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -6094,8 +5724,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ыйе",
-			phonetic: "je",
+			pattern: "ыйе",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -6104,8 +5733,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ые",
-			phonetic: "je",
+			pattern: "ые",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -6122,7 +5750,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(а|о|у)"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -6139,7 +5766,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(а|о|у)"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -6155,7 +5781,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -6171,7 +5796,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -6187,7 +5811,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(jej|ej)",
 			phoneticRules: []phonetic{
 				{
 					text:  "jej",
@@ -6208,7 +5831,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("(а|е|о|у)$"),
 			},
-			phonetic: "je",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -6224,7 +5846,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "je",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -6233,8 +5854,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "эй",
-			phonetic: "ej",
+			pattern: "эй",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -6243,8 +5863,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ей",
-			phonetic: "ej",
+			pattern: "ей",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -6253,8 +5872,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ауе",
-			phonetic: "aue",
+			pattern: "ауе",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -6263,8 +5881,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ауэ",
-			phonetic: "aue",
+			pattern: "ауэ",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -6273,8 +5890,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "а",
-			phonetic: "a",
+			pattern: "а",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -6283,8 +5899,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "б",
-			phonetic: "b",
+			pattern: "б",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -6293,8 +5908,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "в",
-			phonetic: "v",
+			pattern: "в",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -6303,8 +5917,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "г",
-			phonetic: "g",
+			pattern: "г",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -6313,8 +5926,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "д",
-			phonetic: "d",
+			pattern: "д",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -6323,8 +5935,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "е",
-			phonetic: "E",
+			pattern: "е",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -6333,8 +5944,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ё",
-			phonetic: "(e|jo)",
+			pattern: "ё",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -6347,8 +5957,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ж",
-			phonetic: "Z",
+			pattern: "ж",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -6357,8 +5966,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "з",
-			phonetic: "z",
+			pattern: "з",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -6367,8 +5975,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "и",
-			phonetic: "I",
+			pattern: "и",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -6377,8 +5984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "й",
-			phonetic: "j",
+			pattern: "й",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -6387,8 +5993,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "к",
-			phonetic: "k",
+			pattern: "к",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -6397,8 +6002,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "л",
-			phonetic: "l",
+			pattern: "л",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -6407,8 +6011,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "м",
-			phonetic: "m",
+			pattern: "м",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -6417,8 +6020,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "н",
-			phonetic: "n",
+			pattern: "н",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -6427,8 +6029,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "о",
-			phonetic: "o",
+			pattern: "о",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -6437,8 +6038,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "п",
-			phonetic: "p",
+			pattern: "п",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -6447,8 +6047,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "р",
-			phonetic: "r",
+			pattern: "р",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -6457,8 +6056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "с",
-			phonetic: "s",
+			pattern: "с",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -6467,8 +6065,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "т",
-			phonetic: "t",
+			pattern: "т",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -6477,8 +6074,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "у",
-			phonetic: "u",
+			pattern: "у",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -6487,8 +6083,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ф",
-			phonetic: "f",
+			pattern: "ф",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -6497,8 +6092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "х",
-			phonetic: "x",
+			pattern: "х",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -6507,8 +6101,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ц",
-			phonetic: "ts",
+			pattern: "ц",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -6517,8 +6110,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ч",
-			phonetic: "tS",
+			pattern: "ч",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -6527,8 +6119,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ш",
-			phonetic: "S",
+			pattern: "ш",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -6537,8 +6128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "щ",
-			phonetic: "StS",
+			pattern: "щ",
 			phoneticRules: []phonetic{
 				{
 					text:  "StS",
@@ -6547,8 +6137,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ъ",
-			phonetic: "",
+			pattern: "ъ",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -6557,8 +6146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ы",
-			phonetic: "I",
+			pattern: "ы",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -6567,8 +6155,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ь",
-			phonetic: "",
+			pattern: "ь",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -6577,8 +6164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "э",
-			phonetic: "E",
+			pattern: "э",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -6587,8 +6173,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ю",
-			phonetic: "ju",
+			pattern: "ю",
 			phoneticRules: []phonetic{
 				{
 					text:  "ju",
@@ -6597,8 +6182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "я",
-			phonetic: "ja",
+			pattern: "я",
 			phoneticRules: []phonetic{
 				{
 					text:  "ja",
@@ -6609,8 +6193,7 @@ var genRules = map[genLang][]rule{
 	},
 	genczech: []rule{
 		{
-			pattern:  "ch",
-			phonetic: "x",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -6619,8 +6202,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "(k|kv)",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -6633,8 +6215,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -6643,8 +6224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(ej|aj)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -6665,7 +6245,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -6682,7 +6261,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -6691,8 +6269,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "č",
-			phonetic: "tS",
+			pattern: "č",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -6701,8 +6278,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "š",
-			phonetic: "S",
+			pattern: "š",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -6711,8 +6287,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ž",
-			phonetic: "Z",
+			pattern: "ž",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -6721,8 +6296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ň",
-			phonetic: "n",
+			pattern: "ň",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -6731,8 +6305,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ť",
-			phonetic: "(t|tj)",
+			pattern: "ť",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -6745,8 +6318,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ď",
-			phonetic: "(d|dj)",
+			pattern: "ď",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -6759,8 +6331,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ř",
-			phonetic: "(r|rZ)",
+			pattern: "ř",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -6773,8 +6344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
+			pattern: "á",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -6783,8 +6353,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -6793,8 +6362,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
+			pattern: "í",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -6803,8 +6371,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -6813,8 +6380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
+			pattern: "ú",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -6823,8 +6389,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ý",
-			phonetic: "i",
+			pattern: "ý",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -6833,8 +6398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ě",
-			phonetic: "(e|je)",
+			pattern: "ě",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -6847,8 +6411,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ů",
-			phonetic: "u",
+			pattern: "ů",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -6857,8 +6420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -6867,8 +6429,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -6877,8 +6438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "ts",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -6887,8 +6447,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -6897,8 +6456,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -6907,8 +6465,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -6917,8 +6474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -6927,8 +6483,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "(h|g)",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -6941,8 +6496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -6951,8 +6505,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -6961,8 +6514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -6971,8 +6523,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -6981,8 +6532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -6991,8 +6541,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -7001,8 +6550,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -7011,8 +6559,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -7021,8 +6568,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "(k|kv)",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -7035,8 +6581,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -7045,8 +6590,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -7055,8 +6599,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -7065,8 +6608,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -7075,8 +6617,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -7085,8 +6626,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -7095,8 +6635,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -7105,8 +6644,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -7115,8 +6653,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -7127,8 +6664,7 @@ var genRules = map[genLang][]rule{
 	},
 	gendutch: []rule{
 		{
-			pattern:  "ssj",
-			phonetic: "S",
+			pattern: "ssj",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -7137,8 +6673,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sj",
-			phonetic: "S",
+			pattern: "sj",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -7147,8 +6682,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "x",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -7165,7 +6699,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			phonetic: "ts",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -7174,8 +6707,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ck",
-			phonetic: "k",
+			pattern: "ck",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -7184,8 +6716,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "pf",
-			phonetic: "(pf|p|f)",
+			pattern: "pf",
 			phoneticRules: []phonetic{
 				{
 					text:  "pf",
@@ -7202,8 +6733,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "(ph|f)",
+			pattern: "ph",
 			phoneticRules: []phonetic{
 				{
 					text:  "ph",
@@ -7216,8 +6746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "kv",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "kv",
@@ -7233,7 +6762,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -7250,7 +6778,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[äöüaeiou]"),
 			},
-			phonetic: "(t|th)",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -7263,8 +6790,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "th",
-			phonetic: "t",
+			pattern: "th",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -7273,8 +6799,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
+			pattern: "ss",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -7291,7 +6816,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -7300,8 +6824,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -7310,8 +6833,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "au",
+			pattern: "ou",
 			phoneticRules: []phonetic{
 				{
 					text:  "au",
@@ -7320,8 +6842,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "(Q|i)",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -7334,8 +6855,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uu",
-			phonetic: "(Q|u)",
+			pattern: "uu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -7348,8 +6868,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ee",
-			phonetic: "e",
+			pattern: "ee",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -7358,8 +6877,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eu",
-			phonetic: "(Y|Yj)",
+			pattern: "eu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -7372,8 +6890,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aa",
-			phonetic: "a",
+			pattern: "aa",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -7382,8 +6899,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oo",
-			phonetic: "o",
+			pattern: "oo",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -7392,8 +6908,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oe",
-			phonetic: "u",
+			pattern: "oe",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -7402,8 +6917,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ij",
-			phonetic: "ej",
+			pattern: "ij",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -7412,8 +6926,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ui",
-			phonetic: "(Y|uj)",
+			pattern: "ui",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -7426,8 +6939,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(ej|aj)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -7448,7 +6960,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -7465,7 +6976,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -7482,7 +6992,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -7499,7 +7008,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -7508,8 +7016,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -7518,8 +7025,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -7528,8 +7034,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -7538,8 +7043,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -7548,8 +7052,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -7558,8 +7061,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -7568,8 +7070,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "(g|x)",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -7582,8 +7083,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -7592,8 +7092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "(i|Q)",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -7606,8 +7105,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -7616,8 +7114,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -7626,8 +7123,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -7636,8 +7132,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -7646,8 +7141,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -7656,8 +7150,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -7666,8 +7159,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -7676,8 +7168,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -7686,8 +7177,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -7696,8 +7186,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -7706,8 +7195,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -7716,8 +7204,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "(u|Q)",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -7730,8 +7217,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -7740,8 +7226,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "(w|v)",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "w",
@@ -7754,8 +7239,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -7764,8 +7248,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -7774,8 +7257,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -7786,8 +7268,7 @@ var genRules = map[genLang][]rule{
 	},
 	genenglish: []rule{
 		{
-			pattern:  "�",
-			phonetic: "",
+			pattern: "�",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -7796,8 +7277,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "'",
-			phonetic: "",
+			pattern: "'",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -7813,7 +7293,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "mak",
 			phoneticRules: []phonetic{
 				{
 					text:  "mak",
@@ -7822,8 +7301,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tz",
-			phonetic: "ts",
+			pattern: "tz",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -7832,8 +7310,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tch",
-			phonetic: "tS",
+			pattern: "tch",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -7842,8 +7319,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "(tS|x)",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -7856,8 +7332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ck",
-			phonetic: "k",
+			pattern: "ck",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -7874,7 +7349,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
-			phonetic: "ks",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -7890,7 +7364,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "c",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -7907,7 +7380,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -7923,7 +7395,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -7932,8 +7403,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gh",
-			phonetic: "(g|f|w)",
+			pattern: "gh",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -7950,8 +7420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gn",
-			phonetic: "(gn|n)",
+			pattern: "gn",
 			phoneticRules: []phonetic{
 				{
 					text:  "gn",
@@ -7972,7 +7441,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
-			phonetic: "(g|dZ)",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -7985,8 +7453,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "th",
-			phonetic: "t",
+			pattern: "th",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -7995,8 +7462,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "kh",
-			phonetic: "x",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -8005,8 +7471,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "f",
+			pattern: "ph",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -8015,8 +7480,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sch",
-			phonetic: "(S|sk)",
+			pattern: "sch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -8029,8 +7493,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sh",
-			phonetic: "S",
+			pattern: "sh",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -8046,7 +7509,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "hu",
 			phoneticRules: []phonetic{
 				{
 					text:  "hu",
@@ -8062,7 +7524,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "w",
@@ -8078,7 +7539,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -8095,7 +7555,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeiou]"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -8111,7 +7570,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "H",
 			phoneticRules: []phonetic{
 				{
 					text:  "H",
@@ -8127,7 +7585,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -8143,7 +7600,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -8159,7 +7615,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(N|ng)",
 			phoneticRules: []phonetic{
 				{
 					text:  "N",
@@ -8179,7 +7634,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(pn|n)",
 			phoneticRules: []phonetic{
 				{
 					text:  "pn",
@@ -8199,7 +7653,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ps|s)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ps",
@@ -8212,8 +7665,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "kw",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "kw",
@@ -8222,8 +7674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tia",
-			phonetic: "(So|Sa)",
+			pattern: "tia",
 			phoneticRules: []phonetic{
 				{
 					text:  "So",
@@ -8236,8 +7687,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tio",
-			phonetic: "So",
+			pattern: "tio",
 			phoneticRules: []phonetic{
 				{
 					text:  "So",
@@ -8253,7 +7703,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -8269,7 +7718,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -8285,7 +7733,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -8308,7 +7755,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouy]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -8324,7 +7770,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -8333,8 +7778,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -8343,8 +7787,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oue",
-			phonetic: "(aue|oue)",
+			pattern: "oue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -8357,8 +7800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "(aj|ej|e)",
+			pattern: "ai",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -8375,8 +7817,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ay",
-			phonetic: "(aj|ej)",
+			pattern: "ay",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -8397,7 +7838,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			phonetic: "ej",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -8406,26 +7846,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(ej|aj|i)",
-			phoneticRules: []phonetic{
-				{
-					text:  "ej",
-					langs: -1,
-				},
-				{
-					text:  "aj",
-					langs: -1,
-				},
-				{
-					text:  "i",
-					langs: -1,
-				},
-			},
-		},
-		{
-			pattern:  "ey",
-			phonetic: "(ej|aj|i)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -8442,8 +7863,24 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ear",
-			phonetic: "ia",
+			pattern: "ey",
+			phoneticRules: []phonetic{
+				{
+					text:  "ej",
+					langs: -1,
+				},
+				{
+					text:  "aj",
+					langs: -1,
+				},
+				{
+					text:  "i",
+					langs: -1,
+				},
+			},
+		},
+		{
+			pattern: "ear",
 			phoneticRules: []phonetic{
 				{
 					text:  "ia",
@@ -8452,8 +7889,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ea",
-			phonetic: "(i|e)",
+			pattern: "ea",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -8466,8 +7902,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ee",
-			phonetic: "i",
+			pattern: "ee",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -8484,7 +7919,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -8500,7 +7934,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(|E)",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -8513,8 +7946,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "i",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -8531,7 +7963,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			phonetic: "aj",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -8540,8 +7971,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oa",
-			phonetic: "ou",
+			pattern: "oa",
 			phoneticRules: []phonetic{
 				{
 					text:  "ou",
@@ -8550,8 +7980,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oi",
-			phonetic: "oj",
+			pattern: "oi",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -8560,8 +7989,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oo",
-			phonetic: "u",
+			pattern: "oo",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -8570,8 +7998,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "(u|ou)",
+			pattern: "ou",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -8584,8 +8011,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oy",
-			phonetic: "oj",
+			pattern: "oy",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -8602,7 +8028,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			phonetic: "ou",
 			phoneticRules: []phonetic{
 				{
 					text:  "ou",
@@ -8619,7 +8044,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			phonetic: "(ju|u)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ju",
@@ -8639,7 +8063,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "r",
 				suffix:           "",
 			},
-			phonetic: "(e|u)",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -8652,8 +8075,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "(e|o|a)",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -8670,8 +8092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -8680,8 +8101,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -8690,8 +8110,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -8700,8 +8119,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -8710,8 +8128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -8720,8 +8137,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -8730,8 +8146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -8740,8 +8155,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -8750,8 +8164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "dZ",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -8760,8 +8173,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -8770,8 +8182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -8780,8 +8191,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -8790,8 +8200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -8800,8 +8209,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "(o|a)",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -8814,8 +8222,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -8824,8 +8231,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -8834,8 +8240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -8844,8 +8249,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -8854,8 +8258,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -8864,8 +8267,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "(u|a)",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -8878,8 +8280,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -8888,8 +8289,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "(w|v)",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "w",
@@ -8902,8 +8302,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -8912,8 +8311,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -8922,8 +8320,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -8947,7 +8344,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lt|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "lt",
@@ -8973,7 +8369,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -8993,7 +8388,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(t|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -9019,7 +8413,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -9039,7 +8432,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(p|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -9065,7 +8457,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(r|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -9085,7 +8476,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(t|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -9105,7 +8495,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(s|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -9125,7 +8514,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ds|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ds",
@@ -9145,7 +8533,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ps|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ps",
@@ -9171,7 +8558,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(rs|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "rs",
@@ -9191,7 +8577,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ts|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -9211,7 +8596,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(s|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -9237,7 +8621,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ks|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -9265,7 +8648,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeéèêiou]"),
 			},
-			phonetic: "(s|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -9293,7 +8675,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[^aeéèêiou]"),
 			},
-			phonetic: "(t|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -9306,8 +8687,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "kh",
-			phonetic: "x",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -9316,8 +8696,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "f",
+			pattern: "ph",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -9326,8 +8705,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
+			pattern: "ç",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -9336,8 +8714,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -9346,8 +8723,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "S",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -9364,7 +8740,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -9373,8 +8748,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gn",
-			phonetic: "(n|gn)",
+			pattern: "gn",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -9395,7 +8769,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			phonetic: "Z",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -9411,7 +8784,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -9428,7 +8800,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -9444,7 +8815,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "e",
 				suffix:           "",
 			},
-			phonetic: "aj",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -9460,7 +8830,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "e",
 				suffix:           "",
 			},
-			phonetic: "(l|j)",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -9480,7 +8849,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -9489,8 +8857,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -9514,7 +8881,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouyéèê]"),
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -9531,7 +8897,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -9555,7 +8920,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouy]"),
 			},
-			phonetic: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -9572,7 +8936,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(m|n)",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -9593,7 +8956,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
-			phonetic: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -9610,7 +8972,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
-			phonetic: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -9619,8 +8980,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -9629,8 +8989,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eau",
-			phonetic: "o",
+			pattern: "eau",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -9639,8 +8998,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "au",
-			phonetic: "(o|au)",
+			pattern: "au",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -9653,8 +9011,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "(e|aj)",
+			pattern: "ai",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9667,8 +9024,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ay",
-			phonetic: "(e|aj)",
+			pattern: "ay",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9681,8 +9037,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9691,8 +9046,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ê",
-			phonetic: "e",
+			pattern: "ê",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9701,8 +9055,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "è",
-			phonetic: "e",
+			pattern: "è",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9711,8 +9064,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
+			pattern: "à",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -9721,8 +9073,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "â",
-			phonetic: "a",
+			pattern: "â",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -9731,8 +9082,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "où",
-			phonetic: "u",
+			pattern: "où",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -9741,8 +9091,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "u",
+			pattern: "ou",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -9751,8 +9100,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oi",
-			phonetic: "(oj|va)",
+			pattern: "oi",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -9765,8 +9113,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(aj|ej|e)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -9783,8 +9130,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ey",
-			phonetic: "(aj|ej|e)",
+			pattern: "ey",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -9801,8 +9147,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eu",
-			phonetic: "(ej|Y)",
+			pattern: "eu",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -9823,7 +9168,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[ou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -9839,7 +9183,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(e|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9860,7 +9203,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -9877,7 +9219,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aoeu]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -9886,8 +9227,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -9896,8 +9236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -9906,8 +9245,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -9916,8 +9254,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -9926,8 +9263,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -9936,8 +9272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -9946,8 +9281,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -9956,8 +9290,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -9966,8 +9299,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -9976,8 +9308,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "Z",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -9986,8 +9317,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -9996,8 +9326,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -10006,8 +9335,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -10016,8 +9344,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -10026,8 +9353,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -10036,8 +9362,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -10046,8 +9371,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -10056,8 +9380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -10066,8 +9389,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -10076,8 +9398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -10086,8 +9407,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "(u|Q)",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -10100,8 +9420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -10110,8 +9429,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -10120,8 +9438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -10130,8 +9447,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -10149,7 +9465,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "evitS",
 			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
@@ -10165,7 +9480,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ovitS",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
@@ -10181,7 +9495,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "evitS",
 			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
@@ -10197,7 +9510,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ovitS",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
@@ -10213,7 +9525,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "vitS",
 			phoneticRules: []phonetic{
 				{
 					text:  "vitS",
@@ -10229,7 +9540,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "vitS",
 			phoneticRules: []phonetic{
 				{
 					text:  "vitS",
@@ -10238,8 +9548,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssch",
-			phonetic: "S",
+			pattern: "ssch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -10248,8 +9557,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "chsch",
-			phonetic: "xS",
+			pattern: "chsch",
 			phoneticRules: []phonetic{
 				{
 					text:  "xS",
@@ -10258,8 +9566,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sch",
-			phonetic: "S",
+			pattern: "sch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -10268,8 +9575,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ziu",
-			phonetic: "tsu",
+			pattern: "ziu",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
@@ -10278,8 +9584,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zia",
-			phonetic: "tsa",
+			pattern: "zia",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
@@ -10288,8 +9593,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zio",
-			phonetic: "tso",
+			pattern: "zio",
 			phoneticRules: []phonetic{
 				{
 					text:  "tso",
@@ -10298,8 +9602,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "chs",
-			phonetic: "ks",
+			pattern: "chs",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -10308,8 +9611,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "x",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -10318,8 +9620,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ck",
-			phonetic: "k",
+			pattern: "ck",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -10336,7 +9637,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			phonetic: "ts",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -10352,7 +9652,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "Sp",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
@@ -10368,7 +9667,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "St",
 			phoneticRules: []phonetic{
 				{
 					text:  "St",
@@ -10377,8 +9675,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssp",
-			phonetic: "(Sp|sp)",
+			pattern: "ssp",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
@@ -10391,8 +9688,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sp",
-			phonetic: "(Sp|sp)",
+			pattern: "sp",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sp",
@@ -10405,8 +9701,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sst",
-			phonetic: "(St|st)",
+			pattern: "sst",
 			phoneticRules: []phonetic{
 				{
 					text:  "St",
@@ -10419,8 +9714,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "st",
-			phonetic: "(St|st)",
+			pattern: "st",
 			phoneticRules: []phonetic{
 				{
 					text:  "St",
@@ -10433,8 +9727,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "pf",
-			phonetic: "(pf|p|f)",
+			pattern: "pf",
 			phoneticRules: []phonetic{
 				{
 					text:  "pf",
@@ -10451,8 +9744,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "(ph|f)",
+			pattern: "ph",
 			phoneticRules: []phonetic{
 				{
 					text:  "ph",
@@ -10465,8 +9757,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "kv",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "kv",
@@ -10482,7 +9773,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(evits|evitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "evits",
@@ -10502,7 +9792,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(evits|evitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "evits",
@@ -10522,7 +9811,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(evits|evitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "evits",
@@ -10542,7 +9830,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(evits|evitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "evits",
@@ -10562,7 +9849,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ovits|ovitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
@@ -10582,7 +9868,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ovits|ovitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
@@ -10602,7 +9887,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ovits|ovitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
@@ -10622,7 +9906,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ovits|ovitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovits",
@@ -10642,7 +9925,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(vits|vitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "vits",
@@ -10662,7 +9944,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(vits|vitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "vits",
@@ -10682,7 +9963,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(vits|vitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "vits",
@@ -10702,7 +9982,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(vits|vitS)",
 			phoneticRules: []phonetic{
 				{
 					text:  "vits",
@@ -10715,8 +9994,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tz",
-			phonetic: "ts",
+			pattern: "tz",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -10732,7 +10010,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "tal",
 			phoneticRules: []phonetic{
 				{
 					text:  "tal",
@@ -10748,7 +10025,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -10765,7 +10041,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[äöüaeiou]"),
 			},
-			phonetic: "(t|th)",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -10778,8 +10053,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "th",
-			phonetic: "t",
+			pattern: "th",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -10795,7 +10069,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -10812,7 +10085,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouyäöü]$"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -10828,7 +10100,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "H",
 			phoneticRules: []phonetic{
 				{
 					text:  "H",
@@ -10837,8 +10108,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
+			pattern: "ss",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -10855,7 +10125,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[äöüaeiouy]"),
 			},
-			phonetic: "(z|s)",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -10883,7 +10152,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouyäöü]"),
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -10892,8 +10160,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ß",
-			phonetic: "s",
+			pattern: "ß",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -10909,7 +10176,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -10918,8 +10184,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -10928,8 +10193,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ue",
-			phonetic: "Q",
+			pattern: "ue",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -10938,8 +10202,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ae",
-			phonetic: "Y",
+			pattern: "ae",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -10948,8 +10211,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oe",
-			phonetic: "Y",
+			pattern: "oe",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -10958,8 +10220,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "Q",
+			pattern: "ü",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -10968,8 +10229,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ä",
-			phonetic: "(Y|e)",
+			pattern: "ä",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -10982,8 +10242,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ö",
-			phonetic: "Y",
+			pattern: "ö",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -10992,8 +10251,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(aj|ej)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -11006,8 +10264,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ey",
-			phonetic: "(aj|ej)",
+			pattern: "ey",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -11020,8 +10277,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eu",
-			phonetic: "(Yj|ej|aj|oj)",
+			pattern: "eu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Yj",
@@ -11050,7 +10306,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11067,7 +10322,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11076,8 +10330,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "I",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -11094,7 +10347,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11111,7 +10363,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aoeu]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11120,8 +10371,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ñ",
-			phonetic: "n",
+			pattern: "ñ",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -11130,8 +10380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ã",
-			phonetic: "a",
+			pattern: "ã",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -11140,8 +10389,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ő",
-			phonetic: "o",
+			pattern: "ő",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -11150,8 +10398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ű",
-			phonetic: "u",
+			pattern: "ű",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -11160,8 +10407,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
+			pattern: "ç",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -11170,8 +10416,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "A",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "A",
@@ -11180,8 +10425,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -11190,8 +10434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -11200,8 +10443,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -11210,8 +10452,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -11220,8 +10461,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -11230,8 +10470,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -11240,8 +10479,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -11250,8 +10488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -11260,8 +10497,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11270,8 +10506,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -11280,8 +10515,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -11290,8 +10524,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -11300,8 +10533,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -11310,8 +10542,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "O",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "O",
@@ -11320,8 +10551,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -11330,8 +10560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -11340,8 +10569,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -11350,8 +10578,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -11360,8 +10587,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -11370,8 +10596,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "U",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "U",
@@ -11380,8 +10605,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "(f|v)",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -11394,8 +10618,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -11404,8 +10627,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -11414,8 +10636,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -11424,8 +10645,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "ts",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -11443,7 +10663,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "af",
 			phoneticRules: []phonetic{
 				{
 					text:  "af",
@@ -11460,7 +10679,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(κ|π|σ|τ|φ|θ|χ|ψ)"),
 			},
-			phonetic: "af",
 			phoneticRules: []phonetic{
 				{
 					text:  "af",
@@ -11469,8 +10687,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "αυ",
-			phonetic: "av",
+			pattern: "αυ",
 			phoneticRules: []phonetic{
 				{
 					text:  "av",
@@ -11486,7 +10703,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ef",
 			phoneticRules: []phonetic{
 				{
 					text:  "ef",
@@ -11503,7 +10719,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(κ|π|σ|τ|φ|θ|χ|ψ)"),
 			},
-			phonetic: "ef",
 			phoneticRules: []phonetic{
 				{
 					text:  "ef",
@@ -11512,8 +10727,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ευ",
-			phonetic: "ev",
+			pattern: "ευ",
 			phoneticRules: []phonetic{
 				{
 					text:  "ev",
@@ -11529,7 +10743,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "if",
 			phoneticRules: []phonetic{
 				{
 					text:  "if",
@@ -11546,7 +10759,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(κ|π|σ|τ|φ|θ|χ|ψ)"),
 			},
-			phonetic: "if",
 			phoneticRules: []phonetic{
 				{
 					text:  "if",
@@ -11555,8 +10767,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ηυ",
-			phonetic: "iv",
+			pattern: "ηυ",
 			phoneticRules: []phonetic{
 				{
 					text:  "iv",
@@ -11565,8 +10776,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ου",
-			phonetic: "u",
+			pattern: "ου",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -11575,8 +10785,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "αι",
-			phonetic: "aj",
+			pattern: "αι",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -11585,8 +10794,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ει",
-			phonetic: "ej",
+			pattern: "ει",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -11595,8 +10803,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "οι",
-			phonetic: "oj",
+			pattern: "οι",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -11605,8 +10812,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ωι",
-			phonetic: "oj",
+			pattern: "ωι",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -11615,8 +10821,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ηι",
-			phonetic: "ej",
+			pattern: "ηι",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -11625,8 +10830,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "υι",
-			phonetic: "i",
+			pattern: "υι",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -11650,7 +10854,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(ε|ι|η)"),
 			},
-			phonetic: "(nj|j)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nj",
@@ -11671,7 +10874,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(ε|ι|η)"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11688,7 +10890,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
 			},
-			phonetic: "(ng|g)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ng",
@@ -11701,8 +10902,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "γγ",
-			phonetic: "g",
+			pattern: "γγ",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -11718,7 +10918,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -11742,7 +10941,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(ε|ι|η)"),
 			},
-			phonetic: "(nj|j)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nj",
@@ -11763,7 +10961,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(ε|ι|η)"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11780,7 +10977,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
 			},
-			phonetic: "(ng|g)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ng",
@@ -11793,8 +10989,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "γκ",
-			phonetic: "g",
+			pattern: "γκ",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -11811,7 +11006,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(α|ο|ω|υ)"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11820,8 +11014,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "γι",
-			phonetic: "(gi|i)",
+			pattern: "γι",
 			phoneticRules: []phonetic{
 				{
 					text:  "gi",
@@ -11842,7 +11035,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(α|ο|ω|υ)"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -11851,8 +11043,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "γε",
-			phonetic: "(ge|je)",
+			pattern: "γε",
 			phoneticRules: []phonetic{
 				{
 					text:  "ge",
@@ -11865,8 +11056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "κζ",
-			phonetic: "gz",
+			pattern: "κζ",
 			phoneticRules: []phonetic{
 				{
 					text:  "gz",
@@ -11875,8 +11065,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "τζ",
-			phonetic: "dz",
+			pattern: "τζ",
 			phoneticRules: []phonetic{
 				{
 					text:  "dz",
@@ -11893,7 +11082,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^(β|γ|δ|μ|ν|ρ)"),
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -11902,8 +11090,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "μβ",
-			phonetic: "(mb|b)",
+			pattern: "μβ",
 			phoneticRules: []phonetic{
 				{
 					text:  "mb",
@@ -11923,7 +11110,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -11940,7 +11126,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
 			},
-			phonetic: "mb",
 			phoneticRules: []phonetic{
 				{
 					text:  "mb",
@@ -11949,8 +11134,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "μπ",
-			phonetic: "b",
+			pattern: "μπ",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -11966,7 +11150,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -11983,7 +11166,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("(ε|ι|η|α|ο|ω|υ)$"),
 			},
-			phonetic: "(nd|nt)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nd",
@@ -11996,8 +11178,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ντ",
-			phonetic: "(nt|d)",
+			pattern: "ντ",
 			phoneticRules: []phonetic{
 				{
 					text:  "nt",
@@ -12010,8 +11191,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ά",
-			phonetic: "a",
+			pattern: "ά",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -12020,8 +11200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "έ",
-			phonetic: "e",
+			pattern: "έ",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -12030,8 +11209,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ή",
-			phonetic: "(i|e)",
+			pattern: "ή",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -12044,8 +11222,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ί",
-			phonetic: "i",
+			pattern: "ί",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -12054,8 +11231,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ό",
-			phonetic: "o",
+			pattern: "ό",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -12064,8 +11240,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ύ",
-			phonetic: "(Q|i|u)",
+			pattern: "ύ",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -12082,8 +11257,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ώ",
-			phonetic: "o",
+			pattern: "ώ",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -12092,8 +11266,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ΰ",
-			phonetic: "(Q|i|u)",
+			pattern: "ΰ",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -12110,8 +11283,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ϋ",
-			phonetic: "(Q|i|u)",
+			pattern: "ϋ",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -12128,8 +11300,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ϊ",
-			phonetic: "j",
+			pattern: "ϊ",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -12138,8 +11309,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "α",
-			phonetic: "a",
+			pattern: "α",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -12148,8 +11318,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "β",
-			phonetic: "(v|b)",
+			pattern: "β",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -12162,8 +11331,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "γ",
-			phonetic: "g",
+			pattern: "γ",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -12172,8 +11340,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "δ",
-			phonetic: "d",
+			pattern: "δ",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -12182,8 +11349,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ε",
-			phonetic: "e",
+			pattern: "ε",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -12192,8 +11358,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ζ",
-			phonetic: "z",
+			pattern: "ζ",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -12202,8 +11367,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "η",
-			phonetic: "(i|e)",
+			pattern: "η",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -12216,8 +11380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ι",
-			phonetic: "i",
+			pattern: "ι",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -12226,8 +11389,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "κ",
-			phonetic: "k",
+			pattern: "κ",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -12236,8 +11398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "λ",
-			phonetic: "l",
+			pattern: "λ",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -12246,8 +11407,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "μ",
-			phonetic: "m",
+			pattern: "μ",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -12256,8 +11416,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ν",
-			phonetic: "n",
+			pattern: "ν",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -12266,8 +11425,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ξ",
-			phonetic: "ks",
+			pattern: "ξ",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -12276,8 +11434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ο",
-			phonetic: "o",
+			pattern: "ο",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -12286,8 +11443,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "π",
-			phonetic: "p",
+			pattern: "π",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -12296,8 +11452,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ρ",
-			phonetic: "r",
+			pattern: "ρ",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -12306,8 +11461,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "σ",
-			phonetic: "s",
+			pattern: "σ",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -12316,8 +11470,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ς",
-			phonetic: "s",
+			pattern: "ς",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -12326,8 +11479,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "τ",
-			phonetic: "t",
+			pattern: "τ",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -12336,8 +11488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "υ",
-			phonetic: "(Q|i|u)",
+			pattern: "υ",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -12354,8 +11505,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "φ",
-			phonetic: "f",
+			pattern: "φ",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -12364,8 +11514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "θ",
-			phonetic: "t",
+			pattern: "θ",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -12374,8 +11523,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "χ",
-			phonetic: "x",
+			pattern: "χ",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -12384,8 +11532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ψ",
-			phonetic: "ps",
+			pattern: "ψ",
 			phoneticRules: []phonetic{
 				{
 					text:  "ps",
@@ -12394,8 +11541,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ω",
-			phonetic: "o",
+			pattern: "ω",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -12413,7 +11559,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "af",
 			phoneticRules: []phonetic{
 				{
 					text:  "af",
@@ -12430,7 +11575,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[kpstfh]"),
 			},
-			phonetic: "af",
 			phoneticRules: []phonetic{
 				{
 					text:  "af",
@@ -12439,8 +11583,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "au",
-			phonetic: "av",
+			pattern: "au",
 			phoneticRules: []phonetic{
 				{
 					text:  "av",
@@ -12456,7 +11599,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ef",
 			phoneticRules: []phonetic{
 				{
 					text:  "ef",
@@ -12473,7 +11615,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[kpstfh]"),
 			},
-			phonetic: "ef",
 			phoneticRules: []phonetic{
 				{
 					text:  "ef",
@@ -12482,8 +11623,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "eu",
-			phonetic: "ev",
+			pattern: "eu",
 			phoneticRules: []phonetic{
 				{
 					text:  "ev",
@@ -12492,8 +11632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "u",
+			pattern: "ou",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -12510,7 +11649,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(nje|je)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nje",
@@ -12538,7 +11676,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "(nj|j)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nj",
@@ -12559,7 +11696,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(ni|i)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ni",
@@ -12572,8 +11708,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gge",
-			phonetic: "je",
+			pattern: "gge",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -12582,8 +11717,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ggi",
-			phonetic: "i",
+			pattern: "ggi",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -12600,7 +11734,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(ng|g)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ng",
@@ -12613,8 +11746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gg",
-			phonetic: "g",
+			pattern: "gg",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -12630,7 +11762,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -12647,7 +11778,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(nje|je)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nje",
@@ -12668,7 +11798,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(ni|i)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ni",
@@ -12681,8 +11810,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gke",
-			phonetic: "je",
+			pattern: "gke",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -12691,8 +11819,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gki",
-			phonetic: "i",
+			pattern: "gki",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -12709,7 +11836,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(ng|g)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ng",
@@ -12722,8 +11848,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gk",
-			phonetic: "g",
+			pattern: "gk",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -12740,7 +11865,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "Nj",
 			phoneticRules: []phonetic{
 				{
 					text:  "Nj",
@@ -12749,8 +11873,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "nghi",
-			phonetic: "(Ngi|Ni)",
+			pattern: "nghi",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ngi",
@@ -12771,7 +11894,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "Nj",
 			phoneticRules: []phonetic{
 				{
 					text:  "Nj",
@@ -12780,8 +11902,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "nghe",
-			phonetic: "(Nje|Nge)",
+			pattern: "nghe",
 			phoneticRules: []phonetic{
 				{
 					text:  "Nje",
@@ -12802,7 +11923,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -12811,8 +11931,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ghi",
-			phonetic: "(gi|i)",
+			pattern: "ghi",
 			phoneticRules: []phonetic{
 				{
 					text:  "gi",
@@ -12833,7 +11952,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -12842,8 +11960,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ghe",
-			phonetic: "(je|ge)",
+			pattern: "ghe",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -12856,8 +11973,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ngh",
-			phonetic: "Ng",
+			pattern: "ngh",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ng",
@@ -12866,8 +11982,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gh",
-			phonetic: "g",
+			pattern: "gh",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -12884,7 +11999,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "Nj",
 			phoneticRules: []phonetic{
 				{
 					text:  "Nj",
@@ -12893,8 +12007,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ngi",
-			phonetic: "(Ngi|Ni)",
+			pattern: "ngi",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ngi",
@@ -12915,7 +12028,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "Nj",
 			phoneticRules: []phonetic{
 				{
 					text:  "Nj",
@@ -12924,8 +12036,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "nge",
-			phonetic: "(Nje|Nge)",
+			pattern: "nge",
 			phoneticRules: []phonetic{
 				{
 					text:  "Nje",
@@ -12946,7 +12057,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -12955,8 +12065,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gi",
-			phonetic: "(gi|i)",
+			pattern: "gi",
 			phoneticRules: []phonetic{
 				{
 					text:  "gi",
@@ -12977,7 +12086,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aouy]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -12986,8 +12094,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ge",
-			phonetic: "(je|ge)",
+			pattern: "ge",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -13000,8 +12107,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ng",
-			phonetic: "Ng",
+			pattern: "ng",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ng",
@@ -13018,7 +12124,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -13035,7 +12140,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -13052,7 +12156,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -13069,7 +12172,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -13086,7 +12188,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -13095,8 +12196,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yi",
-			phonetic: "i",
+			pattern: "yi",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13105,8 +12205,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "x",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -13115,8 +12214,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "kh",
-			phonetic: "x",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -13125,8 +12223,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "dh",
-			phonetic: "d",
+			pattern: "dh",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -13135,8 +12232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "dj",
-			phonetic: "dZ",
+			pattern: "dj",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -13145,8 +12241,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "f",
+			pattern: "ph",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -13155,8 +12250,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "th",
-			phonetic: "t",
+			pattern: "th",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -13165,8 +12259,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "kz",
-			phonetic: "gz",
+			pattern: "kz",
 			phoneticRules: []phonetic{
 				{
 					text:  "gz",
@@ -13175,8 +12268,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tz",
-			phonetic: "dz",
+			pattern: "tz",
 			phoneticRules: []phonetic{
 				{
 					text:  "dz",
@@ -13193,7 +12285,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bgdmnr]"),
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -13202,8 +12293,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "mb",
-			phonetic: "(mb|b)",
+			pattern: "mb",
 			phoneticRules: []phonetic{
 				{
 					text:  "mb",
@@ -13223,7 +12313,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -13240,7 +12329,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "mp",
 			phoneticRules: []phonetic{
 				{
 					text:  "mp",
@@ -13249,8 +12337,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "mp",
-			phonetic: "b",
+			pattern: "mp",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -13266,7 +12353,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -13283,7 +12369,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouy]$"),
 			},
-			phonetic: "(nd|nt)",
 			phoneticRules: []phonetic{
 				{
 					text:  "nd",
@@ -13296,8 +12381,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "nt",
-			phonetic: "(nt|d)",
+			pattern: "nt",
 			phoneticRules: []phonetic{
 				{
 					text:  "nt",
@@ -13310,8 +12394,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
+			pattern: "á",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -13320,8 +12403,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -13330,8 +12412,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
+			pattern: "í",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13340,8 +12421,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -13350,8 +12430,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "óu",
-			phonetic: "u",
+			pattern: "óu",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -13360,8 +12439,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
+			pattern: "ú",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -13370,8 +12448,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ý",
-			phonetic: "(i|Q|u)",
+			pattern: "ý",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13388,8 +12465,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -13398,8 +12474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "(b|v)",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -13412,8 +12487,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -13422,8 +12496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -13432,8 +12505,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -13442,8 +12514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -13452,8 +12523,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -13462,8 +12532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "x",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -13472,8 +12541,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13482,8 +12550,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(j|Z)",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -13496,8 +12563,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -13506,8 +12572,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -13516,8 +12581,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -13526,8 +12590,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -13536,8 +12599,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ο",
-			phonetic: "o",
+			pattern: "ο",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -13546,8 +12608,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -13556,8 +12617,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -13566,8 +12626,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -13576,8 +12635,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -13586,8 +12644,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -13596,8 +12653,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -13606,8 +12662,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -13616,8 +12671,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -13626,8 +12680,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -13636,8 +12689,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "(i|Q|u)",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13654,8 +12706,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -13666,8 +12717,7 @@ var genRules = map[genLang][]rule{
 	},
 	genhebrew: []rule{
 		{
-			pattern:  "אי",
-			phonetic: "i",
+			pattern: "אי",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13676,8 +12726,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "עי",
-			phonetic: "i",
+			pattern: "עי",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13686,8 +12735,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "עו",
-			phonetic: "VV",
+			pattern: "עו",
 			phoneticRules: []phonetic{
 				{
 					text:  "VV",
@@ -13696,8 +12744,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "או",
-			phonetic: "VV",
+			pattern: "או",
 			phoneticRules: []phonetic{
 				{
 					text:  "VV",
@@ -13706,8 +12753,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ג׳",
-			phonetic: "Z",
+			pattern: "ג׳",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -13716,8 +12762,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ד׳",
-			phonetic: "dZ",
+			pattern: "ד׳",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -13726,8 +12771,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "א",
-			phonetic: "L",
+			pattern: "א",
 			phoneticRules: []phonetic{
 				{
 					text:  "L",
@@ -13736,8 +12780,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ב",
-			phonetic: "b",
+			pattern: "ב",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -13746,8 +12789,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ג",
-			phonetic: "g",
+			pattern: "ג",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -13756,8 +12798,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ד",
-			phonetic: "d",
+			pattern: "ד",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -13773,7 +12814,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -13789,7 +12829,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
 			phoneticRules: []phonetic{
 				{
 					text:  "1",
@@ -13798,8 +12837,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ה",
-			phonetic: "",
+			pattern: "ה",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -13808,8 +12846,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "וו",
-			phonetic: "V",
+			pattern: "וו",
 			phoneticRules: []phonetic{
 				{
 					text:  "V",
@@ -13818,8 +12855,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "וי",
-			phonetic: "WW",
+			pattern: "וי",
 			phoneticRules: []phonetic{
 				{
 					text:  "WW",
@@ -13828,8 +12864,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ו",
-			phonetic: "W",
+			pattern: "ו",
 			phoneticRules: []phonetic{
 				{
 					text:  "W",
@@ -13838,8 +12873,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ז",
-			phonetic: "z",
+			pattern: "ז",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -13848,8 +12882,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ח",
-			phonetic: "X",
+			pattern: "ח",
 			phoneticRules: []phonetic{
 				{
 					text:  "X",
@@ -13858,8 +12891,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ט",
-			phonetic: "T",
+			pattern: "ט",
 			phoneticRules: []phonetic{
 				{
 					text:  "T",
@@ -13868,8 +12900,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "יי",
-			phonetic: "i",
+			pattern: "יי",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13878,8 +12909,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "י",
-			phonetic: "i",
+			pattern: "י",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -13888,8 +12918,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ך",
-			phonetic: "X",
+			pattern: "ך",
 			phoneticRules: []phonetic{
 				{
 					text:  "X",
@@ -13905,7 +12934,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "K",
 			phoneticRules: []phonetic{
 				{
 					text:  "K",
@@ -13914,8 +12942,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "כ",
-			phonetic: "k",
+			pattern: "כ",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -13924,8 +12951,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ל",
-			phonetic: "l",
+			pattern: "ל",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -13934,8 +12960,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ם",
-			phonetic: "m",
+			pattern: "ם",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -13944,8 +12969,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "מ",
-			phonetic: "m",
+			pattern: "מ",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -13954,8 +12978,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ן",
-			phonetic: "n",
+			pattern: "ן",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -13964,8 +12987,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "נ",
-			phonetic: "n",
+			pattern: "נ",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -13974,8 +12996,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ס",
-			phonetic: "s",
+			pattern: "ס",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -13984,8 +13005,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ע",
-			phonetic: "L",
+			pattern: "ע",
 			phoneticRules: []phonetic{
 				{
 					text:  "L",
@@ -13994,8 +13014,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ף",
-			phonetic: "f",
+			pattern: "ף",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -14004,8 +13023,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "פ",
-			phonetic: "f",
+			pattern: "פ",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -14014,8 +13032,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ץ",
-			phonetic: "C",
+			pattern: "ץ",
 			phoneticRules: []phonetic{
 				{
 					text:  "C",
@@ -14024,8 +13041,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "צ",
-			phonetic: "C",
+			pattern: "צ",
 			phoneticRules: []phonetic{
 				{
 					text:  "C",
@@ -14034,8 +13050,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ק",
-			phonetic: "K",
+			pattern: "ק",
 			phoneticRules: []phonetic{
 				{
 					text:  "K",
@@ -14044,8 +13059,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ר",
-			phonetic: "r",
+			pattern: "ר",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -14054,8 +13068,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ש",
-			phonetic: "s",
+			pattern: "ש",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -14064,8 +13077,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ת",
-			phonetic: "TB",
+			pattern: "ת",
 			phoneticRules: []phonetic{
 				{
 					text:  "TB",
@@ -14076,8 +13088,7 @@ var genRules = map[genLang][]rule{
 	},
 	genhungarian: []rule{
 		{
-			pattern:  "sz",
-			phonetic: "s",
+			pattern: "sz",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -14086,8 +13097,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zs",
-			phonetic: "Z",
+			pattern: "zs",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -14096,8 +13106,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cs",
-			phonetic: "tS",
+			pattern: "cs",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -14106,8 +13115,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ay",
-			phonetic: "(oj|aj)",
+			pattern: "ay",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -14120,8 +13128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "(oj|aj)",
+			pattern: "ai",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -14134,8 +13141,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aj",
-			phonetic: "(oj|aj)",
+			pattern: "aj",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -14148,8 +13154,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "(aj|ej)",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -14162,8 +13167,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ey",
-			phonetic: "(aj|ej)",
+			pattern: "ey",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -14184,7 +13188,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[áo]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -14201,7 +13204,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[áo]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -14210,8 +13212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ee",
-			phonetic: "(ej|e)",
+			pattern: "ee",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -14224,8 +13225,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ely",
-			phonetic: "(ej|eli)",
+			pattern: "ely",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -14238,8 +13238,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ly",
-			phonetic: "(j|li)",
+			pattern: "ly",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -14260,7 +13259,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			phonetic: "dj",
 			phoneticRules: []phonetic{
 				{
 					text:  "dj",
@@ -14269,8 +13267,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gy",
-			phonetic: "(d|gi)",
+			pattern: "gy",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -14291,7 +13288,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			phonetic: "nj",
 			phoneticRules: []phonetic{
 				{
 					text:  "nj",
@@ -14300,8 +13296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ny",
-			phonetic: "(n|ni)",
+			pattern: "ny",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -14322,7 +13317,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			phonetic: "tj",
 			phoneticRules: []phonetic{
 				{
 					text:  "tj",
@@ -14331,8 +13325,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ty",
-			phonetic: "(t|ti)",
+			pattern: "ty",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -14345,8 +13338,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "(ku|kv)",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "ku",
@@ -14366,7 +13358,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -14375,8 +13366,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
+			pattern: "á",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -14385,8 +13375,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -14395,8 +13384,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
+			pattern: "í",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -14405,8 +13393,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -14415,8 +13402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
+			pattern: "ú",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -14425,8 +13411,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ö",
-			phonetic: "Y",
+			pattern: "ö",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -14435,8 +13420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ő",
-			phonetic: "Y",
+			pattern: "ő",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -14445,8 +13429,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "Q",
+			pattern: "ü",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -14455,8 +13438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ű",
-			phonetic: "Q",
+			pattern: "ű",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -14465,8 +13447,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -14475,8 +13456,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -14485,8 +13465,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "ts",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -14495,8 +13474,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -14505,8 +13483,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -14515,8 +13492,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -14525,8 +13501,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -14535,8 +13510,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -14545,8 +13519,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -14555,8 +13528,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -14565,8 +13537,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -14575,8 +13546,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -14585,8 +13555,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -14595,8 +13564,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -14605,8 +13573,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -14615,8 +13582,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -14625,8 +13591,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -14635,8 +13600,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -14645,8 +13609,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "(S|s)",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -14659,8 +13622,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -14669,8 +13631,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -14679,8 +13640,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -14689,8 +13649,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -14699,8 +13658,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -14709,8 +13667,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -14719,8 +13676,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -14731,8 +13687,7 @@ var genRules = map[genLang][]rule{
 	},
 	genitalian: []rule{
 		{
-			pattern:  "kh",
-			phonetic: "x",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -14741,8 +13696,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gli",
-			phonetic: "(l|gli)",
+			pattern: "gli",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -14763,7 +13717,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "(n|nj|gn)",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -14780,8 +13733,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gni",
-			phonetic: "(ni|gni)",
+			pattern: "gni",
 			phoneticRules: []phonetic{
 				{
 					text:  "ni",
@@ -14802,7 +13754,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "dZ",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -14819,7 +13770,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "dZ",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -14836,7 +13786,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "dZ",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -14853,7 +13802,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -14869,7 +13817,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -14886,7 +13833,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "tS",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -14903,7 +13849,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -14920,7 +13865,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "S",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -14937,7 +13881,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "tS",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -14954,7 +13897,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "tS",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -14978,7 +13920,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -14995,7 +13936,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -15012,7 +13952,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -15029,7 +13968,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -15046,7 +13984,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -15055,8 +13992,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -15065,8 +14001,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
+			pattern: "uo",
 			phoneticRules: []phonetic{
 				{
 					text:  "vo",
@@ -15087,7 +14022,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
-			phonetic: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -15096,8 +14030,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "e",
+			pattern: "�",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -15106,8 +14039,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "e",
+			pattern: "�",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -15116,8 +14048,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "o",
+			pattern: "�",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -15126,8 +14057,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "o",
+			pattern: "�",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -15136,8 +14066,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -15146,8 +14075,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -15156,8 +14084,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -15166,8 +14093,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -15176,8 +14102,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -15186,8 +14111,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -15196,8 +14120,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -15206,8 +14129,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -15216,8 +14138,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -15226,8 +14147,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(Z|dZ|j)",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -15244,8 +14164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -15254,8 +14173,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -15264,8 +14182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -15274,8 +14191,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -15284,8 +14200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -15294,8 +14209,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -15304,8 +14218,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -15314,8 +14227,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -15324,8 +14236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -15334,8 +14245,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -15344,8 +14254,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -15354,8 +14263,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -15364,8 +14272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -15374,8 +14281,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -15384,8 +14290,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -15394,8 +14299,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "(ts|dz)",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -15410,8 +14314,7 @@ var genRules = map[genLang][]rule{
 	},
 	genlatvian: []rule{
 		{
-			pattern:  "č",
-			phonetic: "tS",
+			pattern: "č",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -15420,8 +14323,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ģ",
-			phonetic: "(d|dj)",
+			pattern: "ģ",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -15434,8 +14336,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ķ",
-			phonetic: "(t|tj)",
+			pattern: "ķ",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -15448,8 +14349,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ļ",
-			phonetic: "l",
+			pattern: "ļ",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -15458,8 +14358,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "š",
-			phonetic: "S",
+			pattern: "š",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -15468,8 +14367,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ņ",
-			phonetic: "(n|nj)",
+			pattern: "ņ",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -15482,8 +14380,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ž",
-			phonetic: "Z",
+			pattern: "ž",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -15492,8 +14389,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ā",
-			phonetic: "a",
+			pattern: "ā",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -15502,8 +14398,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ē",
-			phonetic: "e",
+			pattern: "ē",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -15512,8 +14407,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ī",
-			phonetic: "i",
+			pattern: "ī",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -15522,8 +14416,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ū",
-			phonetic: "u",
+			pattern: "ū",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -15532,8 +14425,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "aj",
+			pattern: "ai",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -15542,8 +14434,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "ej",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "ej",
@@ -15552,8 +14443,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "io",
-			phonetic: "jo",
+			pattern: "io",
 			phoneticRules: []phonetic{
 				{
 					text:  "jo",
@@ -15562,8 +14452,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iu",
-			phonetic: "ju",
+			pattern: "iu",
 			phoneticRules: []phonetic{
 				{
 					text:  "ju",
@@ -15572,8 +14461,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "je",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -15582,8 +14470,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -15592,8 +14479,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ui",
-			phonetic: "uj",
+			pattern: "ui",
 			phoneticRules: []phonetic{
 				{
 					text:  "uj",
@@ -15602,8 +14488,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -15612,8 +14497,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -15622,8 +14506,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "ts",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -15632,8 +14515,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -15642,8 +14524,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -15652,8 +14533,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -15662,8 +14542,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -15672,8 +14551,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -15682,8 +14560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -15692,8 +14569,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -15702,8 +14578,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -15712,8 +14587,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -15722,8 +14596,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -15732,8 +14605,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -15742,8 +14614,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -15752,8 +14623,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -15762,8 +14632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -15772,8 +14641,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -15782,8 +14650,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -15792,8 +14659,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -15802,8 +14668,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -15821,7 +14686,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ski",
 			phoneticRules: []phonetic{
 				{
 					text:  "ski",
@@ -15837,7 +14701,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "tski",
 			phoneticRules: []phonetic{
 				{
 					text:  "tski",
@@ -15853,7 +14716,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lova|lof|l|el)",
 			phoneticRules: []phonetic{
 				{
 					text:  "lova",
@@ -15881,7 +14743,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(kova|kof|k|ek)",
 			phoneticRules: []phonetic{
 				{
 					text:  "kova",
@@ -15909,7 +14770,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ova|of|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ova",
@@ -15933,7 +14793,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lovna|levna|l|el)",
 			phoneticRules: []phonetic{
 				{
 					text:  "lovna",
@@ -15961,7 +14820,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(kovna|k|ek)",
 			phoneticRules: []phonetic{
 				{
 					text:  "kovna",
@@ -15985,7 +14843,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ovna|)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovna",
@@ -16005,7 +14862,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(l|el)",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -16025,7 +14881,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k|ek)",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -16045,7 +14900,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -16061,7 +14915,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(a|i)",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -16074,8 +14927,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "czy",
-			phonetic: "tSi",
+			pattern: "czy",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
@@ -16092,7 +14944,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(tSe|tSF)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
@@ -16105,8 +14956,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ciewicz",
-			phonetic: "(tsevitS|tSevitS)",
+			pattern: "ciewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsevitS",
@@ -16119,8 +14969,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "siewicz",
-			phonetic: "(sevitS|SevitS)",
+			pattern: "siewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "sevitS",
@@ -16133,8 +14982,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ziewicz",
-			phonetic: "(zevitS|ZevitS)",
+			pattern: "ziewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "zevitS",
@@ -16147,8 +14995,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "riewicz",
-			phonetic: "rjevitS",
+			pattern: "riewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "rjevitS",
@@ -16157,8 +15004,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "diewicz",
-			phonetic: "djevitS",
+			pattern: "diewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "djevitS",
@@ -16167,8 +15013,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tiewicz",
-			phonetic: "tjevitS",
+			pattern: "tiewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "tjevitS",
@@ -16177,8 +15022,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iewicz",
-			phonetic: "evitS",
+			pattern: "iewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
@@ -16187,8 +15031,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ewicz",
-			phonetic: "evitS",
+			pattern: "ewicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "evitS",
@@ -16197,8 +15040,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "owicz",
-			phonetic: "ovitS",
+			pattern: "owicz",
 			phoneticRules: []phonetic{
 				{
 					text:  "ovitS",
@@ -16207,8 +15049,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "icz",
-			phonetic: "itS",
+			pattern: "icz",
 			phoneticRules: []phonetic{
 				{
 					text:  "itS",
@@ -16217,8 +15058,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cz",
-			phonetic: "tS",
+			pattern: "cz",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -16227,8 +15067,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "x",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -16245,7 +15084,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(tSB|tsB)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSB",
@@ -16258,8 +15096,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cia",
-			phonetic: "(tSa|tsa)",
+			pattern: "cia",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSa",
@@ -16280,7 +15117,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(tSom|tsom)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSom",
@@ -16293,8 +15129,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cią",
-			phonetic: "(tSon|tson)",
+			pattern: "cią",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSon",
@@ -16315,7 +15150,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(tSem|tsem)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSem",
@@ -16328,8 +15162,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cię",
-			phonetic: "(tSen|tsen)",
+			pattern: "cię",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSen",
@@ -16350,7 +15183,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(tSF|tsF)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSF",
@@ -16363,8 +15195,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cie",
-			phonetic: "(tSe|tse)",
+			pattern: "cie",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
@@ -16377,8 +15208,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "cio",
-			phonetic: "(tSo|tso)",
+			pattern: "cio",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSo",
@@ -16391,8 +15221,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ciu",
-			phonetic: "(tSu|tsu)",
+			pattern: "ciu",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSu",
@@ -16405,8 +15234,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ci",
-			phonetic: "(tSi|tsI)",
+			pattern: "ci",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
@@ -16419,8 +15247,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ć",
-			phonetic: "(tS|ts)",
+			pattern: "ć",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -16433,8 +15260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssz",
-			phonetic: "S",
+			pattern: "ssz",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -16443,8 +15269,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sz",
-			phonetic: "S",
+			pattern: "sz",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -16461,7 +15286,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(SB|sB|sja)",
 			phoneticRules: []phonetic{
 				{
 					text:  "SB",
@@ -16478,8 +15302,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sia",
-			phonetic: "(Sa|sja)",
+			pattern: "sia",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sa",
@@ -16500,7 +15323,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Som|som)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Som",
@@ -16513,8 +15335,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sią",
-			phonetic: "(Son|son)",
+			pattern: "sią",
 			phoneticRules: []phonetic{
 				{
 					text:  "Son",
@@ -16535,7 +15356,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Sem|sem)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sem",
@@ -16548,8 +15368,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "się",
-			phonetic: "(Sen|sen)",
+			pattern: "się",
 			phoneticRules: []phonetic{
 				{
 					text:  "Sen",
@@ -16570,7 +15389,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(SF|sF|se)",
 			phoneticRules: []phonetic{
 				{
 					text:  "SF",
@@ -16587,8 +15405,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sie",
-			phonetic: "(Se|se)",
+			pattern: "sie",
 			phoneticRules: []phonetic{
 				{
 					text:  "Se",
@@ -16601,8 +15418,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sio",
-			phonetic: "(So|so)",
+			pattern: "sio",
 			phoneticRules: []phonetic{
 				{
 					text:  "So",
@@ -16615,8 +15431,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "siu",
-			phonetic: "(Su|sju)",
+			pattern: "siu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Su",
@@ -16629,8 +15444,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "si",
-			phonetic: "(Si|sI)",
+			pattern: "si",
 			phoneticRules: []phonetic{
 				{
 					text:  "Si",
@@ -16643,8 +15457,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ś",
-			phonetic: "(S|s)",
+			pattern: "ś",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -16665,7 +15478,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(ZB|zB|zja)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ZB",
@@ -16682,8 +15494,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zia",
-			phonetic: "(Za|zja)",
+			pattern: "zia",
 			phoneticRules: []phonetic{
 				{
 					text:  "Za",
@@ -16704,7 +15515,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Zom|zom)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zom",
@@ -16717,8 +15527,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zią",
-			phonetic: "(Zon|zon)",
+			pattern: "zią",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zon",
@@ -16739,7 +15548,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "(Zem|zem)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zem",
@@ -16752,8 +15560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zię",
-			phonetic: "(Zen|zen)",
+			pattern: "zię",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zen",
@@ -16774,7 +15581,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(ZF|zF)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ZF",
@@ -16787,8 +15593,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zie",
-			phonetic: "(Ze|ze)",
+			pattern: "zie",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -16801,8 +15606,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zio",
-			phonetic: "(Zo|zo)",
+			pattern: "zio",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zo",
@@ -16815,8 +15619,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ziu",
-			phonetic: "(Zu|zju)",
+			pattern: "ziu",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zu",
@@ -16829,8 +15632,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zi",
-			phonetic: "(Zi|zI)",
+			pattern: "zi",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
@@ -16851,7 +15653,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(Ze|ZF)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -16872,7 +15673,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(Ze|ZF|ze|zF)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -16893,8 +15693,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "że",
-			phonetic: "Ze",
+			pattern: "że",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -16903,8 +15702,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "źe",
-			phonetic: "(Ze|ze)",
+			pattern: "źe",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -16917,8 +15715,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ży",
-			phonetic: "Zi",
+			pattern: "ży",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
@@ -16927,8 +15724,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "źi",
-			phonetic: "(Zi|zi)",
+			pattern: "źi",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
@@ -16941,8 +15737,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ż",
-			phonetic: "Z",
+			pattern: "ż",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -16951,8 +15746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ź",
-			phonetic: "(Z|z)",
+			pattern: "ź",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -16972,7 +15766,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "t",
 			},
-			phonetic: "(Se|re)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Se",
@@ -16985,8 +15778,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "rze",
-			phonetic: "(Ze|re|rZe)",
+			pattern: "rze",
 			phoneticRules: []phonetic{
 				{
 					text:  "Ze",
@@ -17010,7 +15802,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "t",
 			},
-			phonetic: "(Si|ri)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Si",
@@ -17023,8 +15814,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "rzy",
-			phonetic: "(Zi|ri|rZi)",
+			pattern: "rzy",
 			phoneticRules: []phonetic{
 				{
 					text:  "Zi",
@@ -17048,7 +15838,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "t",
 			},
-			phonetic: "(S|r)",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -17061,8 +15850,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "rz",
-			phonetic: "(Z|r|rZ)",
+			pattern: "rz",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -17079,8 +15867,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lio",
-			phonetic: "(lo|le)",
+			pattern: "lio",
 			phoneticRules: []phonetic{
 				{
 					text:  "lo",
@@ -17093,8 +15880,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ł",
-			phonetic: "l",
+			pattern: "ł",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -17103,8 +15889,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ń",
-			phonetic: "n",
+			pattern: "ń",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -17113,8 +15898,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -17130,7 +15914,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "s",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -17139,8 +15922,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "(u|o)",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -17161,7 +15943,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "om",
 			phoneticRules: []phonetic{
 				{
 					text:  "om",
@@ -17178,7 +15959,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bp]"),
 			},
-			phonetic: "em",
 			phoneticRules: []phonetic{
 				{
 					text:  "em",
@@ -17187,8 +15967,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ą",
-			phonetic: "on",
+			pattern: "ą",
 			phoneticRules: []phonetic{
 				{
 					text:  "on",
@@ -17197,8 +15976,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ę",
-			phonetic: "en",
+			pattern: "ę",
 			phoneticRules: []phonetic{
 				{
 					text:  "en",
@@ -17207,8 +15985,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ije",
-			phonetic: "je",
+			pattern: "ije",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -17217,8 +15994,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yje",
-			phonetic: "je",
+			pattern: "yje",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -17227,8 +16003,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iie",
-			phonetic: "je",
+			pattern: "iie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -17237,8 +16012,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yie",
-			phonetic: "je",
+			pattern: "yie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -17247,8 +16021,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iye",
-			phonetic: "je",
+			pattern: "iye",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -17257,8 +16030,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yye",
-			phonetic: "je",
+			pattern: "yye",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -17275,7 +16047,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17292,7 +16063,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17309,7 +16079,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17326,7 +16095,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17343,7 +16111,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17360,7 +16127,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17369,8 +16135,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "rie",
-			phonetic: "rje",
+			pattern: "rie",
 			phoneticRules: []phonetic{
 				{
 					text:  "rje",
@@ -17379,8 +16144,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "die",
-			phonetic: "dje",
+			pattern: "die",
 			phoneticRules: []phonetic{
 				{
 					text:  "dje",
@@ -17389,8 +16153,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tie",
-			phonetic: "tje",
+			pattern: "tie",
 			phoneticRules: []phonetic{
 				{
 					text:  "tje",
@@ -17407,7 +16170,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "F",
 			phoneticRules: []phonetic{
 				{
 					text:  "F",
@@ -17416,8 +16178,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "e",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -17426,8 +16187,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -17436,8 +16196,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "au",
-			phonetic: "au",
+			pattern: "au",
 			phoneticRules: []phonetic{
 				{
 					text:  "au",
@@ -17446,8 +16205,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "aj",
+			pattern: "ei",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -17456,8 +16214,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ey",
-			phonetic: "aj",
+			pattern: "ey",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -17466,8 +16223,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ej",
-			phonetic: "aj",
+			pattern: "ej",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -17476,8 +16232,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "aj",
+			pattern: "ai",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -17486,8 +16241,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ay",
-			phonetic: "aj",
+			pattern: "ay",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -17496,8 +16250,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aj",
-			phonetic: "aj",
+			pattern: "aj",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -17514,7 +16267,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17531,7 +16283,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17548,7 +16299,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17565,7 +16315,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17582,7 +16331,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "B",
 			phoneticRules: []phonetic{
 				{
 					text:  "B",
@@ -17599,7 +16347,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			phonetic: "(E|F)",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -17620,7 +16367,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
 			},
-			phonetic: "P",
 			phoneticRules: []phonetic{
 				{
 					text:  "P",
@@ -17629,8 +16375,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -17639,8 +16384,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -17649,8 +16393,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "ts",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -17659,8 +16402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -17669,8 +16411,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -17679,8 +16420,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -17689,8 +16429,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -17699,8 +16438,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "(h|x)",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -17713,8 +16451,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -17723,8 +16460,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -17733,8 +16469,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -17743,8 +16478,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -17753,8 +16487,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -17763,8 +16496,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -17773,8 +16505,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -17783,8 +16514,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -17793,8 +16523,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -17803,8 +16532,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -17813,8 +16541,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -17823,8 +16550,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -17833,8 +16559,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -17843,8 +16568,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -17853,8 +16577,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -17863,8 +16586,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -17873,8 +16595,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "I",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -17883,8 +16604,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -17895,8 +16615,7 @@ var genRules = map[genLang][]rule{
 	},
 	genportuguese: []rule{
 		{
-			pattern:  "kh",
-			phonetic: "x",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -17905,8 +16624,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "S",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -17915,8 +16633,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
+			pattern: "ss",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -17933,7 +16650,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -17950,7 +16666,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -17959,8 +16674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
+			pattern: "ç",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -17977,7 +16691,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -17993,7 +16706,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -18017,7 +16729,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -18034,7 +16745,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
-			phonetic: "(Z|S)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -18054,7 +16764,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(Z|s|S)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -18079,7 +16788,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bdgv]"),
 			},
-			phonetic: "(Z|z)",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -18100,7 +16808,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ptckf]"),
 			},
-			phonetic: "(s|S|z)",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -18125,7 +16832,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -18142,7 +16848,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "gv",
 			phoneticRules: []phonetic{
 				{
 					text:  "gv",
@@ -18159,7 +16864,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "Z",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -18176,7 +16880,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -18193,7 +16896,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "kv",
 			phoneticRules: []phonetic{
 				{
 					text:  "kv",
@@ -18202,8 +16904,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o|u)",
+			pattern: "uo",
 			phoneticRules: []phonetic{
 				{
 					text:  "vo",
@@ -18228,7 +16929,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
-			phonetic: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -18237,8 +16937,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lh",
-			phonetic: "l",
+			pattern: "lh",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -18247,8 +16946,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "nh",
-			phonetic: "nj",
+			pattern: "nh",
 			phoneticRules: []phonetic{
 				{
 					text:  "nj",
@@ -18265,7 +16963,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -18281,7 +16978,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -18298,7 +16994,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "(ez|eS|eks)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ez",
@@ -18323,7 +17018,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[cs]"),
 			},
-			phonetic: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -18340,7 +17034,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéê]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -18357,7 +17050,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiíou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -18374,7 +17066,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdfglnprstv]"),
 			},
-			phonetic: "(m|n)",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -18394,7 +17085,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(m|n)",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -18407,8 +17097,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ão",
-			phonetic: "(au|an|on)",
+			pattern: "ão",
 			phoneticRules: []phonetic{
 				{
 					text:  "au",
@@ -18425,8 +17114,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãe",
-			phonetic: "(aj|an)",
+			pattern: "ãe",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -18439,8 +17127,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãi",
-			phonetic: "(aj|an)",
+			pattern: "ãi",
 			phoneticRules: []phonetic{
 				{
 					text:  "aj",
@@ -18453,8 +17140,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "õe",
-			phonetic: "(oj|on)",
+			pattern: "õe",
 			phoneticRules: []phonetic{
 				{
 					text:  "oj",
@@ -18475,7 +17161,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuoóeéê]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -18492,7 +17177,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -18501,8 +17185,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "â",
-			phonetic: "a",
+			pattern: "â",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -18511,8 +17194,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
+			pattern: "à",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -18521,8 +17203,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
+			pattern: "á",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -18531,8 +17212,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ã",
-			phonetic: "(a|an|on)",
+			pattern: "ã",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -18549,8 +17229,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -18559,8 +17238,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ê",
-			phonetic: "e",
+			pattern: "ê",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -18569,8 +17247,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
+			pattern: "í",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -18579,8 +17256,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ô",
-			phonetic: "o",
+			pattern: "ô",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -18589,8 +17265,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -18599,8 +17274,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "õ",
-			phonetic: "(o|on)",
+			pattern: "õ",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -18613,8 +17287,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
+			pattern: "ú",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -18623,8 +17296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "u",
+			pattern: "ü",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -18633,8 +17305,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -18643,8 +17314,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -18653,8 +17323,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -18663,8 +17332,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -18673,8 +17341,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -18683,8 +17350,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "(e|i)",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -18697,8 +17363,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -18707,8 +17372,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -18717,8 +17381,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -18727,8 +17390,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -18737,8 +17399,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "Z",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -18747,8 +17408,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -18757,8 +17417,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -18767,8 +17426,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -18777,8 +17435,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -18787,8 +17444,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "(o|u)",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -18801,8 +17457,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -18811,8 +17466,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -18821,8 +17475,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -18831,8 +17484,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "S",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -18841,8 +17493,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -18851,8 +17502,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -18861,8 +17511,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -18871,8 +17520,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -18881,8 +17529,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "(S|ks)",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -18895,8 +17542,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -18905,8 +17551,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -18917,8 +17562,7 @@ var genRules = map[genLang][]rule{
 	},
 	genromanian: []rule{
 		{
-			pattern:  "ce",
-			phonetic: "tSe",
+			pattern: "ce",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSe",
@@ -18927,8 +17571,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ci",
-			phonetic: "(tSi|tS)",
+			pattern: "ci",
 			phoneticRules: []phonetic{
 				{
 					text:  "tSi",
@@ -18949,7 +17592,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -18958,8 +17600,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "x",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -18968,8 +17609,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gi",
-			phonetic: "(dZi|dZ)",
+			pattern: "gi",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZi",
@@ -18990,7 +17630,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "dZ",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -18999,8 +17638,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gh",
-			phonetic: "g",
+			pattern: "gh",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -19017,7 +17655,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -19034,7 +17671,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -19043,8 +17679,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ţ",
-			phonetic: "ts",
+			pattern: "ţ",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -19053,8 +17688,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ş",
-			phonetic: "S",
+			pattern: "ş",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -19063,8 +17697,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -19073,8 +17706,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "î",
-			phonetic: "i",
+			pattern: "î",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -19083,8 +17715,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ea",
-			phonetic: "ja",
+			pattern: "ea",
 			phoneticRules: []phonetic{
 				{
 					text:  "ja",
@@ -19093,8 +17724,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ă",
-			phonetic: "(e|a)",
+			pattern: "ă",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -19107,8 +17737,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -19117,8 +17746,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -19127,8 +17755,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -19137,8 +17764,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -19147,8 +17773,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -19157,8 +17782,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -19167,8 +17791,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -19177,8 +17800,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -19187,8 +17809,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "(x|h)",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -19201,8 +17822,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -19211,8 +17831,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "Z",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -19221,8 +17840,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -19231,8 +17849,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -19241,8 +17858,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -19251,8 +17867,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -19261,8 +17876,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -19271,8 +17885,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -19281,8 +17894,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -19291,8 +17903,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -19301,8 +17912,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -19311,8 +17921,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -19321,8 +17930,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -19331,8 +17939,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -19341,8 +17948,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -19351,8 +17957,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -19361,8 +17966,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -19371,8 +17975,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -19390,7 +17993,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(in|ina)",
 			phoneticRules: []phonetic{
 				{
 					text:  "in",
@@ -19410,7 +18012,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(in|ina)",
 			phoneticRules: []phonetic{
 				{
 					text:  "in",
@@ -19430,7 +18031,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lof|lef)",
 			phoneticRules: []phonetic{
 				{
 					text:  "lof",
@@ -19450,7 +18050,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(lof|lef|lova)",
 			phoneticRules: []phonetic{
 				{
 					text:  "lof",
@@ -19474,7 +18073,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(of|ova)",
 			phoneticRules: []phonetic{
 				{
 					text:  "of",
@@ -19494,7 +18092,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(ef|ova)",
 			phoneticRules: []phonetic{
 				{
 					text:  "ef",
@@ -19514,7 +18111,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(aja|i)",
 			phoneticRules: []phonetic{
 				{
 					text:  "aja",
@@ -19534,7 +18130,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(aja|i)",
 			phoneticRules: []phonetic{
 				{
 					text:  "aja",
@@ -19554,7 +18149,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(aja|i)",
 			phoneticRules: []phonetic{
 				{
 					text:  "aja",
@@ -19567,8 +18161,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsya",
-			phonetic: "tsa",
+			pattern: "tsya",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
@@ -19577,8 +18170,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsyu",
-			phonetic: "tsu",
+			pattern: "tsyu",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
@@ -19587,8 +18179,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsia",
-			phonetic: "tsa",
+			pattern: "tsia",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsa",
@@ -19597,8 +18188,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsie",
-			phonetic: "tse",
+			pattern: "tsie",
 			phoneticRules: []phonetic{
 				{
 					text:  "tse",
@@ -19607,8 +18197,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsio",
-			phonetic: "tso",
+			pattern: "tsio",
 			phoneticRules: []phonetic{
 				{
 					text:  "tso",
@@ -19617,8 +18206,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsye",
-			phonetic: "tse",
+			pattern: "tsye",
 			phoneticRules: []phonetic{
 				{
 					text:  "tse",
@@ -19627,8 +18215,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsyo",
-			phonetic: "tso",
+			pattern: "tsyo",
 			phoneticRules: []phonetic{
 				{
 					text:  "tso",
@@ -19637,8 +18224,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tsiu",
-			phonetic: "tsu",
+			pattern: "tsiu",
 			phoneticRules: []phonetic{
 				{
 					text:  "tsu",
@@ -19647,8 +18233,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sie",
-			phonetic: "se",
+			pattern: "sie",
 			phoneticRules: []phonetic{
 				{
 					text:  "se",
@@ -19657,8 +18242,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sio",
-			phonetic: "so",
+			pattern: "sio",
 			phoneticRules: []phonetic{
 				{
 					text:  "so",
@@ -19667,8 +18251,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zie",
-			phonetic: "ze",
+			pattern: "zie",
 			phoneticRules: []phonetic{
 				{
 					text:  "ze",
@@ -19677,8 +18260,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zio",
-			phonetic: "zo",
+			pattern: "zio",
 			phoneticRules: []phonetic{
 				{
 					text:  "zo",
@@ -19687,8 +18269,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sye",
-			phonetic: "se",
+			pattern: "sye",
 			phoneticRules: []phonetic{
 				{
 					text:  "se",
@@ -19697,8 +18278,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "syo",
-			phonetic: "so",
+			pattern: "syo",
 			phoneticRules: []phonetic{
 				{
 					text:  "so",
@@ -19707,8 +18287,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zye",
-			phonetic: "ze",
+			pattern: "zye",
 			phoneticRules: []phonetic{
 				{
 					text:  "ze",
@@ -19717,8 +18296,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zyo",
-			phonetic: "zo",
+			pattern: "zyo",
 			phoneticRules: []phonetic{
 				{
 					text:  "zo",
@@ -19734,7 +18312,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ger",
 			phoneticRules: []phonetic{
 				{
 					text:  "ger",
@@ -19750,7 +18327,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "gen",
 			phoneticRules: []phonetic{
 				{
 					text:  "gen",
@@ -19766,7 +18342,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "gin",
 			phoneticRules: []phonetic{
 				{
 					text:  "gin",
@@ -19775,8 +18350,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "gg",
-			phonetic: "g",
+			pattern: "gg",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -19800,7 +18374,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
-			phonetic: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -19817,7 +18390,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
-			phonetic: "(g|h)",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -19830,8 +18402,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "kh",
-			phonetic: "x",
+			pattern: "kh",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -19840,8 +18411,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "(tS|x)",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -19854,8 +18424,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sch",
-			phonetic: "(StS|S)",
+			pattern: "sch",
 			phoneticRules: []phonetic{
 				{
 					text:  "StS",
@@ -19868,8 +18437,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ssh",
-			phonetic: "S",
+			pattern: "ssh",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -19878,8 +18446,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "sh",
-			phonetic: "S",
+			pattern: "sh",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -19888,8 +18455,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "zh",
-			phonetic: "Z",
+			pattern: "zh",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -19905,7 +18471,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "ts",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -19914,8 +18479,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tz",
-			phonetic: "(ts|tz)",
+			pattern: "tz",
 			phoneticRules: []phonetic{
 				{
 					text:  "ts",
@@ -19936,7 +18500,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[iey]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -19945,8 +18508,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "(kv|k)",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "kv",
@@ -19966,7 +18528,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "s",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -19975,8 +18536,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lya",
-			phonetic: "la",
+			pattern: "lya",
 			phoneticRules: []phonetic{
 				{
 					text:  "la",
@@ -19985,8 +18545,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lyu",
-			phonetic: "lu",
+			pattern: "lyu",
 			phoneticRules: []phonetic{
 				{
 					text:  "lu",
@@ -19995,8 +18554,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lia",
-			phonetic: "la",
+			pattern: "lia",
 			phoneticRules: []phonetic{
 				{
 					text:  "la",
@@ -20005,8 +18563,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "liu",
-			phonetic: "lu",
+			pattern: "liu",
 			phoneticRules: []phonetic{
 				{
 					text:  "lu",
@@ -20015,8 +18572,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lja",
-			phonetic: "la",
+			pattern: "lja",
 			phoneticRules: []phonetic{
 				{
 					text:  "la",
@@ -20025,8 +18581,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lju",
-			phonetic: "lu",
+			pattern: "lju",
 			phoneticRules: []phonetic{
 				{
 					text:  "lu",
@@ -20035,8 +18590,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "le",
-			phonetic: "(lo|lE)",
+			pattern: "le",
 			phoneticRules: []phonetic{
 				{
 					text:  "lo",
@@ -20049,8 +18603,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lyo",
-			phonetic: "(lo|le)",
+			pattern: "lyo",
 			phoneticRules: []phonetic{
 				{
 					text:  "lo",
@@ -20063,8 +18616,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "lio",
-			phonetic: "(lo|le)",
+			pattern: "lio",
 			phoneticRules: []phonetic{
 				{
 					text:  "lo",
@@ -20077,8 +18629,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ije",
-			phonetic: "je",
+			pattern: "ije",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20087,8 +18638,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ie",
-			phonetic: "je",
+			pattern: "ie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20097,8 +18647,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iye",
-			phonetic: "je",
+			pattern: "iye",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20107,8 +18656,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "iie",
-			phonetic: "je",
+			pattern: "iie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20117,8 +18665,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yje",
-			phonetic: "je",
+			pattern: "yje",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20127,8 +18674,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ye",
-			phonetic: "je",
+			pattern: "ye",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20137,8 +18683,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yye",
-			phonetic: "je",
+			pattern: "yye",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20147,8 +18692,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yie",
-			phonetic: "je",
+			pattern: "yie",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20165,7 +18709,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20182,7 +18725,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20199,7 +18741,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20216,7 +18757,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20233,7 +18773,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20250,7 +18789,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20259,8 +18797,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "io",
-			phonetic: "(jo|e)",
+			pattern: "io",
 			phoneticRules: []phonetic{
 				{
 					text:  "jo",
@@ -20281,7 +18818,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[au]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20298,7 +18834,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20307,8 +18842,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "yo",
-			phonetic: "(jo|e)",
+			pattern: "yo",
 			phoneticRules: []phonetic{
 				{
 					text:  "jo",
@@ -20329,7 +18863,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[au]"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20346,7 +18879,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20362,7 +18894,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -20378,7 +18909,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -20394,7 +18924,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -20410,7 +18939,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -20426,7 +18954,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -20442,7 +18969,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -20458,7 +18984,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(je|E)",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20471,8 +18996,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ee",
-			phonetic: "(aje|i)",
+			pattern: "ee",
 			phoneticRules: []phonetic{
 				{
 					text:  "aje",
@@ -20493,7 +19017,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aou]$"),
 			},
-			phonetic: "je",
 			phoneticRules: []phonetic{
 				{
 					text:  "je",
@@ -20502,8 +19025,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "oo",
-			phonetic: "(oo|u)",
+			pattern: "oo",
 			phoneticRules: []phonetic{
 				{
 					text:  "oo",
@@ -20516,8 +19038,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "'",
-			phonetic: "",
+			pattern: "'",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -20526,8 +19047,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "\"",
-			phonetic: "",
+			pattern: "\"",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -20536,8 +19056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
+			pattern: "aue",
 			phoneticRules: []phonetic{
 				{
 					text:  "aue",
@@ -20546,8 +19065,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -20556,8 +19074,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -20566,8 +19083,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -20576,8 +19092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -20586,8 +19101,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "E",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "E",
@@ -20596,8 +19110,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -20606,8 +19119,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -20616,8 +19128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -20626,8 +19137,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "I",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -20636,8 +19146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "j",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -20646,8 +19155,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -20656,8 +19164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -20666,8 +19173,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -20676,8 +19182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -20686,8 +19191,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -20696,8 +19200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -20706,8 +19209,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -20716,8 +19218,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -20726,8 +19227,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -20736,8 +19236,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -20746,8 +19245,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -20756,8 +19254,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -20766,8 +19263,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -20776,8 +19272,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -20786,8 +19281,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "I",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "I",
@@ -20796,8 +19290,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -20808,8 +19301,7 @@ var genRules = map[genLang][]rule{
 	},
 	genspanish: []rule{
 		{
-			pattern:  "ñ",
-			phonetic: "(n|nj)",
+			pattern: "ñ",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -20822,8 +19314,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ny",
-			phonetic: "nj",
+			pattern: "ny",
 			phoneticRules: []phonetic{
 				{
 					text:  "nj",
@@ -20832,8 +19323,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
+			pattern: "ç",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -20850,7 +19340,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "(tS|ig)",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -20871,7 +19360,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "S",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -20880,8 +19368,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tx",
-			phonetic: "tS",
+			pattern: "tx",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -20897,7 +19384,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "tS",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -20906,8 +19392,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tj",
-			phonetic: "dZ",
+			pattern: "tj",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -20916,8 +19401,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "tg",
-			phonetic: "(tg|dZ)",
+			pattern: "tg",
 			phoneticRules: []phonetic{
 				{
 					text:  "tg",
@@ -20930,8 +19414,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "(tS|dZ)",
+			pattern: "ch",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -20944,8 +19427,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "bh",
-			phonetic: "b",
+			pattern: "bh",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -20962,7 +19444,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[dgt]$"),
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -20978,7 +19459,6 @@ var genRules = map[genLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -20995,7 +19475,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bpvf]"),
 			},
-			phonetic: "(m|n)",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -21016,7 +19495,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -21033,7 +19511,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(g|gv)",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -21054,7 +19531,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(x|g|dZ)",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -21071,8 +19547,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
+			pattern: "qu",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -21081,8 +19556,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
+			pattern: "uo",
 			phoneticRules: []phonetic{
 				{
 					text:  "vo",
@@ -21103,7 +19577,6 @@ var genRules = map[genLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
-			phonetic: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -21112,8 +19585,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "v",
+			pattern: "ü",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -21122,8 +19594,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
+			pattern: "á",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -21132,8 +19603,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
+			pattern: "é",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -21142,8 +19612,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
+			pattern: "í",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -21152,8 +19621,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
+			pattern: "ó",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -21162,8 +19630,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
+			pattern: "ú",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -21172,8 +19639,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
+			pattern: "à",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -21182,8 +19648,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "è",
-			phonetic: "e",
+			pattern: "è",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -21192,8 +19657,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ò",
-			phonetic: "o",
+			pattern: "ò",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -21202,8 +19666,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -21212,8 +19675,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "B",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "B",
@@ -21222,8 +19684,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -21232,8 +19693,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -21242,8 +19702,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -21252,8 +19711,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -21262,8 +19720,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -21272,8 +19729,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -21282,8 +19738,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -21292,8 +19747,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(x|Z)",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "x",
@@ -21306,8 +19760,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -21316,8 +19769,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -21326,8 +19778,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -21336,8 +19787,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -21346,8 +19796,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -21356,8 +19805,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -21366,8 +19814,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -21376,8 +19823,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -21386,8 +19832,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -21396,8 +19841,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -21406,8 +19850,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -21416,8 +19859,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "V",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "V",
@@ -21426,8 +19868,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -21436,8 +19877,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "(ks|gz|S)",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -21454,8 +19894,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "(i|j)",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -21468,8 +19907,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "(z|s)",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -21484,8 +19922,7 @@ var genRules = map[genLang][]rule{
 	},
 	genturkish: []rule{
 		{
-			pattern:  "ç",
-			phonetic: "tS",
+			pattern: "ç",
 			phoneticRules: []phonetic{
 				{
 					text:  "tS",
@@ -21494,8 +19931,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ğ",
-			phonetic: "",
+			pattern: "ğ",
 			phoneticRules: []phonetic{
 				{
 					text:  "",
@@ -21504,8 +19940,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ş",
-			phonetic: "S",
+			pattern: "ş",
 			phoneticRules: []phonetic{
 				{
 					text:  "S",
@@ -21514,8 +19949,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "Q",
+			pattern: "ü",
 			phoneticRules: []phonetic{
 				{
 					text:  "Q",
@@ -21524,8 +19958,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ö",
-			phonetic: "Y",
+			pattern: "ö",
 			phoneticRules: []phonetic{
 				{
 					text:  "Y",
@@ -21534,8 +19967,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "ı",
-			phonetic: "(e|i|)",
+			pattern: "ı",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -21552,8 +19984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
+			pattern: "a",
 			phoneticRules: []phonetic{
 				{
 					text:  "a",
@@ -21562,8 +19993,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
+			pattern: "b",
 			phoneticRules: []phonetic{
 				{
 					text:  "b",
@@ -21572,8 +20002,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "dZ",
+			pattern: "c",
 			phoneticRules: []phonetic{
 				{
 					text:  "dZ",
@@ -21582,8 +20011,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
+			pattern: "d",
 			phoneticRules: []phonetic{
 				{
 					text:  "d",
@@ -21592,8 +20020,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
+			pattern: "e",
 			phoneticRules: []phonetic{
 				{
 					text:  "e",
@@ -21602,8 +20029,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
+			pattern: "f",
 			phoneticRules: []phonetic{
 				{
 					text:  "f",
@@ -21612,8 +20038,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
+			pattern: "g",
 			phoneticRules: []phonetic{
 				{
 					text:  "g",
@@ -21622,8 +20047,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
+			pattern: "h",
 			phoneticRules: []phonetic{
 				{
 					text:  "h",
@@ -21632,8 +20056,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
+			pattern: "i",
 			phoneticRules: []phonetic{
 				{
 					text:  "i",
@@ -21642,8 +20065,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "Z",
+			pattern: "j",
 			phoneticRules: []phonetic{
 				{
 					text:  "Z",
@@ -21652,8 +20074,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
+			pattern: "k",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -21662,8 +20083,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
+			pattern: "l",
 			phoneticRules: []phonetic{
 				{
 					text:  "l",
@@ -21672,8 +20092,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
+			pattern: "m",
 			phoneticRules: []phonetic{
 				{
 					text:  "m",
@@ -21682,8 +20101,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
+			pattern: "n",
 			phoneticRules: []phonetic{
 				{
 					text:  "n",
@@ -21692,8 +20110,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
+			pattern: "o",
 			phoneticRules: []phonetic{
 				{
 					text:  "o",
@@ -21702,8 +20119,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
+			pattern: "p",
 			phoneticRules: []phonetic{
 				{
 					text:  "p",
@@ -21712,8 +20128,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
+			pattern: "q",
 			phoneticRules: []phonetic{
 				{
 					text:  "k",
@@ -21722,8 +20137,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
+			pattern: "r",
 			phoneticRules: []phonetic{
 				{
 					text:  "r",
@@ -21732,8 +20146,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
+			pattern: "s",
 			phoneticRules: []phonetic{
 				{
 					text:  "s",
@@ -21742,8 +20155,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
+			pattern: "t",
 			phoneticRules: []phonetic{
 				{
 					text:  "t",
@@ -21752,8 +20164,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
+			pattern: "u",
 			phoneticRules: []phonetic{
 				{
 					text:  "u",
@@ -21762,8 +20173,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
+			pattern: "v",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -21772,8 +20182,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
+			pattern: "w",
 			phoneticRules: []phonetic{
 				{
 					text:  "v",
@@ -21782,8 +20191,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
+			pattern: "x",
 			phoneticRules: []phonetic{
 				{
 					text:  "ks",
@@ -21792,8 +20200,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "j",
+			pattern: "y",
 			phoneticRules: []phonetic{
 				{
 					text:  "j",
@@ -21802,8 +20209,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
+			pattern: "z",
 			phoneticRules: []phonetic{
 				{
 					text:  "z",
@@ -24435,7 +22841,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24452,7 +22857,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				phonetic: "p",
 				phoneticRules: []phonetic{
 					{
 						text:  "p",
@@ -24468,7 +22872,6 @@ var genFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24484,7 +22887,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "p",
 				phoneticRules: []phonetic{
 					{
 						text:  "p",
@@ -24501,7 +22903,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
-				phonetic: "b",
 				phoneticRules: []phonetic{
 					{
 						text:  "b",
@@ -24517,7 +22918,6 @@ var genFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24534,7 +22934,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				phonetic: "f",
 				phoneticRules: []phonetic{
 					{
 						text:  "f",
@@ -24550,7 +22949,6 @@ var genFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24566,7 +22964,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "f",
 				phoneticRules: []phonetic{
 					{
 						text:  "f",
@@ -24583,7 +22980,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
-				phonetic: "v",
 				phoneticRules: []phonetic{
 					{
 						text:  "v",
@@ -24599,7 +22995,6 @@ var genFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24616,7 +23011,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				phonetic: "k",
 				phoneticRules: []phonetic{
 					{
 						text:  "k",
@@ -24632,7 +23026,6 @@ var genFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24648,7 +23041,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "k",
 				phoneticRules: []phonetic{
 					{
 						text:  "k",
@@ -24665,7 +23057,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
-				phonetic: "g",
 				phoneticRules: []phonetic{
 					{
 						text:  "g",
@@ -24681,7 +23072,6 @@ var genFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24698,7 +23088,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				phonetic: "t",
 				phoneticRules: []phonetic{
 					{
 						text:  "t",
@@ -24714,7 +23103,6 @@ var genFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24730,7 +23118,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "t",
 				phoneticRules: []phonetic{
 					{
 						text:  "t",
@@ -24747,7 +23134,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
-				phonetic: "d",
 				phoneticRules: []phonetic{
 					{
 						text:  "d",
@@ -24763,7 +23149,6 @@ var genFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24779,7 +23164,6 @@ var genFinalRules = finalRules{
 					prefix:           "dZ",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24795,7 +23179,6 @@ var genFinalRules = finalRules{
 					prefix:           "tS",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24812,7 +23195,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				phonetic: "s",
 				phoneticRules: []phonetic{
 					{
 						text:  "s",
@@ -24829,7 +23211,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24846,7 +23227,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24863,7 +23243,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24880,7 +23259,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24889,8 +23267,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "jnm",
-				phonetic: "jm",
+				pattern: "jnm",
 				phoneticRules: []phonetic{
 					{
 						text:  "jm",
@@ -24906,7 +23283,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "i",
 				phoneticRules: []phonetic{
 					{
 						text:  "i",
@@ -24922,7 +23298,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "I",
 				phoneticRules: []phonetic{
 					{
 						text:  "I",
@@ -24939,7 +23314,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[aA]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24955,7 +23329,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "A",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24971,7 +23344,6 @@ var genFinalRules = finalRules{
 					prefix:           "A",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -24987,7 +23359,6 @@ var genFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25003,7 +23374,6 @@ var genFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25019,7 +23389,6 @@ var genFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25035,7 +23404,6 @@ var genFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25051,7 +23419,6 @@ var genFinalRules = finalRules{
 					prefix:           "j",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25067,7 +23434,6 @@ var genFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25083,7 +23449,6 @@ var genFinalRules = finalRules{
 					prefix:           "l",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25099,7 +23464,6 @@ var genFinalRules = finalRules{
 					prefix:           "m",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25115,7 +23479,6 @@ var genFinalRules = finalRules{
 					prefix:           "n",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25131,7 +23494,6 @@ var genFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25147,7 +23509,6 @@ var genFinalRules = finalRules{
 					prefix:           "r",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25163,7 +23524,6 @@ var genFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25179,7 +23539,6 @@ var genFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25195,7 +23554,6 @@ var genFinalRules = finalRules{
 					prefix:           "z",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25211,7 +23569,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(vanden|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "vanden",
@@ -25231,7 +23588,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(vander|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "vander",
@@ -25258,7 +23614,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bp]"),
 				},
-				phonetic: "(vam|[16])",
 				phoneticRules: []phonetic{
 					{
 						text:  "vam",
@@ -25278,7 +23633,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(van|[16])",
 				phoneticRules: []phonetic{
 					{
 						text:  "van",
@@ -25299,7 +23653,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bp]"),
 				},
-				phonetic: "m",
 				phoneticRules: []phonetic{
 					{
 						text:  "m",
@@ -25308,8 +23661,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "h",
-				phonetic: "",
+				pattern: "h",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25318,8 +23670,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "H",
-				phonetic: "(x|)",
+				pattern: "H",
 				phoneticRules: []phonetic{
 					{
 						text:  "x",
@@ -25346,7 +23697,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(zn|zon)",
 				phoneticRules: []phonetic{
 					{
 						text:  "zn",
@@ -25366,7 +23716,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(sn|son)",
 				phoneticRules: []phonetic{
 					{
 						text:  "sn",
@@ -25393,7 +23742,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(zn|zon)",
 				phoneticRules: []phonetic{
 					{
 						text:  "zn",
@@ -25413,7 +23761,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(sn|son)",
 				phoneticRules: []phonetic{
 					{
 						text:  "sn",
@@ -25441,7 +23788,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25465,7 +23811,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25489,7 +23834,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25513,7 +23857,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25537,7 +23880,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25561,7 +23903,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -25585,7 +23926,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				phonetic: "(e|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "e",
@@ -25613,7 +23953,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				phonetic: "(i|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "i",
@@ -25641,7 +23980,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				phonetic: "(E|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "E",
@@ -25669,7 +24007,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				phonetic: "(I|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "I",
@@ -25697,7 +24034,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				phonetic: "(Q|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "Q",
@@ -25725,7 +24061,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				phonetic: "(Y|)",
 				phoneticRules: []phonetic{
 					{
 						text:  "Y",
@@ -25738,8 +24073,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "lEs",
-				phonetic: "(lEs|lz)",
+				pattern: "lEs",
 				phoneticRules: []phonetic{
 					{
 						text:  "lEs",
@@ -25760,7 +24094,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[bdfgkmnprStvzZ]$"),
 				},
-				phonetic: "(lE|l)",
 				phoneticRules: []phonetic{
 					{
 						text:  "lE",
@@ -25773,8 +24106,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "aue",
-				phonetic: "D",
+				pattern: "aue",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25783,8 +24115,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oue",
-				phonetic: "D",
+				pattern: "oue",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25793,8 +24124,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AvE",
-				phonetic: "(D|AvE)",
+				pattern: "AvE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25807,8 +24137,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ave",
-				phonetic: "(D|Ave)",
+				pattern: "Ave",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25821,8 +24150,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "avE",
-				phonetic: "(D|avE)",
+				pattern: "avE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25835,8 +24163,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ave",
-				phonetic: "(D|ave)",
+				pattern: "ave",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25849,8 +24176,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "OvE",
-				phonetic: "(D|OvE)",
+				pattern: "OvE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25863,8 +24189,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ove",
-				phonetic: "(D|Ove)",
+				pattern: "Ove",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25877,8 +24202,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ovE",
-				phonetic: "(D|ovE)",
+				pattern: "ovE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25891,8 +24215,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ove",
-				phonetic: "(D|ove)",
+				pattern: "ove",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25905,8 +24228,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ea",
-				phonetic: "(D|ea)",
+				pattern: "ea",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25919,8 +24241,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "EA",
-				phonetic: "(D|EA)",
+				pattern: "EA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25933,8 +24254,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ea",
-				phonetic: "(D|Ea)",
+				pattern: "Ea",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25947,8 +24267,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "eA",
-				phonetic: "(D|eA)",
+				pattern: "eA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25961,8 +24280,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "aji",
-				phonetic: "D",
+				pattern: "aji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25971,8 +24289,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ajI",
-				phonetic: "D",
+				pattern: "ajI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25981,8 +24298,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "aje",
-				phonetic: "D",
+				pattern: "aje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -25991,8 +24307,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ajE",
-				phonetic: "D",
+				pattern: "ajE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26001,8 +24316,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aji",
-				phonetic: "D",
+				pattern: "Aji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26011,8 +24325,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjI",
-				phonetic: "D",
+				pattern: "AjI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26021,8 +24334,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aje",
-				phonetic: "D",
+				pattern: "Aje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26031,8 +24343,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjE",
-				phonetic: "D",
+				pattern: "AjE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26041,8 +24352,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oji",
-				phonetic: "D",
+				pattern: "oji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26051,8 +24361,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ojI",
-				phonetic: "D",
+				pattern: "ojI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26061,8 +24370,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oje",
-				phonetic: "D",
+				pattern: "oje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26071,8 +24379,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ojE",
-				phonetic: "D",
+				pattern: "ojE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26081,8 +24388,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Oji",
-				phonetic: "D",
+				pattern: "Oji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26091,8 +24397,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "OjI",
-				phonetic: "D",
+				pattern: "OjI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26101,8 +24406,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Oje",
-				phonetic: "D",
+				pattern: "Oje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26111,8 +24415,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "OjE",
-				phonetic: "D",
+				pattern: "OjE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26121,8 +24424,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "eji",
-				phonetic: "D",
+				pattern: "eji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26131,8 +24433,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ejI",
-				phonetic: "D",
+				pattern: "ejI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26141,8 +24442,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "eje",
-				phonetic: "D",
+				pattern: "eje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26151,8 +24451,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ejE",
-				phonetic: "D",
+				pattern: "ejE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26161,8 +24460,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Eji",
-				phonetic: "D",
+				pattern: "Eji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26171,8 +24469,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "EjI",
-				phonetic: "D",
+				pattern: "EjI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26181,8 +24478,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Eje",
-				phonetic: "D",
+				pattern: "Eje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26191,8 +24487,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "EjE",
-				phonetic: "D",
+				pattern: "EjE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26201,8 +24496,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "uji",
-				phonetic: "D",
+				pattern: "uji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26211,8 +24505,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ujI",
-				phonetic: "D",
+				pattern: "ujI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26221,8 +24514,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "uje",
-				phonetic: "D",
+				pattern: "uje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26231,8 +24523,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ujE",
-				phonetic: "D",
+				pattern: "ujE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26241,8 +24532,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Uji",
-				phonetic: "D",
+				pattern: "Uji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26251,8 +24541,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "UjI",
-				phonetic: "D",
+				pattern: "UjI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26261,8 +24550,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Uje",
-				phonetic: "D",
+				pattern: "Uje",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26271,8 +24559,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "UjE",
-				phonetic: "D",
+				pattern: "UjE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26281,8 +24568,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "iji",
-				phonetic: "D",
+				pattern: "iji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26291,8 +24577,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ijI",
-				phonetic: "D",
+				pattern: "ijI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26301,8 +24586,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ije",
-				phonetic: "D",
+				pattern: "ije",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26311,8 +24595,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ijE",
-				phonetic: "D",
+				pattern: "ijE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26321,8 +24604,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Iji",
-				phonetic: "D",
+				pattern: "Iji",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26331,8 +24613,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "IjI",
-				phonetic: "D",
+				pattern: "IjI",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26341,8 +24622,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ije",
-				phonetic: "D",
+				pattern: "Ije",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26351,8 +24631,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "IjE",
-				phonetic: "D",
+				pattern: "IjE",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26361,8 +24640,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "aja",
-				phonetic: "D",
+				pattern: "aja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26371,8 +24649,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ajA",
-				phonetic: "D",
+				pattern: "ajA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26381,8 +24658,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ajo",
-				phonetic: "D",
+				pattern: "ajo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26391,8 +24667,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ajO",
-				phonetic: "D",
+				pattern: "ajO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26401,8 +24676,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "aju",
-				phonetic: "D",
+				pattern: "aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26411,8 +24685,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ajU",
-				phonetic: "D",
+				pattern: "ajU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26421,8 +24694,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aja",
-				phonetic: "D",
+				pattern: "Aja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26431,8 +24703,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjA",
-				phonetic: "D",
+				pattern: "AjA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26441,8 +24712,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ajo",
-				phonetic: "D",
+				pattern: "Ajo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26451,8 +24721,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjO",
-				phonetic: "D",
+				pattern: "AjO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26461,8 +24730,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26471,8 +24739,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26481,8 +24748,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oja",
-				phonetic: "D",
+				pattern: "oja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26491,8 +24757,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ojA",
-				phonetic: "D",
+				pattern: "ojA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26501,8 +24766,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ojo",
-				phonetic: "D",
+				pattern: "ojo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26511,8 +24775,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ojO",
-				phonetic: "D",
+				pattern: "ojO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26521,8 +24784,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26531,8 +24793,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26541,8 +24802,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Oja",
-				phonetic: "D",
+				pattern: "Oja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26551,8 +24811,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "OjA",
-				phonetic: "D",
+				pattern: "OjA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26561,8 +24820,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ojo",
-				phonetic: "D",
+				pattern: "Ojo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26571,8 +24829,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "OjO",
-				phonetic: "D",
+				pattern: "OjO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26581,8 +24838,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26591,8 +24847,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26601,8 +24856,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "eja",
-				phonetic: "D",
+				pattern: "eja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26611,8 +24865,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ejA",
-				phonetic: "D",
+				pattern: "ejA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26621,8 +24874,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ejo",
-				phonetic: "D",
+				pattern: "ejo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26631,8 +24883,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ejO",
-				phonetic: "D",
+				pattern: "ejO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26641,8 +24892,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26651,8 +24901,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26661,8 +24910,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Eja",
-				phonetic: "D",
+				pattern: "Eja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26671,8 +24919,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "EjA",
-				phonetic: "D",
+				pattern: "EjA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26681,8 +24928,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ejo",
-				phonetic: "D",
+				pattern: "Ejo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26691,8 +24937,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "EjO",
-				phonetic: "D",
+				pattern: "EjO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26701,8 +24946,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26711,8 +24955,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26721,8 +24964,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "uja",
-				phonetic: "D",
+				pattern: "uja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26731,8 +24973,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ujA",
-				phonetic: "D",
+				pattern: "ujA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26741,8 +24982,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ujo",
-				phonetic: "D",
+				pattern: "ujo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26751,8 +24991,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ujO",
-				phonetic: "D",
+				pattern: "ujO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26761,8 +25000,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26771,8 +25009,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26781,8 +25018,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Uja",
-				phonetic: "D",
+				pattern: "Uja",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26791,8 +25027,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "UjA",
-				phonetic: "D",
+				pattern: "UjA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26801,8 +25036,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ujo",
-				phonetic: "D",
+				pattern: "Ujo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26811,8 +25045,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "UjO",
-				phonetic: "D",
+				pattern: "UjO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26821,8 +25054,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26831,8 +25063,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26841,8 +25072,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ija",
-				phonetic: "D",
+				pattern: "ija",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26851,8 +25081,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ijA",
-				phonetic: "D",
+				pattern: "ijA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26861,8 +25090,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ijo",
-				phonetic: "D",
+				pattern: "ijo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26871,8 +25099,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ijO",
-				phonetic: "D",
+				pattern: "ijO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26881,8 +25108,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26891,8 +25117,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26901,8 +25126,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ija",
-				phonetic: "D",
+				pattern: "Ija",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26911,8 +25135,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "IjA",
-				phonetic: "D",
+				pattern: "IjA",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26921,8 +25144,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Ijo",
-				phonetic: "D",
+				pattern: "Ijo",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26931,8 +25153,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "IjO",
-				phonetic: "D",
+				pattern: "IjO",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26941,8 +25162,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Aju",
-				phonetic: "D",
+				pattern: "Aju",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26951,8 +25171,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "AjU",
-				phonetic: "D",
+				pattern: "AjU",
 				phoneticRules: []phonetic{
 					{
 						text:  "D",
@@ -26961,8 +25180,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "j",
-				phonetic: "i",
+				pattern: "j",
 				phoneticRules: []phonetic{
 					{
 						text:  "i",
@@ -26978,7 +25196,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -26994,7 +25211,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27010,7 +25226,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27026,7 +25241,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27042,7 +25256,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27058,7 +25271,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27074,7 +25286,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27090,7 +25301,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27106,7 +25316,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "lYnder",
 				phoneticRules: []phonetic{
 					{
 						text:  "lYnder",
@@ -27122,7 +25331,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27142,7 +25350,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27162,7 +25369,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27182,7 +25388,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27202,7 +25407,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27222,7 +25426,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27242,7 +25445,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27262,7 +25464,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(burk|berk)",
 				phoneticRules: []phonetic{
 					{
 						text:  "burk",
@@ -27283,7 +25484,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				phonetic: "z",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -27300,7 +25500,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				phonetic: "z",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -27317,7 +25516,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
-				phonetic: "z",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -27334,7 +25532,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
-				phonetic: "z",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -27350,7 +25547,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -27366,7 +25562,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -27382,7 +25577,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -27398,7 +25592,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(S|s)",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -27418,7 +25611,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(S|s)",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -27431,8 +25623,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "S",
-				phonetic: "s",
+				pattern: "S",
 				phoneticRules: []phonetic{
 					{
 						text:  "s",
@@ -27441,8 +25632,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "dZ",
-				phonetic: "z",
+				pattern: "dZ",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -27451,8 +25641,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Z",
-				phonetic: "z",
+				pattern: "Z",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -27464,8 +25653,7 @@ var genFinalRules = finalRules{
 		second: map[languageID][]rule{
 			languageID(genany): []rule{
 				{
-					pattern:  "mb",
-					phonetic: "(mb|b[512])",
+					pattern: "mb",
 					phoneticRules: []phonetic{
 						{
 							text:  "mb",
@@ -27478,8 +25666,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "mp",
-					phonetic: "(mp|b[512])",
+					pattern: "mp",
 					phoneticRules: []phonetic{
 						{
 							text:  "mp",
@@ -27492,8 +25679,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ng",
-					phonetic: "(ng|g[512])",
+					pattern: "ng",
 					phoneticRules: []phonetic{
 						{
 							text:  "ng",
@@ -27514,7 +25700,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fktSs]"),
 					},
-					phonetic: "(p|f[262144])",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -27534,7 +25719,6 @@ var genFinalRules = finalRules{
 						prefix:           "p",
 						suffix:           "",
 					},
-					phonetic: "",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -27550,7 +25734,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(p|f[262144])",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -27571,7 +25754,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[pktSs]"),
 					},
-					phonetic: "(f|p[262144])",
 					phoneticRules: []phonetic{
 						{
 							text:  "f",
@@ -27591,7 +25773,6 @@ var genFinalRules = finalRules{
 						prefix:           "f",
 						suffix:           "",
 					},
-					phonetic: "",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -27607,7 +25788,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(f|p[262144])",
 					phoneticRules: []phonetic{
 						{
 							text:  "f",
@@ -27620,8 +25800,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "B",
-					phonetic: "(b|v[262144])",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "b",
@@ -27634,8 +25813,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "V",
-					phonetic: "(v|b[262144])",
+					pattern: "V",
 					phoneticRules: []phonetic{
 						{
 							text:  "v",
@@ -27655,7 +25833,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(t|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "t",
@@ -27681,7 +25858,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(g|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "g",
@@ -27707,7 +25883,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(k|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "k",
@@ -27727,7 +25902,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(p|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -27754,7 +25928,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(r|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "r",
@@ -27774,7 +25947,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(s|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "s",
@@ -27802,7 +25974,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^aeiouAEIOU]"),
 					},
-					phonetic: "(t|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "t",
@@ -27830,7 +26001,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^aeiouAEIOU]"),
 					},
-					phonetic: "(s|[64])",
 					phoneticRules: []phonetic{
 						{
 							text:  "s",
@@ -27851,7 +26021,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aeiouAEIBFOUQY]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -27868,7 +26037,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^aeiouAEBFIOU]e"),
 					},
-					phonetic: "(Q[128]|i|D[32])",
 					phoneticRules: []phonetic{
 						{
 							text:  "Q",
@@ -27892,7 +26060,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -27909,7 +26076,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -27932,7 +26098,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk[128])",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -27952,7 +26117,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -27968,7 +26132,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts[128])",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -27988,7 +26151,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -27997,8 +26159,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(Q[128]|i)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "Q",
@@ -28019,7 +26180,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					phonetic: "(li|il[32])",
 					phoneticRules: []phonetic{
 						{
 							text:  "li",
@@ -28040,7 +26200,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					phonetic: "(ri|ir[32])",
 					phoneticRules: []phonetic{
 						{
 							text:  "ri",
@@ -28061,7 +26220,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					phonetic: "(li|il[32]|lY[128])",
 					phoneticRules: []phonetic{
 						{
 							text:  "li",
@@ -28086,7 +26244,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					phonetic: "(ri|ir[32]|rY[128])",
 					phoneticRules: []phonetic{
 						{
 							text:  "ri",
@@ -28103,8 +26260,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "EE",
-					phonetic: "(i|)",
+					pattern: "EE",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28117,8 +26273,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ea",
-					phonetic: "(D|a|i)",
+					pattern: "ea",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28135,8 +26290,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28153,8 +26307,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28171,8 +26324,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "eu",
-					phonetic: "(D|e|u)",
+					pattern: "eu",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28189,8 +26341,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28207,8 +26358,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Ai",
-					phonetic: "(D|a|i)",
+					pattern: "Ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28225,8 +26375,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28243,8 +26392,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Oi",
-					phonetic: "(D|o|i)",
+					pattern: "Oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28261,8 +26409,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28279,8 +26426,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Ui",
-					phonetic: "(D|u|i)",
+					pattern: "Ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28297,8 +26443,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ei",
-					phonetic: "(D|i)",
+					pattern: "ei",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28311,8 +26456,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Ei",
-					phonetic: "(D|i)",
+					pattern: "Ei",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -28332,7 +26476,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ia|io)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ia",
@@ -28345,8 +26488,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "iA",
-					phonetic: "(ia|io|iY[128])",
+					pattern: "iA",
 					phoneticRules: []phonetic{
 						{
 							text:  "ia",
@@ -28371,7 +26513,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^aeiouAEBFIOU]e"),
 					},
-					phonetic: "(a|o|Y[128]|D[32])",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28400,7 +26541,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("i[^aeiouAEIOU]$"),
 					},
-					phonetic: "(i|Y[128]|[32])",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28425,7 +26565,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("a[^aeiouAEIOU]$"),
 					},
-					phonetic: "(i|Y[128]|[32])",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28450,7 +26589,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28467,7 +26605,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28483,7 +26620,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28500,7 +26636,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28517,7 +26652,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28526,8 +26660,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(i|Y[128])",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28540,8 +26673,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "P",
-					phonetic: "(o|u)",
+					pattern: "P",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28562,7 +26694,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprstv]$"),
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28579,7 +26710,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28595,7 +26725,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28612,7 +26741,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[oeiuQY]$"),
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28621,8 +26749,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "O",
-					phonetic: "(o|Y[128])",
+					pattern: "O",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28635,8 +26762,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "O",
-					phonetic: "o",
+					pattern: "O",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -28653,7 +26779,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28674,7 +26799,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28694,7 +26818,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28715,7 +26838,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[oeiuQY]$"),
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28728,8 +26850,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "A",
-					phonetic: "(a|o|Y[128])",
+					pattern: "A",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28746,8 +26867,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "A",
-					phonetic: "(a|o)",
+					pattern: "A",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -28767,7 +26887,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -28784,7 +26903,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DoiuQY]$"),
 					},
-					phonetic: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -28801,7 +26919,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -28824,7 +26941,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(uk|Qk[128])",
 					phoneticRules: []phonetic{
 						{
 							text:  "uk",
@@ -28844,7 +26960,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "uk",
 					phoneticRules: []phonetic{
 						{
 							text:  "uk",
@@ -28860,7 +26975,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(suts|sQts[128])",
 					phoneticRules: []phonetic{
 						{
 							text:  "suts",
@@ -28880,7 +26994,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "uts",
 					phoneticRules: []phonetic{
 						{
 							text:  "uts",
@@ -28889,8 +27002,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "U",
-					phonetic: "(u|Q[128])",
+					pattern: "U",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -28903,8 +27015,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "U",
-					phonetic: "u",
+					pattern: "U",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -28921,7 +27032,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprstv]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28938,7 +27048,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28954,7 +27063,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28971,7 +27079,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28988,7 +27095,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -28997,8 +27103,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "(i|Y[128])",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29011,8 +27116,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -29027,8 +27131,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genarabic): []rule{
 				{
-					pattern:  "1a",
-					phonetic: "(D|a)",
+					pattern: "1a",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29041,8 +27144,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "1i",
-					phonetic: "(D|i|e)",
+					pattern: "1i",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29059,8 +27161,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "1u",
-					phonetic: "(D|u|o)",
+					pattern: "1u",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29077,8 +27178,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "j1",
-					phonetic: "(ja|je|jo|ju|j)",
+					pattern: "j1",
 					phoneticRules: []phonetic{
 						{
 							text:  "ja",
@@ -29103,8 +27203,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "1",
-					phonetic: "(a|e|i|o|u|)",
+					pattern: "1",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -29133,8 +27232,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "u",
-					phonetic: "(o|u)",
+					pattern: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -29147,8 +27245,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "i",
-					phonetic: "(i|e)",
+					pattern: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29168,7 +27265,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "p",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -29177,8 +27273,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "p",
-					phonetic: "(p|b)",
+					pattern: "p",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -29200,7 +27295,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29217,7 +27311,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29240,7 +27333,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -29260,7 +27352,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -29276,7 +27367,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -29296,7 +27386,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -29313,7 +27402,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aeiEIou]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29322,8 +27410,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(i|Q)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29336,8 +27423,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29354,8 +27440,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29372,8 +27457,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29390,8 +27474,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29408,8 +27491,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29434,7 +27516,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(om|im)",
 					phoneticRules: []phonetic{
 						{
 							text:  "om",
@@ -29455,7 +27536,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(on|in)",
 					phoneticRules: []phonetic{
 						{
 							text:  "on",
@@ -29476,7 +27556,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(im|om)",
 					phoneticRules: []phonetic{
 						{
 							text:  "im",
@@ -29497,7 +27576,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(in|on)",
 					phoneticRules: []phonetic{
 						{
 							text:  "in",
@@ -29518,7 +27596,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(im|Ym|om)",
 					phoneticRules: []phonetic{
 						{
 							text:  "im",
@@ -29543,7 +27620,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(in|Yn|on)",
 					phoneticRules: []phonetic{
 						{
 							text:  "in",
@@ -29560,8 +27636,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -29574,8 +27649,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29592,7 +27666,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29609,7 +27682,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29626,7 +27698,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29643,7 +27714,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29652,8 +27722,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(Y|i)",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "Y",
@@ -29675,7 +27744,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29692,7 +27760,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29715,7 +27782,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -29735,7 +27801,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -29751,7 +27816,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -29771,7 +27835,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -29788,7 +27851,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aeiEIou]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29797,8 +27859,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(i|Q)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -29811,8 +27872,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29829,8 +27889,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29847,8 +27906,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29865,8 +27923,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29883,8 +27940,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -29909,7 +27965,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(om|im)",
 					phoneticRules: []phonetic{
 						{
 							text:  "om",
@@ -29930,7 +27985,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(on|in)",
 					phoneticRules: []phonetic{
 						{
 							text:  "on",
@@ -29951,7 +28005,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(im|om)",
 					phoneticRules: []phonetic{
 						{
 							text:  "im",
@@ -29972,7 +28025,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(in|on)",
 					phoneticRules: []phonetic{
 						{
 							text:  "in",
@@ -29993,7 +28045,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(im|Ym|om)",
 					phoneticRules: []phonetic{
 						{
 							text:  "im",
@@ -30018,7 +28069,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(in|Yn|on)",
 					phoneticRules: []phonetic{
 						{
 							text:  "in",
@@ -30035,8 +28085,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -30049,8 +28098,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30067,7 +28115,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30084,7 +28131,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30101,7 +28147,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30118,7 +28163,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30127,8 +28171,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(Y|i)",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "Y",
@@ -30143,8 +28186,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genfrench): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30161,8 +28203,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30179,8 +28220,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30197,8 +28237,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30215,8 +28254,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30233,8 +28271,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -30247,8 +28284,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30259,8 +28295,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genczech): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30277,8 +28312,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30295,8 +28329,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30313,8 +28346,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30331,8 +28363,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30349,8 +28380,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -30363,8 +28393,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30375,8 +28404,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(gendutch): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30393,8 +28421,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30411,8 +28438,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30429,8 +28455,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30447,8 +28472,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30465,8 +28489,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -30479,8 +28502,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30499,7 +28521,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^aEIeiou]e"),
 					},
-					phonetic: "(Q|i|D)",
 					phoneticRules: []phonetic{
 						{
 							text:  "Q",
@@ -30523,7 +28544,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30540,7 +28560,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30557,7 +28576,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30580,7 +28598,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -30600,7 +28617,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -30616,7 +28632,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -30636,7 +28651,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -30645,8 +28659,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(i|Q)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30667,7 +28680,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					phonetic: "(il|li|lY)",
 					phoneticRules: []phonetic{
 						{
 							text:  "il",
@@ -30684,8 +28696,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30702,8 +28713,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30720,8 +28730,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30738,8 +28747,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30756,8 +28764,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -30782,7 +28789,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("D[^aeiEIou]$"),
 					},
-					phonetic: "(i|)",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30803,7 +28809,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("D[^aeiEIou]$"),
 					},
-					phonetic: "(i|)",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30816,8 +28821,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30834,7 +28838,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30851,7 +28854,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30868,7 +28870,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiEuQY]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30885,7 +28886,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoQY]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30894,8 +28894,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(Y|i)",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "Y",
@@ -30908,8 +28907,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -30931,7 +28929,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30948,7 +28945,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aeiAEIOUouQY]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30965,7 +28961,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -30988,7 +28983,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -31008,7 +29002,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -31024,7 +29017,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -31044,7 +29036,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -31053,8 +29044,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(Q|i)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "Q",
@@ -31067,8 +29057,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "AU",
-					phonetic: "(D|a|u)",
+					pattern: "AU",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31085,8 +29074,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "aU",
-					phonetic: "(D|a|u)",
+					pattern: "aU",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31103,8 +29091,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Au",
-					phonetic: "(D|a|u)",
+					pattern: "Au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31121,8 +29108,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31139,8 +29125,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31157,8 +29142,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "OU",
-					phonetic: "(D|o|u)",
+					pattern: "OU",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31175,8 +29159,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oU",
-					phonetic: "(D|o|u)",
+					pattern: "oU",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31193,8 +29176,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Ou",
-					phonetic: "(D|o|u)",
+					pattern: "Ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31211,8 +29193,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31229,8 +29210,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Ai",
-					phonetic: "(D|a|i)",
+					pattern: "Ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31247,8 +29227,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31265,8 +29244,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Oi",
-					phonetic: "(D|o|i)",
+					pattern: "Oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31283,8 +29261,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31301,8 +29278,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "Ui",
-					phonetic: "(D|u|i)",
+					pattern: "Ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31319,8 +29295,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31337,7 +29312,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31354,7 +29328,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31370,7 +29343,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31387,7 +29359,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoAOUiuQY]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31404,7 +29375,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31413,8 +29383,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(Y|i)",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "Y",
@@ -31434,7 +29403,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -31451,7 +29419,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -31468,7 +29435,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -31485,7 +29451,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aoAOUeiuQY]$"),
 					},
-					phonetic: "o",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -31494,8 +29459,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "O",
-					phonetic: "(o|Y)",
+					pattern: "O",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -31508,8 +29472,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31529,7 +29492,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31550,7 +29512,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31571,7 +29532,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31592,7 +29552,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aoeOUiuQY]$"),
 					},
-					phonetic: "(a|o)",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31605,8 +29564,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "A",
-					phonetic: "(a|o|Y)",
+					pattern: "A",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31630,7 +29588,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -31647,7 +29604,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuUQY]$"),
 					},
-					phonetic: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -31664,7 +29620,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "u",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -31687,7 +29642,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(uk|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "uk",
@@ -31707,7 +29661,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "uk",
 					phoneticRules: []phonetic{
 						{
 							text:  "uk",
@@ -31723,7 +29676,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(suts|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "suts",
@@ -31743,7 +29695,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "uts",
 					phoneticRules: []phonetic{
 						{
 							text:  "uts",
@@ -31752,8 +29703,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "U",
-					phonetic: "(u|Q)",
+					pattern: "U",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -31768,8 +29718,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(gengreek): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31786,8 +29735,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31804,8 +29752,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31822,8 +29769,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31840,8 +29786,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31858,8 +29803,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31872,8 +29816,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31884,8 +29827,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(gengreeklatin): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31902,8 +29844,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31920,8 +29861,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31938,8 +29878,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31956,8 +29895,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -31974,8 +29912,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -31988,8 +29925,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -31998,8 +29934,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "N",
-					phonetic: "",
+					pattern: "N",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -32011,8 +29946,7 @@ var genFinalRules = finalRules{
 			languageID(genhebrew): []rule{},
 			languageID(genhungarian): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32029,8 +29963,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32047,8 +29980,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32065,8 +29997,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32083,8 +30014,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32101,8 +30031,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -32115,8 +30044,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -32127,8 +30055,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genitalian): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32145,8 +30072,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32163,8 +30089,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32181,8 +30106,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32199,8 +30123,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32217,8 +30140,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -32231,8 +30153,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -32243,8 +30164,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genlatvian): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32261,8 +30181,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32279,8 +30198,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32297,8 +30215,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32315,8 +30232,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32333,8 +30249,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -32347,8 +30262,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -32367,7 +30281,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32388,7 +30301,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32409,7 +30321,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32430,7 +30341,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32451,7 +30361,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32472,7 +30381,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32493,7 +30401,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32514,7 +30421,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32535,7 +30441,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32556,7 +30461,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32577,7 +30481,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32598,7 +30501,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32619,7 +30521,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32640,7 +30541,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32661,7 +30561,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(o|om|im)",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -32686,7 +30585,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(o|on|in)",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -32703,8 +30601,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "B",
-					phonetic: "o",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -32721,7 +30618,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32742,7 +30638,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32763,7 +30658,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32784,7 +30678,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32805,7 +30698,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32826,7 +30718,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32847,7 +30738,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32868,7 +30758,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32889,7 +30778,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32910,7 +30798,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32931,7 +30818,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32952,7 +30838,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32973,7 +30858,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -32994,7 +30878,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33015,7 +30898,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(i|im|om)",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33040,7 +30922,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(i|in|on)",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33057,8 +30938,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "F",
-					phonetic: "i",
+					pattern: "F",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33067,8 +30947,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "P",
-					phonetic: "(o|u)",
+					pattern: "P",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -33088,7 +30967,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33105,7 +30983,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33128,7 +31005,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -33148,7 +31024,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -33164,7 +31039,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -33184,7 +31058,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -33201,7 +31074,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33210,8 +31082,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(i|Q)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33224,8 +31095,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33242,8 +31112,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33260,8 +31129,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33278,8 +31146,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33296,8 +31163,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33314,8 +31180,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -33328,8 +31193,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33346,7 +31210,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33363,7 +31226,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33379,7 +31241,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33396,7 +31257,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33413,7 +31273,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33422,8 +31281,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(Y|i)",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "Y",
@@ -33438,8 +31296,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genportuguese): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33456,8 +31313,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33474,8 +31330,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33492,8 +31347,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33510,8 +31364,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33528,8 +31381,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -33542,8 +31394,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -33562,7 +31413,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33583,7 +31433,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33604,7 +31453,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33625,7 +31473,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33646,7 +31493,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33667,7 +31513,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33688,7 +31533,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33709,7 +31553,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33730,7 +31573,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33751,7 +31593,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33772,7 +31613,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33793,7 +31633,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33814,7 +31653,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33835,7 +31673,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33856,7 +31693,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(o|om|im)",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -33881,7 +31717,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(o|on|in)",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -33898,8 +31733,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "B",
-					phonetic: "o",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -33916,7 +31750,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33937,7 +31770,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33958,7 +31790,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -33979,7 +31810,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34000,7 +31830,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34021,7 +31850,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34042,7 +31870,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(D|Dm)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34063,7 +31890,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34084,7 +31910,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34105,7 +31930,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34126,7 +31950,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34147,7 +31970,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34168,7 +31990,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34189,7 +32010,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(D|Dn)",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34210,7 +32030,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[bp]"),
 					},
-					phonetic: "(i|im|om)",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34235,7 +32054,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					phonetic: "(i|in|on)",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34252,8 +32070,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "F",
-					phonetic: "i",
+					pattern: "F",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34262,8 +32079,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "P",
-					phonetic: "(o|u)",
+					pattern: "P",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -34283,7 +32099,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34300,7 +32115,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34323,7 +32137,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(ik|Qk)",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -34343,7 +32156,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "ik",
 					phoneticRules: []phonetic{
 						{
 							text:  "ik",
@@ -34359,7 +32171,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "(sits|sQts)",
 					phoneticRules: []phonetic{
 						{
 							text:  "sits",
@@ -34379,7 +32190,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "its",
 					phoneticRules: []phonetic{
 						{
 							text:  "its",
@@ -34396,7 +32206,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34405,8 +32214,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "(i|Q)",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34419,8 +32227,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34437,8 +32244,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34455,8 +32261,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34473,8 +32278,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34491,8 +32295,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34509,8 +32312,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -34523,8 +32325,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "e",
-					phonetic: "i",
+					pattern: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34541,7 +32342,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34558,7 +32358,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^ts$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34574,7 +32373,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34591,7 +32389,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34608,7 +32405,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					phonetic: "i",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -34617,8 +32413,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "(Y|i)",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "Y",
@@ -34633,8 +32428,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genspanish): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34651,8 +32445,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34669,8 +32462,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34687,8 +32479,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34705,8 +32496,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34723,8 +32513,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -34737,8 +32526,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "B",
-					phonetic: "(b|v)",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "b",
@@ -34751,8 +32539,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "V",
-					phonetic: "(b|v)",
+					pattern: "V",
 					phoneticRules: []phonetic{
 						{
 							text:  "b",
@@ -34767,8 +32554,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genturkish): []rule{
 				{
-					pattern:  "au",
-					phonetic: "(D|a|u)",
+					pattern: "au",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34785,8 +32571,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ou",
-					phonetic: "(D|o|u)",
+					pattern: "ou",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34803,8 +32588,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ai",
-					phonetic: "(D|a|i)",
+					pattern: "ai",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34821,8 +32605,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "oi",
-					phonetic: "(D|o|i)",
+					pattern: "oi",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34839,8 +32622,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "ui",
-					phonetic: "(D|u|i)",
+					pattern: "ui",
 					phoneticRules: []phonetic{
 						{
 							text:  "D",
@@ -34857,8 +32639,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "a",
-					phonetic: "(a|o)",
+					pattern: "a",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -34883,7 +32664,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -34900,7 +32680,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				phonetic: "p",
 				phoneticRules: []phonetic{
 					{
 						text:  "p",
@@ -34916,7 +32695,6 @@ var genFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -34932,7 +32710,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "p",
 				phoneticRules: []phonetic{
 					{
 						text:  "p",
@@ -34949,7 +32726,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
-				phonetic: "b",
 				phoneticRules: []phonetic{
 					{
 						text:  "b",
@@ -34965,7 +32741,6 @@ var genFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -34982,7 +32757,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				phonetic: "f",
 				phoneticRules: []phonetic{
 					{
 						text:  "f",
@@ -34998,7 +32772,6 @@ var genFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35014,7 +32787,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "f",
 				phoneticRules: []phonetic{
 					{
 						text:  "f",
@@ -35031,7 +32803,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
-				phonetic: "v",
 				phoneticRules: []phonetic{
 					{
 						text:  "v",
@@ -35047,7 +32818,6 @@ var genFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35064,7 +32834,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				phonetic: "k",
 				phoneticRules: []phonetic{
 					{
 						text:  "k",
@@ -35080,7 +32849,6 @@ var genFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35096,7 +32864,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "k",
 				phoneticRules: []phonetic{
 					{
 						text:  "k",
@@ -35113,7 +32880,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
-				phonetic: "g",
 				phoneticRules: []phonetic{
 					{
 						text:  "g",
@@ -35129,7 +32895,6 @@ var genFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35146,7 +32911,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				phonetic: "t",
 				phoneticRules: []phonetic{
 					{
 						text:  "t",
@@ -35162,7 +32926,6 @@ var genFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35178,7 +32941,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "t",
 				phoneticRules: []phonetic{
 					{
 						text:  "t",
@@ -35195,7 +32957,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
-				phonetic: "d",
 				phoneticRules: []phonetic{
 					{
 						text:  "d",
@@ -35211,7 +32972,6 @@ var genFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35227,7 +32987,6 @@ var genFinalRules = finalRules{
 					prefix:           "dZ",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35243,7 +33002,6 @@ var genFinalRules = finalRules{
 					prefix:           "tS",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35260,7 +33018,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				phonetic: "s",
 				phoneticRules: []phonetic{
 					{
 						text:  "s",
@@ -35277,7 +33034,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35294,7 +33050,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35311,7 +33066,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35328,7 +33082,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35337,8 +33090,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "jnm",
-				phonetic: "jm",
+				pattern: "jnm",
 				phoneticRules: []phonetic{
 					{
 						text:  "jm",
@@ -35354,7 +33106,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "i",
 				phoneticRules: []phonetic{
 					{
 						text:  "i",
@@ -35370,7 +33121,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "I",
 				phoneticRules: []phonetic{
 					{
 						text:  "I",
@@ -35387,7 +33137,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[aA]"),
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35403,7 +33152,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "A",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35419,7 +33167,6 @@ var genFinalRules = finalRules{
 					prefix:           "A",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35435,7 +33182,6 @@ var genFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35451,7 +33197,6 @@ var genFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35467,7 +33212,6 @@ var genFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35483,7 +33227,6 @@ var genFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35499,7 +33242,6 @@ var genFinalRules = finalRules{
 					prefix:           "j",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35515,7 +33257,6 @@ var genFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35531,7 +33272,6 @@ var genFinalRules = finalRules{
 					prefix:           "l",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35547,7 +33287,6 @@ var genFinalRules = finalRules{
 					prefix:           "m",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35563,7 +33302,6 @@ var genFinalRules = finalRules{
 					prefix:           "n",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35579,7 +33317,6 @@ var genFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35595,7 +33332,6 @@ var genFinalRules = finalRules{
 					prefix:           "r",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35611,7 +33347,6 @@ var genFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35627,7 +33362,6 @@ var genFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35643,7 +33377,6 @@ var genFinalRules = finalRules{
 					prefix:           "z",
 					suffix:           "",
 				},
-				phonetic: "",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35652,8 +33385,7 @@ var genFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "H",
-				phonetic: "",
+				pattern: "H",
 				phoneticRules: []phonetic{
 					{
 						text:  "",
@@ -35677,7 +33409,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bgZd]"),
 				},
-				phonetic: "z",
 				phoneticRules: []phonetic{
 					{
 						text:  "z",
@@ -35694,7 +33425,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkst]"),
 				},
-				phonetic: "S",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -35710,7 +33440,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
 				phoneticRules: []phonetic{
 					{
 						text:  "S",
@@ -35727,7 +33456,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bgzd]"),
 				},
-				phonetic: "Z",
 				phoneticRules: []phonetic{
 					{
 						text:  "Z",
@@ -35743,7 +33471,6 @@ var genFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "s",
 				phoneticRules: []phonetic{
 					{
 						text:  "s",
@@ -35760,7 +33487,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				phonetic: "j",
 				phoneticRules: []phonetic{
 					{
 						text:  "j",
@@ -35777,7 +33503,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				phonetic: "j",
 				phoneticRules: []phonetic{
 					{
 						text:  "j",
@@ -35794,7 +33519,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				phonetic: "j",
 				phoneticRules: []phonetic{
 					{
 						text:  "j",
@@ -35811,7 +33535,6 @@ var genFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				phonetic: "j",
 				phoneticRules: []phonetic{
 					{
 						text:  "j",
@@ -35830,7 +33553,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -35839,8 +33561,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "A",
-					phonetic: "a",
+					pattern: "A",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -35849,8 +33570,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -35859,8 +33579,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -35869,8 +33588,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "O",
-					phonetic: "o",
+					pattern: "O",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -35879,8 +33597,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "P",
-					phonetic: "o",
+					pattern: "P",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -35889,8 +33606,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "U",
-					phonetic: "u",
+					pattern: "U",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -35907,7 +33623,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fktSs]"),
 					},
-					phonetic: "p",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -35923,7 +33638,6 @@ var genFinalRules = finalRules{
 						prefix:           "p",
 						suffix:           "",
 					},
-					phonetic: "",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -35939,7 +33653,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "p",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -35956,7 +33669,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[pktSs]"),
 					},
-					phonetic: "f",
 					phoneticRules: []phonetic{
 						{
 							text:  "f",
@@ -35972,7 +33684,6 @@ var genFinalRules = finalRules{
 						prefix:           "f",
 						suffix:           "",
 					},
-					phonetic: "",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -35988,7 +33699,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "f",
 					phoneticRules: []phonetic{
 						{
 							text:  "f",
@@ -35997,8 +33707,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "B",
-					phonetic: "b",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "b",
@@ -36007,8 +33716,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "V",
-					phonetic: "v",
+					pattern: "V",
 					phoneticRules: []phonetic{
 						{
 							text:  "v",
@@ -36019,8 +33727,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genarabic): []rule{
 				{
-					pattern:  "1",
-					phonetic: "",
+					pattern: "1",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -36031,8 +33738,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genrussian): []rule{
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36041,8 +33747,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36053,8 +33758,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(gencyrillic): []rule{
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36063,8 +33767,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36075,8 +33778,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genczech): []rule{
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36085,8 +33787,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36098,8 +33799,7 @@ var genFinalRules = finalRules{
 			languageID(gendutch): []rule{},
 			languageID(genenglish): []rule{
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36108,8 +33808,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36128,7 +33827,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "e",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36137,8 +33835,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "A",
-					phonetic: "a",
+					pattern: "A",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -36147,8 +33844,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36157,8 +33853,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36167,8 +33862,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "O",
-					phonetic: "o",
+					pattern: "O",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -36177,8 +33871,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "P",
-					phonetic: "o",
+					pattern: "P",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -36187,8 +33880,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "U",
-					phonetic: "u",
+					pattern: "U",
 					phoneticRules: []phonetic{
 						{
 							text:  "u",
@@ -36205,7 +33897,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[fktSs]"),
 					},
-					phonetic: "p",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -36221,7 +33912,6 @@ var genFinalRules = finalRules{
 						prefix:           "p",
 						suffix:           "",
 					},
-					phonetic: "",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -36237,7 +33927,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "p",
 					phoneticRules: []phonetic{
 						{
 							text:  "p",
@@ -36254,7 +33943,6 @@ var genFinalRules = finalRules{
 						suffix:           "",
 						pattern:          regexp.MustCompile("^[pktSs]"),
 					},
-					phonetic: "f",
 					phoneticRules: []phonetic{
 						{
 							text:  "f",
@@ -36270,7 +33958,6 @@ var genFinalRules = finalRules{
 						prefix:           "f",
 						suffix:           "",
 					},
-					phonetic: "",
 					phoneticRules: []phonetic{
 						{
 							text:  "",
@@ -36286,7 +33973,6 @@ var genFinalRules = finalRules{
 						prefix:           "",
 						suffix:           "",
 					},
-					phonetic: "f",
 					phoneticRules: []phonetic{
 						{
 							text:  "f",
@@ -36295,8 +33981,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "B",
-					phonetic: "b",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "b",
@@ -36305,8 +33990,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "V",
-					phonetic: "v",
+					pattern: "V",
 					phoneticRules: []phonetic{
 						{
 							text:  "v",
@@ -36318,8 +34002,7 @@ var genFinalRules = finalRules{
 			languageID(gengreek): []rule{},
 			languageID(gengreeklatin): []rule{
 				{
-					pattern:  "N",
-					phonetic: "n",
+					pattern: "N",
 					phoneticRules: []phonetic{
 						{
 							text:  "n",
@@ -36331,8 +34014,7 @@ var genFinalRules = finalRules{
 			languageID(genhebrew): []rule{},
 			languageID(genhungarian): []rule{
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36341,8 +34023,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36355,8 +34036,7 @@ var genFinalRules = finalRules{
 			languageID(genlatvian): []rule{},
 			languageID(genpolish): []rule{
 				{
-					pattern:  "B",
-					phonetic: "a",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "a",
@@ -36365,8 +34045,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "F",
-					phonetic: "e",
+					pattern: "F",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36375,8 +34054,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "P",
-					phonetic: "o",
+					pattern: "P",
 					phoneticRules: []phonetic{
 						{
 							text:  "o",
@@ -36385,8 +34063,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36395,8 +34072,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36408,8 +34084,7 @@ var genFinalRules = finalRules{
 			languageID(genportuguese): []rule{},
 			languageID(genromanian): []rule{
 				{
-					pattern:  "E",
-					phonetic: "e",
+					pattern: "E",
 					phoneticRules: []phonetic{
 						{
 							text:  "e",
@@ -36418,8 +34093,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "I",
-					phonetic: "i",
+					pattern: "I",
 					phoneticRules: []phonetic{
 						{
 							text:  "i",
@@ -36430,8 +34104,7 @@ var genFinalRules = finalRules{
 			},
 			languageID(genspanish): []rule{
 				{
-					pattern:  "B",
-					phonetic: "b",
+					pattern: "B",
 					phoneticRules: []phonetic{
 						{
 							text:  "b",
@@ -36440,8 +34113,7 @@ var genFinalRules = finalRules{
 					},
 				},
 				{
-					pattern:  "V",
-					phonetic: "v",
+					pattern: "V",
 					phoneticRules: []phonetic{
 						{
 							text:  "v",
