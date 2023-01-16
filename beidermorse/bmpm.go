@@ -63,7 +63,7 @@ func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, conca
 			// X Y => XY
 			input = strings.ReplaceAll(input, " ", "") // concatenate the separate words of a name
 		} else { // number of words is exactly two
-			word1 := substr(input, 0, space)
+			word1 := substrTo(input, space)
 			word2 := substrFrom(input, space+1)
 			if inArray(discards, word1) {
 				// X Y => Y and XY
@@ -96,7 +96,7 @@ func prepareInput(input string, mode Mode) string {
 	// remove spaces from within certain leading words
 	for _, item := range firstList {
 		target := item + " "
-		if substr(input, 0, utf8.RuneCountInString(target)) == target {
+		if substrTo(input, utf8.RuneCountInString(target)) == target {
 			target = item
 			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
 		}
@@ -113,8 +113,8 @@ func prepareInput(input string, mode Mode) string {
 		target := list[i]
 
 		if firstOne := strings.Index(input, target); firstOne != -1 {
-			input = strings.ReplaceAll(input, target, "")                          // remove all occurences
-			input = substr(input, 0, firstOne) + " " + substrFrom(input, firstOne) // replace first occurence with space
+			input = strings.ReplaceAll(input, target, "")                         // remove all occurences
+			input = substrTo(input, firstOne) + " " + substrFrom(input, firstOne) // replace first occurence with space
 		}
 	}
 
@@ -131,51 +131,30 @@ func applyRules(input []phonetic, rules []rule, languageArg languageID, ignoreLa
 		tokenRunes := []rune(token.text)
 		newTokens := []phonetic{{text: "", langs: token.langs}}
 		for j := 0; j < len(tokenRunes); {
-			patternLength := 0
-			found := false
+			var (
+				applied bool
+				offset  int
+			)
 
 			for _, r := range rules {
-				patternLength = len([]rune(r.pattern))
-
-				if patternLength > utf8.RuneCountInString(token.text)-j || substr(token.text, j, patternLength) != r.pattern { // no match
-					continue
-				}
-
-				if r.rightContext != nil {
-					if !r.rightContext.matches(substrFrom(token.text, j+patternLength)) {
-						continue
-					}
-				}
-
-				if r.leftContext != nil {
-					if !r.leftContext.matches(substr(token.text, 0, j)) {
-						continue
-					}
-				}
-
-				if len(newTokens) == 0 {
-					newTokens = mergeTokenGroups(languageArg, r.phoneticRules)
-					if len(newTokens) != 0 {
-						found = true
-						break
-					}
-				} else {
-					if rr := mergeTokenGroups(languageArg, newTokens, r.phoneticRules); len(rr) != 0 {
+				var rr []phonetic
+				rr, applied, offset = r.applyTo(token.text, languageArg, j)
+				if applied {
+					if len(newTokens) == 0 {
 						newTokens = rr
-						found = true
-						break
+					} else {
+						newTokens = mergeTokenGroups(languageArg, newTokens, rr)
 					}
+					break
 				}
 			}
 
-			if !found {
+			if !applied {
 				for k := range newTokens {
 					newTokens[k].text += string(tokenRunes[j])
 				}
-				j++
-			} else {
-				j += patternLength
 			}
+			j += offset
 		}
 
 		result = append(result, newTokens...)
@@ -288,8 +267,8 @@ func substrFrom(s string, start int) string {
 	return string([]rune(s)[start:])
 }
 
-func indexAt(s, sep string, n int) int {
-	return n + strings.Index(s[n:], sep)
+func substrTo(s string, end int) string {
+	return string([]rune(s)[:end])
 }
 
 func getRules(
