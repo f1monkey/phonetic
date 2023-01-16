@@ -2,7 +2,6 @@ package beidermorse
 
 import (
 	"fmt"
-	"strings"
 )
 
 var ErrInvalidMode = fmt.Errorf("invalid name mode")
@@ -40,9 +39,14 @@ func MustNewEncoder(opts ...EncoderOption) *Encoder {
 
 // Encode transform a passed string to a slice of phonetic tokens
 func (e *Encoder) Encode(input string) []string {
-	result := phonetic(input, e.mode, e.ruleset, detectLang(input, e.mode), false)
-	result = phoneticNumbers(result)
-	return strings.Fields(result)
+	tokens := makeTokens(input, e.mode, e.ruleset, detectLang(input, e.mode), false)
+
+	result := make([]string, len(tokens))
+	for i, t := range tokens {
+		result[i] = t.text
+	}
+
+	return result
 }
 
 // SetOption set encoder option. Method is not safe for concurrent usage

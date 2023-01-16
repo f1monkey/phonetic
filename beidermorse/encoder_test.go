@@ -1,6 +1,7 @@
 package beidermorse
 
 import (
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/require"
@@ -36,14 +37,12 @@ func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
 
 func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
-		name     string
 		mode     Mode
 		ruleset  Ruleset
 		input    string
 		expected []string
 	}{
 		{
-			name:    "en_generic_approx",
 			mode:    Generic,
 			ruleset: Approx,
 			input:   "orange",
@@ -69,7 +68,6 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			name:    "en_generic_exact",
 			mode:    Generic,
 			ruleset: Exact,
 			input:   "orange",
@@ -83,7 +81,29 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			name:    "en_generic_approx",
+			mode:    Generic,
+			ruleset: Exact,
+			input:   "van der orange",
+			expected: []string{
+				"orange",
+				"oranxe",
+				"oranhe",
+				"oranje",
+				"oranZe",
+				"orandZe",
+				"vanderorange",
+				"vanderoranxe",
+				"vanderoranhe",
+				"vanderoranje",
+				"vanderoranZe",
+				"vanderorandZe",
+				"fanderorange",
+				"banderorange",
+				"banderoranxe",
+				"banderorandZe",
+			},
+		},
+		{
 			mode:    Generic,
 			ruleset: Approx,
 			input:   "test",
@@ -96,7 +116,6 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			name:    "en_generic_exact",
 			mode:    Generic,
 			ruleset: Exact,
 			input:   "test",
@@ -106,14 +125,12 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			name:     "ru_generic_exact",
 			mode:     Generic,
 			ruleset:  Exact,
 			input:    "апельсин",
 			expected: []string{"apelsin"},
 		},
 		{
-			name:    "ru_generic_approx",
 			mode:    Generic,
 			ruleset: Approx,
 			input:   "апельсин",
@@ -127,14 +144,12 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			name:     "ru_ashkenazi_exact",
 			mode:     Ashkenazi,
 			ruleset:  Exact,
 			input:    "апельсин",
 			expected: []string{"apelsin"},
 		},
 		{
-			name:    "ru_ashkenazi_approx",
 			mode:    Ashkenazi,
 			ruleset: Approx,
 			input:   "апельсин",
@@ -147,24 +162,24 @@ func Test_Encoder_Encode(t *testing.T) {
 				"oplzn",
 			},
 		},
+
+		// this behavior is different from the behavior of the original library
 		{
-			name:     "ru_sephardic_exact",
 			mode:     Sephardic,
 			ruleset:  Exact,
 			input:    "апельсин",
-			expected: []string{},
+			expected: []string{"апельсин"},
 		},
 		{
-			name:     "ru_sephardic_approx",
 			mode:     Sephardic,
 			ruleset:  Approx,
 			input:    "апельсин",
-			expected: []string{},
+			expected: []string{"апельсин"},
 		},
 	}
 
 	for _, c := range cases {
-		t.Run(c.name, func(t *testing.T) {
+		t.Run(fmt.Sprintf("%s-%s-%s", c.mode, c.ruleset, c.input), func(t *testing.T) {
 			e, err := NewEncoder(WithNameMode(c.mode), WithRuleset(c.ruleset))
 			require.NoError(t, err)
 			require.Equal(t, c.expected, e.Encode(c.input))
