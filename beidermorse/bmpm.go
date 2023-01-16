@@ -53,38 +53,39 @@ func detectLang(word string, mode Mode) languageID {
 var firstList = []string{"de la", "van der", "van den"}
 
 func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) []phonetic {
-	input = prepareInput(input, mode)
+	input = prepareInput(input, mode) // returns at max two words
 
-	rules, final1, final2, _ := getRules(mode, ruleset, lang)
+	rules, final1, final2, discards := getRules(mode, ruleset, lang)
 
-	// @todo multiword
 	// process a multiword name of form X Y
-	// if space := strings.Index(input, " "); space != -1 { // number of words is exactly two
-	// 	if concat { // exact matches
-	// 		// X Y => XY
-	// 		input = strings.ReplaceAll(input, " ", "") // concatenate the separate words of a name
-	// 	} else { // number of words is exactly two
-	// 		word1 := substr(input, 0, space)
-	// 		word2 := substrFrom(input, space+1)
-	// 		if inArray(discards, word1) {
-	// 			// X Y => Y and XY
-	// 			results := redoLanguage(word2, mode, ruleset, concat)
-	// 			results += "-" + redoLanguage(word1+word2, mode, ruleset, concat)
-	// 			return results
-	// 		} else { // first word is not in list
-	// 			// X Y => X, Y, and XY
-	// 			results := redoLanguage(word1, mode, ruleset, concat)
-	// 			results += "-" + redoLanguage(word2, mode, ruleset, concat)
-	// 			results += "-" + redoLanguage(word1+word2, mode, ruleset, concat)
-	// 			return results
-	// 		}
-	// 	}
-	// }
+	if space := strings.Index(input, " "); space != -1 { // number of words is exactly two
+		if concat { // exact matches
+			// X Y => XY
+			input = strings.ReplaceAll(input, " ", "") // concatenate the separate words of a name
+		} else { // number of words is exactly two
+			word1 := substr(input, 0, space)
+			word2 := substrFrom(input, space+1)
+			if inArray(discards, word1) {
+				// X Y => Y and XY
+				results := redoLanguage(word2, mode, ruleset, concat)
+				results = append(results, redoLanguage(word1+word2, mode, ruleset, concat)...)
+				return results
+			} else { // first word is not in list
+				// X Y => X, Y, and XY
+				results := redoLanguage(word1, mode, ruleset, concat)
+				results = append(results, redoLanguage(word2, mode, ruleset, concat)...)
+				results = append(results, redoLanguage(word1+word2, mode, ruleset, concat)...)
+				return results
+			}
+		}
+	}
 
-	result := applyRules([]phonetic{{text: input, langs: lang}}, rules, lang, false) // apply main set of rules
-
-	result = applyRules(result, final1, lang, false) // apply common final rules
-	result = applyRules(result, final2, lang, true)  // apply lang specific final rules
+	// apply main set of rules
+	result := applyRules([]phonetic{{text: input, langs: lang}}, rules, lang, false)
+	// apply common final rules
+	result = applyRules(result, final1, lang, false)
+	// apply lang specific final rules
+	result = applyRules(result, final2, lang, true)
 
 	return result
 }
