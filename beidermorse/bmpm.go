@@ -7,8 +7,6 @@ import (
 	"unicode/utf8"
 )
 
-const langAny = 1
-
 func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) tokens {
 	// we can do a better job of determining the language now that multiple names have been split
 	languageArg := detectLang(input, mode)
