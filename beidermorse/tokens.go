@@ -1,5 +1,7 @@
 package beidermorse
 
+import "strconv"
+
 type languageID int64
 
 const (
@@ -56,6 +58,22 @@ func (t tokens) merge(lang languageID, src ...tokens) tokens {
 		}
 		result = newResult
 		i++
+	}
+
+	return result
+}
+
+func (t tokens) deduplicate() tokens {
+	result := make(tokens, 0, len(t))
+	uniq := make(map[string]struct{}, len(t))
+
+	for _, t := range t {
+		key := strconv.Itoa(int(t.langs)) + "_" + t.text
+		if _, ok := uniq[key]; ok {
+			continue
+		}
+		uniq[key] = struct{}{}
+		result = append(result, t)
 	}
 
 	return result

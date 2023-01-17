@@ -2,7 +2,6 @@ package beidermorse
 
 import (
 	"math/bits"
-	"strconv"
 	"strings"
 	"unicode/utf8"
 )
@@ -164,23 +163,7 @@ func applyRules(input tokens, rules []rule, lang languageID, ignoreLangs bool) t
 		}
 	}
 
-	return dedupTokens(result)
-}
-
-func dedupTokens(src tokens) tokens {
-	result := make(tokens, 0, len(src))
-	uniq := make(map[string]struct{}, len(src))
-
-	for _, t := range src {
-		key := strconv.Itoa(int(t.langs)) + "_" + t.text
-		if _, ok := uniq[key]; ok {
-			continue
-		}
-		uniq[key] = struct{}{}
-		result = append(result, t)
-	}
-
-	return result
+	return result.deduplicate()
 }
 
 func inArray[T comparable](data []T, value T) bool {
