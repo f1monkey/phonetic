@@ -3,7 +3,6 @@ package beidermorse
 import (
 	"regexp"
 	"strings"
-	"unicode/utf8"
 )
 
 // Mode which name mode to use for matching
@@ -38,15 +37,16 @@ type rule struct {
 	phoneticRules tokens
 }
 
-func (r rule) applyTo(input string, position int) (result []token, applied bool, offset int) {
+func (r rule) applyTo(input string, position int) (result []token, offset int) {
 	patternLength := len([]rune(r.pattern))
+	inputLength := len([]rune(input))
 	offset = 1
 
 	if len(r.phoneticRules) == 0 {
 		return
 	}
 
-	if patternLength > utf8.RuneCountInString(input)-position || substr(input, position, patternLength) != r.pattern { // no match
+	if patternLength > inputLength-position || substr(input, position, patternLength) != r.pattern { // no match
 		return
 	}
 
@@ -63,7 +63,6 @@ func (r rule) applyTo(input string, position int) (result []token, applied bool,
 	}
 
 	result = r.phoneticRules
-	applied = true
 	offset = patternLength
 
 	return

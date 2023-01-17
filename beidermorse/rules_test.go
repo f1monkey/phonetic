@@ -74,13 +74,12 @@ func Test_rules_applyTo(t *testing.T) {
 	}
 
 	cases := []struct {
-		name            string
-		rule            rule
-		input           string
-		position        int
-		expectedResult  []token
-		expectedApplied bool
-		expectedOffset  int
+		name           string
+		rule           rule
+		input          string
+		position       int
+		expectedResult []token
+		expectedOffset int
 	}{
 		{
 			name:     "applied",
@@ -96,8 +95,7 @@ func Test_rules_applyTo(t *testing.T) {
 				{text: "Ze", langs: 32832},
 				{text: "dZe", langs: 331808},
 			},
-			expectedApplied: true,
-			expectedOffset:  2,
+			expectedOffset: 2,
 		},
 		{
 			name:     "not applied",
@@ -105,17 +103,15 @@ func Test_rules_applyTo(t *testing.T) {
 			input:    "orange",
 			position: 2,
 
-			expectedResult:  nil,
-			expectedApplied: false,
-			expectedOffset:  1,
+			expectedResult: nil,
+			expectedOffset: 1,
 		},
 	}
 
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
-			result, applied, offset := c.rule.applyTo(c.input, c.position)
+			result, offset := c.rule.applyTo(c.input, c.position)
 			assert.Equal(t, c.expectedResult, result)
-			assert.Equal(t, c.expectedApplied, applied)
 			assert.Equal(t, c.expectedOffset, offset)
 		})
 	}

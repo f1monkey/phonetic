@@ -135,8 +135,9 @@ func applyRules(input tokens, rules []rule, lang languageID, ignoreLangs bool) t
 
 			for _, r := range rules {
 				var rr tokens
-				rr, applied, offset = r.applyTo(tok.text, j)
-				if applied {
+				rr, offset = r.applyTo(tok.text, j)
+				if len(rr) > 0 {
+					applied = true
 					if len(newTokens) == 0 {
 						newTokens = rr
 					} else {
