@@ -1,6 +1,6 @@
 package beidermorse
 
-import "strconv"
+import "golang.org/x/exp/slices"
 
 type languageID int64
 
@@ -64,17 +64,17 @@ func (t tokens) merge(lang languageID, src ...tokens) tokens {
 }
 
 func (t tokens) deduplicate() tokens {
-	result := make(tokens, 0, len(t))
-	uniq := make(map[string]struct{}, len(t))
+	uniq := make(map[token]struct{}, len(t))
 
-	for _, t := range t {
-		key := strconv.Itoa(int(t.langs)) + "_" + t.text
-		if _, ok := uniq[key]; ok {
+	for i := 0; i < len(t); i++ {
+		if _, ok := uniq[t[i]]; !ok {
+			uniq[t[i]] = struct{}{}
 			continue
 		}
-		uniq[key] = struct{}{}
-		result = append(result, t)
+
+		t = slices.Delete(t, i, i+1)
+		i--
 	}
 
-	return result
+	return t
 }
