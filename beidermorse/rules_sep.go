@@ -38,12 +38,11 @@ const sepAll = sepfrench +
 	sepportuguese +
 	sepspanish
 
-var sepRules = map[sepLang][]rule{
-	sepany: []rule{
+var sepRules = map[sepLang]rules{
+	sepany: rules{
 		{
-			pattern:  "ph",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "ph",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -51,9 +50,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "sh",
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			pattern: "sh",
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -61,9 +59,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "kh",
-			phonetic: "x",
-			phoneticRules: []phonetic{
+			pattern: "kh",
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: -1,
@@ -71,9 +68,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "gli",
-			phonetic: "(gli|l[8])",
-			phoneticRules: []phonetic{
+			pattern: "gli",
+			phoneticRules: []token{
 				{
 					text:  "gli",
 					langs: -1,
@@ -85,9 +81,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "gni",
-			phonetic: "(gni|ni[10])",
-			phoneticRules: []phonetic{
+			pattern: "gni",
+			phoneticRules: []token{
 				{
 					text:  "gni",
 					langs: -1,
@@ -107,8 +102,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "(n[10]|nj[10]|gn)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: 10,
@@ -124,9 +118,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "gh",
-			phonetic: "(g|gh)",
-			phoneticRules: []phonetic{
+			pattern: "gh",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -138,9 +131,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "dh",
-			phonetic: "(d|dh)",
-			phoneticRules: []phonetic{
+			pattern: "dh",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -152,9 +144,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "bh",
-			phonetic: "(b|bh)",
-			phoneticRules: []phonetic{
+			pattern: "bh",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -166,9 +157,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "th",
-			phonetic: "(t|th)",
-			phoneticRules: []phonetic{
+			pattern: "th",
+			phoneticRules: []token{
 				{
 					text:  "t",
 					langs: -1,
@@ -180,9 +170,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "lh",
-			phonetic: "(l[16]|lh)",
-			phoneticRules: []phonetic{
+			pattern: "lh",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: 16,
@@ -194,9 +183,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "nh",
-			phonetic: "(n[16]|nh)",
-			phoneticRules: []phonetic{
+			pattern: "nh",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: 16,
@@ -216,8 +204,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "(ig|tS[32])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "ig",
 					langs: -1,
@@ -237,8 +224,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -246,9 +232,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "tx",
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			pattern: "tx",
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -263,8 +248,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -272,9 +256,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "tj",
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			pattern: "tj",
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -282,9 +265,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "tg",
-			phonetic: "(tg|dZ[32])",
-			phoneticRules: []phonetic{
+			pattern: "tg",
+			phoneticRules: []token{
 				{
 					text:  "tg",
 					langs: -1,
@@ -304,8 +286,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -320,8 +301,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "y",
 				suffix:           "",
 			},
-			phonetic: "Z",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -337,8 +317,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(gZ[18]|dZ[40]|x[32])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "gZ",
 					langs: 18,
@@ -362,8 +341,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(Z[18]|dZ[40]|x[32])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: 18,
@@ -379,9 +357,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "guy",
-			phonetic: "gi",
-			phoneticRules: []phonetic{
+			pattern: "guy",
+			phoneticRules: []token{
 				{
 					text:  "gi",
 					langs: -1,
@@ -396,8 +373,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k[2]|ge)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: 2,
@@ -417,8 +393,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(g|gv)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -438,8 +413,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "gv",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "gv",
 					langs: -1,
@@ -447,9 +421,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ñ",
-			phonetic: "(n|nj)",
-			phoneticRules: []phonetic{
+			pattern: "ñ",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -461,9 +434,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ny",
-			phonetic: "nj",
-			phoneticRules: []phonetic{
+			pattern: "ny",
+			phoneticRules: []token{
 				{
 					text:  "nj",
 					langs: -1,
@@ -479,8 +451,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(s|S[8])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -500,8 +471,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -509,9 +479,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ss",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -519,9 +488,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ç",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -537,8 +505,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(k[8]|S[18]|tS[32]|dZ[32])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: 8,
@@ -558,9 +525,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "(S|tS[32]|dZ[32])",
-			phoneticRules: []phonetic{
+			pattern: "ch",
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -584,8 +550,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "(tS[8]|si)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: 8,
@@ -605,8 +570,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
-			phonetic: "(tS[8]|ks[50])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: 8,
@@ -626,8 +590,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
-			phonetic: "(tS[8]|s[50])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: 8,
@@ -646,8 +609,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -670,8 +632,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "(s[32]|z[26])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: 32,
@@ -691,8 +652,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
-			phonetic: "(z|s|Z[16])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -715,8 +675,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(s|ts[8]|S[16])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -740,8 +699,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bdgv]"),
 			},
-			phonetic: "(z|dz[8]|Z[16])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -765,8 +723,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ptckf]"),
 			},
-			phonetic: "(s|ts[8]|S[16])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -782,9 +739,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "(z|dz[8]|ts[8]|s[32])",
-			phoneticRules: []phonetic{
+			pattern: "z",
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -811,8 +767,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(k[2]|ke)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: 2,
@@ -832,8 +787,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -849,8 +803,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "(kv|k)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "kv",
 					langs: -1,
@@ -870,8 +823,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "(ez[16]|eS[16]|eks|egz)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "ez",
 					langs: 16,
@@ -899,8 +851,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[cs]"),
 			},
-			phonetic: "(e[16]|ek)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: 16,
@@ -920,8 +871,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[cdglnrst]"),
 			},
-			phonetic: "(m|n[16])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -941,8 +891,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bfpv]"),
 			},
-			phonetic: "(m|n[48])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -961,8 +910,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(m|n[16])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -981,8 +929,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(b|V[32])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -1001,8 +948,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(v|B[32])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1014,9 +960,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "eau",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "eau",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -1032,8 +977,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			phonetic: "(v[2]|uh)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: 2,
@@ -1053,8 +997,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			phonetic: "(v|uh)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1074,8 +1017,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1083,9 +1025,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
-			phoneticRules: []phonetic{
+			pattern: "uo",
+			phoneticRules: []token{
 				{
 					text:  "vo",
 					langs: -1,
@@ -1105,8 +1046,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aie]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1122,8 +1062,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuoóeéê]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -1139,8 +1078,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -1156,8 +1094,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéê]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -1173,8 +1110,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiíou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -1189,8 +1125,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(e|[2])",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -1202,9 +1137,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ão",
-			phonetic: "(au|an)",
-			phoneticRules: []phonetic{
+			pattern: "ão",
+			phoneticRules: []token{
 				{
 					text:  "au",
 					langs: -1,
@@ -1216,9 +1150,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãe",
-			phonetic: "(aj|an)",
-			phoneticRules: []phonetic{
+			pattern: "ãe",
+			phoneticRules: []token{
 				{
 					text:  "aj",
 					langs: -1,
@@ -1230,9 +1163,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãi",
-			phonetic: "(aj|an)",
-			phoneticRules: []phonetic{
+			pattern: "ãi",
+			phoneticRules: []token{
 				{
 					text:  "aj",
 					langs: -1,
@@ -1244,9 +1176,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "õe",
-			phonetic: "(oj|on)",
-			phoneticRules: []phonetic{
+			pattern: "õe",
+			phoneticRules: []token{
 				{
 					text:  "oj",
 					langs: -1,
@@ -1258,9 +1189,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "où",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "où",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -1268,9 +1198,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "(ou|u[2])",
-			phoneticRules: []phonetic{
+			pattern: "ou",
+			phoneticRules: []token{
 				{
 					text:  "ou",
 					langs: -1,
@@ -1282,9 +1211,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "â",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "â",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -1292,9 +1220,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "à",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -1302,9 +1229,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "á",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -1312,9 +1238,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ã",
-			phonetic: "(a|an)",
-			phoneticRules: []phonetic{
+			pattern: "ã",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -1326,9 +1251,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "é",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -1336,9 +1260,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ê",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "ê",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -1346,9 +1269,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "è",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "è",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -1356,9 +1278,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "í",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -1366,9 +1287,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "î",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "î",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -1376,9 +1296,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ô",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ô",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -1386,9 +1305,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ó",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -1396,9 +1314,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "õ",
-			phonetic: "(o|on)",
-			phoneticRules: []phonetic{
+			pattern: "õ",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -1410,9 +1327,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ò",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ò",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -1420,9 +1336,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "ú",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -1430,9 +1345,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "ü",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -1440,9 +1354,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "a",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -1450,9 +1363,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "(b|v[32])",
-			phoneticRules: []phonetic{
+			pattern: "b",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -1464,9 +1376,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "c",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1474,9 +1385,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
-			phoneticRules: []phonetic{
+			pattern: "d",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -1484,9 +1394,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "e",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -1494,9 +1403,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "f",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -1504,9 +1412,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			pattern: "g",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -1514,9 +1421,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
-			phoneticRules: []phonetic{
+			pattern: "h",
+			phoneticRules: []token{
 				{
 					text:  "h",
 					langs: -1,
@@ -1524,9 +1430,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "i",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -1534,9 +1439,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(x[32]|Z)",
-			phoneticRules: []phonetic{
+			pattern: "j",
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: 32,
@@ -1548,9 +1452,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "k",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1558,9 +1461,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "l",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -1568,9 +1470,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "m",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -1578,9 +1479,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "n",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -1588,9 +1488,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "o",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -1598,9 +1497,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
-			phoneticRules: []phonetic{
+			pattern: "p",
+			phoneticRules: []token{
 				{
 					text:  "p",
 					langs: -1,
@@ -1608,9 +1506,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "q",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1618,9 +1515,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
-			phoneticRules: []phonetic{
+			pattern: "r",
+			phoneticRules: []token{
 				{
 					text:  "r",
 					langs: -1,
@@ -1628,9 +1524,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "(s|S[16])",
-			phoneticRules: []phonetic{
+			pattern: "s",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -1642,9 +1537,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
-			phoneticRules: []phonetic{
+			pattern: "t",
+			phoneticRules: []token{
 				{
 					text:  "t",
 					langs: -1,
@@ -1652,9 +1546,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "u",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -1662,9 +1555,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "(v|b[32])",
-			phoneticRules: []phonetic{
+			pattern: "v",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1676,9 +1568,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "w",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1686,9 +1577,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "(ks|gz|S[48])",
-			phoneticRules: []phonetic{
+			pattern: "x",
+			phoneticRules: []token{
 				{
 					text:  "ks",
 					langs: -1,
@@ -1704,9 +1594,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "y",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -1714,9 +1603,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			pattern: "z",
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -1724,11 +1612,10 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepfrench: []rule{
+	sepfrench: rules{
 		{
-			pattern:  "kh",
-			phonetic: "x",
-			phoneticRules: []phonetic{
+			pattern: "kh",
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: -1,
@@ -1736,9 +1623,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ph",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "ph",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -1746,9 +1632,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ç",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -1756,9 +1641,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
-			phoneticRules: []phonetic{
+			pattern: "x",
+			phoneticRules: []token{
 				{
 					text:  "ks",
 					langs: -1,
@@ -1766,9 +1650,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			pattern: "ch",
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -1784,8 +1667,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -1793,9 +1675,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "c",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1803,9 +1684,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "gn",
-			phonetic: "(n|gn)",
-			phoneticRules: []phonetic{
+			pattern: "gn",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -1825,8 +1705,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			phonetic: "Z",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -1841,8 +1720,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1858,8 +1736,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -1874,8 +1751,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1883,9 +1759,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "qu",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1893,9 +1768,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "q",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -1918,8 +1792,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouyéèê]"),
 			},
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -1927,9 +1800,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ss",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -1945,8 +1817,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			phonetic: "",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "",
 					langs: -1,
@@ -1961,8 +1832,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "",
 					langs: -1,
@@ -1970,9 +1840,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "Z",
-			phoneticRules: []phonetic{
+			pattern: "j",
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -1980,9 +1849,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "w",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -1998,8 +1866,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			phonetic: "(v|uh)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -2019,8 +1886,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -2028,9 +1894,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
-			phoneticRules: []phonetic{
+			pattern: "uo",
+			phoneticRules: []token{
 				{
 					text:  "vo",
 					langs: -1,
@@ -2050,8 +1915,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -2059,9 +1923,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
-			phoneticRules: []phonetic{
+			pattern: "aue",
+			phoneticRules: []token{
 				{
 					text:  "aue",
 					langs: -1,
@@ -2069,9 +1932,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "eau",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "eau",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -2079,9 +1941,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ai",
-			phonetic: "aj",
-			phoneticRules: []phonetic{
+			pattern: "ai",
+			phoneticRules: []token{
 				{
 					text:  "aj",
 					langs: -1,
@@ -2089,9 +1950,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ay",
-			phonetic: "aj",
-			phoneticRules: []phonetic{
+			pattern: "ay",
+			phoneticRules: []token{
 				{
 					text:  "aj",
 					langs: -1,
@@ -2099,9 +1959,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "é",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -2109,9 +1968,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ê",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "ê",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -2119,9 +1977,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "è",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "è",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -2129,9 +1986,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "à",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -2139,9 +1995,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "â",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "â",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -2149,9 +2004,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "où",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "où",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -2159,9 +2013,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ou",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "ou",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -2169,9 +2022,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "oi",
-			phonetic: "oj",
-			phoneticRules: []phonetic{
+			pattern: "oi",
+			phoneticRules: []token{
 				{
 					text:  "oj",
 					langs: -1,
@@ -2179,9 +2031,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ei",
-			phonetic: "ej",
-			phoneticRules: []phonetic{
+			pattern: "ei",
+			phoneticRules: []token{
 				{
 					text:  "ej",
 					langs: -1,
@@ -2189,9 +2040,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ey",
-			phonetic: "ej",
-			phoneticRules: []phonetic{
+			pattern: "ey",
+			phoneticRules: []token{
 				{
 					text:  "ej",
 					langs: -1,
@@ -2207,8 +2057,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[ou]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -2223,8 +2072,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(e|)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -2244,8 +2092,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -2261,8 +2108,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aoeu]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -2270,9 +2116,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "y",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -2280,9 +2125,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "a",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -2290,9 +2134,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
-			phoneticRules: []phonetic{
+			pattern: "b",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -2300,9 +2143,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
-			phoneticRules: []phonetic{
+			pattern: "d",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -2310,9 +2152,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "e",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -2320,9 +2161,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "f",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -2330,9 +2170,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			pattern: "g",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -2340,9 +2179,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
-			phoneticRules: []phonetic{
+			pattern: "h",
+			phoneticRules: []token{
 				{
 					text:  "h",
 					langs: -1,
@@ -2350,9 +2188,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "i",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -2360,9 +2197,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "k",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -2370,9 +2206,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "l",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -2380,9 +2215,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "m",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -2390,9 +2224,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "n",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -2400,9 +2233,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "o",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -2410,9 +2242,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
-			phoneticRules: []phonetic{
+			pattern: "p",
+			phoneticRules: []token{
 				{
 					text:  "p",
 					langs: -1,
@@ -2420,9 +2251,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
-			phoneticRules: []phonetic{
+			pattern: "r",
+			phoneticRules: []token{
 				{
 					text:  "r",
 					langs: -1,
@@ -2430,9 +2260,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "s",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -2440,9 +2269,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
-			phoneticRules: []phonetic{
+			pattern: "t",
+			phoneticRules: []token{
 				{
 					text:  "t",
 					langs: -1,
@@ -2450,9 +2278,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "u",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -2460,9 +2287,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "v",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -2470,9 +2296,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			pattern: "z",
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -2480,11 +2305,10 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sephebrew: []rule{
+	sephebrew: rules{
 		{
-			pattern:  "אי",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "אי",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -2492,9 +2316,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "עי",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "עי",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -2502,9 +2325,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "עו",
-			phonetic: "VV",
-			phoneticRules: []phonetic{
+			pattern: "עו",
+			phoneticRules: []token{
 				{
 					text:  "VV",
 					langs: -1,
@@ -2512,9 +2334,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "או",
-			phonetic: "VV",
-			phoneticRules: []phonetic{
+			pattern: "או",
+			phoneticRules: []token{
 				{
 					text:  "VV",
 					langs: -1,
@@ -2522,9 +2343,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ג׳",
-			phonetic: "Z",
-			phoneticRules: []phonetic{
+			pattern: "ג׳",
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -2532,9 +2352,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ד׳",
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			pattern: "ד׳",
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -2542,9 +2361,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "א",
-			phonetic: "L",
-			phoneticRules: []phonetic{
+			pattern: "א",
+			phoneticRules: []token{
 				{
 					text:  "L",
 					langs: -1,
@@ -2552,9 +2370,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ב",
-			phonetic: "b",
-			phoneticRules: []phonetic{
+			pattern: "ב",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -2562,9 +2379,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ג",
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			pattern: "ג",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -2572,9 +2388,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ד",
-			phonetic: "d",
-			phoneticRules: []phonetic{
+			pattern: "ד",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -2589,8 +2404,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "1",
 					langs: -1,
@@ -2605,8 +2419,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "1",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "1",
 					langs: -1,
@@ -2614,9 +2427,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ה",
-			phonetic: "",
-			phoneticRules: []phonetic{
+			pattern: "ה",
+			phoneticRules: []token{
 				{
 					text:  "",
 					langs: -1,
@@ -2624,9 +2436,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "וו",
-			phonetic: "V",
-			phoneticRules: []phonetic{
+			pattern: "וו",
+			phoneticRules: []token{
 				{
 					text:  "V",
 					langs: -1,
@@ -2634,9 +2445,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "וי",
-			phonetic: "WW",
-			phoneticRules: []phonetic{
+			pattern: "וי",
+			phoneticRules: []token{
 				{
 					text:  "WW",
 					langs: -1,
@@ -2644,9 +2454,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ו",
-			phonetic: "W",
-			phoneticRules: []phonetic{
+			pattern: "ו",
+			phoneticRules: []token{
 				{
 					text:  "W",
 					langs: -1,
@@ -2654,9 +2463,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ז",
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			pattern: "ז",
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -2664,9 +2472,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ח",
-			phonetic: "X",
-			phoneticRules: []phonetic{
+			pattern: "ח",
+			phoneticRules: []token{
 				{
 					text:  "X",
 					langs: -1,
@@ -2674,9 +2481,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ט",
-			phonetic: "T",
-			phoneticRules: []phonetic{
+			pattern: "ט",
+			phoneticRules: []token{
 				{
 					text:  "T",
 					langs: -1,
@@ -2684,9 +2490,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "יי",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "יי",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -2694,9 +2499,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "י",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "י",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -2704,9 +2508,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ך",
-			phonetic: "X",
-			phoneticRules: []phonetic{
+			pattern: "ך",
+			phoneticRules: []token{
 				{
 					text:  "X",
 					langs: -1,
@@ -2721,8 +2524,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "K",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "K",
 					langs: -1,
@@ -2730,9 +2532,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "כ",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "כ",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -2740,9 +2541,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ל",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "ל",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -2750,9 +2550,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ם",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "ם",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -2760,9 +2559,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "מ",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "מ",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -2770,9 +2568,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ן",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "ן",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -2780,9 +2577,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "נ",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "נ",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -2790,9 +2586,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ס",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ס",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -2800,9 +2595,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ע",
-			phonetic: "L",
-			phoneticRules: []phonetic{
+			pattern: "ע",
+			phoneticRules: []token{
 				{
 					text:  "L",
 					langs: -1,
@@ -2810,9 +2604,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ף",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "ף",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -2820,9 +2613,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "פ",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "פ",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -2830,9 +2622,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ץ",
-			phonetic: "C",
-			phoneticRules: []phonetic{
+			pattern: "ץ",
+			phoneticRules: []token{
 				{
 					text:  "C",
 					langs: -1,
@@ -2840,9 +2631,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "צ",
-			phonetic: "C",
-			phoneticRules: []phonetic{
+			pattern: "צ",
+			phoneticRules: []token{
 				{
 					text:  "C",
 					langs: -1,
@@ -2850,9 +2640,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ק",
-			phonetic: "K",
-			phoneticRules: []phonetic{
+			pattern: "ק",
+			phoneticRules: []token{
 				{
 					text:  "K",
 					langs: -1,
@@ -2860,9 +2649,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ר",
-			phonetic: "r",
-			phoneticRules: []phonetic{
+			pattern: "ר",
+			phoneticRules: []token{
 				{
 					text:  "r",
 					langs: -1,
@@ -2870,9 +2658,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ש",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ש",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -2880,9 +2667,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ת",
-			phonetic: "T",
-			phoneticRules: []phonetic{
+			pattern: "ת",
+			phoneticRules: []token{
 				{
 					text:  "T",
 					langs: -1,
@@ -2890,11 +2676,10 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepitalian: []rule{
+	sepitalian: rules{
 		{
-			pattern:  "kh",
-			phonetic: "x",
-			phoneticRules: []phonetic{
+			pattern: "kh",
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: -1,
@@ -2902,9 +2687,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "gli",
-			phonetic: "(l|gli)",
-			phoneticRules: []phonetic{
+			pattern: "gli",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -2924,8 +2708,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "(n|nj|gn)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -2941,9 +2724,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "gni",
-			phonetic: "(ni|gni)",
-			phoneticRules: []phonetic{
+			pattern: "gni",
+			phoneticRules: []token{
 				{
 					text:  "ni",
 					langs: -1,
@@ -2963,8 +2745,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -2980,8 +2761,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -2997,8 +2777,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -3014,8 +2793,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -3031,8 +2809,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -3048,8 +2825,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -3065,8 +2841,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -3082,8 +2857,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -3099,8 +2873,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -3123,8 +2896,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -3140,8 +2912,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -3157,8 +2928,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -3174,8 +2944,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -3191,8 +2960,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -3200,9 +2968,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "qu",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -3210,9 +2977,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
-			phoneticRules: []phonetic{
+			pattern: "uo",
+			phoneticRules: []token{
 				{
 					text:  "vo",
 					langs: -1,
@@ -3232,8 +2998,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -3241,9 +3006,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "�",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -3251,9 +3015,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "�",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -3261,9 +3024,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "�",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -3271,9 +3033,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "�",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "�",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -3281,9 +3042,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "a",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -3291,9 +3051,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
-			phoneticRules: []phonetic{
+			pattern: "b",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -3301,9 +3060,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "c",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -3311,9 +3069,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
-			phoneticRules: []phonetic{
+			pattern: "d",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -3321,9 +3078,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "e",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -3331,9 +3087,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "f",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -3341,9 +3096,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			pattern: "g",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -3351,9 +3105,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
-			phoneticRules: []phonetic{
+			pattern: "h",
+			phoneticRules: []token{
 				{
 					text:  "h",
 					langs: -1,
@@ -3361,9 +3114,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "i",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -3371,9 +3123,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(Z|dZ|j)",
-			phoneticRules: []phonetic{
+			pattern: "j",
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -3389,9 +3140,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "k",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -3399,9 +3149,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "l",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -3409,9 +3158,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "m",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -3419,9 +3167,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "n",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -3429,9 +3176,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "o",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -3439,9 +3185,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
-			phoneticRules: []phonetic{
+			pattern: "p",
+			phoneticRules: []token{
 				{
 					text:  "p",
 					langs: -1,
@@ -3449,9 +3194,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "q",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -3459,9 +3203,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
-			phoneticRules: []phonetic{
+			pattern: "r",
+			phoneticRules: []token{
 				{
 					text:  "r",
 					langs: -1,
@@ -3469,9 +3212,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "s",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3479,9 +3221,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
-			phoneticRules: []phonetic{
+			pattern: "t",
+			phoneticRules: []token{
 				{
 					text:  "t",
 					langs: -1,
@@ -3489,9 +3230,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "u",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -3499,9 +3239,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "v",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -3509,9 +3248,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "w",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -3519,9 +3257,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "ks",
-			phoneticRules: []phonetic{
+			pattern: "x",
+			phoneticRules: []token{
 				{
 					text:  "ks",
 					langs: -1,
@@ -3529,9 +3266,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "y",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -3539,9 +3275,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "(ts|dz)",
-			phoneticRules: []phonetic{
+			pattern: "z",
+			phoneticRules: []token{
 				{
 					text:  "ts",
 					langs: -1,
@@ -3553,11 +3288,10 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepportuguese: []rule{
+	sepportuguese: rules{
 		{
-			pattern:  "kh",
-			phonetic: "x",
-			phoneticRules: []phonetic{
+			pattern: "kh",
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: -1,
@@ -3565,9 +3299,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			pattern: "ch",
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -3575,9 +3308,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ss",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ss",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3593,8 +3325,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3610,8 +3341,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3619,9 +3349,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ç",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3637,8 +3366,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3653,8 +3381,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3677,8 +3404,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -3694,8 +3420,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
-			phonetic: "(Z|S)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -3714,8 +3439,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(Z|s|S)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -3739,8 +3463,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bdgv]"),
 			},
-			phonetic: "(Z|z)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -3760,8 +3483,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ptckf]"),
 			},
-			phonetic: "(s|S|z)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -3785,8 +3507,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -3802,8 +3523,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "gv",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "gv",
 					langs: -1,
@@ -3819,8 +3539,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "Z",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -3836,8 +3555,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -3853,8 +3571,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
-			phonetic: "kv",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "kv",
 					langs: -1,
@@ -3862,9 +3579,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o|u)",
-			phoneticRules: []phonetic{
+			pattern: "uo",
+			phoneticRules: []token{
 				{
 					text:  "vo",
 					langs: -1,
@@ -3888,8 +3604,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -3897,9 +3612,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "lh",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "lh",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -3907,9 +3621,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "nh",
-			phonetic: "nj",
-			phoneticRules: []phonetic{
+			pattern: "nh",
+			phoneticRules: []token{
 				{
 					text:  "nj",
 					langs: -1,
@@ -3925,8 +3638,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			phonetic: "",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "",
 					langs: -1,
@@ -3942,8 +3654,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
-			phonetic: "(ez|eS|eks)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "ez",
 					langs: -1,
@@ -3967,8 +3678,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[cs]"),
 			},
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -3984,8 +3694,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéê]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -4001,8 +3710,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiíou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -4018,8 +3726,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdfglnprstv]"),
 			},
-			phonetic: "(m|n)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -4038,8 +3745,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(m|n)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -4051,9 +3757,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ão",
-			phonetic: "(au|an|on)",
-			phoneticRules: []phonetic{
+			pattern: "ão",
+			phoneticRules: []token{
 				{
 					text:  "au",
 					langs: -1,
@@ -4069,9 +3774,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãe",
-			phonetic: "(aj|an)",
-			phoneticRules: []phonetic{
+			pattern: "ãe",
+			phoneticRules: []token{
 				{
 					text:  "aj",
 					langs: -1,
@@ -4083,9 +3787,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ãi",
-			phonetic: "(aj|an)",
-			phoneticRules: []phonetic{
+			pattern: "ãi",
+			phoneticRules: []token{
 				{
 					text:  "aj",
 					langs: -1,
@@ -4097,9 +3800,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "õe",
-			phonetic: "(oj|on)",
-			phoneticRules: []phonetic{
+			pattern: "õe",
+			phoneticRules: []token{
 				{
 					text:  "oj",
 					langs: -1,
@@ -4119,8 +3821,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuoóeéê]$"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -4136,8 +3837,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			phonetic: "j",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "j",
 					langs: -1,
@@ -4145,9 +3845,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "â",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "â",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -4155,9 +3854,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "à",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -4165,9 +3863,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "á",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -4175,9 +3872,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ã",
-			phonetic: "(a|an|on)",
-			phoneticRules: []phonetic{
+			pattern: "ã",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -4193,9 +3889,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "é",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -4203,9 +3898,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ê",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "ê",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -4213,9 +3907,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "í",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -4223,9 +3916,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ô",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ô",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -4233,9 +3925,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ó",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -4243,9 +3934,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "õ",
-			phonetic: "(o|on)",
-			phoneticRules: []phonetic{
+			pattern: "õ",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -4257,9 +3947,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "ú",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -4267,9 +3956,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "ü",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -4277,9 +3965,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "aue",
-			phonetic: "aue",
-			phoneticRules: []phonetic{
+			pattern: "aue",
+			phoneticRules: []token{
 				{
 					text:  "aue",
 					langs: -1,
@@ -4287,9 +3974,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "a",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -4297,9 +3983,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "b",
-			phoneticRules: []phonetic{
+			pattern: "b",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -4307,9 +3992,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "c",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -4317,9 +4001,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
-			phoneticRules: []phonetic{
+			pattern: "d",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -4327,9 +4010,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "(e|i)",
-			phoneticRules: []phonetic{
+			pattern: "e",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -4341,9 +4023,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "f",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -4351,9 +4032,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			pattern: "g",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -4361,9 +4041,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
-			phoneticRules: []phonetic{
+			pattern: "h",
+			phoneticRules: []token{
 				{
 					text:  "h",
 					langs: -1,
@@ -4371,9 +4050,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "i",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -4381,9 +4059,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "Z",
-			phoneticRules: []phonetic{
+			pattern: "j",
+			phoneticRules: []token{
 				{
 					text:  "Z",
 					langs: -1,
@@ -4391,9 +4068,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "k",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -4401,9 +4077,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "l",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -4411,9 +4086,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "m",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -4421,9 +4095,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "n",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -4431,9 +4104,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "(o|u)",
-			phoneticRules: []phonetic{
+			pattern: "o",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -4445,9 +4117,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
-			phoneticRules: []phonetic{
+			pattern: "p",
+			phoneticRules: []token{
 				{
 					text:  "p",
 					langs: -1,
@@ -4455,9 +4126,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "q",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -4465,9 +4135,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
-			phoneticRules: []phonetic{
+			pattern: "r",
+			phoneticRules: []token{
 				{
 					text:  "r",
 					langs: -1,
@@ -4475,9 +4144,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			pattern: "s",
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -4485,9 +4153,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
-			phoneticRules: []phonetic{
+			pattern: "t",
+			phoneticRules: []token{
 				{
 					text:  "t",
 					langs: -1,
@@ -4495,9 +4162,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "u",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -4505,9 +4171,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "v",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -4515,9 +4180,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "w",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -4525,9 +4189,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "(S|ks)",
-			phoneticRules: []phonetic{
+			pattern: "x",
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -4539,9 +4202,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "y",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -4549,9 +4211,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "z",
-			phoneticRules: []phonetic{
+			pattern: "z",
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -4559,11 +4220,10 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepspanish: []rule{
+	sepspanish: rules{
 		{
-			pattern:  "ñ",
-			phonetic: "(n|nj)",
-			phoneticRules: []phonetic{
+			pattern: "ñ",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -4575,9 +4235,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ny",
-			phonetic: "nj",
-			phoneticRules: []phonetic{
+			pattern: "ny",
+			phoneticRules: []token{
 				{
 					text:  "nj",
 					langs: -1,
@@ -4585,9 +4244,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ç",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "ç",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -4603,8 +4261,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "(tS|ig)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4624,8 +4281,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
-			phonetic: "S",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "S",
 					langs: -1,
@@ -4633,9 +4289,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "tx",
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			pattern: "tx",
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4650,8 +4305,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "tS",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4659,9 +4313,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "tj",
-			phonetic: "dZ",
-			phoneticRules: []phonetic{
+			pattern: "tj",
+			phoneticRules: []token{
 				{
 					text:  "dZ",
 					langs: -1,
@@ -4669,9 +4322,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "tg",
-			phonetic: "(tg|dZ)",
-			phoneticRules: []phonetic{
+			pattern: "tg",
+			phoneticRules: []token{
 				{
 					text:  "tg",
 					langs: -1,
@@ -4683,9 +4335,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ch",
-			phonetic: "(tS|dZ)",
-			phoneticRules: []phonetic{
+			pattern: "ch",
+			phoneticRules: []token{
 				{
 					text:  "tS",
 					langs: -1,
@@ -4697,9 +4348,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "bh",
-			phonetic: "b",
-			phoneticRules: []phonetic{
+			pattern: "bh",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -4715,8 +4365,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("[dgt]$"),
 			},
-			phonetic: "",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "",
 					langs: -1,
@@ -4724,9 +4373,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "j",
-			phonetic: "(x|Z)",
-			phoneticRules: []phonetic{
+			pattern: "j",
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: -1,
@@ -4738,9 +4386,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "x",
-			phonetic: "(ks|gz|S)",
-			phoneticRules: []phonetic{
+			pattern: "x",
+			phoneticRules: []token{
 				{
 					text:  "ks",
 					langs: -1,
@@ -4756,9 +4403,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "w",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "w",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -4773,8 +4419,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(B|v)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "B",
 					langs: -1,
@@ -4793,8 +4438,7 @@ var sepRules = map[sepLang][]rule{
 				prefix:           "",
 				suffix:           "",
 			},
-			phonetic: "(b|V)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -4806,9 +4450,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "v",
-			phonetic: "(b|v)",
-			phoneticRules: []phonetic{
+			pattern: "v",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -4820,9 +4463,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "b",
-			phonetic: "(b|v)",
-			phoneticRules: []phonetic{
+			pattern: "b",
+			phoneticRules: []token{
 				{
 					text:  "b",
 					langs: -1,
@@ -4842,8 +4484,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[bpvf]"),
 			},
-			phonetic: "(m|n)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -4863,8 +4504,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -4872,9 +4512,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "c",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "c",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -4882,9 +4521,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "z",
-			phonetic: "(z|s)",
-			phoneticRules: []phonetic{
+			pattern: "z",
+			phoneticRules: []token{
 				{
 					text:  "z",
 					langs: -1,
@@ -4904,8 +4542,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(g|gv)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -4925,8 +4562,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
-			phonetic: "(x|g|dZ)",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "x",
 					langs: -1,
@@ -4942,9 +4578,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "qu",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "qu",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -4952,9 +4587,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "q",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "q",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -4962,9 +4596,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "uo",
-			phonetic: "(vo|o)",
-			phoneticRules: []phonetic{
+			pattern: "uo",
+			phoneticRules: []token{
 				{
 					text:  "vo",
 					langs: -1,
@@ -4984,8 +4617,7 @@ var sepRules = map[sepLang][]rule{
 				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -4993,9 +4625,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "y",
-			phonetic: "(i|j)",
-			phoneticRules: []phonetic{
+			pattern: "y",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -5007,9 +4638,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ü",
-			phonetic: "v",
-			phoneticRules: []phonetic{
+			pattern: "ü",
+			phoneticRules: []token{
 				{
 					text:  "v",
 					langs: -1,
@@ -5017,9 +4647,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "á",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "á",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -5027,9 +4656,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "é",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "é",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -5037,9 +4665,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "í",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "í",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -5047,9 +4674,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ó",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ó",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -5057,9 +4683,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ú",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "ú",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -5067,9 +4692,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "à",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "à",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -5077,9 +4701,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "è",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "è",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -5087,9 +4710,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "ò",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "ò",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -5097,9 +4719,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "a",
-			phonetic: "a",
-			phoneticRules: []phonetic{
+			pattern: "a",
+			phoneticRules: []token{
 				{
 					text:  "a",
 					langs: -1,
@@ -5107,9 +4728,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "d",
-			phonetic: "d",
-			phoneticRules: []phonetic{
+			pattern: "d",
+			phoneticRules: []token{
 				{
 					text:  "d",
 					langs: -1,
@@ -5117,9 +4737,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "e",
-			phonetic: "e",
-			phoneticRules: []phonetic{
+			pattern: "e",
+			phoneticRules: []token{
 				{
 					text:  "e",
 					langs: -1,
@@ -5127,9 +4746,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "f",
-			phonetic: "f",
-			phoneticRules: []phonetic{
+			pattern: "f",
+			phoneticRules: []token{
 				{
 					text:  "f",
 					langs: -1,
@@ -5137,9 +4755,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "g",
-			phonetic: "g",
-			phoneticRules: []phonetic{
+			pattern: "g",
+			phoneticRules: []token{
 				{
 					text:  "g",
 					langs: -1,
@@ -5147,9 +4764,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "h",
-			phonetic: "h",
-			phoneticRules: []phonetic{
+			pattern: "h",
+			phoneticRules: []token{
 				{
 					text:  "h",
 					langs: -1,
@@ -5157,9 +4773,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "i",
-			phonetic: "i",
-			phoneticRules: []phonetic{
+			pattern: "i",
+			phoneticRules: []token{
 				{
 					text:  "i",
 					langs: -1,
@@ -5167,9 +4782,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "k",
-			phonetic: "k",
-			phoneticRules: []phonetic{
+			pattern: "k",
+			phoneticRules: []token{
 				{
 					text:  "k",
 					langs: -1,
@@ -5177,9 +4791,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "l",
-			phonetic: "l",
-			phoneticRules: []phonetic{
+			pattern: "l",
+			phoneticRules: []token{
 				{
 					text:  "l",
 					langs: -1,
@@ -5187,9 +4800,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "m",
-			phonetic: "m",
-			phoneticRules: []phonetic{
+			pattern: "m",
+			phoneticRules: []token{
 				{
 					text:  "m",
 					langs: -1,
@@ -5197,9 +4809,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "n",
-			phonetic: "n",
-			phoneticRules: []phonetic{
+			pattern: "n",
+			phoneticRules: []token{
 				{
 					text:  "n",
 					langs: -1,
@@ -5207,9 +4818,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "o",
-			phonetic: "o",
-			phoneticRules: []phonetic{
+			pattern: "o",
+			phoneticRules: []token{
 				{
 					text:  "o",
 					langs: -1,
@@ -5217,9 +4827,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "p",
-			phonetic: "p",
-			phoneticRules: []phonetic{
+			pattern: "p",
+			phoneticRules: []token{
 				{
 					text:  "p",
 					langs: -1,
@@ -5227,9 +4836,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "r",
-			phonetic: "r",
-			phoneticRules: []phonetic{
+			pattern: "r",
+			phoneticRules: []token{
 				{
 					text:  "r",
 					langs: -1,
@@ -5237,9 +4845,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "s",
-			phonetic: "s",
-			phoneticRules: []phonetic{
+			pattern: "s",
+			phoneticRules: []token{
 				{
 					text:  "s",
 					langs: -1,
@@ -5247,9 +4854,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "t",
-			phonetic: "t",
-			phoneticRules: []phonetic{
+			pattern: "t",
+			phoneticRules: []token{
 				{
 					text:  "t",
 					langs: -1,
@@ -5257,9 +4863,8 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 		{
-			pattern:  "u",
-			phonetic: "u",
-			phoneticRules: []phonetic{
+			pattern: "u",
+			phoneticRules: []token{
 				{
 					text:  "u",
 					langs: -1,
@@ -5994,7 +5599,7 @@ var sepLangRules = []langRule{
 
 var sepFinalRules = finalRules{
 	approx: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -6003,8 +5608,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6020,8 +5624,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				phonetic: "p",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "p",
 						langs: -1,
@@ -6036,8 +5639,7 @@ var sepFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6052,8 +5654,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "p",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "p",
 						langs: -1,
@@ -6069,8 +5670,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
-				phonetic: "b",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "b",
 						langs: -1,
@@ -6085,8 +5685,7 @@ var sepFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6102,8 +5701,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				phonetic: "f",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "f",
 						langs: -1,
@@ -6118,8 +5716,7 @@ var sepFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6134,8 +5731,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "f",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "f",
 						langs: -1,
@@ -6151,8 +5747,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
-				phonetic: "v",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "v",
 						langs: -1,
@@ -6167,8 +5762,7 @@ var sepFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6184,8 +5778,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				phonetic: "k",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "k",
 						langs: -1,
@@ -6200,8 +5793,7 @@ var sepFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6216,8 +5808,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "k",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "k",
 						langs: -1,
@@ -6233,8 +5824,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
-				phonetic: "g",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "g",
 						langs: -1,
@@ -6249,8 +5839,7 @@ var sepFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6266,8 +5855,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				phonetic: "t",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "t",
 						langs: -1,
@@ -6282,8 +5870,7 @@ var sepFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6298,8 +5885,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "t",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "t",
 						langs: -1,
@@ -6315,8 +5901,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
-				phonetic: "d",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "d",
 						langs: -1,
@@ -6331,8 +5916,7 @@ var sepFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6347,8 +5931,7 @@ var sepFinalRules = finalRules{
 					prefix:           "dZ",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6363,8 +5946,7 @@ var sepFinalRules = finalRules{
 					prefix:           "tS",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6380,8 +5962,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				phonetic: "s",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "s",
 						langs: -1,
@@ -6397,8 +5978,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6414,8 +5994,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6431,8 +6010,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6448,8 +6026,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6457,9 +6034,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "nm",
-				phonetic: "m",
-				phoneticRules: []phonetic{
+				pattern: "nm",
+				phoneticRules: []token{
 					{
 						text:  "m",
 						langs: -1,
@@ -6474,8 +6050,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "i",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -6490,8 +6065,7 @@ var sepFinalRules = finalRules{
 					prefix:           "a",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6506,8 +6080,7 @@ var sepFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6522,8 +6095,7 @@ var sepFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6538,8 +6110,7 @@ var sepFinalRules = finalRules{
 					prefix:           "e",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6554,8 +6125,7 @@ var sepFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6570,8 +6140,7 @@ var sepFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6586,8 +6155,7 @@ var sepFinalRules = finalRules{
 					prefix:           "i",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6602,8 +6170,7 @@ var sepFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6618,8 +6185,7 @@ var sepFinalRules = finalRules{
 					prefix:           "l",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6634,8 +6200,7 @@ var sepFinalRules = finalRules{
 					prefix:           "m",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6650,8 +6215,7 @@ var sepFinalRules = finalRules{
 					prefix:           "n",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6666,8 +6230,7 @@ var sepFinalRules = finalRules{
 					prefix:           "o",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6682,8 +6245,7 @@ var sepFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6698,8 +6260,7 @@ var sepFinalRules = finalRules{
 					prefix:           "r",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6714,8 +6275,7 @@ var sepFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6730,8 +6290,7 @@ var sepFinalRules = finalRules{
 					prefix:           "u",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6746,8 +6305,7 @@ var sepFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6762,8 +6320,7 @@ var sepFinalRules = finalRules{
 					prefix:           "z",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -6771,9 +6328,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "mbr",
-				phonetic: "mr",
-				phoneticRules: []phonetic{
+				pattern: "mbr",
+				phoneticRules: []token{
 					{
 						text:  "mr",
 						langs: -1,
@@ -6781,9 +6337,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "mpr",
-				phonetic: "mr",
-				phoneticRules: []phonetic{
+				pattern: "mpr",
+				phoneticRules: []token{
 					{
 						text:  "mr",
 						langs: -1,
@@ -6798,8 +6353,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(binz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "binz",
 						langs: -1,
@@ -6818,8 +6372,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(binz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "binz",
 						langs: -1,
@@ -6838,8 +6391,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bin|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bin",
 						langs: -1,
@@ -6858,8 +6410,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bar|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bar",
 						langs: -1,
@@ -6878,8 +6429,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(binz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "binz",
 						langs: -1,
@@ -6898,8 +6448,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(binz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "binz",
 						langs: -1,
@@ -6918,8 +6467,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bin|bun|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bin",
 						langs: -1,
@@ -6942,8 +6490,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bi|bu|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bi",
 						langs: -1,
@@ -6966,8 +6513,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bi|bu|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bi",
 						langs: -1,
@@ -6990,8 +6536,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bu|[2])",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bu",
 						langs: -1,
@@ -7010,8 +6555,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bu|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bu",
 						langs: -1,
@@ -7030,8 +6574,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bu|[2])",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bu",
 						langs: -1,
@@ -7050,8 +6593,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(bu|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "bu",
 						langs: -1,
@@ -7070,8 +6612,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(ibn|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "ibn",
 						langs: -1,
@@ -7090,8 +6631,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(ilz|lz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "ilz",
 						langs: -1,
@@ -7114,8 +6654,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(ilz|lz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "ilz",
 						langs: -1,
@@ -7138,8 +6677,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(il|l|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "il",
 						langs: -1,
@@ -7162,8 +6700,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(lz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "lz",
 						langs: -1,
@@ -7182,8 +6719,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(lz|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "lz",
 						langs: -1,
@@ -7202,8 +6738,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(l|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "l",
 						langs: -1,
@@ -7222,8 +6757,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(dal|[8])",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "dal",
 						langs: -1,
@@ -7242,8 +6776,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(da|a|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "da",
 						langs: -1,
@@ -7266,8 +6799,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(dila|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "dila",
 						langs: -1,
@@ -7286,8 +6818,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(dila|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "dila",
 						langs: -1,
@@ -7306,8 +6837,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(dil|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "dil",
 						langs: -1,
@@ -7326,8 +6856,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(dis|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "dis",
 						langs: -1,
@@ -7346,8 +6875,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(di|i|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "di",
 						langs: -1,
@@ -7370,8 +6898,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(di|i|[8])",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "di",
 						langs: -1,
@@ -7394,8 +6921,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(du|u)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "du",
 						langs: -1,
@@ -7414,8 +6940,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(du|u)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "du",
 						langs: -1,
@@ -7427,9 +6952,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oa",
-				phonetic: "(va|a)",
-				phoneticRules: []phonetic{
+				pattern: "oa",
+				phoneticRules: []token{
 					{
 						text:  "va",
 						langs: -1,
@@ -7441,9 +6965,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oe",
-				phonetic: "(vi|i)",
-				phoneticRules: []phonetic{
+				pattern: "oe",
+				phoneticRules: []token{
 					{
 						text:  "vi",
 						langs: -1,
@@ -7455,9 +6978,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ae",
-				phonetic: "(a|i)",
-				phoneticRules: []phonetic{
+				pattern: "ae",
+				phoneticRules: []token{
 					{
 						text:  "a",
 						langs: -1,
@@ -7477,8 +6999,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bp]"),
 				},
-				phonetic: "m",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "m",
 						langs: -1,
@@ -7493,8 +7014,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(ha|a|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "ha",
 						langs: -1,
@@ -7510,9 +7030,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "h",
-				phonetic: "(|h)",
-				phoneticRules: []phonetic{
+				pattern: "h",
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -7524,9 +7043,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "x",
-				phonetic: "h",
-				phoneticRules: []phonetic{
+				pattern: "x",
+				phoneticRules: []token{
 					{
 						text:  "h",
 						langs: -1,
@@ -7534,9 +7052,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "k",
-				phonetic: "(h|k)",
-				phoneticRules: []phonetic{
+				pattern: "k",
+				phoneticRules: []token{
 					{
 						text:  "h",
 						langs: -1,
@@ -7555,8 +7072,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(Da|ia)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "Da",
 						langs: -1,
@@ -7575,8 +7091,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(Di|Da|i|ia)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "Di",
 						langs: -1,
@@ -7603,8 +7118,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(Di|i)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "Di",
 						langs: -1,
@@ -7623,8 +7137,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(Du|Da|iu|ia)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "Du",
 						langs: -1,
@@ -7651,8 +7164,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(Du|iu)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "Du",
 						langs: -1,
@@ -7664,9 +7176,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "aj",
-				phonetic: "(D|i)",
-				phoneticRules: []phonetic{
+				pattern: "aj",
+				phoneticRules: []token{
 					{
 						text:  "D",
 						langs: -1,
@@ -7678,9 +7189,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ej",
-				phonetic: "(D|i)",
-				phoneticRules: []phonetic{
+				pattern: "ej",
+				phoneticRules: []token{
 					{
 						text:  "D",
 						langs: -1,
@@ -7692,9 +7202,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "oj",
-				phonetic: "D",
-				phoneticRules: []phonetic{
+				pattern: "oj",
+				phoneticRules: []token{
 					{
 						text:  "D",
 						langs: -1,
@@ -7702,9 +7211,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "uj",
-				phonetic: "D",
-				phoneticRules: []phonetic{
+				pattern: "uj",
+				phoneticRules: []token{
 					{
 						text:  "D",
 						langs: -1,
@@ -7712,9 +7220,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "au",
-				phonetic: "u",
-				phoneticRules: []phonetic{
+				pattern: "au",
+				phoneticRules: []token{
 					{
 						text:  "u",
 						langs: -1,
@@ -7722,9 +7229,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "eu",
-				phonetic: "(iu|i|u)",
-				phoneticRules: []phonetic{
+				pattern: "eu",
+				phoneticRules: []token{
 					{
 						text:  "iu",
 						langs: -1,
@@ -7740,9 +7246,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ou",
-				phonetic: "u",
-				phoneticRules: []phonetic{
+				pattern: "ou",
+				phoneticRules: []token{
 					{
 						text:  "u",
 						langs: -1,
@@ -7757,8 +7262,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -7773,8 +7277,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "ia",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "ia",
 						langs: -1,
@@ -7789,8 +7292,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "i",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -7805,8 +7307,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(iu|ia)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "iu",
 						langs: -1,
@@ -7825,8 +7326,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "iu",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "iu",
 						langs: -1,
@@ -7834,9 +7334,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ja",
-				phonetic: "(a|ia)",
-				phoneticRules: []phonetic{
+				pattern: "ja",
+				phoneticRules: []token{
 					{
 						text:  "a",
 						langs: -1,
@@ -7848,9 +7347,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "je",
-				phonetic: "i",
-				phoneticRules: []phonetic{
+				pattern: "je",
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -7858,9 +7356,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ji",
-				phonetic: "i",
-				phoneticRules: []phonetic{
+				pattern: "ji",
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -7868,9 +7365,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "jo",
-				phonetic: "(u|iu)",
-				phoneticRules: []phonetic{
+				pattern: "jo",
+				phoneticRules: []token{
 					{
 						text:  "u",
 						langs: -1,
@@ -7882,9 +7378,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "ju",
-				phonetic: "u",
-				phoneticRules: []phonetic{
+				pattern: "ju",
+				phoneticRules: []token{
 					{
 						text:  "u",
 						langs: -1,
@@ -7892,9 +7387,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "j",
-				phonetic: "i",
-				phoneticRules: []phonetic{
+				pattern: "j",
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -7909,8 +7403,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(i|)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -7929,8 +7422,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(a|u|i)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "a",
 						langs: -1,
@@ -7946,9 +7438,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "o",
-				phonetic: "u",
-				phoneticRules: []phonetic{
+				pattern: "o",
+				phoneticRules: []token{
 					{
 						text:  "u",
 						langs: -1,
@@ -7963,8 +7454,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(a|i)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "a",
 						langs: -1,
@@ -7984,8 +7474,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				phonetic: "(z|si)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8005,8 +7494,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8022,8 +7510,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				phonetic: "(z|si)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8043,8 +7530,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8060,8 +7546,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8077,8 +7562,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8093,8 +7577,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -8109,8 +7592,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -8125,8 +7607,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -8141,8 +7622,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(S|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -8161,8 +7641,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "(S|s)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -8174,9 +7653,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "S",
-				phonetic: "s",
-				phoneticRules: []phonetic{
+				pattern: "S",
+				phoneticRules: []token{
 					{
 						text:  "s",
 						langs: -1,
@@ -8184,9 +7662,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "dZ",
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				pattern: "dZ",
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8194,9 +7671,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "Z",
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				pattern: "Z",
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -8212,8 +7688,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				phonetic: "(p|bi)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "p",
 						langs: -1,
@@ -8233,8 +7708,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
-				phonetic: "(b|pi)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "b",
 						langs: -1,
@@ -8254,8 +7728,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				phonetic: "(f|vi)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "f",
 						langs: -1,
@@ -8275,8 +7748,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
-				phonetic: "(v|fi)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "v",
 						langs: -1,
@@ -8296,8 +7768,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				phonetic: "(k|gi)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "k",
 						langs: -1,
@@ -8317,8 +7788,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
-				phonetic: "(g|ki)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "g",
 						langs: -1,
@@ -8338,8 +7808,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				phonetic: "(t|di)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "t",
 						langs: -1,
@@ -8359,8 +7828,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
-				phonetic: "(d|ti)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "d",
 						langs: -1,
@@ -8380,8 +7848,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				phonetic: "(s|zi)",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "s",
 						langs: -1,
@@ -8393,9 +7860,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "e",
-				phonetic: "(i|)",
-				phoneticRules: []phonetic{
+				pattern: "e",
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -8407,9 +7873,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "B",
-				phonetic: "b",
-				phoneticRules: []phonetic{
+				pattern: "B",
+				phoneticRules: []token{
 					{
 						text:  "b",
 						langs: -1,
@@ -8417,9 +7882,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "V",
-				phonetic: "v",
-				phoneticRules: []phonetic{
+				pattern: "V",
+				phoneticRules: []token{
 					{
 						text:  "v",
 						langs: -1,
@@ -8434,8 +7898,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "b",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "b",
 						langs: -1,
@@ -8443,17 +7906,17 @@ var sepFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(sepany):        []rule{},
-			languageID(sepfrench):     []rule{},
-			languageID(sephebrew):     []rule{},
-			languageID(sepitalian):    []rule{},
-			languageID(sepportuguese): []rule{},
-			languageID(sepspanish):    []rule{},
+		second: map[languageID]rules{
+			languageID(sepany):        rules{},
+			languageID(sepfrench):     rules{},
+			languageID(sephebrew):     rules{},
+			languageID(sepitalian):    rules{},
+			languageID(sepportuguese): rules{},
+			languageID(sepspanish):    rules{},
 		},
 	},
 	exact: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -8462,8 +7925,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8479,8 +7941,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				phonetic: "p",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "p",
 						langs: -1,
@@ -8495,8 +7956,7 @@ var sepFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8511,8 +7971,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "p",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "p",
 						langs: -1,
@@ -8528,8 +7987,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
-				phonetic: "b",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "b",
 						langs: -1,
@@ -8544,8 +8002,7 @@ var sepFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8561,8 +8018,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				phonetic: "f",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "f",
 						langs: -1,
@@ -8577,8 +8033,7 @@ var sepFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8593,8 +8048,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "f",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "f",
 						langs: -1,
@@ -8610,8 +8064,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
-				phonetic: "v",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "v",
 						langs: -1,
@@ -8626,8 +8079,7 @@ var sepFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8643,8 +8095,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				phonetic: "k",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "k",
 						langs: -1,
@@ -8659,8 +8110,7 @@ var sepFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8675,8 +8125,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "k",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "k",
 						langs: -1,
@@ -8692,8 +8141,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
-				phonetic: "g",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "g",
 						langs: -1,
@@ -8708,8 +8156,7 @@ var sepFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8725,8 +8172,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				phonetic: "t",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "t",
 						langs: -1,
@@ -8741,8 +8187,7 @@ var sepFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8757,8 +8202,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "t",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "t",
 						langs: -1,
@@ -8774,8 +8218,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
-				phonetic: "d",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "d",
 						langs: -1,
@@ -8790,8 +8233,7 @@ var sepFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8806,8 +8248,7 @@ var sepFinalRules = finalRules{
 					prefix:           "dZ",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8822,8 +8263,7 @@ var sepFinalRules = finalRules{
 					prefix:           "tS",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8839,8 +8279,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				phonetic: "s",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "s",
 						langs: -1,
@@ -8856,8 +8295,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8873,8 +8311,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8890,8 +8327,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8907,8 +8343,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8916,9 +8351,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "nm",
-				phonetic: "m",
-				phoneticRules: []phonetic{
+				pattern: "nm",
+				phoneticRules: []token{
 					{
 						text:  "m",
 						langs: -1,
@@ -8933,8 +8367,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "i",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "i",
 						langs: -1,
@@ -8949,8 +8382,7 @@ var sepFinalRules = finalRules{
 					prefix:           "a",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8965,8 +8397,7 @@ var sepFinalRules = finalRules{
 					prefix:           "b",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8981,8 +8412,7 @@ var sepFinalRules = finalRules{
 					prefix:           "d",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -8997,8 +8427,7 @@ var sepFinalRules = finalRules{
 					prefix:           "e",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9013,8 +8442,7 @@ var sepFinalRules = finalRules{
 					prefix:           "f",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9029,8 +8457,7 @@ var sepFinalRules = finalRules{
 					prefix:           "g",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9045,8 +8472,7 @@ var sepFinalRules = finalRules{
 					prefix:           "i",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9061,8 +8487,7 @@ var sepFinalRules = finalRules{
 					prefix:           "k",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9077,8 +8502,7 @@ var sepFinalRules = finalRules{
 					prefix:           "l",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9093,8 +8517,7 @@ var sepFinalRules = finalRules{
 					prefix:           "m",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9109,8 +8532,7 @@ var sepFinalRules = finalRules{
 					prefix:           "n",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9125,8 +8547,7 @@ var sepFinalRules = finalRules{
 					prefix:           "o",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9141,8 +8562,7 @@ var sepFinalRules = finalRules{
 					prefix:           "p",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9157,8 +8577,7 @@ var sepFinalRules = finalRules{
 					prefix:           "r",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9173,8 +8592,7 @@ var sepFinalRules = finalRules{
 					prefix:           "t",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9189,8 +8607,7 @@ var sepFinalRules = finalRules{
 					prefix:           "u",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9205,8 +8622,7 @@ var sepFinalRules = finalRules{
 					prefix:           "v",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9221,8 +8637,7 @@ var sepFinalRules = finalRules{
 					prefix:           "z",
 					suffix:           "",
 				},
-				phonetic: "",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9230,9 +8645,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "h",
-				phonetic: "",
-				phoneticRules: []phonetic{
+				pattern: "h",
+				phoneticRules: []token{
 					{
 						text:  "",
 						langs: -1,
@@ -9255,8 +8669,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bgZd]"),
 				},
-				phonetic: "z",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "z",
 						langs: -1,
@@ -9272,8 +8685,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkst]"),
 				},
-				phonetic: "S",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -9288,8 +8700,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "S",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "S",
 						langs: -1,
@@ -9305,8 +8716,7 @@ var sepFinalRules = finalRules{
 					suffix:           "",
 					pattern:          regexp.MustCompile("^[bgzd]"),
 				},
-				phonetic: "Z",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "Z",
 						langs: -1,
@@ -9321,8 +8731,7 @@ var sepFinalRules = finalRules{
 					prefix:           "",
 					suffix:           "",
 				},
-				phonetic: "s",
-				phoneticRules: []phonetic{
+				phoneticRules: []token{
 					{
 						text:  "s",
 						langs: -1,
@@ -9330,9 +8739,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "B",
-				phonetic: "b",
-				phoneticRules: []phonetic{
+				pattern: "B",
+				phoneticRules: []token{
 					{
 						text:  "b",
 						langs: -1,
@@ -9340,9 +8748,8 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern:  "V",
-				phonetic: "v",
-				phoneticRules: []phonetic{
+				pattern: "V",
+				phoneticRules: []token{
 					{
 						text:  "v",
 						langs: -1,
@@ -9350,13 +8757,13 @@ var sepFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(sepany):        []rule{},
-			languageID(sepfrench):     []rule{},
-			languageID(sephebrew):     []rule{},
-			languageID(sepitalian):    []rule{},
-			languageID(sepportuguese): []rule{},
-			languageID(sepspanish):    []rule{},
+		second: map[languageID]rules{
+			languageID(sepany):        rules{},
+			languageID(sepfrench):     rules{},
+			languageID(sephebrew):     rules{},
+			languageID(sepitalian):    rules{},
+			languageID(sepportuguese): rules{},
+			languageID(sepspanish):    rules{},
 		},
 	},
 }

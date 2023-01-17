@@ -30,17 +30,93 @@ func (r Ruleset) Valid() bool {
 	return r == Exact || r == Approx
 }
 
+type rules []rule
+
+func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
+	if len(r) == 0 {
+		return input
+	}
+
+	var result tokens
+	for _, tok := range input {
+		tokenRunes := []rune(tok.text)
+		newTokens := tokens{{text: "", langs: tok.langs}}
+		for j := 0; j < len(tokenRunes); {
+			var (
+				applied bool
+				offset  int
+			)
+
+			for _, rr := range r {
+				var tmp tokens
+				tmp, offset = rr.applyTo(tok.text, j)
+				if len(tmp) > 0 {
+					applied = true
+					if len(newTokens) == 0 {
+						newTokens = tmp
+					} else {
+						newTokens = newTokens.merge(lang, tmp)
+					}
+					break
+				}
+			}
+
+			if !applied {
+				for k := range newTokens {
+					newTokens[k].text += string(tokenRunes[j])
+				}
+			}
+			j += offset
+		}
+
+		result = append(result, newTokens...)
+	}
+
+	if ignoreLangs {
+		for i := range result {
+			result[i].langs = langsAny
+		}
+	}
+
+	return result.deduplicate()
+}
+
 type rule struct {
 	pattern       string
 	leftContext   *ruleMatcher
 	rightContext  *ruleMatcher
-	phonetic      string
-	phoneticRules []phonetic
+	phoneticRules tokens
 }
 
-type phonetic struct {
-	text  string
-	langs languageID
+func (r rule) applyTo(input string, position int) (result []token, offset int) {
+	patternLength := len([]rune(r.pattern))
+	inputLength := len([]rune(input))
+	offset = 1
+
+	if len(r.phoneticRules) == 0 {
+		return
+	}
+
+	if patternLength > inputLength-position || substr(input, position, patternLength) != r.pattern { // no match
+		return
+	}
+
+	if r.rightContext != nil {
+		if !r.rightContext.matches(substrFrom(input, position+patternLength)) {
+			return
+		}
+	}
+
+	if r.leftContext != nil {
+		if !r.leftContext.matches(substrTo(input, position)) {
+			return
+		}
+	}
+
+	result = r.phoneticRules
+	offset = patternLength
+
+	return
 }
 
 type finalRules struct {
@@ -49,8 +125,8 @@ type finalRules struct {
 }
 
 type finalRule struct {
-	first  []rule
-	second map[languageID][]rule
+	first  rules
+	second map[languageID]rules
 }
 
 type langRule struct {
@@ -90,11 +166,3 @@ func (r ruleMatcher) matches(str string) bool {
 
 	return false
 }
-
-type languageID int64
-
-const (
-	langsUnitialized languageID = -1
-	langsInvalid     languageID = 0
-	langsAny         languageID = 1
-)

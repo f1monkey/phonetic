@@ -258,8 +258,7 @@ const rulesTemplate = `
 			{{- end }}
 		},
 	{{- end }}
-	phonetic: {{ printf "%q" .Phonetic }},
-	phoneticRules: []phonetic{
+	phoneticRules: []token{
 		{{- range $i, $p := .PhoneticRules }}
 			{
 				text: {{ printf "%q" $p.Text }},
@@ -303,9 +302,9 @@ const {{ .Mode }}All = {{- range $i, $lang := .Languages }}
 	{{- end }}
 {{- end}}
 
-var {{ .Mode }}Rules = map[{{ .Mode }}Lang][]rule{
+var {{ .Mode }}Rules = map[{{ .Mode }}Lang]rules{
 	{{- range $lang, $rules := .Rules }}
-		{{ $.Mode }}{{ $lang}}: []rule{
+		{{ $.Mode }}{{ $lang}}: rules{
 			{{- range $rule := $rules }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
@@ -333,14 +332,14 @@ var {{ .Mode }}LangRules = []langRule{
 
 var {{ .Mode }}FinalRules = finalRules{
 	approx: finalRule{
-		first: []rule{
+		first: rules{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[languageID][]rule{
+		second: map[languageID]rules{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): rules{
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -349,14 +348,14 @@ var {{ .Mode }}FinalRules = finalRules{
 		},
 	},
 	exact: finalRule{
-		first: []rule{
+		first: rules{
 			{{- range $rule := .FinalRules.Exact.First }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[languageID][]rule{
+		second: map[languageID]rules{
 			{{- range $secRule := .FinalRules.Exact.Second }}
-				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): []rule{
+				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): rules{
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
