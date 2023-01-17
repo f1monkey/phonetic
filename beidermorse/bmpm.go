@@ -185,56 +185,6 @@ func dedupTokens(src tokens) tokens {
 	return result
 }
 
-func mergeTokenGroups(langRestricton languageID, src ...tokens) tokens {
-	if len(src) == 0 {
-		return nil
-	}
-
-	if len(src) == 1 {
-		return src[0]
-	}
-
-	result := src[0]
-	i := 1
-	for i < len(src) {
-		newResult := make(tokens, 0, len(result)*len(src[i]))
-		for _, r1 := range result {
-			for _, r2 := range src[i] {
-				lang := mergeLangResults(langRestricton, r1.langs, r2.langs)
-				if lang == langsInvalid {
-					continue
-				}
-
-				newResult = append(newResult, token{
-					text:  r1.text + r2.text,
-					langs: lang,
-				})
-			}
-		}
-		result = newResult
-		i++
-	}
-
-	return result
-}
-
-func mergeLangResults(src ...languageID) languageID {
-	if len(src) == 0 {
-		return langsInvalid
-	}
-
-	result := langsUnitialized
-	for _, l := range src {
-		if result == langsUnitialized || result == langsAny {
-			result = l
-			continue
-		}
-		result &= l
-	}
-
-	return result
-}
-
 func inArray[T comparable](data []T, value T) bool {
 	for _, item := range data {
 		if item == value {

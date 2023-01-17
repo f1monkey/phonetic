@@ -171,43 +171,6 @@ func Test_applyRules(t *testing.T) {
 	}
 }
 
-func Benchmark_mergeLangResults(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		mergeLangResults(1047288, 16384)
-	}
-}
-
-func Test_mergeLangResults(t *testing.T) {
-	cases := []struct {
-		src      []languageID
-		expected languageID
-	}{
-		{
-			src:      []languageID{1, 128, 16384},
-			expected: 0,
-		},
-		{
-			src:      []languageID{4, 128, 16384},
-			expected: 0,
-		},
-		{
-			src:      []languageID{1047288, 16384},
-			expected: 16384,
-		},
-		{
-			src:      []languageID{1047288, 16384},
-			expected: 16384,
-		},
-	}
-
-	for i, c := range cases {
-		t.Run(fmt.Sprint(i), func(t *testing.T) {
-			result := mergeLangResults(c.src...)
-			require.Equal(t, c.expected, result)
-		})
-	}
-}
-
 func Benchmark_prepareInput(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		prepareInput("o'range orange", Generic)

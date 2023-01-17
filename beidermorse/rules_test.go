@@ -1,6 +1,7 @@
 package beidermorse
 
 import (
+	"fmt"
 	"strconv"
 	"testing"
 
@@ -180,6 +181,43 @@ func Test_tokens_merge(t *testing.T) {
 	for i, c := range cases {
 		t.Run(strconv.Itoa(i), func(t *testing.T) {
 			result := c.tokens.merge(langsAny, c.src...)
+			require.Equal(t, c.expected, result)
+		})
+	}
+}
+
+func Benchmark_languageID_merge(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		languageID(1047288).merge(16384)
+	}
+}
+
+func Test_languageID_merge(t *testing.T) {
+	cases := []struct {
+		src      []languageID
+		expected languageID
+	}{
+		{
+			src:      []languageID{1, 128, 16384},
+			expected: 0,
+		},
+		{
+			src:      []languageID{4, 128, 16384},
+			expected: 0,
+		},
+		{
+			src:      []languageID{1047288, 16384},
+			expected: 16384,
+		},
+		{
+			src:      []languageID{1047288, 16384},
+			expected: 16384,
+		},
+	}
+
+	for i, c := range cases {
+		t.Run(fmt.Sprint(i), func(t *testing.T) {
+			result := c.src[0].merge(c.src[1:]...)
 			require.Equal(t, c.expected, result)
 		})
 	}

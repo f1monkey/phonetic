@@ -83,11 +83,11 @@ func (t tokens) merge(lang languageID, src ...tokens) tokens {
 
 	result := t
 	i := 1
-	for i < len(src)+1 {
+	for i < len(src)+1 { // use while-loop instead of recursion here
 		newResult := make([]token, 0, len(result)*len(src[i-1]))
 		for _, r1 := range result {
 			for _, r2 := range src[i-1] {
-				lang := mergeLangResults(lang, r1.langs, r2.langs)
+				lang := lang.merge(r1.langs, r2.langs)
 				if lang == langsInvalid {
 					continue
 				}
@@ -160,3 +160,20 @@ const (
 	langsInvalid     languageID = 0
 	langsAny         languageID = 1
 )
+
+func (l languageID) merge(src ...languageID) languageID {
+	if len(src) == 0 {
+		return l
+	}
+
+	result := l
+	for _, lang := range src {
+		if result == langsUnitialized || result == langsAny {
+			result = lang
+			continue
+		}
+		result &= lang
+	}
+
+	return result
+}
