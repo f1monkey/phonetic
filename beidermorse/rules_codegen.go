@@ -258,7 +258,7 @@ const rulesTemplate = `
 			{{- end }}
 		},
 	{{- end }}
-	phoneticRules: []phonetic{
+	phoneticRules: []token{
 		{{- range $i, $p := .PhoneticRules }}
 			{
 				text: {{ printf "%q" $p.Text }},

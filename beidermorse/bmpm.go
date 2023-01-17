@@ -9,7 +9,7 @@ import (
 
 const langAny = 1
 
-func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) []phonetic {
+func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) tokens {
 	// we can do a better job of determining the language now that multiple names have been split
 	languageArg := detectLang(input, mode)
 	return makeTokens(input, mode, ruleset, languageArg, concat)
@@ -52,7 +52,7 @@ func detectLang(word string, mode Mode) languageID {
 
 var firstList = []string{"de la", "van der", "van den"}
 
-func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) []phonetic {
+func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) tokens {
 	input = prepareInput(input, mode) // returns at max two words
 
 	rules, final1, final2, discards := getRules(mode, ruleset, lang)
@@ -81,7 +81,7 @@ func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, conca
 	}
 
 	// apply main set of rules
-	result := applyRules([]phonetic{{text: input, langs: lang}}, rules, lang, false)
+	result := applyRules(tokens{{text: input, langs: lang}}, rules, lang, false)
 	// apply common final rules
 	result = applyRules(result, final1, lang, false)
 	// apply lang specific final rules
@@ -121,15 +121,15 @@ func prepareInput(input string, mode Mode) string {
 	return input
 }
 
-func applyRules(input []phonetic, rules []rule, languageArg languageID, ignoreLangs bool) []phonetic {
+func applyRules(input tokens, rules []rule, lang languageID, ignoreLangs bool) tokens {
 	if len(rules) == 0 {
 		return input
 	}
 
-	var result []phonetic
-	for _, token := range input {
-		tokenRunes := []rune(token.text)
-		newTokens := []phonetic{{text: "", langs: token.langs}}
+	var result tokens
+	for _, tok := range input {
+		tokenRunes := []rune(tok.text)
+		newTokens := tokens{{text: "", langs: tok.langs}}
 		for j := 0; j < len(tokenRunes); {
 			var (
 				applied bool
@@ -137,13 +137,13 @@ func applyRules(input []phonetic, rules []rule, languageArg languageID, ignoreLa
 			)
 
 			for _, r := range rules {
-				var rr []phonetic
-				rr, applied, offset = r.applyTo(token.text, languageArg, j)
+				var rr tokens
+				rr, applied, offset = r.applyTo(tok.text, j)
 				if applied {
 					if len(newTokens) == 0 {
 						newTokens = rr
 					} else {
-						newTokens = mergeTokenGroups(languageArg, newTokens, rr)
+						newTokens = newTokens.merge(lang, rr)
 					}
 					break
 				}
@@ -169,11 +169,11 @@ func applyRules(input []phonetic, rules []rule, languageArg languageID, ignoreLa
 	return dedupTokens(result)
 }
 
-func dedupTokens(tokens []phonetic) []phonetic {
-	result := make([]phonetic, 0, len(tokens))
-	uniq := make(map[string]struct{}, len(tokens))
+func dedupTokens(src tokens) tokens {
+	result := make(tokens, 0, len(src))
+	uniq := make(map[string]struct{}, len(src))
 
-	for _, t := range tokens {
+	for _, t := range src {
 		key := strconv.Itoa(int(t.langs)) + "_" + t.text
 		if _, ok := uniq[key]; ok {
 			continue
@@ -185,7 +185,7 @@ func dedupTokens(tokens []phonetic) []phonetic {
 	return result
 }
 
-func mergeTokenGroups(langRestricton languageID, src ...[]phonetic) []phonetic {
+func mergeTokenGroups(langRestricton languageID, src ...tokens) tokens {
 	if len(src) == 0 {
 		return nil
 	}
@@ -194,15 +194,10 @@ func mergeTokenGroups(langRestricton languageID, src ...[]phonetic) []phonetic {
 		return src[0]
 	}
 
-	l := 0
-	for _, r := range src {
-		l += len(r)
-	}
-
 	result := src[0]
 	i := 1
 	for i < len(src) {
-		newResult := make([]phonetic, 0, len(result)*len(src[i]))
+		newResult := make(tokens, 0, len(result)*len(src[i]))
 		for _, r1 := range result {
 			for _, r2 := range src[i] {
 				lang := mergeLangResults(langRestricton, r1.langs, r2.langs)
@@ -210,7 +205,7 @@ func mergeTokenGroups(langRestricton languageID, src ...[]phonetic) []phonetic {
 					continue
 				}
 
-				newResult = append(newResult, phonetic{
+				newResult = append(newResult, token{
 					text:  r1.text + r2.text,
 					langs: lang,
 				})

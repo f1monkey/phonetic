@@ -69,7 +69,7 @@ func Benchmark_phonetic(b *testing.B) {
 
 func Benchmark_applyRules(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		applyRules([]phonetic{
+		applyRules(tokens{
 			{text: "orange", langs: 1047280},
 		}, genRules[1], 1047280, false)
 	}
@@ -78,20 +78,20 @@ func Benchmark_applyRules(b *testing.B) {
 func Test_applyRules(t *testing.T) {
 	cases := []struct {
 		name        string
-		src         []phonetic
+		src         tokens
 		lang        languageID
 		rules       []rule
 		ignoreLangs bool
-		expected    []phonetic
+		expected    tokens
 	}{
 		{
 			name: "orange_approx_lang=1_stage=1",
-			src: []phonetic{
+			src: tokens{
 				{text: "orange", langs: 1047280},
 			},
 			lang:  1047280,
 			rules: genRules[1],
-			expected: []phonetic{
+			expected: tokens{
 				{text: "OrAngE", langs: 1047280},
 				{text: "OrAnxe", langs: 262144},
 				{text: "OrAnhE", langs: 131072},
@@ -104,7 +104,7 @@ func Test_applyRules(t *testing.T) {
 		},
 		{
 			name: "orange_approx_lang=1_stage=2",
-			src: []phonetic{
+			src: tokens{
 				{text: "OrAngE", langs: 1047280},
 				{text: "OrAnxe", langs: 262144},
 				{text: "OrAnhE", langs: 131072},
@@ -115,7 +115,7 @@ func Test_applyRules(t *testing.T) {
 			},
 			lang:  1047280,
 			rules: genFinalRules.approx.first,
-			expected: []phonetic{
+			expected: tokens{
 				{text: "OrAngE", langs: 1047280},
 				{text: "OrAnxe", langs: 262144},
 				{text: "OrAnE", langs: 131072},
@@ -128,7 +128,7 @@ func Test_applyRules(t *testing.T) {
 		},
 		{
 			name: "orange_stage=3_lang=1",
-			src: []phonetic{
+			src: tokens{
 				{text: "OrAngE", langs: 1047280},
 				{text: "OrAnxe", langs: 262144},
 				{text: "OrAnE", langs: 131072},
@@ -139,7 +139,7 @@ func Test_applyRules(t *testing.T) {
 			},
 			lang:  1047280,
 			rules: genFinalRules.approx.second[1],
-			expected: []phonetic{
+			expected: tokens{
 				{text: "orangi", langs: 1},
 				{text: "oragi", langs: 1},
 				{text: "orongi", langs: 1},
@@ -166,84 +166,6 @@ func Test_applyRules(t *testing.T) {
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
 			result := applyRules(c.src, c.rules, c.lang, c.ignoreLangs)
-			require.Equal(t, c.expected, result)
-		})
-	}
-}
-
-func Benchmark_mergeTokenGroups(b *testing.B) {
-	r := [][]phonetic{
-		{
-			{text: "k", langs: 1047288},
-			{text: "ts", langs: 16392},
-			{text: "dZ", langs: 524288},
-		},
-		{
-			{text: "O", langs: -1},
-			{text: "P", langs: 16384},
-		},
-	}
-
-	for i := 0; i < b.N; i++ {
-		mergeTokenGroups(langsAny, r...)
-	}
-}
-
-func Test_mergeTokenGroups(t *testing.T) {
-	cases := []struct {
-		src      [][]phonetic
-		expected []phonetic
-	}{
-		{}, // empty
-		{
-			src: [][]phonetic{
-				{
-					{text: "O", langs: -1},
-					{text: "P", langs: 16384},
-				},
-			},
-			expected: []phonetic{
-				{text: "O", langs: -1},
-				{text: "P", langs: 16384},
-			},
-		},
-		{
-			src: [][]phonetic{
-				{
-					{text: "O", langs: -1},
-					{text: "P", langs: 16384},
-				},
-			},
-			expected: []phonetic{
-				{text: "O", langs: -1},
-				{text: "P", langs: 16384},
-			},
-		},
-		{
-			src: [][]phonetic{
-				{
-					{text: "k", langs: 1047288},
-					{text: "ts", langs: 16392},
-					{text: "dZ", langs: 524288},
-				},
-				{
-					{text: "O", langs: -1},
-					{text: "P", langs: 16384},
-				},
-			},
-			expected: []phonetic{
-				{text: "kO", langs: 1047288},
-				{text: "kP", langs: 16384},
-				{text: "tsO", langs: 16392},
-				{text: "tsP", langs: 16384},
-				{text: "dZO", langs: 524288},
-			},
-		},
-	}
-
-	for i, c := range cases {
-		t.Run(fmt.Sprint(i), func(t *testing.T) {
-			result := mergeTokenGroups(langsAny, c.src...)
 			require.Equal(t, c.expected, result)
 		})
 	}
