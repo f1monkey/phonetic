@@ -30,6 +30,57 @@ func (r Ruleset) Valid() bool {
 	return r == Exact || r == Approx
 }
 
+type rules []rule
+
+func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
+	if len(r) == 0 {
+		return input
+	}
+
+	var result tokens
+	for _, tok := range input {
+		tokenRunes := []rune(tok.text)
+		newTokens := tokens{{text: "", langs: tok.langs}}
+		for j := 0; j < len(tokenRunes); {
+			var (
+				applied bool
+				offset  int
+			)
+
+			for _, rr := range r {
+				var tmp tokens
+				tmp, offset = rr.applyTo(tok.text, j)
+				if len(tmp) > 0 {
+					applied = true
+					if len(newTokens) == 0 {
+						newTokens = tmp
+					} else {
+						newTokens = newTokens.merge(lang, tmp)
+					}
+					break
+				}
+			}
+
+			if !applied {
+				for k := range newTokens {
+					newTokens[k].text += string(tokenRunes[j])
+				}
+			}
+			j += offset
+		}
+
+		result = append(result, newTokens...)
+	}
+
+	if ignoreLangs {
+		for i := range result {
+			result[i].langs = langsAny
+		}
+	}
+
+	return result.deduplicate()
+}
+
 type rule struct {
 	pattern       string
 	leftContext   *ruleMatcher
@@ -74,8 +125,8 @@ type finalRules struct {
 }
 
 type finalRule struct {
-	first  []rule
-	second map[languageID][]rule
+	first  rules
+	second map[languageID]rules
 }
 
 type langRule struct {

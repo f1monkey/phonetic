@@ -38,8 +38,8 @@ const sepAll = sepfrench +
 	sepportuguese +
 	sepspanish
 
-var sepRules = map[sepLang][]rule{
-	sepany: []rule{
+var sepRules = map[sepLang]rules{
+	sepany: rules{
 		{
 			pattern: "ph",
 			phoneticRules: []token{
@@ -1612,7 +1612,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepfrench: []rule{
+	sepfrench: rules{
 		{
 			pattern: "kh",
 			phoneticRules: []token{
@@ -2305,7 +2305,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sephebrew: []rule{
+	sephebrew: rules{
 		{
 			pattern: "אי",
 			phoneticRules: []token{
@@ -2676,7 +2676,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepitalian: []rule{
+	sepitalian: rules{
 		{
 			pattern: "kh",
 			phoneticRules: []token{
@@ -3288,7 +3288,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepportuguese: []rule{
+	sepportuguese: rules{
 		{
 			pattern: "kh",
 			phoneticRules: []token{
@@ -4220,7 +4220,7 @@ var sepRules = map[sepLang][]rule{
 			},
 		},
 	},
-	sepspanish: []rule{
+	sepspanish: rules{
 		{
 			pattern: "ñ",
 			phoneticRules: []token{
@@ -5599,7 +5599,7 @@ var sepLangRules = []langRule{
 
 var sepFinalRules = finalRules{
 	approx: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -7906,17 +7906,17 @@ var sepFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(sepany):        []rule{},
-			languageID(sepfrench):     []rule{},
-			languageID(sephebrew):     []rule{},
-			languageID(sepitalian):    []rule{},
-			languageID(sepportuguese): []rule{},
-			languageID(sepspanish):    []rule{},
+		second: map[languageID]rules{
+			languageID(sepany):        rules{},
+			languageID(sepfrench):     rules{},
+			languageID(sephebrew):     rules{},
+			languageID(sepitalian):    rules{},
+			languageID(sepportuguese): rules{},
+			languageID(sepspanish):    rules{},
 		},
 	},
 	exact: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -8757,13 +8757,13 @@ var sepFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(sepany):        []rule{},
-			languageID(sepfrench):     []rule{},
-			languageID(sephebrew):     []rule{},
-			languageID(sepitalian):    []rule{},
-			languageID(sepportuguese): []rule{},
-			languageID(sepspanish):    []rule{},
+		second: map[languageID]rules{
+			languageID(sepany):        rules{},
+			languageID(sepfrench):     rules{},
+			languageID(sephebrew):     rules{},
+			languageID(sepitalian):    rules{},
+			languageID(sepportuguese): rules{},
+			languageID(sepspanish):    rules{},
 		},
 	},
 }

@@ -94,8 +94,8 @@ const genAll = genarabic +
 	genspanish +
 	genturkish
 
-var genRules = map[genLang][]rule{
-	genany: []rule{
+var genRules = map[genLang]rules{
+	genany: rules{
 		{
 			pattern: "yna",
 			rightContext: &ruleMatcher{
@@ -4616,7 +4616,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genarabic: []rule{
+	genarabic: rules{
 		{
 			pattern: "ا",
 			phoneticRules: []token{
@@ -5356,7 +5356,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	gencyrillic: []rule{
+	gencyrillic: rules{
 		{
 			pattern: "ця",
 			phoneticRules: []token{
@@ -6191,7 +6191,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genczech: []rule{
+	genczech: rules{
 		{
 			pattern: "ch",
 			phoneticRules: []token{
@@ -6662,7 +6662,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	gendutch: []rule{
+	gendutch: rules{
 		{
 			pattern: "ssj",
 			phoneticRules: []token{
@@ -7266,7 +7266,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genenglish: []rule{
+	genenglish: rules{
 		{
 			pattern: "�",
 			phoneticRules: []token{
@@ -8329,7 +8329,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genfrench: []rule{
+	genfrench: rules{
 		{
 			pattern: "lt",
 			leftContext: &ruleMatcher{
@@ -9456,7 +9456,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	gengerman: []rule{
+	gengerman: rules{
 		{
 			pattern: "ewitsch",
 			rightContext: &ruleMatcher{
@@ -10654,7 +10654,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	gengreek: []rule{
+	gengreek: rules{
 		{
 			pattern: "αυ",
 			rightContext: &ruleMatcher{
@@ -11550,7 +11550,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	gengreeklatin: []rule{
+	gengreeklatin: rules{
 		{
 			pattern: "au",
 			rightContext: &ruleMatcher{
@@ -12715,7 +12715,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genhebrew: []rule{
+	genhebrew: rules{
 		{
 			pattern: "אי",
 			phoneticRules: []token{
@@ -13086,7 +13086,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genhungarian: []rule{
+	genhungarian: rules{
 		{
 			pattern: "sz",
 			phoneticRules: []token{
@@ -13685,7 +13685,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genitalian: []rule{
+	genitalian: rules{
 		{
 			pattern: "kh",
 			phoneticRules: []token{
@@ -14312,7 +14312,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genlatvian: []rule{
+	genlatvian: rules{
 		{
 			pattern: "č",
 			phoneticRules: []token{
@@ -14677,7 +14677,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genpolish: []rule{
+	genpolish: rules{
 		{
 			pattern: "ska",
 			rightContext: &ruleMatcher{
@@ -16613,7 +16613,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genportuguese: []rule{
+	genportuguese: rules{
 		{
 			pattern: "kh",
 			phoneticRules: []token{
@@ -17560,7 +17560,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genromanian: []rule{
+	genromanian: rules{
 		{
 			pattern: "ce",
 			phoneticRules: []token{
@@ -17984,7 +17984,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genrussian: []rule{
+	genrussian: rules{
 		{
 			pattern: "yna",
 			rightContext: &ruleMatcher{
@@ -19299,7 +19299,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genspanish: []rule{
+	genspanish: rules{
 		{
 			pattern: "ñ",
 			phoneticRules: []token{
@@ -19920,7 +19920,7 @@ var genRules = map[genLang][]rule{
 			},
 		},
 	},
-	genturkish: []rule{
+	genturkish: rules{
 		{
 			pattern: "ç",
 			phoneticRules: []token{
@@ -22832,7 +22832,7 @@ var genLangRules = []langRule{
 
 var genFinalRules = finalRules{
 	approx: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -25650,8 +25650,8 @@ var genFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(genany): []rule{
+		second: map[languageID]rules{
+			languageID(genany): rules{
 				{
 					pattern: "mb",
 					phoneticRules: []token{
@@ -27129,7 +27129,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genarabic): []rule{
+			languageID(genarabic): rules{
 				{
 					pattern: "1a",
 					phoneticRules: []token{
@@ -27286,7 +27286,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genrussian): []rule{
+			languageID(genrussian): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -27735,7 +27735,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gencyrillic): []rule{
+			languageID(gencyrillic): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -28184,7 +28184,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genfrench): []rule{
+			languageID(genfrench): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -28293,7 +28293,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genczech): []rule{
+			languageID(genczech): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -28402,7 +28402,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gendutch): []rule{
+			languageID(gendutch): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -28511,7 +28511,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genenglish): []rule{
+			languageID(genenglish): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -28920,7 +28920,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gengerman): []rule{
+			languageID(gengerman): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -29716,7 +29716,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gengreek): []rule{
+			languageID(gengreek): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -29825,7 +29825,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gengreeklatin): []rule{
+			languageID(gengreeklatin): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -29943,8 +29943,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genhebrew): []rule{},
-			languageID(genhungarian): []rule{
+			languageID(genhebrew): rules{},
+			languageID(genhungarian): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -30053,7 +30053,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genitalian): []rule{
+			languageID(genitalian): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -30162,7 +30162,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genlatvian): []rule{
+			languageID(genlatvian): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -30271,7 +30271,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genpolish): []rule{
+			languageID(genpolish): rules{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -31294,7 +31294,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genportuguese): []rule{
+			languageID(genportuguese): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -31403,7 +31403,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genromanian): []rule{
+			languageID(genromanian): rules{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -32426,7 +32426,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genspanish): []rule{
+			languageID(genspanish): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -32552,7 +32552,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genturkish): []rule{
+			languageID(genturkish): rules{
 				{
 					pattern: "au",
 					phoneticRules: []token{
@@ -32655,7 +32655,7 @@ var genFinalRules = finalRules{
 		},
 	},
 	exact: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -33543,8 +33543,8 @@ var genFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(genany): []rule{
+		second: map[languageID]rules{
+			languageID(genany): rules{
 				{
 					pattern: "EE",
 					rightContext: &ruleMatcher{
@@ -33725,7 +33725,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genarabic): []rule{
+			languageID(genarabic): rules{
 				{
 					pattern: "1",
 					phoneticRules: []token{
@@ -33736,7 +33736,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genrussian): []rule{
+			languageID(genrussian): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -33756,7 +33756,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gencyrillic): []rule{
+			languageID(gencyrillic): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -33776,7 +33776,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genczech): []rule{
+			languageID(genczech): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -33796,8 +33796,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gendutch): []rule{},
-			languageID(genenglish): []rule{
+			languageID(gendutch): rules{},
+			languageID(genenglish): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -33817,8 +33817,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genfrench): []rule{},
-			languageID(gengerman): []rule{
+			languageID(genfrench): rules{},
+			languageID(gengerman): rules{
 				{
 					pattern: "EE",
 					rightContext: &ruleMatcher{
@@ -33999,8 +33999,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(gengreek): []rule{},
-			languageID(gengreeklatin): []rule{
+			languageID(gengreek): rules{},
+			languageID(gengreeklatin): rules{
 				{
 					pattern: "N",
 					phoneticRules: []token{
@@ -34011,8 +34011,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genhebrew): []rule{},
-			languageID(genhungarian): []rule{
+			languageID(genhebrew): rules{},
+			languageID(genhungarian): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -34032,9 +34032,9 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genitalian): []rule{},
-			languageID(genlatvian): []rule{},
-			languageID(genpolish): []rule{
+			languageID(genitalian): rules{},
+			languageID(genlatvian): rules{},
+			languageID(genpolish): rules{
 				{
 					pattern: "B",
 					phoneticRules: []token{
@@ -34081,8 +34081,8 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genportuguese): []rule{},
-			languageID(genromanian): []rule{
+			languageID(genportuguese): rules{},
+			languageID(genromanian): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -34102,7 +34102,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genspanish): []rule{
+			languageID(genspanish): rules{
 				{
 					pattern: "B",
 					phoneticRules: []token{
@@ -34122,7 +34122,7 @@ var genFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(genturkish): []rule{},
+			languageID(genturkish): rules{},
 		},
 	},
 }

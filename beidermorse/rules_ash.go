@@ -58,8 +58,8 @@ const ashAll = ashcyrillic +
 	ashrussian +
 	ashspanish
 
-var ashRules = map[ashLang][]rule{
-	ashany: []rule{
+var ashRules = map[ashLang]rules{
+	ashany: rules{
 		{
 			pattern: "yna",
 			rightContext: &ruleMatcher{
@@ -3756,7 +3756,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashcyrillic: []rule{
+	ashcyrillic: rules{
 		{
 			pattern: "ця",
 			phoneticRules: []token{
@@ -4583,7 +4583,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashenglish: []rule{
+	ashenglish: rules{
 		{
 			pattern: "tch",
 			phoneticRules: []token{
@@ -5574,7 +5574,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashfrench: []rule{
+	ashfrench: rules{
 		{
 			pattern: "kh",
 			phoneticRules: []token{
@@ -6285,7 +6285,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashgerman: []rule{
+	ashgerman: rules{
 		{
 			pattern: "ziu",
 			phoneticRules: []token{
@@ -7467,7 +7467,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashhebrew: []rule{
+	ashhebrew: rules{
 		{
 			pattern: "אי",
 			phoneticRules: []token{
@@ -7838,7 +7838,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashhungarian: []rule{
+	ashhungarian: rules{
 		{
 			pattern: "sz",
 			phoneticRules: []token{
@@ -8429,7 +8429,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashpolish: []rule{
+	ashpolish: rules{
 		{
 			pattern: "ska",
 			rightContext: &ruleMatcher{
@@ -10365,7 +10365,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashromanian: []rule{
+	ashromanian: rules{
 		{
 			pattern: "j",
 			phoneticRules: []token{
@@ -10798,7 +10798,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashrussian: []rule{
+	ashrussian: rules{
 		{
 			pattern: "yna",
 			rightContext: &ruleMatcher{
@@ -12451,7 +12451,7 @@ var ashRules = map[ashLang][]rule{
 			},
 		},
 	},
-	ashspanish: []rule{
+	ashspanish: rules{
 		{
 			pattern: "ñ",
 			phoneticRules: []token{
@@ -14688,7 +14688,7 @@ var ashLangRules = []langRule{
 
 var ashFinalRules = finalRules{
 	approx: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -17476,8 +17476,8 @@ var ashFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(ashany): []rule{
+		second: map[languageID]rules{
+			languageID(ashany): rules{
 				{
 					pattern: "b",
 					phoneticRules: []token{
@@ -19423,7 +19423,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashrussian): []rule{
+			languageID(ashrussian): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -19872,7 +19872,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashcyrillic): []rule{
+			languageID(ashcyrillic): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -20321,7 +20321,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashenglish): []rule{
+			languageID(ashenglish): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -20730,7 +20730,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashfrench): []rule{
+			languageID(ashfrench): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -21051,7 +21051,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashgerman): []rule{
+			languageID(ashgerman): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -21847,8 +21847,8 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashhebrew): []rule{},
-			languageID(ashhungarian): []rule{
+			languageID(ashhebrew): rules{},
+			languageID(ashhungarian): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -22169,7 +22169,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashpolish): []rule{
+			languageID(ashpolish): rules{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -23192,7 +23192,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashromanian): []rule{
+			languageID(ashromanian): rules{
 				{
 					pattern: "aiB",
 					rightContext: &ruleMatcher{
@@ -24215,7 +24215,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashspanish): []rule{
+			languageID(ashspanish): rules{
 				{
 					pattern: "I",
 					rightContext: &ruleMatcher{
@@ -24539,7 +24539,7 @@ var ashFinalRules = finalRules{
 		},
 	},
 	exact: finalRule{
-		first: []rule{
+		first: rules{
 			{
 				pattern: "h",
 				rightContext: &ruleMatcher{
@@ -25428,8 +25428,8 @@ var ashFinalRules = finalRules{
 				},
 			},
 		},
-		second: map[languageID][]rule{
-			languageID(ashany): []rule{
+		second: map[languageID]rules{
+			languageID(ashany): rules{
 				{
 					pattern: "A",
 					phoneticRules: []token{
@@ -25512,7 +25512,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashrussian): []rule{
+			languageID(ashrussian): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -25532,7 +25532,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashcyrillic): []rule{
+			languageID(ashcyrillic): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -25552,7 +25552,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashenglish): []rule{
+			languageID(ashenglish): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -25572,7 +25572,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashfrench): []rule{
+			languageID(ashfrench): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -25592,7 +25592,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashgerman): []rule{
+			languageID(ashgerman): rules{
 				{
 					pattern: "A",
 					phoneticRules: []token{
@@ -25675,8 +25675,8 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashhebrew): []rule{},
-			languageID(ashhungarian): []rule{
+			languageID(ashhebrew): rules{},
+			languageID(ashhungarian): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -25696,7 +25696,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashpolish): []rule{
+			languageID(ashpolish): rules{
 				{
 					pattern: "B",
 					phoneticRules: []token{
@@ -25743,7 +25743,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashromanian): []rule{
+			languageID(ashromanian): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{
@@ -25763,7 +25763,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 			},
-			languageID(ashspanish): []rule{
+			languageID(ashspanish): rules{
 				{
 					pattern: "E",
 					phoneticRules: []token{

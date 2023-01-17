@@ -52,7 +52,7 @@ var firstList = []string{"de la", "van der", "van den"}
 func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, concat bool) tokens {
 	input = prepareInput(input, mode) // returns at max two words
 
-	rules, final1, final2, discards := getRules(mode, ruleset, lang)
+	mainRules, final1, final2, discards := getRules(mode, ruleset, lang)
 
 	// process a multiword name of form X Y
 	if space := strings.Index(input, " "); space != -1 { // number of words is exactly two
@@ -77,12 +77,14 @@ func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, conca
 		}
 	}
 
+	result := tokens{{text: input, langs: lang}}
+
 	// apply main set of rules
-	result := applyRules(tokens{{text: input, langs: lang}}, rules, lang, false)
+	result = mainRules.apply(result, lang, false)
 	// apply common final rules
-	result = applyRules(result, final1, lang, false)
+	result = final1.apply(result, lang, false)
 	// apply lang specific final rules
-	result = applyRules(result, final2, lang, true)
+	result = final2.apply(result, lang, true)
 
 	return result
 }
@@ -116,55 +118,6 @@ func prepareInput(input string, mode Mode) string {
 	}
 
 	return input
-}
-
-func applyRules(input tokens, rules []rule, lang languageID, ignoreLangs bool) tokens {
-	if len(rules) == 0 {
-		return input
-	}
-
-	var result tokens
-	for _, tok := range input {
-		tokenRunes := []rune(tok.text)
-		newTokens := tokens{{text: "", langs: tok.langs}}
-		for j := 0; j < len(tokenRunes); {
-			var (
-				applied bool
-				offset  int
-			)
-
-			for _, r := range rules {
-				var rr tokens
-				rr, offset = r.applyTo(tok.text, j)
-				if len(rr) > 0 {
-					applied = true
-					if len(newTokens) == 0 {
-						newTokens = rr
-					} else {
-						newTokens = newTokens.merge(lang, rr)
-					}
-					break
-				}
-			}
-
-			if !applied {
-				for k := range newTokens {
-					newTokens[k].text += string(tokenRunes[j])
-				}
-			}
-			j += offset
-		}
-
-		result = append(result, newTokens...)
-	}
-
-	if ignoreLangs {
-		for i := range result {
-			result[i].langs = langsAny
-		}
-	}
-
-	return result.deduplicate()
 }
 
 func inArray[T comparable](data []T, value T) bool {
@@ -202,7 +155,7 @@ func getRules(
 	mode Mode,
 	ruleset Ruleset,
 	lang languageID,
-) (rules []rule, finalRules1 []rule, finalRules2 []rule, discards []string) {
+) (mainRules rules, finalRules1 rules, finalRules2 rules, discards []string) {
 	langCount := bits.OnesCount64(uint64(lang))
 	if langCount > 1 {
 		lang = 1 // any
@@ -210,7 +163,7 @@ func getRules(
 
 	switch mode {
 	case Generic:
-		rules = genRules[genLang(lang)]
+		mainRules = genRules[genLang(lang)]
 		discards = genDiscards
 		switch ruleset {
 		case Approx:
@@ -221,7 +174,7 @@ func getRules(
 			finalRules2 = genFinalRules.exact.second[lang]
 		}
 	case Ashkenazi:
-		rules = ashRules[ashLang(lang)]
+		mainRules = ashRules[ashLang(lang)]
 		discards = ashDiscards
 		switch ruleset {
 		case Approx:
@@ -232,7 +185,7 @@ func getRules(
 			finalRules2 = ashFinalRules.exact.second[lang]
 		}
 	case Sephardic:
-		rules = sepRules[sepLang(lang)]
+		mainRules = sepRules[sepLang(lang)]
 		discards = sepDiscards
 		switch ruleset {
 		case Approx:
