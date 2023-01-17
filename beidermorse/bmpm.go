@@ -3,7 +3,6 @@ package beidermorse
 import (
 	"math/bits"
 	"strings"
-	"unicode/utf8"
 )
 
 func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) tokens {
@@ -94,10 +93,11 @@ func prepareInput(input string, mode Mode) string {
 
 	// remove spaces from within certain leading words
 	for _, item := range firstList {
+		itemLen := len([]rune(item))
 		target := item + " "
-		if substrTo(input, utf8.RuneCountInString(target)) == target {
+		if substrTo(input, itemLen+1) == target {
 			target = item
-			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
+			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, itemLen)
 		}
 	}
 
