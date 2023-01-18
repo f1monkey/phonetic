@@ -235,7 +235,7 @@ func fixRules(rules map[string]SrcRuleSet) {
 const rulesTemplate = `
 {{- define "ruletpl" }}
 {
-	pattern: {{ printf "%q" .Pattern }},
+	pattern: []rune({{ printf "%q" .Pattern }}),
 	{{- if ne .LeftContext nil}}
 		leftContext: &ruleMatcher{
 			matchEmptyString: {{ .LeftContext.MatchEmptyString }},

@@ -82,14 +82,14 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 }
 
 type rule struct {
-	pattern       string
+	pattern       []rune
 	leftContext   *ruleMatcher
 	rightContext  *ruleMatcher
 	phoneticRules tokens
 }
 
 func (r rule) applyTo(input string, position int) (result []token, offset int) {
-	patternLength := len([]rune(r.pattern))
+	patternLength := len(r.pattern)
 	inputLength := len([]rune(input))
 	offset = 1
 
@@ -171,10 +171,9 @@ func (r ruleMatcher) matches(str string) bool {
 	return false
 }
 
-func containsAt(haystack string, needle string, from int) bool {
+func containsAt(haystack string, needle []rune, from int) bool {
 	matchCnt := 0
-	substrRunes := []rune(needle)
-	if len(substrRunes) == 0 {
+	if len(needle) == 0 {
 		return false
 	}
 
@@ -185,12 +184,12 @@ func containsAt(haystack string, needle string, from int) bool {
 			continue
 		}
 
-		if substrRunes[matchCnt] == r {
+		if needle[matchCnt] == r {
 			matchCnt++
 		} else {
 			return false
 		}
-		if matchCnt >= len(substrRunes) {
+		if matchCnt >= len(needle) {
 			return true
 		}
 

@@ -114,7 +114,7 @@ func Test_rules_apply(t *testing.T) {
 
 func Benchmark_rule_applyTo(b *testing.B) {
 	r := rule{
-		pattern: "ge",
+		pattern: []rune("ge"),
 		phoneticRules: []token{
 			{
 				text:  "gE",
@@ -150,7 +150,7 @@ func Benchmark_rule_applyTo(b *testing.B) {
 
 func Test_rule_applyTo(t *testing.T) {
 	r1 := rule{
-		pattern: "ge",
+		pattern: []rune("ge"),
 		phoneticRules: []token{
 			{
 				text:  "gE",
@@ -223,6 +223,12 @@ func Test_rule_applyTo(t *testing.T) {
 	}
 }
 
+func Benchmark_containsAt(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		containsAt("апельсин", []rune("пе"), 1)
+	}
+}
+
 func Test_containsAt(t *testing.T) {
 	cases := []struct {
 		haystack string
@@ -245,7 +251,7 @@ func Test_containsAt(t *testing.T) {
 
 	for i, c := range cases {
 		t.Run(strconv.Itoa(i), func(t *testing.T) {
-			result := containsAt(c.haystack, c.needle, c.from)
+			result := containsAt(c.haystack, []rune(c.needle), c.from)
 			require.Equal(t, c.expected, result)
 		})
 	}

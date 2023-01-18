@@ -61,7 +61,7 @@ const ashAll = ashcyrillic +
 var ashRules = map[ashLang]rules{
 	ashany: rules{
 		{
-			pattern: "yna",
+			pattern: []rune("yna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -80,7 +80,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ina",
+			pattern: []rune("ina"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -99,7 +99,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "liova",
+			pattern: []rune("liova"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -122,7 +122,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lova",
+			pattern: []rune("lova"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -145,7 +145,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ova",
+			pattern: []rune("ova"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -164,7 +164,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "eva",
+			pattern: []rune("eva"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -183,7 +183,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aia",
+			pattern: []rune("aia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -202,7 +202,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aja",
+			pattern: []rune("aja"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -221,7 +221,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aya",
+			pattern: []rune("aya"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -240,7 +240,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lowa",
+			pattern: []rune("lowa"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -267,7 +267,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kowa",
+			pattern: []rune("kowa"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -294,7 +294,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owa",
+			pattern: []rune("owa"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -317,7 +317,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lowna",
+			pattern: []rune("lowna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -344,7 +344,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kowna",
+			pattern: []rune("kowna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -367,7 +367,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owna",
+			pattern: []rune("owna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -386,7 +386,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lówna",
+			pattern: []rune("lówna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -405,7 +405,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kówna",
+			pattern: []rune("kówna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -424,7 +424,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ówna",
+			pattern: []rune("ówna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -439,7 +439,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -458,7 +458,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rh",
+			pattern: []rune("rh"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -473,7 +473,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssch",
+			pattern: []rune("ssch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -482,7 +482,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "chsch",
+			pattern: []rune("chsch"),
 			phoneticRules: []token{
 				{
 					text:  "xS",
@@ -491,7 +491,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsch",
+			pattern: []rune("tsch"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -500,7 +500,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sch",
+			pattern: []rune("sch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -524,7 +524,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sch",
+			pattern: []rune("sch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -537,7 +537,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssh",
+			pattern: []rune("ssh"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -546,7 +546,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -562,7 +562,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -582,7 +582,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -591,7 +591,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -604,7 +604,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "chs",
+			pattern: []rune("chs"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -621,7 +621,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -645,7 +645,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -658,7 +658,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ck",
+			pattern: []rune("ck"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -671,7 +671,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "czy",
+			pattern: []rune("czy"),
 			phoneticRules: []token{
 				{
 					text:  "tSi",
@@ -680,7 +680,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cze",
+			pattern: []rune("cze"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -700,7 +700,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ciewicz",
+			pattern: []rune("ciewicz"),
 			phoneticRules: []token{
 				{
 					text:  "tsevitS",
@@ -713,7 +713,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "siewicz",
+			pattern: []rune("siewicz"),
 			phoneticRules: []token{
 				{
 					text:  "sevitS",
@@ -726,7 +726,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ziewicz",
+			pattern: []rune("ziewicz"),
 			phoneticRules: []token{
 				{
 					text:  "zevitS",
@@ -739,7 +739,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "riewicz",
+			pattern: []rune("riewicz"),
 			phoneticRules: []token{
 				{
 					text:  "rjevitS",
@@ -748,7 +748,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "diewicz",
+			pattern: []rune("diewicz"),
 			phoneticRules: []token{
 				{
 					text:  "djevitS",
@@ -757,7 +757,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tiewicz",
+			pattern: []rune("tiewicz"),
 			phoneticRules: []token{
 				{
 					text:  "tjevitS",
@@ -766,7 +766,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iewicz",
+			pattern: []rune("iewicz"),
 			phoneticRules: []token{
 				{
 					text:  "evitS",
@@ -775,7 +775,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ewicz",
+			pattern: []rune("ewicz"),
 			phoneticRules: []token{
 				{
 					text:  "evitS",
@@ -784,7 +784,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owicz",
+			pattern: []rune("owicz"),
 			phoneticRules: []token{
 				{
 					text:  "ovitS",
@@ -793,7 +793,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "icz",
+			pattern: []rune("icz"),
 			phoneticRules: []token{
 				{
 					text:  "itS",
@@ -802,7 +802,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cz",
+			pattern: []rune("cz"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -811,7 +811,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cia",
+			pattern: []rune("cia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -831,7 +831,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cia",
+			pattern: []rune("cia"),
 			phoneticRules: []token{
 				{
 					text:  "tSa",
@@ -844,7 +844,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cią",
+			pattern: []rune("cią"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -864,7 +864,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cią",
+			pattern: []rune("cią"),
 			phoneticRules: []token{
 				{
 					text:  "tSon",
@@ -877,7 +877,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cię",
+			pattern: []rune("cię"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -897,7 +897,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cię",
+			pattern: []rune("cię"),
 			phoneticRules: []token{
 				{
 					text:  "tSen",
@@ -910,7 +910,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cie",
+			pattern: []rune("cie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -930,7 +930,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cie",
+			pattern: []rune("cie"),
 			phoneticRules: []token{
 				{
 					text:  "tSe",
@@ -943,7 +943,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cio",
+			pattern: []rune("cio"),
 			phoneticRules: []token{
 				{
 					text:  "tSo",
@@ -956,7 +956,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ciu",
+			pattern: []rune("ciu"),
 			phoneticRules: []token{
 				{
 					text:  "tSu",
@@ -969,7 +969,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -996,7 +996,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			phoneticRules: []token{
 				{
 					text:  "tsi",
@@ -1013,7 +1013,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ce",
+			pattern: []rune("ce"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1037,7 +1037,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ce",
+			pattern: []rune("ce"),
 			phoneticRules: []token{
 				{
 					text:  "tSe",
@@ -1054,7 +1054,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cy",
+			pattern: []rune("cy"),
 			phoneticRules: []token{
 				{
 					text:  "si",
@@ -1067,7 +1067,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssz",
+			pattern: []rune("ssz"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -1076,7 +1076,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sz",
+			pattern: []rune("sz"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -1085,7 +1085,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssp",
+			pattern: []rune("ssp"),
 			phoneticRules: []token{
 				{
 					text:  "Sp",
@@ -1098,7 +1098,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sp",
+			pattern: []rune("sp"),
 			phoneticRules: []token{
 				{
 					text:  "Sp",
@@ -1111,7 +1111,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sst",
+			pattern: []rune("sst"),
 			phoneticRules: []token{
 				{
 					text:  "St",
@@ -1124,7 +1124,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "st",
+			pattern: []rune("st"),
 			phoneticRules: []token{
 				{
 					text:  "St",
@@ -1137,7 +1137,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -1146,7 +1146,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sia",
+			pattern: []rune("sia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1170,7 +1170,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sia",
+			pattern: []rune("sia"),
 			phoneticRules: []token{
 				{
 					text:  "Sa",
@@ -1183,7 +1183,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sią",
+			pattern: []rune("sią"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1203,7 +1203,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sią",
+			pattern: []rune("sią"),
 			phoneticRules: []token{
 				{
 					text:  "Son",
@@ -1216,7 +1216,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "się",
+			pattern: []rune("się"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1236,7 +1236,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "się",
+			pattern: []rune("się"),
 			phoneticRules: []token{
 				{
 					text:  "Sen",
@@ -1249,7 +1249,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sie",
+			pattern: []rune("sie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1273,7 +1273,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sie",
+			pattern: []rune("sie"),
 			phoneticRules: []token{
 				{
 					text:  "se",
@@ -1290,7 +1290,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sio",
+			pattern: []rune("sio"),
 			phoneticRules: []token{
 				{
 					text:  "So",
@@ -1303,7 +1303,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "siu",
+			pattern: []rune("siu"),
 			phoneticRules: []token{
 				{
 					text:  "Su",
@@ -1316,7 +1316,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "si",
+			pattern: []rune("si"),
 			phoneticRules: []token{
 				{
 					text:  "Si",
@@ -1333,7 +1333,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1353,7 +1353,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gue",
+			pattern: []rune("gue"),
 			phoneticRules: []token{
 				{
 					text:  "ge",
@@ -1362,7 +1362,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gui",
+			pattern: []rune("gui"),
 			phoneticRules: []token{
 				{
 					text:  "gi",
@@ -1371,7 +1371,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "guy",
+			pattern: []rune("guy"),
 			phoneticRules: []token{
 				{
 					text:  "gi",
@@ -1380,7 +1380,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gh",
+			pattern: []rune("gh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1400,7 +1400,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gauz",
+			pattern: []rune("gauz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1415,7 +1415,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gaus",
+			pattern: []rune("gaus"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1430,7 +1430,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gol'ts",
+			pattern: []rune("gol'ts"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1445,7 +1445,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "golts",
+			pattern: []rune("golts"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1460,7 +1460,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gol'tz",
+			pattern: []rune("gol'tz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1475,7 +1475,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "goltz",
+			pattern: []rune("goltz"),
 			phoneticRules: []token{
 				{
 					text:  "holts",
@@ -1484,7 +1484,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gol'ts",
+			pattern: []rune("gol'ts"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1499,7 +1499,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "golts",
+			pattern: []rune("golts"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1514,7 +1514,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gol'tz",
+			pattern: []rune("gol'tz"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1529,7 +1529,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "goltz",
+			pattern: []rune("goltz"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1544,7 +1544,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gendler",
+			pattern: []rune("gendler"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1559,7 +1559,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gejmer",
+			pattern: []rune("gejmer"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1574,7 +1574,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gejm",
+			pattern: []rune("gejm"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1589,7 +1589,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geymer",
+			pattern: []rune("geymer"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1604,7 +1604,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geym",
+			pattern: []rune("geym"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1619,7 +1619,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geimer",
+			pattern: []rune("geimer"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1634,7 +1634,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geim",
+			pattern: []rune("geim"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1649,7 +1649,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gof",
+			pattern: []rune("gof"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1664,7 +1664,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ger",
+			pattern: []rune("ger"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1679,7 +1679,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gen",
+			pattern: []rune("gen"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1694,7 +1694,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gin",
+			pattern: []rune("gin"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1709,7 +1709,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gie",
+			pattern: []rune("gie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1732,7 +1732,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gie",
+			pattern: []rune("gie"),
 			phoneticRules: []token{
 				{
 					text:  "ge",
@@ -1741,7 +1741,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ge",
+			pattern: []rune("ge"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1765,7 +1765,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1789,7 +1789,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ge",
+			pattern: []rune("ge"),
 			phoneticRules: []token{
 				{
 					text:  "gE",
@@ -1810,7 +1810,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			phoneticRules: []token{
 				{
 					text:  "gI",
@@ -1831,7 +1831,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gy",
+			pattern: []rune("gy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1851,7 +1851,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gy",
+			pattern: []rune("gy"),
 			phoneticRules: []token{
 				{
 					text:  "gi",
@@ -1864,7 +1864,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1887,7 +1887,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1907,7 +1907,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ej",
+			pattern: []rune("ej"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -1924,7 +1924,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ej",
+			pattern: []rune("ej"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -1933,7 +1933,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ly",
+			pattern: []rune("ly"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1953,7 +1953,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "li",
+			pattern: []rune("li"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1973,7 +1973,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lj",
+			pattern: []rune("lj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1993,7 +1993,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lio",
+			pattern: []rune("lio"),
 			phoneticRules: []token{
 				{
 					text:  "lo",
@@ -2006,7 +2006,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lyo",
+			pattern: []rune("lyo"),
 			phoneticRules: []token{
 				{
 					text:  "lo",
@@ -2019,7 +2019,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ll",
+			pattern: []rune("ll"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -2032,7 +2032,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2060,7 +2060,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -2073,7 +2073,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "pf",
+			pattern: []rune("pf"),
 			phoneticRules: []token{
 				{
 					text:  "pf",
@@ -2090,7 +2090,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
 					text:  "ph",
@@ -2103,7 +2103,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "kv",
@@ -2116,7 +2116,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rze",
+			pattern: []rune("rze"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2135,7 +2135,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rze",
+			pattern: []rune("rze"),
 			phoneticRules: []token{
 				{
 					text:  "rze",
@@ -2160,7 +2160,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rzy",
+			pattern: []rune("rzy"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2179,7 +2179,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rzy",
+			pattern: []rune("rzy"),
 			phoneticRules: []token{
 				{
 					text:  "Zi",
@@ -2196,7 +2196,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rz",
+			pattern: []rune("rz"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2215,7 +2215,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rz",
+			pattern: []rune("rz"),
 			phoneticRules: []token{
 				{
 					text:  "rz",
@@ -2240,7 +2240,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tz",
+			pattern: []rune("tz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2259,7 +2259,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tz",
+			pattern: []rune("tz"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2278,7 +2278,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tz",
+			pattern: []rune("tz"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -2291,7 +2291,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zh",
+			pattern: []rune("zh"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -2308,7 +2308,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zia",
+			pattern: []rune("zia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2332,7 +2332,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zia",
+			pattern: []rune("zia"),
 			phoneticRules: []token{
 				{
 					text:  "Za",
@@ -2345,7 +2345,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zią",
+			pattern: []rune("zią"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2365,7 +2365,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zią",
+			pattern: []rune("zią"),
 			phoneticRules: []token{
 				{
 					text:  "Zon",
@@ -2378,7 +2378,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zię",
+			pattern: []rune("zię"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2398,7 +2398,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zię",
+			pattern: []rune("zię"),
 			phoneticRules: []token{
 				{
 					text:  "Zen",
@@ -2411,7 +2411,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zie",
+			pattern: []rune("zie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2439,7 +2439,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zie",
+			pattern: []rune("zie"),
 			phoneticRules: []token{
 				{
 					text:  "ze",
@@ -2456,7 +2456,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zio",
+			pattern: []rune("zio"),
 			phoneticRules: []token{
 				{
 					text:  "Zo",
@@ -2469,7 +2469,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ziu",
+			pattern: []rune("ziu"),
 			phoneticRules: []token{
 				{
 					text:  "Zu",
@@ -2482,7 +2482,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zi",
+			pattern: []rune("zi"),
 			phoneticRules: []token{
 				{
 					text:  "Zi",
@@ -2499,7 +2499,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "thal",
+			pattern: []rune("thal"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2514,7 +2514,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2529,7 +2529,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2549,7 +2549,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -2558,7 +2558,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "vogel",
+			pattern: []rune("vogel"),
 			phoneticRules: []token{
 				{
 					text:  "vogel",
@@ -2571,7 +2571,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2590,7 +2590,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2606,7 +2606,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -2619,7 +2619,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2638,7 +2638,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yi",
+			pattern: []rune("yi"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2654,7 +2654,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ii",
+			pattern: []rune("ii"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2670,7 +2670,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iy",
+			pattern: []rune("iy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2686,7 +2686,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yy",
+			pattern: []rune("yy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2702,7 +2702,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2727,7 +2727,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yj",
+			pattern: []rune("yj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2742,7 +2742,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ij",
+			pattern: []rune("ij"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2757,7 +2757,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -2766,7 +2766,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oue",
+			pattern: []rune("oue"),
 			phoneticRules: []token{
 				{
 					text:  "oue",
@@ -2775,7 +2775,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "au",
+			pattern: []rune("au"),
 			phoneticRules: []token{
 				{
 					text:  "au",
@@ -2788,7 +2788,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
 					text:  "ou",
@@ -2801,7 +2801,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ue",
+			pattern: []rune("ue"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -2814,7 +2814,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ae",
+			pattern: []rune("ae"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -2831,7 +2831,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oe",
+			pattern: []rune("oe"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -2848,7 +2848,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ee",
+			pattern: []rune("ee"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2865,7 +2865,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -2874,7 +2874,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -2883,7 +2883,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "eu",
+			pattern: []rune("eu"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -2900,7 +2900,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2916,7 +2916,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2932,7 +2932,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2960,7 +2960,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2981,7 +2981,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ye",
+			pattern: []rune("ye"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -2994,7 +2994,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3010,7 +3010,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3026,7 +3026,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "io",
+			pattern: []rune("io"),
 			phoneticRules: []token{
 				{
 					text:  "jo",
@@ -3039,7 +3039,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yo",
+			pattern: []rune("yo"),
 			phoneticRules: []token{
 				{
 					text:  "jo",
@@ -3052,7 +3052,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ea",
+			pattern: []rune("ea"),
 			phoneticRules: []token{
 				{
 					text:  "ea",
@@ -3065,7 +3065,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3084,7 +3084,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oo",
+			pattern: []rune("oo"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3097,7 +3097,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "uu",
+			pattern: []rune("uu"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3106,7 +3106,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ć",
+			pattern: []rune("ć"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -3119,7 +3119,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ł",
+			pattern: []rune("ł"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -3128,7 +3128,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ń",
+			pattern: []rune("ń"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -3137,7 +3137,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -3150,7 +3150,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ś",
+			pattern: []rune("ś"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -3163,7 +3163,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ş",
+			pattern: []rune("ş"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -3172,7 +3172,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ţ",
+			pattern: []rune("ţ"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -3181,7 +3181,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ż",
+			pattern: []rune("ż"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -3190,7 +3190,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ź",
+			pattern: []rune("ź"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -3203,7 +3203,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "où",
+			pattern: []rune("où"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3212,7 +3212,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ą",
+			pattern: []rune("ą"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3228,7 +3228,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ą",
+			pattern: []rune("ą"),
 			phoneticRules: []token{
 				{
 					text:  "on",
@@ -3237,7 +3237,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ä",
+			pattern: []rune("ä"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -3250,7 +3250,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3259,7 +3259,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ă",
+			pattern: []rune("ă"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3272,7 +3272,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3281,7 +3281,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3290,7 +3290,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3299,7 +3299,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3308,7 +3308,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3317,7 +3317,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ę",
+			pattern: []rune("ę"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3333,7 +3333,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ę",
+			pattern: []rune("ę"),
 			phoneticRules: []token{
 				{
 					text:  "en",
@@ -3342,7 +3342,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -3351,7 +3351,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "î",
+			pattern: []rune("î"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -3360,7 +3360,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ö",
+			pattern: []rune("ö"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -3369,7 +3369,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ő",
+			pattern: []rune("ő"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -3378,7 +3378,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3391,7 +3391,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ű",
+			pattern: []rune("ű"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -3400,7 +3400,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -3409,7 +3409,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3418,7 +3418,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ű",
+			pattern: []rune("ű"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -3427,7 +3427,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ß",
+			pattern: []rune("ß"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -3436,7 +3436,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "'",
+			pattern: []rune("'"),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -3445,7 +3445,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "\"",
+			pattern: []rune("\""),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -3454,7 +3454,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3474,7 +3474,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3494,7 +3494,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3514,7 +3514,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "A",
@@ -3523,7 +3523,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -3532,7 +3532,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -3545,7 +3545,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -3554,7 +3554,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -3563,7 +3563,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -3572,7 +3572,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -3581,7 +3581,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -3590,7 +3590,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -3599,7 +3599,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -3608,7 +3608,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -3617,7 +3617,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -3626,7 +3626,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -3635,7 +3635,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -3644,7 +3644,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "O",
@@ -3653,7 +3653,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -3662,7 +3662,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -3671,7 +3671,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -3680,7 +3680,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -3689,7 +3689,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -3698,7 +3698,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "U",
@@ -3707,7 +3707,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -3716,7 +3716,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -3725,7 +3725,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -3734,7 +3734,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -3743,7 +3743,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -3758,7 +3758,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashcyrillic: rules{
 		{
-			pattern: "ця",
+			pattern: []rune("ця"),
 			phoneticRules: []token{
 				{
 					text:  "tsa",
@@ -3767,7 +3767,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "цю",
+			pattern: []rune("цю"),
 			phoneticRules: []token{
 				{
 					text:  "tsu",
@@ -3776,7 +3776,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "циа",
+			pattern: []rune("циа"),
 			phoneticRules: []token{
 				{
 					text:  "tsa",
@@ -3785,7 +3785,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "цие",
+			pattern: []rune("цие"),
 			phoneticRules: []token{
 				{
 					text:  "tse",
@@ -3794,7 +3794,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "цио",
+			pattern: []rune("цио"),
 			phoneticRules: []token{
 				{
 					text:  "tso",
@@ -3803,7 +3803,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "циу",
+			pattern: []rune("циу"),
 			phoneticRules: []token{
 				{
 					text:  "tsu",
@@ -3812,7 +3812,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "сие",
+			pattern: []rune("сие"),
 			phoneticRules: []token{
 				{
 					text:  "se",
@@ -3821,7 +3821,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "сио",
+			pattern: []rune("сио"),
 			phoneticRules: []token{
 				{
 					text:  "so",
@@ -3830,7 +3830,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "зие",
+			pattern: []rune("зие"),
 			phoneticRules: []token{
 				{
 					text:  "ze",
@@ -3839,7 +3839,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "зио",
+			pattern: []rune("зио"),
 			phoneticRules: []token{
 				{
 					text:  "zo",
@@ -3848,7 +3848,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гауз",
+			pattern: []rune("гауз"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3863,7 +3863,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гаус",
+			pattern: []rune("гаус"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3878,7 +3878,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гольц",
+			pattern: []rune("гольц"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3893,7 +3893,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "геймер",
+			pattern: []rune("геймер"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3908,7 +3908,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гейм",
+			pattern: []rune("гейм"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3923,7 +3923,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гоф",
+			pattern: []rune("гоф"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3938,7 +3938,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гер",
+			pattern: []rune("гер"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3953,7 +3953,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ген",
+			pattern: []rune("ген"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3968,7 +3968,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "гин",
+			pattern: []rune("гин"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3983,7 +3983,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "г",
+			pattern: []rune("г"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4006,7 +4006,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "г",
+			pattern: []rune("г"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4026,7 +4026,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ля",
+			pattern: []rune("ля"),
 			phoneticRules: []token{
 				{
 					text:  "la",
@@ -4035,7 +4035,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "лю",
+			pattern: []rune("лю"),
 			phoneticRules: []token{
 				{
 					text:  "lu",
@@ -4044,7 +4044,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "лё",
+			pattern: []rune("лё"),
 			phoneticRules: []token{
 				{
 					text:  "le",
@@ -4057,7 +4057,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "лио",
+			pattern: []rune("лио"),
 			phoneticRules: []token{
 				{
 					text:  "le",
@@ -4070,7 +4070,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ле",
+			pattern: []rune("ле"),
 			phoneticRules: []token{
 				{
 					text:  "lE",
@@ -4083,7 +4083,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ийе",
+			pattern: []rune("ийе"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -4092,7 +4092,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ие",
+			pattern: []rune("ие"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -4101,7 +4101,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ыйе",
+			pattern: []rune("ыйе"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -4110,7 +4110,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ые",
+			pattern: []rune("ые"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -4119,7 +4119,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ий",
+			pattern: []rune("ий"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4135,7 +4135,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ый",
+			pattern: []rune("ый"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4151,7 +4151,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ий",
+			pattern: []rune("ий"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4166,7 +4166,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ый",
+			pattern: []rune("ый"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4181,7 +4181,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ё",
+			pattern: []rune("ё"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -4194,7 +4194,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ей",
+			pattern: []rune("ей"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4213,7 +4213,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "е",
+			pattern: []rune("е"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4229,7 +4229,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "е",
+			pattern: []rune("е"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4244,7 +4244,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "эй",
+			pattern: []rune("эй"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -4253,7 +4253,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ей",
+			pattern: []rune("ей"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -4262,7 +4262,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ауе",
+			pattern: []rune("ауе"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -4271,7 +4271,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ауэ",
+			pattern: []rune("ауэ"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -4280,7 +4280,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "а",
+			pattern: []rune("а"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -4289,7 +4289,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "б",
+			pattern: []rune("б"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -4298,7 +4298,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "в",
+			pattern: []rune("в"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -4307,7 +4307,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "г",
+			pattern: []rune("г"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -4316,7 +4316,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "д",
+			pattern: []rune("д"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -4325,7 +4325,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "е",
+			pattern: []rune("е"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -4334,7 +4334,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ж",
+			pattern: []rune("ж"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -4343,7 +4343,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "з",
+			pattern: []rune("з"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -4352,7 +4352,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "и",
+			pattern: []rune("и"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -4361,7 +4361,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "й",
+			pattern: []rune("й"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -4370,7 +4370,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "к",
+			pattern: []rune("к"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4379,7 +4379,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "л",
+			pattern: []rune("л"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -4388,7 +4388,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "м",
+			pattern: []rune("м"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -4397,7 +4397,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "н",
+			pattern: []rune("н"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -4406,7 +4406,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "о",
+			pattern: []rune("о"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -4415,7 +4415,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "п",
+			pattern: []rune("п"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -4424,7 +4424,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "р",
+			pattern: []rune("р"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -4433,7 +4433,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "с",
+			pattern: []rune("с"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4448,7 +4448,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "с",
+			pattern: []rune("с"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -4457,7 +4457,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "т",
+			pattern: []rune("т"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -4466,7 +4466,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "у",
+			pattern: []rune("у"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -4475,7 +4475,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ф",
+			pattern: []rune("ф"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -4484,7 +4484,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "х",
+			pattern: []rune("х"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -4493,7 +4493,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ц",
+			pattern: []rune("ц"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -4502,7 +4502,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ч",
+			pattern: []rune("ч"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -4511,7 +4511,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ш",
+			pattern: []rune("ш"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -4520,7 +4520,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "щ",
+			pattern: []rune("щ"),
 			phoneticRules: []token{
 				{
 					text:  "StS",
@@ -4529,7 +4529,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ъ",
+			pattern: []rune("ъ"),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -4538,7 +4538,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ы",
+			pattern: []rune("ы"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -4547,7 +4547,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ь",
+			pattern: []rune("ь"),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -4556,7 +4556,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "э",
+			pattern: []rune("э"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -4565,7 +4565,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ю",
+			pattern: []rune("ю"),
 			phoneticRules: []token{
 				{
 					text:  "ju",
@@ -4574,7 +4574,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "я",
+			pattern: []rune("я"),
 			phoneticRules: []token{
 				{
 					text:  "ja",
@@ -4585,7 +4585,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashenglish: rules{
 		{
-			pattern: "tch",
+			pattern: []rune("tch"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -4594,7 +4594,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -4607,7 +4607,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ck",
+			pattern: []rune("ck"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4616,7 +4616,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cc",
+			pattern: []rune("cc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4632,7 +4632,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4647,7 +4647,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4663,7 +4663,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4672,7 +4672,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gh",
+			pattern: []rune("gh"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4687,7 +4687,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gh",
+			pattern: []rune("gh"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -4704,7 +4704,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			phoneticRules: []token{
 				{
 					text:  "gn",
@@ -4717,7 +4717,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4737,7 +4737,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -4746,7 +4746,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -4755,7 +4755,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -4764,7 +4764,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sch",
+			pattern: []rune("sch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -4777,7 +4777,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -4786,7 +4786,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "who",
+			pattern: []rune("who"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4801,7 +4801,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "wh",
+			pattern: []rune("wh"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4816,7 +4816,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4831,7 +4831,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4847,7 +4847,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4862,7 +4862,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -4871,7 +4871,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "dZ",
@@ -4880,7 +4880,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kn",
+			pattern: []rune("kn"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4895,7 +4895,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "mb",
+			pattern: []rune("mb"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4910,7 +4910,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ng",
+			pattern: []rune("ng"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4929,7 +4929,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "pn",
+			pattern: []rune("pn"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4948,7 +4948,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ps",
+			pattern: []rune("ps"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4967,7 +4967,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "kw",
@@ -4976,7 +4976,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4985,7 +4985,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tia",
+			pattern: []rune("tia"),
 			phoneticRules: []token{
 				{
 					text:  "So",
@@ -4998,7 +4998,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tio",
+			pattern: []rune("tio"),
 			phoneticRules: []token{
 				{
 					text:  "So",
@@ -5007,7 +5007,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "wr",
+			pattern: []rune("wr"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5022,7 +5022,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "w",
@@ -5035,7 +5035,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5050,7 +5050,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -5059,7 +5059,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yi",
+			pattern: []rune("yi"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5075,7 +5075,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5097,7 +5097,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -5106,7 +5106,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oue",
+			pattern: []rune("oue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -5119,7 +5119,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ai",
+			pattern: []rune("ai"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5132,7 +5132,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ay",
+			pattern: []rune("ay"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5141,7 +5141,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5157,7 +5157,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -5174,7 +5174,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5187,7 +5187,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5200,7 +5200,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ear",
+			pattern: []rune("ear"),
 			phoneticRules: []token{
 				{
 					text:  "ia",
@@ -5209,7 +5209,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ea",
+			pattern: []rune("ea"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -5222,7 +5222,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ee",
+			pattern: []rune("ee"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -5231,7 +5231,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5247,7 +5247,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5266,7 +5266,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -5275,7 +5275,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -5284,7 +5284,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5300,7 +5300,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -5309,7 +5309,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oa",
+			pattern: []rune("oa"),
 			phoneticRules: []token{
 				{
 					text:  "ou",
@@ -5318,7 +5318,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oi",
+			pattern: []rune("oi"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -5327,7 +5327,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oo",
+			pattern: []rune("oo"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -5336,7 +5336,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -5349,7 +5349,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oy",
+			pattern: []rune("oy"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -5358,7 +5358,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5374,7 +5374,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -5387,7 +5387,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5407,7 +5407,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5426,7 +5426,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -5439,7 +5439,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -5448,7 +5448,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -5457,7 +5457,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -5466,7 +5466,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -5475,7 +5475,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -5484,7 +5484,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -5493,7 +5493,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -5502,7 +5502,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -5511,7 +5511,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -5520,7 +5520,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -5529,7 +5529,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -5538,7 +5538,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -5547,7 +5547,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -5556,7 +5556,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -5565,7 +5565,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -5576,7 +5576,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashfrench: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -5585,7 +5585,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -5594,7 +5594,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -5603,7 +5603,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -5612,7 +5612,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -5621,7 +5621,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5637,7 +5637,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -5646,7 +5646,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -5659,7 +5659,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5675,7 +5675,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gue",
+			pattern: []rune("gue"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5690,7 +5690,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5706,7 +5706,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "que",
+			pattern: []rune("que"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5721,7 +5721,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -5730,7 +5730,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -5739,7 +5739,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5762,7 +5762,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5778,7 +5778,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -5793,7 +5793,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -5802,7 +5802,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -5811,7 +5811,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ouh",
+			pattern: []rune("ouh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5831,7 +5831,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5847,7 +5847,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -5860,7 +5860,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -5876,7 +5876,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -5885,7 +5885,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "eau",
+			pattern: []rune("eau"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -5894,7 +5894,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ai",
+			pattern: []rune("ai"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5903,7 +5903,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ay",
+			pattern: []rune("ay"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5912,7 +5912,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -5921,7 +5921,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -5930,7 +5930,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -5939,7 +5939,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -5948,7 +5948,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -5957,7 +5957,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "où",
+			pattern: []rune("où"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -5966,7 +5966,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -5975,7 +5975,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oi",
+			pattern: []rune("oi"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -5984,7 +5984,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -5993,7 +5993,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -6002,7 +6002,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6018,7 +6018,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6037,7 +6037,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6053,7 +6053,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6069,7 +6069,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yi",
+			pattern: []rune("yi"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -6078,7 +6078,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ii",
+			pattern: []rune("ii"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -6087,7 +6087,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yy",
+			pattern: []rune("yy"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -6096,7 +6096,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -6105,7 +6105,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -6114,7 +6114,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -6123,7 +6123,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -6132,7 +6132,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -6141,7 +6141,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -6150,7 +6150,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -6159,7 +6159,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -6168,7 +6168,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -6177,7 +6177,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -6186,7 +6186,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -6195,7 +6195,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -6204,7 +6204,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -6213,7 +6213,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -6222,7 +6222,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -6231,7 +6231,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -6240,7 +6240,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -6249,7 +6249,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -6258,7 +6258,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -6267,7 +6267,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -6276,7 +6276,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -6287,7 +6287,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashgerman: rules{
 		{
-			pattern: "ziu",
+			pattern: []rune("ziu"),
 			phoneticRules: []token{
 				{
 					text:  "tsu",
@@ -6296,7 +6296,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zia",
+			pattern: []rune("zia"),
 			phoneticRules: []token{
 				{
 					text:  "tsa",
@@ -6305,7 +6305,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zio",
+			pattern: []rune("zio"),
 			phoneticRules: []token{
 				{
 					text:  "tso",
@@ -6314,7 +6314,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssch",
+			pattern: []rune("ssch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -6323,7 +6323,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "chsch",
+			pattern: []rune("chsch"),
 			phoneticRules: []token{
 				{
 					text:  "xS",
@@ -6332,7 +6332,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ewitsch",
+			pattern: []rune("ewitsch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6347,7 +6347,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owitsch",
+			pattern: []rune("owitsch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6362,7 +6362,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "evitsch",
+			pattern: []rune("evitsch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6377,7 +6377,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ovitsch",
+			pattern: []rune("ovitsch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6392,7 +6392,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "witsch",
+			pattern: []rune("witsch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6407,7 +6407,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "vitsch",
+			pattern: []rune("vitsch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6422,7 +6422,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sch",
+			pattern: []rune("sch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -6431,7 +6431,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "chs",
+			pattern: []rune("chs"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -6440,7 +6440,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -6449,7 +6449,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ck",
+			pattern: []rune("ck"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -6458,7 +6458,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6474,7 +6474,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sp",
+			pattern: []rune("sp"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6489,7 +6489,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "st",
+			pattern: []rune("st"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6504,7 +6504,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssp",
+			pattern: []rune("ssp"),
 			phoneticRules: []token{
 				{
 					text:  "Sp",
@@ -6517,7 +6517,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sp",
+			pattern: []rune("sp"),
 			phoneticRules: []token{
 				{
 					text:  "Sp",
@@ -6530,7 +6530,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sst",
+			pattern: []rune("sst"),
 			phoneticRules: []token{
 				{
 					text:  "St",
@@ -6543,7 +6543,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "st",
+			pattern: []rune("st"),
 			phoneticRules: []token{
 				{
 					text:  "St",
@@ -6556,7 +6556,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "pf",
+			pattern: []rune("pf"),
 			phoneticRules: []token{
 				{
 					text:  "pf",
@@ -6573,7 +6573,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
 					text:  "ph",
@@ -6586,7 +6586,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "kv",
@@ -6595,7 +6595,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ewitz",
+			pattern: []rune("ewitz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6614,7 +6614,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ewiz",
+			pattern: []rune("ewiz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6633,7 +6633,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "evitz",
+			pattern: []rune("evitz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6652,7 +6652,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "eviz",
+			pattern: []rune("eviz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6671,7 +6671,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owitz",
+			pattern: []rune("owitz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6690,7 +6690,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owiz",
+			pattern: []rune("owiz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6709,7 +6709,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ovitz",
+			pattern: []rune("ovitz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6728,7 +6728,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oviz",
+			pattern: []rune("oviz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6747,7 +6747,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "witz",
+			pattern: []rune("witz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6766,7 +6766,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "wiz",
+			pattern: []rune("wiz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6785,7 +6785,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "vitz",
+			pattern: []rune("vitz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6804,7 +6804,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "viz",
+			pattern: []rune("viz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6823,7 +6823,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tz",
+			pattern: []rune("tz"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -6832,7 +6832,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "thal",
+			pattern: []rune("thal"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6847,7 +6847,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6862,7 +6862,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6882,7 +6882,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -6891,7 +6891,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rh",
+			pattern: []rune("rh"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6906,7 +6906,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6922,7 +6922,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -6937,7 +6937,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -6946,7 +6946,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6966,7 +6966,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -6989,7 +6989,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ß",
+			pattern: []rune("ß"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -6998,7 +6998,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ij",
+			pattern: []rune("ij"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -7013,7 +7013,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -7022,7 +7022,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ue",
+			pattern: []rune("ue"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -7031,7 +7031,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ae",
+			pattern: []rune("ae"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -7040,7 +7040,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oe",
+			pattern: []rune("oe"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -7049,7 +7049,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -7058,7 +7058,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ä",
+			pattern: []rune("ä"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -7071,7 +7071,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ö",
+			pattern: []rune("ö"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -7080,7 +7080,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7089,7 +7089,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7098,7 +7098,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "eu",
+			pattern: []rune("eu"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7111,7 +7111,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -7127,7 +7127,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -7143,7 +7143,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -7152,7 +7152,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -7168,7 +7168,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -7184,7 +7184,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -7193,7 +7193,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ã",
+			pattern: []rune("ã"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -7202,7 +7202,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ő",
+			pattern: []rune("ő"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -7211,7 +7211,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ű",
+			pattern: []rune("ű"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -7220,7 +7220,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -7229,7 +7229,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "A",
@@ -7238,7 +7238,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -7247,7 +7247,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -7256,7 +7256,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -7265,7 +7265,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -7274,7 +7274,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -7283,7 +7283,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -7292,7 +7292,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -7301,7 +7301,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -7310,7 +7310,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -7319,7 +7319,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -7328,7 +7328,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -7337,7 +7337,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -7346,7 +7346,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -7355,7 +7355,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "O",
@@ -7364,7 +7364,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -7373,7 +7373,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -7382,7 +7382,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -7391,7 +7391,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -7400,7 +7400,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -7409,7 +7409,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "U",
@@ -7418,7 +7418,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -7431,7 +7431,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -7440,7 +7440,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -7449,7 +7449,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -7458,7 +7458,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -7469,7 +7469,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashhebrew: rules{
 		{
-			pattern: "אי",
+			pattern: []rune("אי"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -7478,7 +7478,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "עי",
+			pattern: []rune("עי"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -7487,7 +7487,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "עו",
+			pattern: []rune("עו"),
 			phoneticRules: []token{
 				{
 					text:  "VV",
@@ -7496,7 +7496,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "או",
+			pattern: []rune("או"),
 			phoneticRules: []token{
 				{
 					text:  "VV",
@@ -7505,7 +7505,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ג׳",
+			pattern: []rune("ג׳"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -7514,7 +7514,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ד׳",
+			pattern: []rune("ד׳"),
 			phoneticRules: []token{
 				{
 					text:  "dZ",
@@ -7523,7 +7523,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "א",
+			pattern: []rune("א"),
 			phoneticRules: []token{
 				{
 					text:  "L",
@@ -7532,7 +7532,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ב",
+			pattern: []rune("ב"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -7541,7 +7541,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ג",
+			pattern: []rune("ג"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -7550,7 +7550,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ד",
+			pattern: []rune("ד"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -7559,7 +7559,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -7574,7 +7574,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -7589,7 +7589,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -7598,7 +7598,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "וו",
+			pattern: []rune("וו"),
 			phoneticRules: []token{
 				{
 					text:  "V",
@@ -7607,7 +7607,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "וי",
+			pattern: []rune("וי"),
 			phoneticRules: []token{
 				{
 					text:  "WW",
@@ -7616,7 +7616,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ו",
+			pattern: []rune("ו"),
 			phoneticRules: []token{
 				{
 					text:  "W",
@@ -7625,7 +7625,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ז",
+			pattern: []rune("ז"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -7634,7 +7634,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ח",
+			pattern: []rune("ח"),
 			phoneticRules: []token{
 				{
 					text:  "X",
@@ -7643,7 +7643,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ט",
+			pattern: []rune("ט"),
 			phoneticRules: []token{
 				{
 					text:  "T",
@@ -7652,7 +7652,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "יי",
+			pattern: []rune("יי"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -7661,7 +7661,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "י",
+			pattern: []rune("י"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -7670,7 +7670,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ך",
+			pattern: []rune("ך"),
 			phoneticRules: []token{
 				{
 					text:  "X",
@@ -7679,7 +7679,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "כ",
+			pattern: []rune("כ"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -7694,7 +7694,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "כ",
+			pattern: []rune("כ"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -7703,7 +7703,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ל",
+			pattern: []rune("ל"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -7712,7 +7712,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ם",
+			pattern: []rune("ם"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -7721,7 +7721,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "מ",
+			pattern: []rune("מ"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -7730,7 +7730,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ן",
+			pattern: []rune("ן"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -7739,7 +7739,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "נ",
+			pattern: []rune("נ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -7748,7 +7748,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ס",
+			pattern: []rune("ס"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -7757,7 +7757,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ע",
+			pattern: []rune("ע"),
 			phoneticRules: []token{
 				{
 					text:  "L",
@@ -7766,7 +7766,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ף",
+			pattern: []rune("ף"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -7775,7 +7775,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "פ",
+			pattern: []rune("פ"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -7784,7 +7784,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ץ",
+			pattern: []rune("ץ"),
 			phoneticRules: []token{
 				{
 					text:  "C",
@@ -7793,7 +7793,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "צ",
+			pattern: []rune("צ"),
 			phoneticRules: []token{
 				{
 					text:  "C",
@@ -7802,7 +7802,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ק",
+			pattern: []rune("ק"),
 			phoneticRules: []token{
 				{
 					text:  "K",
@@ -7811,7 +7811,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ר",
+			pattern: []rune("ר"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -7820,7 +7820,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ש",
+			pattern: []rune("ש"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -7829,7 +7829,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ת",
+			pattern: []rune("ת"),
 			phoneticRules: []token{
 				{
 					text:  "TB",
@@ -7840,7 +7840,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashhungarian: rules{
 		{
-			pattern: "sz",
+			pattern: []rune("sz"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -7849,7 +7849,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zs",
+			pattern: []rune("zs"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -7858,7 +7858,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cs",
+			pattern: []rune("cs"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -7867,7 +7867,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ay",
+			pattern: []rune("ay"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -7880,7 +7880,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ai",
+			pattern: []rune("ai"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -7893,7 +7893,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aj",
+			pattern: []rune("aj"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -7906,7 +7906,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7915,7 +7915,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7924,7 +7924,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -7940,7 +7940,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -7956,7 +7956,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ee",
+			pattern: []rune("ee"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7969,7 +7969,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ely",
+			pattern: []rune("ely"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -7982,7 +7982,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ly",
+			pattern: []rune("ly"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -7995,7 +7995,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gy",
+			pattern: []rune("gy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8011,7 +8011,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gy",
+			pattern: []rune("gy"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -8024,7 +8024,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ny",
+			pattern: []rune("ny"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8040,7 +8040,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ny",
+			pattern: []rune("ny"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -8053,7 +8053,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ty",
+			pattern: []rune("ty"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8069,7 +8069,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ty",
+			pattern: []rune("ty"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -8082,7 +8082,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "ku",
@@ -8095,7 +8095,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8110,7 +8110,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -8119,7 +8119,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -8128,7 +8128,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -8137,7 +8137,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -8146,7 +8146,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ö",
+			pattern: []rune("ö"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -8155,7 +8155,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ő",
+			pattern: []rune("ő"),
 			phoneticRules: []token{
 				{
 					text:  "Y",
@@ -8164,7 +8164,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -8173,7 +8173,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -8182,7 +8182,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ű",
+			pattern: []rune("ű"),
 			phoneticRules: []token{
 				{
 					text:  "Q",
@@ -8191,7 +8191,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -8200,7 +8200,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -8209,7 +8209,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -8218,7 +8218,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -8227,7 +8227,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -8236,7 +8236,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -8245,7 +8245,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -8254,7 +8254,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -8263,7 +8263,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -8272,7 +8272,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -8281,7 +8281,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -8290,7 +8290,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -8299,7 +8299,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -8308,7 +8308,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -8317,7 +8317,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -8326,7 +8326,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -8335,7 +8335,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -8344,7 +8344,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -8353,7 +8353,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -8366,7 +8366,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -8375,7 +8375,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -8384,7 +8384,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -8393,7 +8393,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -8402,7 +8402,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -8411,7 +8411,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -8420,7 +8420,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -8431,7 +8431,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashpolish: rules{
 		{
-			pattern: "ska",
+			pattern: []rune("ska"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8446,7 +8446,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cka",
+			pattern: []rune("cka"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8461,7 +8461,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lowa",
+			pattern: []rune("lowa"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8488,7 +8488,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kowa",
+			pattern: []rune("kowa"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8515,7 +8515,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owa",
+			pattern: []rune("owa"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8538,7 +8538,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lowna",
+			pattern: []rune("lowna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8565,7 +8565,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kowna",
+			pattern: []rune("kowna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8588,7 +8588,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owna",
+			pattern: []rune("owna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8607,7 +8607,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lówna",
+			pattern: []rune("lówna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8626,7 +8626,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kówna",
+			pattern: []rune("kówna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8645,7 +8645,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ówna",
+			pattern: []rune("ówna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8660,7 +8660,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -8679,7 +8679,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "czy",
+			pattern: []rune("czy"),
 			phoneticRules: []token{
 				{
 					text:  "tSi",
@@ -8688,7 +8688,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cze",
+			pattern: []rune("cze"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8708,7 +8708,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ciewicz",
+			pattern: []rune("ciewicz"),
 			phoneticRules: []token{
 				{
 					text:  "tsevitS",
@@ -8721,7 +8721,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "siewicz",
+			pattern: []rune("siewicz"),
 			phoneticRules: []token{
 				{
 					text:  "sevitS",
@@ -8734,7 +8734,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ziewicz",
+			pattern: []rune("ziewicz"),
 			phoneticRules: []token{
 				{
 					text:  "zevitS",
@@ -8747,7 +8747,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "riewicz",
+			pattern: []rune("riewicz"),
 			phoneticRules: []token{
 				{
 					text:  "rjevitS",
@@ -8756,7 +8756,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "diewicz",
+			pattern: []rune("diewicz"),
 			phoneticRules: []token{
 				{
 					text:  "djevitS",
@@ -8765,7 +8765,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tiewicz",
+			pattern: []rune("tiewicz"),
 			phoneticRules: []token{
 				{
 					text:  "tjevitS",
@@ -8774,7 +8774,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iewicz",
+			pattern: []rune("iewicz"),
 			phoneticRules: []token{
 				{
 					text:  "evitS",
@@ -8783,7 +8783,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ewicz",
+			pattern: []rune("ewicz"),
 			phoneticRules: []token{
 				{
 					text:  "evitS",
@@ -8792,7 +8792,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "owicz",
+			pattern: []rune("owicz"),
 			phoneticRules: []token{
 				{
 					text:  "ovitS",
@@ -8801,7 +8801,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "icz",
+			pattern: []rune("icz"),
 			phoneticRules: []token{
 				{
 					text:  "itS",
@@ -8810,7 +8810,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cz",
+			pattern: []rune("cz"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -8819,7 +8819,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -8828,7 +8828,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cia",
+			pattern: []rune("cia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8848,7 +8848,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cia",
+			pattern: []rune("cia"),
 			phoneticRules: []token{
 				{
 					text:  "tSa",
@@ -8861,7 +8861,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cią",
+			pattern: []rune("cią"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8881,7 +8881,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cią",
+			pattern: []rune("cią"),
 			phoneticRules: []token{
 				{
 					text:  "tSon",
@@ -8894,7 +8894,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cię",
+			pattern: []rune("cię"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8914,7 +8914,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cię",
+			pattern: []rune("cię"),
 			phoneticRules: []token{
 				{
 					text:  "tSen",
@@ -8927,7 +8927,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cie",
+			pattern: []rune("cie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -8947,7 +8947,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cie",
+			pattern: []rune("cie"),
 			phoneticRules: []token{
 				{
 					text:  "tSe",
@@ -8960,7 +8960,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "cio",
+			pattern: []rune("cio"),
 			phoneticRules: []token{
 				{
 					text:  "tSo",
@@ -8973,7 +8973,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ciu",
+			pattern: []rune("ciu"),
 			phoneticRules: []token{
 				{
 					text:  "tSu",
@@ -8986,7 +8986,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			phoneticRules: []token{
 				{
 					text:  "tSi",
@@ -8999,7 +8999,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ć",
+			pattern: []rune("ć"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -9012,7 +9012,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssz",
+			pattern: []rune("ssz"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -9021,7 +9021,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sz",
+			pattern: []rune("sz"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -9030,7 +9030,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sia",
+			pattern: []rune("sia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9054,7 +9054,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sia",
+			pattern: []rune("sia"),
 			phoneticRules: []token{
 				{
 					text:  "Sa",
@@ -9067,7 +9067,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sią",
+			pattern: []rune("sią"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9087,7 +9087,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sią",
+			pattern: []rune("sią"),
 			phoneticRules: []token{
 				{
 					text:  "Son",
@@ -9100,7 +9100,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "się",
+			pattern: []rune("się"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9120,7 +9120,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "się",
+			pattern: []rune("się"),
 			phoneticRules: []token{
 				{
 					text:  "Sen",
@@ -9133,7 +9133,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sie",
+			pattern: []rune("sie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9157,7 +9157,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sie",
+			pattern: []rune("sie"),
 			phoneticRules: []token{
 				{
 					text:  "Se",
@@ -9170,7 +9170,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sio",
+			pattern: []rune("sio"),
 			phoneticRules: []token{
 				{
 					text:  "So",
@@ -9183,7 +9183,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "siu",
+			pattern: []rune("siu"),
 			phoneticRules: []token{
 				{
 					text:  "Su",
@@ -9196,7 +9196,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "si",
+			pattern: []rune("si"),
 			phoneticRules: []token{
 				{
 					text:  "Si",
@@ -9209,7 +9209,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ś",
+			pattern: []rune("ś"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -9222,7 +9222,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zia",
+			pattern: []rune("zia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9246,7 +9246,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zia",
+			pattern: []rune("zia"),
 			phoneticRules: []token{
 				{
 					text:  "Za",
@@ -9259,7 +9259,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zią",
+			pattern: []rune("zią"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9279,7 +9279,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zią",
+			pattern: []rune("zią"),
 			phoneticRules: []token{
 				{
 					text:  "Zon",
@@ -9292,7 +9292,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zię",
+			pattern: []rune("zię"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9312,7 +9312,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zię",
+			pattern: []rune("zię"),
 			phoneticRules: []token{
 				{
 					text:  "Zen",
@@ -9325,7 +9325,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zie",
+			pattern: []rune("zie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9345,7 +9345,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zie",
+			pattern: []rune("zie"),
 			phoneticRules: []token{
 				{
 					text:  "Ze",
@@ -9358,7 +9358,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zio",
+			pattern: []rune("zio"),
 			phoneticRules: []token{
 				{
 					text:  "Zo",
@@ -9371,7 +9371,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ziu",
+			pattern: []rune("ziu"),
 			phoneticRules: []token{
 				{
 					text:  "Zu",
@@ -9384,7 +9384,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zi",
+			pattern: []rune("zi"),
 			phoneticRules: []token{
 				{
 					text:  "Zi",
@@ -9397,7 +9397,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "że",
+			pattern: []rune("że"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9417,7 +9417,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "że",
+			pattern: []rune("że"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9445,7 +9445,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "że",
+			pattern: []rune("że"),
 			phoneticRules: []token{
 				{
 					text:  "Ze",
@@ -9454,7 +9454,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "źe",
+			pattern: []rune("źe"),
 			phoneticRules: []token{
 				{
 					text:  "Ze",
@@ -9467,7 +9467,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ży",
+			pattern: []rune("ży"),
 			phoneticRules: []token{
 				{
 					text:  "Zi",
@@ -9476,7 +9476,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "źi",
+			pattern: []rune("źi"),
 			phoneticRules: []token{
 				{
 					text:  "Zi",
@@ -9489,7 +9489,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ż",
+			pattern: []rune("ż"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -9498,7 +9498,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ź",
+			pattern: []rune("ź"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -9511,7 +9511,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rze",
+			pattern: []rune("rze"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9530,7 +9530,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rze",
+			pattern: []rune("rze"),
 			phoneticRules: []token{
 				{
 					text:  "Ze",
@@ -9547,7 +9547,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rzy",
+			pattern: []rune("rzy"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9566,7 +9566,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rzy",
+			pattern: []rune("rzy"),
 			phoneticRules: []token{
 				{
 					text:  "Zi",
@@ -9583,7 +9583,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rz",
+			pattern: []rune("rz"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9602,7 +9602,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rz",
+			pattern: []rune("rz"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -9619,7 +9619,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lio",
+			pattern: []rune("lio"),
 			phoneticRules: []token{
 				{
 					text:  "lo",
@@ -9632,7 +9632,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ł",
+			pattern: []rune("ł"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -9641,7 +9641,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ń",
+			pattern: []rune("ń"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -9650,7 +9650,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -9659,7 +9659,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9674,7 +9674,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -9687,7 +9687,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ą",
+			pattern: []rune("ą"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9703,7 +9703,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ę",
+			pattern: []rune("ę"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9719,7 +9719,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ą",
+			pattern: []rune("ą"),
 			phoneticRules: []token{
 				{
 					text:  "on",
@@ -9728,7 +9728,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ę",
+			pattern: []rune("ę"),
 			phoneticRules: []token{
 				{
 					text:  "en",
@@ -9737,7 +9737,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ije",
+			pattern: []rune("ije"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -9746,7 +9746,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yje",
+			pattern: []rune("yje"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -9755,7 +9755,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iie",
+			pattern: []rune("iie"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -9764,7 +9764,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yie",
+			pattern: []rune("yie"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -9773,7 +9773,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iye",
+			pattern: []rune("iye"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -9782,7 +9782,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yye",
+			pattern: []rune("yye"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -9791,7 +9791,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ij",
+			pattern: []rune("ij"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9807,7 +9807,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yj",
+			pattern: []rune("yj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9823,7 +9823,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ii",
+			pattern: []rune("ii"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9839,7 +9839,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yi",
+			pattern: []rune("yi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9855,7 +9855,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iy",
+			pattern: []rune("iy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9871,7 +9871,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yy",
+			pattern: []rune("yy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9887,7 +9887,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "rie",
+			pattern: []rune("rie"),
 			phoneticRules: []token{
 				{
 					text:  "rje",
@@ -9896,7 +9896,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "die",
+			pattern: []rune("die"),
 			phoneticRules: []token{
 				{
 					text:  "dje",
@@ -9905,7 +9905,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tie",
+			pattern: []rune("tie"),
 			phoneticRules: []token{
 				{
 					text:  "tje",
@@ -9914,7 +9914,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -9930,7 +9930,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -9939,7 +9939,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -9948,7 +9948,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "au",
+			pattern: []rune("au"),
 			phoneticRules: []token{
 				{
 					text:  "au",
@@ -9957,7 +9957,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -9966,7 +9966,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -9975,7 +9975,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ej",
+			pattern: []rune("ej"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -9984,7 +9984,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ai",
+			pattern: []rune("ai"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -9993,7 +9993,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ay",
+			pattern: []rune("ay"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -10002,7 +10002,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aj",
+			pattern: []rune("aj"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -10011,7 +10011,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10027,7 +10027,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10043,7 +10043,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10059,7 +10059,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10075,7 +10075,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10091,7 +10091,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10111,7 +10111,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10127,7 +10127,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -10136,7 +10136,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -10145,7 +10145,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -10154,7 +10154,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -10163,7 +10163,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -10172,7 +10172,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -10181,7 +10181,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -10190,7 +10190,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -10203,7 +10203,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -10212,7 +10212,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -10221,7 +10221,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -10230,7 +10230,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -10239,7 +10239,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -10248,7 +10248,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -10257,7 +10257,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -10266,7 +10266,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -10275,7 +10275,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -10284,7 +10284,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -10293,7 +10293,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -10302,7 +10302,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -10311,7 +10311,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -10320,7 +10320,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -10329,7 +10329,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -10338,7 +10338,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -10347,7 +10347,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -10356,7 +10356,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -10367,7 +10367,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashromanian: rules{
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -10376,7 +10376,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ce",
+			pattern: []rune("ce"),
 			phoneticRules: []token{
 				{
 					text:  "tSe",
@@ -10385,7 +10385,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			phoneticRules: []token{
 				{
 					text:  "tSi",
@@ -10398,7 +10398,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10414,7 +10414,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -10423,7 +10423,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -10432,7 +10432,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			phoneticRules: []token{
 				{
 					text:  "dZi",
@@ -10445,7 +10445,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10461,7 +10461,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gh",
+			pattern: []rune("gh"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -10470,7 +10470,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -10479,7 +10479,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10495,7 +10495,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -10511,7 +10511,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ţ",
+			pattern: []rune("ţ"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -10520,7 +10520,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ş",
+			pattern: []rune("ş"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -10529,7 +10529,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -10542,7 +10542,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -10551,7 +10551,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -10560,7 +10560,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -10569,7 +10569,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -10578,7 +10578,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -10587,7 +10587,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "î",
+			pattern: []rune("î"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -10596,7 +10596,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ea",
+			pattern: []rune("ea"),
 			phoneticRules: []token{
 				{
 					text:  "ja",
@@ -10605,7 +10605,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ă",
+			pattern: []rune("ă"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -10618,7 +10618,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -10627,7 +10627,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -10636,7 +10636,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -10645,7 +10645,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -10654,7 +10654,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -10663,7 +10663,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -10672,7 +10672,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -10681,7 +10681,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -10690,7 +10690,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -10699,7 +10699,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -10708,7 +10708,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -10717,7 +10717,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -10726,7 +10726,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -10735,7 +10735,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -10744,7 +10744,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -10753,7 +10753,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -10762,7 +10762,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -10771,7 +10771,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -10780,7 +10780,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -10789,7 +10789,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -10800,7 +10800,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashrussian: rules{
 		{
-			pattern: "yna",
+			pattern: []rune("yna"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10819,7 +10819,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ina",
+			pattern: []rune("ina"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10838,7 +10838,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "liova",
+			pattern: []rune("liova"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10857,7 +10857,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lova",
+			pattern: []rune("lova"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10880,7 +10880,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ova",
+			pattern: []rune("ova"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10899,7 +10899,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "eva",
+			pattern: []rune("eva"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10918,7 +10918,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aia",
+			pattern: []rune("aia"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10937,7 +10937,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aja",
+			pattern: []rune("aja"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10956,7 +10956,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aya",
+			pattern: []rune("aya"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -10975,7 +10975,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsya",
+			pattern: []rune("tsya"),
 			phoneticRules: []token{
 				{
 					text:  "tsa",
@@ -10984,7 +10984,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsyu",
+			pattern: []rune("tsyu"),
 			phoneticRules: []token{
 				{
 					text:  "tsu",
@@ -10993,7 +10993,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsia",
+			pattern: []rune("tsia"),
 			phoneticRules: []token{
 				{
 					text:  "tsa",
@@ -11002,7 +11002,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsie",
+			pattern: []rune("tsie"),
 			phoneticRules: []token{
 				{
 					text:  "tse",
@@ -11011,7 +11011,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsio",
+			pattern: []rune("tsio"),
 			phoneticRules: []token{
 				{
 					text:  "tso",
@@ -11020,7 +11020,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsye",
+			pattern: []rune("tsye"),
 			phoneticRules: []token{
 				{
 					text:  "tse",
@@ -11029,7 +11029,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsyo",
+			pattern: []rune("tsyo"),
 			phoneticRules: []token{
 				{
 					text:  "tso",
@@ -11038,7 +11038,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tsiu",
+			pattern: []rune("tsiu"),
 			phoneticRules: []token{
 				{
 					text:  "tsu",
@@ -11047,7 +11047,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sie",
+			pattern: []rune("sie"),
 			phoneticRules: []token{
 				{
 					text:  "se",
@@ -11056,7 +11056,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sio",
+			pattern: []rune("sio"),
 			phoneticRules: []token{
 				{
 					text:  "so",
@@ -11065,7 +11065,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zie",
+			pattern: []rune("zie"),
 			phoneticRules: []token{
 				{
 					text:  "ze",
@@ -11074,7 +11074,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zio",
+			pattern: []rune("zio"),
 			phoneticRules: []token{
 				{
 					text:  "zo",
@@ -11083,7 +11083,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sye",
+			pattern: []rune("sye"),
 			phoneticRules: []token{
 				{
 					text:  "se",
@@ -11092,7 +11092,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "syo",
+			pattern: []rune("syo"),
 			phoneticRules: []token{
 				{
 					text:  "so",
@@ -11101,7 +11101,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zye",
+			pattern: []rune("zye"),
 			phoneticRules: []token{
 				{
 					text:  "ze",
@@ -11110,7 +11110,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zyo",
+			pattern: []rune("zyo"),
 			phoneticRules: []token{
 				{
 					text:  "zo",
@@ -11119,7 +11119,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gauz",
+			pattern: []rune("gauz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11134,7 +11134,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gaus",
+			pattern: []rune("gaus"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11149,7 +11149,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gol'ts",
+			pattern: []rune("gol'ts"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11164,7 +11164,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "golts",
+			pattern: []rune("golts"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11179,7 +11179,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gol'tz",
+			pattern: []rune("gol'tz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11194,7 +11194,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "goltz",
+			pattern: []rune("goltz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11209,7 +11209,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gejmer",
+			pattern: []rune("gejmer"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11224,7 +11224,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gejm",
+			pattern: []rune("gejm"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11239,7 +11239,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geimer",
+			pattern: []rune("geimer"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11254,7 +11254,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geim",
+			pattern: []rune("geim"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11269,7 +11269,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geymer",
+			pattern: []rune("geymer"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11284,7 +11284,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "geym",
+			pattern: []rune("geym"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11299,7 +11299,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gendler",
+			pattern: []rune("gendler"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11314,7 +11314,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gof",
+			pattern: []rune("gof"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11329,7 +11329,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gojf",
+			pattern: []rune("gojf"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11344,7 +11344,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "goyf",
+			pattern: []rune("goyf"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11359,7 +11359,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "goif",
+			pattern: []rune("goif"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11374,7 +11374,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ger",
+			pattern: []rune("ger"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11389,7 +11389,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gen",
+			pattern: []rune("gen"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11404,7 +11404,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gin",
+			pattern: []rune("gin"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11419,7 +11419,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gg",
+			pattern: []rune("gg"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -11428,7 +11428,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kog",
+			pattern: []rune("kog"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11454,7 +11454,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kag",
+			pattern: []rune("kag"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11480,7 +11480,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11503,7 +11503,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11523,7 +11523,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -11532,7 +11532,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -11545,7 +11545,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sch",
+			pattern: []rune("sch"),
 			phoneticRules: []token{
 				{
 					text:  "StS",
@@ -11558,7 +11558,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ssh",
+			pattern: []rune("ssh"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -11567,7 +11567,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -11576,7 +11576,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "zh",
+			pattern: []rune("zh"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -11585,7 +11585,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tz",
+			pattern: []rune("tz"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -11600,7 +11600,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "tz",
+			pattern: []rune("tz"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -11613,7 +11613,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11629,7 +11629,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -11638,7 +11638,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "kv",
@@ -11651,7 +11651,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -11660,7 +11660,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11675,7 +11675,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -11684,7 +11684,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -11693,7 +11693,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lya",
+			pattern: []rune("lya"),
 			phoneticRules: []token{
 				{
 					text:  "la",
@@ -11702,7 +11702,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lyu",
+			pattern: []rune("lyu"),
 			phoneticRules: []token{
 				{
 					text:  "lu",
@@ -11711,7 +11711,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lia",
+			pattern: []rune("lia"),
 			phoneticRules: []token{
 				{
 					text:  "la",
@@ -11720,7 +11720,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "liu",
+			pattern: []rune("liu"),
 			phoneticRules: []token{
 				{
 					text:  "lu",
@@ -11729,7 +11729,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lja",
+			pattern: []rune("lja"),
 			phoneticRules: []token{
 				{
 					text:  "la",
@@ -11738,7 +11738,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lju",
+			pattern: []rune("lju"),
 			phoneticRules: []token{
 				{
 					text:  "lu",
@@ -11747,7 +11747,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "le",
+			pattern: []rune("le"),
 			phoneticRules: []token{
 				{
 					text:  "lo",
@@ -11760,7 +11760,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lyo",
+			pattern: []rune("lyo"),
 			phoneticRules: []token{
 				{
 					text:  "lo",
@@ -11773,7 +11773,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "lio",
+			pattern: []rune("lio"),
 			phoneticRules: []token{
 				{
 					text:  "lo",
@@ -11786,7 +11786,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ije",
+			pattern: []rune("ije"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11795,7 +11795,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ie",
+			pattern: []rune("ie"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11804,7 +11804,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iye",
+			pattern: []rune("iye"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11813,7 +11813,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iie",
+			pattern: []rune("iie"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11822,7 +11822,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yje",
+			pattern: []rune("yje"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11831,7 +11831,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ye",
+			pattern: []rune("ye"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11840,7 +11840,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yye",
+			pattern: []rune("yye"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11849,7 +11849,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yie",
+			pattern: []rune("yie"),
 			phoneticRules: []token{
 				{
 					text:  "je",
@@ -11858,7 +11858,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ij",
+			pattern: []rune("ij"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11874,7 +11874,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iy",
+			pattern: []rune("iy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11890,7 +11890,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ii",
+			pattern: []rune("ii"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11906,7 +11906,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yj",
+			pattern: []rune("yj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11922,7 +11922,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yy",
+			pattern: []rune("yy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11938,7 +11938,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yi",
+			pattern: []rune("yi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11954,7 +11954,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "io",
+			pattern: []rune("io"),
 			phoneticRules: []token{
 				{
 					text:  "jo",
@@ -11967,7 +11967,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11983,7 +11983,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -11999,7 +11999,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -12008,7 +12008,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -12017,7 +12017,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ej",
+			pattern: []rune("ej"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -12026,7 +12026,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yo",
+			pattern: []rune("yo"),
 			phoneticRules: []token{
 				{
 					text:  "jo",
@@ -12039,7 +12039,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12055,7 +12055,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12071,7 +12071,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ii",
+			pattern: []rune("ii"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12087,7 +12087,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "iy",
+			pattern: []rune("iy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12103,7 +12103,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yy",
+			pattern: []rune("yy"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12119,7 +12119,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yi",
+			pattern: []rune("yi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12135,7 +12135,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "yj",
+			pattern: []rune("yj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -12150,7 +12150,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ij",
+			pattern: []rune("ij"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -12165,7 +12165,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -12184,7 +12184,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ee",
+			pattern: []rune("ee"),
 			phoneticRules: []token{
 				{
 					text:  "aje",
@@ -12197,7 +12197,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12213,7 +12213,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -12222,7 +12222,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "oo",
+			pattern: []rune("oo"),
 			phoneticRules: []token{
 				{
 					text:  "oo",
@@ -12235,7 +12235,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "'",
+			pattern: []rune("'"),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -12244,7 +12244,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "\"",
+			pattern: []rune("\""),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -12253,7 +12253,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -12262,7 +12262,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -12271,7 +12271,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -12280,7 +12280,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -12289,7 +12289,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -12298,7 +12298,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -12307,7 +12307,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -12316,7 +12316,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -12325,7 +12325,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -12334,7 +12334,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "j",
@@ -12343,7 +12343,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -12352,7 +12352,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -12361,7 +12361,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -12370,7 +12370,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -12379,7 +12379,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -12388,7 +12388,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -12397,7 +12397,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -12406,7 +12406,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -12415,7 +12415,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -12424,7 +12424,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -12433,7 +12433,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -12442,7 +12442,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -12453,7 +12453,7 @@ var ashRules = map[ashLang]rules{
 	},
 	ashspanish: rules{
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -12466,7 +12466,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -12479,7 +12479,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12495,7 +12495,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -12510,7 +12510,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -12519,7 +12519,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -12528,7 +12528,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ll",
+			pattern: []rune("ll"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -12541,7 +12541,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -12550,20 +12550,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "v",
-			phoneticRules: []token{
-				{
-					text:  "b",
-					langs: -1,
-				},
-				{
-					text:  "v",
-					langs: -1,
-				},
-			},
-		},
-		{
-			pattern: "b",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -12576,7 +12563,20 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("b"),
+			phoneticRules: []token{
+				{
+					text:  "b",
+					langs: -1,
+				},
+				{
+					text:  "v",
+					langs: -1,
+				},
+			},
+		},
+		{
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12596,7 +12596,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12612,7 +12612,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -12621,7 +12621,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -12634,7 +12634,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12654,7 +12654,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12674,7 +12674,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -12683,7 +12683,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -12692,7 +12692,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -12705,7 +12705,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -12721,7 +12721,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -12742,7 +12742,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -12751,7 +12751,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -12760,7 +12760,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -12769,7 +12769,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -12778,7 +12778,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -12787,7 +12787,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -12796,7 +12796,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -12805,7 +12805,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -12814,7 +12814,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "E",
@@ -12823,7 +12823,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -12832,7 +12832,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -12841,7 +12841,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -12850,7 +12850,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "I",
@@ -12859,7 +12859,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -12868,7 +12868,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -12877,7 +12877,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -12886,7 +12886,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -12895,7 +12895,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -12904,7 +12904,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -12913,7 +12913,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -12922,7 +12922,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -12931,7 +12931,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -12940,7 +12940,7 @@ var ashRules = map[ashLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -14690,7 +14690,7 @@ var ashFinalRules = finalRules{
 	approx: finalRule{
 		first: rules{
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -14705,7 +14705,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14721,7 +14721,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14736,7 +14736,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -14751,7 +14751,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14767,7 +14767,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14782,7 +14782,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14798,7 +14798,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14813,7 +14813,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -14828,7 +14828,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14844,7 +14844,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14859,7 +14859,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14875,7 +14875,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14890,7 +14890,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -14905,7 +14905,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14921,7 +14921,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14936,7 +14936,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14952,7 +14952,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14967,7 +14967,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -14982,7 +14982,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -14998,7 +14998,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15013,7 +15013,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15028,7 +15028,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15043,7 +15043,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15059,7 +15059,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15075,7 +15075,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15091,7 +15091,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15107,7 +15107,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15123,7 +15123,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jnm",
+				pattern: []rune("jnm"),
 				phoneticRules: []token{
 					{
 						text:  "jm",
@@ -15132,7 +15132,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -15147,7 +15147,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jI",
+				pattern: []rune("jI"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -15162,7 +15162,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15178,7 +15178,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15194,7 +15194,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "A",
+				pattern: []rune("A"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15209,7 +15209,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15224,7 +15224,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15239,7 +15239,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15254,7 +15254,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15269,7 +15269,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15284,7 +15284,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15299,7 +15299,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "l",
+				pattern: []rune("l"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15314,7 +15314,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "m",
+				pattern: []rune("m"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15329,7 +15329,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15344,7 +15344,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15359,7 +15359,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "r",
+				pattern: []rune("r"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15374,7 +15374,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15389,7 +15389,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15404,7 +15404,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15419,7 +15419,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15435,7 +15435,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "kAg",
+				pattern: []rune("kAg"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -15461,7 +15461,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "kOg",
+				pattern: []rune("kOg"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -15487,7 +15487,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "kog",
+				pattern: []rune("kog"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -15513,7 +15513,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "kag",
+				pattern: []rune("kag"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -15539,7 +15539,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				phoneticRules: []token{
 					{
 						text:  "",
@@ -15548,7 +15548,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "H",
+				pattern: []rune("H"),
 				phoneticRules: []token{
 					{
 						text:  "x",
@@ -15561,7 +15561,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "F",
+				pattern: []rune("F"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15577,7 +15577,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "F",
+				pattern: []rune("F"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15593,7 +15593,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15609,7 +15609,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15625,7 +15625,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15648,7 +15648,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15671,7 +15671,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "E",
+				pattern: []rune("E"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15694,7 +15694,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "I",
+				pattern: []rune("I"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15717,7 +15717,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "F",
+				pattern: []rune("F"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15740,7 +15740,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Q",
+				pattern: []rune("Q"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15763,7 +15763,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Y",
+				pattern: []rune("Y"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15786,7 +15786,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15813,7 +15813,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15840,7 +15840,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "E",
+				pattern: []rune("E"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15867,7 +15867,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "I",
+				pattern: []rune("I"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15894,7 +15894,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "F",
+				pattern: []rune("F"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15921,7 +15921,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Q",
+				pattern: []rune("Q"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15948,7 +15948,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Y",
+				pattern: []rune("Y"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -15975,7 +15975,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lEs",
+				pattern: []rune("lEs"),
 				phoneticRules: []token{
 					{
 						text:  "lEs",
@@ -15988,7 +15988,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lE",
+				pattern: []rune("lE"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -16008,7 +16008,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aue",
+				pattern: []rune("aue"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16017,7 +16017,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oue",
+				pattern: []rune("oue"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16026,7 +16026,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AvE",
+				pattern: []rune("AvE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16039,7 +16039,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ave",
+				pattern: []rune("Ave"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16052,7 +16052,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "avE",
+				pattern: []rune("avE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16065,7 +16065,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ave",
+				pattern: []rune("ave"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16078,7 +16078,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "OvE",
+				pattern: []rune("OvE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16091,7 +16091,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ove",
+				pattern: []rune("Ove"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16104,7 +16104,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ovE",
+				pattern: []rune("ovE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16117,7 +16117,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ove",
+				pattern: []rune("ove"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16130,7 +16130,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ea",
+				pattern: []rune("ea"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16143,7 +16143,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "EA",
+				pattern: []rune("EA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16156,7 +16156,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ea",
+				pattern: []rune("Ea"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16169,7 +16169,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "eA",
+				pattern: []rune("eA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16182,7 +16182,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aji",
+				pattern: []rune("aji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16191,7 +16191,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajI",
+				pattern: []rune("ajI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16200,7 +16200,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aje",
+				pattern: []rune("aje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16209,7 +16209,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajE",
+				pattern: []rune("ajE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16218,7 +16218,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aji",
+				pattern: []rune("Aji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16227,7 +16227,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjI",
+				pattern: []rune("AjI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16236,7 +16236,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aje",
+				pattern: []rune("Aje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16245,7 +16245,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjE",
+				pattern: []rune("AjE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16254,7 +16254,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oji",
+				pattern: []rune("oji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16263,7 +16263,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ojI",
+				pattern: []rune("ojI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16272,7 +16272,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oje",
+				pattern: []rune("oje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16281,7 +16281,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ojE",
+				pattern: []rune("ojE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16290,7 +16290,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Oji",
+				pattern: []rune("Oji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16299,7 +16299,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "OjI",
+				pattern: []rune("OjI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16308,7 +16308,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Oje",
+				pattern: []rune("Oje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16317,7 +16317,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "OjE",
+				pattern: []rune("OjE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16326,7 +16326,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "eji",
+				pattern: []rune("eji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16335,7 +16335,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ejI",
+				pattern: []rune("ejI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16344,7 +16344,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "eje",
+				pattern: []rune("eje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16353,7 +16353,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ejE",
+				pattern: []rune("ejE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16362,7 +16362,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Eji",
+				pattern: []rune("Eji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16371,7 +16371,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "EjI",
+				pattern: []rune("EjI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16380,7 +16380,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Eje",
+				pattern: []rune("Eje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16389,7 +16389,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "EjE",
+				pattern: []rune("EjE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16398,7 +16398,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "uji",
+				pattern: []rune("uji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16407,7 +16407,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ujI",
+				pattern: []rune("ujI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16416,7 +16416,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "uje",
+				pattern: []rune("uje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16425,7 +16425,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ujE",
+				pattern: []rune("ujE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16434,7 +16434,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Uji",
+				pattern: []rune("Uji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16443,7 +16443,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "UjI",
+				pattern: []rune("UjI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16452,7 +16452,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Uje",
+				pattern: []rune("Uje"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16461,7 +16461,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "UjE",
+				pattern: []rune("UjE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16470,7 +16470,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "iji",
+				pattern: []rune("iji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16479,7 +16479,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ijI",
+				pattern: []rune("ijI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16488,7 +16488,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ije",
+				pattern: []rune("ije"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16497,7 +16497,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ijE",
+				pattern: []rune("ijE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16506,7 +16506,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Iji",
+				pattern: []rune("Iji"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16515,7 +16515,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "IjI",
+				pattern: []rune("IjI"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16524,7 +16524,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ije",
+				pattern: []rune("Ije"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16533,7 +16533,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "IjE",
+				pattern: []rune("IjE"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16542,7 +16542,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aja",
+				pattern: []rune("aja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16551,7 +16551,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajA",
+				pattern: []rune("ajA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16560,7 +16560,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajo",
+				pattern: []rune("ajo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16569,7 +16569,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajO",
+				pattern: []rune("ajO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16578,7 +16578,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aju",
+				pattern: []rune("aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16587,7 +16587,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajU",
+				pattern: []rune("ajU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16596,7 +16596,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aja",
+				pattern: []rune("Aja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16605,7 +16605,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjA",
+				pattern: []rune("AjA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16614,7 +16614,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ajo",
+				pattern: []rune("Ajo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16623,7 +16623,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjO",
+				pattern: []rune("AjO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16632,7 +16632,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16641,7 +16641,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16650,7 +16650,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oja",
+				pattern: []rune("oja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16659,7 +16659,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ojA",
+				pattern: []rune("ojA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16668,7 +16668,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ojo",
+				pattern: []rune("ojo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16677,7 +16677,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ojO",
+				pattern: []rune("ojO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16686,7 +16686,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16695,7 +16695,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16704,7 +16704,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Oja",
+				pattern: []rune("Oja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16713,7 +16713,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "OjA",
+				pattern: []rune("OjA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16722,7 +16722,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ojo",
+				pattern: []rune("Ojo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16731,7 +16731,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "OjO",
+				pattern: []rune("OjO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16740,7 +16740,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16749,7 +16749,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16758,7 +16758,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "eja",
+				pattern: []rune("eja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16767,7 +16767,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ejA",
+				pattern: []rune("ejA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16776,7 +16776,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ejo",
+				pattern: []rune("ejo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16785,7 +16785,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ejO",
+				pattern: []rune("ejO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16794,7 +16794,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16803,7 +16803,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16812,7 +16812,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Eja",
+				pattern: []rune("Eja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16821,7 +16821,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "EjA",
+				pattern: []rune("EjA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16830,7 +16830,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ejo",
+				pattern: []rune("Ejo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16839,7 +16839,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "EjO",
+				pattern: []rune("EjO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16848,7 +16848,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16857,7 +16857,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16866,7 +16866,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "uja",
+				pattern: []rune("uja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16875,7 +16875,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ujA",
+				pattern: []rune("ujA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16884,7 +16884,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ujo",
+				pattern: []rune("ujo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16893,7 +16893,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ujO",
+				pattern: []rune("ujO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16902,7 +16902,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16911,7 +16911,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16920,7 +16920,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Uja",
+				pattern: []rune("Uja"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16929,7 +16929,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "UjA",
+				pattern: []rune("UjA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16938,7 +16938,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ujo",
+				pattern: []rune("Ujo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16947,7 +16947,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "UjO",
+				pattern: []rune("UjO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16956,7 +16956,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16965,7 +16965,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16974,7 +16974,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ija",
+				pattern: []rune("ija"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16983,7 +16983,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ijA",
+				pattern: []rune("ijA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -16992,7 +16992,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ijo",
+				pattern: []rune("ijo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17001,7 +17001,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ijO",
+				pattern: []rune("ijO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17010,7 +17010,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17019,7 +17019,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17028,7 +17028,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ija",
+				pattern: []rune("Ija"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17037,7 +17037,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "IjA",
+				pattern: []rune("IjA"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17046,7 +17046,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Ijo",
+				pattern: []rune("Ijo"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17055,7 +17055,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "IjO",
+				pattern: []rune("IjO"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17064,7 +17064,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Aju",
+				pattern: []rune("Aju"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17073,7 +17073,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "AjU",
+				pattern: []rune("AjU"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -17082,7 +17082,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "j",
+				pattern: []rune("j"),
 				phoneticRules: []token{
 					{
 						text:  "i",
@@ -17091,7 +17091,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lYndEr",
+				pattern: []rune("lYndEr"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17106,7 +17106,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lander",
+				pattern: []rune("lander"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17121,7 +17121,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lAndEr",
+				pattern: []rune("lAndEr"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17136,7 +17136,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lAnder",
+				pattern: []rune("lAnder"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17151,7 +17151,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "landEr",
+				pattern: []rune("landEr"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17166,7 +17166,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lender",
+				pattern: []rune("lender"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17181,7 +17181,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lEndEr",
+				pattern: []rune("lEndEr"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17196,7 +17196,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lendEr",
+				pattern: []rune("lendEr"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17211,7 +17211,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "lEnder",
+				pattern: []rune("lEnder"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17226,7 +17226,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "bUrk",
+				pattern: []rune("bUrk"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17245,7 +17245,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "burk",
+				pattern: []rune("burk"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17264,7 +17264,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "bUrg",
+				pattern: []rune("bUrg"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17283,7 +17283,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "burg",
+				pattern: []rune("burg"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17302,7 +17302,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -17318,7 +17318,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -17334,7 +17334,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -17350,7 +17350,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -17366,7 +17366,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dS",
+				pattern: []rune("dS"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17381,7 +17381,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dZ",
+				pattern: []rune("dZ"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17396,7 +17396,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17411,26 +17411,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
-				rightContext: &ruleMatcher{
-					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
-				},
-				phoneticRules: []token{
-					{
-						text:  "S",
-						langs: -1,
-					},
-					{
-						text:  "s",
-						langs: -1,
-					},
-				},
-			},
-			{
-				pattern: "z",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -17449,7 +17430,26 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("z"),
+				rightContext: &ruleMatcher{
+					matchEmptyString: true,
+					contains:         "",
+					prefix:           "",
+					suffix:           "",
+				},
+				phoneticRules: []token{
+					{
+						text:  "S",
+						langs: -1,
+					},
+					{
+						text:  "s",
+						langs: -1,
+					},
+				},
+			},
+			{
+				pattern: []rune("S"),
 				phoneticRules: []token{
 					{
 						text:  "s",
@@ -17458,7 +17458,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dZ",
+				pattern: []rune("dZ"),
 				phoneticRules: []token{
 					{
 						text:  "z",
@@ -17467,7 +17467,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				phoneticRules: []token{
 					{
 						text:  "z",
@@ -17479,7 +17479,7 @@ var ashFinalRules = finalRules{
 		second: map[languageID]rules{
 			languageID(ashany): rules{
 				{
-					pattern: "b",
+					pattern: []rune("b"),
 					phoneticRules: []token{
 						{
 							text:  "b",
@@ -17492,7 +17492,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "J",
+					pattern: []rune("J"),
 					phoneticRules: []token{
 						{
 							text:  "z",
@@ -17501,7 +17501,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiB",
+					pattern: []rune("aiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17521,7 +17521,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "AiB",
+					pattern: []rune("AiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17541,7 +17541,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiB",
+					pattern: []rune("oiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17561,7 +17561,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "OiB",
+					pattern: []rune("OiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17581,7 +17581,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiB",
+					pattern: []rune("uiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17601,7 +17601,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "UiB",
+					pattern: []rune("UiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17621,7 +17621,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiB",
+					pattern: []rune("eiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17641,7 +17641,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiB",
+					pattern: []rune("EiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17661,7 +17661,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiB",
+					pattern: []rune("iiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17681,7 +17681,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiB",
+					pattern: []rune("IiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17701,7 +17701,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiB",
+					pattern: []rune("aiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17721,7 +17721,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "AiB",
+					pattern: []rune("AiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17741,7 +17741,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiB",
+					pattern: []rune("oiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17761,7 +17761,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "OiB",
+					pattern: []rune("OiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17781,7 +17781,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiB",
+					pattern: []rune("uiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17801,7 +17801,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "UiB",
+					pattern: []rune("UiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17821,7 +17821,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiB",
+					pattern: []rune("eiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17841,7 +17841,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiB",
+					pattern: []rune("EiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17861,7 +17861,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiB",
+					pattern: []rune("iiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17881,7 +17881,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiB",
+					pattern: []rune("IiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17901,7 +17901,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17925,7 +17925,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17953,7 +17953,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -17966,7 +17966,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiF",
+					pattern: []rune("aiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -17986,7 +17986,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "AiF",
+					pattern: []rune("AiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18006,7 +18006,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiF",
+					pattern: []rune("oiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18026,7 +18026,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "OiF",
+					pattern: []rune("OiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18046,7 +18046,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiF",
+					pattern: []rune("uiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18066,7 +18066,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "UiF",
+					pattern: []rune("UiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18086,7 +18086,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiF",
+					pattern: []rune("eiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18106,7 +18106,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiF",
+					pattern: []rune("EiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18126,7 +18126,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiF",
+					pattern: []rune("iiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18146,7 +18146,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiF",
+					pattern: []rune("IiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18166,7 +18166,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiF",
+					pattern: []rune("aiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18186,7 +18186,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "AiF",
+					pattern: []rune("AiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18206,7 +18206,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiF",
+					pattern: []rune("oiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18226,7 +18226,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "OiF",
+					pattern: []rune("OiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18246,7 +18246,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiF",
+					pattern: []rune("uiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18266,7 +18266,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "UiF",
+					pattern: []rune("UiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18286,7 +18286,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiF",
+					pattern: []rune("eiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18306,7 +18306,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiF",
+					pattern: []rune("EiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18326,7 +18326,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiF",
+					pattern: []rune("iiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18346,7 +18346,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiF",
+					pattern: []rune("IiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18366,7 +18366,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18390,7 +18390,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18414,7 +18414,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -18423,7 +18423,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "P",
+					pattern: []rune("P"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -18436,7 +18436,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18452,7 +18452,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18476,7 +18476,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -18491,7 +18491,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18507,7 +18507,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18533,7 +18533,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -18548,7 +18548,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -18567,7 +18567,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -18582,7 +18582,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "Q",
@@ -18595,7 +18595,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "lE",
+					pattern: []rune("lE"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18621,7 +18621,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "lE",
+					pattern: []rune("lE"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18645,7 +18645,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18662,7 +18662,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18679,7 +18679,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18696,7 +18696,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ai",
+					pattern: []rune("Ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18713,7 +18713,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18730,7 +18730,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Oi",
+					pattern: []rune("Oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18747,7 +18747,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18764,7 +18764,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ui",
+					pattern: []rune("Ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18781,7 +18781,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ei",
+					pattern: []rune("ei"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18794,7 +18794,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ei",
+					pattern: []rune("Ei"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -18807,7 +18807,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iA",
+					pattern: []rune("iA"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -18826,7 +18826,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iA",
+					pattern: []rune("iA"),
 					phoneticRules: []token{
 						{
 							text:  "ia",
@@ -18843,7 +18843,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18871,7 +18871,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18895,7 +18895,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18919,7 +18919,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18935,7 +18935,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18951,7 +18951,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -18966,7 +18966,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18982,7 +18982,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -18998,7 +18998,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -19011,7 +19011,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19027,7 +19027,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19043,7 +19043,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19058,7 +19058,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19074,7 +19074,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19090,7 +19090,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -19103,7 +19103,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -19116,7 +19116,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19132,7 +19132,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19148,7 +19148,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19163,7 +19163,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19179,7 +19179,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -19192,7 +19192,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19212,7 +19212,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19232,7 +19232,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19251,7 +19251,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19271,7 +19271,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -19288,7 +19288,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19303,7 +19303,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19319,7 +19319,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19335,7 +19335,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Uk",
+					pattern: []rune("Uk"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19361,7 +19361,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Uk",
+					pattern: []rune("Uk"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19376,7 +19376,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sUts",
+					pattern: []rune("sUts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19395,7 +19395,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Uts",
+					pattern: []rune("Uts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19410,7 +19410,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					phoneticRules: []token{
 						{
 							text:  "u",
@@ -19425,7 +19425,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashrussian): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19440,7 +19440,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19456,7 +19456,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19482,7 +19482,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19497,7 +19497,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19516,7 +19516,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19531,7 +19531,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19547,7 +19547,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -19560,7 +19560,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -19577,7 +19577,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -19594,7 +19594,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -19611,7 +19611,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -19628,7 +19628,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -19645,7 +19645,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "om",
+					pattern: []rune("om"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19665,7 +19665,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "on",
+					pattern: []rune("on"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19685,7 +19685,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "em",
+					pattern: []rune("em"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19705,7 +19705,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "en",
+					pattern: []rune("en"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19725,7 +19725,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Em",
+					pattern: []rune("Em"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19749,7 +19749,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "En",
+					pattern: []rune("En"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19773,7 +19773,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -19786,7 +19786,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -19795,7 +19795,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19811,7 +19811,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19827,7 +19827,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19843,7 +19843,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19859,7 +19859,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -19874,7 +19874,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashcyrillic): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19889,7 +19889,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19905,7 +19905,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19931,7 +19931,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19946,7 +19946,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19965,7 +19965,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -19980,7 +19980,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -19996,7 +19996,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -20009,7 +20009,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20026,7 +20026,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20043,7 +20043,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20060,7 +20060,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20077,7 +20077,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20094,7 +20094,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "om",
+					pattern: []rune("om"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20114,7 +20114,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "on",
+					pattern: []rune("on"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20134,7 +20134,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "em",
+					pattern: []rune("em"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20154,7 +20154,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "en",
+					pattern: []rune("en"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20174,7 +20174,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Em",
+					pattern: []rune("Em"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20198,7 +20198,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "En",
+					pattern: []rune("En"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20222,7 +20222,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -20235,7 +20235,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -20244,7 +20244,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20260,7 +20260,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20276,7 +20276,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20292,7 +20292,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20308,7 +20308,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -20323,7 +20323,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashenglish): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20347,7 +20347,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20362,7 +20362,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20378,7 +20378,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20394,7 +20394,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20420,7 +20420,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20435,7 +20435,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20454,7 +20454,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20469,7 +20469,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -20482,7 +20482,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "lE",
+					pattern: []rune("lE"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20506,7 +20506,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20523,7 +20523,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20540,7 +20540,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20557,7 +20557,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20574,7 +20574,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20591,7 +20591,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20611,7 +20611,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20631,7 +20631,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -20640,7 +20640,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20656,7 +20656,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20672,7 +20672,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20688,7 +20688,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20704,7 +20704,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -20717,7 +20717,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -20732,7 +20732,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashfrench): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20747,7 +20747,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20763,7 +20763,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20779,7 +20779,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20805,7 +20805,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20820,7 +20820,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20839,7 +20839,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -20854,7 +20854,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -20867,7 +20867,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20884,7 +20884,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20901,7 +20901,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20918,7 +20918,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20935,7 +20935,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -20952,7 +20952,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -20965,7 +20965,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -20974,7 +20974,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -20990,7 +20990,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21006,7 +21006,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21022,7 +21022,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21038,7 +21038,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -21053,7 +21053,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashgerman): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21068,7 +21068,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21084,7 +21084,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21100,7 +21100,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21126,7 +21126,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21141,7 +21141,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21160,7 +21160,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21175,7 +21175,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "Q",
@@ -21188,7 +21188,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "AU",
+					pattern: []rune("AU"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21205,7 +21205,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aU",
+					pattern: []rune("aU"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21222,7 +21222,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Au",
+					pattern: []rune("Au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21239,7 +21239,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21256,7 +21256,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21273,7 +21273,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "OU",
+					pattern: []rune("OU"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21290,7 +21290,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oU",
+					pattern: []rune("oU"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21307,7 +21307,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ou",
+					pattern: []rune("Ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21324,7 +21324,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21341,7 +21341,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ai",
+					pattern: []rune("Ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21358,7 +21358,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21375,7 +21375,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Oi",
+					pattern: []rune("Oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21392,7 +21392,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21409,7 +21409,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ui",
+					pattern: []rune("Ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -21426,7 +21426,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -21435,7 +21435,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21451,7 +21451,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21467,7 +21467,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21482,7 +21482,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21498,7 +21498,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21514,7 +21514,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -21527,7 +21527,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21542,7 +21542,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21558,7 +21558,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21574,7 +21574,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21590,7 +21590,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -21603,7 +21603,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -21616,7 +21616,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21635,7 +21635,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21655,7 +21655,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21675,7 +21675,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21695,7 +21695,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -21712,7 +21712,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21727,7 +21727,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21743,7 +21743,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21759,7 +21759,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Uk",
+					pattern: []rune("Uk"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21785,7 +21785,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Uk",
+					pattern: []rune("Uk"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21800,7 +21800,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sUts",
+					pattern: []rune("sUts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21819,7 +21819,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Uts",
+					pattern: []rune("Uts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21834,7 +21834,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					phoneticRules: []token{
 						{
 							text:  "u",
@@ -21850,7 +21850,7 @@ var ashFinalRules = finalRules{
 			languageID(ashhebrew): rules{},
 			languageID(ashhungarian): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21865,7 +21865,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21881,7 +21881,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21897,7 +21897,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -21923,7 +21923,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21938,7 +21938,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21957,7 +21957,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -21972,7 +21972,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -21985,7 +21985,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -22002,7 +22002,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -22019,7 +22019,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -22036,7 +22036,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -22053,7 +22053,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -22070,7 +22070,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -22083,7 +22083,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -22092,7 +22092,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22108,7 +22108,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22124,7 +22124,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22140,7 +22140,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22156,7 +22156,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -22171,7 +22171,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashpolish): rules{
 				{
-					pattern: "aiB",
+					pattern: []rune("aiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22191,7 +22191,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiB",
+					pattern: []rune("oiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22211,7 +22211,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiB",
+					pattern: []rune("uiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22231,7 +22231,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiB",
+					pattern: []rune("eiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22251,7 +22251,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiB",
+					pattern: []rune("EiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22271,7 +22271,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiB",
+					pattern: []rune("iiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22291,7 +22291,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiB",
+					pattern: []rune("IiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22311,7 +22311,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiB",
+					pattern: []rune("aiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22331,7 +22331,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiB",
+					pattern: []rune("oiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22351,7 +22351,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiB",
+					pattern: []rune("uiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22371,7 +22371,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiB",
+					pattern: []rune("eiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22391,7 +22391,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiB",
+					pattern: []rune("EiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22411,7 +22411,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiB",
+					pattern: []rune("iiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22431,7 +22431,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiB",
+					pattern: []rune("IiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22451,7 +22451,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22475,7 +22475,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22499,7 +22499,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -22508,7 +22508,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiF",
+					pattern: []rune("aiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22528,7 +22528,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiF",
+					pattern: []rune("oiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22548,7 +22548,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiF",
+					pattern: []rune("uiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22568,7 +22568,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiF",
+					pattern: []rune("eiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22588,7 +22588,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiF",
+					pattern: []rune("EiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22608,7 +22608,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiF",
+					pattern: []rune("iiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22628,7 +22628,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiF",
+					pattern: []rune("IiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22648,7 +22648,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiF",
+					pattern: []rune("aiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22668,7 +22668,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiF",
+					pattern: []rune("oiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22688,7 +22688,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiF",
+					pattern: []rune("uiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22708,7 +22708,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiF",
+					pattern: []rune("eiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22728,7 +22728,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiF",
+					pattern: []rune("EiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22748,7 +22748,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiF",
+					pattern: []rune("iiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22768,7 +22768,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiF",
+					pattern: []rune("IiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22788,7 +22788,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22812,7 +22812,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22836,7 +22836,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -22845,7 +22845,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "P",
+					pattern: []rune("P"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -22858,7 +22858,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -22873,7 +22873,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22889,7 +22889,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22915,7 +22915,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -22930,7 +22930,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -22949,7 +22949,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -22964,7 +22964,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -22980,7 +22980,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -22993,7 +22993,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -23010,7 +23010,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -23027,7 +23027,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -23044,7 +23044,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -23061,7 +23061,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -23078,7 +23078,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -23091,7 +23091,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -23100,7 +23100,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23116,7 +23116,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23132,7 +23132,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -23147,7 +23147,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23163,7 +23163,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23179,7 +23179,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -23194,7 +23194,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashromanian): rules{
 				{
-					pattern: "aiB",
+					pattern: []rune("aiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23214,7 +23214,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiB",
+					pattern: []rune("oiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23234,7 +23234,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiB",
+					pattern: []rune("uiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23254,7 +23254,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiB",
+					pattern: []rune("eiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23274,7 +23274,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiB",
+					pattern: []rune("EiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23294,7 +23294,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiB",
+					pattern: []rune("iiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23314,7 +23314,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiB",
+					pattern: []rune("IiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23334,7 +23334,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiB",
+					pattern: []rune("aiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23354,7 +23354,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiB",
+					pattern: []rune("oiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23374,7 +23374,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiB",
+					pattern: []rune("uiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23394,7 +23394,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiB",
+					pattern: []rune("eiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23414,7 +23414,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiB",
+					pattern: []rune("EiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23434,7 +23434,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiB",
+					pattern: []rune("iiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23454,7 +23454,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiB",
+					pattern: []rune("IiB"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23474,7 +23474,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23498,7 +23498,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23522,7 +23522,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -23531,7 +23531,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiF",
+					pattern: []rune("aiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23551,7 +23551,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiF",
+					pattern: []rune("oiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23571,7 +23571,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiF",
+					pattern: []rune("uiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23591,7 +23591,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiF",
+					pattern: []rune("eiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23611,7 +23611,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiF",
+					pattern: []rune("EiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23631,7 +23631,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiF",
+					pattern: []rune("iiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23651,7 +23651,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiF",
+					pattern: []rune("IiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23671,7 +23671,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "aiF",
+					pattern: []rune("aiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23691,7 +23691,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oiF",
+					pattern: []rune("oiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23711,7 +23711,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "uiF",
+					pattern: []rune("uiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23731,7 +23731,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "eiF",
+					pattern: []rune("eiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23751,7 +23751,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "EiF",
+					pattern: []rune("EiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23771,7 +23771,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "iiF",
+					pattern: []rune("iiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23791,7 +23791,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "IiF",
+					pattern: []rune("IiF"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23811,7 +23811,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23835,7 +23835,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23859,7 +23859,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -23868,7 +23868,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "P",
+					pattern: []rune("P"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -23881,7 +23881,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -23896,7 +23896,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23912,7 +23912,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -23938,7 +23938,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -23953,7 +23953,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -23972,7 +23972,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -23987,7 +23987,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24003,7 +24003,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -24016,7 +24016,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24033,7 +24033,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24050,7 +24050,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24067,7 +24067,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24084,7 +24084,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24101,7 +24101,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -24114,7 +24114,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -24123,7 +24123,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24139,7 +24139,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24155,7 +24155,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -24170,7 +24170,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24186,7 +24186,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24202,7 +24202,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -24217,7 +24217,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashspanish): rules{
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -24232,7 +24232,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24248,7 +24248,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24264,7 +24264,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24290,7 +24290,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Ik",
+					pattern: []rune("Ik"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -24305,7 +24305,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "sIts",
+					pattern: []rune("sIts"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -24324,7 +24324,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "Its",
+					pattern: []rune("Its"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: true,
 						contains:         "",
@@ -24339,7 +24339,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -24352,7 +24352,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "au",
+					pattern: []rune("au"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24369,7 +24369,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ou",
+					pattern: []rune("ou"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24386,7 +24386,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ai",
+					pattern: []rune("ai"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24403,7 +24403,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "oi",
+					pattern: []rune("oi"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24420,7 +24420,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "ui",
+					pattern: []rune("ui"),
 					phoneticRules: []token{
 						{
 							text:  "D",
@@ -24437,7 +24437,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "a",
+					pattern: []rune("a"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -24450,7 +24450,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "e",
+					pattern: []rune("e"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -24459,7 +24459,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24475,7 +24475,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24491,7 +24491,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					leftContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24507,7 +24507,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					rightContext: &ruleMatcher{
 						matchEmptyString: false,
 						contains:         "",
@@ -24523,7 +24523,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "Y",
@@ -24541,7 +24541,7 @@ var ashFinalRules = finalRules{
 	exact: finalRule{
 		first: rules{
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -24556,7 +24556,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24572,7 +24572,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24587,7 +24587,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -24602,7 +24602,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24618,7 +24618,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24633,7 +24633,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24649,7 +24649,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24664,7 +24664,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -24679,7 +24679,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24695,7 +24695,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24710,7 +24710,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24726,7 +24726,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24741,7 +24741,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -24756,7 +24756,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24772,7 +24772,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24787,7 +24787,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24803,7 +24803,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24818,7 +24818,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -24833,7 +24833,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24849,7 +24849,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24864,7 +24864,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24879,7 +24879,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24894,7 +24894,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24910,7 +24910,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24926,7 +24926,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24942,7 +24942,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24958,7 +24958,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -24974,7 +24974,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jnm",
+				pattern: []rune("jnm"),
 				phoneticRules: []token{
 					{
 						text:  "jm",
@@ -24983,7 +24983,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -24998,7 +24998,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jI",
+				pattern: []rune("jI"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -25013,7 +25013,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25029,7 +25029,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25045,7 +25045,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "A",
+				pattern: []rune("A"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25060,7 +25060,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25075,7 +25075,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25090,7 +25090,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25105,7 +25105,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25120,7 +25120,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25135,7 +25135,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25150,7 +25150,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "l",
+				pattern: []rune("l"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25165,7 +25165,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "m",
+				pattern: []rune("m"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25180,7 +25180,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25195,7 +25195,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25210,7 +25210,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "r",
+				pattern: []rune("r"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25225,7 +25225,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25240,7 +25240,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25255,7 +25255,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25270,7 +25270,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "H",
+				pattern: []rune("H"),
 				phoneticRules: []token{
 					{
 						text:  "h",
@@ -25279,7 +25279,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25302,7 +25302,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25318,7 +25318,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -25333,7 +25333,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25349,7 +25349,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -25364,7 +25364,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25380,7 +25380,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jI",
+				pattern: []rune("jI"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25396,7 +25396,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "je",
+				pattern: []rune("je"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25412,7 +25412,7 @@ var ashFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jE",
+				pattern: []rune("jE"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -25431,7 +25431,7 @@ var ashFinalRules = finalRules{
 		second: map[languageID]rules{
 			languageID(ashany): rules{
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -25440,7 +25440,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -25449,7 +25449,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25458,7 +25458,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25467,7 +25467,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25476,7 +25476,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -25485,7 +25485,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "P",
+					pattern: []rune("P"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -25494,7 +25494,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					phoneticRules: []token{
 						{
 							text:  "u",
@@ -25503,7 +25503,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "J",
+					pattern: []rune("J"),
 					phoneticRules: []token{
 						{
 							text:  "l",
@@ -25514,7 +25514,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashrussian): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25523,7 +25523,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25534,7 +25534,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashcyrillic): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25543,7 +25543,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25554,7 +25554,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashenglish): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25563,7 +25563,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25574,7 +25574,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashfrench): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25583,7 +25583,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25594,7 +25594,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashgerman): rules{
 				{
-					pattern: "A",
+					pattern: []rune("A"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -25603,7 +25603,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -25612,7 +25612,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25621,7 +25621,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25630,7 +25630,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25639,7 +25639,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "O",
+					pattern: []rune("O"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -25648,7 +25648,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "P",
+					pattern: []rune("P"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -25657,7 +25657,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "U",
+					pattern: []rune("U"),
 					phoneticRules: []token{
 						{
 							text:  "u",
@@ -25666,7 +25666,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "J",
+					pattern: []rune("J"),
 					phoneticRules: []token{
 						{
 							text:  "l",
@@ -25678,7 +25678,7 @@ var ashFinalRules = finalRules{
 			languageID(ashhebrew): rules{},
 			languageID(ashhungarian): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25687,7 +25687,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25698,7 +25698,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashpolish): rules{
 				{
-					pattern: "B",
+					pattern: []rune("B"),
 					phoneticRules: []token{
 						{
 							text:  "a",
@@ -25707,7 +25707,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "F",
+					pattern: []rune("F"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25716,7 +25716,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "P",
+					pattern: []rune("P"),
 					phoneticRules: []token{
 						{
 							text:  "o",
@@ -25725,7 +25725,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25734,7 +25734,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25745,7 +25745,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashromanian): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25754,7 +25754,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",
@@ -25765,7 +25765,7 @@ var ashFinalRules = finalRules{
 			},
 			languageID(ashspanish): rules{
 				{
-					pattern: "E",
+					pattern: []rune("E"),
 					phoneticRules: []token{
 						{
 							text:  "e",
@@ -25774,7 +25774,7 @@ var ashFinalRules = finalRules{
 					},
 				},
 				{
-					pattern: "I",
+					pattern: []rune("I"),
 					phoneticRules: []token{
 						{
 							text:  "i",

@@ -41,7 +41,7 @@ const sepAll = sepfrench +
 var sepRules = map[sepLang]rules{
 	sepany: rules{
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -50,7 +50,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -59,7 +59,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -68,7 +68,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gli",
+			pattern: []rune("gli"),
 			phoneticRules: []token{
 				{
 					text:  "gli",
@@ -81,7 +81,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gni",
+			pattern: []rune("gni"),
 			phoneticRules: []token{
 				{
 					text:  "gni",
@@ -94,7 +94,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -118,7 +118,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gh",
+			pattern: []rune("gh"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -131,7 +131,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "dh",
+			pattern: []rune("dh"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -144,7 +144,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "bh",
+			pattern: []rune("bh"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -157,7 +157,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -170,7 +170,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "lh",
+			pattern: []rune("lh"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -183,7 +183,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "nh",
+			pattern: []rune("nh"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -196,7 +196,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ig",
+			pattern: []rune("ig"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -216,7 +216,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ix",
+			pattern: []rune("ix"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -232,7 +232,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tx",
+			pattern: []rune("tx"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -241,7 +241,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -256,7 +256,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			phoneticRules: []token{
 				{
 					text:  "dZ",
@@ -265,7 +265,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tg",
+			pattern: []rune("tg"),
 			phoneticRules: []token{
 				{
 					text:  "tg",
@@ -278,7 +278,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -294,7 +294,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -309,7 +309,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gg",
+			pattern: []rune("gg"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -333,7 +333,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -357,7 +357,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "guy",
+			pattern: []rune("guy"),
 			phoneticRules: []token{
 				{
 					text:  "gi",
@@ -366,7 +366,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gue",
+			pattern: []rune("gue"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -385,7 +385,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -405,7 +405,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -421,7 +421,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -434,7 +434,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ny",
+			pattern: []rune("ny"),
 			phoneticRules: []token{
 				{
 					text:  "nj",
@@ -443,7 +443,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "sc",
+			pattern: []rune("sc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -463,7 +463,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "sç",
+			pattern: []rune("sç"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -479,7 +479,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -488,7 +488,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -497,7 +497,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -525,7 +525,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -542,7 +542,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -562,7 +562,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "cc",
+			pattern: []rune("cc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -582,7 +582,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -602,7 +602,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -617,7 +617,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -644,7 +644,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -668,7 +668,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -691,7 +691,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -715,7 +715,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -739,7 +739,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -760,7 +760,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "que",
+			pattern: []rune("que"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -779,7 +779,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -795,7 +795,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -815,7 +815,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -843,7 +843,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -863,7 +863,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -883,7 +883,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -903,7 +903,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -922,7 +922,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -941,7 +941,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -960,7 +960,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "eau",
+			pattern: []rune("eau"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -969,7 +969,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ouh",
+			pattern: []rune("ouh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -989,7 +989,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "uh",
+			pattern: []rune("uh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1009,7 +1009,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1025,7 +1025,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -1038,7 +1038,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1054,7 +1054,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1070,7 +1070,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1086,7 +1086,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1102,7 +1102,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1118,7 +1118,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1137,7 +1137,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ão",
+			pattern: []rune("ão"),
 			phoneticRules: []token{
 				{
 					text:  "au",
@@ -1150,7 +1150,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ãe",
+			pattern: []rune("ãe"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -1163,7 +1163,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ãi",
+			pattern: []rune("ãi"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -1176,7 +1176,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "õe",
+			pattern: []rune("õe"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -1189,7 +1189,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "où",
+			pattern: []rune("où"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -1198,7 +1198,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
 					text:  "ou",
@@ -1211,7 +1211,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -1220,7 +1220,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -1229,7 +1229,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -1238,7 +1238,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ã",
+			pattern: []rune("ã"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -1251,7 +1251,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1260,7 +1260,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1269,7 +1269,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1278,7 +1278,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -1287,7 +1287,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "î",
+			pattern: []rune("î"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -1296,7 +1296,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ô",
+			pattern: []rune("ô"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -1305,7 +1305,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -1314,7 +1314,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "õ",
+			pattern: []rune("õ"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -1327,7 +1327,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ò",
+			pattern: []rune("ò"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -1336,7 +1336,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -1345,7 +1345,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -1354,7 +1354,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -1363,7 +1363,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -1376,7 +1376,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -1385,7 +1385,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -1394,7 +1394,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1403,7 +1403,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -1412,7 +1412,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -1421,7 +1421,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -1430,7 +1430,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -1439,7 +1439,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -1452,7 +1452,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -1461,7 +1461,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -1470,7 +1470,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -1479,7 +1479,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -1488,7 +1488,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -1497,7 +1497,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -1506,7 +1506,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -1515,7 +1515,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -1524,7 +1524,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -1537,7 +1537,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -1546,7 +1546,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -1555,7 +1555,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -1568,7 +1568,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -1577,7 +1577,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -1594,7 +1594,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -1603,7 +1603,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -1614,7 +1614,7 @@ var sepRules = map[sepLang]rules{
 	},
 	sepfrench: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -1623,7 +1623,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -1632,7 +1632,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -1641,7 +1641,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -1650,7 +1650,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -1659,7 +1659,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1675,7 +1675,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -1684,7 +1684,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -1697,7 +1697,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1713,7 +1713,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gue",
+			pattern: []rune("gue"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1728,7 +1728,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1744,7 +1744,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "que",
+			pattern: []rune("que"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1759,7 +1759,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -1768,7 +1768,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -1777,7 +1777,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1800,7 +1800,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -1809,7 +1809,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1825,7 +1825,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -1840,7 +1840,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -1849,7 +1849,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -1858,7 +1858,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ouh",
+			pattern: []rune("ouh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1878,7 +1878,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1894,7 +1894,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -1907,7 +1907,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -1923,7 +1923,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -1932,7 +1932,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "eau",
+			pattern: []rune("eau"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -1941,7 +1941,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ai",
+			pattern: []rune("ai"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -1950,7 +1950,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ay",
+			pattern: []rune("ay"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -1959,7 +1959,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1968,7 +1968,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1977,7 +1977,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -1986,7 +1986,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -1995,7 +1995,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -2004,7 +2004,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "où",
+			pattern: []rune("où"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -2013,7 +2013,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -2022,7 +2022,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "oi",
+			pattern: []rune("oi"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -2031,7 +2031,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
 					text:  "ej",
@@ -2040,7 +2040,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
 					text:  "ej",
@@ -2049,7 +2049,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2065,7 +2065,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2084,7 +2084,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2100,7 +2100,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2116,7 +2116,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2125,7 +2125,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -2134,7 +2134,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -2143,7 +2143,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -2152,7 +2152,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -2161,7 +2161,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -2170,7 +2170,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -2179,7 +2179,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -2188,7 +2188,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2197,7 +2197,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -2206,7 +2206,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -2215,7 +2215,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -2224,7 +2224,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -2233,7 +2233,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -2242,7 +2242,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -2251,7 +2251,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -2260,7 +2260,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -2269,7 +2269,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -2278,7 +2278,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -2287,7 +2287,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -2296,7 +2296,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -2307,7 +2307,7 @@ var sepRules = map[sepLang]rules{
 	},
 	sephebrew: rules{
 		{
-			pattern: "אי",
+			pattern: []rune("אי"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2316,7 +2316,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "עי",
+			pattern: []rune("עי"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2325,7 +2325,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "עו",
+			pattern: []rune("עו"),
 			phoneticRules: []token{
 				{
 					text:  "VV",
@@ -2334,7 +2334,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "או",
+			pattern: []rune("או"),
 			phoneticRules: []token{
 				{
 					text:  "VV",
@@ -2343,7 +2343,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ג׳",
+			pattern: []rune("ג׳"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -2352,7 +2352,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ד׳",
+			pattern: []rune("ד׳"),
 			phoneticRules: []token{
 				{
 					text:  "dZ",
@@ -2361,7 +2361,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "א",
+			pattern: []rune("א"),
 			phoneticRules: []token{
 				{
 					text:  "L",
@@ -2370,7 +2370,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ב",
+			pattern: []rune("ב"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -2379,7 +2379,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ג",
+			pattern: []rune("ג"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -2388,7 +2388,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ד",
+			pattern: []rune("ד"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -2397,7 +2397,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2412,7 +2412,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2427,7 +2427,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			phoneticRules: []token{
 				{
 					text:  "",
@@ -2436,7 +2436,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "וו",
+			pattern: []rune("וו"),
 			phoneticRules: []token{
 				{
 					text:  "V",
@@ -2445,7 +2445,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "וי",
+			pattern: []rune("וי"),
 			phoneticRules: []token{
 				{
 					text:  "WW",
@@ -2454,7 +2454,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ו",
+			pattern: []rune("ו"),
 			phoneticRules: []token{
 				{
 					text:  "W",
@@ -2463,7 +2463,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ז",
+			pattern: []rune("ז"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -2472,7 +2472,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ח",
+			pattern: []rune("ח"),
 			phoneticRules: []token{
 				{
 					text:  "X",
@@ -2481,7 +2481,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ט",
+			pattern: []rune("ט"),
 			phoneticRules: []token{
 				{
 					text:  "T",
@@ -2490,7 +2490,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "יי",
+			pattern: []rune("יי"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2499,7 +2499,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "י",
+			pattern: []rune("י"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -2508,7 +2508,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ך",
+			pattern: []rune("ך"),
 			phoneticRules: []token{
 				{
 					text:  "X",
@@ -2517,7 +2517,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "כ",
+			pattern: []rune("כ"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -2532,7 +2532,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "כ",
+			pattern: []rune("כ"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -2541,7 +2541,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ל",
+			pattern: []rune("ל"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -2550,7 +2550,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ם",
+			pattern: []rune("ם"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -2559,7 +2559,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "מ",
+			pattern: []rune("מ"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -2568,7 +2568,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ן",
+			pattern: []rune("ן"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -2577,7 +2577,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "נ",
+			pattern: []rune("נ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -2586,7 +2586,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ס",
+			pattern: []rune("ס"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -2595,7 +2595,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ע",
+			pattern: []rune("ע"),
 			phoneticRules: []token{
 				{
 					text:  "L",
@@ -2604,7 +2604,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ף",
+			pattern: []rune("ף"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -2613,7 +2613,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "פ",
+			pattern: []rune("פ"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -2622,7 +2622,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ץ",
+			pattern: []rune("ץ"),
 			phoneticRules: []token{
 				{
 					text:  "C",
@@ -2631,7 +2631,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "צ",
+			pattern: []rune("צ"),
 			phoneticRules: []token{
 				{
 					text:  "C",
@@ -2640,7 +2640,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ק",
+			pattern: []rune("ק"),
 			phoneticRules: []token{
 				{
 					text:  "K",
@@ -2649,7 +2649,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ר",
+			pattern: []rune("ר"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -2658,7 +2658,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ש",
+			pattern: []rune("ש"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -2667,7 +2667,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ת",
+			pattern: []rune("ת"),
 			phoneticRules: []token{
 				{
 					text:  "T",
@@ -2678,7 +2678,7 @@ var sepRules = map[sepLang]rules{
 	},
 	sepitalian: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -2687,7 +2687,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gli",
+			pattern: []rune("gli"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -2700,7 +2700,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2724,7 +2724,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gni",
+			pattern: []rune("gni"),
 			phoneticRules: []token{
 				{
 					text:  "ni",
@@ -2737,7 +2737,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2753,7 +2753,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gg",
+			pattern: []rune("gg"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2769,7 +2769,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2785,7 +2785,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2801,7 +2801,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2817,7 +2817,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2833,7 +2833,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "sc",
+			pattern: []rune("sc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2849,7 +2849,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "cc",
+			pattern: []rune("cc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2865,7 +2865,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2881,7 +2881,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2904,7 +2904,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2920,7 +2920,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2936,7 +2936,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2952,7 +2952,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -2968,7 +2968,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -2977,7 +2977,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -2990,7 +2990,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3006,7 +3006,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3015,7 +3015,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3024,7 +3024,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -3033,7 +3033,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -3042,7 +3042,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3051,7 +3051,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -3060,7 +3060,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -3069,7 +3069,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -3078,7 +3078,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3087,7 +3087,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -3096,7 +3096,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -3105,7 +3105,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -3114,7 +3114,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -3123,7 +3123,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -3140,7 +3140,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -3149,7 +3149,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -3158,7 +3158,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -3167,7 +3167,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -3176,7 +3176,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -3185,7 +3185,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -3194,7 +3194,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -3203,7 +3203,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -3212,7 +3212,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -3221,7 +3221,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -3230,7 +3230,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3239,7 +3239,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -3248,7 +3248,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -3257,7 +3257,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -3266,7 +3266,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -3275,7 +3275,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "ts",
@@ -3290,7 +3290,7 @@ var sepRules = map[sepLang]rules{
 	},
 	sepportuguese: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -3299,7 +3299,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -3308,7 +3308,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -3317,7 +3317,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "sc",
+			pattern: []rune("sc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3333,7 +3333,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "sç",
+			pattern: []rune("sç"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3349,7 +3349,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -3358,7 +3358,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3374,7 +3374,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3389,7 +3389,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3412,7 +3412,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3432,7 +3432,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3455,7 +3455,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3475,7 +3475,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3499,7 +3499,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3515,7 +3515,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3531,7 +3531,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3547,7 +3547,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3563,7 +3563,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3579,7 +3579,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -3596,7 +3596,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3612,7 +3612,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "lh",
+			pattern: []rune("lh"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -3621,7 +3621,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "nh",
+			pattern: []rune("nh"),
 			phoneticRules: []token{
 				{
 					text:  "nj",
@@ -3630,7 +3630,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3646,7 +3646,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3670,7 +3670,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3686,7 +3686,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3702,7 +3702,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3718,7 +3718,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3738,7 +3738,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -3757,7 +3757,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ão",
+			pattern: []rune("ão"),
 			phoneticRules: []token{
 				{
 					text:  "au",
@@ -3774,7 +3774,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ãe",
+			pattern: []rune("ãe"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -3787,7 +3787,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ãi",
+			pattern: []rune("ãi"),
 			phoneticRules: []token{
 				{
 					text:  "aj",
@@ -3800,7 +3800,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "õe",
+			pattern: []rune("õe"),
 			phoneticRules: []token{
 				{
 					text:  "oj",
@@ -3813,7 +3813,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3829,7 +3829,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -3845,7 +3845,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3854,7 +3854,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3863,7 +3863,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3872,7 +3872,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ã",
+			pattern: []rune("ã"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3889,7 +3889,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3898,7 +3898,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -3907,7 +3907,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -3916,7 +3916,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ô",
+			pattern: []rune("ô"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -3925,7 +3925,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -3934,7 +3934,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "õ",
+			pattern: []rune("õ"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -3947,7 +3947,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3956,7 +3956,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -3965,7 +3965,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
 					text:  "aue",
@@ -3974,7 +3974,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -3983,7 +3983,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -3992,7 +3992,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4001,7 +4001,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -4010,7 +4010,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -4023,7 +4023,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -4032,7 +4032,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -4041,7 +4041,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -4050,7 +4050,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -4059,7 +4059,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "Z",
@@ -4068,7 +4068,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4077,7 +4077,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -4086,7 +4086,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -4095,7 +4095,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -4104,7 +4104,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -4117,7 +4117,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -4126,7 +4126,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4135,7 +4135,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -4144,7 +4144,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -4153,7 +4153,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -4162,7 +4162,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -4171,7 +4171,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -4180,7 +4180,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -4189,7 +4189,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "S",
@@ -4202,7 +4202,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -4211,7 +4211,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -4222,7 +4222,7 @@ var sepRules = map[sepLang]rules{
 	},
 	sepspanish: rules{
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -4235,7 +4235,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ny",
+			pattern: []rune("ny"),
 			phoneticRules: []token{
 				{
 					text:  "nj",
@@ -4244,7 +4244,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -4253,7 +4253,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ig",
+			pattern: []rune("ig"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4273,7 +4273,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ix",
+			pattern: []rune("ix"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4289,7 +4289,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tx",
+			pattern: []rune("tx"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -4298,7 +4298,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4313,7 +4313,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			phoneticRules: []token{
 				{
 					text:  "dZ",
@@ -4322,7 +4322,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "tg",
+			pattern: []rune("tg"),
 			phoneticRules: []token{
 				{
 					text:  "tg",
@@ -4335,7 +4335,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
 					text:  "tS",
@@ -4348,7 +4348,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "bh",
+			pattern: []rune("bh"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -4357,7 +4357,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4373,7 +4373,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
 					text:  "x",
@@ -4386,7 +4386,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
 					text:  "ks",
@@ -4403,7 +4403,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -4412,7 +4412,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4431,7 +4431,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
 				contains:         "",
@@ -4450,7 +4450,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -4463,7 +4463,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
 					text:  "b",
@@ -4476,7 +4476,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4496,7 +4496,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4512,7 +4512,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4521,7 +4521,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
 					text:  "z",
@@ -4534,7 +4534,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4554,7 +4554,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4578,7 +4578,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4587,7 +4587,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4596,7 +4596,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
 					text:  "vo",
@@ -4609,7 +4609,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
 				contains:         "",
@@ -4625,7 +4625,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -4638,7 +4638,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
 					text:  "v",
@@ -4647,7 +4647,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -4656,7 +4656,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -4665,7 +4665,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -4674,7 +4674,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -4683,7 +4683,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -4692,7 +4692,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -4701,7 +4701,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -4710,7 +4710,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "ò",
+			pattern: []rune("ò"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -4719,7 +4719,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
 					text:  "a",
@@ -4728,7 +4728,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
 					text:  "d",
@@ -4737,7 +4737,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
 					text:  "e",
@@ -4746,7 +4746,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
 					text:  "f",
@@ -4755,7 +4755,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
 					text:  "g",
@@ -4764,7 +4764,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
 					text:  "h",
@@ -4773,7 +4773,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
 					text:  "i",
@@ -4782,7 +4782,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
 					text:  "k",
@@ -4791,7 +4791,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
 					text:  "l",
@@ -4800,7 +4800,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
 					text:  "m",
@@ -4809,7 +4809,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
 					text:  "n",
@@ -4818,7 +4818,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
 					text:  "o",
@@ -4827,7 +4827,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
 					text:  "p",
@@ -4836,7 +4836,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
 					text:  "r",
@@ -4845,7 +4845,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
 					text:  "s",
@@ -4854,7 +4854,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
 					text:  "t",
@@ -4863,7 +4863,7 @@ var sepRules = map[sepLang]rules{
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
 					text:  "u",
@@ -5601,7 +5601,7 @@ var sepFinalRules = finalRules{
 	approx: finalRule{
 		first: rules{
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -5616,7 +5616,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5632,7 +5632,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5647,7 +5647,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -5662,7 +5662,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5678,7 +5678,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5693,7 +5693,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5709,7 +5709,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5724,7 +5724,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -5739,7 +5739,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5755,7 +5755,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5770,7 +5770,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5786,7 +5786,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5801,7 +5801,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -5816,7 +5816,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5832,7 +5832,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5847,7 +5847,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5863,7 +5863,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5878,7 +5878,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -5893,7 +5893,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5909,7 +5909,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5924,7 +5924,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5939,7 +5939,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5954,7 +5954,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5970,7 +5970,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -5986,7 +5986,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6002,7 +6002,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6018,7 +6018,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6034,7 +6034,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "nm",
+				pattern: []rune("nm"),
 				phoneticRules: []token{
 					{
 						text:  "m",
@@ -6043,7 +6043,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6058,7 +6058,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6073,7 +6073,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6088,7 +6088,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6103,7 +6103,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6118,7 +6118,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6133,7 +6133,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6148,7 +6148,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6163,7 +6163,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6178,7 +6178,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "l",
+				pattern: []rune("l"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6193,7 +6193,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "m",
+				pattern: []rune("m"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6208,7 +6208,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6223,7 +6223,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6238,7 +6238,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6253,7 +6253,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "r",
+				pattern: []rune("r"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6268,7 +6268,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6283,7 +6283,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "u",
+				pattern: []rune("u"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6298,7 +6298,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6313,7 +6313,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -6328,7 +6328,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "mbr",
+				pattern: []rune("mbr"),
 				phoneticRules: []token{
 					{
 						text:  "mr",
@@ -6337,7 +6337,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "mpr",
+				pattern: []rune("mpr"),
 				phoneticRules: []token{
 					{
 						text:  "mr",
@@ -6346,7 +6346,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "bens",
+				pattern: []rune("bens"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6365,7 +6365,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "benS",
+				pattern: []rune("benS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6384,7 +6384,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ben",
+				pattern: []rune("ben"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6403,7 +6403,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "bar",
+				pattern: []rune("bar"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6422,7 +6422,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "abens",
+				pattern: []rune("abens"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6441,7 +6441,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "abenS",
+				pattern: []rune("abenS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6460,7 +6460,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aben",
+				pattern: []rune("aben"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6483,7 +6483,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "abe",
+				pattern: []rune("abe"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6506,7 +6506,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "abi",
+				pattern: []rune("abi"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6529,7 +6529,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "abou",
+				pattern: []rune("abou"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6548,7 +6548,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "abu",
+				pattern: []rune("abu"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6567,7 +6567,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "bou",
+				pattern: []rune("bou"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6586,7 +6586,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "bu",
+				pattern: []rune("bu"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6605,7 +6605,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ibn",
+				pattern: []rune("ibn"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6624,7 +6624,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "els",
+				pattern: []rune("els"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6647,7 +6647,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "elS",
+				pattern: []rune("elS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6670,7 +6670,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "el",
+				pattern: []rune("el"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6693,7 +6693,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "als",
+				pattern: []rune("als"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6712,7 +6712,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "alS",
+				pattern: []rune("alS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6731,7 +6731,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "al",
+				pattern: []rune("al"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6750,7 +6750,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dal",
+				pattern: []rune("dal"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6769,7 +6769,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "da",
+				pattern: []rune("da"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6792,7 +6792,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "della",
+				pattern: []rune("della"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6811,7 +6811,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dela",
+				pattern: []rune("dela"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6830,7 +6830,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "del",
+				pattern: []rune("del"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6849,7 +6849,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "des",
+				pattern: []rune("des"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6868,7 +6868,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "de",
+				pattern: []rune("de"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6891,7 +6891,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "di",
+				pattern: []rune("di"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6914,7 +6914,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "do",
+				pattern: []rune("do"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6933,7 +6933,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "du",
+				pattern: []rune("du"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -6952,7 +6952,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oa",
+				pattern: []rune("oa"),
 				phoneticRules: []token{
 					{
 						text:  "va",
@@ -6965,7 +6965,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oe",
+				pattern: []rune("oe"),
 				phoneticRules: []token{
 					{
 						text:  "vi",
@@ -6978,7 +6978,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ae",
+				pattern: []rune("ae"),
 				phoneticRules: []token{
 					{
 						text:  "a",
@@ -6991,7 +6991,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7007,7 +7007,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ha",
+				pattern: []rune("ha"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7030,7 +7030,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				phoneticRules: []token{
 					{
 						text:  "",
@@ -7043,7 +7043,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "x",
+				pattern: []rune("x"),
 				phoneticRules: []token{
 					{
 						text:  "h",
@@ -7052,7 +7052,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				phoneticRules: []token{
 					{
 						text:  "h",
@@ -7065,7 +7065,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aja",
+				pattern: []rune("aja"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7084,7 +7084,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aje",
+				pattern: []rune("aje"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7111,7 +7111,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aji",
+				pattern: []rune("aji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7130,7 +7130,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ajo",
+				pattern: []rune("ajo"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7157,7 +7157,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aju",
+				pattern: []rune("aju"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7176,7 +7176,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "aj",
+				pattern: []rune("aj"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -7189,7 +7189,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ej",
+				pattern: []rune("ej"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -7202,7 +7202,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "oj",
+				pattern: []rune("oj"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -7211,7 +7211,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "uj",
+				pattern: []rune("uj"),
 				phoneticRules: []token{
 					{
 						text:  "D",
@@ -7220,7 +7220,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "au",
+				pattern: []rune("au"),
 				phoneticRules: []token{
 					{
 						text:  "u",
@@ -7229,7 +7229,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "eu",
+				pattern: []rune("eu"),
 				phoneticRules: []token{
 					{
 						text:  "iu",
@@ -7246,7 +7246,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ou",
+				pattern: []rune("ou"),
 				phoneticRules: []token{
 					{
 						text:  "u",
@@ -7255,7 +7255,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7270,7 +7270,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ja",
+				pattern: []rune("ja"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7285,7 +7285,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "je",
+				pattern: []rune("je"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7300,7 +7300,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jo",
+				pattern: []rune("jo"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7319,7 +7319,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ju",
+				pattern: []rune("ju"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7334,7 +7334,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ja",
+				pattern: []rune("ja"),
 				phoneticRules: []token{
 					{
 						text:  "a",
@@ -7347,7 +7347,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "je",
+				pattern: []rune("je"),
 				phoneticRules: []token{
 					{
 						text:  "i",
@@ -7356,7 +7356,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				phoneticRules: []token{
 					{
 						text:  "i",
@@ -7365,7 +7365,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "jo",
+				pattern: []rune("jo"),
 				phoneticRules: []token{
 					{
 						text:  "u",
@@ -7378,7 +7378,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ju",
+				pattern: []rune("ju"),
 				phoneticRules: []token{
 					{
 						text:  "u",
@@ -7387,7 +7387,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "j",
+				pattern: []rune("j"),
 				phoneticRules: []token{
 					{
 						text:  "i",
@@ -7396,7 +7396,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7415,7 +7415,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7438,7 +7438,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				phoneticRules: []token{
 					{
 						text:  "u",
@@ -7447,7 +7447,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7466,7 +7466,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "se",
+				pattern: []rune("se"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7486,7 +7486,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7502,7 +7502,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Se",
+				pattern: []rune("Se"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7522,7 +7522,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7538,7 +7538,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7554,7 +7554,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7570,7 +7570,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dS",
+				pattern: []rune("dS"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7585,7 +7585,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dZ",
+				pattern: []rune("dZ"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7600,7 +7600,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7615,26 +7615,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
-				rightContext: &ruleMatcher{
-					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
-				},
-				phoneticRules: []token{
-					{
-						text:  "S",
-						langs: -1,
-					},
-					{
-						text:  "s",
-						langs: -1,
-					},
-				},
-			},
-			{
-				pattern: "z",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7653,7 +7634,26 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("z"),
+				rightContext: &ruleMatcher{
+					matchEmptyString: true,
+					contains:         "",
+					prefix:           "",
+					suffix:           "",
+				},
+				phoneticRules: []token{
+					{
+						text:  "S",
+						langs: -1,
+					},
+					{
+						text:  "s",
+						langs: -1,
+					},
+				},
+			},
+			{
+				pattern: []rune("S"),
 				phoneticRules: []token{
 					{
 						text:  "s",
@@ -7662,7 +7662,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "dZ",
+				pattern: []rune("dZ"),
 				phoneticRules: []token{
 					{
 						text:  "z",
@@ -7671,7 +7671,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				phoneticRules: []token{
 					{
 						text:  "z",
@@ -7680,7 +7680,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "be",
+				pattern: []rune("be"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7700,7 +7700,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "pe",
+				pattern: []rune("pe"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7720,7 +7720,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ve",
+				pattern: []rune("ve"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7740,7 +7740,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "fe",
+				pattern: []rune("fe"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7760,7 +7760,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ge",
+				pattern: []rune("ge"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7780,7 +7780,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ke",
+				pattern: []rune("ke"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7800,7 +7800,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "de",
+				pattern: []rune("de"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7820,7 +7820,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "te",
+				pattern: []rune("te"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7840,7 +7840,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ze",
+				pattern: []rune("ze"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7860,7 +7860,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				phoneticRules: []token{
 					{
 						text:  "i",
@@ -7873,7 +7873,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				phoneticRules: []token{
 					{
 						text:  "b",
@@ -7882,7 +7882,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "V",
+				pattern: []rune("V"),
 				phoneticRules: []token{
 					{
 						text:  "v",
@@ -7891,7 +7891,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7918,7 +7918,7 @@ var sepFinalRules = finalRules{
 	exact: finalRule{
 		first: rules{
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7933,7 +7933,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7949,7 +7949,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7964,7 +7964,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -7979,7 +7979,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -7995,7 +7995,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8010,7 +8010,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8026,7 +8026,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8041,7 +8041,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -8056,7 +8056,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8072,7 +8072,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8087,7 +8087,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8103,7 +8103,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8118,7 +8118,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -8133,7 +8133,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8149,7 +8149,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8164,7 +8164,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8180,7 +8180,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8195,7 +8195,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -8210,7 +8210,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8226,7 +8226,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8241,7 +8241,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8256,7 +8256,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8271,7 +8271,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8287,7 +8287,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8303,7 +8303,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8319,7 +8319,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8335,7 +8335,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8351,7 +8351,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "nm",
+				pattern: []rune("nm"),
 				phoneticRules: []token{
 					{
 						text:  "m",
@@ -8360,7 +8360,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -8375,7 +8375,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8390,7 +8390,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8405,7 +8405,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8420,7 +8420,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8435,7 +8435,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8450,7 +8450,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8465,7 +8465,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8480,7 +8480,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8495,7 +8495,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "l",
+				pattern: []rune("l"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8510,7 +8510,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "m",
+				pattern: []rune("m"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8525,7 +8525,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8540,7 +8540,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8555,7 +8555,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8570,7 +8570,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "r",
+				pattern: []rune("r"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8585,7 +8585,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8600,7 +8600,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "u",
+				pattern: []rune("u"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8615,7 +8615,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8630,7 +8630,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8645,7 +8645,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				phoneticRules: []token{
 					{
 						text:  "",
@@ -8654,7 +8654,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8677,7 +8677,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8693,7 +8693,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -8708,7 +8708,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
 					contains:         "",
@@ -8724,7 +8724,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
 					contains:         "",
@@ -8739,7 +8739,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				phoneticRules: []token{
 					{
 						text:  "b",
@@ -8748,7 +8748,7 @@ var sepFinalRules = finalRules{
 				},
 			},
 			{
-				pattern: "V",
+				pattern: []rune("V"),
 				phoneticRules: []token{
 					{
 						text:  "v",
