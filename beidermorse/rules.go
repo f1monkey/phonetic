@@ -38,9 +38,8 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 	var result tokens
 	for _, tok := range input {
-		tokenRunes := tok.text
 		newTokens := tokens{{text: nil, langs: tok.langs}}
-		for j := 0; j < len(tokenRunes); {
+		for j := 0; j < len(tok.text); {
 			var (
 				applied bool
 				offset  int
@@ -48,7 +47,7 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 			for _, rr := range r {
 				var tmp tokens
-				tmp, offset = rr.applyTo(tokenRunes, j)
+				tmp, offset = rr.applyTo(tok.text, j)
 				if len(tmp) > 0 {
 					applied = true
 					if len(newTokens) == 0 {
@@ -62,7 +61,7 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 			if !applied {
 				for k := range newTokens {
-					newTokens[k].text = append(newTokens[k].text, tokenRunes[j])
+					newTokens[k].text = append(newTokens[k].text, tok.text[j])
 				}
 			}
 			j += offset
@@ -111,7 +110,7 @@ func (r rule) applyTo(input runes, position int) (result []token, offset int) {
 	}
 
 	if r.leftContext != nil {
-		if !r.leftContext.matches(input[:position+1]) {
+		if !r.leftContext.matches(input[:position]) {
 			return
 		}
 	}
