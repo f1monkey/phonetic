@@ -97,7 +97,11 @@ func (r rule) applyTo(input string, position int) (result []token, offset int) {
 		return
 	}
 
-	if patternLength > inputLength-position || substr(input, position, patternLength) != r.pattern { // no match
+	if patternLength > inputLength-position {
+		return
+	}
+
+	if !containsAt(input, r.pattern, position) {
 		return
 	}
 
@@ -162,6 +166,35 @@ func (r ruleMatcher) matches(str string) bool {
 
 	if r.pattern != nil {
 		return r.pattern.MatchString(str)
+	}
+
+	return false
+}
+
+func containsAt(haystack string, needle string, from int) bool {
+	matchCnt := 0
+	substrRunes := []rune(needle)
+	if len(substrRunes) == 0 {
+		return false
+	}
+
+	runeIndex := -1
+	for _, r := range haystack {
+		runeIndex++
+		if runeIndex < from {
+			continue
+		}
+
+		if substrRunes[matchCnt] == r {
+			matchCnt++
+		} else {
+			return false
+		}
+		if matchCnt >= len(substrRunes) {
+			return true
+		}
+
+		continue
 	}
 
 	return false

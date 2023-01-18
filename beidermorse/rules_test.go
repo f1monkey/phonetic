@@ -1,6 +1,7 @@
 package beidermorse
 
 import (
+	"strconv"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -218,6 +219,34 @@ func Test_rule_applyTo(t *testing.T) {
 			result, offset := c.rule.applyTo(c.input, c.position)
 			assert.Equal(t, c.expectedResult, result)
 			assert.Equal(t, c.expectedOffset, offset)
+		})
+	}
+}
+
+func Test_containsAt(t *testing.T) {
+	cases := []struct {
+		haystack string
+		needle   string
+		from     int
+		expected bool
+	}{
+		{haystack: "апельсин", needle: "пе", from: 0, expected: false},
+		{haystack: "апельсин", needle: "пе", from: 1, expected: true},
+		{haystack: "апельсин", needle: "пе", from: 2, expected: false},
+		{haystack: "апельсин", needle: "пе", from: 7, expected: false},
+		{haystack: "апельсин", needle: "пе", from: 8, expected: false},
+		{haystack: "апельсин", needle: "пе", from: 9, expected: false},
+
+		{haystack: "orange", needle: "or", from: 0, expected: true},
+		{haystack: "orange", needle: "or", from: 1, expected: false},
+		{haystack: "orange", needle: "or", from: 5, expected: false},
+		{haystack: "orange", needle: "or", from: 6, expected: false},
+	}
+
+	for i, c := range cases {
+		t.Run(strconv.Itoa(i), func(t *testing.T) {
+			result := containsAt(c.haystack, c.needle, c.from)
+			require.Equal(t, c.expected, result)
 		})
 	}
 }
