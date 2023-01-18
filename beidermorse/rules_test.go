@@ -26,6 +26,50 @@ func Test_rules_apply(t *testing.T) {
 		expected    tokens
 	}{
 		{
+			name: "test_approx_lang=1_stage=1",
+			src: tokens{
+				{text: runes("test"), langs: 1047288},
+			},
+			lang:  1047288,
+			rules: genRules[1],
+			expected: tokens{
+				{text: runes("tESt"), langs: 128},
+				{text: runes("tEst"), langs: 1047288},
+			},
+			ignoreLangs: false,
+		},
+		{
+			name: "test_approx_lang=1_stage=2",
+			src: tokens{
+				{text: runes("tESt"), langs: 128},
+				{text: runes("tEst"), langs: 1047288},
+			},
+			lang:  1047288,
+			rules: genFinalRules.approx.first,
+			expected: tokens{
+				{text: runes("tEst"), langs: 128},
+				{text: runes("tEst"), langs: 1047288},
+			},
+			ignoreLangs: false,
+		},
+		{
+			name: "test_approx_lang=1_stage=3",
+			src: tokens{
+				{text: runes("tEst"), langs: 128},
+				{text: runes("tEst"), langs: 1047288},
+			},
+			lang:  1047288,
+			rules: genFinalRules.approx.second[1],
+			expected: tokens{
+				{text: runes("tist"), langs: 1},
+				{text: runes("tYst"), langs: 1},
+				{text: runes("tis"), langs: 1},
+				{text: runes("tit"), langs: 1},
+				{text: runes("ti"), langs: 1},
+			},
+			ignoreLangs: true,
+		},
+		{
 			name: "orange_approx_lang=1_stage=1",
 			src: tokens{
 				{text: runes("orange"), langs: 1047280},
