@@ -1,7 +1,6 @@
 package beidermorse
 
 import (
-	"strconv"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -9,10 +8,11 @@ import (
 )
 
 func Benchmark_rules_apply(b *testing.B) {
+	t := tokens{
+		{text: runes("orange"), langs: 1047280},
+	}
 	for i := 0; i < b.N; i++ {
-		genRules[1].apply(tokens{
-			{text: "orange", langs: 1047280},
-		}, 1047280, false)
+		genRules[1].apply(t, 1047280, false)
 	}
 }
 
@@ -28,77 +28,77 @@ func Test_rules_apply(t *testing.T) {
 		{
 			name: "orange_approx_lang=1_stage=1",
 			src: tokens{
-				{text: "orange", langs: 1047280},
+				{text: runes("orange"), langs: 1047280},
 			},
 			lang:  1047280,
 			rules: genRules[1],
 			expected: tokens{
-				{text: "OrAngE", langs: 1047280},
-				{text: "OrAnxe", langs: 262144},
-				{text: "OrAnhE", langs: 131072},
-				{text: "OrAnje", langs: 512},
-				{text: "OrAnZe", langs: 32832},
-				{text: "OrAndZe", langs: 331808},
-				{text: "PrAngE", langs: 16384},
+				{text: runes("OrAngE"), langs: 1047280},
+				{text: runes("OrAnxe"), langs: 262144},
+				{text: runes("OrAnhE"), langs: 131072},
+				{text: runes("OrAnje"), langs: 512},
+				{text: runes("OrAnZe"), langs: 32832},
+				{text: runes("OrAndZe"), langs: 331808},
+				{text: runes("PrAngE"), langs: 16384},
 			},
 			ignoreLangs: false,
 		},
 		{
 			name: "orange_approx_lang=1_stage=2",
 			src: tokens{
-				{text: "OrAngE", langs: 1047280},
-				{text: "OrAnxe", langs: 262144},
-				{text: "OrAnhE", langs: 131072},
-				{text: "OrAnje", langs: 512},
-				{text: "OrAnZe", langs: 32832},
-				{text: "OrAndZe", langs: 331808},
-				{text: "PrAngE", langs: 16384},
+				{text: runes("OrAngE"), langs: 1047280},
+				{text: runes("OrAnxe"), langs: 262144},
+				{text: runes("OrAnhE"), langs: 131072},
+				{text: runes("OrAnje"), langs: 512},
+				{text: runes("OrAnZe"), langs: 32832},
+				{text: runes("OrAndZe"), langs: 331808},
+				{text: runes("PrAngE"), langs: 16384},
 			},
 			lang:  1047280,
 			rules: genFinalRules.approx.first,
 			expected: tokens{
-				{text: "OrAngE", langs: 1047280},
-				{text: "OrAnxe", langs: 262144},
-				{text: "OrAnE", langs: 131072},
-				{text: "OrAnie", langs: 512},
-				{text: "OrAnze", langs: 32832},
-				{text: "OrAnze", langs: 331808},
-				{text: "PrAngE", langs: 16384},
+				{text: runes("OrAngE"), langs: 1047280},
+				{text: runes("OrAnxe"), langs: 262144},
+				{text: runes("OrAnE"), langs: 131072},
+				{text: runes("OrAnie"), langs: 512},
+				{text: runes("OrAnze"), langs: 32832},
+				{text: runes("OrAnze"), langs: 331808},
+				{text: runes("PrAngE"), langs: 16384},
 			},
 			ignoreLangs: false,
 		},
 		{
 			name: "orange_stage=3_lang=1",
 			src: tokens{
-				{text: "OrAngE", langs: 1047280},
-				{text: "OrAnxe", langs: 262144},
-				{text: "OrAnE", langs: 131072},
-				{text: "OrAnie", langs: 512},
-				{text: "OrAnze", langs: 32832},
-				{text: "OrAnze", langs: 331808},
-				{text: "PrAngE", langs: 16384},
+				{text: runes("OrAngE"), langs: 1047280},
+				{text: runes("OrAnxe"), langs: 262144},
+				{text: runes("OrAnE"), langs: 131072},
+				{text: runes("OrAnie"), langs: 512},
+				{text: runes("OrAnze"), langs: 32832},
+				{text: runes("OrAnze"), langs: 331808},
+				{text: runes("PrAngE"), langs: 16384},
 			},
 			lang:  1047280,
 			rules: genFinalRules.approx.second[1],
 			expected: tokens{
-				{text: "orangi", langs: 1},
-				{text: "oragi", langs: 1},
-				{text: "orongi", langs: 1},
-				{text: "orogi", langs: 1},
-				{text: "orYngi", langs: 1},
-				{text: "Yrangi", langs: 1},
-				{text: "Yrongi", langs: 1},
-				{text: "YrYngi", langs: 1},
-				{text: "oranxi", langs: 1},
-				{text: "oronxi", langs: 1},
-				{text: "orani", langs: 1},
-				{text: "oroni", langs: 1},
-				{text: "oranii", langs: 1},
-				{text: "oronii", langs: 1},
-				{text: "oranzi", langs: 1},
-				{text: "oronzi", langs: 1},
-				{text: "urangi", langs: 1},
-				{text: "urongi", langs: 1},
+				{text: runes("orangi"), langs: 1},
+				{text: runes("oragi"), langs: 1},
+				{text: runes("orongi"), langs: 1},
+				{text: runes("orogi"), langs: 1},
+				{text: runes("orYngi"), langs: 1},
+				{text: runes("Yrangi"), langs: 1},
+				{text: runes("Yrongi"), langs: 1},
+				{text: runes("YrYngi"), langs: 1},
+				{text: runes("oranxi"), langs: 1},
+				{text: runes("oronxi"), langs: 1},
+				{text: runes("orani"), langs: 1},
+				{text: runes("oroni"), langs: 1},
+				{text: runes("oranii"), langs: 1},
+				{text: runes("oronii"), langs: 1},
+				{text: runes("oranzi"), langs: 1},
+				{text: runes("oronzi"), langs: 1},
+				{text: runes("urangi"), langs: 1},
+				{text: runes("urongi"), langs: 1},
 			},
 			ignoreLangs: true,
 		},
@@ -117,34 +117,36 @@ func Benchmark_rule_applyTo(b *testing.B) {
 		pattern: []rune("ge"),
 		phoneticRules: []token{
 			{
-				text:  "gE",
+				text:  runes("gE"),
 				langs: -1,
 			},
 			{
-				text:  "xe",
+				text:  runes("xe"),
 				langs: 262144,
 			},
 			{
-				text:  "hE",
+				text:  runes("hE"),
 				langs: 131072,
 			},
 			{
-				text:  "je",
+				text:  runes("je"),
 				langs: 512,
 			},
 			{
-				text:  "Ze",
+				text:  runes("Ze"),
 				langs: 32832,
 			},
 			{
-				text:  "dZe",
+				text:  runes("dZe"),
 				langs: 331808,
 			},
 		},
 	}
 
+	s := runes("orange")
+
 	for i := 0; i < b.N; i++ {
-		r.applyTo("orange", 4)
+		r.applyTo(s, 4)
 	}
 }
 
@@ -153,27 +155,27 @@ func Test_rule_applyTo(t *testing.T) {
 		pattern: []rune("ge"),
 		phoneticRules: []token{
 			{
-				text:  "gE",
+				text:  runes("gE"),
 				langs: -1,
 			},
 			{
-				text:  "xe",
+				text:  runes("xe"),
 				langs: 262144,
 			},
 			{
-				text:  "hE",
+				text:  runes("hE"),
 				langs: 131072,
 			},
 			{
-				text:  "je",
+				text:  runes("je"),
 				langs: 512,
 			},
 			{
-				text:  "Ze",
+				text:  runes("Ze"),
 				langs: 32832,
 			},
 			{
-				text:  "dZe",
+				text:  runes("dZe"),
 				langs: 331808,
 			},
 		},
@@ -194,12 +196,12 @@ func Test_rule_applyTo(t *testing.T) {
 			position: 4,
 
 			expectedResult: []token{
-				{text: "gE", langs: langsUnitialized},
-				{text: "xe", langs: 262144},
-				{text: "hE", langs: 131072},
-				{text: "je", langs: 512},
-				{text: "Ze", langs: 32832},
-				{text: "dZe", langs: 331808},
+				{text: runes("gE"), langs: langsUnitialized},
+				{text: runes("xe"), langs: 262144},
+				{text: runes("hE"), langs: 131072},
+				{text: runes("je"), langs: 512},
+				{text: runes("Ze"), langs: 32832},
+				{text: runes("dZe"), langs: 331808},
 			},
 			expectedOffset: 2,
 		},
@@ -216,43 +218,9 @@ func Test_rule_applyTo(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
-			result, offset := c.rule.applyTo(c.input, c.position)
+			result, offset := c.rule.applyTo(runes(c.input), c.position)
 			assert.Equal(t, c.expectedResult, result)
 			assert.Equal(t, c.expectedOffset, offset)
-		})
-	}
-}
-
-func Benchmark_containsAt(b *testing.B) {
-	for i := 0; i < b.N; i++ {
-		containsAt("апельсин", []rune("пе"), 1)
-	}
-}
-
-func Test_containsAt(t *testing.T) {
-	cases := []struct {
-		haystack string
-		needle   string
-		from     int
-		expected bool
-	}{
-		{haystack: "апельсин", needle: "пе", from: 0, expected: false},
-		{haystack: "апельсин", needle: "пе", from: 1, expected: true},
-		{haystack: "апельсин", needle: "пе", from: 2, expected: false},
-		{haystack: "апельсин", needle: "пе", from: 7, expected: false},
-		{haystack: "апельсин", needle: "пе", from: 8, expected: false},
-		{haystack: "апельсин", needle: "пе", from: 9, expected: false},
-
-		{haystack: "orange", needle: "or", from: 0, expected: true},
-		{haystack: "orange", needle: "or", from: 1, expected: false},
-		{haystack: "orange", needle: "or", from: 5, expected: false},
-		{haystack: "orange", needle: "or", from: 6, expected: false},
-	}
-
-	for i, c := range cases {
-		t.Run(strconv.Itoa(i), func(t *testing.T) {
-			result := containsAt(c.haystack, []rune(c.needle), c.from)
-			require.Equal(t, c.expected, result)
 		})
 	}
 }

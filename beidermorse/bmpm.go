@@ -26,9 +26,14 @@ func detectLang(word string, mode Mode) languageID {
 		all = languageID(genAll)
 	}
 
+	runes := runes(word)
 	remaining := all
 	for _, rule := range rules {
-		if !rule.match.matches(word) {
+		if rule.match == nil {
+			continue
+		}
+
+		if !rule.match.matches(runes) {
 			continue
 		}
 
@@ -76,7 +81,7 @@ func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, conca
 		}
 	}
 
-	result := tokens{{text: input, langs: lang}}
+	result := tokens{{text: []rune(input), langs: lang}}
 
 	// apply main set of rules
 	result = mainRules.apply(result, lang, false)

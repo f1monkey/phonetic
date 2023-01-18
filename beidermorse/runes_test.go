@@ -7,24 +7,6 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_runes_append(t *testing.T) {
-	cases := []struct {
-		r1       runes
-		r2       runes
-		expected runes
-	}{
-		{r1: nil, r2: runes("hello"), expected: runes("hello")},
-		{r1: runes("hello"), r2: nil, expected: runes("hello")},
-		{r1: runes("hello"), r2: runes("world"), expected: runes("helloworld")},
-	}
-
-	for i, c := range cases {
-		t.Run(strconv.Itoa(i), func(t *testing.T) {
-			assert.Equal(t, c.expected, c.r1.append(c.r2))
-		})
-	}
-}
-
 func Test_runes_contains(t *testing.T) {
 	cases := []struct {
 		runes    runes

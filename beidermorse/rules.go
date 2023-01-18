@@ -2,7 +2,6 @@ package beidermorse
 
 import (
 	"regexp"
-	"strings"
 )
 
 // Mode which name mode to use for matching
@@ -39,8 +38,8 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 	var result tokens
 	for _, tok := range input {
-		tokenRunes := []rune(tok.text)
-		newTokens := tokens{{text: "", langs: tok.langs}}
+		tokenRunes := tok.text
+		newTokens := tokens{{text: nil, langs: tok.langs}}
 		for j := 0; j < len(tokenRunes); {
 			var (
 				applied bool
@@ -49,7 +48,7 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 			for _, rr := range r {
 				var tmp tokens
-				tmp, offset = rr.applyTo(tok.text, j)
+				tmp, offset = rr.applyTo(tokenRunes, j)
 				if len(tmp) > 0 {
 					applied = true
 					if len(newTokens) == 0 {
@@ -63,7 +62,7 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 			if !applied {
 				for k := range newTokens {
-					newTokens[k].text += string(tokenRunes[j])
+					newTokens[k].text = append(newTokens[k].text, tokenRunes[j])
 				}
 			}
 			j += offset
@@ -82,15 +81,15 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 }
 
 type rule struct {
-	pattern       []rune
+	pattern       runes
 	leftContext   *ruleMatcher
 	rightContext  *ruleMatcher
 	phoneticRules tokens
 }
 
-func (r rule) applyTo(input string, position int) (result []token, offset int) {
+func (r rule) applyTo(input runes, position int) (result []token, offset int) {
 	patternLength := len(r.pattern)
-	inputLength := len([]rune(input))
+	inputLength := len(input)
 	offset = 1
 
 	if len(r.phoneticRules) == 0 {
@@ -101,18 +100,18 @@ func (r rule) applyTo(input string, position int) (result []token, offset int) {
 		return
 	}
 
-	if !containsAt(input, r.pattern, position) {
+	if !input.containsAt(r.pattern, position) {
 		return
 	}
 
 	if r.rightContext != nil {
-		if !r.rightContext.matches(substrFrom(input, position+patternLength)) {
+		if !r.rightContext.matches((input[position+patternLength:])) {
 			return
 		}
 	}
 
 	if r.leftContext != nil {
-		if !r.leftContext.matches(substrTo(input, position)) {
+		if !r.leftContext.matches(input[:position+1]) {
 			return
 		}
 	}
@@ -134,7 +133,7 @@ type finalRule struct {
 }
 
 type langRule struct {
-	match  ruleMatcher
+	match  *ruleMatcher
 	langs  languageID
 	accept bool
 }
@@ -142,58 +141,30 @@ type langRule struct {
 type ruleMatcher struct {
 	matchEmptyString bool
 	pattern          *regexp.Regexp
-	prefix           string
-	suffix           string
-	contains         string
+	prefix           runes
+	suffix           runes
+	contains         runes
 }
 
-func (r ruleMatcher) matches(str string) bool {
+func (r ruleMatcher) matches(str runes) bool {
 	if r.matchEmptyString && len(str) == 0 {
 		return true
 	}
 
-	if r.contains != "" {
-		return strings.Contains(str, r.contains)
+	if len(r.contains) > 0 {
+		return str.contains(r.contains)
 	}
 
-	if r.prefix != "" {
-		return strings.HasPrefix(str, r.prefix)
+	if len(r.prefix) > 0 {
+		return str.hasPrefix(r.prefix)
 	}
 
-	if r.suffix != "" {
-		return strings.HasSuffix(str, r.suffix)
+	if len(r.suffix) > 0 {
+		return str.hasSuffix(r.suffix)
 	}
 
 	if r.pattern != nil {
-		return r.pattern.MatchString(str)
-	}
-
-	return false
-}
-
-func containsAt(haystack string, needle []rune, from int) bool {
-	matchCnt := 0
-	if len(needle) == 0 {
-		return false
-	}
-
-	runeIndex := -1
-	for _, r := range haystack {
-		runeIndex++
-		if runeIndex < from {
-			continue
-		}
-
-		if needle[matchCnt] == r {
-			matchCnt++
-		} else {
-			return false
-		}
-		if matchCnt >= len(needle) {
-			return true
-		}
-
-		continue
+		return r.pattern.MatchString(string(str)) // @todo optimize this
 	}
 
 	return false

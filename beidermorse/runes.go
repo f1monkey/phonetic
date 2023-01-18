@@ -2,10 +2,6 @@ package beidermorse
 
 type runes []rune
 
-func (r runes) append(data runes) runes {
-	return append(r, data...)
-}
-
 // // contains checks if runes contains passed substring
 func (r runes) contains(search []rune) bool {
 	return r.containsAt(search, -1)

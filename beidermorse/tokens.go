@@ -28,7 +28,7 @@ func (l languageID) merge(src ...languageID) languageID {
 }
 
 type token struct {
-	text  string
+	text  runes
 	langs languageID
 }
 
@@ -51,7 +51,7 @@ func (t tokens) merge(lang languageID, src ...tokens) tokens {
 				}
 
 				newResult = append(newResult, token{
-					text:  r1.text + r2.text,
+					text:  append(r1.text, r2.text...),
 					langs: lang,
 				})
 			}
@@ -63,12 +63,19 @@ func (t tokens) merge(lang languageID, src ...tokens) tokens {
 	return result
 }
 
+type tokenStr struct {
+	text  string
+	langs languageID
+}
+
 func (t tokens) deduplicate() tokens {
-	uniq := make(map[token]struct{}, len(t))
+	uniq := make(map[tokenStr]struct{}, len(t))
 
 	for i := 0; i < len(t); i++ {
-		if _, ok := uniq[t[i]]; !ok {
-			uniq[t[i]] = struct{}{}
+		tt := tokenStr{string(t[i].text), t[i].langs}
+
+		if _, ok := uniq[tt]; !ok {
+			uniq[tt] = struct{}{}
 			continue
 		}
 

@@ -46,17 +46,18 @@ func Test_languageID_merge(t *testing.T) {
 }
 
 func Benchmark_tokens_merge(b *testing.B) {
-	t := tokens{
-		{text: "k", langs: 1047288},
-		{text: "ts", langs: 16392},
-		{text: "dZ", langs: 524288},
+	t1 := tokens{
+		{text: runes("k"), langs: 1047288},
+		{text: runes("ts"), langs: 16392},
+		{text: runes("dZ"), langs: 524288},
+	}
+	t2 := tokens{
+		{text: runes("O"), langs: -1},
+		{text: runes("P"), langs: 16384},
 	}
 
 	for i := 0; i < b.N; i++ {
-		t.merge(langsAny, tokens{
-			{text: "O", langs: -1},
-			{text: "P", langs: 16384},
-		})
+		t1.merge(langsAny, t2)
 	}
 }
 
@@ -68,33 +69,33 @@ func Test_tokens_merge(t *testing.T) {
 	}{
 		{
 			tokens: tokens{
-				{text: "O", langs: -1},
-				{text: "P", langs: 16384},
+				{text: runes("O"), langs: -1},
+				{text: runes("P"), langs: 16384},
 			},
 			src: nil,
 			expected: tokens{
-				{text: "O", langs: -1},
-				{text: "P", langs: 16384},
+				{text: runes("O"), langs: -1},
+				{text: runes("P"), langs: 16384},
 			},
 		},
 		{
 			tokens: tokens{
-				{text: "k", langs: 1047288},
-				{text: "ts", langs: 16392},
-				{text: "dZ", langs: 524288},
+				{text: runes("k"), langs: 1047288},
+				{text: runes("ts"), langs: 16392},
+				{text: runes("dZ"), langs: 524288},
 			},
 			src: []tokens{
 				{
-					{text: "O", langs: -1},
-					{text: "P", langs: 16384},
+					{text: runes("O"), langs: -1},
+					{text: runes("P"), langs: 16384},
 				},
 			},
 			expected: tokens{
-				{text: "kO", langs: 1047288},
-				{text: "kP", langs: 16384},
-				{text: "tsO", langs: 16392},
-				{text: "tsP", langs: 16384},
-				{text: "dZO", langs: 524288},
+				{text: runes("kO"), langs: 1047288},
+				{text: runes("kP"), langs: 16384},
+				{text: runes("tsO"), langs: 16392},
+				{text: runes("tsP"), langs: 16384},
+				{text: runes("dZO"), langs: 524288},
 			},
 		},
 	}
@@ -109,11 +110,11 @@ func Test_tokens_merge(t *testing.T) {
 
 func Benchmark_tokens_deduplicate(b *testing.B) {
 	src := tokens{
-		{text: "foo", langs: 1},
-		{text: "bar", langs: 1},
-		{text: "foo", langs: 2},
-		{text: "foo", langs: 1},
-		{text: "foo", langs: 3},
+		{text: runes("foo"), langs: 1},
+		{text: runes("bar"), langs: 1},
+		{text: runes("foo"), langs: 2},
+		{text: runes("foo"), langs: 1},
+		{text: runes("foo"), langs: 3},
 	}
 
 	for i := 0; i < b.N; i++ {
@@ -128,17 +129,17 @@ func Test_tokens_deduplicate(t *testing.T) {
 	}{
 		{
 			src: tokens{
-				{text: "foo", langs: 1},
-				{text: "bar", langs: 1},
-				{text: "foo", langs: 2},
-				{text: "foo", langs: 1},
-				{text: "foo", langs: 3},
+				{text: runes("foo"), langs: 1},
+				{text: runes("bar"), langs: 1},
+				{text: runes("foo"), langs: 2},
+				{text: runes("foo"), langs: 1},
+				{text: runes("foo"), langs: 3},
 			},
 			expected: tokens{
-				{text: "foo", langs: 1},
-				{text: "bar", langs: 1},
-				{text: "foo", langs: 2},
-				{text: "foo", langs: 3},
+				{text: runes("foo"), langs: 1},
+				{text: runes("bar"), langs: 1},
+				{text: runes("foo"), langs: 2},
+				{text: runes("foo"), langs: 3},
 			},
 		},
 	}
