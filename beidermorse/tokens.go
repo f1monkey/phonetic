@@ -34,30 +34,28 @@ type token struct {
 
 type tokens []token
 
-func (t tokens) merge(lang languageID, src ...tokens) tokens {
+func (t tokens) merge(lang languageID, src tokens) tokens {
 	if len(src) == 0 {
 		return t
 	}
 
-	result := t
-	i := 1
-	for i < len(src)+1 { // use while-loop instead of recursion here
-		newResult := make([]token, 0, len(result)*len(src[i-1]))
-		for _, r1 := range result {
-			for _, r2 := range src[i-1] {
-				lang := lang.merge(r1.langs, r2.langs)
-				if lang == langsInvalid {
-					continue
-				}
-
-				newResult = append(newResult, token{
-					text:  append(r1.text, r2.text...),
-					langs: lang,
-				})
+	result := make([]token, 0, len(t)*len(src))
+	for _, r1 := range t {
+		for _, r2 := range src {
+			lang := lang.merge(r1.langs, r2.langs)
+			if lang == langsInvalid {
+				continue
 			}
+
+			text := make([]rune, 0, len(r1.text)+len(r2.text))
+			text = append(text, r1.text...)
+			text = append(text, r2.text...)
+
+			result = append(result, token{
+				text:  text,
+				langs: lang,
+			})
 		}
-		result = newResult
-		i++
 	}
 
 	return result

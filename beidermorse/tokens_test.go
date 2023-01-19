@@ -63,32 +63,30 @@ func Benchmark_tokens_merge(b *testing.B) {
 
 func Test_tokens_merge(t *testing.T) {
 	cases := []struct {
-		tokens   tokens
-		src      []tokens
+		src      tokens
+		dst      tokens
 		expected tokens
 	}{
 		{
-			tokens: tokens{
+			src: tokens{
 				{text: runes("O"), langs: -1},
 				{text: runes("P"), langs: 16384},
 			},
-			src: nil,
+			dst: nil,
 			expected: tokens{
 				{text: runes("O"), langs: -1},
 				{text: runes("P"), langs: 16384},
 			},
 		},
 		{
-			tokens: tokens{
+			src: tokens{
 				{text: runes("k"), langs: 1047288},
 				{text: runes("ts"), langs: 16392},
 				{text: runes("dZ"), langs: 524288},
 			},
-			src: []tokens{
-				{
-					{text: runes("O"), langs: -1},
-					{text: runes("P"), langs: 16384},
-				},
+			dst: tokens{
+				{text: runes("O"), langs: -1},
+				{text: runes("P"), langs: 16384},
 			},
 			expected: tokens{
 				{text: runes("kO"), langs: 1047288},
@@ -98,11 +96,24 @@ func Test_tokens_merge(t *testing.T) {
 				{text: runes("dZO"), langs: 524288},
 			},
 		},
+		{
+			src: tokens{
+				{text: runes("t"), langs: 128},
+			},
+			dst: tokens{
+				{text: runes("i"), langs: -1},
+				{text: runes("Y"), langs: 128},
+			},
+			expected: tokens{
+				{text: runes("ti"), langs: 128},
+				{text: runes("tY"), langs: 128},
+			},
+		},
 	}
 
 	for i, c := range cases {
 		t.Run(strconv.Itoa(i), func(t *testing.T) {
-			result := c.tokens.merge(langsAny, c.src...)
+			result := c.src.merge(langsAny, c.dst)
 			require.Equal(t, c.expected, result)
 		})
 	}
