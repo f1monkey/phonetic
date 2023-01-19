@@ -2,7 +2,6 @@ package beidermorse
 
 import (
 	"regexp"
-	"strings"
 )
 
 // Mode which name mode to use for matching
@@ -39,9 +38,8 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 	var result tokens
 	for _, tok := range input {
-		tokenRunes := []rune(tok.text)
-		newTokens := tokens{{text: "", langs: tok.langs}}
-		for j := 0; j < len(tokenRunes); {
+		newTokens := tokens{{text: nil, langs: tok.langs}}
+		for j := 0; j < len(tok.text); {
 			var (
 				applied bool
 				offset  int
@@ -63,7 +61,7 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 
 			if !applied {
 				for k := range newTokens {
-					newTokens[k].text += string(tokenRunes[j])
+					newTokens[k].text = append(newTokens[k].text, tok.text[j])
 				}
 			}
 			j += offset
@@ -82,33 +80,37 @@ func (r rules) apply(input tokens, lang languageID, ignoreLangs bool) tokens {
 }
 
 type rule struct {
-	pattern       string
+	pattern       runes
 	leftContext   *ruleMatcher
 	rightContext  *ruleMatcher
 	phoneticRules tokens
 }
 
-func (r rule) applyTo(input string, position int) (result []token, offset int) {
-	patternLength := len([]rune(r.pattern))
-	inputLength := len([]rune(input))
+func (r rule) applyTo(input runes, position int) (result []token, offset int) {
+	patternLength := len(r.pattern)
+	inputLength := len(input)
 	offset = 1
 
 	if len(r.phoneticRules) == 0 {
 		return
 	}
 
-	if patternLength > inputLength-position || substr(input, position, patternLength) != r.pattern { // no match
+	if patternLength > inputLength-position {
+		return
+	}
+
+	if !input.containsAt(r.pattern, position) {
 		return
 	}
 
 	if r.rightContext != nil {
-		if !r.rightContext.matches(substrFrom(input, position+patternLength)) {
+		if !r.rightContext.matches((input[position+patternLength:])) {
 			return
 		}
 	}
 
 	if r.leftContext != nil {
-		if !r.leftContext.matches(substrTo(input, position)) {
+		if !r.leftContext.matches(input[:position]) {
 			return
 		}
 	}
@@ -130,7 +132,7 @@ type finalRule struct {
 }
 
 type langRule struct {
-	match  ruleMatcher
+	match  *ruleMatcher
 	langs  languageID
 	accept bool
 }
@@ -138,30 +140,30 @@ type langRule struct {
 type ruleMatcher struct {
 	matchEmptyString bool
 	pattern          *regexp.Regexp
-	prefix           string
-	suffix           string
-	contains         string
+	prefix           runes
+	suffix           runes
+	contains         runes
 }
 
-func (r ruleMatcher) matches(str string) bool {
+func (r ruleMatcher) matches(str runes) bool {
 	if r.matchEmptyString && len(str) == 0 {
 		return true
 	}
 
-	if r.contains != "" {
-		return strings.Contains(str, r.contains)
+	if len(r.contains) > 0 {
+		return str.contains(r.contains)
 	}
 
-	if r.prefix != "" {
-		return strings.HasPrefix(str, r.prefix)
+	if len(r.prefix) > 0 {
+		return str.hasPrefix(r.prefix)
 	}
 
-	if r.suffix != "" {
-		return strings.HasSuffix(str, r.suffix)
+	if len(r.suffix) > 0 {
+		return str.hasSuffix(r.suffix)
 	}
 
 	if r.pattern != nil {
-		return r.pattern.MatchString(str)
+		return r.pattern.MatchString(string(str)) // @todo optimize this
 	}
 
 	return false

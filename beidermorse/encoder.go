@@ -43,7 +43,7 @@ func (e *Encoder) Encode(input string) []string {
 
 	result := make([]string, len(tokens))
 	for i, t := range tokens {
-		result[i] = t.text
+		result[i] = string(t.text)
 	}
 
 	return result

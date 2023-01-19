@@ -235,38 +235,43 @@ func fixRules(rules map[string]SrcRuleSet) {
 const rulesTemplate = `
 {{- define "ruletpl" }}
 {
-	pattern: {{ printf "%q" .Pattern }},
+	pattern: []rune({{ printf "%q" .Pattern }}),
 	{{- if ne .LeftContext nil}}
-		leftContext: &ruleMatcher{
-			matchEmptyString: {{ .LeftContext.MatchEmptyString }},
-			contains: {{ printf "%q" .LeftContext.Contains }},
-			prefix: {{ printf "%q" .LeftContext.Prefix }},
-			suffix: {{ printf "%q" .LeftContext.Suffix }},
-			{{- if ne .LeftContext.Pattern ""}}
-				pattern: regexp.MustCompile({{ printf "%q" .LeftContext.Pattern }}),
-			{{- end }}
-		},
+		leftContext: {{- template "rulematchertpl" .LeftContext }},
 	{{- end }}
 	{{- if ne .RightContext nil}}
-		rightContext: &ruleMatcher{
-			matchEmptyString: {{ .RightContext.MatchEmptyString }},
-			contains: {{ printf "%q" .RightContext.Contains }},
-			prefix: {{ printf "%q" .RightContext.Prefix }},
-			suffix: {{ printf "%q" .RightContext.Suffix }},
-			{{- if ne .RightContext.Pattern ""}}
-				pattern: regexp.MustCompile({{ printf "%q" .RightContext.Pattern }}),
-			{{- end }}
-		},
+		rightContext: {{- template "rulematchertpl" .RightContext }},
 	{{- end }}
 	phoneticRules: []token{
 		{{- range $i, $p := .PhoneticRules }}
 			{
-				text: {{ printf "%q" $p.Text }},
+				{{- if ne $p.Text ""}}
+					text: []rune({{ printf "%q" $p.Text }}),
+				{{- else }}
+					text: nil,
+				{{- end }}
 				langs: {{ $p.Langs }},
 			},
 		{{- end }}
 	},
 },
+{{- end }}
+{{- define "rulematchertpl" }}
+	&ruleMatcher{
+		matchEmptyString: {{ .MatchEmptyString }},
+		{{- if ne .Contains ""}}
+			contains: []rune({{ printf "%q" .Contains }}),
+		{{- end }}
+		{{- if ne .Prefix ""}}
+			prefix: []rune({{ printf "%q" .Prefix }}),
+		{{- end }}
+		{{- if ne .Suffix ""}}
+			suffix: []rune({{ printf "%q" .Suffix }}),
+		{{- end }}
+		{{- if ne .Pattern ""}}
+			pattern: regexp.MustCompile({{ printf "%q" .Pattern }}),
+		{{- end }}
+	}
 {{- end }}
 
 // GENERATED CODE. DO NOT EDIT!
@@ -315,15 +320,7 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang]rules{
 var {{ .Mode }}LangRules = []langRule{
 	{{- range $rule := .LangRules }}
 		{
-			match: ruleMatcher{
-				matchEmptyString: {{ $rule.Match.MatchEmptyString }},
-				contains: {{ printf "%q" $rule.Match.Contains }},
-				prefix: {{ printf "%q" $rule.Match.Prefix }},
-				suffix: {{ printf "%q" $rule.Match.Suffix }},
-				{{- if ne $rule.Match.Pattern ""}}
-					pattern: regexp.MustCompile({{ printf "%q" $rule.Match.Pattern }}),
-				{{- end }}
-			},
+			match: {{- template "rulematchertpl" $rule.Match }},
 			langs: {{ $rule.Langs }},
 			accept: {{ $rule.Accept }},
 		},

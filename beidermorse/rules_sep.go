@@ -41,1572 +41,1444 @@ const sepAll = sepfrench +
 var sepRules = map[sepLang]rules{
 	sepany: rules{
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "sh",
+			pattern: []rune("sh"),
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gli",
+			pattern: []rune("gli"),
 			phoneticRules: []token{
 				{
-					text:  "gli",
+					text:  []rune("gli"),
 					langs: -1,
 				},
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: 8,
 				},
 			},
 		},
 		{
-			pattern: "gni",
+			pattern: []rune("gni"),
 			phoneticRules: []token{
 				{
-					text:  "gni",
+					text:  []rune("gni"),
 					langs: -1,
 				},
 				{
-					text:  "ni",
+					text:  []rune("ni"),
 					langs: 10,
 				},
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: 10,
 				},
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: 10,
 				},
 				{
-					text:  "gn",
+					text:  []rune("gn"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gh",
+			pattern: []rune("gh"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 				{
-					text:  "gh",
+					text:  []rune("gh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "dh",
+			pattern: []rune("dh"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("d"),
 					langs: -1,
 				},
 				{
-					text:  "dh",
+					text:  []rune("dh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "bh",
+			pattern: []rune("bh"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 				{
-					text:  "bh",
+					text:  []rune("bh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "th",
+			pattern: []rune("th"),
 			phoneticRules: []token{
 				{
-					text:  "t",
+					text:  []rune("t"),
 					langs: -1,
 				},
 				{
-					text:  "th",
+					text:  []rune("th"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "lh",
+			pattern: []rune("lh"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: 16,
 				},
 				{
-					text:  "lh",
+					text:  []rune("lh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "nh",
+			pattern: []rune("nh"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: 16,
 				},
 				{
-					text:  "nh",
+					text:  []rune("nh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ig",
+			pattern: []rune("ig"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "ig",
+					text:  []rune("ig"),
 					langs: -1,
 				},
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "ix",
+			pattern: []rune("ix"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tx",
+			pattern: []rune("tx"),
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tg",
+			pattern: []rune("tg"),
 			phoneticRules: []token{
 				{
-					text:  "tg",
+					text:  []rune("tg"),
 					langs: -1,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "y",
-				suffix:           "",
+				prefix:           []rune("y"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gg",
+			pattern: []rune("gg"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "gZ",
+					text:  []rune("gZ"),
 					langs: 18,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: 40,
 				},
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: 18,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: 40,
 				},
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "guy",
+			pattern: []rune("guy"),
 			phoneticRules: []token{
 				{
-					text:  "gi",
+					text:  []rune("gi"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gue",
+			pattern: []rune("gue"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: 2,
 				},
 				{
-					text:  "ge",
+					text:  []rune("ge"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 				{
-					text:  "gv",
+					text:  []rune("gv"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "gv",
+					text:  []rune("gv"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ny",
+			pattern: []rune("ny"),
 			phoneticRules: []token{
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "sc",
+			pattern: []rune("sc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: 8,
 				},
 			},
 		},
 		{
-			pattern: "sç",
+			pattern: []rune("sç"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: 8,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: 18,
 				},
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: 32,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: 32,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: 8,
 				},
 				{
-					text:  "si",
+					text:  []rune("si"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "cc",
+			pattern: []rune("cc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: 8,
 				},
 				{
-					text:  "ks",
+					text:  []rune("ks"),
 					langs: 50,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: 8,
 				},
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: 50,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéêy]$"),
 			},
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: 32,
 				},
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: 26,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "ts",
+					text:  []rune("ts"),
 					langs: 8,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[bdgv]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 				{
-					text:  "dz",
+					text:  []rune("dz"),
 					langs: 8,
 				},
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ptckf]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "ts",
+					text:  []rune("ts"),
 					langs: 8,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 				{
-					text:  "dz",
+					text:  []rune("dz"),
 					langs: 8,
 				},
 				{
-					text:  "ts",
+					text:  []rune("ts"),
 					langs: 8,
 				},
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "que",
+			pattern: []rune("que"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: 2,
 				},
 				{
-					text:  "ke",
+					text:  []rune("ke"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "kv",
+					text:  []rune("kv"),
 					langs: -1,
 				},
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "ez",
+					text:  []rune("ez"),
 					langs: 16,
 				},
 				{
-					text:  "eS",
+					text:  []rune("eS"),
 					langs: 16,
 				},
 				{
-					text:  "eks",
+					text:  []rune("eks"),
 					langs: -1,
 				},
 				{
-					text:  "egz",
+					text:  []rune("egz"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[cs]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: 16,
 				},
 				{
-					text:  "ek",
+					text:  []rune("ek"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[cdglnrst]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[bfpv]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: 48,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 				{
-					text:  "V",
+					text:  []rune("V"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 				{
-					text:  "B",
+					text:  []rune("B"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "eau",
+			pattern: []rune("eau"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ouh",
+			pattern: []rune("ouh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: 2,
 				},
 				{
-					text:  "uh",
+					text:  []rune("uh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "uh",
+			pattern: []rune("uh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 				{
-					text:  "uh",
+					text:  []rune("uh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
-					text:  "vo",
+					text:  []rune("vo"),
 					langs: -1,
 				},
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aie]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuoóeéê]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéê]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiíou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 				{
-					text:  "",
+					text:  nil,
 					langs: 2,
 				},
 			},
 		},
 		{
-			pattern: "ão",
+			pattern: []rune("ão"),
 			phoneticRules: []token{
 				{
-					text:  "au",
+					text:  []rune("au"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ãe",
+			pattern: []rune("ãe"),
 			phoneticRules: []token{
 				{
-					text:  "aj",
+					text:  []rune("aj"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ãi",
+			pattern: []rune("ãi"),
 			phoneticRules: []token{
 				{
-					text:  "aj",
+					text:  []rune("aj"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "õe",
+			pattern: []rune("õe"),
 			phoneticRules: []token{
 				{
-					text:  "oj",
+					text:  []rune("oj"),
 					langs: -1,
 				},
 				{
-					text:  "on",
+					text:  []rune("on"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "où",
+			pattern: []rune("où"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
-					text:  "ou",
+					text:  []rune("ou"),
 					langs: -1,
 				},
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: 2,
 				},
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ã",
+			pattern: []rune("ã"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "î",
+			pattern: []rune("î"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ô",
+			pattern: []rune("ô"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "õ",
+			pattern: []rune("õ"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 				{
-					text:  "on",
+					text:  []rune("on"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ò",
+			pattern: []rune("ò"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("d"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
-					text:  "h",
+					text:  []rune("h"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: 32,
 				},
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
-					text:  "p",
+					text:  []rune("p"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
-					text:  "r",
+					text:  []rune("r"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: 16,
 				},
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
-					text:  "t",
+					text:  []rune("t"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: 32,
 				},
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
-					text:  "ks",
+					text:  []rune("ks"),
 					langs: -1,
 				},
 				{
-					text:  "gz",
+					text:  []rune("gz"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: 48,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
@@ -1614,692 +1486,644 @@ var sepRules = map[sepLang]rules{
 	},
 	sepfrench: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ph",
+			pattern: []rune("ph"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
-					text:  "ks",
+					text:  []rune("ks"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 				{
-					text:  "gn",
+					text:  []rune("gn"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gue",
+			pattern: []rune("gue"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiy]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "que",
+			pattern: []rune("que"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiouyéèê]$"),
 			},
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiouyéèê]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "",
+					text:  nil,
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "",
+					text:  nil,
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ouh",
+			pattern: []rune("ouh"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aioe]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 				{
-					text:  "uh",
+					text:  []rune("uh"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
-					text:  "vo",
+					text:  []rune("vo"),
 					langs: -1,
 				},
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeio]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
-					text:  "aue",
+					text:  []rune("aue"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "eau",
+			pattern: []rune("eau"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ai",
+			pattern: []rune("ai"),
 			phoneticRules: []token{
 				{
-					text:  "aj",
+					text:  []rune("aj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ay",
+			pattern: []rune("ay"),
 			phoneticRules: []token{
 				{
-					text:  "aj",
+					text:  []rune("aj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "où",
+			pattern: []rune("où"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ou",
+			pattern: []rune("ou"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "oi",
+			pattern: []rune("oi"),
 			phoneticRules: []token{
 				{
-					text:  "oj",
+					text:  []rune("oj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ei",
+			pattern: []rune("ei"),
 			phoneticRules: []token{
 				{
-					text:  "ej",
+					text:  []rune("ej"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ey",
+			pattern: []rune("ey"),
 			phoneticRules: []token{
 				{
-					text:  "ej",
+					text:  []rune("ej"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[ou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 				{
-					text:  "",
+					text:  nil,
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aoeu]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("d"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
-					text:  "h",
+					text:  []rune("h"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
-					text:  "p",
+					text:  []rune("p"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
-					text:  "r",
+					text:  []rune("r"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
-					text:  "t",
+					text:  []rune("t"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
@@ -2307,370 +2131,361 @@ var sepRules = map[sepLang]rules{
 	},
 	sephebrew: rules{
 		{
-			pattern: "אי",
+			pattern: []rune("אי"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "עי",
+			pattern: []rune("עי"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "עו",
+			pattern: []rune("עו"),
 			phoneticRules: []token{
 				{
-					text:  "VV",
+					text:  []rune("VV"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "או",
+			pattern: []rune("או"),
 			phoneticRules: []token{
 				{
-					text:  "VV",
+					text:  []rune("VV"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ג׳",
+			pattern: []rune("ג׳"),
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ד׳",
+			pattern: []rune("ד׳"),
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "א",
+			pattern: []rune("א"),
 			phoneticRules: []token{
 				{
-					text:  "L",
+					text:  []rune("L"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ב",
+			pattern: []rune("ב"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ג",
+			pattern: []rune("ג"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ד",
+			pattern: []rune("ד"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("d"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "1",
+					text:  []rune("1"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "1",
+					text:  []rune("1"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ה",
+			pattern: []rune("ה"),
 			phoneticRules: []token{
 				{
-					text:  "",
+					text:  nil,
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "וו",
+			pattern: []rune("וו"),
 			phoneticRules: []token{
 				{
-					text:  "V",
+					text:  []rune("V"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "וי",
+			pattern: []rune("וי"),
 			phoneticRules: []token{
 				{
-					text:  "WW",
+					text:  []rune("WW"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ו",
+			pattern: []rune("ו"),
 			phoneticRules: []token{
 				{
-					text:  "W",
+					text:  []rune("W"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ז",
+			pattern: []rune("ז"),
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ח",
+			pattern: []rune("ח"),
 			phoneticRules: []token{
 				{
-					text:  "X",
+					text:  []rune("X"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ט",
+			pattern: []rune("ט"),
 			phoneticRules: []token{
 				{
-					text:  "T",
+					text:  []rune("T"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "יי",
+			pattern: []rune("יי"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "י",
+			pattern: []rune("י"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ך",
+			pattern: []rune("ך"),
 			phoneticRules: []token{
 				{
-					text:  "X",
+					text:  []rune("X"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "כ",
+			pattern: []rune("כ"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "K",
+					text:  []rune("K"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "כ",
+			pattern: []rune("כ"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ל",
+			pattern: []rune("ל"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ם",
+			pattern: []rune("ם"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "מ",
+			pattern: []rune("מ"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ן",
+			pattern: []rune("ן"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "נ",
+			pattern: []rune("נ"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ס",
+			pattern: []rune("ס"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ע",
+			pattern: []rune("ע"),
 			phoneticRules: []token{
 				{
-					text:  "L",
+					text:  []rune("L"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ף",
+			pattern: []rune("ף"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "פ",
+			pattern: []rune("פ"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ץ",
+			pattern: []rune("ץ"),
 			phoneticRules: []token{
 				{
-					text:  "C",
+					text:  []rune("C"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "צ",
+			pattern: []rune("צ"),
 			phoneticRules: []token{
 				{
-					text:  "C",
+					text:  []rune("C"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ק",
+			pattern: []rune("ק"),
 			phoneticRules: []token{
 				{
-					text:  "K",
+					text:  []rune("K"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ר",
+			pattern: []rune("ר"),
 			phoneticRules: []token{
 				{
-					text:  "r",
+					text:  []rune("r"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ש",
+			pattern: []rune("ש"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ת",
+			pattern: []rune("ת"),
 			phoneticRules: []token{
 				{
-					text:  "T",
+					text:  []rune("T"),
 					langs: -1,
 				},
 			},
@@ -2678,611 +2493,560 @@ var sepRules = map[sepLang]rules{
 	},
 	sepitalian: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gli",
+			pattern: []rune("gli"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 				{
-					text:  "gli",
+					text:  []rune("gli"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gn",
+			pattern: []rune("gn"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: -1,
 				},
 				{
-					text:  "gn",
+					text:  []rune("gn"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gni",
+			pattern: []rune("gni"),
 			phoneticRules: []token{
 				{
-					text:  "ni",
+					text:  []rune("ni"),
 					langs: -1,
 				},
 				{
-					text:  "gni",
+					text:  []rune("gni"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gi",
+			pattern: []rune("gi"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gg",
+			pattern: []rune("gg"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ci",
+			pattern: []rune("ci"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "sc",
+			pattern: []rune("sc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "cc",
+			pattern: []rune("cc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
-					text:  "vo",
+					text:  []rune("vo"),
 					langs: -1,
 				},
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "�",
+			pattern: []rune("�"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("d"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
-					text:  "h",
+					text:  []rune("h"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
-					text:  "p",
+					text:  []rune("p"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
-					text:  "r",
+					text:  []rune("r"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
-					text:  "t",
+					text:  []rune("t"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
-					text:  "ks",
+					text:  []rune("ks"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
-					text:  "ts",
+					text:  []rune("ts"),
 					langs: -1,
 				},
 				{
-					text:  "dz",
+					text:  []rune("dz"),
 					langs: -1,
 				},
 			},
@@ -3290,931 +3054,856 @@ var sepRules = map[sepLang]rules{
 	},
 	sepportuguese: rules{
 		{
-			pattern: "kh",
+			pattern: []rune("kh"),
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ss",
+			pattern: []rune("ss"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "sc",
+			pattern: []rune("sc"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "sç",
+			pattern: []rune("sç"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéêy]$"),
 			},
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[dglmnrv]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[bdgv]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ptckf]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "gv",
+					text:  []rune("gv"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[eiu]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ao]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "kv",
+					text:  []rune("kv"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
-					text:  "vo",
+					text:  []rune("vo"),
 					langs: -1,
 				},
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "lh",
+			pattern: []rune("lh"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "nh",
+			pattern: []rune("nh"),
 			phoneticRules: []token{
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[bdgt]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "",
+					text:  nil,
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aáuiíoóeéêy]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "ez",
+					text:  []rune("ez"),
 					langs: -1,
 				},
 				{
-					text:  "eS",
+					text:  []rune("eS"),
 					langs: -1,
 				},
 				{
-					text:  "eks",
+					text:  []rune("eks"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ex",
+			pattern: []rune("ex"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[cs]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuiíoóeéê]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeiíou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[bcdfglnprstv]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ão",
+			pattern: []rune("ão"),
 			phoneticRules: []token{
 				{
-					text:  "au",
+					text:  []rune("au"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 				{
-					text:  "on",
+					text:  []rune("on"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ãe",
+			pattern: []rune("ãe"),
 			phoneticRules: []token{
 				{
-					text:  "aj",
+					text:  []rune("aj"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ãi",
+			pattern: []rune("ãi"),
 			phoneticRules: []token{
 				{
-					text:  "aj",
+					text:  []rune("aj"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "õe",
+			pattern: []rune("õe"),
 			phoneticRules: []token{
 				{
-					text:  "oj",
+					text:  []rune("oj"),
 					langs: -1,
 				},
 				{
-					text:  "on",
+					text:  []rune("on"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aáuoóeéê]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aeou]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "j",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "â",
+			pattern: []rune("â"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ã",
+			pattern: []rune("ã"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 				{
-					text:  "an",
+					text:  []rune("an"),
 					langs: -1,
 				},
 				{
-					text:  "on",
+					text:  []rune("on"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ê",
+			pattern: []rune("ê"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ô",
+			pattern: []rune("ô"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "õ",
+			pattern: []rune("õ"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 				{
-					text:  "on",
+					text:  []rune("on"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ü",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "aue",
+			pattern: []rune("aue"),
 			phoneticRules: []token{
 				{
-					text:  "aue",
+					text:  []rune("aue"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("d"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("e"),
 					langs: -1,
 				},
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
-					text:  "h",
+					text:  []rune("h"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
-					text:  "p",
+					text:  []rune("p"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
-					text:  "r",
+					text:  []rune("r"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
-					text:  "t",
+					text:  []rune("t"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 				{
-					text:  "ks",
-					langs: -1,
-				},
-			},
-		},
-		{
-			pattern: "y",
-			phoneticRules: []token{
-				{
-					text:  "i",
+					text:  []rune("ks"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("i"),
+					langs: -1,
+				},
+			},
+		},
+		{
+			pattern: []rune("z"),
+			phoneticRules: []token{
+				{
+					text:  []rune("z"),
 					langs: -1,
 				},
 			},
@@ -4222,651 +3911,618 @@ var sepRules = map[sepLang]rules{
 	},
 	sepspanish: rules{
 		{
-			pattern: "ñ",
+			pattern: []rune("ñ"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ny",
+			pattern: []rune("ny"),
 			phoneticRules: []token{
 				{
-					text:  "nj",
+					text:  []rune("nj"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ç",
+			pattern: []rune("ç"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ig",
+			pattern: []rune("ig"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 				{
-					text:  "ig",
+					text:  []rune("ig"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ix",
+			pattern: []rune("ix"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[aeiou]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tx",
+			pattern: []rune("tx"),
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tj",
+			pattern: []rune("tj"),
 			phoneticRules: []token{
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "tg",
+			pattern: []rune("tg"),
 			phoneticRules: []token{
 				{
-					text:  "tg",
+					text:  []rune("tg"),
 					langs: -1,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ch",
+			pattern: []rune("ch"),
 			phoneticRules: []token{
 				{
-					text:  "tS",
+					text:  []rune("tS"),
 					langs: -1,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "bh",
+			pattern: []rune("bh"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("h"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("[dgt]$"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "",
+					text:  nil,
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "j",
+			pattern: []rune("j"),
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: -1,
 				},
 				{
-					text:  "Z",
+					text:  []rune("Z"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "x",
+			pattern: []rune("x"),
 			phoneticRules: []token{
 				{
-					text:  "ks",
+					text:  []rune("ks"),
 					langs: -1,
 				},
 				{
-					text:  "gz",
+					text:  []rune("gz"),
 					langs: -1,
 				},
 				{
-					text:  "S",
+					text:  []rune("S"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "w",
+			pattern: []rune("w"),
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "B",
+					text:  []rune("B"),
 					langs: -1,
 				},
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			leftContext: &ruleMatcher{
 				matchEmptyString: true,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 			},
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 				{
-					text:  "V",
+					text:  []rune("V"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "v",
+			pattern: []rune("v"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "b",
+			pattern: []rune("b"),
 			phoneticRules: []token{
 				{
-					text:  "b",
+					text:  []rune("b"),
 					langs: -1,
 				},
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("m"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[bpvf]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("m"),
 					langs: -1,
 				},
 				{
-					text:  "n",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "c",
+			pattern: []rune("c"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "z",
+			pattern: []rune("z"),
 			phoneticRules: []token{
 				{
-					text:  "z",
+					text:  []rune("z"),
 					langs: -1,
 				},
 				{
-					text:  "s",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "gu",
+			pattern: []rune("gu"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 				{
-					text:  "gv",
+					text:  []rune("gv"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("g"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[ei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "x",
+					text:  []rune("x"),
 					langs: -1,
 				},
 				{
-					text:  "g",
+					text:  []rune("g"),
 					langs: -1,
 				},
 				{
-					text:  "dZ",
+					text:  []rune("dZ"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "qu",
+			pattern: []rune("qu"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "q",
+			pattern: []rune("q"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "uo",
+			pattern: []rune("uo"),
 			phoneticRules: []token{
 				{
-					text:  "vo",
+					text:  []rune("vo"),
 					langs: -1,
 				},
 				{
-					text:  "o",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("u"),
 			rightContext: &ruleMatcher{
 				matchEmptyString: false,
-				contains:         "",
-				prefix:           "",
-				suffix:           "",
 				pattern:          regexp.MustCompile("^[aei]"),
 			},
 			phoneticRules: []token{
 				{
-					text:  "v",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "y",
+			pattern: []rune("y"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("i"),
 					langs: -1,
 				},
 				{
-					text:  "j",
-					langs: -1,
-				},
-			},
-		},
-		{
-			pattern: "ü",
-			phoneticRules: []token{
-				{
-					text:  "v",
+					text:  []rune("j"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "á",
+			pattern: []rune("ü"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("v"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "é",
+			pattern: []rune("á"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "í",
+			pattern: []rune("é"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ó",
+			pattern: []rune("í"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ú",
+			pattern: []rune("ó"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "à",
+			pattern: []rune("ú"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "è",
+			pattern: []rune("à"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "ò",
+			pattern: []rune("è"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "a",
+			pattern: []rune("ò"),
 			phoneticRules: []token{
 				{
-					text:  "a",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "d",
+			pattern: []rune("a"),
 			phoneticRules: []token{
 				{
-					text:  "d",
+					text:  []rune("a"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "e",
+			pattern: []rune("d"),
 			phoneticRules: []token{
 				{
-					text:  "e",
+					text:  []rune("d"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "f",
+			pattern: []rune("e"),
 			phoneticRules: []token{
 				{
-					text:  "f",
+					text:  []rune("e"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "g",
+			pattern: []rune("f"),
 			phoneticRules: []token{
 				{
-					text:  "g",
+					text:  []rune("f"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "h",
+			pattern: []rune("g"),
 			phoneticRules: []token{
 				{
-					text:  "h",
+					text:  []rune("g"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "i",
+			pattern: []rune("h"),
 			phoneticRules: []token{
 				{
-					text:  "i",
+					text:  []rune("h"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "k",
+			pattern: []rune("i"),
 			phoneticRules: []token{
 				{
-					text:  "k",
+					text:  []rune("i"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "l",
+			pattern: []rune("k"),
 			phoneticRules: []token{
 				{
-					text:  "l",
+					text:  []rune("k"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "m",
+			pattern: []rune("l"),
 			phoneticRules: []token{
 				{
-					text:  "m",
+					text:  []rune("l"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "n",
+			pattern: []rune("m"),
 			phoneticRules: []token{
 				{
-					text:  "n",
+					text:  []rune("m"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "o",
+			pattern: []rune("n"),
 			phoneticRules: []token{
 				{
-					text:  "o",
+					text:  []rune("n"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "p",
+			pattern: []rune("o"),
 			phoneticRules: []token{
 				{
-					text:  "p",
+					text:  []rune("o"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "r",
+			pattern: []rune("p"),
 			phoneticRules: []token{
 				{
-					text:  "r",
+					text:  []rune("p"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "s",
+			pattern: []rune("r"),
 			phoneticRules: []token{
 				{
-					text:  "s",
+					text:  []rune("r"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "t",
+			pattern: []rune("s"),
 			phoneticRules: []token{
 				{
-					text:  "t",
+					text:  []rune("s"),
 					langs: -1,
 				},
 			},
 		},
 		{
-			pattern: "u",
+			pattern: []rune("t"),
 			phoneticRules: []token{
 				{
-					text:  "u",
+					text:  []rune("t"),
+					langs: -1,
+				},
+			},
+		},
+		{
+			pattern: []rune("u"),
+			phoneticRules: []token{
+				{
+					text:  []rune("u"),
 					langs: -1,
 				},
 			},
@@ -4876,721 +4532,577 @@ var sepRules = map[sepLang]rules{
 
 var sepLangRules = []langRule{
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "eau",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("eau"),
 		},
 		langs:  2,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ou",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ou"),
 		},
 		langs:  2,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gni",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gni"),
 		},
 		langs:  10,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "tx",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("tx"),
 		},
 		langs:  32,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "tj",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("tj"),
 		},
 		langs:  32,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gy",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gy"),
 		},
 		langs:  2,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "guy",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("guy"),
 		},
 		langs:  2,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "sh",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("sh"),
 		},
 		langs:  48,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "lh",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("lh"),
 		},
 		langs:  16,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "nh",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("nh"),
 		},
 		langs:  16,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ny",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ny"),
 		},
 		langs:  32,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gue",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gue"),
 		},
 		langs:  34,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gui",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gui"),
 		},
 		langs:  34,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gia",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gia"),
 		},
 		langs:  8,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gie",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gie"),
 		},
 		langs:  8,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gio",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gio"),
 		},
 		langs:  8,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "giu",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("giu"),
 		},
 		langs:  8,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ñ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ñ"),
 		},
 		langs:  32,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "â",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("â"),
 		},
 		langs:  18,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "á",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("á"),
 		},
 		langs:  48,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "à",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("à"),
 		},
 		langs:  16,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ã",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ã"),
 		},
 		langs:  16,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ê",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ê"),
 		},
 		langs:  18,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "í",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("í"),
 		},
 		langs:  48,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "î",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("î"),
 		},
 		langs:  2,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ô",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ô"),
 		},
 		langs:  18,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "õ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("õ"),
 		},
 		langs:  16,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ò",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ò"),
 		},
 		langs:  40,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ú",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ú"),
 		},
 		langs:  48,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ù",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ù"),
 		},
 		langs:  2,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ü",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ü"),
 		},
 		langs:  48,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "א",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("א"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ב",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ב"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ג",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ג"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ד",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ד"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ה",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ה"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ו",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ו"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ז",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ז"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ח",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ח"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ט",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ט"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "י",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("י"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "כ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("כ"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ל",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ל"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "מ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("מ"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "נ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("נ"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ס",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ס"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ע",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ע"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "פ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("פ"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "צ",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("צ"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ק",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ק"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ר",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ר"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ש",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ש"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ת",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ת"),
 		},
 		langs:  4,
 		accept: true,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "a",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("a"),
 		},
 		langs:  4,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "o",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("o"),
 		},
 		langs:  4,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "e",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("e"),
 		},
 		langs:  4,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "i",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("i"),
 		},
 		langs:  4,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "y",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("y"),
 		},
 		langs:  4,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "u",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("u"),
 		},
 		langs:  4,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "kh",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("kh"),
 		},
 		langs:  32,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "gua",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("gua"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "guo",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("guo"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ç",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ç"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "cha",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("cha"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "cho",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("cho"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "chu",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("chu"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "j",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("j"),
 		},
 		langs:  8,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "dj",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("dj"),
 		},
 		langs:  32,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "sce",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("sce"),
 		},
 		langs:  2,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "sci",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("sci"),
 		},
 		langs:  2,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "ó",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("ó"),
 		},
 		langs:  2,
 		accept: false,
 	},
 	{
-		match: ruleMatcher{
+		match: &ruleMatcher{
 			matchEmptyString: false,
-			contains:         "è",
-			prefix:           "",
-			suffix:           "",
+			contains:         []rune("è"),
 		},
 		langs:  16,
 		accept: false,
@@ -5601,2306 +5113,1995 @@ var sepFinalRules = finalRules{
 	approx: finalRule{
 		first: rules{
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "p",
+						text:  []rune("p"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "p",
-					suffix:           "",
+					prefix:           []rune("p"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "p",
+						text:  []rune("p"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "b",
+						text:  []rune("b"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "b",
-					suffix:           "",
+					prefix:           []rune("b"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "f",
+						text:  []rune("f"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "f",
-					suffix:           "",
+					prefix:           []rune("f"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "f",
+						text:  []rune("f"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "v",
+						text:  []rune("v"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "v",
-					suffix:           "",
+					prefix:           []rune("v"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "k",
+						text:  []rune("k"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "k",
-					suffix:           "",
+					prefix:           []rune("k"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "k",
+						text:  []rune("k"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "g",
+						text:  []rune("g"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "g",
-					suffix:           "",
+					prefix:           []rune("g"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "t",
+						text:  []rune("t"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "t",
-					suffix:           "",
+					prefix:           []rune("t"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "t",
+						text:  []rune("t"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "d",
+						text:  []rune("d"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "d",
-					suffix:           "",
+					prefix:           []rune("d"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "dZ",
-					suffix:           "",
+					prefix:           []rune("dZ"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "tS",
-					suffix:           "",
+					prefix:           []rune("tS"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "nm",
+				pattern: []rune("nm"),
 				phoneticRules: []token{
 					{
-						text:  "m",
+						text:  []rune("m"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "a",
-					suffix:           "",
+					prefix:           []rune("a"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "b",
-					suffix:           "",
+					prefix:           []rune("b"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "d",
-					suffix:           "",
+					prefix:           []rune("d"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "e",
-					suffix:           "",
+					prefix:           []rune("e"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "f",
-					suffix:           "",
+					prefix:           []rune("f"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "g",
-					suffix:           "",
+					prefix:           []rune("g"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "i",
-					suffix:           "",
+					prefix:           []rune("i"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "k",
-					suffix:           "",
+					prefix:           []rune("k"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "l",
+				pattern: []rune("l"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "l",
-					suffix:           "",
+					prefix:           []rune("l"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "m",
+				pattern: []rune("m"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "m",
-					suffix:           "",
+					prefix:           []rune("m"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "n",
-					suffix:           "",
+					prefix:           []rune("n"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "o",
-					suffix:           "",
+					prefix:           []rune("o"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "p",
-					suffix:           "",
+					prefix:           []rune("p"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "r",
+				pattern: []rune("r"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "r",
-					suffix:           "",
+					prefix:           []rune("r"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "t",
-					suffix:           "",
+					prefix:           []rune("t"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "u",
+				pattern: []rune("u"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "u",
-					suffix:           "",
+					prefix:           []rune("u"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "v",
-					suffix:           "",
+					prefix:           []rune("v"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "z",
-					suffix:           "",
+					prefix:           []rune("z"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "mbr",
+				pattern: []rune("mbr"),
 				phoneticRules: []token{
 					{
-						text:  "mr",
+						text:  []rune("mr"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "mpr",
+				pattern: []rune("mpr"),
 				phoneticRules: []token{
 					{
-						text:  "mr",
+						text:  []rune("mr"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "bens",
+				pattern: []rune("bens"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "binz",
+						text:  []rune("binz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "benS",
+				pattern: []rune("benS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "binz",
+						text:  []rune("binz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ben",
+				pattern: []rune("ben"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bin",
+						text:  []rune("bin"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "bar",
+				pattern: []rune("bar"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bar",
+						text:  []rune("bar"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "abens",
+				pattern: []rune("abens"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "binz",
+						text:  []rune("binz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "abenS",
+				pattern: []rune("abenS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "binz",
+						text:  []rune("binz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "aben",
+				pattern: []rune("aben"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bin",
+						text:  []rune("bin"),
 						langs: -1,
 					},
 					{
-						text:  "bun",
+						text:  []rune("bun"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "abe",
+				pattern: []rune("abe"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bi",
+						text:  []rune("bi"),
 						langs: -1,
 					},
 					{
-						text:  "bu",
+						text:  []rune("bu"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "abi",
+				pattern: []rune("abi"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bi",
+						text:  []rune("bi"),
 						langs: -1,
 					},
 					{
-						text:  "bu",
+						text:  []rune("bu"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "abou",
+				pattern: []rune("abou"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bu",
+						text:  []rune("bu"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: 2,
 					},
 				},
 			},
 			{
-				pattern: "abu",
+				pattern: []rune("abu"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bu",
+						text:  []rune("bu"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "bou",
+				pattern: []rune("bou"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bu",
+						text:  []rune("bu"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: 2,
 					},
 				},
 			},
 			{
-				pattern: "bu",
+				pattern: []rune("bu"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "bu",
+						text:  []rune("bu"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ibn",
+				pattern: []rune("ibn"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "ibn",
+						text:  []rune("ibn"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "els",
+				pattern: []rune("els"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "ilz",
+						text:  []rune("ilz"),
 						langs: -1,
 					},
 					{
-						text:  "lz",
+						text:  []rune("lz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "elS",
+				pattern: []rune("elS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "ilz",
+						text:  []rune("ilz"),
 						langs: -1,
 					},
 					{
-						text:  "lz",
+						text:  []rune("lz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "el",
+				pattern: []rune("el"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "il",
+						text:  []rune("il"),
 						langs: -1,
 					},
 					{
-						text:  "l",
+						text:  []rune("l"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "als",
+				pattern: []rune("als"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "lz",
+						text:  []rune("lz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "alS",
+				pattern: []rune("alS"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "lz",
+						text:  []rune("lz"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "al",
+				pattern: []rune("al"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "l",
+						text:  []rune("l"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "dal",
+				pattern: []rune("dal"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "dal",
+						text:  []rune("dal"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: 8,
 					},
 				},
 			},
 			{
-				pattern: "da",
+				pattern: []rune("da"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "da",
+						text:  []rune("da"),
 						langs: -1,
 					},
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "della",
+				pattern: []rune("della"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "dila",
+						text:  []rune("dila"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "dela",
+				pattern: []rune("dela"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "dila",
+						text:  []rune("dila"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "del",
+				pattern: []rune("del"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "dil",
+						text:  []rune("dil"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "des",
+				pattern: []rune("des"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "dis",
+						text:  []rune("dis"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "de",
+				pattern: []rune("de"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "di",
+						text:  []rune("di"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "di",
+				pattern: []rune("di"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "di",
+						text:  []rune("di"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: 8,
 					},
 				},
 			},
 			{
-				pattern: "do",
+				pattern: []rune("do"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "du",
+						text:  []rune("du"),
 						langs: -1,
 					},
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "du",
+				pattern: []rune("du"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "du",
+						text:  []rune("du"),
 						langs: -1,
 					},
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "oa",
+				pattern: []rune("oa"),
 				phoneticRules: []token{
 					{
-						text:  "va",
+						text:  []rune("va"),
 						langs: -1,
 					},
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "oe",
+				pattern: []rune("oe"),
 				phoneticRules: []token{
 					{
-						text:  "vi",
+						text:  []rune("vi"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ae",
+				pattern: []rune("ae"),
 				phoneticRules: []token{
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[bp]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "m",
+						text:  []rune("m"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ha",
+				pattern: []rune("ha"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "ha",
+						text:  []rune("ha"),
 						langs: -1,
 					},
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 					{
-						text:  "h",
+						text:  []rune("h"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "x",
+				pattern: []rune("x"),
 				phoneticRules: []token{
 					{
-						text:  "h",
+						text:  []rune("h"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				phoneticRules: []token{
 					{
-						text:  "h",
+						text:  []rune("h"),
 						langs: -1,
 					},
 					{
-						text:  "k",
+						text:  []rune("k"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "aja",
+				pattern: []rune("aja"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "Da",
+						text:  []rune("Da"),
 						langs: -1,
 					},
 					{
-						text:  "ia",
+						text:  []rune("ia"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "aje",
+				pattern: []rune("aje"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "Di",
+						text:  []rune("Di"),
 						langs: -1,
 					},
 					{
-						text:  "Da",
+						text:  []rune("Da"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 					{
-						text:  "ia",
+						text:  []rune("ia"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "aji",
+				pattern: []rune("aji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "Di",
+						text:  []rune("Di"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ajo",
+				pattern: []rune("ajo"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "Du",
+						text:  []rune("Du"),
 						langs: -1,
 					},
 					{
-						text:  "Da",
+						text:  []rune("Da"),
 						langs: -1,
 					},
 					{
-						text:  "iu",
+						text:  []rune("iu"),
 						langs: -1,
 					},
 					{
-						text:  "ia",
+						text:  []rune("ia"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "aju",
+				pattern: []rune("aju"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "Du",
+						text:  []rune("Du"),
 						langs: -1,
 					},
 					{
-						text:  "iu",
+						text:  []rune("iu"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "aj",
+				pattern: []rune("aj"),
 				phoneticRules: []token{
 					{
-						text:  "D",
+						text:  []rune("D"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ej",
+				pattern: []rune("ej"),
 				phoneticRules: []token{
 					{
-						text:  "D",
+						text:  []rune("D"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "oj",
+				pattern: []rune("oj"),
 				phoneticRules: []token{
 					{
-						text:  "D",
+						text:  []rune("D"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "uj",
+				pattern: []rune("uj"),
 				phoneticRules: []token{
 					{
-						text:  "D",
+						text:  []rune("D"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "au",
+				pattern: []rune("au"),
 				phoneticRules: []token{
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "eu",
+				pattern: []rune("eu"),
 				phoneticRules: []token{
 					{
-						text:  "iu",
+						text:  []rune("iu"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ou",
+				pattern: []rune("ou"),
 				phoneticRules: []token{
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ja",
+				pattern: []rune("ja"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "ia",
+						text:  []rune("ia"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "je",
+				pattern: []rune("je"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "jo",
+				pattern: []rune("jo"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "iu",
+						text:  []rune("iu"),
 						langs: -1,
 					},
 					{
-						text:  "ia",
+						text:  []rune("ia"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ju",
+				pattern: []rune("ju"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "iu",
+						text:  []rune("iu"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ja",
+				pattern: []rune("ja"),
 				phoneticRules: []token{
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 					{
-						text:  "ia",
+						text:  []rune("ia"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "je",
+				pattern: []rune("je"),
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "jo",
+				pattern: []rune("jo"),
 				phoneticRules: []token{
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 					{
-						text:  "iu",
+						text:  []rune("iu"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ju",
+				pattern: []rune("ju"),
 				phoneticRules: []token{
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "j",
+				pattern: []rune("j"),
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				phoneticRules: []token{
 					{
-						text:  "u",
+						text:  []rune("u"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "a",
+						text:  []rune("a"),
 						langs: -1,
 					},
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "se",
+				pattern: []rune("se"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 					{
-						text:  "si",
+						text:  []rune("si"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Se",
+				pattern: []rune("Se"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 					{
-						text:  "si",
+						text:  []rune("si"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[rmnl]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("[rmnl]$"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "dS",
+				pattern: []rune("dS"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "dZ",
+				pattern: []rune("dZ"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				phoneticRules: []token{
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "dZ",
+				pattern: []rune("dZ"),
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "be",
+				pattern: []rune("be"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "p",
+						text:  []rune("p"),
 						langs: -1,
 					},
 					{
-						text:  "bi",
+						text:  []rune("bi"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "pe",
+				pattern: []rune("pe"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "b",
+						text:  []rune("b"),
 						langs: -1,
 					},
 					{
-						text:  "pi",
+						text:  []rune("pi"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ve",
+				pattern: []rune("ve"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "f",
+						text:  []rune("f"),
 						langs: -1,
 					},
 					{
-						text:  "vi",
+						text:  []rune("vi"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "fe",
+				pattern: []rune("fe"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "v",
+						text:  []rune("v"),
 						langs: -1,
 					},
 					{
-						text:  "fi",
+						text:  []rune("fi"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ge",
+				pattern: []rune("ge"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "k",
+						text:  []rune("k"),
 						langs: -1,
 					},
 					{
-						text:  "gi",
+						text:  []rune("gi"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ke",
+				pattern: []rune("ke"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "g",
+						text:  []rune("g"),
 						langs: -1,
 					},
 					{
-						text:  "ki",
+						text:  []rune("ki"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "de",
+				pattern: []rune("de"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "t",
+						text:  []rune("t"),
 						langs: -1,
 					},
 					{
-						text:  "di",
+						text:  []rune("di"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "te",
+				pattern: []rune("te"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "d",
+						text:  []rune("d"),
 						langs: -1,
 					},
 					{
-						text:  "ti",
+						text:  []rune("ti"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ze",
+				pattern: []rune("ze"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 					{
-						text:  "zi",
+						text:  []rune("zi"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				phoneticRules: []token{
 					{
-						text:  "b",
+						text:  []rune("b"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "V",
+				pattern: []rune("V"),
 				phoneticRules: []token{
 					{
-						text:  "v",
+						text:  []rune("v"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "b",
+						text:  []rune("b"),
 						langs: -1,
 					},
 				},
@@ -7918,840 +7119,709 @@ var sepFinalRules = finalRules{
 	exact: finalRule{
 		first: rules{
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[fktSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "p",
+						text:  []rune("p"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "p",
-					suffix:           "",
+					prefix:           []rune("p"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "p",
+						text:  []rune("p"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vgdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "b",
+						text:  []rune("b"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "b",
-					suffix:           "",
+					prefix:           []rune("b"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pktSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "f",
+						text:  []rune("f"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "f",
-					suffix:           "",
+					prefix:           []rune("f"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "f",
+						text:  []rune("f"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "v",
+						text:  []rune("v"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "v",
-					suffix:           "",
+					prefix:           []rune("v"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pftSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "k",
+						text:  []rune("k"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "k",
-					suffix:           "",
+					prefix:           []rune("k"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "k",
+						text:  []rune("k"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbdZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "g",
+						text:  []rune("g"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "g",
-					suffix:           "",
+					prefix:           []rune("g"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "t",
+						text:  []rune("t"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "t",
-					suffix:           "",
+					prefix:           []rune("t"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "t",
+						text:  []rune("t"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[vbgZz]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "d",
+						text:  []rune("d"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "d",
-					suffix:           "",
+					prefix:           []rune("d"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "dZ",
-					suffix:           "",
+					prefix:           []rune("dZ"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "tS",
-					suffix:           "",
+					prefix:           []rune("tS"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "nm",
+				pattern: []rune("nm"),
 				phoneticRules: []token{
 					{
-						text:  "m",
+						text:  []rune("m"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "ji",
+				pattern: []rune("ji"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "i",
+						text:  []rune("i"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "a",
+				pattern: []rune("a"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "a",
-					suffix:           "",
+					prefix:           []rune("a"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "b",
+				pattern: []rune("b"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "b",
-					suffix:           "",
+					prefix:           []rune("b"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "d",
+				pattern: []rune("d"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "d",
-					suffix:           "",
+					prefix:           []rune("d"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "e",
+				pattern: []rune("e"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "e",
-					suffix:           "",
+					prefix:           []rune("e"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "f",
+				pattern: []rune("f"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "f",
-					suffix:           "",
+					prefix:           []rune("f"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "g",
+				pattern: []rune("g"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "g",
-					suffix:           "",
+					prefix:           []rune("g"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "i",
+				pattern: []rune("i"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "i",
-					suffix:           "",
+					prefix:           []rune("i"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "k",
+				pattern: []rune("k"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "k",
-					suffix:           "",
+					prefix:           []rune("k"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "l",
+				pattern: []rune("l"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "l",
-					suffix:           "",
+					prefix:           []rune("l"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "m",
+				pattern: []rune("m"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "m",
-					suffix:           "",
+					prefix:           []rune("m"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "n",
+				pattern: []rune("n"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "n",
-					suffix:           "",
+					prefix:           []rune("n"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "o",
+				pattern: []rune("o"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "o",
-					suffix:           "",
+					prefix:           []rune("o"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "p",
+				pattern: []rune("p"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "p",
-					suffix:           "",
+					prefix:           []rune("p"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "r",
+				pattern: []rune("r"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "r",
-					suffix:           "",
+					prefix:           []rune("r"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "t",
+				pattern: []rune("t"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "t",
-					suffix:           "",
+					prefix:           []rune("t"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "u",
+				pattern: []rune("u"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "u",
-					suffix:           "",
+					prefix:           []rune("u"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "v",
+				pattern: []rune("v"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "v",
-					suffix:           "",
+					prefix:           []rune("v"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "z",
-					suffix:           "",
+					prefix:           []rune("z"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "h",
+				pattern: []rune("h"),
 				phoneticRules: []token{
 					{
-						text:  "",
+						text:  nil,
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "s",
+				pattern: []rune("s"),
 				leftContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("[^t]$"),
 				},
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[bgZd]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "z",
+						text:  []rune("z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[pfkst]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "Z",
+				pattern: []rune("Z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "S",
+						text:  []rune("S"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "S",
+				pattern: []rune("S"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: false,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 					pattern:          regexp.MustCompile("^[bgzd]"),
 				},
 				phoneticRules: []token{
 					{
-						text:  "Z",
+						text:  []rune("Z"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "z",
+				pattern: []rune("z"),
 				rightContext: &ruleMatcher{
 					matchEmptyString: true,
-					contains:         "",
-					prefix:           "",
-					suffix:           "",
 				},
 				phoneticRules: []token{
 					{
-						text:  "s",
+						text:  []rune("s"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "B",
+				pattern: []rune("B"),
 				phoneticRules: []token{
 					{
-						text:  "b",
+						text:  []rune("b"),
 						langs: -1,
 					},
 				},
 			},
 			{
-				pattern: "V",
+				pattern: []rune("V"),
 				phoneticRules: []token{
 					{
-						text:  "v",
+						text:  []rune("v"),
 						langs: -1,
 					},
 				},

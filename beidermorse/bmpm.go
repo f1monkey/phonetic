@@ -3,7 +3,6 @@ package beidermorse
 import (
 	"math/bits"
 	"strings"
-	"unicode/utf8"
 )
 
 func redoLanguage(input string, mode Mode, ruleset Ruleset, concat bool) tokens {
@@ -27,9 +26,14 @@ func detectLang(word string, mode Mode) languageID {
 		all = languageID(genAll)
 	}
 
+	runes := runes(word)
 	remaining := all
 	for _, rule := range rules {
-		if !rule.match.matches(word) {
+		if rule.match == nil {
+			continue
+		}
+
+		if !rule.match.matches(runes) {
 			continue
 		}
 
@@ -77,7 +81,7 @@ func makeTokens(input string, mode Mode, ruleset Ruleset, lang languageID, conca
 		}
 	}
 
-	result := tokens{{text: input, langs: lang}}
+	result := tokens{{text: []rune(input), langs: lang}}
 
 	// apply main set of rules
 	result = mainRules.apply(result, lang, false)
@@ -94,10 +98,11 @@ func prepareInput(input string, mode Mode) string {
 
 	// remove spaces from within certain leading words
 	for _, item := range firstList {
+		itemLen := len([]rune(item))
 		target := item + " "
-		if substrTo(input, utf8.RuneCountInString(target)) == target {
+		if substrTo(input, itemLen+1) == target {
 			target = item
-			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, utf8.RuneCountInString(target))
+			input = strings.ReplaceAll(target, " ", "") + substrFrom(input, itemLen)
 		}
 	}
 
@@ -127,20 +132,6 @@ func inArray[T comparable](data []T, value T) bool {
 		}
 	}
 	return false
-}
-
-func substr(s string, start int, length int) string {
-	asRunes := []rune(s)
-
-	if start >= len(asRunes) {
-		return ""
-	}
-
-	if start+length > len(asRunes) {
-		length = len(asRunes) - start
-	}
-
-	return string(asRunes[start : start+length])
 }
 
 func substrFrom(s string, start int) string {
