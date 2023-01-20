@@ -1,8 +1,7 @@
-package beidermorse
+package beidermorseash
 
 import (
 	"fmt"
-	"strconv"
 	"testing"
 
 	"github.com/f1monkey/phonetic/beidermorse/common"
@@ -39,86 +38,68 @@ func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
 
 func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
-		mode     common.Mode
 		accuracy common.Accuracy
 		input    string
 		expected []string
 	}{
 		{
-			mode:     common.Generic,
 			accuracy: common.Approx,
 			input:    "orange",
 			expected: []string{
 				"orangi",
-				"oragi",
 				"orongi",
-				"orogi",
 				"orYngi",
 				"Yrangi",
 				"Yrongi",
 				"YrYngi",
-				"oranxi",
-				"oronxi",
-				"orani",
-				"oroni",
-				"oranii",
-				"oronii",
 				"oranzi",
 				"oronzi",
+				"orani",
+				"oroni",
+				"oranxi",
+				"oronxi",
 				"urangi",
 				"urongi",
 			},
 		},
 		{
-			mode:     common.Generic,
 			accuracy: common.Exact,
 			input:    "orange",
 			expected: []string{
 				"orange",
-				"oranxe",
-				"oranhe",
-				"oranje",
-				"oranZe",
 				"orandZe",
+				"oranhe",
+				"oranxe",
 			},
 		},
 		{
-			mode:     common.Generic,
 			accuracy: common.Exact,
 			input:    "van der orange",
 			expected: []string{
+				"vander",
+				"fander",
 				"orange",
-				"oranxe",
-				"oranhe",
-				"oranje",
-				"oranZe",
 				"orandZe",
+				"oranhe",
+				"oranxe",
 				"vanderorange",
-				"vanderoranxe",
-				"vanderoranhe",
-				"vanderoranje",
-				"vanderoranZe",
 				"vanderorandZe",
+				"vanderoranhe",
+				"vanderoranxe",
 				"fanderorange",
-				"banderorange",
-				"banderoranxe",
-				"banderorandZe",
 			},
 		},
 		{
-			mode:     common.Generic,
 			accuracy: common.Approx,
 			input:    "test",
 			expected: []string{
 				"tist",
 				"tYst",
-				"tis",
-				"tit",
-				"ti",
+				"tinst",
+				"tonst",
 			},
 		},
 		{
-			mode:     common.Generic,
 			accuracy: common.Exact,
 			input:    "test",
 			expected: []string{
@@ -127,32 +108,11 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
 			accuracy: common.Exact,
 			input:    "апельсин",
 			expected: []string{"apelsin"},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Approx,
-			input:    "апельсин",
-			expected: []string{
-				"apYlzn",
-				"apilzn",
-				"opYlzn",
-				"opilzn",
-				"aplzn",
-				"oplzn",
-			},
-		},
-		{
-			mode:     common.Ashkenazi,
-			accuracy: common.Exact,
-			input:    "апельсин",
-			expected: []string{"apelsin"},
-		},
-		{
-			mode:     common.Ashkenazi,
 			accuracy: common.Approx,
 			input:    "апельсин",
 			expected: []string{
@@ -167,62 +127,10 @@ func Test_Encoder_Encode(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		t.Run(fmt.Sprintf("%s-%s-%s", c.mode, c.accuracy, c.input), func(t *testing.T) {
+		t.Run(fmt.Sprintf("%s-%s", c.accuracy, c.input), func(t *testing.T) {
 			e, err := NewEncoder(WithAccuracy(c.accuracy))
 			require.NoError(t, err)
 			require.Equal(t, c.expected, e.Encode(c.input))
-		})
-	}
-}
-
-func Benchmark_detectLang_en(b *testing.B) {
-	detector := detectLangFunc()
-	for i := 0; i < b.N; i++ {
-		detector("orange")
-	}
-}
-
-func Benchmark_detectLang_ru(b *testing.B) {
-	detector := detectLangFunc()
-	for i := 0; i < b.N; i++ {
-		detector("апельсин")
-	}
-}
-
-func Test_detectLang(t *testing.T) {
-	cases := []struct {
-		word     string
-		expected common.Lang
-	}{
-		{
-			word: "orange",
-			expected: common.Lang(
-				Dutch |
-					English |
-					French |
-					German |
-					Greeklatin |
-					Hungarian |
-					Italian |
-					Latvian |
-					Polish |
-					Portuguese |
-					Romanian |
-					Russian |
-					Spanish |
-					Turkish,
-			),
-		},
-		{
-			word:     "апельсин",
-			expected: common.Lang(Cyrillic),
-		},
-	}
-
-	detector := detectLangFunc()
-	for i, c := range cases {
-		t.Run(strconv.Itoa(i), func(t *testing.T) {
-			require.Equal(t, c.expected, detector(c.word))
 		})
 	}
 }

@@ -10,6 +10,7 @@ import (
 	"go/format"
 	"io/ioutil"
 	"os"
+	"path"
 	"regexp"
 	"strconv"
 	"strings"
@@ -29,26 +30,50 @@ func main() {
 	}
 	fixRules(rules)
 
-	tpl, err := template.New("rules").Parse(rulesTemplate)
+	rulesTpl, err := template.New("rules").Funcs(template.FuncMap{
+		"Title": strings.Title,
+	}).Parse(rulesTemplate)
+	if err != nil {
+		panic(err)
+	}
+
+	encoderTpl, err := template.New("encoder").Parse(encoderTemplate)
 	if err != nil {
 		panic(err)
 	}
 
 	for mode, ruleSet := range rules {
-		var buf bytes.Buffer
-		err := tpl.Execute(&buf, transformRuleSet(ruleSet))
-		if err != nil {
+		dir := "beidermorse"
+		if mode != "gen" {
+			dir = path.Join(dir, "beidermorse"+mode)
+		}
+
+		if err := os.MkdirAll(dir, 0755); err != nil {
 			panic(err)
 		}
 
-		src := buf.Bytes()
-		src, err = format.Source(src)
-		if err != nil {
-			panic(err)
-		}
+		data := transformRuleSet(ruleSet)
 
-		if err := os.WriteFile("beidermorse/rules_"+mode+".go", src, 0644); err != nil {
-			panic(err)
+		for filename, tpl := range map[string]*template.Template{
+			"rules.go":   rulesTpl,
+			"encoder.go": encoderTpl,
+		} {
+
+			var buf bytes.Buffer
+			err := tpl.Execute(&buf, data)
+			if err != nil {
+				panic(err)
+			}
+
+			src := buf.Bytes()
+			src, err = format.Source(src)
+			if err != nil {
+				panic(err)
+			}
+
+			if err := os.WriteFile(path.Join(dir, filename), src, 0644); err != nil {
+				panic(err)
+			}
 		}
 	}
 }
@@ -235,81 +260,84 @@ func fixRules(rules map[string]SrcRuleSet) {
 const rulesTemplate = `
 {{- define "ruletpl" }}
 {
-	pattern: []rune({{ printf "%q" .Pattern }}),
+	Pattern: []rune({{ printf "%q" .Pattern }}),
 	{{- if ne .LeftContext nil}}
-		leftContext: {{- template "rulematchertpl" .LeftContext }},
+		LeftContext: {{- template "rulematchertpl" .LeftContext }},
 	{{- end }}
 	{{- if ne .RightContext nil}}
-		rightContext: {{- template "rulematchertpl" .RightContext }},
+		RightContext: {{- template "rulematchertpl" .RightContext }},
 	{{- end }}
-	phoneticRules: []token{
+	Phonetic: []common.Token{
 		{{- range $i, $p := .PhoneticRules }}
 			{
 				{{- if ne $p.Text ""}}
-					text: []rune({{ printf "%q" $p.Text }}),
+					Text: []rune({{ printf "%q" $p.Text }}),
 				{{- else }}
-					text: nil,
+					Text: nil,
 				{{- end }}
-				langs: {{ $p.Langs }},
+				Langs: {{ $p.Langs }},
 			},
 		{{- end }}
 	},
 },
 {{- end }}
 {{- define "rulematchertpl" }}
-	&ruleMatcher{
-		matchEmptyString: {{ .MatchEmptyString }},
+	&common.Matcher{
+		MatchEmptyString: {{ .MatchEmptyString }},
 		{{- if ne .Contains ""}}
-			contains: []rune({{ printf "%q" .Contains }}),
+			Contains: []rune({{ printf "%q" .Contains }}),
 		{{- end }}
 		{{- if ne .Prefix ""}}
-			prefix: []rune({{ printf "%q" .Prefix }}),
+			Prefix: []rune({{ printf "%q" .Prefix }}),
 		{{- end }}
 		{{- if ne .Suffix ""}}
-			suffix: []rune({{ printf "%q" .Suffix }}),
+			Suffix: []rune({{ printf "%q" .Suffix }}),
 		{{- end }}
 		{{- if ne .Pattern ""}}
-			pattern: regexp.MustCompile({{ printf "%q" .Pattern }}),
+			Pattern: regexp.MustCompile({{ printf "%q" .Pattern }}),
 		{{- end }}
 	}
 {{- end }}
 
 // GENERATED CODE. DO NOT EDIT!
-package beidermorse
+package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
 
-import "regexp"
+import (
+	"regexp"
+	"github.com/f1monkey/phonetic/beidermorse/common"
+)
 
-type {{ .Mode }}Lang languageID
+type Lang common.Lang
 
 const (
-	{{.Mode}}{{ (index .Languages 0) }} {{ .Mode }}Lang = 1 << iota
+	{{ (index .Languages 0) | Title }} Lang = 1 << iota
 	{{- range $i, $lang := .Languages }}
 		{{- if ne $i 0 }}
-			{{ $.Mode }}{{ $lang }}
+			{{ $lang | Title }}
 		{{- end }}
 	{{- end }}
 )
 
-func (l {{ .Mode }}Lang) String() string {
+func (l Lang) String() string {
 	switch l {
 		{{- range $i, $lang := .Languages }}
-	case {{ $.Mode }}{{ $lang }}:
+	case {{ $lang | Title }}:
 		return {{ printf "%q" $lang }}
 		{{- end }}
 	}
 	return ""
 }
 
-const {{ .Mode }}All = {{- range $i, $lang := .Languages }}
+const All = {{- range $i, $lang := .Languages }}
 	{{- if ne $i 0 }}
 		{{- if ne $i 1 }}+{{- end }}
-		{{ $.Mode }}{{ $lang }}
+		{{ $lang | Title }}
 	{{- end }}
 {{- end}}
 
-var {{ .Mode }}Rules = map[{{ .Mode }}Lang]rules{
+var Rules = map[common.Lang]common.Rules{
 	{{- range $lang, $rules := .Rules }}
-		{{ $.Mode }}{{ $lang}}: rules{
+		common.Lang({{ $lang | Title }}): {
 			{{- range $rule := $rules }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
@@ -317,26 +345,26 @@ var {{ .Mode }}Rules = map[{{ .Mode }}Lang]rules{
 	{{- end }}
 }
 
-var {{ .Mode }}LangRules = []langRule{
+var LangRules = []common.LangRule{
 	{{- range $rule := .LangRules }}
 		{
-			match: {{- template "rulematchertpl" $rule.Match }},
-			langs: {{ $rule.Langs }},
-			accept: {{ $rule.Accept }},
+			Matcher: {{- template "rulematchertpl" $rule.Match }},
+			Langs: {{ $rule.Langs }},
+			Accept: {{ $rule.Accept }},
 		},
 	{{- end }}
 }
 
-var {{ .Mode }}FinalRules = finalRules{
-	approx: finalRule{
-		first: rules{
+var FinalRules = common.FinalRules{
+	Approx: common.FinalRule{
+		First: common.Rules{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[languageID]rules{
+		Second: map[common.Lang]common.Rules{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): rules{
+				common.Lang({{ (index $.Languages $secRule.Lang) | Title }}): {
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -344,15 +372,15 @@ var {{ .Mode }}FinalRules = finalRules{
 			{{- end }}
 		},
 	},
-	exact: finalRule{
-		first: rules{
+	Exact: common.FinalRule{
+		First: common.Rules{
 			{{- range $rule := .FinalRules.Exact.First }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		second: map[languageID]rules{
+		Second: map[common.Lang]common.Rules{
 			{{- range $secRule := .FinalRules.Exact.Second }}
-				languageID({{ $.Mode }}{{ index $.Languages $secRule.Lang }}): rules{
+				common.Lang({{ (index $.Languages $secRule.Lang) | Title }}): {
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -363,9 +391,9 @@ var {{ .Mode }}FinalRules = finalRules{
 }
 
 
-var {{ .Mode }}Discards = []string{
+var Discards = []string{
 	{{- range $item := .Discards }}
-	{{ printf "%q" $item }},
+		{{ printf "%q" $item }},
 	{{- end }}
 }
 `
@@ -462,3 +490,145 @@ func (m DestRuleMatch) IsEmpty() bool {
 		m.Pattern == "" &&
 		m.MatchEmptyString == false
 }
+
+const encoderTemplate = `
+// GENERATED CODE. DO NOT EDIT!
+package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
+
+import (
+	"fmt"
+	"math/bits"
+
+	"github.com/f1monkey/phonetic/beidermorse/common"
+)
+
+var ErrInvalidMode = fmt.Errorf("invalid name mode")
+var ErrInvalidAccuracy = fmt.Errorf("invalid accuracy value")
+
+type Encoder struct {
+	accuracy common.Accuracy
+}
+
+// NewEncoder create new encoder instance
+func NewEncoder(opts ...EncoderOption) (*Encoder, error) {
+	result := &Encoder{
+		accuracy: common.Approx,
+	}
+
+	for _, opt := range opts {
+		if err := opt(result); err != nil {
+			return nil, err
+		}
+	}
+
+	return result, nil
+}
+
+// MustNewEncoder create new encoder instance. Panics on error
+func MustNewEncoder(opts ...EncoderOption) *Encoder {
+	result, err := NewEncoder(opts...)
+	if err != nil {
+		panic(err)
+	}
+	return result
+}
+
+// Encode transform a passed string to a slice of phonetic tokens
+func (e *Encoder) Encode(input string) []string {
+	langDetector := detectLangFunc()
+	lang := langDetector(input)
+
+	main, final1, final2 := getRules(e.accuracy, lang)
+
+	tokens := common.MakeTokens(
+		input,
+		{{- if eq .Mode "gen" }}common.Generic,{{- end }}
+		{{- if eq .Mode "ash" }}common.Ashkenazi,{{- end }}
+		{{- if eq .Mode "sep" }}common.Sephardic,{{- end }}
+		e.accuracy,
+		common.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
+		lang,
+		false,
+	)
+
+	result := make([]string, len(tokens))
+	for i, t := range tokens {
+		result[i] = string(t.Text)
+	}
+
+	return result
+}
+
+// SetOption set encoder option. Method is not safe for concurrent usage
+func (e *Encoder) SetOption(opt EncoderOption) error {
+	return opt(e)
+}
+
+// EncoderOption func to provide encoder configuration parameter
+type EncoderOption func(e *Encoder) error
+
+// WithAccuracy Set encoder accuracy
+func WithAccuracy(r common.Accuracy) EncoderOption {
+	return func(e *Encoder) error {
+		if !r.Valid() {
+			return fmt.Errorf("%w: %q", ErrInvalidAccuracy, r)
+		}
+		e.accuracy = r
+		return nil
+	}
+}
+
+func getRules(
+	accuracy common.Accuracy,
+	lang common.Lang,
+) (common.Rules, common.Rules, common.Rules) {
+	var main, final1, final2 common.Rules
+
+	langCount := bits.OnesCount64(uint64(lang))
+	if langCount > 1 {
+		lang = common.Lang(Any)
+	}
+	main = Rules[lang]
+
+	if accuracy == common.Approx {
+		final1 = FinalRules.Approx.First
+		final2 = FinalRules.Approx.Second[lang]
+	} else if accuracy == common.Exact {
+		final1 = FinalRules.Exact.First
+		final2 = FinalRules.Exact.Second[lang]
+	}
+
+	return main, final1, final2
+}
+
+func detectLangFunc() common.DetectLangFunc {
+	return func(input string) common.Lang {
+		all := All
+		rules := LangRules
+
+		runes := common.Runes(input)
+		remaining := common.Lang(all)
+		for _, rule := range rules {
+			if rule.Matcher == nil {
+				continue
+			}
+
+			if !rule.Matcher.Match(runes) {
+				continue
+			}
+
+			if rule.Accept {
+				remaining &= rule.Langs
+			} else {
+				remaining &= ^rule.Langs % (remaining + 1)
+			}
+
+			if remaining == 0 {
+				return remaining
+			}
+		}
+
+		return remaining
+	}
+}
+`

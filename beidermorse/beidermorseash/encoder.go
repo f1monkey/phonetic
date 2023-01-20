@@ -1,5 +1,5 @@
 // GENERATED CODE. DO NOT EDIT!
-package beidermorse
+package beidermorseash
 
 import (
 	"fmt"
@@ -47,7 +47,7 @@ func (e *Encoder) Encode(input string) []string {
 	main, final1, final2 := getRules(e.accuracy, lang)
 
 	tokens := common.MakeTokens(
-		input, common.Generic,
+		input, common.Ashkenazi,
 		e.accuracy,
 		common.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
 		lang,

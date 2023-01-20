@@ -1,23 +1,23 @@
-package beidermorse
+package common
 
-type runes []rune
+type Runes []rune
 
 // // contains checks if runes contains passed substring
-func (r runes) contains(search []rune) bool {
-	return r.containsAt(search, -1)
+func (r Runes) Contains(search []rune) bool {
+	return r.ContainsAt(search, -1)
 }
 
 // // checks if passed runes slice is a prefix of the current slice
-func (r runes) hasPrefix(search runes) bool {
-	return r.containsAt(search, 0)
+func (r Runes) HasPrefix(search Runes) bool {
+	return r.ContainsAt(search, 0)
 }
 
-func (r runes) hasSuffix(search []rune) bool {
-	return r.containsAt(search, len(r)-len(search))
+func (r Runes) HasSuffix(search []rune) bool {
+	return r.ContainsAt(search, len(r)-len(search))
 }
 
 // containsAt check if runes has the provided substring in the specific position
-func (r runes) containsAt(search runes, index int) bool {
+func (r Runes) ContainsAt(search Runes, index int) bool {
 	if len(search) == 0 {
 		return false
 	}
