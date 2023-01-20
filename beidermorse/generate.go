@@ -5,6 +5,7 @@ package main
 
 import (
 	"bytes"
+	"embed"
 	"encoding/json"
 	"fmt"
 	"go/format"
@@ -17,10 +18,13 @@ import (
 	"text/template"
 )
 
+//go:embed bmpm-rules/*.json
+var ruleFS embed.FS
+
 var ruleSources = map[string]string{
-	"ash": "beidermorse/bmpm-rules/ash.json",
-	"gen": "beidermorse/bmpm-rules/gen.json",
-	"sep": "beidermorse/bmpm-rules/sep.json",
+	"ash": "bmpm-rules/ash.json",
+	"gen": "bmpm-rules/gen.json",
+	"sep": "bmpm-rules/sep.json",
 }
 
 func main() {
@@ -227,7 +231,7 @@ func transformPattern(pattern string) DestRuleMatch {
 func loadRules() (map[string]SrcRuleSet, error) {
 	result := make(map[string]SrcRuleSet)
 	for mode, filename := range ruleSources {
-		f, err := os.Open(filename)
+		f, err := ruleFS.Open(filename)
 		if err != nil {
 			return nil, err
 		}
@@ -299,7 +303,8 @@ const rulesTemplate = `
 	}
 {{- end }}
 
-// GENERATED CODE. DO NOT EDIT!
+// THE FOLLOWING CODE WAS GENERATED USING "beidermorse/generate.go" COMMAND.
+// DO NOT EDIT!
 package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
 
 import (
@@ -492,7 +497,8 @@ func (m DestRuleMatch) IsEmpty() bool {
 }
 
 const encoderTemplate = `
-// GENERATED CODE. DO NOT EDIT!
+// THE FOLLOWING CODE WAS GENERATED USING "beidermorse/generate.go" COMMAND.
+// DO NOT EDIT!
 package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
 
 import (
@@ -507,6 +513,7 @@ var ErrInvalidAccuracy = fmt.Errorf("invalid accuracy value")
 
 type Encoder struct {
 	accuracy common.Accuracy
+	lang Lang
 }
 
 // NewEncoder create new encoder instance
@@ -536,7 +543,10 @@ func MustNewEncoder(opts ...EncoderOption) *Encoder {
 // Encode transform a passed string to a slice of phonetic tokens
 func (e *Encoder) Encode(input string) []string {
 	langDetector := detectLangFunc()
-	lang := langDetector(input)
+	lang := common.Lang(e.lang)
+	if lang == 0 {
+		lang = langDetector(input)
+	}
 
 	main, final1, final2 := getRules(e.accuracy, lang)
 
@@ -568,12 +578,20 @@ func (e *Encoder) SetOption(opt EncoderOption) error {
 type EncoderOption func(e *Encoder) error
 
 // WithAccuracy Set encoder accuracy
-func WithAccuracy(r common.Accuracy) EncoderOption {
+func WithAccuracy(a common.Accuracy) EncoderOption {
 	return func(e *Encoder) error {
-		if !r.Valid() {
-			return fmt.Errorf("%w: %q", ErrInvalidAccuracy, r)
+		if !a.Valid() {
+			return fmt.Errorf("%w: %q", ErrInvalidAccuracy, a)
 		}
-		e.accuracy = r
+		e.accuracy = a
+		return nil
+	}
+}
+
+// WithLang Set encoder default lang (see lang constants)
+func WithLang(l Lang) EncoderOption {
+	return func(e *Encoder) error {
+		e.lang = l
 		return nil
 	}
 }

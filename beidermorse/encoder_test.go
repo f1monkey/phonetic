@@ -41,9 +41,27 @@ func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
 		mode     common.Mode
 		accuracy common.Accuracy
+		lang     Lang
 		input    string
 		expected []string
 	}{
+		{
+			mode:     common.Generic,
+			accuracy: common.Exact,
+			input:    "pizza",
+			lang:     Italian,
+			expected: []string{
+				"pitstsa", "pitsdza", "pidstsa", "pidzdza",
+			},
+		},
+		{
+			mode:     common.Generic,
+			accuracy: common.Exact,
+			input:    "pizza",
+			expected: []string{
+				"piza", "pizi", "pistsa", "pizdza", "pisa", "pitza", "pitstsa", "pidza", "pidzdza", "pidstsa", "pitsdza",
+			},
+		},
 		{
 			mode:     common.Generic,
 			accuracy: common.Approx,
@@ -167,8 +185,11 @@ func Test_Encoder_Encode(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		t.Run(fmt.Sprintf("%s-%s-%s", c.mode, c.accuracy, c.input), func(t *testing.T) {
+		t.Run(fmt.Sprintf("%s-%s-%s-%d", c.mode, c.accuracy, c.input, c.lang), func(t *testing.T) {
 			e, err := NewEncoder(WithAccuracy(c.accuracy))
+			if c.lang != 0 {
+				e.SetOption(WithLang(c.lang))
+			}
 			require.NoError(t, err)
 			require.Equal(t, c.expected, e.Encode(c.input))
 		})
