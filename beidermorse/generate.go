@@ -299,7 +299,8 @@ const rulesTemplate = `
 	}
 {{- end }}
 
-// GENERATED CODE. DO NOT EDIT!
+// THE FOLLOWING CODE WAS GENERATED USING "beidermorse/generate.go" COMMAND.
+// DO NOT EDIT!
 package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
 
 import (
@@ -492,7 +493,8 @@ func (m DestRuleMatch) IsEmpty() bool {
 }
 
 const encoderTemplate = `
-// GENERATED CODE. DO NOT EDIT!
+// THE FOLLOWING CODE WAS GENERATED USING "beidermorse/generate.go" COMMAND.
+// DO NOT EDIT!
 package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
 
 import (

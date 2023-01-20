@@ -1,4 +1,5 @@
-// GENERATED CODE. DO NOT EDIT!
+// THE FOLLOWING CODE WAS GENERATED USING "beidermorse/generate.go" COMMAND.
+// DO NOT EDIT!
 package beidermorsesep
 
 import (
