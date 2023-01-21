@@ -2,8 +2,9 @@
 
 Set of different phonetic encoders' implementations.
 
-Now consists of:
+Provided encoders:
 * [Beider-Morse encoder](#beider-morse-encoder) -  BMPM implementation. It's a Go port of [the original PHP library](https://stevemorse.org/phoneticinfo.htm)
+* [Caverphone2](#caverphone2-encoder) - implementation of [Caverphone 2.0 algorithm](https://en.wikipedia.org/wiki/Caverphone#Caverphone_2.0)
 
 
 ## Installion
@@ -89,5 +90,25 @@ func main() {
 	result = sepEncoder.Encode("orange")
 	fmt.Println(result)
 	// prints: [uranzi uranz uranS uranzi uranz uranhi uranh]
+}
+```
+
+### Caverphone2 encoder
+Code example:
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/f1monkey/phonetic/caverphone2"
+)
+
+func main() {
+	e := caverphone2.NewEncoder()
+	result := e.Encode("orange")
+	fmt.Println(result)
+	// prints: ARNK111111
 }
 ```
