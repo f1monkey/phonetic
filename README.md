@@ -5,6 +5,7 @@ Set of different phonetic encoders' implementations.
 Provided encoders:
 * [Beider-Morse encoder](#beider-morse-encoder) -  BMPM implementation. It's a Go port of [the original PHP library](https://stevemorse.org/phoneticinfo.htm)
 * [Caverphone2](#caverphone2-encoder) - implementation of [Caverphone 2.0 algorithm](https://en.wikipedia.org/wiki/Caverphone#Caverphone_2.0)
+* [Soundex](#soundex-encoder) - [Soundex algorithm](https://en.wikipedia.org/wiki/Soundex) implementation.
 
 
 ## Installion
@@ -110,5 +111,25 @@ func main() {
 	result := e.Encode("orange")
 	fmt.Println(result)
 	// prints: ARNK111111
+}
+```
+
+### Soundex encoder
+Code example:
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/f1monkey/phonetic/soundex"
+)
+
+func main() {
+	e := soundex.NewEncoder()
+	result := e.Encode("orange")
+	fmt.Println(result)
+	// prints: O652
 }
 ```
