@@ -2,6 +2,8 @@ package caverphone2
 
 import (
 	"strings"
+
+	"golang.org/x/exp/slices"
 )
 
 var suffix = []byte("1111111111")
@@ -18,7 +20,7 @@ func (e *Encoder) Encode(input string) string {
 	}
 
 	inputBytes := []byte(strings.ToLower(input))
-	inputBytes = filter.ReplaceAll(inputBytes, nil)
+	inputBytes = filterInput(inputBytes)
 
 	for i := range rules {
 		if rules[i].regexp != nil {
@@ -37,4 +39,44 @@ func (e *Encoder) Encode(input string) string {
 	inputBytes = append(inputBytes, suffix...)
 
 	return string(inputBytes[:len(suffix)])
+}
+
+func filterInput(input []byte) []byte {
+	for i := 0; i < len(input); i++ {
+		if _, ok := availCharacters[input[i]]; !ok {
+			input = slices.Delete(input, i, i+1)
+			i--
+		}
+	}
+
+	return input
+}
+
+var availCharacters = map[byte]struct{}{
+	'a': {},
+	'b': {},
+	'c': {},
+	'd': {},
+	'e': {},
+	'f': {},
+	'g': {},
+	'h': {},
+	'i': {},
+	'j': {},
+	'k': {},
+	'l': {},
+	'm': {},
+	'n': {},
+	'o': {},
+	'p': {},
+	'q': {},
+	'r': {},
+	's': {},
+	't': {},
+	'u': {},
+	'v': {},
+	'w': {},
+	'x': {},
+	'y': {},
+	'z': {},
 }

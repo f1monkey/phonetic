@@ -11,8 +11,6 @@ type rule struct {
 	to       []byte
 }
 
-var filter = regexp.MustCompile("[^a-z]")
-
 var rules = []rule{
 	{
 		suffix: []byte("e"),
