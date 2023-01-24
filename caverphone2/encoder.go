@@ -1,7 +1,6 @@
 package caverphone2
 
 import (
-	"bytes"
 	"strings"
 )
 
@@ -19,11 +18,17 @@ func (e *Encoder) Encode(input string) string {
 	}
 
 	inputBytes := []byte(strings.ToLower(input))
+	inputBytes = filter.ReplaceAll(inputBytes, nil)
+
 	for i := range rules {
 		if rules[i].regexp != nil {
-			inputBytes = rules[i].regexp.ReplaceAll(inputBytes, rules[i].replaceWith)
-		} else {
-			inputBytes = bytes.ReplaceAll(inputBytes, rules[i].pattern, rules[i].replaceWith)
+			inputBytes = rules[i].regexp.ReplaceAll(inputBytes, rules[i].to)
+		} else if rules[i].substr != nil {
+			inputBytes = bytesReplaceAll(inputBytes, rules[i].substr, rules[i].to)
+		} else if rules[i].prefix != nil {
+			inputBytes = bytesReplacePrefix(inputBytes, rules[i].prefix, rules[i].to)
+		} else if rules[i].suffix != nil {
+			inputBytes = bytesReplaceSuffix(inputBytes, rules[i].suffix, rules[i].to)
 		}
 	}
 

@@ -3,238 +3,275 @@ package caverphone2
 import "regexp"
 
 type rule struct {
-	pattern     []byte
-	regexp      *regexp.Regexp
-	replaceWith []byte
+	substr []byte
+	prefix []byte
+	suffix []byte
+	regexp *regexp.Regexp
+	to     []byte
 }
+
+var filter = regexp.MustCompile("[^a-z]")
 
 var rules = []rule{
 	{
-		regexp:      regexp.MustCompile("[^a-z]"),
-		replaceWith: []byte(""),
+		suffix: []byte("e"),
+		to:     []byte(""),
 	},
 	{
-		regexp:      regexp.MustCompile("e$"),
-		replaceWith: []byte(""),
+		prefix: []byte("cough"),
+		to:     []byte("cou2f"),
 	},
 	{
-		regexp:      regexp.MustCompile("^cough"),
-		replaceWith: []byte("cou2f"),
+		prefix: []byte("rough"),
+		to:     []byte("rou2f"),
 	},
 	{
-		regexp:      regexp.MustCompile("^rough"),
-		replaceWith: []byte("rou2f"),
+		prefix: []byte("tough"),
+		to:     []byte("tou2f"),
 	},
 	{
-		regexp:      regexp.MustCompile("^tough"),
-		replaceWith: []byte("tou2f"),
+		prefix: []byte("enough"),
+		to:     []byte("enou2f"),
 	},
 	{
-		regexp:      regexp.MustCompile("^enough"),
-		replaceWith: []byte("enou2f"),
+		prefix: []byte("trough"),
+		to:     []byte("trou2f"),
 	},
 	{
-		regexp:      regexp.MustCompile("^trough"),
-		replaceWith: []byte("trou2f"),
+		prefix: []byte("gn"),
+		to:     []byte("2n"),
 	},
 	{
-		regexp:      regexp.MustCompile("^gn"),
-		replaceWith: []byte("2n"),
+		suffix: []byte("mb"),
+		to:     []byte("m2"),
 	},
 	{
-		regexp:      regexp.MustCompile("mb$"),
-		replaceWith: []byte("m2"),
+		substr: []byte("cq"),
+		to:     []byte("2q"),
 	},
 	{
-		pattern:     []byte("cq"),
-		replaceWith: []byte("2q"),
+		substr: []byte("ci"),
+		to:     []byte("si"),
 	},
 	{
-		pattern:     []byte("ci"),
-		replaceWith: []byte("si"),
+		substr: []byte("ce"),
+		to:     []byte("se"),
 	},
 	{
-		pattern:     []byte("ce"),
-		replaceWith: []byte("se"),
+		substr: []byte("cy"),
+		to:     []byte("sy"),
 	},
 	{
-		pattern:     []byte("cy"),
-		replaceWith: []byte("sy"),
+		substr: []byte("tch"),
+		to:     []byte("2ch"),
 	},
 	{
-		pattern:     []byte("tch"),
-		replaceWith: []byte("2ch"),
+		substr: []byte("c"),
+		to:     []byte("k"),
 	},
 	{
-		pattern:     []byte("c"),
-		replaceWith: []byte("k"),
+		substr: []byte("q"),
+		to:     []byte("k"),
 	},
 	{
-		pattern:     []byte("q"),
-		replaceWith: []byte("k"),
+		substr: []byte("x"),
+		to:     []byte("k"),
 	},
 	{
-		pattern:     []byte("x"),
-		replaceWith: []byte("k"),
+		substr: []byte("v"),
+		to:     []byte("f"),
 	},
 	{
-		pattern:     []byte("v"),
-		replaceWith: []byte("f"),
+		substr: []byte("dg"),
+		to:     []byte("2g"),
 	},
 	{
-		pattern:     []byte("dg"),
-		replaceWith: []byte("2g"),
+		substr: []byte("tio"),
+		to:     []byte("sio"),
 	},
 	{
-		pattern:     []byte("tio"),
-		replaceWith: []byte("sio"),
+		substr: []byte("tia"),
+		to:     []byte("sia"),
 	},
 	{
-		pattern:     []byte("tia"),
-		replaceWith: []byte("sia"),
+		substr: []byte("d"),
+		to:     []byte("t"),
 	},
 	{
-		pattern:     []byte("d"),
-		replaceWith: []byte("t"),
+		substr: []byte("ph"),
+		to:     []byte("fh"),
 	},
 	{
-		pattern:     []byte("ph"),
-		replaceWith: []byte("fh"),
+		substr: []byte("b"),
+		to:     []byte("p"),
 	},
 	{
-		pattern:     []byte("b"),
-		replaceWith: []byte("p"),
+		substr: []byte("sh"),
+		to:     []byte("s2"),
 	},
 	{
-		pattern:     []byte("sh"),
-		replaceWith: []byte("s2"),
+		substr: []byte("z"),
+		to:     []byte("s"),
+	},
+
+	// ^[aeiou]
+	{
+		prefix: []byte("a"),
+		to:     []byte("A"),
 	},
 	{
-		pattern:     []byte("z"),
-		replaceWith: []byte("s"),
+		prefix: []byte("e"),
+		to:     []byte("A"),
 	},
 	{
-		regexp:      regexp.MustCompile("^[aeiou]"),
-		replaceWith: []byte("A"),
+		prefix: []byte("i"),
+		to:     []byte("A"),
 	},
 	{
-		regexp:      regexp.MustCompile("[aeiou]"),
-		replaceWith: []byte("3"),
+		prefix: []byte("o"),
+		to:     []byte("A"),
 	},
 	{
-		pattern:     []byte("j"),
-		replaceWith: []byte("y"),
+		prefix: []byte("u"),
+		to:     []byte("A"),
+	},
+
+	// [aeiou]
+	{
+		substr: []byte("a"),
+		to:     []byte("3"),
 	},
 	{
-		regexp:      regexp.MustCompile("^y3"),
-		replaceWith: []byte("Y3"),
+		substr: []byte("e"),
+		to:     []byte("3"),
 	},
 	{
-		regexp:      regexp.MustCompile("^y"),
-		replaceWith: []byte("A"),
+		substr: []byte("i"),
+		to:     []byte("3"),
 	},
 	{
-		pattern:     []byte("y"),
-		replaceWith: []byte("3"),
+		substr: []byte("o"),
+		to:     []byte("3"),
 	},
 	{
-		pattern:     []byte("3gh3"),
-		replaceWith: []byte("3kh3"),
+		substr: []byte("u"),
+		to:     []byte("3"),
+	},
+
+	{
+		substr: []byte("j"),
+		to:     []byte("y"),
 	},
 	{
-		pattern:     []byte("gh"),
-		replaceWith: []byte("22"),
+		substr: []byte("y3"),
+		to:     []byte("Y3"),
 	},
 	{
-		pattern:     []byte("g"),
-		replaceWith: []byte("k"),
+		prefix: []byte("y"),
+		to:     []byte("A"),
 	},
 	{
-		regexp:      regexp.MustCompile("s+"),
-		replaceWith: []byte("S"),
+		substr: []byte("y"),
+		to:     []byte("3"),
 	},
 	{
-		regexp:      regexp.MustCompile("t+"),
-		replaceWith: []byte("T"),
+		substr: []byte("3gh3"),
+		to:     []byte("3kh3"),
 	},
 	{
-		regexp:      regexp.MustCompile("p+"),
-		replaceWith: []byte("P"),
+		substr: []byte("gh"),
+		to:     []byte("22"),
 	},
 	{
-		regexp:      regexp.MustCompile("k+"),
-		replaceWith: []byte("K"),
+		substr: []byte("g"),
+		to:     []byte("k"),
 	},
 	{
-		regexp:      regexp.MustCompile("f+"),
-		replaceWith: []byte("F"),
+		regexp: regexp.MustCompile("s+"),
+		to:     []byte("S"),
 	},
 	{
-		regexp:      regexp.MustCompile("m+"),
-		replaceWith: []byte("M"),
+		regexp: regexp.MustCompile("t+"),
+		to:     []byte("T"),
 	},
 	{
-		regexp:      regexp.MustCompile("n+"),
-		replaceWith: []byte("N"),
+		regexp: regexp.MustCompile("p+"),
+		to:     []byte("P"),
 	},
 	{
-		pattern:     []byte("w3"),
-		replaceWith: []byte("W3"),
+		regexp: regexp.MustCompile("k+"),
+		to:     []byte("K"),
 	},
 	{
-		pattern:     []byte("wh3"),
-		replaceWith: []byte("Wh3"),
+		regexp: regexp.MustCompile("f+"),
+		to:     []byte("F"),
 	},
 	{
-		regexp:      regexp.MustCompile("w$"),
-		replaceWith: []byte("3"),
+		regexp: regexp.MustCompile("m+"),
+		to:     []byte("M"),
 	},
 	{
-		pattern:     []byte("w"),
-		replaceWith: []byte("2"),
+		regexp: regexp.MustCompile("n+"),
+		to:     []byte("N"),
 	},
 	{
-		regexp:      regexp.MustCompile("^h"),
-		replaceWith: []byte("A"),
+		substr: []byte("w3"),
+		to:     []byte("W3"),
 	},
 	{
-		pattern:     []byte("h"),
-		replaceWith: []byte("2"),
+		substr: []byte("wh3"),
+		to:     []byte("Wh3"),
 	},
 	{
-		pattern:     []byte("r3"),
-		replaceWith: []byte("R3"),
+		suffix: []byte("w"),
+		to:     []byte("3"),
 	},
 	{
-		regexp:      regexp.MustCompile("r$"),
-		replaceWith: []byte("3"),
+		substr: []byte("w"),
+		to:     []byte("2"),
 	},
 	{
-		pattern:     []byte("r"),
-		replaceWith: []byte("2"),
+		prefix: []byte("h"),
+		to:     []byte("A"),
 	},
 	{
-		pattern:     []byte("l3"),
-		replaceWith: []byte("L3"),
+		substr: []byte("h"),
+		to:     []byte("2"),
 	},
 	{
-		regexp:      regexp.MustCompile("l$"),
-		replaceWith: []byte("3"),
+		substr: []byte("r3"),
+		to:     []byte("R3"),
 	},
 	{
-		pattern:     []byte("l"),
-		replaceWith: []byte("2"),
+		suffix: []byte("r"),
+		to:     []byte("3"),
 	},
 	{
-		pattern:     []byte("2"),
-		replaceWith: []byte(""),
+		substr: []byte("r"),
+		to:     []byte("2"),
 	},
 	{
-		regexp:      regexp.MustCompile("3$"),
-		replaceWith: []byte("A"),
+		substr: []byte("l3"),
+		to:     []byte("L3"),
 	},
 	{
-		pattern:     []byte("3"),
-		replaceWith: []byte(""),
+		suffix: []byte("l"),
+		to:     []byte("3"),
+	},
+	{
+		substr: []byte("l"),
+		to:     []byte("2"),
+	},
+	{
+		substr: []byte("2"),
+		to:     []byte(""),
+	},
+	{
+		suffix: []byte("3"),
+		to:     []byte("A"),
+	},
+	{
+		substr: []byte("3"),
+		to:     []byte(""),
 	},
 }
