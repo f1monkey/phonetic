@@ -29,6 +29,8 @@ func (e *Encoder) Encode(input string) string {
 			inputBytes = bytesReplacePrefix(inputBytes, rules[i].prefix, rules[i].to)
 		} else if rules[i].suffix != nil {
 			inputBytes = bytesReplaceSuffix(inputBytes, rules[i].suffix, rules[i].to)
+		} else if rules[i].sequence != nil {
+			inputBytes = bytesReplaceSequence(inputBytes, rules[i].sequence, rules[i].to)
 		}
 	}
 

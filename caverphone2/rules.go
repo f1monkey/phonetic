@@ -3,11 +3,12 @@ package caverphone2
 import "regexp"
 
 type rule struct {
-	substr []byte
-	prefix []byte
-	suffix []byte
-	regexp *regexp.Regexp
-	to     []byte
+	substr   []byte
+	prefix   []byte
+	suffix   []byte
+	sequence []byte
+	regexp   *regexp.Regexp
+	to       []byte
 }
 
 var filter = regexp.MustCompile("[^a-z]")
@@ -187,32 +188,32 @@ var rules = []rule{
 		to:     []byte("k"),
 	},
 	{
-		regexp: regexp.MustCompile("s+"),
-		to:     []byte("S"),
+		sequence: []byte("s"),
+		to:       []byte("S"),
 	},
 	{
-		regexp: regexp.MustCompile("t+"),
-		to:     []byte("T"),
+		sequence: []byte("t"),
+		to:       []byte("T"),
 	},
 	{
-		regexp: regexp.MustCompile("p+"),
-		to:     []byte("P"),
+		sequence: []byte("p"),
+		to:       []byte("P"),
 	},
 	{
-		regexp: regexp.MustCompile("k+"),
-		to:     []byte("K"),
+		sequence: []byte("k"),
+		to:       []byte("K"),
 	},
 	{
-		regexp: regexp.MustCompile("f+"),
-		to:     []byte("F"),
+		sequence: []byte("f"),
+		to:       []byte("F"),
 	},
 	{
-		regexp: regexp.MustCompile("m+"),
-		to:     []byte("M"),
+		sequence: []byte("m"),
+		to:       []byte("M"),
 	},
 	{
-		regexp: regexp.MustCompile("n+"),
-		to:     []byte("N"),
+		sequence: []byte("n"),
+		to:       []byte("N"),
 	},
 	{
 		substr: []byte("w3"),

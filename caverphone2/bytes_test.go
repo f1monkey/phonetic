@@ -104,3 +104,23 @@ func Test_bytesReplaceAll(t *testing.T) {
 		})
 	}
 }
+
+func Test_bytesReplaceSequence(t *testing.T) {
+	cases := []struct {
+		src      []byte
+		sequence []byte
+		to       []byte
+		expected []byte
+	}{
+		{src: []byte("tool"), sequence: []byte("o"), to: []byte("b"), expected: []byte("tbl")},
+		{src: []byte("abcqweqweabc"), sequence: []byte("qwe"), to: []byte(""), expected: []byte("abcabc")},
+		{src: []byte("abcqweqweabc"), sequence: []byte("abc"), to: []byte(""), expected: []byte("qweqwe")},
+	}
+
+	for _, c := range cases {
+		t.Run(fmt.Sprintf("%s-%s-%s", string(c.src), string(c.sequence), string(c.to)), func(t *testing.T) {
+			result := bytesReplaceSequence(c.src, c.sequence, c.to)
+			assert.Equal(t, c.expected, result)
+		})
+	}
+}
