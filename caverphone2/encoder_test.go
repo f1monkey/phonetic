@@ -42,6 +42,18 @@ func Test_Encoder_Encode(t *testing.T) {
 			input:    "ready",
 			expected: "RTA1111111",
 		},
+		{
+			input:    "апельсин",
+			expected: "1111111111",
+		},
+		{
+			input:    "ብርቱካናማ",
+			expected: "1111111111",
+		},
+		{
+			input:    "کینو",
+			expected: "1111111111",
+		},
 	}
 
 	for _, c := range cases {
