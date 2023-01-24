@@ -1,10 +1,11 @@
-package caverphone2
+package exbytes
 
 import (
 	"golang.org/x/exp/slices"
 )
 
-func bytesReplacePrefix(src []byte, from []byte, to []byte) []byte {
+// ReplacePrefix in-place prefix replacement 'from' to 'to' in 'src' slice
+func ReplacePrefix(src []byte, from []byte, to []byte) []byte {
 	if len(src) == 0 || len(from) == 0 || len(from) > len(src) {
 		return src
 	}
@@ -38,7 +39,8 @@ func bytesReplacePrefix(src []byte, from []byte, to []byte) []byte {
 	return src
 }
 
-func bytesReplaceSuffix(src []byte, from []byte, to []byte) []byte {
+// ReplaceSuffix in-place suffix replacement 'from' to 'to' in 'src' slice
+func ReplaceSuffix(src []byte, from []byte, to []byte) []byte {
 	if len(src) == 0 || len(from) == 0 || len(from) > len(src) {
 		return src
 	}
@@ -73,7 +75,8 @@ func bytesReplaceSuffix(src []byte, from []byte, to []byte) []byte {
 	return src
 }
 
-func bytesReplaceAll(src []byte, from []byte, to []byte) []byte {
+// ReplaceAll in-place replacement 'from' to 'to' in 'src' slice
+func ReplaceAll(src []byte, from []byte, to []byte) []byte {
 	if len(src) == 0 || len(from) == 0 || len(from) > len(src) {
 		return src
 	}
@@ -101,7 +104,8 @@ func bytesReplaceAll(src []byte, from []byte, to []byte) []byte {
 	return src
 }
 
-func bytesReplaceSequence(src []byte, sequence []byte, to []byte) []byte {
+// ReplaceSequence in-place sequence replacement 'from' to 'to' in 'src' slice
+func ReplaceSequence(src []byte, sequence []byte, to []byte) []byte {
 	if len(src) == 0 || len(sequence) == 0 || len(sequence) > len(src) {
 		return src
 	}

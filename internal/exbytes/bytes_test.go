@@ -1,4 +1,4 @@
-package caverphone2
+package exbytes
 
 import (
 	"fmt"
@@ -7,17 +7,17 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Benchmark_bytesReplacePrefix(b *testing.B) {
+func Benchmark_ReplacePrefix(b *testing.B) {
 	src := []byte("orange")
 	from := []byte("ora")
 	to := []byte("q")
 
 	for i := 0; i < b.N; i++ {
-		bytesReplacePrefix(src, from, to)
+		ReplacePrefix(src, from, to)
 	}
 }
 
-func Test_bytesReplacePrefix(t *testing.T) {
+func Test_ReplacePrefix(t *testing.T) {
 	cases := []struct {
 		src      []byte
 		from     []byte
@@ -34,23 +34,23 @@ func Test_bytesReplacePrefix(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(fmt.Sprintf("%s-%s-%s", string(c.src), string(c.from), string(c.to)), func(t *testing.T) {
-			result := bytesReplacePrefix(c.src, c.from, c.to)
+			result := ReplacePrefix(c.src, c.from, c.to)
 			assert.Equal(t, c.expected, result)
 		})
 	}
 }
 
-func Benchmark_bytesReplaceSuffix(b *testing.B) {
+func Benchmark_ReplaceSuffix(b *testing.B) {
 	src := []byte("orange")
 	from := []byte("nge")
 	to := []byte("q")
 
 	for i := 0; i < b.N; i++ {
-		bytesReplaceSuffix(src, from, to)
+		ReplaceSuffix(src, from, to)
 	}
 }
 
-func Test_bytesReplaceSuffix(t *testing.T) {
+func Test_ReplaceSuffix(t *testing.T) {
 	cases := []struct {
 		src      []byte
 		from     []byte
@@ -67,23 +67,23 @@ func Test_bytesReplaceSuffix(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(fmt.Sprintf("%s-%s-%s", string(c.src), string(c.from), string(c.to)), func(t *testing.T) {
-			result := bytesReplaceSuffix(c.src, c.from, c.to)
+			result := ReplaceSuffix(c.src, c.from, c.to)
 			assert.Equal(t, c.expected, result)
 		})
 	}
 }
 
-func Benchmark_bytesReplaceAll(b *testing.B) {
+func Benchmark_ReplaceAll(b *testing.B) {
 	src := []byte("orange")
 	from := []byte("an")
 	to := []byte("a")
 
 	for i := 0; i < b.N; i++ {
-		bytesReplaceAll(src, from, to)
+		ReplaceAll(src, from, to)
 	}
 }
 
-func Test_bytesReplaceAll(t *testing.T) {
+func Test_ReplaceAll(t *testing.T) {
 	cases := []struct {
 		src      []byte
 		from     []byte
@@ -99,13 +99,13 @@ func Test_bytesReplaceAll(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(fmt.Sprintf("%s-%s-%s", string(c.src), string(c.from), string(c.to)), func(t *testing.T) {
-			result := bytesReplaceAll(c.src, c.from, c.to)
+			result := ReplaceAll(c.src, c.from, c.to)
 			assert.Equal(t, c.expected, result)
 		})
 	}
 }
 
-func Test_bytesReplaceSequence(t *testing.T) {
+func Test_ReplaceSequence(t *testing.T) {
 	cases := []struct {
 		src      []byte
 		sequence []byte
@@ -119,7 +119,7 @@ func Test_bytesReplaceSequence(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(fmt.Sprintf("%s-%s-%s", string(c.src), string(c.sequence), string(c.to)), func(t *testing.T) {
-			result := bytesReplaceSequence(c.src, c.sequence, c.to)
+			result := ReplaceSequence(c.src, c.sequence, c.to)
 			assert.Equal(t, c.expected, result)
 		})
 	}
