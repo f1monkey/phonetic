@@ -3,6 +3,7 @@ package caverphone2
 import (
 	"strings"
 
+	"github.com/f1monkey/phonetic/internal/exbytes"
 	"golang.org/x/exp/slices"
 )
 
@@ -26,13 +27,13 @@ func (e *Encoder) Encode(input string) string {
 		if rules[i].regexp != nil {
 			inputBytes = rules[i].regexp.ReplaceAll(inputBytes, rules[i].to)
 		} else if rules[i].substr != nil {
-			inputBytes = bytesReplaceAll(inputBytes, rules[i].substr, rules[i].to)
+			inputBytes = exbytes.ReplaceAll(inputBytes, rules[i].substr, rules[i].to)
 		} else if rules[i].prefix != nil {
-			inputBytes = bytesReplacePrefix(inputBytes, rules[i].prefix, rules[i].to)
+			inputBytes = exbytes.ReplacePrefix(inputBytes, rules[i].prefix, rules[i].to)
 		} else if rules[i].suffix != nil {
-			inputBytes = bytesReplaceSuffix(inputBytes, rules[i].suffix, rules[i].to)
+			inputBytes = exbytes.ReplaceSuffix(inputBytes, rules[i].suffix, rules[i].to)
 		} else if rules[i].sequence != nil {
-			inputBytes = bytesReplaceSequence(inputBytes, rules[i].sequence, rules[i].to)
+			inputBytes = exbytes.ReplaceSequence(inputBytes, rules[i].sequence, rules[i].to)
 		}
 	}
 

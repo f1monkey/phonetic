@@ -6,6 +6,7 @@ Provided encoders:
 * [Beider-Morse encoder](#beider-morse-encoder) -  BMPM implementation. It's a Go port of [the original PHP library](https://stevemorse.org/phoneticinfo.htm)
 * [Caverphone2](#caverphone2-encoder) - implementation of [Caverphone 2.0 algorithm](https://en.wikipedia.org/wiki/Caverphone#Caverphone_2.0)
 * [Soundex](#soundex-encoder) - [Soundex algorithm](https://en.wikipedia.org/wiki/Soundex) implementation.
+* [Cologne](#cologne-encoder) - [Cologne phonetics](https://en.wikipedia.org/wiki/Cologne_phonetics) encoder implementation.
 
 
 ## Installion
@@ -131,5 +132,25 @@ func main() {
 	result := e.Encode("orange")
 	fmt.Println(result)
 	// prints: O652
+}
+```
+
+### Cologne encoder
+Code example:
+
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/f1monkey/phonetic/cologne"
+)
+
+func main() {
+	e := cologne.NewEncoder()
+	result := e.Encode("Großtraktor")
+	fmt.Println(result)
+	// prints: 47827427
 }
 ```
