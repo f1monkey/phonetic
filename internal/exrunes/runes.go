@@ -1,4 +1,4 @@
-package common
+package exrunes
 
 type Runes []rune
 

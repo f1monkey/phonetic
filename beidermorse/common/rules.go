@@ -2,6 +2,8 @@ package common
 
 import (
 	"regexp"
+
+	"github.com/f1monkey/phonetic/internal/exrunes"
 )
 
 // Mode which name mode to use for matching
@@ -80,13 +82,13 @@ func (r Rules) Apply(input Tokens, lang Lang, ignoreLangs bool) Tokens {
 }
 
 type Rule struct {
-	Pattern      Runes
+	Pattern      exrunes.Runes
 	LeftContext  *Matcher
 	RightContext *Matcher
 	Phonetic     Tokens
 }
 
-func (r Rule) ApplyTo(input Runes, position int) (result []Token, offset int) {
+func (r Rule) ApplyTo(input exrunes.Runes, position int) (result []Token, offset int) {
 	patternLength := len(r.Pattern)
 	inputLength := len(input)
 	offset = 1
@@ -140,12 +142,12 @@ type LangRule struct {
 type Matcher struct {
 	MatchEmptyString bool
 	Pattern          *regexp.Regexp
-	Prefix           Runes
-	Suffix           Runes
-	Contains         Runes
+	Prefix           exrunes.Runes
+	Suffix           exrunes.Runes
+	Contains         exrunes.Runes
 }
 
-func (r Matcher) Match(str Runes) bool {
+func (r Matcher) Match(str exrunes.Runes) bool {
 	if r.MatchEmptyString && len(str) == 0 {
 		return true
 	}

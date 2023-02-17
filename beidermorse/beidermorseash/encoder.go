@@ -7,6 +7,7 @@ import (
 	"math/bits"
 
 	"github.com/f1monkey/phonetic/beidermorse/common"
+	"github.com/f1monkey/phonetic/internal/exrunes"
 )
 
 var ErrInvalidMode = fmt.Errorf("invalid name mode")
@@ -122,7 +123,7 @@ func detectLangFunc() common.DetectLangFunc {
 		all := All
 		rules := LangRules
 
-		runes := common.Runes(input)
+		runes := exrunes.Runes(input)
 		remaining := common.Lang(all)
 		for _, rule := range rules {
 			if rule.Matcher == nil {
