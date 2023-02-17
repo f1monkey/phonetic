@@ -96,3 +96,40 @@ func Test_ContainsAt(t *testing.T) {
 		})
 	}
 }
+
+func Benchmark_Equal(b *testing.B) {
+	r1 := []rune{'a', 'b', 'c', 'd'}
+	r2 := []rune{'a', 'b', 'c'}
+	for i := 0; i < b.N; i++ {
+		Equal(r1, r2)
+	}
+}
+
+func Test_Equal(t *testing.T) {
+	cases := []struct {
+		r1, r2   []rune
+		expected bool
+	}{
+		{
+			r1:       []rune{'a', 'b', 'c'},
+			r2:       []rune{'a', 'b', 'c'},
+			expected: true,
+		},
+		{
+			r1:       []rune{'a', 'b', 'c', 'd'},
+			r2:       []rune{'a', 'b', 'c'},
+			expected: false,
+		},
+		{
+			r1:       nil,
+			r2:       nil,
+			expected: true,
+		},
+	}
+
+	for i, c := range cases {
+		t.Run(strconv.Itoa(i), func(t *testing.T) {
+			assert.Equal(t, c.expected, Equal(c.r1, c.r2))
+		})
+	}
+}

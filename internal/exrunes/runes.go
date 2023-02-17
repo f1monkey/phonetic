@@ -48,3 +48,17 @@ func ContainsAt(haystack []rune, needle []rune, index int) bool {
 
 	return false
 }
+
+func Equal(r1, r2 []rune) bool {
+	if len(r1) != len(r2) {
+		return false
+	}
+
+	for i := 0; i < len(r1); i++ {
+		if r1[i] != r2[i] {
+			return false
+		}
+	}
+
+	return true
+}

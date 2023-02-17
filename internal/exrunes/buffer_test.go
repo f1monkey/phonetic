@@ -59,6 +59,20 @@ func Test_Buffer_AddWithSpace(t *testing.T) {
 	assert.Equal(t, 5, b.items[index].space)
 }
 
+func Test_Buffer_Copy(t *testing.T) {
+	b := NewBuffer(100)
+
+	index := b.Add([]rune{'1', '2', '3'})
+
+	index2 := b.Copy(index)
+	assert.Equal(t, 1, index2)
+	assert.Equal(t, 2, b.index)
+	assert.Equal(t, []rune{'1', '2', '3', 0, 0, 0, '1', '2', '3', 0, 0, 0}, b.buf)
+	assert.Equal(t, 6, b.items[index2].from)
+	assert.Equal(t, 9, b.items[index2].to)
+	assert.Equal(t, b.items[index].space, b.items[index2].space)
+}
+
 func Test_Buffer_Get(t *testing.T) {
 	b := NewBuffer(100)
 
@@ -80,7 +94,7 @@ func Test_Buffer_Append(t *testing.T) {
 		b := NewBuffer(100)
 
 		id := b.Add([]rune{'1', '2', '3'})
-		b.Append(id, '4', '5', '6')
+		b.Append(id, []rune{'4', '5', '6'})
 
 		require.Equal(t, []rune{'1', '2', '3', '4', '5', '6'}, b.buf)
 	})
@@ -90,7 +104,7 @@ func Test_Buffer_Append(t *testing.T) {
 
 		index := b.Add([]rune{'1', '2', '3'})
 		_ = b.Add([]rune{'4', '5', '6'})
-		b.Append(index, []rune{'7', '8', '9', '0'}...)
+		b.Append(index, []rune{'7', '8', '9', '0'})
 
 		require.Equal(t, []rune{'1', '2', '3', 0, 0, 0, '4', '5', '6', 0, 0, 0, '1', '2', '3', '7', '8', '9', '0', 0, 0, 0, 0, 0, 0, 0}, b.buf)
 		assert.Equal(t, 12, b.items[index].from)

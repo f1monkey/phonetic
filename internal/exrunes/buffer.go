@@ -27,6 +27,18 @@ func (b *Buffer) Add(data []rune) int {
 	return curIndex
 }
 
+func (b *Buffer) Copy(id int) int {
+	b.mtx.Lock()
+	defer b.mtx.Unlock()
+
+	item := b.items[id]
+	curIndex := b.index
+	b.rawAdd(b.buf[item.from:item.to], item.space, curIndex)
+	b.index++
+
+	return curIndex
+}
+
 func (b *Buffer) AddWithSpace(data []rune, space int) int {
 	if space < 0 {
 		panic("space must be >= 0")
@@ -42,7 +54,7 @@ func (b *Buffer) AddWithSpace(data []rune, space int) int {
 	return curIndex
 }
 
-func (b *Buffer) Append(id int, data ...rune) {
+func (b *Buffer) Append(id int, data []rune) {
 	b.mtx.Lock()
 	defer b.mtx.Unlock()
 
