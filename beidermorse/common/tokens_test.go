@@ -5,7 +5,6 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/f1monkey/phonetic/internal/exrunes"
 	"github.com/stretchr/testify/require"
 )
 
@@ -48,13 +47,13 @@ func Test_Lang_Merge(t *testing.T) {
 
 func Benchmark_Tokens_Merge(b *testing.B) {
 	t1 := Tokens{
-		{Text: exrunes.Runes("k"), Langs: 1047288},
-		{Text: exrunes.Runes("ts"), Langs: 16392},
-		{Text: exrunes.Runes("dZ"), Langs: 524288},
+		{Text: []rune("k"), Langs: 1047288},
+		{Text: []rune("ts"), Langs: 16392},
+		{Text: []rune("dZ"), Langs: 524288},
 	}
 	t2 := Tokens{
-		{Text: exrunes.Runes("O"), Langs: -1},
-		{Text: exrunes.Runes("P"), Langs: 16384},
+		{Text: []rune("O"), Langs: -1},
+		{Text: []rune("P"), Langs: 16384},
 	}
 
 	for i := 0; i < b.N; i++ {
@@ -70,44 +69,44 @@ func Test_Tokens_Merge(t *testing.T) {
 	}{
 		{
 			src: Tokens{
-				{Text: exrunes.Runes("O"), Langs: -1},
-				{Text: exrunes.Runes("P"), Langs: 16384},
+				{Text: []rune("O"), Langs: -1},
+				{Text: []rune("P"), Langs: 16384},
 			},
 			dst: nil,
 			expected: Tokens{
-				{Text: exrunes.Runes("O"), Langs: -1},
-				{Text: exrunes.Runes("P"), Langs: 16384},
+				{Text: []rune("O"), Langs: -1},
+				{Text: []rune("P"), Langs: 16384},
 			},
 		},
 		{
 			src: Tokens{
-				{Text: exrunes.Runes("k"), Langs: 1047288},
-				{Text: exrunes.Runes("ts"), Langs: 16392},
-				{Text: exrunes.Runes("dZ"), Langs: 524288},
+				{Text: []rune("k"), Langs: 1047288},
+				{Text: []rune("ts"), Langs: 16392},
+				{Text: []rune("dZ"), Langs: 524288},
 			},
 			dst: Tokens{
-				{Text: exrunes.Runes("O"), Langs: -1},
-				{Text: exrunes.Runes("P"), Langs: 16384},
+				{Text: []rune("O"), Langs: -1},
+				{Text: []rune("P"), Langs: 16384},
 			},
 			expected: Tokens{
-				{Text: exrunes.Runes("kO"), Langs: 1047288},
-				{Text: exrunes.Runes("kP"), Langs: 16384},
-				{Text: exrunes.Runes("tsO"), Langs: 16392},
-				{Text: exrunes.Runes("tsP"), Langs: 16384},
-				{Text: exrunes.Runes("dZO"), Langs: 524288},
+				{Text: []rune("kO"), Langs: 1047288},
+				{Text: []rune("kP"), Langs: 16384},
+				{Text: []rune("tsO"), Langs: 16392},
+				{Text: []rune("tsP"), Langs: 16384},
+				{Text: []rune("dZO"), Langs: 524288},
 			},
 		},
 		{
 			src: Tokens{
-				{Text: exrunes.Runes("t"), Langs: 128},
+				{Text: []rune("t"), Langs: 128},
 			},
 			dst: Tokens{
-				{Text: exrunes.Runes("i"), Langs: -1},
-				{Text: exrunes.Runes("Y"), Langs: 128},
+				{Text: []rune("i"), Langs: -1},
+				{Text: []rune("Y"), Langs: 128},
 			},
 			expected: Tokens{
-				{Text: exrunes.Runes("ti"), Langs: 128},
-				{Text: exrunes.Runes("tY"), Langs: 128},
+				{Text: []rune("ti"), Langs: 128},
+				{Text: []rune("tY"), Langs: 128},
 			},
 		},
 	}
@@ -122,11 +121,11 @@ func Test_Tokens_Merge(t *testing.T) {
 
 func Benchmark_Tokens_Deduplicate(b *testing.B) {
 	src := Tokens{
-		{Text: exrunes.Runes("foo"), Langs: 1},
-		{Text: exrunes.Runes("bar"), Langs: 1},
-		{Text: exrunes.Runes("foo"), Langs: 2},
-		{Text: exrunes.Runes("foo"), Langs: 1},
-		{Text: exrunes.Runes("foo"), Langs: 3},
+		{Text: []rune("foo"), Langs: 1},
+		{Text: []rune("bar"), Langs: 1},
+		{Text: []rune("foo"), Langs: 2},
+		{Text: []rune("foo"), Langs: 1},
+		{Text: []rune("foo"), Langs: 3},
 	}
 
 	for i := 0; i < b.N; i++ {
@@ -141,17 +140,17 @@ func Test_Tokens_Deduplicate(t *testing.T) {
 	}{
 		{
 			src: Tokens{
-				{Text: exrunes.Runes("foo"), Langs: 1},
-				{Text: exrunes.Runes("bar"), Langs: 1},
-				{Text: exrunes.Runes("foo"), Langs: 2},
-				{Text: exrunes.Runes("foo"), Langs: 1},
-				{Text: exrunes.Runes("foo"), Langs: 3},
+				{Text: []rune("foo"), Langs: 1},
+				{Text: []rune("bar"), Langs: 1},
+				{Text: []rune("foo"), Langs: 2},
+				{Text: []rune("foo"), Langs: 1},
+				{Text: []rune("foo"), Langs: 3},
 			},
 			expected: Tokens{
-				{Text: exrunes.Runes("foo"), Langs: 1},
-				{Text: exrunes.Runes("bar"), Langs: 1},
-				{Text: exrunes.Runes("foo"), Langs: 2},
-				{Text: exrunes.Runes("foo"), Langs: 3},
+				{Text: []rune("foo"), Langs: 1},
+				{Text: []rune("bar"), Langs: 1},
+				{Text: []rune("foo"), Langs: 2},
+				{Text: []rune("foo"), Langs: 3},
 			},
 		},
 	}

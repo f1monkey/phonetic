@@ -4,14 +4,13 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/f1monkey/phonetic/internal/exrunes"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
 
 func Benchmark_rules_apply(b *testing.B) {
 	t := Tokens{
-		{Text: exrunes.Runes("orange"), Langs: 1047280},
+		{Text: []rune("orange"), Langs: 1047280},
 	}
 	for i := 0; i < b.N; i++ {
 		genRules[1].Apply(t, 1047280, false)
@@ -30,121 +29,121 @@ func Test_Rules_Apply(t *testing.T) {
 		{
 			name: "test_approx_lang=1_stage=1",
 			src: Tokens{
-				{Text: exrunes.Runes("test"), Langs: 1047288},
+				{Text: []rune("test"), Langs: 1047288},
 			},
 			lang:  1047288,
 			rules: genRules[1],
 			expected: Tokens{
-				{Text: exrunes.Runes("tESt"), Langs: 128},
-				{Text: exrunes.Runes("tEst"), Langs: 1047288},
+				{Text: []rune("tESt"), Langs: 128},
+				{Text: []rune("tEst"), Langs: 1047288},
 			},
 			ignoreLangs: false,
 		},
 		{
 			name: "test_approx_lang=1_stage=2",
 			src: Tokens{
-				{Text: exrunes.Runes("tESt"), Langs: 128},
-				{Text: exrunes.Runes("tEst"), Langs: 1047288},
+				{Text: []rune("tESt"), Langs: 128},
+				{Text: []rune("tEst"), Langs: 1047288},
 			},
 			lang:  1047288,
 			rules: genFinalRules.Approx.First,
 			expected: Tokens{
-				{Text: exrunes.Runes("tEst"), Langs: 128},
-				{Text: exrunes.Runes("tEst"), Langs: 1047288},
+				{Text: []rune("tEst"), Langs: 128},
+				{Text: []rune("tEst"), Langs: 1047288},
 			},
 			ignoreLangs: false,
 		},
 		{
 			name: "test_approx_lang=1_stage=3",
 			src: Tokens{
-				{Text: exrunes.Runes("tEst"), Langs: 128},
-				{Text: exrunes.Runes("tEst"), Langs: 1047288},
+				{Text: []rune("tEst"), Langs: 128},
+				{Text: []rune("tEst"), Langs: 1047288},
 			},
 			lang:  1047288,
 			rules: genFinalRules.Approx.Second[1],
 			expected: Tokens{
-				{Text: exrunes.Runes("tist"), Langs: 1},
-				{Text: exrunes.Runes("tYst"), Langs: 1},
-				{Text: exrunes.Runes("tis"), Langs: 1},
-				{Text: exrunes.Runes("tit"), Langs: 1},
-				{Text: exrunes.Runes("ti"), Langs: 1},
+				{Text: []rune("tist"), Langs: 1},
+				{Text: []rune("tYst"), Langs: 1},
+				{Text: []rune("tis"), Langs: 1},
+				{Text: []rune("tit"), Langs: 1},
+				{Text: []rune("ti"), Langs: 1},
 			},
 			ignoreLangs: true,
 		},
 		{
 			name: "orange_approx_lang=1_stage=1",
 			src: Tokens{
-				{Text: exrunes.Runes("orange"), Langs: 1047280},
+				{Text: []rune("orange"), Langs: 1047280},
 			},
 			lang:  1047280,
 			rules: genRules[1],
 			expected: Tokens{
-				{Text: exrunes.Runes("OrAngE"), Langs: 1047280},
-				{Text: exrunes.Runes("OrAnxe"), Langs: 262144},
-				{Text: exrunes.Runes("OrAnhE"), Langs: 131072},
-				{Text: exrunes.Runes("OrAnje"), Langs: 512},
-				{Text: exrunes.Runes("OrAnZe"), Langs: 32832},
-				{Text: exrunes.Runes("OrAndZe"), Langs: 331808},
-				{Text: exrunes.Runes("PrAngE"), Langs: 16384},
+				{Text: []rune("OrAngE"), Langs: 1047280},
+				{Text: []rune("OrAnxe"), Langs: 262144},
+				{Text: []rune("OrAnhE"), Langs: 131072},
+				{Text: []rune("OrAnje"), Langs: 512},
+				{Text: []rune("OrAnZe"), Langs: 32832},
+				{Text: []rune("OrAndZe"), Langs: 331808},
+				{Text: []rune("PrAngE"), Langs: 16384},
 			},
 			ignoreLangs: false,
 		},
 		{
 			name: "orange_approx_lang=1_stage=2",
 			src: Tokens{
-				{Text: exrunes.Runes("OrAngE"), Langs: 1047280},
-				{Text: exrunes.Runes("OrAnxe"), Langs: 262144},
-				{Text: exrunes.Runes("OrAnhE"), Langs: 131072},
-				{Text: exrunes.Runes("OrAnje"), Langs: 512},
-				{Text: exrunes.Runes("OrAnZe"), Langs: 32832},
-				{Text: exrunes.Runes("OrAndZe"), Langs: 331808},
-				{Text: exrunes.Runes("PrAngE"), Langs: 16384},
+				{Text: []rune("OrAngE"), Langs: 1047280},
+				{Text: []rune("OrAnxe"), Langs: 262144},
+				{Text: []rune("OrAnhE"), Langs: 131072},
+				{Text: []rune("OrAnje"), Langs: 512},
+				{Text: []rune("OrAnZe"), Langs: 32832},
+				{Text: []rune("OrAndZe"), Langs: 331808},
+				{Text: []rune("PrAngE"), Langs: 16384},
 			},
 			lang:  1047280,
 			rules: genFinalRules.Approx.First,
 			expected: Tokens{
-				{Text: exrunes.Runes("OrAngE"), Langs: 1047280},
-				{Text: exrunes.Runes("OrAnxe"), Langs: 262144},
-				{Text: exrunes.Runes("OrAnE"), Langs: 131072},
-				{Text: exrunes.Runes("OrAnie"), Langs: 512},
-				{Text: exrunes.Runes("OrAnze"), Langs: 32832},
-				{Text: exrunes.Runes("OrAnze"), Langs: 331808},
-				{Text: exrunes.Runes("PrAngE"), Langs: 16384},
+				{Text: []rune("OrAngE"), Langs: 1047280},
+				{Text: []rune("OrAnxe"), Langs: 262144},
+				{Text: []rune("OrAnE"), Langs: 131072},
+				{Text: []rune("OrAnie"), Langs: 512},
+				{Text: []rune("OrAnze"), Langs: 32832},
+				{Text: []rune("OrAnze"), Langs: 331808},
+				{Text: []rune("PrAngE"), Langs: 16384},
 			},
 			ignoreLangs: false,
 		},
 		{
 			name: "orange_stage=3_lang=1",
 			src: Tokens{
-				{Text: exrunes.Runes("OrAngE"), Langs: 1047280},
-				{Text: exrunes.Runes("OrAnxe"), Langs: 262144},
-				{Text: exrunes.Runes("OrAnE"), Langs: 131072},
-				{Text: exrunes.Runes("OrAnie"), Langs: 512},
-				{Text: exrunes.Runes("OrAnze"), Langs: 32832},
-				{Text: exrunes.Runes("OrAnze"), Langs: 331808},
-				{Text: exrunes.Runes("PrAngE"), Langs: 16384},
+				{Text: []rune("OrAngE"), Langs: 1047280},
+				{Text: []rune("OrAnxe"), Langs: 262144},
+				{Text: []rune("OrAnE"), Langs: 131072},
+				{Text: []rune("OrAnie"), Langs: 512},
+				{Text: []rune("OrAnze"), Langs: 32832},
+				{Text: []rune("OrAnze"), Langs: 331808},
+				{Text: []rune("PrAngE"), Langs: 16384},
 			},
 			lang:  1047280,
 			rules: genFinalRules.Approx.Second[1],
 			expected: Tokens{
-				{Text: exrunes.Runes("orangi"), Langs: 1},
-				{Text: exrunes.Runes("oragi"), Langs: 1},
-				{Text: exrunes.Runes("orongi"), Langs: 1},
-				{Text: exrunes.Runes("orogi"), Langs: 1},
-				{Text: exrunes.Runes("orYngi"), Langs: 1},
-				{Text: exrunes.Runes("Yrangi"), Langs: 1},
-				{Text: exrunes.Runes("Yrongi"), Langs: 1},
-				{Text: exrunes.Runes("YrYngi"), Langs: 1},
-				{Text: exrunes.Runes("oranxi"), Langs: 1},
-				{Text: exrunes.Runes("oronxi"), Langs: 1},
-				{Text: exrunes.Runes("orani"), Langs: 1},
-				{Text: exrunes.Runes("oroni"), Langs: 1},
-				{Text: exrunes.Runes("oranii"), Langs: 1},
-				{Text: exrunes.Runes("oronii"), Langs: 1},
-				{Text: exrunes.Runes("oranzi"), Langs: 1},
-				{Text: exrunes.Runes("oronzi"), Langs: 1},
-				{Text: exrunes.Runes("urangi"), Langs: 1},
-				{Text: exrunes.Runes("urongi"), Langs: 1},
+				{Text: []rune("orangi"), Langs: 1},
+				{Text: []rune("oragi"), Langs: 1},
+				{Text: []rune("orongi"), Langs: 1},
+				{Text: []rune("orogi"), Langs: 1},
+				{Text: []rune("orYngi"), Langs: 1},
+				{Text: []rune("Yrangi"), Langs: 1},
+				{Text: []rune("Yrongi"), Langs: 1},
+				{Text: []rune("YrYngi"), Langs: 1},
+				{Text: []rune("oranxi"), Langs: 1},
+				{Text: []rune("oronxi"), Langs: 1},
+				{Text: []rune("orani"), Langs: 1},
+				{Text: []rune("oroni"), Langs: 1},
+				{Text: []rune("oranii"), Langs: 1},
+				{Text: []rune("oronii"), Langs: 1},
+				{Text: []rune("oranzi"), Langs: 1},
+				{Text: []rune("oronzi"), Langs: 1},
+				{Text: []rune("urangi"), Langs: 1},
+				{Text: []rune("urongi"), Langs: 1},
 			},
 			ignoreLangs: true,
 		},
@@ -163,33 +162,33 @@ func Benchmark_Rule_ApplyTo(b *testing.B) {
 		Pattern: []rune("ge"),
 		Phonetic: []Token{
 			{
-				Text:  exrunes.Runes("gE"),
+				Text:  []rune("gE"),
 				Langs: -1,
 			},
 			{
-				Text:  exrunes.Runes("xe"),
+				Text:  []rune("xe"),
 				Langs: 262144,
 			},
 			{
-				Text:  exrunes.Runes("hE"),
+				Text:  []rune("hE"),
 				Langs: 131072,
 			},
 			{
-				Text:  exrunes.Runes("je"),
+				Text:  []rune("je"),
 				Langs: 512,
 			},
 			{
-				Text:  exrunes.Runes("Ze"),
+				Text:  []rune("Ze"),
 				Langs: 32832,
 			},
 			{
-				Text:  exrunes.Runes("dZe"),
+				Text:  []rune("dZe"),
 				Langs: 331808,
 			},
 		},
 	}
 
-	s := exrunes.Runes("orange")
+	s := []rune("orange")
 
 	for i := 0; i < b.N; i++ {
 		r.ApplyTo(s, 4)
@@ -201,27 +200,27 @@ func Test_Rule_ApplyTo(t *testing.T) {
 		Pattern: []rune("ge"),
 		Phonetic: []Token{
 			{
-				Text:  exrunes.Runes("gE"),
+				Text:  []rune("gE"),
 				Langs: -1,
 			},
 			{
-				Text:  exrunes.Runes("xe"),
+				Text:  []rune("xe"),
 				Langs: 262144,
 			},
 			{
-				Text:  exrunes.Runes("hE"),
+				Text:  []rune("hE"),
 				Langs: 131072,
 			},
 			{
-				Text:  exrunes.Runes("je"),
+				Text:  []rune("je"),
 				Langs: 512,
 			},
 			{
-				Text:  exrunes.Runes("Ze"),
+				Text:  []rune("Ze"),
 				Langs: 32832,
 			},
 			{
-				Text:  exrunes.Runes("dZe"),
+				Text:  []rune("dZe"),
 				Langs: 331808,
 			},
 		},
@@ -242,12 +241,12 @@ func Test_Rule_ApplyTo(t *testing.T) {
 			position: 4,
 
 			expectedResult: []Token{
-				{Text: exrunes.Runes("gE"), Langs: LangUnitialized},
-				{Text: exrunes.Runes("xe"), Langs: 262144},
-				{Text: exrunes.Runes("hE"), Langs: 131072},
-				{Text: exrunes.Runes("je"), Langs: 512},
-				{Text: exrunes.Runes("Ze"), Langs: 32832},
-				{Text: exrunes.Runes("dZe"), Langs: 331808},
+				{Text: []rune("gE"), Langs: LangUnitialized},
+				{Text: []rune("xe"), Langs: 262144},
+				{Text: []rune("hE"), Langs: 131072},
+				{Text: []rune("je"), Langs: 512},
+				{Text: []rune("Ze"), Langs: 32832},
+				{Text: []rune("dZe"), Langs: 331808},
 			},
 			expectedOffset: 2,
 		},
@@ -264,7 +263,7 @@ func Test_Rule_ApplyTo(t *testing.T) {
 
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
-			result, offset := c.rule.ApplyTo(exrunes.Runes(c.input), c.position)
+			result, offset := c.rule.ApplyTo([]rune(c.input), c.position)
 			assert.Equal(t, c.expectedResult, result)
 			assert.Equal(t, c.expectedOffset, offset)
 		})

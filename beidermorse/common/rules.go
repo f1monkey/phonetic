@@ -82,13 +82,13 @@ func (r Rules) Apply(input Tokens, lang Lang, ignoreLangs bool) Tokens {
 }
 
 type Rule struct {
-	Pattern      exrunes.Runes
+	Pattern      []rune
 	LeftContext  *Matcher
 	RightContext *Matcher
 	Phonetic     Tokens
 }
 
-func (r Rule) ApplyTo(input exrunes.Runes, position int) (result []Token, offset int) {
+func (r Rule) ApplyTo(input []rune, position int) (result []Token, offset int) {
 	patternLength := len(r.Pattern)
 	inputLength := len(input)
 	offset = 1
@@ -101,7 +101,7 @@ func (r Rule) ApplyTo(input exrunes.Runes, position int) (result []Token, offset
 		return
 	}
 
-	if !input.ContainsAt(r.Pattern, position) {
+	if !exrunes.ContainsAt(input, r.Pattern, position) {
 		return
 	}
 
@@ -142,26 +142,26 @@ type LangRule struct {
 type Matcher struct {
 	MatchEmptyString bool
 	Pattern          *regexp.Regexp
-	Prefix           exrunes.Runes
-	Suffix           exrunes.Runes
-	Contains         exrunes.Runes
+	Prefix           []rune
+	Suffix           []rune
+	Contains         []rune
 }
 
-func (r Matcher) Match(str exrunes.Runes) bool {
+func (r Matcher) Match(str []rune) bool {
 	if r.MatchEmptyString && len(str) == 0 {
 		return true
 	}
 
 	if len(r.Contains) > 0 {
-		return str.Contains(r.Contains)
+		return exrunes.Contains(str, r.Contains)
 	}
 
 	if len(r.Prefix) > 0 {
-		return str.HasPrefix(r.Prefix)
+		return exrunes.HasPrefix(str, r.Prefix)
 	}
 
 	if len(r.Suffix) > 0 {
-		return str.HasSuffix(r.Suffix)
+		return exrunes.HasSuffix(str, r.Suffix)
 	}
 
 	if r.Pattern != nil {

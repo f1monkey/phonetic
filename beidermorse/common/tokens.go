@@ -1,7 +1,6 @@
 package common
 
 import (
-	"github.com/f1monkey/phonetic/internal/exrunes"
 	"golang.org/x/exp/slices"
 )
 
@@ -31,7 +30,7 @@ func (l Lang) merge(src ...Lang) Lang {
 }
 
 type Token struct {
-	Text  exrunes.Runes
+	Text  []rune
 	Langs Lang
 }
 

@@ -1,28 +1,27 @@
 package exrunes
 
-type Runes []rune
-
-// // contains checks if runes contains passed substring
-func (r Runes) Contains(search []rune) bool {
-	return r.ContainsAt(search, -1)
+// Contains checks if haystack contains passed substring
+func Contains(haystack []rune, needle []rune) bool {
+	return ContainsAt(haystack, needle, -1)
 }
 
-// // checks if passed runes slice is a prefix of the current slice
-func (r Runes) HasPrefix(search Runes) bool {
-	return r.ContainsAt(search, 0)
+// HasPrefix checks if passed runes slice is a prefix of the haystack
+func HasPrefix(haystack []rune, needle []rune) bool {
+	return ContainsAt(haystack, needle, 0)
 }
 
-func (r Runes) HasSuffix(search []rune) bool {
-	return r.ContainsAt(search, len(r)-len(search))
+// HasPrefix checks if passed runes slice is a suffix of the haystack
+func HasSuffix(haystack []rune, needle []rune) bool {
+	return ContainsAt(haystack, needle, len(haystack)-len(needle))
 }
 
-// containsAt check if runes has the provided substring in the specific position
-func (r Runes) ContainsAt(search Runes, index int) bool {
-	if len(search) == 0 {
+// ContainsAt check if haystack has the provided substring in the specific position
+func ContainsAt(haystack []rune, needle []rune, index int) bool {
+	if len(needle) == 0 {
 		return false
 	}
 
-	if len(r) < index-1 {
+	if len(haystack) < index-1 {
 		return false
 	}
 
@@ -32,15 +31,15 @@ func (r Runes) ContainsAt(search Runes, index int) bool {
 	if index < 0 {
 		start = 0
 	}
-	for i := start; i < len(r); i++ {
-		if search[matchCnt] == r[i] {
+	for i := start; i < len(haystack); i++ {
+		if needle[matchCnt] == haystack[i] {
 			matchCnt++
 		} else if index < 0 {
 			matchCnt = 0
 		} else {
 			break
 		}
-		if matchCnt >= len(search) {
+		if matchCnt >= len(needle) {
 			return true
 		}
 
