@@ -7,12 +7,25 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+func Benchmark_NewBuffer(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		NewBuffer(100)
+	}
+}
+
 func Test_NewBuffer(t *testing.T) {
 	b := NewBuffer(100)
 	assert.Equal(t, 0, len(b.buf))
 	assert.Equal(t, 100, cap(b.buf))
 	assert.Equal(t, 0, b.index)
 	assert.Equal(t, 0, len(b.items))
+}
+
+func Benchmark_Buffer_Add(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		buf := NewBuffer(100)
+		buf.Add([]rune{'1', '2', '3'})
+	}
 }
 
 func Test_Buffer_Add(t *testing.T) {
@@ -37,6 +50,13 @@ func Test_Buffer_Add(t *testing.T) {
 	assert.Equal(t, 3, b.items[index].space)
 }
 
+func Benchmark_Buffer_AddWithSpace(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		buf := NewBuffer(100)
+		buf.AddWithSpace([]rune{'1', '2', '3'}, 5)
+	}
+}
+
 func Test_Buffer_AddWithSpace(t *testing.T) {
 	b := NewBuffer(100)
 
@@ -59,6 +79,14 @@ func Test_Buffer_AddWithSpace(t *testing.T) {
 	assert.Equal(t, 5, b.items[index].space)
 }
 
+func Benchmark_Buffer_Copy(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		buf := NewBuffer(100)
+		id := buf.Add([]rune{'1', '2', '3'})
+		buf.Copy(id)
+	}
+}
+
 func Test_Buffer_Copy(t *testing.T) {
 	b := NewBuffer(100)
 
@@ -71,6 +99,16 @@ func Test_Buffer_Copy(t *testing.T) {
 	assert.Equal(t, 6, b.items[index2].from)
 	assert.Equal(t, 9, b.items[index2].to)
 	assert.Equal(t, b.items[index].space, b.items[index2].space)
+}
+
+func Benchmark_Buffer_Get(b *testing.B) {
+	buf := NewBuffer(100)
+	id := buf.Add([]rune{'1', '2', '3'})
+	b.ResetTimer()
+
+	for i := 0; i < b.N; i++ {
+		buf.Get(id)
+	}
 }
 
 func Test_Buffer_Get(t *testing.T) {
@@ -87,6 +125,14 @@ func Test_Buffer_Get(t *testing.T) {
 	id2 := b.Add(data2)
 	require.Equal(t, data2, b.Get(id2))
 	require.Equal(t, data, b.Get(id))
+}
+
+func Benchmark_Buffer_Append(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		buf := NewBuffer(100)
+		id := buf.Add([]rune{'1', '2', '3'})
+		buf.Append(id, []rune{'4'})
+	}
 }
 
 func Test_Buffer_Append(t *testing.T) {
