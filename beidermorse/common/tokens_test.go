@@ -165,46 +165,73 @@ func Test_Tokens_MergeRuleTokens(t *testing.T) {
 	}
 }
 
-// func Benchmark_Tokens_Deduplicate(b *testing.B) {
-// 	src := Tokens{
-// 		{ID: []rune("foo"), Langs: 1},
-// 		{ID: []rune("bar"), Langs: 1},
-// 		{ID: []rune("foo"), Langs: 2},
-// 		{ID: []rune("foo"), Langs: 1},
-// 		{ID: []rune("foo"), Langs: 3},
-// 	}
+func Benchmark_Tokens_Deduplicate(b *testing.B) {
+	src := Tokens{
+		Buf: func() *exrunes.Buffer {
+			buf := exrunes.NewBuffer(100)
+			buf.Add([]rune("foo"))
+			buf.Add([]rune("bar"))
+			buf.Add([]rune("foo"))
+			buf.Add([]rune("foo"))
+			buf.Add([]rune("foo"))
+			return buf
+		}(),
+		Items: []Token{
+			{ID: 0, Langs: 1},
+			{ID: 1, Langs: 1},
+			{ID: 2, Langs: 2},
+			{ID: 3, Langs: 1},
+			{ID: 4, Langs: 3},
+		},
+	}
 
-// 	for i := 0; i < b.N; i++ {
-// 		src.Deduplicate()
-// 	}
-// }
+	for i := 0; i < b.N; i++ {
+		src.Deduplicate()
+	}
+}
 
-// func Test_Tokens_Deduplicate(t *testing.T) {
-// 	cases := []struct {
-// 		src      Tokens
-// 		expected Tokens
-// 	}{
-// 		{
-// 			src: Tokens{
-// 				{ID: []rune("foo"), Langs: 1},
-// 				{ID: []rune("bar"), Langs: 1},
-// 				{ID: []rune("foo"), Langs: 2},
-// 				{ID: []rune("foo"), Langs: 1},
-// 				{ID: []rune("foo"), Langs: 3},
-// 			},
-// 			expected: Tokens{
-// 				{ID: []rune("foo"), Langs: 1},
-// 				{ID: []rune("bar"), Langs: 1},
-// 				{ID: []rune("foo"), Langs: 2},
-// 				{ID: []rune("foo"), Langs: 3},
-// 			},
-// 		},
-// 	}
+func Test_Tokens_Deduplicate(t *testing.T) {
+	cases := []struct {
+		src      Tokens
+		expected []expectedToken
+	}{
+		{
+			src: Tokens{
+				Buf: func() *exrunes.Buffer {
+					buf := exrunes.NewBuffer(100)
+					buf.Add([]rune("foo"))
+					buf.Add([]rune("bar"))
+					buf.Add([]rune("foo"))
+					buf.Add([]rune("foo"))
+					buf.Add([]rune("foo"))
+					return buf
+				}(),
+				Items: []Token{
+					{ID: 0, Langs: 1},
+					{ID: 1, Langs: 1},
+					{ID: 2, Langs: 2},
+					{ID: 3, Langs: 1},
+					{ID: 4, Langs: 3},
+				},
+			},
+			expected: []expectedToken{
+				{text: []rune("foo"), langs: 1},
+				{text: []rune("bar"), langs: 1},
+				{text: []rune("foo"), langs: 2},
+				{text: []rune("foo"), langs: 3},
+			},
+		},
+	}
 
-// 	for i, c := range cases {
-// 		t.Run(strconv.Itoa(i), func(t *testing.T) {
-// 			result := c.src.Deduplicate()
-// 			require.Equal(t, c.expected, result)
-// 		})
-// 	}
-// }
+	for i, c := range cases {
+		t.Run(strconv.Itoa(i), func(t *testing.T) {
+			c.src.Deduplicate()
+			result := make([]expectedToken, len(c.src.Items))
+			for i, t := range c.src.Items {
+				result[i] = expectedToken{text: c.src.Buf.Get(t.ID), langs: t.Langs}
+			}
+
+			require.Equal(t, c.expected, result)
+		})
+	}
+}
