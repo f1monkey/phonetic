@@ -1,9 +1,6 @@
 package exrunes
 
-import "sync"
-
 type Buffer struct {
-	mtx   sync.Mutex
 	buf   []rune
 	index int
 	items map[int]bufferItem
@@ -17,9 +14,6 @@ func NewBuffer(length int) *Buffer {
 }
 
 func (b *Buffer) Add(data []rune) int {
-	b.mtx.Lock()
-	defer b.mtx.Unlock()
-
 	curIndex := b.index
 	b.rawAdd(data, len(data), curIndex)
 	b.index++
@@ -28,9 +22,6 @@ func (b *Buffer) Add(data []rune) int {
 }
 
 func (b *Buffer) Copy(id int) int {
-	b.mtx.Lock()
-	defer b.mtx.Unlock()
-
 	item := b.items[id]
 	curIndex := b.index
 	b.rawAdd(b.buf[item.from:item.to], item.space, curIndex)
@@ -44,9 +35,6 @@ func (b *Buffer) AddWithSpace(data []rune, space int) int {
 		panic("space must be >= 0")
 	}
 
-	b.mtx.Lock()
-	defer b.mtx.Unlock()
-
 	curIndex := b.index
 	b.rawAdd(data, space, curIndex)
 	b.index++
@@ -55,9 +43,6 @@ func (b *Buffer) AddWithSpace(data []rune, space int) int {
 }
 
 func (b *Buffer) Append(id int, data []rune) {
-	b.mtx.Lock()
-	defer b.mtx.Unlock()
-
 	item := b.items[id]
 	if item.space >= len(data) {
 		written := b.rawWrite(data, id)
@@ -79,9 +64,6 @@ func (b *Buffer) Append(id int, data []rune) {
 }
 
 func (b *Buffer) Get(id int) []rune {
-	b.mtx.Lock()
-	defer b.mtx.Unlock()
-
 	item, ok := b.items[id]
 	if !ok {
 		return nil
