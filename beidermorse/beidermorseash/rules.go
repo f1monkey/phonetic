@@ -69,7 +69,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("in"),
 					Langs: 512,
@@ -85,7 +85,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("in"),
 					Langs: 512,
@@ -101,7 +101,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lof"),
 					Langs: 512,
@@ -121,7 +121,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lof"),
 					Langs: 512,
@@ -141,7 +141,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("of"),
 					Langs: 512,
@@ -157,7 +157,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ef"),
 					Langs: 512,
@@ -173,7 +173,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aja"),
 					Langs: -1,
@@ -189,7 +189,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aja"),
 					Langs: -1,
@@ -205,7 +205,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aja"),
 					Langs: -1,
@@ -221,7 +221,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lova"),
 					Langs: -1,
@@ -245,7 +245,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kova"),
 					Langs: -1,
@@ -269,7 +269,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ova"),
 					Langs: -1,
@@ -289,7 +289,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lovna"),
 					Langs: -1,
@@ -313,7 +313,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kovna"),
 					Langs: -1,
@@ -333,7 +333,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovna"),
 					Langs: -1,
@@ -349,7 +349,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -365,7 +365,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -381,7 +381,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -393,7 +393,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -409,7 +409,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -418,7 +418,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -427,7 +427,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("chsch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("xS"),
 					Langs: -1,
@@ -436,7 +436,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -449,7 +449,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("sk"),
 					Langs: 256,
@@ -466,7 +466,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -479,7 +479,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -492,7 +492,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[äöü]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("sh"),
 					Langs: -1,
@@ -505,7 +505,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: 516,
@@ -518,7 +518,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -527,7 +527,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("kh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: 516,
@@ -540,7 +540,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("chs"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: 16,
@@ -561,7 +561,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -578,7 +578,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -591,7 +591,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ck"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -604,7 +604,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("czy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSi"),
 					Langs: -1,
@@ -617,7 +617,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSe"),
 					Langs: -1,
@@ -630,7 +630,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ciewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsevitS"),
 					Langs: -1,
@@ -643,7 +643,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("siewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("sevitS"),
 					Langs: -1,
@@ -656,7 +656,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ziewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("zevitS"),
 					Langs: -1,
@@ -669,7 +669,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("riewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("rjevitS"),
 					Langs: -1,
@@ -678,7 +678,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("diewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("djevitS"),
 					Langs: -1,
@@ -687,7 +687,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tiewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tjevitS"),
 					Langs: -1,
@@ -696,7 +696,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("iewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evitS"),
 					Langs: -1,
@@ -705,7 +705,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evitS"),
 					Langs: -1,
@@ -714,7 +714,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("owicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovitS"),
 					Langs: -1,
@@ -723,7 +723,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("icz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("itS"),
 					Langs: -1,
@@ -732,7 +732,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -745,7 +745,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSB"),
 					Langs: 128,
@@ -758,7 +758,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSa"),
 					Langs: 128,
@@ -775,7 +775,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSom"),
 					Langs: 128,
@@ -788,7 +788,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cią"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSon"),
 					Langs: 128,
@@ -805,7 +805,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSem"),
 					Langs: 128,
@@ -818,7 +818,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cię"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSen"),
 					Langs: 128,
@@ -835,7 +835,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSF"),
 					Langs: 128,
@@ -848,7 +848,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSe"),
 					Langs: 128,
@@ -861,7 +861,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSo"),
 					Langs: 128,
@@ -874,7 +874,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ciu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSu"),
 					Langs: 128,
@@ -890,7 +890,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsi"),
 					Langs: 128,
@@ -911,7 +911,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ci"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsi"),
 					Langs: 128,
@@ -932,7 +932,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsF"),
 					Langs: 128,
@@ -949,7 +949,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ce"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSe"),
 					Langs: 384,
@@ -966,7 +966,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("si"),
 					Langs: -1,
@@ -979,7 +979,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -988,7 +988,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -997,7 +997,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssp"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sp"),
 					Langs: 16,
@@ -1010,7 +1010,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sp"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sp"),
 					Langs: 16,
@@ -1023,7 +1023,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sst"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("St"),
 					Langs: 16,
@@ -1036,7 +1036,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("st"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("St"),
 					Langs: 16,
@@ -1049,7 +1049,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ss"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -1062,7 +1062,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("SB"),
 					Langs: 128,
@@ -1079,7 +1079,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sa"),
 					Langs: 128,
@@ -1096,7 +1096,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Som"),
 					Langs: 128,
@@ -1109,7 +1109,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sią"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Son"),
 					Langs: 128,
@@ -1126,7 +1126,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sem"),
 					Langs: 128,
@@ -1139,7 +1139,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("się"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sen"),
 					Langs: 128,
@@ -1156,7 +1156,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("SF"),
 					Langs: 128,
@@ -1173,7 +1173,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("se"),
 					Langs: -1,
@@ -1190,7 +1190,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("So"),
 					Langs: 128,
@@ -1203,7 +1203,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("siu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Su"),
 					Langs: 128,
@@ -1216,7 +1216,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("si"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Si"),
 					Langs: 128,
@@ -1237,7 +1237,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeiouäöë]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -1250,7 +1250,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ge"),
 					Langs: -1,
@@ -1259,7 +1259,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gui"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gi"),
 					Langs: -1,
@@ -1268,7 +1268,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("guy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gi"),
 					Langs: -1,
@@ -1281,7 +1281,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: 256,
@@ -1297,7 +1297,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("haus"),
 					Langs: -1,
@@ -1309,7 +1309,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("haus"),
 					Langs: -1,
@@ -1321,7 +1321,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1333,7 +1333,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1345,7 +1345,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1354,7 +1354,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("goltz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1366,7 +1366,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1378,7 +1378,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1390,7 +1390,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1402,7 +1402,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -1414,7 +1414,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hendler"),
 					Langs: -1,
@@ -1426,7 +1426,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -1438,7 +1438,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -1450,7 +1450,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -1462,7 +1462,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -1474,7 +1474,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -1486,7 +1486,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -1498,7 +1498,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hof"),
 					Langs: -1,
@@ -1510,7 +1510,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ger"),
 					Langs: -1,
@@ -1522,7 +1522,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gen"),
 					Langs: -1,
@@ -1534,7 +1534,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gin"),
 					Langs: -1,
@@ -1546,7 +1546,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ge"),
 					Langs: -1,
@@ -1563,7 +1563,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ge"),
 					Langs: -1,
@@ -1576,7 +1576,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gE"),
 					Langs: -1,
@@ -1597,7 +1597,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[yaeiou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gI"),
 					Langs: -1,
@@ -1614,7 +1614,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ge"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gE"),
 					Langs: -1,
@@ -1635,7 +1635,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gI"),
 					Langs: -1,
@@ -1660,7 +1660,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gi"),
 					Langs: -1,
@@ -1673,7 +1673,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gi"),
 					Langs: -1,
@@ -1694,7 +1694,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aouyei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -1707,7 +1707,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aouei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -1720,7 +1720,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ej"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -1737,7 +1737,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ej"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -1750,7 +1750,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -1767,7 +1767,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -1784,7 +1784,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -1797,7 +1797,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lo"),
 					Langs: -1,
@@ -1810,7 +1810,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lyo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lo"),
 					Langs: -1,
@@ -1823,7 +1823,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ll"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -1840,7 +1840,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aoeiuy]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -1861,7 +1861,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -1874,7 +1874,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("pf"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("pf"),
 					Langs: -1,
@@ -1891,7 +1891,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ph"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ph"),
 					Langs: -1,
@@ -1904,7 +1904,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kv"),
 					Langs: 16,
@@ -1921,7 +1921,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Suffix:           []rune("t"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Se"),
 					Langs: 128,
@@ -1934,7 +1934,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rze"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("rze"),
 					Langs: -1,
@@ -1963,7 +1963,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Suffix:           []rune("t"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Si"),
 					Langs: 128,
@@ -1976,7 +1976,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rzy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zi"),
 					Langs: 128,
@@ -1997,7 +1997,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Suffix:           []rune("t"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: 128,
@@ -2010,7 +2010,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("rz"),
 					Langs: -1,
@@ -2038,7 +2038,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -2054,7 +2054,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -2067,7 +2067,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: 532,
@@ -2080,7 +2080,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -2101,7 +2101,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ZB"),
 					Langs: 128,
@@ -2118,7 +2118,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Za"),
 					Langs: 128,
@@ -2135,7 +2135,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zom"),
 					Langs: 128,
@@ -2148,7 +2148,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zią"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zon"),
 					Langs: 128,
@@ -2165,7 +2165,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zem"),
 					Langs: 128,
@@ -2178,7 +2178,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zię"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zen"),
 					Langs: 128,
@@ -2195,7 +2195,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ZF"),
 					Langs: 128,
@@ -2216,7 +2216,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ze"),
 					Langs: -1,
@@ -2233,7 +2233,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zo"),
 					Langs: 128,
@@ -2246,7 +2246,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ziu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zu"),
 					Langs: 128,
@@ -2259,7 +2259,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zi"),
 					Langs: 128,
@@ -2279,7 +2279,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tal"),
 					Langs: -1,
@@ -2291,7 +2291,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -2304,7 +2304,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeiou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: 16,
@@ -2317,7 +2317,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("th"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -2326,7 +2326,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("vogel"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vogel"),
 					Langs: -1,
@@ -2342,7 +2342,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -2359,7 +2359,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aeiouyäöü]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -2368,7 +2368,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -2384,7 +2384,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -2401,7 +2401,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile(" $"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -2414,7 +2414,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -2427,7 +2427,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -2440,7 +2440,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -2456,7 +2456,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -2472,7 +2472,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -2484,7 +2484,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -2493,7 +2493,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -2502,7 +2502,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oue"),
 					Langs: -1,
@@ -2511,7 +2511,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("au"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("au"),
 					Langs: -1,
@@ -2524,7 +2524,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ou"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ou"),
 					Langs: -1,
@@ -2537,7 +2537,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -2550,7 +2550,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ae"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: 16,
@@ -2567,7 +2567,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oe"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: 16,
@@ -2584,7 +2584,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ee"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: 4,
@@ -2601,7 +2601,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -2610,7 +2610,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -2619,7 +2619,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("eu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: 16,
@@ -2640,7 +2640,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -2653,7 +2653,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -2666,7 +2666,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: 16,
@@ -2687,7 +2687,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: 16,
@@ -2708,7 +2708,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -2725,7 +2725,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -2738,7 +2738,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -2747,7 +2747,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("io"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("jo"),
 					Langs: -1,
@@ -2760,7 +2760,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("jo"),
 					Langs: -1,
@@ -2773,7 +2773,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ea"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ea"),
 					Langs: -1,
@@ -2789,7 +2789,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -2802,7 +2802,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: 4,
@@ -2815,7 +2815,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("uu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -2824,7 +2824,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ć"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: 128,
@@ -2837,7 +2837,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ł"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -2846,7 +2846,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ń"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -2855,7 +2855,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ñ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -2868,7 +2868,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ś"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: 128,
@@ -2881,7 +2881,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ş"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -2890,7 +2890,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ţ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -2899,7 +2899,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ż"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -2908,7 +2908,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ź"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: 128,
@@ -2921,7 +2921,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("où"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -2934,7 +2934,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("om"),
 					Langs: -1,
@@ -2943,7 +2943,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ą"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("on"),
 					Langs: -1,
@@ -2952,7 +2952,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ä"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -2965,7 +2965,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("á"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -2974,7 +2974,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ă"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: 256,
@@ -2987,7 +2987,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("à"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -2996,7 +2996,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("â"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -3005,7 +3005,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("é"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -3014,7 +3014,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("è"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -3023,7 +3023,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ê"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -3036,7 +3036,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("em"),
 					Langs: -1,
@@ -3045,7 +3045,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ę"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("en"),
 					Langs: -1,
@@ -3054,7 +3054,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("í"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -3063,7 +3063,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("î"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -3072,7 +3072,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ö"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -3081,7 +3081,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ő"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -3090,7 +3090,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ó"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: 128,
@@ -3103,7 +3103,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ű"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -3112,7 +3112,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ü"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -3121,7 +3121,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ú"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -3130,7 +3130,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ű"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -3139,7 +3139,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ß"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -3148,7 +3148,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("'"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -3157,7 +3157,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("\""),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -3170,7 +3170,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("A"),
 					Langs: -1,
@@ -3187,7 +3187,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -3204,7 +3204,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("O"),
 					Langs: -1,
@@ -3217,7 +3217,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("A"),
 					Langs: -1,
@@ -3226,7 +3226,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -3235,7 +3235,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -3248,7 +3248,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -3257,7 +3257,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -3266,7 +3266,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -3275,7 +3275,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -3284,7 +3284,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -3293,7 +3293,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -3302,7 +3302,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -3311,7 +3311,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -3320,7 +3320,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -3329,7 +3329,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -3338,7 +3338,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -3347,7 +3347,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("O"),
 					Langs: -1,
@@ -3356,7 +3356,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -3365,7 +3365,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -3374,7 +3374,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -3383,7 +3383,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -3392,7 +3392,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -3401,7 +3401,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("U"),
 					Langs: -1,
@@ -3410,7 +3410,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -3419,7 +3419,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -3428,7 +3428,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -3437,7 +3437,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -3446,7 +3446,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: 16,
@@ -3461,7 +3461,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(Cyrillic): {
 		{
 			Pattern: []rune("ця"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsa"),
 					Langs: -1,
@@ -3470,7 +3470,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("цю"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsu"),
 					Langs: -1,
@@ -3479,7 +3479,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("циа"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsa"),
 					Langs: -1,
@@ -3488,7 +3488,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("цие"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tse"),
 					Langs: -1,
@@ -3497,7 +3497,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("цио"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tso"),
 					Langs: -1,
@@ -3506,7 +3506,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("циу"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsu"),
 					Langs: -1,
@@ -3515,7 +3515,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("сие"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("se"),
 					Langs: -1,
@@ -3524,7 +3524,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("сио"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("so"),
 					Langs: -1,
@@ -3533,7 +3533,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("зие"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ze"),
 					Langs: -1,
@@ -3542,7 +3542,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("зио"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("zo"),
 					Langs: -1,
@@ -3554,7 +3554,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("haus"),
 					Langs: -1,
@@ -3566,7 +3566,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("haus"),
 					Langs: -1,
@@ -3578,7 +3578,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -3590,7 +3590,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -3602,7 +3602,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -3614,7 +3614,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hof"),
 					Langs: -1,
@@ -3626,7 +3626,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ger"),
 					Langs: -1,
@@ -3638,7 +3638,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gen"),
 					Langs: -1,
@@ -3650,7 +3650,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gin"),
 					Langs: -1,
@@ -3667,7 +3667,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -3680,7 +3680,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -3693,7 +3693,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ля"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("la"),
 					Langs: -1,
@@ -3702,7 +3702,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("лю"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lu"),
 					Langs: -1,
@@ -3711,7 +3711,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("лё"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("le"),
 					Langs: -1,
@@ -3724,7 +3724,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("лио"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("le"),
 					Langs: -1,
@@ -3737,7 +3737,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ле"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lE"),
 					Langs: -1,
@@ -3750,7 +3750,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ийе"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -3759,7 +3759,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ие"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -3768,7 +3768,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ыйе"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -3777,7 +3777,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ые"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -3790,7 +3790,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^(а|о|у)"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -3803,7 +3803,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^(а|о|у)"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -3815,7 +3815,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -3827,7 +3827,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -3836,7 +3836,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ё"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -3852,7 +3852,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("jaj"),
 					Langs: -1,
@@ -3869,7 +3869,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("(а|е|о|у)$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -3881,7 +3881,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -3890,7 +3890,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("эй"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -3899,7 +3899,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ей"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -3908,7 +3908,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ауе"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -3917,7 +3917,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ауэ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -3926,7 +3926,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("а"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -3935,7 +3935,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("б"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -3944,7 +3944,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("в"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -3953,7 +3953,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("г"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -3962,7 +3962,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("д"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -3971,7 +3971,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("е"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -3980,7 +3980,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ж"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -3989,7 +3989,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("з"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -3998,7 +3998,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("и"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -4007,7 +4007,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("й"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -4016,7 +4016,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("к"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -4025,7 +4025,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("л"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -4034,7 +4034,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("м"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -4043,7 +4043,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("н"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -4052,7 +4052,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("о"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -4061,7 +4061,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("п"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -4070,7 +4070,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("р"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -4083,7 +4083,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Prefix:           []rune("с"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4092,7 +4092,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("с"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -4101,7 +4101,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("т"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -4110,7 +4110,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("у"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -4119,7 +4119,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ф"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -4128,7 +4128,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("х"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -4137,7 +4137,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ц"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -4146,7 +4146,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ч"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -4155,7 +4155,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ш"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -4164,7 +4164,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("щ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("StS"),
 					Langs: -1,
@@ -4173,7 +4173,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ъ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4182,7 +4182,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ы"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -4191,7 +4191,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ь"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4200,7 +4200,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("э"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -4209,7 +4209,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ю"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ju"),
 					Langs: -1,
@@ -4218,7 +4218,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("я"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ja"),
 					Langs: -1,
@@ -4229,7 +4229,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(English): {
 		{
 			Pattern: []rune("tch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -4238,7 +4238,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -4251,7 +4251,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ck"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -4264,7 +4264,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[iey]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -4277,7 +4277,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Prefix:           []rune("c"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4290,7 +4290,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[iey]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -4299,7 +4299,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -4311,7 +4311,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -4320,7 +4320,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -4337,7 +4337,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gn"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gn"),
 					Langs: -1,
@@ -4354,7 +4354,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[iey]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -4367,7 +4367,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("th"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -4376,7 +4376,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("kh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -4385,7 +4385,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ph"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -4394,7 +4394,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -4407,7 +4407,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -4419,7 +4419,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hu"),
 					Langs: -1,
@@ -4431,7 +4431,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("w"),
 					Langs: -1,
@@ -4443,7 +4443,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4456,7 +4456,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[^aeiou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4468,7 +4468,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("H"),
 					Langs: -1,
@@ -4477,7 +4477,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -4486,7 +4486,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("dZ"),
 					Langs: -1,
@@ -4498,7 +4498,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -4510,7 +4510,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -4522,7 +4522,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("N"),
 					Langs: -1,
@@ -4538,7 +4538,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("pn"),
 					Langs: -1,
@@ -4554,7 +4554,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ps"),
 					Langs: -1,
@@ -4567,7 +4567,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kw"),
 					Langs: -1,
@@ -4576,7 +4576,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -4585,7 +4585,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("So"),
 					Langs: -1,
@@ -4598,7 +4598,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("So"),
 					Langs: -1,
@@ -4610,7 +4610,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -4619,7 +4619,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("w"),
 					Langs: -1,
@@ -4635,7 +4635,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -4644,7 +4644,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -4657,7 +4657,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile(" $"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -4673,7 +4673,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeiouy]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -4682,7 +4682,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -4691,7 +4691,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -4704,7 +4704,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ai"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -4717,7 +4717,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ay"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -4730,7 +4730,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -4739,7 +4739,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -4756,7 +4756,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -4769,7 +4769,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -4782,7 +4782,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ear"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ia"),
 					Langs: -1,
@@ -4791,7 +4791,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ea"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -4804,7 +4804,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ee"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -4817,7 +4817,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -4829,7 +4829,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -4842,7 +4842,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -4851,7 +4851,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -4864,7 +4864,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -4873,7 +4873,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -4882,7 +4882,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oa"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ou"),
 					Langs: -1,
@@ -4891,7 +4891,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oj"),
 					Langs: -1,
@@ -4900,7 +4900,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -4909,7 +4909,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ou"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -4922,7 +4922,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oj"),
 					Langs: -1,
@@ -4935,7 +4935,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ou"),
 					Langs: -1,
@@ -4944,7 +4944,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -4961,7 +4961,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[^aeiou]e"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ju"),
 					Langs: -1,
@@ -4978,7 +4978,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Prefix:           []rune("r"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -4991,7 +4991,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -5004,7 +5004,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -5013,7 +5013,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -5022,7 +5022,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -5031,7 +5031,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -5040,7 +5040,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -5049,7 +5049,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5058,7 +5058,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -5067,7 +5067,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -5076,7 +5076,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -5085,7 +5085,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -5094,7 +5094,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -5103,7 +5103,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -5112,7 +5112,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -5121,7 +5121,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -5130,7 +5130,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -5141,7 +5141,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(French): {
 		{
 			Pattern: []rune("kh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -5150,7 +5150,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ph"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -5159,7 +5159,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ç"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -5168,7 +5168,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -5177,7 +5177,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -5190,7 +5190,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[eiyéèê]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -5199,7 +5199,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5208,7 +5208,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gn"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -5225,7 +5225,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -5237,7 +5237,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5250,7 +5250,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -5262,7 +5262,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5271,7 +5271,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5280,7 +5280,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5297,7 +5297,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeiouyéèê]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -5310,7 +5310,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -5322,7 +5322,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -5331,7 +5331,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -5340,7 +5340,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -5353,7 +5353,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aioe]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -5370,7 +5370,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeio]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -5379,7 +5379,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("uo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vo"),
 					Langs: -1,
@@ -5396,7 +5396,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeio]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -5405,7 +5405,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -5414,7 +5414,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("eau"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -5423,7 +5423,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ai"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -5432,7 +5432,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ay"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -5441,7 +5441,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("é"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -5450,7 +5450,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ê"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -5459,7 +5459,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("è"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -5468,7 +5468,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("à"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -5477,7 +5477,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("â"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -5486,7 +5486,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("où"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -5495,7 +5495,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ou"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -5504,7 +5504,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oj"),
 					Langs: -1,
@@ -5513,7 +5513,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -5522,7 +5522,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -5535,7 +5535,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[ou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -5547,7 +5547,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -5564,7 +5564,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -5577,7 +5577,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aoeu]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -5586,7 +5586,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -5595,7 +5595,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ii"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -5604,7 +5604,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -5613,7 +5613,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -5622,7 +5622,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -5631,7 +5631,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -5640,7 +5640,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -5649,7 +5649,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -5658,7 +5658,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -5667,7 +5667,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -5676,7 +5676,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -5685,7 +5685,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -5694,7 +5694,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5703,7 +5703,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -5712,7 +5712,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -5721,7 +5721,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -5730,7 +5730,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -5739,7 +5739,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -5748,7 +5748,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -5757,7 +5757,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -5766,7 +5766,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -5775,7 +5775,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -5784,7 +5784,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -5793,7 +5793,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -5804,7 +5804,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(German): {
 		{
 			Pattern: []rune("ziu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsu"),
 					Langs: -1,
@@ -5813,7 +5813,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsa"),
 					Langs: -1,
@@ -5822,7 +5822,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tso"),
 					Langs: -1,
@@ -5831,7 +5831,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -5840,7 +5840,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("chsch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("xS"),
 					Langs: -1,
@@ -5852,7 +5852,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evitS"),
 					Langs: -1,
@@ -5864,7 +5864,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovitS"),
 					Langs: -1,
@@ -5876,7 +5876,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evitS"),
 					Langs: -1,
@@ -5888,7 +5888,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovitS"),
 					Langs: -1,
@@ -5900,7 +5900,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vitS"),
 					Langs: -1,
@@ -5912,7 +5912,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vitS"),
 					Langs: -1,
@@ -5921,7 +5921,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -5930,7 +5930,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("chs"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -5939,7 +5939,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -5948,7 +5948,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ck"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -5961,7 +5961,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[eiy]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -5973,7 +5973,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sp"),
 					Langs: -1,
@@ -5985,7 +5985,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("St"),
 					Langs: -1,
@@ -5994,7 +5994,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssp"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sp"),
 					Langs: -1,
@@ -6007,7 +6007,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sp"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sp"),
 					Langs: -1,
@@ -6020,7 +6020,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sst"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("St"),
 					Langs: -1,
@@ -6033,7 +6033,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("st"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("St"),
 					Langs: -1,
@@ -6046,7 +6046,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("pf"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("pf"),
 					Langs: -1,
@@ -6063,7 +6063,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ph"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ph"),
 					Langs: -1,
@@ -6076,7 +6076,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kv"),
 					Langs: -1,
@@ -6088,7 +6088,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evits"),
 					Langs: -1,
@@ -6104,7 +6104,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evits"),
 					Langs: -1,
@@ -6120,7 +6120,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evits"),
 					Langs: -1,
@@ -6136,7 +6136,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evits"),
 					Langs: -1,
@@ -6152,7 +6152,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovits"),
 					Langs: -1,
@@ -6168,7 +6168,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovits"),
 					Langs: -1,
@@ -6184,7 +6184,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovits"),
 					Langs: -1,
@@ -6200,7 +6200,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovits"),
 					Langs: -1,
@@ -6216,7 +6216,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vits"),
 					Langs: -1,
@@ -6232,7 +6232,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vits"),
 					Langs: -1,
@@ -6248,7 +6248,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vits"),
 					Langs: -1,
@@ -6264,7 +6264,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vits"),
 					Langs: -1,
@@ -6277,7 +6277,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -6289,7 +6289,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tal"),
 					Langs: -1,
@@ -6301,7 +6301,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -6314,7 +6314,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[äöüaeiou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -6327,7 +6327,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("th"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -6339,7 +6339,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -6352,7 +6352,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aeiouyäöü]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -6364,7 +6364,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("H"),
 					Langs: -1,
@@ -6373,7 +6373,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ss"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -6386,7 +6386,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[äöüaeiouy]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -6407,7 +6407,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeiouyäöü]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -6416,7 +6416,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ß"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -6428,7 +6428,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -6437,7 +6437,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -6446,7 +6446,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -6455,7 +6455,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ae"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -6464,7 +6464,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oe"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -6473,7 +6473,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ü"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -6482,7 +6482,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ä"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -6495,7 +6495,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ö"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -6504,7 +6504,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -6513,7 +6513,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -6522,7 +6522,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("eu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -6539,7 +6539,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -6552,7 +6552,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -6561,7 +6561,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -6574,7 +6574,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -6587,7 +6587,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aoeu]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -6596,7 +6596,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ñ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -6605,7 +6605,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ã"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -6614,7 +6614,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ő"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -6623,7 +6623,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ű"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -6632,7 +6632,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ç"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -6641,7 +6641,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("A"),
 					Langs: -1,
@@ -6650,7 +6650,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -6659,7 +6659,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -6668,7 +6668,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -6677,7 +6677,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -6686,7 +6686,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -6695,7 +6695,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -6704,7 +6704,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -6713,7 +6713,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -6722,7 +6722,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -6731,7 +6731,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -6740,7 +6740,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -6749,7 +6749,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -6758,7 +6758,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -6767,7 +6767,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("O"),
 					Langs: -1,
@@ -6776,7 +6776,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -6785,7 +6785,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -6794,7 +6794,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -6803,7 +6803,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -6812,7 +6812,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -6821,7 +6821,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("U"),
 					Langs: -1,
@@ -6830,7 +6830,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -6843,7 +6843,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -6852,7 +6852,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -6861,7 +6861,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -6870,7 +6870,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -6881,7 +6881,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(Hebrew): {
 		{
 			Pattern: []rune("אי"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -6890,7 +6890,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("עי"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -6899,7 +6899,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("עו"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("VV"),
 					Langs: -1,
@@ -6908,7 +6908,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("או"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("VV"),
 					Langs: -1,
@@ -6917,7 +6917,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ג׳"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -6926,7 +6926,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ד׳"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("dZ"),
 					Langs: -1,
@@ -6935,7 +6935,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("א"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("L"),
 					Langs: -1,
@@ -6944,7 +6944,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ב"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -6953,7 +6953,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ג"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -6962,7 +6962,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ד"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -6974,7 +6974,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("1"),
 					Langs: -1,
@@ -6986,7 +6986,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("1"),
 					Langs: -1,
@@ -6995,7 +6995,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ה"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -7004,7 +7004,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("וו"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("V"),
 					Langs: -1,
@@ -7013,7 +7013,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("וי"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("WW"),
 					Langs: -1,
@@ -7022,7 +7022,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ו"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("W"),
 					Langs: -1,
@@ -7031,7 +7031,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ז"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -7040,7 +7040,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ח"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("X"),
 					Langs: -1,
@@ -7049,7 +7049,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ט"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("T"),
 					Langs: -1,
@@ -7058,7 +7058,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("יי"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -7067,7 +7067,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("י"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -7076,7 +7076,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ך"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("X"),
 					Langs: -1,
@@ -7088,7 +7088,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("K"),
 					Langs: -1,
@@ -7097,7 +7097,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("כ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -7106,7 +7106,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ל"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -7115,7 +7115,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ם"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -7124,7 +7124,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("מ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -7133,7 +7133,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ן"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -7142,7 +7142,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("נ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -7151,7 +7151,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ס"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -7160,7 +7160,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ע"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("L"),
 					Langs: -1,
@@ -7169,7 +7169,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ף"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -7178,7 +7178,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("פ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -7187,7 +7187,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ץ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("C"),
 					Langs: -1,
@@ -7196,7 +7196,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("צ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("C"),
 					Langs: -1,
@@ -7205,7 +7205,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ק"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("K"),
 					Langs: -1,
@@ -7214,7 +7214,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ר"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -7223,7 +7223,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ש"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -7232,7 +7232,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ת"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("TB"),
 					Langs: -1,
@@ -7243,7 +7243,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(Hungarian): {
 		{
 			Pattern: []rune("sz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -7252,7 +7252,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zs"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -7261,7 +7261,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cs"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -7270,7 +7270,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ay"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oj"),
 					Langs: -1,
@@ -7283,7 +7283,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ai"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oj"),
 					Langs: -1,
@@ -7296,7 +7296,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aj"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oj"),
 					Langs: -1,
@@ -7309,7 +7309,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -7318,7 +7318,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -7331,7 +7331,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[áo]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -7344,7 +7344,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[áo]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -7353,7 +7353,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ee"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -7366,7 +7366,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ely"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -7379,7 +7379,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ly"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -7396,7 +7396,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("dj"),
 					Langs: -1,
@@ -7405,7 +7405,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -7422,7 +7422,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("nj"),
 					Langs: -1,
@@ -7431,7 +7431,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ny"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -7448,7 +7448,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tj"),
 					Langs: -1,
@@ -7457,7 +7457,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ty"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -7470,7 +7470,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ku"),
 					Langs: -1,
@@ -7486,7 +7486,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -7495,7 +7495,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("á"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -7504,7 +7504,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("é"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -7513,7 +7513,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("í"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -7522,7 +7522,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ó"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -7531,7 +7531,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ö"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -7540,7 +7540,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ő"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Y"),
 					Langs: -1,
@@ -7549,7 +7549,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ú"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -7558,7 +7558,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ü"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -7567,7 +7567,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ű"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Q"),
 					Langs: -1,
@@ -7576,7 +7576,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -7585,7 +7585,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -7594,7 +7594,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -7603,7 +7603,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -7612,7 +7612,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -7621,7 +7621,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -7630,7 +7630,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -7639,7 +7639,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -7648,7 +7648,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -7657,7 +7657,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -7666,7 +7666,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -7675,7 +7675,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -7684,7 +7684,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -7693,7 +7693,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -7702,7 +7702,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -7711,7 +7711,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -7720,7 +7720,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -7729,7 +7729,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -7738,7 +7738,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -7751,7 +7751,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -7760,7 +7760,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -7769,7 +7769,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -7778,7 +7778,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -7787,7 +7787,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -7796,7 +7796,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -7805,7 +7805,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -7819,7 +7819,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ski"),
 					Langs: -1,
@@ -7831,7 +7831,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tski"),
 					Langs: -1,
@@ -7843,7 +7843,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lova"),
 					Langs: -1,
@@ -7867,7 +7867,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kova"),
 					Langs: -1,
@@ -7891,7 +7891,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ova"),
 					Langs: -1,
@@ -7911,7 +7911,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lovna"),
 					Langs: -1,
@@ -7935,7 +7935,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kovna"),
 					Langs: -1,
@@ -7955,7 +7955,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovna"),
 					Langs: -1,
@@ -7971,7 +7971,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -7987,7 +7987,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -8003,7 +8003,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -8015,7 +8015,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -8028,7 +8028,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("czy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSi"),
 					Langs: -1,
@@ -8041,7 +8041,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSe"),
 					Langs: -1,
@@ -8054,7 +8054,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ciewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsevitS"),
 					Langs: -1,
@@ -8067,7 +8067,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("siewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("sevitS"),
 					Langs: -1,
@@ -8080,7 +8080,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ziewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("zevitS"),
 					Langs: -1,
@@ -8093,7 +8093,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("riewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("rjevitS"),
 					Langs: -1,
@@ -8102,7 +8102,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("diewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("djevitS"),
 					Langs: -1,
@@ -8111,7 +8111,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tiewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tjevitS"),
 					Langs: -1,
@@ -8120,7 +8120,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("iewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evitS"),
 					Langs: -1,
@@ -8129,7 +8129,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ewicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("evitS"),
 					Langs: -1,
@@ -8138,7 +8138,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("owicz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ovitS"),
 					Langs: -1,
@@ -8147,7 +8147,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("icz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("itS"),
 					Langs: -1,
@@ -8156,7 +8156,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -8165,7 +8165,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -8178,7 +8178,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSB"),
 					Langs: -1,
@@ -8191,7 +8191,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSa"),
 					Langs: -1,
@@ -8208,7 +8208,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSom"),
 					Langs: -1,
@@ -8221,7 +8221,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cią"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSon"),
 					Langs: -1,
@@ -8238,7 +8238,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSem"),
 					Langs: -1,
@@ -8251,7 +8251,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cię"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSen"),
 					Langs: -1,
@@ -8268,7 +8268,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSF"),
 					Langs: -1,
@@ -8281,7 +8281,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSe"),
 					Langs: -1,
@@ -8294,7 +8294,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("cio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSo"),
 					Langs: -1,
@@ -8307,7 +8307,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ciu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSu"),
 					Langs: -1,
@@ -8320,7 +8320,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ci"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSi"),
 					Langs: -1,
@@ -8333,7 +8333,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ć"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -8346,7 +8346,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -8355,7 +8355,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -8368,7 +8368,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("SB"),
 					Langs: -1,
@@ -8385,7 +8385,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sa"),
 					Langs: -1,
@@ -8402,7 +8402,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Som"),
 					Langs: -1,
@@ -8415,7 +8415,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sią"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Son"),
 					Langs: -1,
@@ -8432,7 +8432,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sem"),
 					Langs: -1,
@@ -8445,7 +8445,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("się"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Sen"),
 					Langs: -1,
@@ -8462,7 +8462,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("SF"),
 					Langs: -1,
@@ -8479,7 +8479,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Se"),
 					Langs: -1,
@@ -8492,7 +8492,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("So"),
 					Langs: -1,
@@ -8505,7 +8505,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("siu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Su"),
 					Langs: -1,
@@ -8518,7 +8518,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("si"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Si"),
 					Langs: -1,
@@ -8531,7 +8531,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ś"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -8548,7 +8548,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ZB"),
 					Langs: -1,
@@ -8565,7 +8565,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Za"),
 					Langs: -1,
@@ -8582,7 +8582,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zom"),
 					Langs: -1,
@@ -8595,7 +8595,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zią"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zon"),
 					Langs: -1,
@@ -8612,7 +8612,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zem"),
 					Langs: -1,
@@ -8625,7 +8625,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zię"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zen"),
 					Langs: -1,
@@ -8642,7 +8642,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ZF"),
 					Langs: -1,
@@ -8655,7 +8655,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Ze"),
 					Langs: -1,
@@ -8668,7 +8668,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zo"),
 					Langs: -1,
@@ -8681,7 +8681,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ziu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zu"),
 					Langs: -1,
@@ -8694,7 +8694,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zi"),
 					Langs: -1,
@@ -8711,7 +8711,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Ze"),
 					Langs: -1,
@@ -8728,7 +8728,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Ze"),
 					Langs: -1,
@@ -8749,7 +8749,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("że"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Ze"),
 					Langs: -1,
@@ -8758,7 +8758,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("źe"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Ze"),
 					Langs: -1,
@@ -8771,7 +8771,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ży"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zi"),
 					Langs: -1,
@@ -8780,7 +8780,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("źi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zi"),
 					Langs: -1,
@@ -8793,7 +8793,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ż"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -8802,7 +8802,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ź"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -8819,7 +8819,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Suffix:           []rune("t"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Se"),
 					Langs: -1,
@@ -8832,7 +8832,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rze"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Ze"),
 					Langs: -1,
@@ -8853,7 +8853,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Suffix:           []rune("t"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Si"),
 					Langs: -1,
@@ -8866,7 +8866,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rzy"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Zi"),
 					Langs: -1,
@@ -8887,7 +8887,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Suffix:           []rune("t"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -8900,7 +8900,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -8917,7 +8917,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lo"),
 					Langs: -1,
@@ -8930,7 +8930,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ł"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -8939,7 +8939,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ń"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -8948,7 +8948,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -8961,7 +8961,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Prefix:           []rune("s"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -8970,7 +8970,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ó"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -8987,7 +8987,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("om"),
 					Langs: -1,
@@ -9000,7 +9000,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bp]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("em"),
 					Langs: -1,
@@ -9009,7 +9009,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ą"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("on"),
 					Langs: -1,
@@ -9018,7 +9018,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ę"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("en"),
 					Langs: -1,
@@ -9027,7 +9027,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ije"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -9036,7 +9036,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yje"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -9045,7 +9045,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("iie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -9054,7 +9054,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -9063,7 +9063,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("iye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -9072,7 +9072,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -9085,7 +9085,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9098,7 +9098,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9111,7 +9111,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9124,7 +9124,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9137,7 +9137,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9150,7 +9150,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9159,7 +9159,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("rie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("rje"),
 					Langs: -1,
@@ -9168,7 +9168,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("die"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("dje"),
 					Langs: -1,
@@ -9177,7 +9177,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tje"),
 					Langs: -1,
@@ -9190,7 +9190,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("F"),
 					Langs: -1,
@@ -9199,7 +9199,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -9208,7 +9208,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -9217,7 +9217,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("au"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("au"),
 					Langs: -1,
@@ -9226,7 +9226,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9235,7 +9235,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9244,7 +9244,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ej"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9253,7 +9253,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ai"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9262,7 +9262,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ay"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9271,7 +9271,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aj"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9284,7 +9284,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[ou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9297,7 +9297,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[ou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9310,7 +9310,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9323,7 +9323,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9336,7 +9336,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("B"),
 					Langs: -1,
@@ -9349,7 +9349,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -9366,7 +9366,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("P"),
 					Langs: -1,
@@ -9375,7 +9375,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -9384,7 +9384,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -9393,7 +9393,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -9402,7 +9402,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -9411,7 +9411,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -9420,7 +9420,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -9429,7 +9429,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -9438,7 +9438,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -9451,7 +9451,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -9460,7 +9460,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9469,7 +9469,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9478,7 +9478,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -9487,7 +9487,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -9496,7 +9496,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -9505,7 +9505,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -9514,7 +9514,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -9523,7 +9523,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9532,7 +9532,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -9541,7 +9541,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -9550,7 +9550,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -9559,7 +9559,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -9568,7 +9568,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -9577,7 +9577,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -9586,7 +9586,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -9595,7 +9595,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -9604,7 +9604,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -9615,7 +9615,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(Romanian): {
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -9624,7 +9624,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ce"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSe"),
 					Langs: -1,
@@ -9633,7 +9633,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ci"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tSi"),
 					Langs: -1,
@@ -9650,7 +9650,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9659,7 +9659,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -9668,7 +9668,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9677,7 +9677,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gi"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("dZi"),
 					Langs: -1,
@@ -9694,7 +9694,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("dZ"),
 					Langs: -1,
@@ -9703,7 +9703,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -9712,7 +9712,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -9725,7 +9725,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9738,7 +9738,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -9747,7 +9747,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ţ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -9756,7 +9756,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ş"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -9765,7 +9765,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -9778,7 +9778,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9787,7 +9787,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9796,7 +9796,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -9805,7 +9805,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -9814,7 +9814,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -9823,7 +9823,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("î"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -9832,7 +9832,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ea"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ja"),
 					Langs: -1,
@@ -9841,7 +9841,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ă"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -9854,7 +9854,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -9863,7 +9863,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -9872,7 +9872,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -9881,7 +9881,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -9890,7 +9890,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -9899,7 +9899,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -9908,7 +9908,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -9917,7 +9917,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -9926,7 +9926,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -9935,7 +9935,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -9944,7 +9944,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -9953,7 +9953,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -9962,7 +9962,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -9971,7 +9971,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -9980,7 +9980,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -9989,7 +9989,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -9998,7 +9998,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -10007,7 +10007,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -10016,7 +10016,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -10025,7 +10025,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -10039,7 +10039,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("in"),
 					Langs: -1,
@@ -10055,7 +10055,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("in"),
 					Langs: -1,
@@ -10071,7 +10071,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lof"),
 					Langs: -1,
@@ -10087,7 +10087,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lof"),
 					Langs: -1,
@@ -10107,7 +10107,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("of"),
 					Langs: -1,
@@ -10123,7 +10123,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ef"),
 					Langs: -1,
@@ -10139,7 +10139,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aja"),
 					Langs: -1,
@@ -10155,7 +10155,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aja"),
 					Langs: -1,
@@ -10171,7 +10171,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aja"),
 					Langs: -1,
@@ -10184,7 +10184,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsya"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsa"),
 					Langs: -1,
@@ -10193,7 +10193,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsyu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsu"),
 					Langs: -1,
@@ -10202,7 +10202,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsa"),
 					Langs: -1,
@@ -10211,7 +10211,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tse"),
 					Langs: -1,
@@ -10220,7 +10220,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tso"),
 					Langs: -1,
@@ -10229,7 +10229,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tse"),
 					Langs: -1,
@@ -10238,7 +10238,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsyo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tso"),
 					Langs: -1,
@@ -10247,7 +10247,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tsiu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tsu"),
 					Langs: -1,
@@ -10256,7 +10256,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("se"),
 					Langs: -1,
@@ -10265,7 +10265,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("so"),
 					Langs: -1,
@@ -10274,7 +10274,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ze"),
 					Langs: -1,
@@ -10283,7 +10283,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("zo"),
 					Langs: -1,
@@ -10292,7 +10292,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("se"),
 					Langs: -1,
@@ -10301,7 +10301,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("syo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("so"),
 					Langs: -1,
@@ -10310,7 +10310,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ze"),
 					Langs: -1,
@@ -10319,7 +10319,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zyo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("zo"),
 					Langs: -1,
@@ -10331,7 +10331,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("haus"),
 					Langs: -1,
@@ -10343,7 +10343,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("haus"),
 					Langs: -1,
@@ -10355,7 +10355,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -10367,7 +10367,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -10379,7 +10379,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -10391,7 +10391,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("holts"),
 					Langs: -1,
@@ -10403,7 +10403,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -10415,7 +10415,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -10427,7 +10427,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -10439,7 +10439,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -10451,7 +10451,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajmer"),
 					Langs: -1,
@@ -10463,7 +10463,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hajm"),
 					Langs: -1,
@@ -10475,7 +10475,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hendler"),
 					Langs: -1,
@@ -10487,7 +10487,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hof"),
 					Langs: -1,
@@ -10499,7 +10499,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hojf"),
 					Langs: -1,
@@ -10511,7 +10511,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hojf"),
 					Langs: -1,
@@ -10523,7 +10523,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("hojf"),
 					Langs: -1,
@@ -10535,7 +10535,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ger"),
 					Langs: -1,
@@ -10547,7 +10547,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gen"),
 					Langs: -1,
@@ -10559,7 +10559,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("gin"),
 					Langs: -1,
@@ -10568,7 +10568,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("gg"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -10584,7 +10584,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kog"),
 					Langs: -1,
@@ -10604,7 +10604,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kag"),
 					Langs: -1,
@@ -10625,7 +10625,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -10638,7 +10638,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aeoiu]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -10651,7 +10651,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("kh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -10660,7 +10660,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -10673,7 +10673,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("StS"),
 					Langs: -1,
@@ -10686,7 +10686,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ssh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -10695,7 +10695,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("sh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("S"),
 					Langs: -1,
@@ -10704,7 +10704,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("zh"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("Z"),
 					Langs: -1,
@@ -10716,7 +10716,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -10725,7 +10725,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("tz"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ts"),
 					Langs: -1,
@@ -10742,7 +10742,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[iey]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -10751,7 +10751,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -10760,7 +10760,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("kv"),
 					Langs: -1,
@@ -10773,7 +10773,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -10786,7 +10786,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Prefix:           []rune("s"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -10795,7 +10795,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -10804,7 +10804,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -10813,7 +10813,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lya"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("la"),
 					Langs: -1,
@@ -10822,7 +10822,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lyu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lu"),
 					Langs: -1,
@@ -10831,7 +10831,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lia"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("la"),
 					Langs: -1,
@@ -10840,7 +10840,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("liu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lu"),
 					Langs: -1,
@@ -10849,7 +10849,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lja"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("la"),
 					Langs: -1,
@@ -10858,7 +10858,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lju"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lu"),
 					Langs: -1,
@@ -10867,7 +10867,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("le"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lo"),
 					Langs: -1,
@@ -10880,7 +10880,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lyo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lo"),
 					Langs: -1,
@@ -10893,7 +10893,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("lio"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("lo"),
 					Langs: -1,
@@ -10906,7 +10906,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ije"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10915,7 +10915,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10924,7 +10924,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("iye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10933,7 +10933,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("iie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10942,7 +10942,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yje"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10951,7 +10951,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10960,7 +10960,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yye"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10969,7 +10969,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yie"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -10982,7 +10982,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -10995,7 +10995,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11008,7 +11008,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11021,7 +11021,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11034,7 +11034,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11047,7 +11047,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aou]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11056,7 +11056,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("io"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("jo"),
 					Langs: -1,
@@ -11073,7 +11073,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11086,7 +11086,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11095,7 +11095,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ei"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -11104,7 +11104,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ey"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -11113,7 +11113,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ej"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aj"),
 					Langs: -1,
@@ -11122,7 +11122,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("yo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("jo"),
 					Langs: -1,
@@ -11139,7 +11139,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[au]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11152,7 +11152,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aiou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11165,7 +11165,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11178,7 +11178,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11191,7 +11191,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11204,7 +11204,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^ "),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11216,7 +11216,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11228,7 +11228,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11240,7 +11240,7 @@ var Rules = map[common.Lang]common.Rules{
 			LeftContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -11253,7 +11253,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ee"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aje"),
 					Langs: -1,
@@ -11270,7 +11270,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[aou]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("je"),
 					Langs: -1,
@@ -11279,7 +11279,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -11288,7 +11288,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("oo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("oo"),
 					Langs: -1,
@@ -11301,7 +11301,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("'"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -11310,7 +11310,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("\""),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -11319,7 +11319,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("aue"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("aue"),
 					Langs: -1,
@@ -11328,7 +11328,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -11337,7 +11337,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -11346,7 +11346,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -11355,7 +11355,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -11364,7 +11364,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -11373,7 +11373,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -11382,7 +11382,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -11391,7 +11391,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -11400,7 +11400,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("j"),
 					Langs: -1,
@@ -11409,7 +11409,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -11418,7 +11418,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -11427,7 +11427,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -11436,7 +11436,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -11445,7 +11445,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -11454,7 +11454,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -11463,7 +11463,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -11472,7 +11472,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -11481,7 +11481,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -11490,7 +11490,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -11499,7 +11499,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -11508,7 +11508,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -11519,7 +11519,7 @@ var Rules = map[common.Lang]common.Rules{
 	common.Lang(Spanish): {
 		{
 			Pattern: []rune("ñ"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -11532,7 +11532,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ch"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("tS"),
 					Langs: -1,
@@ -11549,7 +11549,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("[bdgt]$"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -11561,7 +11561,7 @@ var Rules = map[common.Lang]common.Rules{
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  nil,
 					Langs: -1,
@@ -11570,7 +11570,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("j"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -11579,7 +11579,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("x"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("ks"),
 					Langs: -1,
@@ -11588,7 +11588,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ll"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -11601,7 +11601,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("w"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -11610,7 +11610,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("v"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -11623,7 +11623,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("b"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("b"),
 					Langs: -1,
@@ -11640,7 +11640,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[bpvf]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -11657,7 +11657,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -11666,7 +11666,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("c"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -11675,7 +11675,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("z"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("z"),
 					Langs: -1,
@@ -11692,7 +11692,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -11709,7 +11709,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[ei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("x"),
 					Langs: -1,
@@ -11722,7 +11722,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("qu"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -11731,7 +11731,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("q"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -11740,7 +11740,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("uo"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("vo"),
 					Langs: -1,
@@ -11757,7 +11757,7 @@ var Rules = map[common.Lang]common.Rules{
 				MatchEmptyString: false,
 				Pattern:          regexp.MustCompile("^[aei]"),
 			},
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -11766,7 +11766,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("y"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11787,7 +11787,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ü"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("v"),
 					Langs: -1,
@@ -11796,7 +11796,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("á"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -11805,7 +11805,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("é"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("e"),
 					Langs: -1,
@@ -11814,7 +11814,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("í"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("i"),
 					Langs: -1,
@@ -11823,7 +11823,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ó"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -11832,7 +11832,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("ú"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -11841,7 +11841,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("a"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("a"),
 					Langs: -1,
@@ -11850,7 +11850,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("d"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("d"),
 					Langs: -1,
@@ -11859,7 +11859,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("e"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("E"),
 					Langs: -1,
@@ -11868,7 +11868,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("f"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("f"),
 					Langs: -1,
@@ -11877,7 +11877,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("g"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("g"),
 					Langs: -1,
@@ -11886,7 +11886,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("h"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("h"),
 					Langs: -1,
@@ -11895,7 +11895,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("i"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("I"),
 					Langs: -1,
@@ -11904,7 +11904,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("k"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("k"),
 					Langs: -1,
@@ -11913,7 +11913,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("l"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("l"),
 					Langs: -1,
@@ -11922,7 +11922,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("m"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("m"),
 					Langs: -1,
@@ -11931,7 +11931,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("n"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("n"),
 					Langs: -1,
@@ -11940,7 +11940,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("o"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("o"),
 					Langs: -1,
@@ -11949,7 +11949,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("p"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("p"),
 					Langs: -1,
@@ -11958,7 +11958,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("r"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("r"),
 					Langs: -1,
@@ -11967,7 +11967,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("s"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("s"),
 					Langs: -1,
@@ -11976,7 +11976,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("t"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("t"),
 					Langs: -1,
@@ -11985,7 +11985,7 @@ var Rules = map[common.Lang]common.Rules{
 		},
 		{
 			Pattern: []rune("u"),
-			Phonetic: []common.Token{
+			Phonetic: []common.RuleToken{
 				{
 					Text:  []rune("u"),
 					Langs: -1,
@@ -13382,7 +13382,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13395,7 +13395,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("p"),
 						Langs: -1,
@@ -13408,7 +13408,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("p"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13420,7 +13420,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("p"),
 						Langs: -1,
@@ -13433,7 +13433,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[gdZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("b"),
 						Langs: -1,
@@ -13446,7 +13446,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("b"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13459,7 +13459,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("f"),
 						Langs: -1,
@@ -13472,7 +13472,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("f"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13484,7 +13484,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("f"),
 						Langs: -1,
@@ -13497,7 +13497,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bgdZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("v"),
 						Langs: -1,
@@ -13510,7 +13510,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("v"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13523,7 +13523,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("k"),
 						Langs: -1,
@@ -13536,7 +13536,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("k"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13548,7 +13548,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("k"),
 						Langs: -1,
@@ -13561,7 +13561,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bdZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("g"),
 						Langs: -1,
@@ -13574,7 +13574,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("g"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13587,7 +13587,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("t"),
 						Langs: -1,
@@ -13600,7 +13600,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("t"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13612,7 +13612,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("t"),
 						Langs: -1,
@@ -13625,7 +13625,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bgZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("d"),
 						Langs: -1,
@@ -13638,7 +13638,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("d"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13651,7 +13651,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("dZ"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13664,7 +13664,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("tS"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13677,7 +13677,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("s"),
 						Langs: -1,
@@ -13690,7 +13690,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13703,7 +13703,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13716,7 +13716,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13729,7 +13729,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13738,7 +13738,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("jnm"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("jm"),
 						Langs: -1,
@@ -13750,7 +13750,7 @@ var FinalRules = common.FinalRules{
 				LeftContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("i"),
 						Langs: -1,
@@ -13762,7 +13762,7 @@ var FinalRules = common.FinalRules{
 				LeftContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("I"),
 						Langs: -1,
@@ -13775,7 +13775,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[aAB]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13788,7 +13788,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[AB]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13801,7 +13801,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("A"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13814,7 +13814,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("B"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13827,7 +13827,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("b"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13840,7 +13840,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("d"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13853,7 +13853,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("f"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13866,7 +13866,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("g"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13879,7 +13879,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("k"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13892,7 +13892,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("l"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13905,7 +13905,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("m"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13918,7 +13918,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("n"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13931,7 +13931,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("p"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13944,7 +13944,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("r"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13957,7 +13957,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("t"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13970,7 +13970,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("v"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13983,7 +13983,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("z"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -13996,7 +13996,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bp]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("m"),
 						Langs: -1,
@@ -14012,7 +14012,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("kOg"),
 						Langs: -1,
@@ -14032,7 +14032,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("kAg"),
 						Langs: -1,
@@ -14052,7 +14052,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("kog"),
 						Langs: -1,
@@ -14072,7 +14072,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("kag"),
 						Langs: -1,
@@ -14085,7 +14085,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("h"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14094,7 +14094,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("H"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("x"),
 						Langs: -1,
@@ -14111,7 +14111,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]h"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("e"),
 						Langs: -1,
@@ -14124,7 +14124,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]x"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("e"),
 						Langs: -1,
@@ -14137,7 +14137,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]h"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("a"),
 						Langs: -1,
@@ -14150,7 +14150,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]x"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("a"),
 						Langs: -1,
@@ -14167,7 +14167,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14184,7 +14184,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14201,7 +14201,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14218,7 +14218,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14235,7 +14235,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14252,7 +14252,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14269,7 +14269,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -14286,7 +14286,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("e"),
 						Langs: -1,
@@ -14307,7 +14307,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("i"),
 						Langs: -1,
@@ -14328,7 +14328,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("E"),
 						Langs: -1,
@@ -14349,7 +14349,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("I"),
 						Langs: -1,
@@ -14370,7 +14370,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("F"),
 						Langs: -1,
@@ -14391,7 +14391,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("Q"),
 						Langs: -1,
@@ -14412,7 +14412,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("Y"),
 						Langs: -1,
@@ -14425,7 +14425,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("lEs"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lEs"),
 						Langs: -1,
@@ -14442,7 +14442,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[bdfgkmnprStvzZ]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lE"),
 						Langs: -1,
@@ -14455,7 +14455,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("aue"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14464,7 +14464,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("oue"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14473,7 +14473,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AvE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14486,7 +14486,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ave"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14499,7 +14499,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("avE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14512,7 +14512,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ave"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14525,7 +14525,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("OvE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14538,7 +14538,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ove"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14551,7 +14551,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ovE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14564,7 +14564,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ove"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14577,7 +14577,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ea"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14590,7 +14590,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("EA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14603,7 +14603,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ea"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14616,7 +14616,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("eA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14629,7 +14629,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("aji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14638,7 +14638,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ajI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14647,7 +14647,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("aje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14656,7 +14656,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ajE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14665,7 +14665,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14674,7 +14674,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14683,7 +14683,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14692,7 +14692,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14701,7 +14701,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("oji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14710,7 +14710,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ojI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14719,7 +14719,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("oje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14728,7 +14728,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ojE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14737,7 +14737,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Oji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14746,7 +14746,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("OjI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14755,7 +14755,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Oje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14764,7 +14764,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("OjE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14773,7 +14773,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("eji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14782,7 +14782,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ejI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14791,7 +14791,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("eje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14800,7 +14800,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ejE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14809,7 +14809,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Eji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14818,7 +14818,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("EjI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14827,7 +14827,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Eje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14836,7 +14836,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("EjE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14845,7 +14845,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("uji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14854,7 +14854,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ujI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14863,7 +14863,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("uje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14872,7 +14872,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ujE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14881,7 +14881,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Uji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14890,7 +14890,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("UjI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14899,7 +14899,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Uje"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14908,7 +14908,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("UjE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14917,7 +14917,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("iji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14926,7 +14926,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ijI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14935,7 +14935,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ije"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14944,7 +14944,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ijE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14953,7 +14953,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Iji"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14962,7 +14962,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("IjI"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14971,7 +14971,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ije"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14980,7 +14980,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("IjE"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14989,7 +14989,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("aja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -14998,7 +14998,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ajA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15007,7 +15007,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ajo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15016,7 +15016,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ajO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15025,7 +15025,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15034,7 +15034,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ajU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15043,7 +15043,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15052,7 +15052,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15061,7 +15061,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ajo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15070,7 +15070,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15079,7 +15079,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15088,7 +15088,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15097,7 +15097,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("oja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15106,7 +15106,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ojA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15115,7 +15115,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ojo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15124,7 +15124,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ojO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15133,7 +15133,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15142,7 +15142,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15151,7 +15151,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Oja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15160,7 +15160,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("OjA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15169,7 +15169,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ojo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15178,7 +15178,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("OjO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15187,7 +15187,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15196,7 +15196,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15205,7 +15205,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("eja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15214,7 +15214,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ejA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15223,7 +15223,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ejo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15232,7 +15232,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ejO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15241,7 +15241,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15250,7 +15250,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15259,7 +15259,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Eja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15268,7 +15268,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("EjA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15277,7 +15277,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ejo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15286,7 +15286,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("EjO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15295,7 +15295,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15304,7 +15304,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15313,7 +15313,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("uja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15322,7 +15322,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ujA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15331,7 +15331,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ujo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15340,7 +15340,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ujO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15349,7 +15349,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15358,7 +15358,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15367,7 +15367,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Uja"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15376,7 +15376,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("UjA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15385,7 +15385,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ujo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15394,7 +15394,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("UjO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15403,7 +15403,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15412,7 +15412,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15421,7 +15421,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ija"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15430,7 +15430,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ijA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15439,7 +15439,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ijo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15448,7 +15448,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("ijO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15457,7 +15457,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15466,7 +15466,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15475,7 +15475,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ija"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15484,7 +15484,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("IjA"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15493,7 +15493,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Ijo"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15502,7 +15502,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("IjO"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15511,7 +15511,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Aju"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15520,7 +15520,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("AjU"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("D"),
 						Langs: -1,
@@ -15529,7 +15529,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("j"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("i"),
 						Langs: -1,
@@ -15541,7 +15541,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15553,7 +15553,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15565,7 +15565,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15577,7 +15577,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15589,7 +15589,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15601,7 +15601,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15613,7 +15613,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15625,7 +15625,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15637,7 +15637,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("lYnder"),
 						Langs: -1,
@@ -15649,7 +15649,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("burk"),
 						Langs: -1,
@@ -15665,7 +15665,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("burk"),
 						Langs: -1,
@@ -15681,7 +15681,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("burk"),
 						Langs: -1,
@@ -15697,7 +15697,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("burk"),
 						Langs: -1,
@@ -15714,7 +15714,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -15727,7 +15727,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[rmnl]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -15740,7 +15740,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[rmnl]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -15753,7 +15753,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[rmnl]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -15765,7 +15765,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -15777,7 +15777,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -15789,7 +15789,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -15801,7 +15801,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -15817,7 +15817,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -15830,7 +15830,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("S"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("s"),
 						Langs: -1,
@@ -15839,7 +15839,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("dZ"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -15848,7 +15848,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("Z"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -15860,7 +15860,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Any): {
 				{
 					Pattern: []rune("b"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("b"),
 							Langs: -1,
@@ -15873,7 +15873,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("J"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("z"),
 							Langs: -1,
@@ -15886,7 +15886,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -15903,7 +15903,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -15920,7 +15920,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -15937,7 +15937,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -15954,7 +15954,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -15971,7 +15971,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -15988,7 +15988,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16005,7 +16005,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16022,7 +16022,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16039,7 +16039,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16056,7 +16056,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16073,7 +16073,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16090,7 +16090,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16107,7 +16107,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16124,7 +16124,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16141,7 +16141,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16158,7 +16158,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16175,7 +16175,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16192,7 +16192,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16209,7 +16209,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16226,7 +16226,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -16247,7 +16247,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -16268,7 +16268,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("B"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -16285,7 +16285,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16302,7 +16302,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16319,7 +16319,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16336,7 +16336,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16353,7 +16353,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16370,7 +16370,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16387,7 +16387,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16404,7 +16404,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16421,7 +16421,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16438,7 +16438,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16455,7 +16455,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16472,7 +16472,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16489,7 +16489,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16506,7 +16506,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16523,7 +16523,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16540,7 +16540,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16557,7 +16557,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16574,7 +16574,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16591,7 +16591,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16608,7 +16608,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16625,7 +16625,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -16646,7 +16646,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -16663,7 +16663,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("F"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -16672,7 +16672,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("P"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -16689,7 +16689,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aeiouAEIBFOUQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -16702,7 +16702,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^aeiouAEBFIOU]e"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Q"),
 							Langs: 16,
@@ -16722,7 +16722,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -16735,7 +16735,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -16751,7 +16751,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -16767,7 +16767,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -16779,7 +16779,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -16795,7 +16795,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -16804,7 +16804,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Q"),
 							Langs: 16,
@@ -16824,7 +16824,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("li"),
 							Langs: -1,
@@ -16841,7 +16841,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("li"),
 							Langs: -1,
@@ -16858,7 +16858,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16875,7 +16875,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16892,7 +16892,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16909,7 +16909,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16926,7 +16926,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16943,7 +16943,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16960,7 +16960,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16977,7 +16977,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -16994,7 +16994,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ei"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17007,7 +17007,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Ei"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17023,7 +17023,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ia"),
 							Langs: -1,
@@ -17036,7 +17036,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("iA"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ia"),
 							Langs: -1,
@@ -17057,7 +17057,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^aeiouAEBFIOU]e"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17082,7 +17082,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("i[^aeiouAEIOU]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17103,7 +17103,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("a[^aeiouAEIOU]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17124,7 +17124,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprstv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17137,7 +17137,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17149,7 +17149,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17162,7 +17162,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17175,7 +17175,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17184,7 +17184,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17201,7 +17201,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17214,7 +17214,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17226,7 +17226,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17239,7 +17239,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17252,7 +17252,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17261,7 +17261,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17274,7 +17274,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17291,7 +17291,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprstv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -17304,7 +17304,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -17316,7 +17316,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -17329,7 +17329,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[oeiuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -17338,7 +17338,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("O"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -17355,7 +17355,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17372,7 +17372,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17388,7 +17388,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17405,7 +17405,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[oeiuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17418,7 +17418,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("A"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17438,7 +17438,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -17451,7 +17451,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DoiuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -17464,7 +17464,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -17480,7 +17480,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("uk"),
 							Langs: -1,
@@ -17496,7 +17496,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("uk"),
 							Langs: -1,
@@ -17508,7 +17508,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("suts"),
 							Langs: -1,
@@ -17524,7 +17524,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("uts"),
 							Langs: -1,
@@ -17533,7 +17533,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("U"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -17551,7 +17551,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17564,7 +17564,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17580,7 +17580,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -17596,7 +17596,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -17608,7 +17608,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -17624,7 +17624,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -17637,7 +17637,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aeiEIou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17646,7 +17646,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17659,7 +17659,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17676,7 +17676,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17693,7 +17693,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17710,7 +17710,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17727,7 +17727,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -17748,7 +17748,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("om"),
 							Langs: -1,
@@ -17765,7 +17765,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("on"),
 							Langs: -1,
@@ -17782,7 +17782,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("im"),
 							Langs: -1,
@@ -17799,7 +17799,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("in"),
 							Langs: -1,
@@ -17816,7 +17816,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("im"),
 							Langs: -1,
@@ -17837,7 +17837,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("in"),
 							Langs: -1,
@@ -17854,7 +17854,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -17867,7 +17867,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17880,7 +17880,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17893,7 +17893,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17906,7 +17906,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17919,7 +17919,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17928,7 +17928,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -17946,7 +17946,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17959,7 +17959,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -17975,7 +17975,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -17991,7 +17991,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -18003,7 +18003,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -18019,7 +18019,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -18032,7 +18032,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aeiEIou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18041,7 +18041,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18054,7 +18054,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18071,7 +18071,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18088,7 +18088,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18105,7 +18105,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18122,7 +18122,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18143,7 +18143,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("om"),
 							Langs: -1,
@@ -18160,7 +18160,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("on"),
 							Langs: -1,
@@ -18177,7 +18177,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("im"),
 							Langs: -1,
@@ -18194,7 +18194,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("in"),
 							Langs: -1,
@@ -18211,7 +18211,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("im"),
 							Langs: -1,
@@ -18232,7 +18232,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("in"),
 							Langs: -1,
@@ -18249,7 +18249,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -18262,7 +18262,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18275,7 +18275,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18288,7 +18288,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18301,7 +18301,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18314,7 +18314,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18323,7 +18323,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -18342,7 +18342,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^aEIeiou]e"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Q"),
 							Langs: -1,
@@ -18362,7 +18362,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18375,7 +18375,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18388,7 +18388,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18404,7 +18404,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -18420,7 +18420,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -18432,7 +18432,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -18448,7 +18448,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -18457,7 +18457,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18474,7 +18474,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("il"),
 							Langs: -1,
@@ -18491,7 +18491,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18508,7 +18508,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18525,7 +18525,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18542,7 +18542,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18559,7 +18559,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18580,7 +18580,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("D[^aeiEIou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18597,7 +18597,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("D[^aeiEIou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18610,7 +18610,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18623,7 +18623,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18636,7 +18636,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18649,7 +18649,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiEuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18662,7 +18662,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQY]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18671,7 +18671,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -18684,7 +18684,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -18702,7 +18702,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18715,7 +18715,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18728,7 +18728,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18744,7 +18744,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -18760,7 +18760,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -18772,7 +18772,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -18788,7 +18788,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -18797,7 +18797,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18810,7 +18810,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18827,7 +18827,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18844,7 +18844,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18861,7 +18861,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18878,7 +18878,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -18895,7 +18895,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -18908,7 +18908,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18921,7 +18921,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18934,7 +18934,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18947,7 +18947,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18960,7 +18960,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -18969,7 +18969,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -18987,7 +18987,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19000,7 +19000,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aeiAEIOUouQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19013,7 +19013,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19029,7 +19029,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -19045,7 +19045,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -19057,7 +19057,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -19073,7 +19073,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -19082,7 +19082,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Q"),
 							Langs: -1,
@@ -19095,7 +19095,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("AU"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19112,7 +19112,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("aU"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19129,7 +19129,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19146,7 +19146,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19163,7 +19163,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19180,7 +19180,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("OU"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19197,7 +19197,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oU"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19214,7 +19214,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19231,7 +19231,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19248,7 +19248,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19265,7 +19265,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19282,7 +19282,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19299,7 +19299,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19316,7 +19316,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("Ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19333,7 +19333,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19346,7 +19346,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19359,7 +19359,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19371,7 +19371,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19384,7 +19384,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoAOUiuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19397,7 +19397,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoAOQY]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19406,7 +19406,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -19422,7 +19422,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -19435,7 +19435,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -19448,7 +19448,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -19461,7 +19461,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aoAOUeiuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -19470,7 +19470,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("O"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -19483,7 +19483,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19499,7 +19499,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19516,7 +19516,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19533,7 +19533,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19550,7 +19550,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aoeOUiuQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19563,7 +19563,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("A"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19583,7 +19583,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -19596,7 +19596,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuUQY]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -19609,7 +19609,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -19625,7 +19625,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("uk"),
 							Langs: -1,
@@ -19641,7 +19641,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("uk"),
 							Langs: -1,
@@ -19653,7 +19653,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("suts"),
 							Langs: -1,
@@ -19669,7 +19669,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("uts"),
 							Langs: -1,
@@ -19678,7 +19678,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("U"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -19697,7 +19697,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19710,7 +19710,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19723,7 +19723,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19739,7 +19739,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -19755,7 +19755,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -19767,7 +19767,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -19783,7 +19783,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -19792,7 +19792,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19805,7 +19805,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19822,7 +19822,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19839,7 +19839,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19856,7 +19856,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19873,7 +19873,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -19890,7 +19890,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -19903,7 +19903,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19916,7 +19916,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19929,7 +19929,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19942,7 +19942,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19955,7 +19955,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -19964,7 +19964,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -19983,7 +19983,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20000,7 +20000,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20017,7 +20017,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20034,7 +20034,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20051,7 +20051,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20068,7 +20068,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20085,7 +20085,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20102,7 +20102,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20119,7 +20119,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20136,7 +20136,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20153,7 +20153,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20170,7 +20170,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20187,7 +20187,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20204,7 +20204,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20221,7 +20221,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -20242,7 +20242,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -20259,7 +20259,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("B"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -20272,7 +20272,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20289,7 +20289,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20306,7 +20306,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20323,7 +20323,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20340,7 +20340,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20357,7 +20357,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20374,7 +20374,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20391,7 +20391,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20408,7 +20408,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20425,7 +20425,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20442,7 +20442,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20459,7 +20459,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20476,7 +20476,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20493,7 +20493,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20510,7 +20510,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20531,7 +20531,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20548,7 +20548,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("F"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20557,7 +20557,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("P"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -20573,7 +20573,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20586,7 +20586,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20602,7 +20602,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -20618,7 +20618,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -20630,7 +20630,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -20646,7 +20646,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -20659,7 +20659,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20668,7 +20668,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20681,7 +20681,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20698,7 +20698,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20715,7 +20715,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20732,7 +20732,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20749,7 +20749,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20766,7 +20766,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -20779,7 +20779,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20792,7 +20792,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20805,7 +20805,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20817,7 +20817,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20830,7 +20830,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20843,7 +20843,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -20852,7 +20852,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -20871,7 +20871,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20888,7 +20888,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20905,7 +20905,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20922,7 +20922,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20939,7 +20939,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20956,7 +20956,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20973,7 +20973,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -20990,7 +20990,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21007,7 +21007,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21024,7 +21024,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21041,7 +21041,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21058,7 +21058,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21075,7 +21075,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21092,7 +21092,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21109,7 +21109,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -21130,7 +21130,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -21147,7 +21147,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("B"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -21160,7 +21160,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21177,7 +21177,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21194,7 +21194,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21211,7 +21211,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21228,7 +21228,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21245,7 +21245,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21262,7 +21262,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21279,7 +21279,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21296,7 +21296,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21313,7 +21313,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21330,7 +21330,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21347,7 +21347,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21364,7 +21364,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21381,7 +21381,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21398,7 +21398,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[bp]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21419,7 +21419,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[dgkstvz]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21436,7 +21436,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("F"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21445,7 +21445,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("P"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -21461,7 +21461,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21474,7 +21474,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21490,7 +21490,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -21506,7 +21506,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -21518,7 +21518,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -21534,7 +21534,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -21547,7 +21547,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21556,7 +21556,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21569,7 +21569,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21586,7 +21586,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21603,7 +21603,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21620,7 +21620,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21637,7 +21637,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21654,7 +21654,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -21667,7 +21667,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21680,7 +21680,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21693,7 +21693,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21705,7 +21705,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21718,7 +21718,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21731,7 +21731,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21740,7 +21740,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -21758,7 +21758,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21771,7 +21771,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aEIeiou]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21784,7 +21784,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[^k]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21800,7 +21800,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -21816,7 +21816,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("ik"),
 							Langs: -1,
@@ -21828,7 +21828,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("sits"),
 							Langs: -1,
@@ -21844,7 +21844,7 @@ var FinalRules = common.FinalRules{
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("its"),
 							Langs: -1,
@@ -21853,7 +21853,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21866,7 +21866,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("au"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21883,7 +21883,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ou"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21900,7 +21900,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ai"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21917,7 +21917,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("oi"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21934,7 +21934,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("ui"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("D"),
 							Langs: -1,
@@ -21951,7 +21951,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("a"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -21964,7 +21964,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("e"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21977,7 +21977,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -21990,7 +21990,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^ts$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22003,7 +22003,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("[aoiuQ]$"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22016,7 +22016,7 @@ var FinalRules = common.FinalRules{
 						MatchEmptyString: false,
 						Pattern:          regexp.MustCompile("^[aoQ]"),
 					},
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22025,7 +22025,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("Y"),
 							Langs: -1,
@@ -22046,7 +22046,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22059,7 +22059,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[fktSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("p"),
 						Langs: -1,
@@ -22072,7 +22072,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("p"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22084,7 +22084,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("p"),
 						Langs: -1,
@@ -22097,7 +22097,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[gdZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("b"),
 						Langs: -1,
@@ -22110,7 +22110,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("b"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22123,7 +22123,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pktSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("f"),
 						Langs: -1,
@@ -22136,7 +22136,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("f"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22148,7 +22148,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("f"),
 						Langs: -1,
@@ -22161,7 +22161,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bgdZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("v"),
 						Langs: -1,
@@ -22174,7 +22174,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("v"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22187,7 +22187,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pftSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("k"),
 						Langs: -1,
@@ -22200,7 +22200,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("k"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22212,7 +22212,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("k"),
 						Langs: -1,
@@ -22225,7 +22225,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bdZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("g"),
 						Langs: -1,
@@ -22238,7 +22238,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("g"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22251,7 +22251,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pfkSs]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("t"),
 						Langs: -1,
@@ -22264,7 +22264,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("t"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22276,7 +22276,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("t"),
 						Langs: -1,
@@ -22289,7 +22289,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bgZz]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("d"),
 						Langs: -1,
@@ -22302,7 +22302,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("d"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22315,7 +22315,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("dZ"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22328,7 +22328,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("tS"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22341,7 +22341,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pfkSt]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("s"),
 						Langs: -1,
@@ -22354,7 +22354,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22367,7 +22367,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22380,7 +22380,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22393,7 +22393,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[sSzZ]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22402,7 +22402,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("jnm"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("jm"),
 						Langs: -1,
@@ -22414,7 +22414,7 @@ var FinalRules = common.FinalRules{
 				LeftContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("i"),
 						Langs: -1,
@@ -22426,7 +22426,7 @@ var FinalRules = common.FinalRules{
 				LeftContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("I"),
 						Langs: -1,
@@ -22439,7 +22439,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[aAB]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22452,7 +22452,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[AB]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22465,7 +22465,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("A"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22478,7 +22478,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("B"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22491,7 +22491,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("b"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22504,7 +22504,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("d"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22517,7 +22517,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("f"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22530,7 +22530,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("g"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22543,7 +22543,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("k"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22556,7 +22556,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("l"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22569,7 +22569,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("m"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22582,7 +22582,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("n"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22595,7 +22595,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("p"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22608,7 +22608,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("r"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22621,7 +22621,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("t"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22634,7 +22634,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("v"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22647,7 +22647,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Prefix:           []rune("z"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  nil,
 						Langs: -1,
@@ -22656,7 +22656,7 @@ var FinalRules = common.FinalRules{
 			},
 			{
 				Pattern: []rune("H"),
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("h"),
 						Langs: -1,
@@ -22673,7 +22673,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bgZd]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("z"),
 						Langs: -1,
@@ -22686,7 +22686,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[pfkst]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -22698,7 +22698,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("S"),
 						Langs: -1,
@@ -22711,7 +22711,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("^[bgzd]"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("Z"),
 						Langs: -1,
@@ -22723,7 +22723,7 @@ var FinalRules = common.FinalRules{
 				RightContext: &common.Matcher{
 					MatchEmptyString: true,
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("s"),
 						Langs: -1,
@@ -22736,7 +22736,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("j"),
 						Langs: -1,
@@ -22749,7 +22749,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("j"),
 						Langs: -1,
@@ -22762,7 +22762,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("j"),
 						Langs: -1,
@@ -22775,7 +22775,7 @@ var FinalRules = common.FinalRules{
 					MatchEmptyString: false,
 					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
 				},
-				Phonetic: []common.Token{
+				Phonetic: []common.RuleToken{
 					{
 						Text:  []rune("j"),
 						Langs: -1,
@@ -22787,7 +22787,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Any): {
 				{
 					Pattern: []rune("A"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -22796,7 +22796,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("B"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -22805,7 +22805,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22814,7 +22814,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("F"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22823,7 +22823,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22832,7 +22832,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("O"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -22841,7 +22841,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("P"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -22850,7 +22850,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("U"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -22859,7 +22859,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("J"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("l"),
 							Langs: -1,
@@ -22870,7 +22870,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Russian): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22879,7 +22879,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22890,7 +22890,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Cyrillic): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22899,7 +22899,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22910,7 +22910,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(English): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22919,7 +22919,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22930,7 +22930,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(French): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22939,7 +22939,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22950,7 +22950,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(German): {
 				{
 					Pattern: []rune("A"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -22959,7 +22959,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("B"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -22968,7 +22968,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22977,7 +22977,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("F"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -22986,7 +22986,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -22995,7 +22995,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("O"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -23004,7 +23004,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("P"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -23013,7 +23013,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("U"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("u"),
 							Langs: -1,
@@ -23022,7 +23022,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("J"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("l"),
 							Langs: -1,
@@ -23034,7 +23034,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Hungarian): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -23043,7 +23043,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -23054,7 +23054,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Polish): {
 				{
 					Pattern: []rune("B"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("a"),
 							Langs: -1,
@@ -23063,7 +23063,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("F"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -23072,7 +23072,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("P"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("o"),
 							Langs: -1,
@@ -23081,7 +23081,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -23090,7 +23090,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -23101,7 +23101,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Romanian): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -23110,7 +23110,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,
@@ -23121,7 +23121,7 @@ var FinalRules = common.FinalRules{
 			common.Lang(Spanish): {
 				{
 					Pattern: []rune("E"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("e"),
 							Langs: -1,
@@ -23130,7 +23130,7 @@ var FinalRules = common.FinalRules{
 				},
 				{
 					Pattern: []rune("I"),
-					Phonetic: []common.Token{
+					Phonetic: []common.RuleToken{
 						{
 							Text:  []rune("i"),
 							Langs: -1,

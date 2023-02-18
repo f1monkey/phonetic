@@ -33,62 +33,74 @@ func (a Accuracy) Valid() bool {
 
 type Rules []Rule
 
-func (r Rules) Apply(input Tokens, lang Lang, ignoreLangs bool) Tokens {
+func (r Rules) Apply(input *Tokens, lang Lang, ignoreLangs bool) *Tokens {
 	if len(r) == 0 {
 		return input
 	}
 
-	var result Tokens
-	for _, tok := range input {
-		newTokens := Tokens{{Text: nil, Langs: tok.Langs}}
-		for j := 0; j < len(tok.Text); {
+	result := &Tokens{Buf: input.Buf}
+	for _, tok := range input.Items {
+		item := input.Buf.Get(tok.ID)
+
+		id := input.Buf.AddWithSpace(nil, len(item))
+		tok := Token{ID: id, Langs: tok.Langs}
+		newTokens := &Tokens{Buf: input.Buf, Items: []Token{tok}}
+		for j := 0; j < len(item); {
 			var (
 				applied bool
 				offset  int
 			)
 
 			for _, rr := range r {
-				var tmp Tokens
-				tmp, offset = rr.ApplyTo(tok.Text, j)
+				var tmp []RuleToken
+				tmp, offset = rr.ApplyTo(item, j)
 				if len(tmp) > 0 {
 					applied = true
-					if len(newTokens) == 0 {
-						newTokens = tmp
+					if newTokens.Len() == 0 {
+						for k := range tmp {
+							newTokens.Add(tmp[k].Text, tmp[k].Langs)
+						}
 					} else {
-						newTokens = newTokens.Merge(lang, tmp)
+						newTokens.MergeRules(tmp, lang)
 					}
 					break
 				}
 			}
 
 			if !applied {
-				for k := range newTokens {
-					newTokens[k].Text = append(newTokens[k].Text, tok.Text[j])
+				for k := range newTokens.Items {
+					newTokens.Buf.Append(newTokens.Items[k].ID, []rune{item[j]})
 				}
 			}
 			j += offset
 		}
 
-		result = append(result, newTokens...)
+		result.Items = append(result.Items, newTokens.Items...)
 	}
 
 	if ignoreLangs {
-		for i := range result {
-			result[i].Langs = LangAny
+		for i := range result.Items {
+			result.Items[i].Langs = LangAny
 		}
 	}
 
-	return result.Deduplicate()
+	result.Deduplicate()
+	return result
 }
 
 type Rule struct {
 	Pattern      []rune
 	LeftContext  *Matcher
 	RightContext *Matcher
-	Phonetic     Tokens
+	Phonetic     []RuleToken
 }
 
-func (r Rule) ApplyTo(input []rune, position int) (result []Token, offset int) {
+type RuleToken struct {
+	Text  []rune
+	Langs Lang
+}
+
+func (r Rule) ApplyTo(input []rune, position int) (result []RuleToken, offset int) {
 	patternLength := len(r.Pattern)
 	inputLength := len(input)
 	offset = 1

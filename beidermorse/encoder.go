@@ -59,10 +59,11 @@ func (e *Encoder) Encode(input string) []string {
 		false,
 	)
 
-	result := make([]string, len(tokens))
-	for i, t := range tokens {
-		result[i] = string(t.Text)
-	}
+	result := make([]string, 0, tokens.Len())
+	tokens.Iterate(func(s []rune) bool {
+		result = append(result, string(s))
+		return true
+	})
 
 	return result
 }

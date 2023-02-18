@@ -1,6 +1,7 @@
 package common
 
 import (
+	"github.com/f1monkey/phonetic/internal/exrunes"
 	"golang.org/x/exp/slices"
 )
 
@@ -30,37 +31,51 @@ func (l Lang) merge(src ...Lang) Lang {
 }
 
 type Token struct {
-	Text  []rune
+	ID    int
 	Langs Lang
 }
 
-type Tokens []Token
+type Tokens struct {
+	Items []Token
+	Buf   *exrunes.Buffer
+}
 
-func (t Tokens) Merge(lang Lang, src Tokens) Tokens {
-	if len(src) == 0 {
-		return t
+func (t *Tokens) Len() int {
+	return len(t.Items)
+}
+
+func (t *Tokens) Iterate(iter func(s []rune) bool) {
+	for _, item := range t.Items {
+		if !iter(t.Buf.Get(item.ID)) {
+			return
+		}
+	}
+}
+
+func (t *Tokens) Add(data []rune, langs Lang) {
+	t.Items = append(t.Items, Token{ID: t.Buf.Add(data), Langs: langs})
+}
+
+func (t *Tokens) MergeRules(rules []RuleToken, lang Lang) {
+	if len(rules) == 0 {
+		return
 	}
 
-	result := make([]Token, 0, len(t)*len(src))
-	for _, r1 := range t {
-		for _, r2 := range src {
-			lang := lang.merge(r1.Langs, r2.Langs)
-			if lang == LangInvalid {
+	initialLen := t.Len()
+	for i := 0; i < initialLen; i++ {
+		for j := range rules {
+			newLang := lang.merge(t.Items[i].Langs, rules[j].Langs)
+			if newLang == LangInvalid {
 				continue
 			}
 
-			text := make([]rune, 0, len(r1.Text)+len(r2.Text))
-			text = append(text, r1.Text...)
-			text = append(text, r2.Text...)
-
-			result = append(result, Token{
-				Text:  text,
-				Langs: lang,
-			})
+			copyID := t.Buf.Copy(t.Items[i].ID)
+			t.Buf.Append(copyID, rules[j].Text)
+			t.Items = append(t.Items, Token{ID: copyID, Langs: newLang})
 		}
 	}
 
-	return result
+	t.Items = slices.Delete(t.Items, 0, initialLen)
 }
 
 type tokenStr struct {
@@ -68,20 +83,18 @@ type tokenStr struct {
 	langs Lang
 }
 
-func (t Tokens) Deduplicate() Tokens {
-	uniq := make(map[tokenStr]struct{}, len(t))
+func (t *Tokens) Deduplicate() {
+	uniq := make(map[tokenStr]struct{}, len(t.Items))
 
-	for i := 0; i < len(t); i++ {
-		tt := tokenStr{string(t[i].Text), t[i].Langs}
+	for i := 0; i < len(t.Items); i++ {
+		tt := tokenStr{string(t.Buf.Get(t.Items[i].ID)), t.Items[i].Langs}
 
 		if _, ok := uniq[tt]; !ok {
 			uniq[tt] = struct{}{}
 			continue
 		}
 
-		t = slices.Delete(t, i, i+1)
+		t.Items = slices.Delete(t.Items, i, i+1)
 		i--
 	}
-
-	return t
 }
