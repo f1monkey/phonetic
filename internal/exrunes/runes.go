@@ -18,6 +18,9 @@ func HasSuffix(haystack []rune, needle []rune) bool {
 // ContainsAt check if haystack has the provided substring in the specific position
 func ContainsAt(haystack []rune, needle []rune, index int) bool {
 	if len(needle) == 0 {
+		if len(haystack) == 0 {
+			return true
+		}
 		return false
 	}
 

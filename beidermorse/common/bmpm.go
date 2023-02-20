@@ -50,7 +50,7 @@ func MakeTokens(input string, mode Mode, accuracy Accuracy, ruleset Ruleset, lan
 		}
 	}
 
-	buf := exrunes.NewBuffer(100)
+	buf := exrunes.NewBuffer(200)
 
 	result := &Tokens{Items: []Token{{
 		ID:    buf.Add([]rune(input)),

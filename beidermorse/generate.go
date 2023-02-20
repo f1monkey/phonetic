@@ -12,10 +12,11 @@ import (
 	"io/ioutil"
 	"os"
 	"path"
-	"regexp"
 	"strconv"
 	"strings"
 	"text/template"
+
+	"github.com/f1monkey/phonetic/internal/regexparser"
 )
 
 //go:embed bmpm-rules/*.json
@@ -114,12 +115,6 @@ func transformRuleSet(src SrcRuleSet) DestRuleSet {
 	return result
 }
 
-var (
-	containsRegexp = regexp.MustCompile(`^\p{L}+$`)
-	prefixRegexp   = regexp.MustCompile(`^\^\p{L}+$`)
-	suffixRegexp   = regexp.MustCompile(`^\p{L}+\$$`)
-)
-
 func transformFinalRule(src SrcFinalRule) DestFinalRule {
 	result := DestFinalRule{
 		First:  transformRules(src.First),
@@ -213,18 +208,33 @@ func transformRulePhonetic(src string) DestRulePhonetic {
 func transformPattern(pattern string) DestRuleMatch {
 	r := DestRuleMatch{}
 
-	if pattern == "^$" {
-		r.MatchEmptyString = true
-	} else if containsRegexp.MatchString(pattern) {
-		r.Contains = pattern
-	} else if prefixRegexp.MatchString(pattern) {
-		r.Prefix = strings.ReplaceAll(pattern, "^", "")
-	} else if suffixRegexp.MatchString(pattern) {
-		r.Suffix = strings.ReplaceAll(pattern, "$", "")
-	} else {
+	parsed, ok := regexparser.Parse(pattern)
+	if !ok {
 		r.Pattern = pattern
+		return r
 	}
 
+	if len(parsed.Items) == 0 {
+		r.MatchEmptyString = true
+		return r
+	}
+
+	if parsed.IsPrefix {
+		r.Prefix = parsed.Items
+		return r
+	}
+
+	if parsed.IsSuffix {
+		r.Suffix = parsed.Items
+		return r
+	}
+
+	if parsed.IsExact {
+		r.Exact = parsed.Items
+		return r
+	}
+
+	r.Contains = parsed.Items
 	return r
 }
 
@@ -288,14 +298,33 @@ const rulesTemplate = `
 {{- define "rulematchertpl" }}
 	&common.Matcher{
 		MatchEmptyString: {{ .MatchEmptyString }},
-		{{- if ne .Contains ""}}
-			Contains: []rune({{ printf "%q" .Contains }}),
+		{{- if .Contains }}
+			Contains: [][]rune{
+				{{- range $p := .Contains }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
 		{{- end }}
-		{{- if ne .Prefix ""}}
-			Prefix: []rune({{ printf "%q" .Prefix }}),
+		{{- if .Exact }}
+			Exact: [][]rune{
+				{{- range $p := .Exact }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
 		{{- end }}
-		{{- if ne .Suffix ""}}
-			Suffix: []rune({{ printf "%q" .Suffix }}),
+		{{- if .Prefix }}
+			Prefix: [][]rune{
+				{{- range $p := .Prefix }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
+		{{- end }}
+		{{- if .Suffix }}
+			Suffix: [][]rune{
+				{{- range $p := .Suffix }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
 		{{- end }}
 		{{- if ne .Pattern ""}}
 			Pattern: regexp.MustCompile({{ printf "%q" .Pattern }}),
@@ -483,15 +512,17 @@ type DestFinalRules struct {
 type DestRuleMatch struct {
 	MatchEmptyString bool
 	Pattern          string
-	Prefix           string
-	Suffix           string
-	Contains         string
+	Exact            []string
+	Prefix           []string
+	Suffix           []string
+	Contains         []string
 }
 
 func (m DestRuleMatch) IsEmpty() bool {
-	return m.Contains == "" &&
-		m.Prefix == "" &&
-		m.Suffix == "" &&
+	return len(m.Contains) == 0 &&
+		len(m.Prefix) == 0 &&
+		len(m.Suffix) == 0 &&
+		len(m.Exact) == 0 &&
 		m.Pattern == "" &&
 		m.MatchEmptyString == false
 }

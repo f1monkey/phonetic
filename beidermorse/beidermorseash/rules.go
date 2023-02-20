@@ -447,7 +447,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sch"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -490,7 +493,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sh"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[äöü]"),
+				Prefix: [][]rune{
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -503,7 +510,13 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sh"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeiou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -559,7 +572,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ch"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -615,7 +631,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cze"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -743,7 +771,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cia"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -773,7 +813,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cią"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -803,7 +846,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cię"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -833,7 +879,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -930,7 +988,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ce"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1060,7 +1130,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sia"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1094,7 +1176,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sią"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1124,7 +1209,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("się"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1154,7 +1242,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1235,7 +1335,16 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("s"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeiouäöë]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ë"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1279,7 +1388,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("gh"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1574,7 +1686,14 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ge"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[yaeiou]$"),
+				Suffix: [][]rune{
+					[]rune("y"),
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1595,7 +1714,14 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("gi"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[yaeiou]$"),
+				Suffix: [][]rune{
+					[]rune("y"),
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1658,7 +1784,20 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("gy"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("á"),
+					[]rune("é"),
+					[]rune("ó"),
+					[]rune("ú"),
+					[]rune("ü"),
+					[]rune("ö"),
+					[]rune("ő"),
+					[]rune("ű"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1688,11 +1827,26 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[jyaeiou]$"),
+				Suffix: [][]rune{
+					[]rune("j"),
+					[]rune("y"),
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aouyei]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1705,7 +1859,13 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aouei]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1748,7 +1908,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ly"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1765,7 +1928,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("li"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1782,7 +1948,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("lj"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1838,7 +2007,14 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("j"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aoeiuy]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("u"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1919,7 +2095,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("rze"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("t"),
+				Suffix: [][]rune{
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1961,7 +2139,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("rzy"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("t"),
+				Suffix: [][]rune{
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -1995,7 +2175,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("rz"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("t"),
+				Suffix: [][]rune{
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2099,7 +2281,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zia"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2133,7 +2327,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zią"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2163,7 +2360,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zię"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2193,7 +2393,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2302,7 +2514,13 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("th"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeiou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2357,7 +2575,17 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("h"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aeiouyäöü]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2451,7 +2679,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("e"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("in"),
+				Suffix: [][]rune{
+					[]rune("in"),
+				},
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: true,
@@ -2638,7 +2868,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2651,7 +2885,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2664,7 +2902,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2723,7 +2973,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2736,7 +2989,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -2932,7 +3188,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ą"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3034,7 +3293,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ę"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3168,7 +3430,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("a"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3185,7 +3459,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("e"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3202,7 +3488,27 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("o"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("ć"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("l"),
+					[]rune("ł"),
+					[]rune("m"),
+					[]rune("n"),
+					[]rune("ń"),
+					[]rune("r"),
+					[]rune("s"),
+					[]rune("ś"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ź"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3661,11 +3967,28 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("г"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("(й|ё|я|ю|ы|а|е|о|и|у)$"),
+				Suffix: [][]rune{
+					[]rune("й"),
+					[]rune("ё"),
+					[]rune("я"),
+					[]rune("ю"),
+					[]rune("ы"),
+					[]rune("а"),
+					[]rune("е"),
+					[]rune("о"),
+					[]rune("и"),
+					[]rune("у"),
+				},
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
+				Prefix: [][]rune{
+					[]rune("а"),
+					[]rune("е"),
+					[]rune("о"),
+					[]rune("и"),
+					[]rune("у"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3678,7 +4001,13 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("г"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^(а|е|о|и|у)"),
+				Prefix: [][]rune{
+					[]rune("а"),
+					[]rune("е"),
+					[]rune("о"),
+					[]rune("и"),
+					[]rune("у"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3788,7 +4117,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ий"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^(а|о|у)"),
+				Prefix: [][]rune{
+					[]rune("а"),
+					[]rune("о"),
+					[]rune("у"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3801,7 +4134,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ый"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^(а|о|у)"),
+				Prefix: [][]rune{
+					[]rune("а"),
+					[]rune("о"),
+					[]rune("у"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -3867,7 +4204,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("е"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("(а|е|о|у)$"),
+				Suffix: [][]rune{
+					[]rune("а"),
+					[]rune("е"),
+					[]rune("о"),
+					[]rune("у"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4081,7 +4423,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("с"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Prefix:           []rune("с"),
+				Prefix: [][]rune{
+					[]rune("с"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4262,7 +4606,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cc"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[iey]"),
+				Prefix: [][]rune{
+					[]rune("i"),
+					[]rune("e"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4275,7 +4623,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("c"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Prefix:           []rune("c"),
+				Prefix: [][]rune{
+					[]rune("c"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4288,7 +4638,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("c"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[iey]"),
+				Prefix: [][]rune{
+					[]rune("i"),
+					[]rune("e"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4352,7 +4706,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[iey]"),
+				Prefix: [][]rune{
+					[]rune("i"),
+					[]rune("e"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4671,7 +5029,14 @@ var Rules = map[common.Lang]common.Rules{
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeiouy]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -4976,7 +5341,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("u"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Prefix:           []rune("r"),
+				Prefix: [][]rune{
+					[]rune("r"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5188,7 +5555,14 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("c"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[eiyéèê]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("y"),
+					[]rune("é"),
+					[]rune("è"),
+					[]rune("ê"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5223,7 +5597,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[eiy]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5248,7 +5626,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("gu"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[eiy]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5291,11 +5673,31 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("s"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aeiouyéèê]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("é"),
+					[]rune("è"),
+					[]rune("ê"),
+				},
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeiouyéèê]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("é"),
+					[]rune("è"),
+					[]rune("ê"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5308,7 +5710,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("h"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[bdgt]$"),
+				Suffix: [][]rune{
+					[]rune("b"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5351,7 +5758,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ouh"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aioe]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("e"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5368,7 +5780,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ou"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeio]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5394,7 +5811,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("u"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeio]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5533,7 +5955,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[ou]$"),
+				Suffix: [][]rune{
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5562,7 +5987,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5575,7 +6004,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aoeu]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("e"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -5959,7 +6393,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("c"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[eiy]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6312,7 +6750,16 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("th"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[äöüaeiou]"),
+				Prefix: [][]rune{
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6350,7 +6797,17 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("h"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aeiouyäöü]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6384,7 +6841,17 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("s"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[äöüaeiouy]"),
+				Prefix: [][]rune{
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6401,11 +6868,32 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("s"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aeiouyäöüj]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+					[]rune("j"),
+				},
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeiouyäöü]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("y"),
+					[]rune("ä"),
+					[]rune("ö"),
+					[]rune("ü"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6537,7 +7025,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6550,7 +7042,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6572,7 +7068,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -6585,7 +7085,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aoeu]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("e"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -7329,7 +7834,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[áo]$"),
+				Suffix: [][]rune{
+					[]rune("á"),
+					[]rune("o"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -7342,7 +7850,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[áo]$"),
+				Suffix: [][]rune{
+					[]rune("á"),
+					[]rune("o"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -7394,7 +7905,20 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("gy"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("á"),
+					[]rune("é"),
+					[]rune("ó"),
+					[]rune("ú"),
+					[]rune("ü"),
+					[]rune("ö"),
+					[]rune("ő"),
+					[]rune("ű"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -7420,7 +7944,20 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ny"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("á"),
+					[]rune("é"),
+					[]rune("ó"),
+					[]rune("ú"),
+					[]rune("ü"),
+					[]rune("ö"),
+					[]rune("ő"),
+					[]rune("ű"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -7446,7 +7983,20 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ty"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeouáéóúüöőű]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("u"),
+					[]rune("á"),
+					[]rune("é"),
+					[]rune("ó"),
+					[]rune("ú"),
+					[]rune("ü"),
+					[]rune("ö"),
+					[]rune("ő"),
+					[]rune("ű"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8039,7 +8589,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cze"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8176,7 +8738,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cia"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8206,7 +8780,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cią"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8236,7 +8813,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cię"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8266,7 +8846,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("cie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8366,7 +8958,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sia"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8400,7 +9004,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sią"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8430,7 +9037,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("się"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8460,7 +9070,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("sie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8546,7 +9168,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zia"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8580,7 +9214,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zią"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8610,7 +9247,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zię"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8640,7 +9280,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("zie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8709,7 +9361,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("że"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8726,7 +9390,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("że"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8817,7 +9493,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("rze"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("t"),
+				Suffix: [][]rune{
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8851,7 +9529,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("rzy"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("t"),
+				Suffix: [][]rune{
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8885,7 +9565,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("rz"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Suffix:           []rune("t"),
+				Suffix: [][]rune{
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8959,7 +9641,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("s"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Prefix:           []rune("s"),
+				Prefix: [][]rune{
+					[]rune("s"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8985,7 +9669,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ą"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -8998,7 +9685,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ę"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bp]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9083,7 +9773,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ij"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9096,7 +9790,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("yj"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9109,7 +9807,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ii"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9122,7 +9824,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("yi"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9135,7 +9841,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("iy"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9148,7 +9858,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("yy"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9188,7 +9902,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ie"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9282,7 +10008,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[ou]$"),
+				Suffix: [][]rune{
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9295,7 +10024,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[ou]$"),
+				Suffix: [][]rune{
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9308,7 +10040,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9321,7 +10057,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9334,7 +10075,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("a"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9347,7 +10100,19 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("e"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcdgkpstwzż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("p"),
+					[]rune("s"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9364,7 +10129,27 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("o"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bcćdgklłmnńrsśtwzźż]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("c"),
+					[]rune("ć"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("k"),
+					[]rune("l"),
+					[]rune("ł"),
+					[]rune("m"),
+					[]rune("n"),
+					[]rune("ń"),
+					[]rune("r"),
+					[]rune("s"),
+					[]rune("ś"),
+					[]rune("t"),
+					[]rune("w"),
+					[]rune("z"),
+					[]rune("ź"),
+					[]rune("ż"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9648,7 +10433,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ch"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9692,7 +10480,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9723,7 +10514,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -9736,7 +10531,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10582,7 +11382,13 @@ var Rules = map[common.Lang]common.Rules{
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeoiu]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("i"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10602,7 +11408,13 @@ var Rules = map[common.Lang]common.Rules{
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeoiu]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("i"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10619,11 +11431,25 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[jaeoiuy]$"),
+				Suffix: [][]rune{
+					[]rune("j"),
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("i"),
+					[]rune("u"),
+					[]rune("y"),
+				},
 			},
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeoiu]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("i"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10636,7 +11462,13 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aeoiu]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("o"),
+					[]rune("i"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10740,7 +11572,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("c"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[iey]"),
+				Prefix: [][]rune{
+					[]rune("i"),
+					[]rune("e"),
+					[]rune("y"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10784,7 +11620,9 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("s"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Prefix:           []rune("s"),
+				Prefix: [][]rune{
+					[]rune("s"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10980,7 +11818,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ij"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -10993,7 +11835,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("iy"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11006,7 +11852,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("ii"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11019,7 +11869,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("yj"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11032,7 +11886,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("yy"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11045,7 +11903,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("yi"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aou]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11071,7 +11933,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11084,7 +11949,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("i"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11137,7 +12006,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[au]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11150,7 +12022,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("y"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aiou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("i"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11268,7 +12145,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("e"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[aou]$"),
+				Suffix: [][]rune{
+					[]rune("a"),
+					[]rune("o"),
+					[]rune("u"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11547,7 +12428,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("h"),
 			LeftContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("[bdgt]$"),
+				Suffix: [][]rune{
+					[]rune("b"),
+					[]rune("d"),
+					[]rune("g"),
+					[]rune("t"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11638,7 +12524,12 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("m"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[bpvf]"),
+				Prefix: [][]rune{
+					[]rune("b"),
+					[]rune("p"),
+					[]rune("v"),
+					[]rune("f"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11655,7 +12546,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("c"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11690,7 +12584,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("gu"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11707,7 +12604,10 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("g"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[ei]"),
+				Prefix: [][]rune{
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11755,7 +12655,11 @@ var Rules = map[common.Lang]common.Rules{
 			Pattern: []rune("u"),
 			RightContext: &common.Matcher{
 				MatchEmptyString: false,
-				Pattern:          regexp.MustCompile("^[aei]"),
+				Prefix: [][]rune{
+					[]rune("a"),
+					[]rune("e"),
+					[]rune("i"),
+				},
 			},
 			Phonetic: []common.RuleToken{
 				{
@@ -11999,7 +12903,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("zh"),
+			Contains: [][]rune{
+				[]rune("zh"),
+			},
 		},
 		Langs:  660,
 		Accept: true,
@@ -12007,7 +12913,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("eau"),
+			Contains: [][]rune{
+				[]rune("eau"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12015,7 +12923,16 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("[aoeiuäöü]h"),
+			Contains: [][]rune{
+				[]rune("ah"),
+				[]rune("oh"),
+				[]rune("eh"),
+				[]rune("ih"),
+				[]rune("uh"),
+				[]rune("äh"),
+				[]rune("öh"),
+				[]rune("üh"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12023,7 +12940,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("vogel"),
+			Prefix: [][]rune{
+				[]rune("vogel"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12031,7 +12950,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("vogel"),
+			Suffix: [][]rune{
+				[]rune("vogel"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12039,7 +12960,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("witz"),
+			Contains: [][]rune{
+				[]rune("witz"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12047,7 +12970,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("tz"),
+			Suffix: [][]rune{
+				[]rune("tz"),
+			},
 		},
 		Langs:  532,
 		Accept: true,
@@ -12055,7 +12980,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("tz"),
+			Prefix: [][]rune{
+				[]rune("tz"),
+			},
 		},
 		Langs:  516,
 		Accept: true,
@@ -12063,7 +12990,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("güe"),
+			Contains: [][]rune{
+				[]rune("güe"),
+			},
 		},
 		Langs:  1024,
 		Accept: true,
@@ -12071,7 +13000,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("güi"),
+			Contains: [][]rune{
+				[]rune("güi"),
+			},
 		},
 		Langs:  1024,
 		Accept: true,
@@ -12079,7 +13010,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ghe"),
+			Contains: [][]rune{
+				[]rune("ghe"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12087,7 +13020,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ghi"),
+			Contains: [][]rune{
+				[]rune("ghi"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12095,7 +13030,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("vici"),
+			Suffix: [][]rune{
+				[]rune("vici"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12103,7 +13040,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("schi"),
+			Suffix: [][]rune{
+				[]rune("schi"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12111,7 +13050,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("chsch"),
+			Contains: [][]rune{
+				[]rune("chsch"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12119,7 +13060,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("tsch"),
+			Contains: [][]rune{
+				[]rune("tsch"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12127,7 +13070,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ssch"),
+			Contains: [][]rune{
+				[]rune("ssch"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12135,7 +13080,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("sch"),
+			Suffix: [][]rune{
+				[]rune("sch"),
+			},
 		},
 		Langs:  528,
 		Accept: true,
@@ -12143,7 +13090,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("sch"),
+			Prefix: [][]rune{
+				[]rune("sch"),
+			},
 		},
 		Langs:  528,
 		Accept: true,
@@ -12151,7 +13100,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("rz"),
+			Prefix: [][]rune{
+				[]rune("rz"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12159,7 +13110,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("rz"),
+			Suffix: [][]rune{
+				[]rune("rz"),
+			},
 		},
 		Langs:  144,
 		Accept: true,
@@ -12183,7 +13136,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("cki"),
+			Suffix: [][]rune{
+				[]rune("cki"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12191,7 +13146,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("ska"),
+			Suffix: [][]rune{
+				[]rune("ska"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12199,7 +13156,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("cka"),
+			Suffix: [][]rune{
+				[]rune("cka"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12207,7 +13166,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ue"),
+			Contains: [][]rune{
+				[]rune("ue"),
+			},
 		},
 		Langs:  528,
 		Accept: true,
@@ -12215,7 +13176,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ae"),
+			Contains: [][]rune{
+				[]rune("ae"),
+			},
 		},
 		Langs:  532,
 		Accept: true,
@@ -12223,7 +13186,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("oe"),
+			Contains: [][]rune{
+				[]rune("oe"),
+			},
 		},
 		Langs:  540,
 		Accept: true,
@@ -12231,7 +13196,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("th"),
+			Suffix: [][]rune{
+				[]rune("th"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12239,7 +13206,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("th"),
+			Prefix: [][]rune{
+				[]rune("th"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12255,7 +13224,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("mann"),
+			Contains: [][]rune{
+				[]rune("mann"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12263,7 +13234,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("cz"),
+			Contains: [][]rune{
+				[]rune("cz"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12271,7 +13244,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("cy"),
+			Contains: [][]rune{
+				[]rune("cy"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12279,7 +13254,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("niew"),
+			Contains: [][]rune{
+				[]rune("niew"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12287,7 +13264,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("stein"),
+			Contains: [][]rune{
+				[]rune("stein"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12295,7 +13274,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("heim"),
+			Suffix: [][]rune{
+				[]rune("heim"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12303,7 +13284,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("heimer"),
+			Suffix: [][]rune{
+				[]rune("heimer"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12311,7 +13294,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("ii"),
+			Suffix: [][]rune{
+				[]rune("ii"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12319,7 +13304,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("iy"),
+			Suffix: [][]rune{
+				[]rune("iy"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12327,7 +13314,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("yy"),
+			Suffix: [][]rune{
+				[]rune("yy"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12335,7 +13324,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("yi"),
+			Suffix: [][]rune{
+				[]rune("yi"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12343,7 +13334,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("yj"),
+			Suffix: [][]rune{
+				[]rune("yj"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12351,7 +13344,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("ij"),
+			Suffix: [][]rune{
+				[]rune("ij"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12359,7 +13354,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gaus"),
+			Suffix: [][]rune{
+				[]rune("gaus"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12367,7 +13364,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gauz"),
+			Suffix: [][]rune{
+				[]rune("gauz"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12375,7 +13374,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gauz"),
+			Suffix: [][]rune{
+				[]rune("gauz"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12383,7 +13384,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("goltz"),
+			Suffix: [][]rune{
+				[]rune("goltz"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12399,7 +13402,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("golts"),
+			Suffix: [][]rune{
+				[]rune("golts"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12415,7 +13420,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("goltz"),
+			Prefix: [][]rune{
+				[]rune("goltz"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12431,7 +13438,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("golts"),
+			Prefix: [][]rune{
+				[]rune("golts"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12447,7 +13456,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gendler"),
+			Suffix: [][]rune{
+				[]rune("gendler"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12455,7 +13466,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gejmer"),
+			Suffix: [][]rune{
+				[]rune("gejmer"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12463,7 +13476,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gejm"),
+			Suffix: [][]rune{
+				[]rune("gejm"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12471,7 +13486,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("geimer"),
+			Suffix: [][]rune{
+				[]rune("geimer"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12479,7 +13496,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("geim"),
+			Suffix: [][]rune{
+				[]rune("geim"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12487,7 +13506,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("geymer"),
+			Contains: [][]rune{
+				[]rune("geymer"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12495,7 +13516,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("geym"),
+			Suffix: [][]rune{
+				[]rune("geym"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12503,7 +13526,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gof"),
+			Suffix: [][]rune{
+				[]rune("gof"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -12511,7 +13536,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("thal"),
+			Contains: [][]rune{
+				[]rune("thal"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12519,7 +13546,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("zweig"),
+			Contains: [][]rune{
+				[]rune("zweig"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12527,7 +13556,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("ck"),
+			Suffix: [][]rune{
+				[]rune("ck"),
+			},
 		},
 		Langs:  20,
 		Accept: true,
@@ -12535,7 +13566,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("c"),
+			Suffix: [][]rune{
+				[]rune("c"),
+			},
 		},
 		Langs:  448,
 		Accept: true,
@@ -12543,7 +13576,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("sz"),
+			Contains: [][]rune{
+				[]rune("sz"),
+			},
 		},
 		Langs:  192,
 		Accept: true,
@@ -12551,7 +13586,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("gue"),
+			Contains: [][]rune{
+				[]rune("gue"),
+			},
 		},
 		Langs:  1032,
 		Accept: true,
@@ -12559,7 +13596,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("gui"),
+			Contains: [][]rune{
+				[]rune("gui"),
+			},
 		},
 		Langs:  1032,
 		Accept: true,
@@ -12567,7 +13606,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("guy"),
+			Contains: [][]rune{
+				[]rune("guy"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12575,7 +13616,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("cs"),
+			Suffix: [][]rune{
+				[]rune("cs"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12583,7 +13626,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("cs"),
+			Prefix: [][]rune{
+				[]rune("cs"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12591,7 +13636,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("dzs"),
+			Contains: [][]rune{
+				[]rune("dzs"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12599,7 +13646,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("zs"),
+			Suffix: [][]rune{
+				[]rune("zs"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12607,7 +13656,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("zs"),
+			Prefix: [][]rune{
+				[]rune("zs"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12615,7 +13666,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("wl"),
+			Prefix: [][]rune{
+				[]rune("wl"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12623,7 +13676,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("wr"),
+			Prefix: [][]rune{
+				[]rune("wr"),
+			},
 		},
 		Langs:  148,
 		Accept: true,
@@ -12631,7 +13686,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Suffix:           []rune("gy"),
+			Suffix: [][]rune{
+				[]rune("gy"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12639,7 +13696,12 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("gy[aeou]"),
+			Contains: [][]rune{
+				[]rune("gya"),
+				[]rune("gye"),
+				[]rune("gyo"),
+				[]rune("gyu"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12647,7 +13709,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("gy"),
+			Contains: [][]rune{
+				[]rune("gy"),
+			},
 		},
 		Langs:  576,
 		Accept: true,
@@ -12655,7 +13719,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ly"),
+			Contains: [][]rune{
+				[]rune("ly"),
+			},
 		},
 		Langs:  704,
 		Accept: true,
@@ -12663,7 +13729,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ny"),
+			Contains: [][]rune{
+				[]rune("ny"),
+			},
 		},
 		Langs:  704,
 		Accept: true,
@@ -12671,7 +13739,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ty"),
+			Contains: [][]rune{
+				[]rune("ty"),
+			},
 		},
 		Langs:  704,
 		Accept: true,
@@ -12679,7 +13749,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("â"),
+			Contains: [][]rune{
+				[]rune("â"),
+			},
 		},
 		Langs:  264,
 		Accept: true,
@@ -12687,7 +13759,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ă"),
+			Contains: [][]rune{
+				[]rune("ă"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12695,7 +13769,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("à"),
+			Contains: [][]rune{
+				[]rune("à"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12703,7 +13779,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ä"),
+			Contains: [][]rune{
+				[]rune("ä"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12711,7 +13789,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("á"),
+			Contains: [][]rune{
+				[]rune("á"),
+			},
 		},
 		Langs:  1088,
 		Accept: true,
@@ -12719,7 +13799,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ą"),
+			Contains: [][]rune{
+				[]rune("ą"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12727,7 +13809,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ć"),
+			Contains: [][]rune{
+				[]rune("ć"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12735,7 +13819,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ç"),
+			Contains: [][]rune{
+				[]rune("ç"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12743,7 +13829,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ę"),
+			Contains: [][]rune{
+				[]rune("ę"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12751,7 +13839,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("é"),
+			Contains: [][]rune{
+				[]rune("é"),
+			},
 		},
 		Langs:  1096,
 		Accept: true,
@@ -12759,7 +13849,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("è"),
+			Contains: [][]rune{
+				[]rune("è"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12767,7 +13859,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ê"),
+			Contains: [][]rune{
+				[]rune("ê"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12775,7 +13869,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("í"),
+			Contains: [][]rune{
+				[]rune("í"),
+			},
 		},
 		Langs:  1088,
 		Accept: true,
@@ -12783,7 +13879,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("î"),
+			Contains: [][]rune{
+				[]rune("î"),
+			},
 		},
 		Langs:  264,
 		Accept: true,
@@ -12791,7 +13889,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ł"),
+			Contains: [][]rune{
+				[]rune("ł"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12799,7 +13899,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ń"),
+			Contains: [][]rune{
+				[]rune("ń"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12807,7 +13909,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ñ"),
+			Contains: [][]rune{
+				[]rune("ñ"),
+			},
 		},
 		Langs:  1024,
 		Accept: true,
@@ -12815,7 +13919,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ó"),
+			Contains: [][]rune{
+				[]rune("ó"),
+			},
 		},
 		Langs:  1216,
 		Accept: true,
@@ -12823,7 +13929,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ö"),
+			Contains: [][]rune{
+				[]rune("ö"),
+			},
 		},
 		Langs:  80,
 		Accept: true,
@@ -12831,7 +13939,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("õ"),
+			Contains: [][]rune{
+				[]rune("õ"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12839,7 +13949,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ş"),
+			Contains: [][]rune{
+				[]rune("ş"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12847,7 +13959,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ś"),
+			Contains: [][]rune{
+				[]rune("ś"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12855,7 +13969,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ţ"),
+			Contains: [][]rune{
+				[]rune("ţ"),
+			},
 		},
 		Langs:  256,
 		Accept: true,
@@ -12863,7 +13979,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ü"),
+			Contains: [][]rune{
+				[]rune("ü"),
+			},
 		},
 		Langs:  80,
 		Accept: true,
@@ -12871,7 +13989,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ù"),
+			Contains: [][]rune{
+				[]rune("ù"),
+			},
 		},
 		Langs:  8,
 		Accept: true,
@@ -12879,7 +13999,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ű"),
+			Contains: [][]rune{
+				[]rune("ű"),
+			},
 		},
 		Langs:  64,
 		Accept: true,
@@ -12887,7 +14009,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ú"),
+			Contains: [][]rune{
+				[]rune("ú"),
+			},
 		},
 		Langs:  1088,
 		Accept: true,
@@ -12895,7 +14019,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ź"),
+			Contains: [][]rune{
+				[]rune("ź"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12903,7 +14029,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ż"),
+			Contains: [][]rune{
+				[]rune("ż"),
+			},
 		},
 		Langs:  128,
 		Accept: true,
@@ -12911,7 +14039,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ß"),
+			Contains: [][]rune{
+				[]rune("ß"),
+			},
 		},
 		Langs:  16,
 		Accept: true,
@@ -12919,7 +14049,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("а"),
+			Contains: [][]rune{
+				[]rune("а"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12927,7 +14059,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ё"),
+			Contains: [][]rune{
+				[]rune("ё"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12935,7 +14069,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("о"),
+			Contains: [][]rune{
+				[]rune("о"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12943,7 +14079,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("е"),
+			Contains: [][]rune{
+				[]rune("е"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12951,7 +14089,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("и"),
+			Contains: [][]rune{
+				[]rune("и"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12959,7 +14099,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("у"),
+			Contains: [][]rune{
+				[]rune("у"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12967,7 +14109,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ы"),
+			Contains: [][]rune{
+				[]rune("ы"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12975,7 +14119,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("э"),
+			Contains: [][]rune{
+				[]rune("э"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12983,7 +14129,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ю"),
+			Contains: [][]rune{
+				[]rune("ю"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12991,7 +14139,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("я"),
+			Contains: [][]rune{
+				[]rune("я"),
+			},
 		},
 		Langs:  2,
 		Accept: true,
@@ -12999,7 +14149,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("א"),
+			Contains: [][]rune{
+				[]rune("א"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13007,7 +14159,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ב"),
+			Contains: [][]rune{
+				[]rune("ב"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13015,7 +14169,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ג"),
+			Contains: [][]rune{
+				[]rune("ג"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13023,7 +14179,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ד"),
+			Contains: [][]rune{
+				[]rune("ד"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13031,7 +14189,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ה"),
+			Contains: [][]rune{
+				[]rune("ה"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13039,7 +14199,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ו"),
+			Contains: [][]rune{
+				[]rune("ו"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13047,7 +14209,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ז"),
+			Contains: [][]rune{
+				[]rune("ז"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13055,7 +14219,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ח"),
+			Contains: [][]rune{
+				[]rune("ח"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13063,7 +14229,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ט"),
+			Contains: [][]rune{
+				[]rune("ט"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13071,7 +14239,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("י"),
+			Contains: [][]rune{
+				[]rune("י"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13079,7 +14249,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("כ"),
+			Contains: [][]rune{
+				[]rune("כ"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13087,7 +14259,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ל"),
+			Contains: [][]rune{
+				[]rune("ל"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13095,7 +14269,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("מ"),
+			Contains: [][]rune{
+				[]rune("מ"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13103,7 +14279,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("נ"),
+			Contains: [][]rune{
+				[]rune("נ"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13111,7 +14289,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ס"),
+			Contains: [][]rune{
+				[]rune("ס"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13119,7 +14299,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ע"),
+			Contains: [][]rune{
+				[]rune("ע"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13127,7 +14309,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("פ"),
+			Contains: [][]rune{
+				[]rune("פ"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13135,7 +14319,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("צ"),
+			Contains: [][]rune{
+				[]rune("צ"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13143,7 +14329,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ק"),
+			Contains: [][]rune{
+				[]rune("ק"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13151,7 +14339,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ר"),
+			Contains: [][]rune{
+				[]rune("ר"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13159,7 +14349,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ש"),
+			Contains: [][]rune{
+				[]rune("ש"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13167,7 +14359,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ת"),
+			Contains: [][]rune{
+				[]rune("ת"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -13175,7 +14369,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("a"),
+			Contains: [][]rune{
+				[]rune("a"),
+			},
 		},
 		Langs:  34,
 		Accept: false,
@@ -13183,7 +14379,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("o"),
+			Contains: [][]rune{
+				[]rune("o"),
+			},
 		},
 		Langs:  34,
 		Accept: false,
@@ -13191,7 +14389,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("e"),
+			Contains: [][]rune{
+				[]rune("e"),
+			},
 		},
 		Langs:  34,
 		Accept: false,
@@ -13199,7 +14399,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("i"),
+			Contains: [][]rune{
+				[]rune("i"),
+			},
 		},
 		Langs:  34,
 		Accept: false,
@@ -13207,7 +14409,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("y"),
+			Contains: [][]rune{
+				[]rune("y"),
+			},
 		},
 		Langs:  290,
 		Accept: false,
@@ -13215,7 +14419,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("u"),
+			Contains: [][]rune{
+				[]rune("u"),
+			},
 		},
 		Langs:  34,
 		Accept: false,
@@ -13247,7 +14453,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("dzi"),
+			Contains: [][]rune{
+				[]rune("dzi"),
+			},
 		},
 		Langs:  28,
 		Accept: false,
@@ -13255,7 +14463,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ou"),
+			Contains: [][]rune{
+				[]rune("ou"),
+			},
 		},
 		Langs:  16,
 		Accept: false,
@@ -13263,7 +14473,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("aj"),
+			Contains: [][]rune{
+				[]rune("aj"),
+			},
 		},
 		Langs:  28,
 		Accept: false,
@@ -13271,7 +14483,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ej"),
+			Contains: [][]rune{
+				[]rune("ej"),
+			},
 		},
 		Langs:  28,
 		Accept: false,
@@ -13279,7 +14493,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("oj"),
+			Contains: [][]rune{
+				[]rune("oj"),
+			},
 		},
 		Langs:  28,
 		Accept: false,
@@ -13287,7 +14503,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("uj"),
+			Contains: [][]rune{
+				[]rune("uj"),
+			},
 		},
 		Langs:  28,
 		Accept: false,
@@ -13295,7 +14513,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("k"),
+			Contains: [][]rune{
+				[]rune("k"),
+			},
 		},
 		Langs:  256,
 		Accept: false,
@@ -13303,7 +14523,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("v"),
+			Contains: [][]rune{
+				[]rune("v"),
+			},
 		},
 		Langs:  128,
 		Accept: false,
@@ -13311,7 +14533,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("ky"),
+			Contains: [][]rune{
+				[]rune("ky"),
+			},
 		},
 		Langs:  128,
 		Accept: false,
@@ -13319,7 +14543,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("eu"),
+			Contains: [][]rune{
+				[]rune("eu"),
+			},
 		},
 		Langs:  640,
 		Accept: false,
@@ -13327,7 +14553,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("w"),
+			Contains: [][]rune{
+				[]rune("w"),
+			},
 		},
 		Langs:  1864,
 		Accept: false,
@@ -13335,7 +14563,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("kie"),
+			Contains: [][]rune{
+				[]rune("kie"),
+			},
 		},
 		Langs:  1032,
 		Accept: false,
@@ -13343,7 +14573,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("gie"),
+			Contains: [][]rune{
+				[]rune("gie"),
+			},
 		},
 		Langs:  1288,
 		Accept: false,
@@ -13351,7 +14583,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("q"),
+			Contains: [][]rune{
+				[]rune("q"),
+			},
 		},
 		Langs:  960,
 		Accept: false,
@@ -13359,7 +14593,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Contains:         []rune("sch"),
+			Contains: [][]rune{
+				[]rune("sch"),
+			},
 		},
 		Langs:  1224,
 		Accept: false,
@@ -13367,7 +14603,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Prefix:           []rune("h"),
+			Prefix: [][]rune{
+				[]rune("h"),
+			},
 		},
 		Langs:  512,
 		Accept: false,
@@ -13393,7 +14631,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("b"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[fktSs]"),
+					Prefix: [][]rune{
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("t"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13406,7 +14650,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("b"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("p"),
+					Prefix: [][]rune{
+						[]rune("p"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13431,7 +14677,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("p"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[gdZz]"),
+					Prefix: [][]rune{
+						[]rune("g"),
+						[]rune("d"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13444,7 +14695,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("p"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("b"),
+					Prefix: [][]rune{
+						[]rune("b"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13457,7 +14710,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("v"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pktSs]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("k"),
+						[]rune("t"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13470,7 +14729,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("v"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("f"),
+					Prefix: [][]rune{
+						[]rune("f"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13495,7 +14756,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("f"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bgdZz]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("g"),
+						[]rune("d"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13508,7 +14775,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("f"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("v"),
+					Prefix: [][]rune{
+						[]rune("v"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13521,7 +14790,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("g"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pftSs]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("t"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13534,7 +14809,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("g"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("k"),
+					Prefix: [][]rune{
+						[]rune("k"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13559,7 +14836,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("k"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bdZz]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13572,7 +14854,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("k"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("g"),
+					Prefix: [][]rune{
+						[]rune("g"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13585,7 +14869,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("d"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pfkSs]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13598,7 +14888,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("d"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("t"),
+					Prefix: [][]rune{
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13623,7 +14915,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("t"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bgZz]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("g"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13636,7 +14933,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("t"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("d"),
+					Prefix: [][]rune{
+						[]rune("d"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13649,7 +14948,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("dZ"),
+					Prefix: [][]rune{
+						[]rune("dZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13662,7 +14963,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("tS"),
+					Prefix: [][]rune{
+						[]rune("tS"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13675,7 +14978,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pfkSt]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("S"),
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13688,7 +14997,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13701,7 +15015,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13714,7 +15033,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13727,7 +15051,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("S"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13773,7 +15102,11 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("a"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[aAB]"),
+					Prefix: [][]rune{
+						[]rune("a"),
+						[]rune("A"),
+						[]rune("B"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13786,7 +15119,10 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("a"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[AB]$"),
+					Suffix: [][]rune{
+						[]rune("A"),
+						[]rune("B"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13799,7 +15135,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("A"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("A"),
+					Prefix: [][]rune{
+						[]rune("A"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13812,7 +15150,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("B"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("B"),
+					Prefix: [][]rune{
+						[]rune("B"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13825,7 +15165,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("b"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("b"),
+					Prefix: [][]rune{
+						[]rune("b"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13838,7 +15180,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("d"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("d"),
+					Prefix: [][]rune{
+						[]rune("d"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13851,7 +15195,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("f"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("f"),
+					Prefix: [][]rune{
+						[]rune("f"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13864,7 +15210,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("g"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("g"),
+					Prefix: [][]rune{
+						[]rune("g"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13877,7 +15225,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("k"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("k"),
+					Prefix: [][]rune{
+						[]rune("k"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13890,7 +15240,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("l"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("l"),
+					Prefix: [][]rune{
+						[]rune("l"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13903,7 +15255,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("m"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("m"),
+					Prefix: [][]rune{
+						[]rune("m"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13916,7 +15270,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("n"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("n"),
+					Prefix: [][]rune{
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13929,7 +15285,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("p"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("p"),
+					Prefix: [][]rune{
+						[]rune("p"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13942,7 +15300,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("r"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("r"),
+					Prefix: [][]rune{
+						[]rune("r"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13955,7 +15315,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("t"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("t"),
+					Prefix: [][]rune{
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13968,7 +15330,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("v"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("v"),
+					Prefix: [][]rune{
+						[]rune("v"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13981,7 +15345,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("z"),
+					Prefix: [][]rune{
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -13994,7 +15360,10 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("n"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bp]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("p"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14010,7 +15379,18 @@ var FinalRules = common.FinalRules{
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
+					Prefix: [][]rune{
+						[]rune("A"),
+						[]rune("E"),
+						[]rune("O"),
+						[]rune("I"),
+						[]rune("U"),
+						[]rune("a"),
+						[]rune("e"),
+						[]rune("o"),
+						[]rune("i"),
+						[]rune("u"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14030,7 +15410,18 @@ var FinalRules = common.FinalRules{
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
+					Prefix: [][]rune{
+						[]rune("A"),
+						[]rune("E"),
+						[]rune("O"),
+						[]rune("I"),
+						[]rune("U"),
+						[]rune("a"),
+						[]rune("e"),
+						[]rune("o"),
+						[]rune("i"),
+						[]rune("u"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14050,7 +15441,18 @@ var FinalRules = common.FinalRules{
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
+					Prefix: [][]rune{
+						[]rune("A"),
+						[]rune("E"),
+						[]rune("O"),
+						[]rune("I"),
+						[]rune("U"),
+						[]rune("a"),
+						[]rune("e"),
+						[]rune("o"),
+						[]rune("i"),
+						[]rune("u"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14070,7 +15472,18 @@ var FinalRules = common.FinalRules{
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[AEOIUaeoiu]"),
+					Prefix: [][]rune{
+						[]rune("A"),
+						[]rune("E"),
+						[]rune("O"),
+						[]rune("I"),
+						[]rune("U"),
+						[]rune("a"),
+						[]rune("e"),
+						[]rune("o"),
+						[]rune("i"),
+						[]rune("u"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14109,7 +15522,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("F"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]h"),
+					Prefix: [][]rune{
+						[]rune("bh"),
+						[]rune("dh"),
+						[]rune("gh"),
+						[]rune("kh"),
+						[]rune("ph"),
+						[]rune("sh"),
+						[]rune("th"),
+						[]rune("vh"),
+						[]rune("zh"),
+						[]rune("Zh"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14122,7 +15546,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("F"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]x"),
+					Prefix: [][]rune{
+						[]rune("bx"),
+						[]rune("dx"),
+						[]rune("gx"),
+						[]rune("kx"),
+						[]rune("px"),
+						[]rune("sx"),
+						[]rune("tx"),
+						[]rune("vx"),
+						[]rune("zx"),
+						[]rune("Zx"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14135,7 +15570,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("B"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]h"),
+					Prefix: [][]rune{
+						[]rune("bh"),
+						[]rune("dh"),
+						[]rune("gh"),
+						[]rune("kh"),
+						[]rune("ph"),
+						[]rune("sh"),
+						[]rune("th"),
+						[]rune("vh"),
+						[]rune("zh"),
+						[]rune("Zh"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14148,7 +15594,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("B"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bdgkpstvzZ]x"),
+					Prefix: [][]rune{
+						[]rune("bx"),
+						[]rune("dx"),
+						[]rune("gx"),
+						[]rune("kx"),
+						[]rune("px"),
+						[]rune("sx"),
+						[]rune("tx"),
+						[]rune("vx"),
+						[]rune("zx"),
+						[]rune("Zx"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14161,11 +15618,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("e"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14178,11 +15655,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("i"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14195,11 +15692,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("E"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14212,11 +15729,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("I"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14229,11 +15766,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("F"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14246,11 +15803,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Q"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14263,11 +15840,31 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Y"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln]$"),
+					Exact: [][]rune{
+						[]rune("l"),
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14280,11 +15877,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("e"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14301,11 +15948,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("i"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14322,11 +16019,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("E"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14343,11 +16090,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("I"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14364,11 +16161,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("F"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14385,11 +16232,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Q"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14406,11 +16303,61 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Y"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgklmnprsStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("l"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[ln][bdfgklmnprsStvzZ]"),
+					Prefix: [][]rune{
+						[]rune("lb"),
+						[]rune("ld"),
+						[]rune("lf"),
+						[]rune("lg"),
+						[]rune("lk"),
+						[]rune("ll"),
+						[]rune("lm"),
+						[]rune("ln"),
+						[]rune("lp"),
+						[]rune("lr"),
+						[]rune("ls"),
+						[]rune("lS"),
+						[]rune("lt"),
+						[]rune("lv"),
+						[]rune("lz"),
+						[]rune("lZ"),
+						[]rune("nb"),
+						[]rune("nd"),
+						[]rune("nf"),
+						[]rune("ng"),
+						[]rune("nk"),
+						[]rune("nl"),
+						[]rune("nm"),
+						[]rune("nn"),
+						[]rune("np"),
+						[]rune("nr"),
+						[]rune("ns"),
+						[]rune("nS"),
+						[]rune("nt"),
+						[]rune("nv"),
+						[]rune("nz"),
+						[]rune("nZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -14440,7 +16387,22 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("lE"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[bdfgkmnprStvzZ]$"),
+					Suffix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("f"),
+						[]rune("g"),
+						[]rune("k"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("p"),
+						[]rune("r"),
+						[]rune("S"),
+						[]rune("t"),
+						[]rune("v"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -15712,7 +17674,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[rmnl]"),
+					Prefix: [][]rune{
+						[]rune("r"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("l"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -15725,7 +17692,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("S"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[rmnl]"),
+					Prefix: [][]rune{
+						[]rune("r"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("l"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -15738,7 +17710,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[rmnl]$"),
+					Suffix: [][]rune{
+						[]rune("r"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("l"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -15751,7 +17728,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("S"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[rmnl]$"),
+					Suffix: [][]rune{
+						[]rune("r"),
+						[]rune("m"),
+						[]rune("n"),
+						[]rune("l"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -15884,7 +17866,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -15901,7 +17886,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("AiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -15918,7 +17906,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -15935,7 +17926,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("OiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -15952,7 +17946,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -15969,7 +17966,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("UiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -15986,7 +17986,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16003,7 +18006,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16020,7 +18026,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16037,7 +18046,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16054,7 +18066,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16071,7 +18091,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("AiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16088,7 +18116,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16105,7 +18141,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("OiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16122,7 +18166,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16139,7 +18191,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("UiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16156,7 +18216,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16173,7 +18241,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16190,7 +18266,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16207,7 +18291,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16224,7 +18316,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("B"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16245,7 +18340,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("B"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16283,7 +18386,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16300,7 +18406,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("AiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16317,7 +18426,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16334,7 +18446,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("OiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16351,7 +18466,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16368,7 +18486,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("UiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16385,7 +18506,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16402,7 +18526,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16419,7 +18546,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16436,7 +18566,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16453,7 +18586,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16470,7 +18611,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("AiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16487,7 +18636,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16504,7 +18661,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("OiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16521,7 +18686,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16538,7 +18711,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("UiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16555,7 +18736,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16572,7 +18761,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16589,7 +18786,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16606,7 +18811,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16623,7 +18836,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("F"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16644,7 +18860,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("F"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16687,7 +18911,22 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aeiouAEIBFOUQY]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("o"),
+							[]rune("u"),
+							[]rune("A"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("B"),
+							[]rune("F"),
+							[]rune("O"),
+							[]rune("U"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -16746,7 +18985,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -16819,7 +19061,23 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("lE"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+						Suffix: [][]rune{
+							[]rune("b"),
+							[]rune("d"),
+							[]rune("f"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+							[]rune("Z"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -16839,7 +19097,23 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("lE"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+						Suffix: [][]rune{
+							[]rune("b"),
+							[]rune("d"),
+							[]rune("f"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+							[]rune("Z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17122,7 +19396,18 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("e"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprstv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17135,7 +19420,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("e"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17160,7 +19447,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("e"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("I"),
+							[]rune("U"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17173,7 +19472,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("e"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoAOQY]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17199,7 +19505,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17212,7 +19528,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17237,7 +19555,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuAOIUQY]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("I"),
+							[]rune("U"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17250,7 +19580,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoAOQY]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17289,7 +19626,18 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("O"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprstv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17302,7 +19650,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("O"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17327,7 +19677,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("O"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[oeiuQY]$"),
+						Suffix: [][]rune{
+							[]rune("o"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17353,7 +19710,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("A"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17370,7 +19737,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("A"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17403,7 +19772,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("A"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[oeiuQY]$"),
+						Suffix: [][]rune{
+							[]rune("o"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17449,7 +19825,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("U"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DoiuQY]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17475,7 +19858,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Uk"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -17575,7 +19961,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -17635,7 +20024,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aeiEIou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17746,7 +20143,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("om"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17763,7 +20163,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("on"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17780,7 +20188,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("em"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17797,7 +20208,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("en"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17814,7 +20233,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Em"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17835,7 +20257,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("En"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17878,7 +20308,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17891,7 +20333,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17904,7 +20348,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17917,7 +20368,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -17970,7 +20425,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -18030,7 +20488,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aeiEIou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18141,7 +20607,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("om"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18158,7 +20627,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("on"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18175,7 +20652,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("em"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18192,7 +20672,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("en"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18209,7 +20697,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Em"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18230,7 +20721,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("En"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18273,7 +20772,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18286,7 +20797,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18299,7 +20812,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18312,7 +20832,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18373,7 +20897,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aEIeiou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18399,7 +20931,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -18472,7 +21007,23 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("lE"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[bdfgkmnprsStvzZ]$"),
+						Suffix: [][]rune{
+							[]rune("b"),
+							[]rune("d"),
+							[]rune("f"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+							[]rune("Z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18621,7 +21172,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18634,7 +21197,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18647,7 +21212,16 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiEuQY]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("E"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18660,7 +21234,12 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQY]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18713,7 +21292,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aEIeiou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18739,7 +21326,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -18919,7 +21509,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18932,7 +21534,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18945,7 +21549,13 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18958,7 +21568,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -18998,7 +21612,20 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aeiAEIOUouQY]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("A"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("O"),
+							[]rune("U"),
+							[]rune("o"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19024,7 +21651,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -19344,7 +21974,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19357,7 +21997,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19382,7 +22024,18 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoAOUiuQY]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("U"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19395,7 +22048,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoAOQY]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19433,7 +22093,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("O"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19446,7 +22116,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("O"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19459,7 +22131,18 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("O"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aoAOUeiuQY]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("A"),
+							[]rune("O"),
+							[]rune("U"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19514,7 +22197,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("A"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19531,7 +22224,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("A"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19548,7 +22243,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("A"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aoeOUiuQY]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("e"),
+							[]rune("O"),
+							[]rune("U"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19594,7 +22299,16 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("U"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuUQY]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("U"),
+							[]rune("Q"),
+							[]rune("Y"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19620,7 +22334,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Uk"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -19708,7 +22425,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aEIeiou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19734,7 +22459,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -19914,7 +22642,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19927,7 +22667,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19940,7 +22682,13 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19953,7 +22701,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19981,7 +22733,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -19998,7 +22753,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20015,7 +22773,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20032,7 +22793,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20049,7 +22813,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20066,7 +22833,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20083,7 +22853,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20100,7 +22873,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20117,7 +22898,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20134,7 +22923,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20151,7 +22948,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20168,7 +22973,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20185,7 +22998,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20202,7 +23023,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20219,7 +23048,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("B"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20240,7 +23072,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("B"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20270,7 +23110,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20287,7 +23130,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20304,7 +23150,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20321,7 +23170,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20338,7 +23190,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20355,7 +23210,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20372,7 +23230,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20389,7 +23250,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20406,7 +23275,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20423,7 +23300,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20440,7 +23325,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20457,7 +23350,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20474,7 +23375,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20491,7 +23400,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20508,7 +23425,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("F"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20529,7 +23449,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("F"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20597,7 +23525,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -20657,7 +23588,18 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("A"),
+							[]rune("E"),
+							[]rune("B"),
+							[]rune("F"),
+							[]rune("I"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20790,7 +23732,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20803,7 +23755,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20828,7 +23782,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20841,7 +23802,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20869,7 +23834,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20886,7 +23854,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20903,7 +23874,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20920,7 +23894,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20937,7 +23914,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20954,7 +23934,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20971,7 +23954,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -20988,7 +23974,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21005,7 +23999,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21022,7 +24024,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21039,7 +24049,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21056,7 +24074,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21073,7 +24099,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21090,7 +24124,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiB"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21107,7 +24149,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("B"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21128,7 +24173,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("B"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21158,7 +24211,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21175,7 +24231,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21192,7 +24251,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21209,7 +24271,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21226,7 +24291,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21243,7 +24311,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21260,7 +24331,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21277,7 +24351,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("aiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21294,7 +24376,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("oiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21311,7 +24401,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("uiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21328,7 +24426,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("eiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21345,7 +24451,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("EiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21362,7 +24476,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("iiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21379,7 +24501,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("IiF"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21396,7 +24526,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("F"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[bp]"),
+						Prefix: [][]rune{
+							[]rune("b"),
+							[]rune("p"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21417,7 +24550,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("F"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[dgkstvz]"),
+						Prefix: [][]rune{
+							[]rune("d"),
+							[]rune("g"),
+							[]rune("k"),
+							[]rune("s"),
+							[]rune("t"),
+							[]rune("v"),
+							[]rune("z"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21485,7 +24626,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -21545,7 +24689,18 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aeiAEBFIou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("A"),
+							[]rune("E"),
+							[]rune("B"),
+							[]rune("F"),
+							[]rune("I"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21678,7 +24833,17 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprst]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("t"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21691,7 +24856,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21716,7 +24883,14 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[DaoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("D"),
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21729,7 +24903,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21769,7 +24947,15 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("I"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aEIeiou]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("E"),
+							[]rune("I"),
+							[]rune("e"),
+							[]rune("i"),
+							[]rune("o"),
+							[]rune("u"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21795,7 +24981,10 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("Ik"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[lr]$"),
+						Suffix: [][]rune{
+							[]rune("l"),
+							[]rune("r"),
+						},
 					},
 					RightContext: &common.Matcher{
 						MatchEmptyString: true,
@@ -21975,7 +25164,19 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[fklmnprsStv]$"),
+						Exact: [][]rune{
+							[]rune("f"),
+							[]rune("k"),
+							[]rune("l"),
+							[]rune("m"),
+							[]rune("n"),
+							[]rune("p"),
+							[]rune("r"),
+							[]rune("s"),
+							[]rune("S"),
+							[]rune("t"),
+							[]rune("v"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -21988,7 +25189,9 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^ts$"),
+						Exact: [][]rune{
+							[]rune("ts"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -22001,7 +25204,13 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					LeftContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("[aoiuQ]$"),
+						Suffix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("i"),
+							[]rune("u"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -22014,7 +25223,11 @@ var FinalRules = common.FinalRules{
 					Pattern: []rune("E"),
 					RightContext: &common.Matcher{
 						MatchEmptyString: false,
-						Pattern:          regexp.MustCompile("^[aoQ]"),
+						Prefix: [][]rune{
+							[]rune("a"),
+							[]rune("o"),
+							[]rune("Q"),
+						},
 					},
 					Phonetic: []common.RuleToken{
 						{
@@ -22057,7 +25270,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("b"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[fktSs]"),
+					Prefix: [][]rune{
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("t"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22070,7 +25289,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("b"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("p"),
+					Prefix: [][]rune{
+						[]rune("p"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22095,7 +25316,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("p"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[gdZz]"),
+					Prefix: [][]rune{
+						[]rune("g"),
+						[]rune("d"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22108,7 +25334,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("p"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("b"),
+					Prefix: [][]rune{
+						[]rune("b"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22121,7 +25349,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("v"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pktSs]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("k"),
+						[]rune("t"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22134,7 +25368,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("v"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("f"),
+					Prefix: [][]rune{
+						[]rune("f"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22159,7 +25395,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("f"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bgdZz]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("g"),
+						[]rune("d"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22172,7 +25414,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("f"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("v"),
+					Prefix: [][]rune{
+						[]rune("v"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22185,7 +25429,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("g"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pftSs]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("t"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22198,7 +25448,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("g"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("k"),
+					Prefix: [][]rune{
+						[]rune("k"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22223,7 +25475,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("k"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bdZz]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("d"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22236,7 +25493,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("k"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("g"),
+					Prefix: [][]rune{
+						[]rune("g"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22249,7 +25508,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("d"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pfkSs]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("S"),
+						[]rune("s"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22262,7 +25527,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("d"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("t"),
+					Prefix: [][]rune{
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22287,7 +25554,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("t"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bgZz]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("g"),
+						[]rune("Z"),
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22300,7 +25572,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("t"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("d"),
+					Prefix: [][]rune{
+						[]rune("d"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22313,7 +25587,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("dZ"),
+					Prefix: [][]rune{
+						[]rune("dZ"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22326,7 +25602,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("tS"),
+					Prefix: [][]rune{
+						[]rune("tS"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22339,7 +25617,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pfkSt]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("S"),
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22352,7 +25636,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22365,7 +25654,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("s"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22378,7 +25672,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22391,7 +25690,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("S"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[sSzZ]"),
+					Prefix: [][]rune{
+						[]rune("s"),
+						[]rune("S"),
+						[]rune("z"),
+						[]rune("Z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22437,7 +25741,11 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("a"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[aAB]"),
+					Prefix: [][]rune{
+						[]rune("a"),
+						[]rune("A"),
+						[]rune("B"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22450,7 +25758,10 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("a"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[AB]$"),
+					Suffix: [][]rune{
+						[]rune("A"),
+						[]rune("B"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22463,7 +25774,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("A"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("A"),
+					Prefix: [][]rune{
+						[]rune("A"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22476,7 +25789,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("B"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("B"),
+					Prefix: [][]rune{
+						[]rune("B"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22489,7 +25804,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("b"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("b"),
+					Prefix: [][]rune{
+						[]rune("b"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22502,7 +25819,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("d"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("d"),
+					Prefix: [][]rune{
+						[]rune("d"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22515,7 +25834,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("f"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("f"),
+					Prefix: [][]rune{
+						[]rune("f"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22528,7 +25849,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("g"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("g"),
+					Prefix: [][]rune{
+						[]rune("g"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22541,7 +25864,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("k"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("k"),
+					Prefix: [][]rune{
+						[]rune("k"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22554,7 +25879,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("l"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("l"),
+					Prefix: [][]rune{
+						[]rune("l"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22567,7 +25894,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("m"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("m"),
+					Prefix: [][]rune{
+						[]rune("m"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22580,7 +25909,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("n"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("n"),
+					Prefix: [][]rune{
+						[]rune("n"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22593,7 +25924,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("p"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("p"),
+					Prefix: [][]rune{
+						[]rune("p"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22606,7 +25939,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("r"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("r"),
+					Prefix: [][]rune{
+						[]rune("r"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22619,7 +25954,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("t"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("t"),
+					Prefix: [][]rune{
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22632,7 +25969,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("v"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("v"),
+					Prefix: [][]rune{
+						[]rune("v"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22645,7 +25984,9 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Prefix:           []rune("z"),
+					Prefix: [][]rune{
+						[]rune("z"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22671,7 +26012,12 @@ var FinalRules = common.FinalRules{
 				},
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bgZd]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("g"),
+						[]rune("Z"),
+						[]rune("d"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22684,7 +26030,13 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("Z"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[pfkst]"),
+					Prefix: [][]rune{
+						[]rune("p"),
+						[]rune("f"),
+						[]rune("k"),
+						[]rune("s"),
+						[]rune("t"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22709,7 +26061,12 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("S"),
 				RightContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("^[bgzd]"),
+					Prefix: [][]rune{
+						[]rune("b"),
+						[]rune("g"),
+						[]rune("z"),
+						[]rune("d"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22734,7 +26091,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("ji"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
+					Suffix: [][]rune{
+						[]rune("a"),
+						[]rune("A"),
+						[]rune("o"),
+						[]rune("O"),
+						[]rune("e"),
+						[]rune("E"),
+						[]rune("i"),
+						[]rune("I"),
+						[]rune("u"),
+						[]rune("U"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22747,7 +26115,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("jI"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
+					Suffix: [][]rune{
+						[]rune("a"),
+						[]rune("A"),
+						[]rune("o"),
+						[]rune("O"),
+						[]rune("e"),
+						[]rune("E"),
+						[]rune("i"),
+						[]rune("I"),
+						[]rune("u"),
+						[]rune("U"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22760,7 +26139,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("je"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
+					Suffix: [][]rune{
+						[]rune("a"),
+						[]rune("A"),
+						[]rune("o"),
+						[]rune("O"),
+						[]rune("e"),
+						[]rune("E"),
+						[]rune("i"),
+						[]rune("I"),
+						[]rune("u"),
+						[]rune("U"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{
@@ -22773,7 +26163,18 @@ var FinalRules = common.FinalRules{
 				Pattern: []rune("jE"),
 				LeftContext: &common.Matcher{
 					MatchEmptyString: false,
-					Pattern:          regexp.MustCompile("[aAoOeEiIuU]$"),
+					Suffix: [][]rune{
+						[]rune("a"),
+						[]rune("A"),
+						[]rune("o"),
+						[]rune("O"),
+						[]rune("e"),
+						[]rune("E"),
+						[]rune("i"),
+						[]rune("I"),
+						[]rune("u"),
+						[]rune("U"),
+					},
 				},
 				Phonetic: []common.RuleToken{
 					{

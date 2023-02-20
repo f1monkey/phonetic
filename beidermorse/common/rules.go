@@ -154,9 +154,10 @@ type LangRule struct {
 type Matcher struct {
 	MatchEmptyString bool
 	Pattern          *regexp.Regexp
-	Prefix           []rune
-	Suffix           []rune
-	Contains         []rune
+	Prefix           [][]rune
+	Suffix           [][]rune
+	Contains         [][]rune
+	Exact            [][]rune
 }
 
 func (r Matcher) Match(str []rune) bool {
@@ -165,15 +166,39 @@ func (r Matcher) Match(str []rune) bool {
 	}
 
 	if len(r.Contains) > 0 {
-		return exrunes.Contains(str, r.Contains)
+		for i := range r.Contains {
+			if exrunes.Contains(str, r.Contains[i]) {
+				return true
+			}
+		}
+		return false
+	}
+
+	if len(r.Exact) > 0 {
+		for i := range r.Exact {
+			if exrunes.Equal(str, r.Exact[i]) {
+				return true
+			}
+		}
+		return false
 	}
 
 	if len(r.Prefix) > 0 {
-		return exrunes.HasPrefix(str, r.Prefix)
+		for i := range r.Prefix {
+			if exrunes.HasPrefix(str, r.Prefix[i]) {
+				return true
+			}
+		}
+		return false
 	}
 
 	if len(r.Suffix) > 0 {
-		return exrunes.HasSuffix(str, r.Suffix)
+		for i := range r.Suffix {
+			if exrunes.HasSuffix(str, r.Suffix[i]) {
+				return true
+			}
+		}
+		return false
 	}
 
 	if r.Pattern != nil {
