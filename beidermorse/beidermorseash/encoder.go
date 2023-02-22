@@ -7,6 +7,7 @@ import (
 	"math/bits"
 
 	"github.com/f1monkey/phonetic/beidermorse/common"
+	"github.com/f1monkey/phonetic/internal/exrunes"
 )
 
 var ErrInvalidMode = fmt.Errorf("invalid name mode")
@@ -51,12 +52,15 @@ func (e *Encoder) Encode(input string) []string {
 
 	main, final1, final2 := getRules(e.accuracy, lang)
 
+	buf := exrunes.NewBuffer(200)
+
 	tokens := common.MakeTokens(
 		input, common.Ashkenazi,
 		e.accuracy,
 		common.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
 		lang,
 		false,
+		buf,
 	)
 
 	if tokens == nil {

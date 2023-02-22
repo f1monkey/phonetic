@@ -8,10 +8,10 @@ import (
 
 type DetectLangFunc = func(input string) Lang
 
-func redoLanguage(input string, mode Mode, accuracy Accuracy, ruleset Ruleset, concat bool) *Tokens {
+func redoLanguage(input string, mode Mode, accuracy Accuracy, ruleset Ruleset, concat bool, buf *exrunes.Buffer) *Tokens {
 	// we can do a better job of determining the language now that multiple names have been split
 	languageArg := ruleset.DetectLang(input)
-	return MakeTokens(input, mode, accuracy, ruleset, languageArg, concat)
+	return MakeTokens(input, mode, accuracy, ruleset, languageArg, concat, buf)
 }
 
 var firstList = []string{"de la", "van der", "van den"}
@@ -24,7 +24,7 @@ type Ruleset struct {
 	DetectLang DetectLangFunc
 }
 
-func MakeTokens(input string, mode Mode, accuracy Accuracy, ruleset Ruleset, lang Lang, concat bool) *Tokens {
+func MakeTokens(input string, mode Mode, accuracy Accuracy, ruleset Ruleset, lang Lang, concat bool, buf *exrunes.Buffer) *Tokens {
 	input = prepareInput(input, mode) // returns at max two words
 
 	// process a multiword name of form X Y // @todo
@@ -37,20 +37,18 @@ func MakeTokens(input string, mode Mode, accuracy Accuracy, ruleset Ruleset, lan
 			word2 := substrFrom(input, space+1)
 			if inArray(ruleset.Discards, word1) {
 				// X Y => Y and XY
-				results := redoLanguage(word2, mode, accuracy, ruleset, concat)
-				results.Items = append(results.Items, redoLanguage(word1+word2, mode, accuracy, ruleset, concat).Items...)
+				results := redoLanguage(word2, mode, accuracy, ruleset, concat, buf)
+				results.Items = append(results.Items, redoLanguage(word1+word2, mode, accuracy, ruleset, concat, buf).Items...)
 				return results
 			} else { // first word is not in list
 				// X Y => X, Y, and XY
-				results := redoLanguage(word1, mode, accuracy, ruleset, concat)
-				results.Items = append(results.Items, redoLanguage(word2, mode, accuracy, ruleset, concat).Items...)
-				results.Items = append(results.Items, redoLanguage(word1+word2, mode, accuracy, ruleset, concat).Items...)
+				results := redoLanguage(word1, mode, accuracy, ruleset, concat, buf)
+				results.Items = append(results.Items, redoLanguage(word2, mode, accuracy, ruleset, concat, buf).Items...)
+				results.Items = append(results.Items, redoLanguage(word1+word2, mode, accuracy, ruleset, concat, buf).Items...)
 				return results
 			}
 		}
 	}
-
-	buf := exrunes.NewBuffer(200)
 
 	result := &Tokens{Items: []Token{{
 		ID:    buf.Add([]rune(input)),
