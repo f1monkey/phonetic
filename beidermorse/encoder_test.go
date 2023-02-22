@@ -5,33 +5,33 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/f1monkey/phonetic/beidermorse/common"
+	"github.com/f1monkey/phonetic/internal/bmpm"
 	"github.com/stretchr/testify/require"
 )
 
 func Benchmark_Encoder_Encode_Ru_Approx(b *testing.B) {
-	e := MustNewEncoder(WithAccuracy(common.Approx))
+	e := MustNewEncoder(WithAccuracy(Approx))
 	for i := 0; i < b.N; i++ {
 		e.Encode("апельсин")
 	}
 }
 
 func Benchmark_Encoder_Encode_Ru_Exact(b *testing.B) {
-	e := MustNewEncoder(WithAccuracy(common.Exact))
+	e := MustNewEncoder(WithAccuracy(Exact))
 	for i := 0; i < b.N; i++ {
 		e.Encode("апельсин")
 	}
 }
 
 func Benchmark_Encoder_Encode_En_Approx(b *testing.B) {
-	e := MustNewEncoder(WithAccuracy(common.Approx))
+	e := MustNewEncoder(WithAccuracy(Approx))
 	for i := 0; i < b.N; i++ {
 		e.Encode("orange")
 	}
 }
 
 func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
-	e := MustNewEncoder(WithAccuracy(common.Exact))
+	e := MustNewEncoder(WithAccuracy(Exact))
 	for i := 0; i < b.N; i++ {
 		e.Encode("orange")
 	}
@@ -39,15 +39,15 @@ func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
 
 func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
-		mode     common.Mode
-		accuracy common.Accuracy
+		mode     bmpm.Mode
+		accuracy Accuracy
 		lang     Lang
 		input    string
 		expected []string
 	}{
 		{
-			mode:     common.Generic,
-			accuracy: common.Exact,
+			mode:     bmpm.Generic,
+			accuracy: Exact,
 			input:    "pizza",
 			lang:     Italian,
 			expected: []string{
@@ -55,16 +55,16 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Exact,
+			mode:     bmpm.Generic,
+			accuracy: Exact,
 			input:    "pizza",
 			expected: []string{
 				"piza", "pizi", "pistsa", "pizdza", "pisa", "pitza", "pitstsa", "pidza", "pidzdza", "pidstsa", "pitsdza",
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Approx,
+			mode:     bmpm.Generic,
+			accuracy: Approx,
 			input:    "orange",
 			expected: []string{
 				"orangi",
@@ -88,8 +88,8 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Exact,
+			mode:     bmpm.Generic,
+			accuracy: Exact,
 			input:    "orange",
 			expected: []string{
 				"orange",
@@ -101,8 +101,8 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Exact,
+			mode:     bmpm.Generic,
+			accuracy: Exact,
 			input:    "van der orange",
 			expected: []string{
 				"orange",
@@ -124,8 +124,8 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Approx,
+			mode:     bmpm.Generic,
+			accuracy: Approx,
 			input:    "test",
 			expected: []string{
 				"tist",
@@ -136,8 +136,8 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Exact,
+			mode:     bmpm.Generic,
+			accuracy: Exact,
 			input:    "test",
 			expected: []string{
 				"teSt",
@@ -145,14 +145,14 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Exact,
+			mode:     bmpm.Generic,
+			accuracy: Exact,
 			input:    "апельсин",
 			expected: []string{"apelsin"},
 		},
 		{
-			mode:     common.Generic,
-			accuracy: common.Approx,
+			mode:     bmpm.Generic,
+			accuracy: Approx,
 			input:    "апельсин",
 			expected: []string{
 				"apYlzn",
@@ -164,14 +164,14 @@ func Test_Encoder_Encode(t *testing.T) {
 			},
 		},
 		{
-			mode:     common.Ashkenazi,
-			accuracy: common.Exact,
+			mode:     bmpm.Ashkenazi,
+			accuracy: Exact,
 			input:    "апельсин",
 			expected: []string{"apelsin"},
 		},
 		{
-			mode:     common.Ashkenazi,
-			accuracy: common.Approx,
+			mode:     bmpm.Ashkenazi,
+			accuracy: Approx,
 			input:    "апельсин",
 			expected: []string{
 				"apYlzn",
@@ -213,11 +213,11 @@ func Benchmark_detectLang_ru(b *testing.B) {
 func Test_detectLang(t *testing.T) {
 	cases := []struct {
 		word     string
-		expected common.Lang
+		expected bmpm.Lang
 	}{
 		{
 			word: "orange",
-			expected: common.Lang(
+			expected: bmpm.Lang(
 				Dutch |
 					English |
 					French |
@@ -236,7 +236,7 @@ func Test_detectLang(t *testing.T) {
 		},
 		{
 			word:     "апельсин",
-			expected: common.Lang(Cyrillic),
+			expected: bmpm.Lang(Cyrillic),
 		},
 	}
 

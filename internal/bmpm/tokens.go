@@ -1,4 +1,4 @@
-package common
+package bmpm
 
 import (
 	"github.com/f1monkey/phonetic/internal/exrunes"

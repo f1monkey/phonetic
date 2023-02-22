@@ -1,4 +1,4 @@
-package common
+package bmpm
 
 import (
 	"regexp"
@@ -26,10 +26,6 @@ const (
 	Exact  Accuracy = "exact"  // exact matching rules
 	Approx Accuracy = "approx" // approx matching (results in more tokens)
 )
-
-func (a Accuracy) Valid() bool {
-	return a == Exact || a == Approx
-}
 
 type Rules []Rule
 

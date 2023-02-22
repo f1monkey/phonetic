@@ -104,7 +104,6 @@ import (
 	"github.com/f1monkey/phonetic/beidermorse"
 	"github.com/f1monkey/phonetic/beidermorse/beidermorseash"
 	"github.com/f1monkey/phonetic/beidermorse/beidermorsesep"
-	"github.com/f1monkey/phonetic/beidermorse/common"
 )
 
 func main() {
@@ -119,7 +118,7 @@ func main() {
 	// prints: [orangi oragi orongi orogi orYngi Yrangi Yrongi YrYngi oranxi oronxi orani oroni oranii oronii oranzi oronzi urangi urongi]
 
 	// USE ENCODER WITH "GENERIC" RULESET WITH "EXACT" ACCURACY
-	genEncoder, err = beidermorse.NewEncoder(beidermorse.WithAccuracy(common.Exact))
+	genEncoder, err = beidermorse.NewEncoder(beidermorse.WithAccuracy(beidermorse.Exact))
 	if err != nil {
 		panic(err)
 	}
@@ -130,7 +129,7 @@ func main() {
 	// USE ENCODER WITH "GENERIC" RULESET WITH "EXACT" ACCURACY
 	// AND "ENGLISH" LANGUAGE
 	genEncoder, err = beidermorse.NewEncoder(
-		beidermorse.WithAccuracy(common.Exact),
+		beidermorse.WithAccuracy(beidermorse.Exact),
 		beidermorse.WithLang(beidermorse.English),
 	)
 	if err != nil {
@@ -139,7 +138,6 @@ func main() {
 	result = genEncoder.Encode("orange")
 	fmt.Println(result)
 	// prints: [orenk orenge orendS orendZe oronk oronge orondS orondZe orank orange orandS orandZe arenk arenge arendS arendZe aronk aronge arondS arondZe arank arange arandS arandZe]
-
 
 	// USE ENCODER WITH "ASHKENAZI" RULESET
 	ashEncoder, err := beidermorseash.NewEncoder()

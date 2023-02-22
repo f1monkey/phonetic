@@ -1,4 +1,4 @@
-package common
+package bmpm
 
 import (
 	"fmt"
