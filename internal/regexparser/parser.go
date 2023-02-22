@@ -41,12 +41,12 @@ func Parse(src string) (Result, bool) {
 	}
 
 	if containsPrefix.MatchString(pattern) {
-		pattern, _ = strings.CutPrefix(pattern, "^")
+		pattern = strings.TrimPrefix(pattern, "^")
 		result.IsPrefix = true
 	}
 
 	if containsSuffix.MatchString(pattern) {
-		pattern, _ = strings.CutSuffix(pattern, "$")
+		pattern = strings.TrimSuffix(pattern, "$")
 		result.IsSuffix = true
 	}
 
