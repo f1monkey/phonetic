@@ -13394,7 +13394,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("gol'tz$"),
+			Suffix: [][]rune{
+				[]rune("gol'tz"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -13412,7 +13414,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("gol'ts$"),
+			Suffix: [][]rune{
+				[]rune("gol'ts"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -13430,7 +13434,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("^gol'tz"),
+			Prefix: [][]rune{
+				[]rune("gol'tz"),
+			},
 		},
 		Langs:  512,
 		Accept: true,
@@ -13448,7 +13454,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("^gol'ts"),
+			Prefix: [][]rune{
+				[]rune("gol'ts"),
+			},
 		},
 		Langs:  512,
 		Accept: true,

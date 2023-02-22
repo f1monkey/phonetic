@@ -20357,7 +20357,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("^o’"),
+			Prefix: [][]rune{
+				[]rune("o’"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -20365,7 +20367,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("^o'"),
+			Prefix: [][]rune{
+				[]rune("o'"),
+			},
 		},
 		Langs:  32,
 		Accept: true,
@@ -22083,7 +22087,9 @@ var LangRules = []common.LangRule{
 	{
 		Matcher: &common.Matcher{
 			MatchEmptyString: false,
-			Pattern:          regexp.MustCompile("خ'"),
+			Contains: [][]rune{
+				[]rune("خ'"),
+			},
 		},
 		Langs:  2,
 		Accept: true,

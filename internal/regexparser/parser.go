@@ -15,7 +15,7 @@ type Result struct {
 var (
 	containsPrefix = regexp.MustCompile(`^\^`)
 	containsSuffix = regexp.MustCompile(`\$$`)
-	symbol         = regexp.MustCompile(`\p{L}`)
+	symbol         = regexp.MustCompile(`['’\p{L}]`)
 )
 
 type state int
