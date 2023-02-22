@@ -1,5 +1,11 @@
 package exrunes
 
+import (
+	"sync"
+
+	"golang.org/x/exp/slices"
+)
+
 type Buffer struct {
 	buf   []rune
 	index int
@@ -104,4 +110,34 @@ type bufferItem struct {
 	from  int
 	to    int
 	space int
+}
+
+var bufStorage = []*Buffer{}
+var bufMtx sync.Mutex
+
+// BufferFree destroy buffer contents and return it to storage slice
+func BufferFree(buf *Buffer) {
+	for k := range buf.items {
+		delete(buf.items, k)
+	}
+	buf.buf = buf.buf[:0]
+
+	bufMtx.Lock()
+	bufStorage = append(bufStorage, buf)
+	bufMtx.Unlock()
+}
+
+// BufferGet get from storage or create buffer
+func BufferGet(length int) *Buffer {
+	bufMtx.Lock()
+	defer bufMtx.Unlock()
+
+	if len(bufStorage) > 0 {
+		result := bufStorage[0]
+		bufStorage[0] = nil // prevent memory leak
+		bufStorage = slices.Delete(bufStorage, 0, 1)
+		return result
+	}
+
+	return NewBuffer(length)
 }

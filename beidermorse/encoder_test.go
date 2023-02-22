@@ -37,6 +37,34 @@ func Benchmark_Encoder_Encode_En_Exact(b *testing.B) {
 	}
 }
 
+func Benchmark_Encoder_Encode_BufferReuse_En_Approx(b *testing.B) {
+	e := MustNewEncoder(WithAccuracy(Approx), WithBufferReuse(true))
+	for i := 0; i < b.N; i++ {
+		e.Encode("orange")
+	}
+}
+
+func Benchmark_Encoder_Encode_BufferReuse_En_Exact(b *testing.B) {
+	e := MustNewEncoder(WithAccuracy(Exact), WithBufferReuse(true))
+	for i := 0; i < b.N; i++ {
+		e.Encode("orange")
+	}
+}
+
+func Benchmark_Encoder_Encode_BufferReuse_Ru_Approx(b *testing.B) {
+	e := MustNewEncoder(WithAccuracy(Approx), WithBufferReuse(true))
+	for i := 0; i < b.N; i++ {
+		e.Encode("апельсин")
+	}
+}
+
+func Benchmark_Encoder_Encode_BufferReuse_Ru_Exact(b *testing.B) {
+	e := MustNewEncoder(WithAccuracy(Exact), WithBufferReuse(true))
+	for i := 0; i < b.N; i++ {
+		e.Encode("апельсин")
+	}
+}
+
 func Test_Encoder_Encode(t *testing.T) {
 	cases := []struct {
 		mode     bmpm.Mode

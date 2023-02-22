@@ -26,8 +26,9 @@ func (a Accuracy) Valid() bool {
 }
 
 type Encoder struct {
-	accuracy Accuracy
-	lang     Lang
+	accuracy         Accuracy
+	lang             Lang
+	useBufferStorage bool
 }
 
 // NewEncoder create new encoder instance
@@ -64,7 +65,13 @@ func (e *Encoder) Encode(input string) []string {
 
 	main, final1, final2 := getRules(e.accuracy, lang)
 
-	buf := exrunes.NewBuffer(200)
+	var buf *exrunes.Buffer
+	if e.useBufferStorage {
+		buf = exrunes.BufferGet(200)
+		defer exrunes.BufferFree(buf)
+	} else {
+		buf = exrunes.NewBuffer(200)
+	}
 
 	tokens := bmpm.MakeTokens(
 		input, bmpm.Ashkenazi,
@@ -111,6 +118,15 @@ func WithAccuracy(a Accuracy) EncoderOption {
 func WithLang(l Lang) EncoderOption {
 	return func(e *Encoder) error {
 		e.lang = l
+		return nil
+	}
+}
+
+// WithBufferReuse reuse buffers to reduce GC pressure
+// Leads to an increase in constant memory consumption, especially under heavy loads
+func WithBufferReuse(value bool) EncoderOption {
+	return func(e *Encoder) error {
+		e.useBufferStorage = value
 		return nil
 	}
 }
