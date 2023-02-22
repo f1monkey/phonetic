@@ -64,11 +64,11 @@ func Benchmark_Tokens_MergeRules(b *testing.B) {
 			}(),
 		}
 		t1.Items = make([]Token, 10)
-		t1.Items = []Token{
+		t1.Items = append(t1.Items, []Token{
 			{ID: 0, Langs: 1047288},
 			{ID: 1, Langs: 16392},
 			{ID: 2, Langs: 524288},
-		}
+		}...)
 		b.StartTimer()
 		t1.MergeRules(t2, LangAny)
 	}

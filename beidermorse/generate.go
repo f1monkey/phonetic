@@ -592,6 +592,10 @@ func (e *Encoder) Encode(input string) []string {
 		false,
 	)
 
+	if tokens == nil {
+		return nil
+	}
+
 	result := make([]string, 0, tokens.Len())
 	tokens.Iterate(func(s []rune) bool {
 		result = append(result,  string(s))
