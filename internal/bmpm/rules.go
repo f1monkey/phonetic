@@ -1,7 +1,9 @@
-package common
+package bmpm
 
 import (
 	"regexp"
+
+	"github.com/f1monkey/phonetic/internal/exrunes"
 )
 
 // Mode which name mode to use for matching
@@ -25,68 +27,76 @@ const (
 	Approx Accuracy = "approx" // approx matching (results in more tokens)
 )
 
-func (a Accuracy) Valid() bool {
-	return a == Exact || a == Approx
-}
-
 type Rules []Rule
 
-func (r Rules) Apply(input Tokens, lang Lang, ignoreLangs bool) Tokens {
+func (r Rules) Apply(input *Tokens, lang Lang, ignoreLangs bool) *Tokens {
 	if len(r) == 0 {
 		return input
 	}
 
-	var result Tokens
-	for _, tok := range input {
-		newTokens := Tokens{{Text: nil, Langs: tok.Langs}}
-		for j := 0; j < len(tok.Text); {
+	result := &Tokens{Buf: input.Buf}
+	for _, tok := range input.Items {
+		item := input.Buf.Get(tok.ID)
+
+		id := input.Buf.AddWithSpace(nil, len(item))
+		tok := Token{ID: id, Langs: tok.Langs}
+		newTokens := &Tokens{Buf: input.Buf, Items: []Token{tok}}
+		for j := 0; j < len(item); {
 			var (
 				applied bool
 				offset  int
 			)
 
 			for _, rr := range r {
-				var tmp Tokens
-				tmp, offset = rr.ApplyTo(tok.Text, j)
+				var tmp []RuleToken
+				tmp, offset = rr.ApplyTo(item, j)
 				if len(tmp) > 0 {
 					applied = true
-					if len(newTokens) == 0 {
-						newTokens = tmp
+					if newTokens.Len() == 0 {
+						for k := range tmp {
+							newTokens.Add(tmp[k].Text, tmp[k].Langs)
+						}
 					} else {
-						newTokens = newTokens.Merge(lang, tmp)
+						newTokens.MergeRules(tmp, lang)
 					}
 					break
 				}
 			}
 
 			if !applied {
-				for k := range newTokens {
-					newTokens[k].Text = append(newTokens[k].Text, tok.Text[j])
+				for k := range newTokens.Items {
+					newTokens.Buf.Append(newTokens.Items[k].ID, []rune{item[j]})
 				}
 			}
 			j += offset
 		}
 
-		result = append(result, newTokens...)
+		result.Items = append(result.Items, newTokens.Items...)
 	}
 
 	if ignoreLangs {
-		for i := range result {
-			result[i].Langs = LangAny
+		for i := range result.Items {
+			result.Items[i].Langs = LangAny
 		}
 	}
 
-	return result.Deduplicate()
+	result.Deduplicate()
+	return result
 }
 
 type Rule struct {
-	Pattern      Runes
+	Pattern      []rune
 	LeftContext  *Matcher
 	RightContext *Matcher
-	Phonetic     Tokens
+	Phonetic     []RuleToken
 }
 
-func (r Rule) ApplyTo(input Runes, position int) (result []Token, offset int) {
+type RuleToken struct {
+	Text  []rune
+	Langs Lang
+}
+
+func (r Rule) ApplyTo(input []rune, position int) (result []RuleToken, offset int) {
 	patternLength := len(r.Pattern)
 	inputLength := len(input)
 	offset = 1
@@ -99,7 +109,7 @@ func (r Rule) ApplyTo(input Runes, position int) (result []Token, offset int) {
 		return
 	}
 
-	if !input.ContainsAt(r.Pattern, position) {
+	if !exrunes.ContainsAt(input, r.Pattern, position) {
 		return
 	}
 
@@ -140,26 +150,51 @@ type LangRule struct {
 type Matcher struct {
 	MatchEmptyString bool
 	Pattern          *regexp.Regexp
-	Prefix           Runes
-	Suffix           Runes
-	Contains         Runes
+	Prefix           [][]rune
+	Suffix           [][]rune
+	Contains         [][]rune
+	Exact            [][]rune
 }
 
-func (r Matcher) Match(str Runes) bool {
+func (r Matcher) Match(str []rune) bool {
 	if r.MatchEmptyString && len(str) == 0 {
 		return true
 	}
 
 	if len(r.Contains) > 0 {
-		return str.Contains(r.Contains)
+		for i := range r.Contains {
+			if exrunes.Contains(str, r.Contains[i]) {
+				return true
+			}
+		}
+		return false
+	}
+
+	if len(r.Exact) > 0 {
+		for i := range r.Exact {
+			if exrunes.Equal(str, r.Exact[i]) {
+				return true
+			}
+		}
+		return false
 	}
 
 	if len(r.Prefix) > 0 {
-		return str.HasPrefix(r.Prefix)
+		for i := range r.Prefix {
+			if exrunes.HasPrefix(str, r.Prefix[i]) {
+				return true
+			}
+		}
+		return false
 	}
 
 	if len(r.Suffix) > 0 {
-		return str.HasSuffix(r.Suffix)
+		for i := range r.Suffix {
+			if exrunes.HasSuffix(str, r.Suffix[i]) {
+				return true
+			}
+		}
+		return false
 	}
 
 	if r.Pattern != nil {

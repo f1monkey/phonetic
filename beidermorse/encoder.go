@@ -6,21 +6,35 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/f1monkey/phonetic/beidermorse/common"
+	"github.com/f1monkey/phonetic/internal/bmpm"
+	"github.com/f1monkey/phonetic/internal/exrunes"
 )
 
 var ErrInvalidMode = fmt.Errorf("invalid name mode")
 var ErrInvalidAccuracy = fmt.Errorf("invalid accuracy value")
 
+// Accuracy exact or approximate matching
+type Accuracy bmpm.Accuracy
+
+const (
+	Exact  Accuracy = "exact"  // exact matching rules
+	Approx Accuracy = "approx" // approx matching (results in more tokens)
+)
+
+func (a Accuracy) Valid() bool {
+	return a == Exact || a == Approx
+}
+
 type Encoder struct {
-	accuracy common.Accuracy
-	lang     Lang
+	accuracy         Accuracy
+	lang             Lang
+	useBufferStorage bool
 }
 
 // NewEncoder create new encoder instance
 func NewEncoder(opts ...EncoderOption) (*Encoder, error) {
 	result := &Encoder{
-		accuracy: common.Approx,
+		accuracy: Approx,
 	}
 
 	for _, opt := range opts {
@@ -44,25 +58,39 @@ func MustNewEncoder(opts ...EncoderOption) *Encoder {
 // Encode transform a passed string to a slice of phonetic tokens
 func (e *Encoder) Encode(input string) []string {
 	langDetector := detectLangFunc()
-	lang := common.Lang(e.lang)
+	lang := bmpm.Lang(e.lang)
 	if lang == 0 {
 		lang = langDetector(input)
 	}
 
 	main, final1, final2 := getRules(e.accuracy, lang)
 
-	tokens := common.MakeTokens(
-		input, common.Generic,
-		e.accuracy,
-		common.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
+	var buf *exrunes.Buffer
+	if e.useBufferStorage {
+		buf = exrunes.BufferGet(200)
+		defer exrunes.BufferFree(buf)
+	} else {
+		buf = exrunes.NewBuffer(200)
+	}
+
+	tokens := bmpm.MakeTokens(
+		input, bmpm.Generic,
+		bmpm.Accuracy(e.accuracy),
+		bmpm.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
 		lang,
 		false,
+		buf,
 	)
 
-	result := make([]string, len(tokens))
-	for i, t := range tokens {
-		result[i] = string(t.Text)
+	if tokens == nil {
+		return nil
 	}
+
+	result := make([]string, 0, tokens.Len())
+	tokens.Iterate(func(s []rune) bool {
+		result = append(result, string(s))
+		return true
+	})
 
 	return result
 }
@@ -76,7 +104,7 @@ func (e *Encoder) SetOption(opt EncoderOption) error {
 type EncoderOption func(e *Encoder) error
 
 // WithAccuracy Set encoder accuracy
-func WithAccuracy(a common.Accuracy) EncoderOption {
+func WithAccuracy(a Accuracy) EncoderOption {
 	return func(e *Encoder) error {
 		if !a.Valid() {
 			return fmt.Errorf("%w: %q", ErrInvalidAccuracy, a)
@@ -94,22 +122,31 @@ func WithLang(l Lang) EncoderOption {
 	}
 }
 
+// WithBufferReuse reuse buffers to reduce GC pressure
+// Leads to an increase in constant memory consumption, especially under heavy loads
+func WithBufferReuse(value bool) EncoderOption {
+	return func(e *Encoder) error {
+		e.useBufferStorage = value
+		return nil
+	}
+}
+
 func getRules(
-	accuracy common.Accuracy,
-	lang common.Lang,
-) (common.Rules, common.Rules, common.Rules) {
-	var main, final1, final2 common.Rules
+	accuracy Accuracy,
+	lang bmpm.Lang,
+) (bmpm.Rules, bmpm.Rules, bmpm.Rules) {
+	var main, final1, final2 bmpm.Rules
 
 	langCount := bits.OnesCount64(uint64(lang))
 	if langCount > 1 {
-		lang = common.Lang(Any)
+		lang = bmpm.Lang(Any)
 	}
 	main = Rules[lang]
 
-	if accuracy == common.Approx {
+	if accuracy == Approx {
 		final1 = FinalRules.Approx.First
 		final2 = FinalRules.Approx.Second[lang]
-	} else if accuracy == common.Exact {
+	} else if accuracy == Exact {
 		final1 = FinalRules.Exact.First
 		final2 = FinalRules.Exact.Second[lang]
 	}
@@ -117,13 +154,13 @@ func getRules(
 	return main, final1, final2
 }
 
-func detectLangFunc() common.DetectLangFunc {
-	return func(input string) common.Lang {
+func detectLangFunc() bmpm.DetectLangFunc {
+	return func(input string) bmpm.Lang {
 		all := All
 		rules := LangRules
 
-		runes := common.Runes(input)
-		remaining := common.Lang(all)
+		runes := []rune(input)
+		remaining := bmpm.Lang(all)
 		for _, rule := range rules {
 			if rule.Matcher == nil {
 				continue

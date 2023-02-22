@@ -12,10 +12,11 @@ import (
 	"io/ioutil"
 	"os"
 	"path"
-	"regexp"
 	"strconv"
 	"strings"
 	"text/template"
+
+	"github.com/f1monkey/phonetic/internal/regexparser"
 )
 
 //go:embed bmpm-rules/*.json
@@ -114,12 +115,6 @@ func transformRuleSet(src SrcRuleSet) DestRuleSet {
 	return result
 }
 
-var (
-	containsRegexp = regexp.MustCompile(`^\p{L}+$`)
-	prefixRegexp   = regexp.MustCompile(`^\^\p{L}+$`)
-	suffixRegexp   = regexp.MustCompile(`^\p{L}+\$$`)
-)
-
 func transformFinalRule(src SrcFinalRule) DestFinalRule {
 	result := DestFinalRule{
 		First:  transformRules(src.First),
@@ -213,18 +208,33 @@ func transformRulePhonetic(src string) DestRulePhonetic {
 func transformPattern(pattern string) DestRuleMatch {
 	r := DestRuleMatch{}
 
-	if pattern == "^$" {
-		r.MatchEmptyString = true
-	} else if containsRegexp.MatchString(pattern) {
-		r.Contains = pattern
-	} else if prefixRegexp.MatchString(pattern) {
-		r.Prefix = strings.ReplaceAll(pattern, "^", "")
-	} else if suffixRegexp.MatchString(pattern) {
-		r.Suffix = strings.ReplaceAll(pattern, "$", "")
-	} else {
+	parsed, ok := regexparser.Parse(pattern)
+	if !ok {
 		r.Pattern = pattern
+		return r
 	}
 
+	if len(parsed.Items) == 0 {
+		r.MatchEmptyString = true
+		return r
+	}
+
+	if parsed.IsPrefix {
+		r.Prefix = parsed.Items
+		return r
+	}
+
+	if parsed.IsSuffix {
+		r.Suffix = parsed.Items
+		return r
+	}
+
+	if parsed.IsExact {
+		r.Exact = parsed.Items
+		return r
+	}
+
+	r.Contains = parsed.Items
 	return r
 }
 
@@ -271,7 +281,7 @@ const rulesTemplate = `
 	{{- if ne .RightContext nil}}
 		RightContext: {{- template "rulematchertpl" .RightContext }},
 	{{- end }}
-	Phonetic: []common.Token{
+	Phonetic: []bmpm.RuleToken{
 		{{- range $i, $p := .PhoneticRules }}
 			{
 				{{- if ne $p.Text ""}}
@@ -286,16 +296,35 @@ const rulesTemplate = `
 },
 {{- end }}
 {{- define "rulematchertpl" }}
-	&common.Matcher{
+	&bmpm.Matcher{
 		MatchEmptyString: {{ .MatchEmptyString }},
-		{{- if ne .Contains ""}}
-			Contains: []rune({{ printf "%q" .Contains }}),
+		{{- if .Contains }}
+			Contains: [][]rune{
+				{{- range $p := .Contains }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
 		{{- end }}
-		{{- if ne .Prefix ""}}
-			Prefix: []rune({{ printf "%q" .Prefix }}),
+		{{- if .Exact }}
+			Exact: [][]rune{
+				{{- range $p := .Exact }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
 		{{- end }}
-		{{- if ne .Suffix ""}}
-			Suffix: []rune({{ printf "%q" .Suffix }}),
+		{{- if .Prefix }}
+			Prefix: [][]rune{
+				{{- range $p := .Prefix }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
+		{{- end }}
+		{{- if .Suffix }}
+			Suffix: [][]rune{
+				{{- range $p := .Suffix }}
+					[]rune({{ printf "%q" $p }}),
+				{{- end }}
+			},
 		{{- end }}
 		{{- if ne .Pattern ""}}
 			Pattern: regexp.MustCompile({{ printf "%q" .Pattern }}),
@@ -309,10 +338,10 @@ package beidermorse{{- if ne .Mode "gen" }}{{ .Mode }}{{- end }}
 
 import (
 	"regexp"
-	"github.com/f1monkey/phonetic/beidermorse/common"
+	"github.com/f1monkey/phonetic/internal/bmpm"
 )
 
-type Lang common.Lang
+type Lang bmpm.Lang
 
 const (
 	{{ (index .Languages 0) | Title }} Lang = 1 << iota
@@ -340,9 +369,9 @@ const All = {{- range $i, $lang := .Languages }}
 	{{- end }}
 {{- end}}
 
-var Rules = map[common.Lang]common.Rules{
+var Rules = map[bmpm.Lang]bmpm.Rules{
 	{{- range $lang, $rules := .Rules }}
-		common.Lang({{ $lang | Title }}): {
+		bmpm.Lang({{ $lang | Title }}): {
 			{{- range $rule := $rules }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
@@ -350,7 +379,7 @@ var Rules = map[common.Lang]common.Rules{
 	{{- end }}
 }
 
-var LangRules = []common.LangRule{
+var LangRules = []bmpm.LangRule{
 	{{- range $rule := .LangRules }}
 		{
 			Matcher: {{- template "rulematchertpl" $rule.Match }},
@@ -360,16 +389,16 @@ var LangRules = []common.LangRule{
 	{{- end }}
 }
 
-var FinalRules = common.FinalRules{
-	Approx: common.FinalRule{
-		First: common.Rules{
+var FinalRules = bmpm.FinalRules{
+	Approx: bmpm.FinalRule{
+		First: bmpm.Rules{
 			{{- range $rule := .FinalRules.Approx.First }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		Second: map[common.Lang]common.Rules{
+		Second: map[bmpm.Lang]bmpm.Rules{
 			{{- range $secRule := .FinalRules.Approx.Second }}
-				common.Lang({{ (index $.Languages $secRule.Lang) | Title }}): {
+				bmpm.Lang({{ (index $.Languages $secRule.Lang) | Title }}): {
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -377,15 +406,15 @@ var FinalRules = common.FinalRules{
 			{{- end }}
 		},
 	},
-	Exact: common.FinalRule{
-		First: common.Rules{
+	Exact: bmpm.FinalRule{
+		First: bmpm.Rules{
 			{{- range $rule := .FinalRules.Exact.First }}
 				{{- template "ruletpl" $rule }}
 			{{- end }}
 		},
-		Second: map[common.Lang]common.Rules{
+		Second: map[bmpm.Lang]bmpm.Rules{
 			{{- range $secRule := .FinalRules.Exact.Second }}
-				common.Lang({{ (index $.Languages $secRule.Lang) | Title }}): {
+				bmpm.Lang({{ (index $.Languages $secRule.Lang) | Title }}): {
 					{{- range $rule := $secRule.Rules }}
 						{{- template "ruletpl" $rule }}
 					{{- end }}
@@ -483,15 +512,17 @@ type DestFinalRules struct {
 type DestRuleMatch struct {
 	MatchEmptyString bool
 	Pattern          string
-	Prefix           string
-	Suffix           string
-	Contains         string
+	Exact            []string
+	Prefix           []string
+	Suffix           []string
+	Contains         []string
 }
 
 func (m DestRuleMatch) IsEmpty() bool {
-	return m.Contains == "" &&
-		m.Prefix == "" &&
-		m.Suffix == "" &&
+	return len(m.Contains) == 0 &&
+		len(m.Prefix) == 0 &&
+		len(m.Suffix) == 0 &&
+		len(m.Exact) == 0 &&
 		m.Pattern == "" &&
 		m.MatchEmptyString == false
 }
@@ -505,21 +536,35 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/f1monkey/phonetic/beidermorse/common"
+	"github.com/f1monkey/phonetic/internal/bmpm"
+	"github.com/f1monkey/phonetic/internal/exrunes"
 )
 
 var ErrInvalidMode = fmt.Errorf("invalid name mode")
 var ErrInvalidAccuracy = fmt.Errorf("invalid accuracy value")
 
+// Accuracy exact or approximate matching
+type Accuracy bmpm.Accuracy
+
+const (
+	Exact  Accuracy = "exact"  // exact matching rules
+	Approx Accuracy = "approx" // approx matching (results in more tokens)
+)
+
+func (a Accuracy) Valid() bool {
+	return a == Exact || a == Approx
+}
+
 type Encoder struct {
-	accuracy common.Accuracy
+	accuracy Accuracy
 	lang Lang
+	useBufferStorage bool
 }
 
 // NewEncoder create new encoder instance
 func NewEncoder(opts ...EncoderOption) (*Encoder, error) {
 	result := &Encoder{
-		accuracy: common.Approx,
+		accuracy: Approx,
 	}
 
 	for _, opt := range opts {
@@ -543,28 +588,42 @@ func MustNewEncoder(opts ...EncoderOption) *Encoder {
 // Encode transform a passed string to a slice of phonetic tokens
 func (e *Encoder) Encode(input string) []string {
 	langDetector := detectLangFunc()
-	lang := common.Lang(e.lang)
+	lang := bmpm.Lang(e.lang)
 	if lang == 0 {
 		lang = langDetector(input)
 	}
 
 	main, final1, final2 := getRules(e.accuracy, lang)
 
-	tokens := common.MakeTokens(
+	var buf *exrunes.Buffer
+	if e.useBufferStorage {
+		buf = exrunes.BufferGet(200)
+		defer exrunes.BufferFree(buf)
+	} else {
+		buf = exrunes.NewBuffer(200)
+	}
+
+	tokens := bmpm.MakeTokens(
 		input,
-		{{- if eq .Mode "gen" }}common.Generic,{{- end }}
-		{{- if eq .Mode "ash" }}common.Ashkenazi,{{- end }}
-		{{- if eq .Mode "sep" }}common.Sephardic,{{- end }}
-		e.accuracy,
-		common.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
+		{{- if eq .Mode "gen" }}bmpm.Generic,{{- end }}
+		{{- if eq .Mode "ash" }}bmpm.Ashkenazi,{{- end }}
+		{{- if eq .Mode "sep" }}bmpm.Sephardic,{{- end }}
+		bmpm.Accuracy(e.accuracy),
+		bmpm.Ruleset{Main: main, Final1: final1, Final2: final2, Discards: Discards, DetectLang: langDetector},
 		lang,
 		false,
+		buf,
 	)
 
-	result := make([]string, len(tokens))
-	for i, t := range tokens {
-		result[i] = string(t.Text)
+	if tokens == nil {
+		return nil
 	}
+
+	result := make([]string, 0, tokens.Len())
+	tokens.Iterate(func(s []rune) bool {
+		result = append(result,  string(s))
+		return true
+	})
 
 	return result
 }
@@ -578,7 +637,7 @@ func (e *Encoder) SetOption(opt EncoderOption) error {
 type EncoderOption func(e *Encoder) error
 
 // WithAccuracy Set encoder accuracy
-func WithAccuracy(a common.Accuracy) EncoderOption {
+func WithAccuracy(a Accuracy) EncoderOption {
 	return func(e *Encoder) error {
 		if !a.Valid() {
 			return fmt.Errorf("%w: %q", ErrInvalidAccuracy, a)
@@ -596,22 +655,31 @@ func WithLang(l Lang) EncoderOption {
 	}
 }
 
+// WithBufferReuse reuse buffers to reduce GC pressure
+// Leads to an increase in constant memory consumption, especially under heavy loads
+func WithBufferReuse(value bool) EncoderOption {
+	return func(e *Encoder) error {
+		e.useBufferStorage = value
+		return nil
+	}
+}
+
 func getRules(
-	accuracy common.Accuracy,
-	lang common.Lang,
-) (common.Rules, common.Rules, common.Rules) {
-	var main, final1, final2 common.Rules
+	accuracy Accuracy,
+	lang bmpm.Lang,
+) (bmpm.Rules, bmpm.Rules, bmpm.Rules) {
+	var main, final1, final2 bmpm.Rules
 
 	langCount := bits.OnesCount64(uint64(lang))
 	if langCount > 1 {
-		lang = common.Lang(Any)
+		lang = bmpm.Lang(Any)
 	}
 	main = Rules[lang]
 
-	if accuracy == common.Approx {
+	if accuracy == Approx {
 		final1 = FinalRules.Approx.First
 		final2 = FinalRules.Approx.Second[lang]
-	} else if accuracy == common.Exact {
+	} else if accuracy == Exact {
 		final1 = FinalRules.Exact.First
 		final2 = FinalRules.Exact.Second[lang]
 	}
@@ -619,13 +687,13 @@ func getRules(
 	return main, final1, final2
 }
 
-func detectLangFunc() common.DetectLangFunc {
-	return func(input string) common.Lang {
+func detectLangFunc() bmpm.DetectLangFunc {
+	return func(input string) bmpm.Lang {
 		all := All
 		rules := LangRules
 
-		runes := common.Runes(input)
-		remaining := common.Lang(all)
+		runes := []rune(input)
+		remaining := bmpm.Lang(all)
 		for _, rule := range rules {
 			if rule.Matcher == nil {
 				continue
