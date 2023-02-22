@@ -95,66 +95,79 @@ Each package contains `exact` and `approx` (default) rulesets. To use `exact` ru
 
 Code examples:
 
-```go
-package main
-
-import (
-	"fmt"
-
-	"github.com/f1monkey/phonetic/beidermorse"
-	"github.com/f1monkey/phonetic/beidermorse/beidermorseash"
-	"github.com/f1monkey/phonetic/beidermorse/beidermorsesep"
-)
-
-func main() {
-
-	// USE ENCODER WITH "GENERIC" RULESET WITH "APPROX" ACCURACY
-	genEncoder, err := beidermorse.NewEncoder()
-	if err != nil {
-		panic(err)
-	}
-	result := genEncoder.Encode("orange")
-	fmt.Println(result)
-	// prints: [orangi oragi orongi orogi orYngi Yrangi Yrongi YrYngi oranxi oronxi orani oroni oranii oronii oranzi oronzi urangi urongi]
-
-	// USE ENCODER WITH "GENERIC" RULESET WITH "EXACT" ACCURACY
-	genEncoder, err = beidermorse.NewEncoder(beidermorse.WithAccuracy(beidermorse.Exact))
-	if err != nil {
-		panic(err)
-	}
-	result = genEncoder.Encode("orange")
-	fmt.Println(result)
-	// prints: [orange oranxe oranhe oranje oranZe orandZe]
-
-	// USE ENCODER WITH "GENERIC" RULESET WITH "EXACT" ACCURACY
-	// AND "ENGLISH" LANGUAGE
-	genEncoder, err = beidermorse.NewEncoder(
-		beidermorse.WithAccuracy(beidermorse.Exact),
-		beidermorse.WithLang(beidermorse.English),
+* `generic` ruleset with `approx` accuracy
+	```go
+	import (
+		"fmt"
+		"github.com/f1monkey/phonetic/beidermorse"
 	)
-	if err != nil {
-		panic(err)
-	}
-	result = genEncoder.Encode("orange")
-	fmt.Println(result)
-	// prints: [orenk orenge orendS orendZe oronk oronge orondS orondZe orank orange orandS orandZe arenk arenge arendS arendZe aronk aronge arondS arondZe arank arange arandS arandZe]
 
-	// USE ENCODER WITH "ASHKENAZI" RULESET
-	ashEncoder, err := beidermorseash.NewEncoder()
-	if err != nil {
-		panic(err)
+	func main() {
+		encoder, _ := beidermorse.NewEncoder()
+		result := encoder.Encode("orange")
+		fmt.Println(result)
+		// prints: [orangi oragi orongi orogi orYngi Yrangi Yrongi YrYngi oranxi oronxi orani oroni oranii oronii oranzi oronzi urangi urongi]
 	}
-	result = ashEncoder.Encode("orange")
-	fmt.Println(result)
-	// prints: [orangi orongi orYngi Yrangi Yrongi YrYngi oranzi oronzi orani oroni oranxi oronxi urangi urongi]
+	```
+* `generic` ruleset with `exact` accuracy
+	```go
+	import (
+		"fmt"
+		"github.com/f1monkey/phonetic/beidermorse"
+	)
 
-	// USE ENCODER WITH "SEPHARDIC" RULESET
-	sepEncoder, err := beidermorsesep.NewEncoder()
-	if err != nil {
-		panic(err)
+	func main() {
+		encoder, _ := beidermorse.NewEncoder(beidermorse.WithAccuracy(beidermorse.Exact))
+		result := encoder.Encode("orange")
+		fmt.Println(result)
+		// prints: [orange oranxe oranhe oranje oranZe orandZe]
+
 	}
-	result = sepEncoder.Encode("orange")
-	fmt.Println(result)
-	// prints: [uranzi uranz uranS uranzi uranz uranhi uranh]
-}
-```
+	```
+* `generic` ruleset with `exact` accuracy and `english` language with buffer reusing (to reduce GC pressure)
+	```go
+	import (
+		"fmt"
+		"github.com/f1monkey/phonetic/beidermorse"
+	)
+
+	func main() {
+		encoder, err = beidermorse.NewEncoder(
+			beidermorse.WithAccuracy(beidermorse.Exact),
+			beidermorse.WithLang(beidermorse.English),
+			beidermorse.WithBufferReuse(true),
+		)
+		result := encoder.Encode("orange")
+		fmt.Println(result)
+		// prints: [orenk orenge orendS orendZe oronk oronge orondS orondZe orank orange orandS orandZe arenk arenge arendS arendZe aronk aronge arondS arondZe arank arange arandS arandZe]
+
+	}
+	```
+* `ashkenazi` ruleset with `approx` accuracy
+	```go
+		import (
+			"fmt"
+			"github.com/f1monkey/phonetic/beidermorseash"
+		)
+
+		func main() {
+			encoder, _ := beidermorseash.NewEncoder()
+			result := encoder.Encode("orange")
+			fmt.Println(result)
+			// prints: [orangi orongi orYngi Yrangi Yrongi YrYngi oranzi oronzi orani oroni oranxi oronxi urangi urongi]
+		}
+	```
+* `sephardic` ruleset with `approx` accuracy
+	```go
+		import (
+			"fmt"
+			"github.com/f1monkey/phonetic/beidermorsesep"
+		)
+
+		func main() {
+			encoder, _ := beidermorsesep.NewEncoder()
+			result := encoder.Encode("orange")
+			fmt.Println(result)
+			// prints: [uranzi uranz uranS uranzi uranz uranhi uranh]
+		}
+	```
