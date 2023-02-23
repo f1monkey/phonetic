@@ -7,7 +7,7 @@ import (
 )
 
 func Benchmark_Encoder_Encode(b *testing.B) {
-	s := "Ashcraft"
+	s := "orange"
 	e := NewEncoder()
 
 	b.ResetTimer()

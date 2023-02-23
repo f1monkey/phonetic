@@ -2,11 +2,13 @@
 
 Set of different phonetic encoders' implementations.
 
-Provided encoders:
-* [Soundex](#soundex)
-* [Cologne phonetics](#cologne-phonetics)
-* [Caverphone2](#caverphone2)
-* [Beider-Morse](#beider-morse)
+* [Installation](#installion)
+* [Usage](#usage)
+	* [Soundex](#soundex)
+	* [Cologne phonetics](#cologne-phonetics)
+	* [Caverphone2](#caverphone2)
+	* [Beider-Morse](#beider-morse)
+* [Benchmarks](#benchmarks)
 
 ## Installion
 
@@ -170,4 +172,58 @@ Code examples:
 			fmt.Println(result)
 			// prints: [uranzi uranz uranS uranzi uranz uranhi uranh]
 		}
+	```
+
+## Benchmarks
+* Soundex
+	```
+	goos: linux
+	goarch: amd64
+	pkg: github.com/f1monkey/phonetic/soundex
+	cpu: AMD Ryzen 9 6900HX with Radeon Graphics
+	Benchmark_Encoder_Encode-16    	14173989	        99.21 ns/op	       8 B/op	       1 allocs/op
+	PASS
+	ok  	github.com/f1monkey/phonetic/soundex	1.497s
+	```
+* Cologne phonetics
+	```
+	goos: linux
+	goarch: amd64
+	pkg: github.com/f1monkey/phonetic/cologne
+	cpu: AMD Ryzen 9 6900HX with Radeon Graphics
+	Benchmark_Encoder_Encode-16    	 3737944	       374.8 ns/op	     104 B/op	       3 allocs/op
+	PASS
+	ok  	github.com/f1monkey/phonetic/cologne	1.729s
+	```
+* Caverphone2
+	```
+	goos: linux
+	goarch: amd64
+	pkg: github.com/f1monkey/phonetic/caverphone2
+	cpu: AMD Ryzen 9 6900HX with Radeon Graphics
+	Benchmark_Encoder_Encode-16    	 1864532	       641.7 ns/op	      40 B/op	       3 allocs/op
+	PASS
+	ok  	github.com/f1monkey/phonetic/caverphone2	1.851s
+	```
+* Beider-Morse
+	```
+	goos: linux
+	goarch: amd64
+	pkg: github.com/f1monkey/phonetic/beidermorse
+	cpu: AMD Ryzen 9 6900HX with Radeon Graphics
+	Benchmark_Encoder_Encode_En_Approx-16                	    5769	    219152 ns/op	   21264 B/op	     146 allocs/op
+	Benchmark_Encoder_Encode_En_Exact-16                 	   13203	     82072 ns/op	    9199 B/op	      84 allocs/op
+	Benchmark_Encoder_Encode_Ru_Approx-16                	   30060	     54323 ns/op	    6093 B/op	      48 allocs/op
+	Benchmark_Encoder_Encode_Ru_Exact-16                 	   37522	     28353 ns/op	    2657 B/op	      26 allocs/op
+	```
+	With buffer reuse:
+	```
+	goos: linux
+	goarch: amd64
+	pkg: github.com/f1monkey/phonetic/beidermorse
+	cpu: AMD Ryzen 9 6900HX with Radeon Graphics
+	Benchmark_Encoder_Encode_BufferReuse_En_Approx-16    	   10000	    129346 ns/op	    6126 B/op	     130 allocs/op
+	Benchmark_Encoder_Encode_BufferReuse_En_Exact-16     	   23198	     48813 ns/op	    2297 B/op	      72 allocs/op
+	Benchmark_Encoder_Encode_BufferReuse_Ru_Approx-16    	   48902	     29909 ns/op	    1297 B/op	      41 allocs/op
+	Benchmark_Encoder_Encode_BufferReuse_Ru_Exact-16     	   65834	     16260 ns/op	     485 B/op	      22 allocs/op
 	```
