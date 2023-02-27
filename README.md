@@ -5,6 +5,7 @@ Set of different phonetic encoders' implementations.
 * [Installation](#installion)
 * [Usage](#usage)
 	* [Soundex](#soundex)
+	* [Metaphone](#metaphone)
 	* [Cologne phonetics](#cologne-phonetics)
 	* [Caverphone2](#caverphone2)
 	* [Beider-Morse](#beider-morse)
@@ -39,6 +40,29 @@ func main() {
 	// prints: O652
 }
 ```
+
+### Metaphone
+
+The Metaphone encoder converts words into a phonetic code that represents their pronunciation for comparing words based on their phonetic properties, rather than their spelling. The Metaphone encoder was designed for English. [Wiki page](https://en.wikipedia.org/wiki/Metaphone)
+
+Code example
+```go
+package main
+
+import (
+	"fmt"
+
+	"github.com/f1monkey/phonetic/metaphone"
+)
+
+func main() {
+	e := metaphone.NewEncoder()
+	result := e.Encode("orange")
+	fmt.Println(result)
+	// prints: ORNJ
+}
+```
+
 
 ### Cologne phonetics
 Cologne phonetics (Kölner Phonetik) is a phonetic algorithm used for indexing German words by their sound, allowing for name and word matching in German language databases. [Wiki page](https://en.wikipedia.org/wiki/Cologne_phonetics)
@@ -184,6 +208,16 @@ Code examples:
 	Benchmark_Encoder_Encode-16    	14173989	        99.21 ns/op	       8 B/op	       1 allocs/op
 	PASS
 	ok  	github.com/f1monkey/phonetic/soundex	1.497s
+	```
+* Metaphone
+	```
+	goos: linux
+	goarch: amd64
+	pkg: github.com/f1monkey/phonetic/metaphone
+	cpu: AMD Ryzen 9 6900HX with Radeon Graphics        
+	Benchmark_Encoder_Encode-16    	 6451292	       267.1 ns/op	      48 B/op	       3 allocs/op
+	PASS
+	ok  	github.com/f1monkey/phonetic/metaphone	1.916s
 	```
 * Cologne phonetics
 	```
