@@ -50,7 +50,7 @@ func (e *Encoder) Encode(input string) string {
 
 	maxLen := e.maxLen
 	if maxLen < 0 {
-		maxLen = len(input)
+		maxLen = len(input) * 3
 	}
 	result := make([]rune, 0, maxLen)
 
@@ -68,6 +68,10 @@ func (e *Encoder) Encode(input string) string {
 			result, index = f(runes, index, result)
 		}
 		index++
+	}
+
+	if len(result) > maxLen {
+		result = result[:maxLen]
 	}
 
 	return string(result)
