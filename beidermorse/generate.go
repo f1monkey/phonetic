@@ -5,7 +5,6 @@ package main
 
 import (
 	"bytes"
-	"embed"
 	"encoding/json"
 	"fmt"
 	"go/format"
@@ -19,13 +18,10 @@ import (
 	"github.com/f1monkey/phonetic/internal/regexparser"
 )
 
-//go:embed bmpm-rules/*.json
-var ruleFS embed.FS
-
 var ruleSources = map[string]string{
-	"ash": "bmpm-rules/ash.json",
-	"gen": "bmpm-rules/gen.json",
-	"sep": "bmpm-rules/sep.json",
+	"ash": "beidermorse/bmpm-rules/ash.json",
+	"gen": "beidermorse/bmpm-rules/gen.json",
+	"sep": "beidermorse/bmpm-rules/sep.json",
 }
 
 func main() {
@@ -241,7 +237,7 @@ func transformPattern(pattern string) DestRuleMatch {
 func loadRules() (map[string]SrcRuleSet, error) {
 	result := make(map[string]SrcRuleSet)
 	for mode, filename := range ruleSources {
-		f, err := ruleFS.Open(filename)
+		f, err := os.Open(filename)
 		if err != nil {
 			return nil, err
 		}
